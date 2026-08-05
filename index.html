@@ -285,11 +285,10 @@ const q=generateMathQuestion(mathState.track);
 mathState.current=q;
 document.getElementById('mathQuestion').textContent=q.text+' = ?';
 const choices=[q.answer];
-while(choices.length<4){
-const delta=Math.floor(Math.random()*6)-3;
-const c=q.answer+delta;
-if(delta!==0&&choices.indexOf(c)<0&&c>=0)choices.push(c);
-}
+let pool=[];
+for(let d=-8;d<=8;d++){if(d!==0){const c=q.answer+d;if(c>=0&&pool.indexOf(c)<0)pool.push(c);}}
+pool.sort(function(){return Math.random()-0.5;});
+for(let i=0;i<3&&i<pool.length;i++){choices.push(pool[i]);}
 choices.sort(function(){return Math.random()-0.5;});
 const box=document.getElementById('mathAnswers');
 box.innerHTML='';
