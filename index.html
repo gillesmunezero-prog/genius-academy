@@ -1,156 +1,188 @@
 <!DOCTYPE html>
-  <html lang="fr">
-  <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Genius Academy</title>
-  <style>
-  :root{
-  --bg:#0f1226;
---panel:#181c3a;
---panel2:#20244a;
---text:#eef0ff;
-  --text2:#a9adcf;
-  --gold:#f0a500;
-  --green:#2ecc71;
---blue:#3498db;
---purple:#9b59b6;
---red:#e74c3c;
-  --orange:#e8601c;
-  }
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Genius Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+--bg:#fef6e9;
+--card:#ffffff;
+--ink:#2d2a4a;
+--ink2:#6b6890;
+--gold:#ffb400;
+--green:#2ecc71;
+--blue:#3aa0ff;
+--purple:#a06bff;
+--orange:#ff9f43;
+--pink:#ff5d8f;
+--red:#ff5252;
+--line:#eee2cf;
+}
 *{box-sizing:border-box;}
-body{margin:0;font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);}
-.screen{display:none;padding:20px;max-width:900px;margin:0 auto;}
-.screen.active{display:block;}
-header{background:var(--panel);padding:14px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:3px solid var(--gold);}
-header .logo{font-size:22px;font-weight:800;color:var(--gold);}
-header .sub{font-size:12px;color:var(--text2);}
-nav.tabs{display:flex;gap:8px;padding:10px 20px;background:var(--panel2);flex-wrap:wrap;}
-nav.tabs button{background:transparent;border:1px solid var(--text2);color:var(--text);padding:8px 14px;border-radius:20px;cursor:pointer;font-size:13px;}
-nav.tabs button.active{background:var(--gold);color:#0f1226;border-color:var(--gold);font-weight:700;}
-.card{background:var(--panel);border-radius:14px;padding:18px;margin-bottom:16px;box-shadow:0 4px 14px rgba(0,0,0,.3);}
-h1{font-size:26px;margin-top:0;}
-h2{color:var(--gold);}
-  .btn{background:var(--gold);color:#0f1226;border:none;padding:12px 20px;border-radius:10px;font-weight:700;cursor:pointer;font-size:15px;}
-.btn.secondary{background:var(--panel2);color:var(--text);border:1px solid var(--text2);}
-.btn.green{background:var(--green);color:#08331a;}
-.btn.blue{background:var(--blue);color:#04263f;}
-.btn:disabled{opacity:.4;cursor:not-allowed;}
-  .profiles-grid{display:flex;flex-wrap:wrap;gap:16px;}
-  .profile-card{background:var(--panel);border:2px solid var(--panel2);border-radius:16px;padding:20px;width:160px;text-align:center;cursor:pointer;transition:.2s;}
-.profile-card:hover{border-color:var(--gold);transform:translateY(-3px);}
-  .profile-card .avatar{font-size:46px;}
-  .mission-item{display:flex;align-items:center;gap:12px;background:var(--panel2);border-radius:10px;padding:12px 14px;margin-bottom:10px;cursor:pointer;}
-.mission-item.done{opacity:.5;text-decoration:line-through;}
-.mission-item .icon{font-size:26px;}
-.mission-item .info{flex:1;}
-.mission-item .mins{font-size:12px;color:var(--text2);}
-.badge-pill{display:inline-block;background:rgba(240,165,0,.15);color:var(--gold);border:1px solid var(--gold);padding:4px 10px;border-radius:20px;font-size:12px;margin-right:6px;}
-  .stars-bar{font-size:20px;color:var(--gold);font-weight:800;}
-.question-box{background:var(--panel2);border-radius:14px;padding:26px;text-align:center;}
-.question-box .q{font-size:28px;margin-bottom:20px;}
-  .answers{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
-.answers button{background:var(--panel);border:2px solid var(--text2);color:var(--text);padding:14px 22px;border-radius:10px;font-size:18px;cursor:pointer;min-width:70px;}
-.answers button:hover{border-color:var(--gold);}
-  .feedback{margin-top:16px;font-size:18px;font-weight:700;min-height:26px;}
-  .feedback.ok{color:var(--green);}
-.feedback.ko{color:var(--red);}
-.progress-outer{background:var(--panel2);border-radius:10px;height:14px;overflow:hidden;margin:14px 0;}
-  .progress-inner{background:var(--gold);height:100%;transition:width .3s;}
-.reading-text{background:var(--panel2);border-radius:12px;padding:18px;line-height:1.7;font-size:16px;margin-bottom:16px;}
-input[type=text]{background:var(--panel2);border:1px solid var(--text2);color:var(--text);padding:10px;border-radius:8px;font-size:16px;}
+html,body{margin:0;}
+body{font-family:'Nunito',Arial,sans-serif;background:linear-gradient(160deg,#fff6e5,#e8f7ff 60%,#ffeef7);color:var(--ink);min-height:100vh;}
+h1,h2,h3{font-family:'Baloo 2',cursive;margin:0 0 10px;}
+.screen{display:none;padding:18px 16px 60px;max-width:760px;margin:0 auto;}
+.screen.active{display:block;animation:fadein .35s ease;}
+@keyframes fadein{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
+header{background:var(--card);padding:14px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:4px solid var(--gold);position:sticky;top:0;z-index:5;box-shadow:0 2px 10px rgba(0,0,0,.05);}
+header .logo{font-size:24px;font-weight:800;color:#ff8a00;font-family:'Baloo 2',cursive;display:flex;align-items:center;gap:8px;}
+.stars-bar{font-size:20px;color:#c97e00;font-weight:800;background:#fff3d6;padding:6px 14px;border-radius:20px;border:2px solid var(--gold);}
+nav.tabs{display:flex;gap:8px;padding:10px 16px;background:transparent;flex-wrap:wrap;max-width:760px;margin:0 auto;}
+nav.tabs button{background:var(--card);border:2px solid var(--line);color:var(--ink);padding:9px 16px;border-radius:20px;cursor:pointer;font-size:14px;font-weight:700;font-family:'Nunito';}
+nav.tabs button.active{background:#ff8a00;color:#fff;border-color:#ff8a00;}
+.card{background:var(--card);border-radius:20px;padding:20px;margin-bottom:16px;box-shadow:0 6px 16px rgba(90,60,20,.08);border:2px solid var(--line);}
+.btn{background:#ff8a00;color:#fff;border:none;padding:14px 22px;border-radius:16px;font-weight:800;cursor:pointer;font-size:16px;font-family:'Baloo 2';box-shadow:0 4px 0 #d96f00;}
+.btn:active{transform:translateY(2px);box-shadow:0 2px 0 #d96f00;}
+.btn.secondary{background:#fff;color:var(--ink);border:2px solid var(--line);box-shadow:none;}
+.btn.green{background:var(--green);box-shadow:0 4px 0 #219150;}
+.btn:disabled{opacity:.4;cursor:not-allowed;box-shadow:none;}
+.profiles-grid{display:flex;flex-wrap:wrap;gap:18px;justify-content:center;}
+.profile-card{background:var(--card);border:3px solid var(--line);border-radius:22px;padding:22px 18px;width:150px;text-align:center;cursor:pointer;transition:.15s;position:relative;}
+.profile-card:hover{border-color:var(--gold);transform:translateY(-4px) scale(1.03);}
+.profile-card .avatar{font-size:54px;}
+.subject-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;}
+.subject-tile{border-radius:20px;padding:18px;text-align:center;cursor:pointer;color:#fff;box-shadow:0 6px 0 rgba(0,0,0,.12);transition:.15s;}
+.subject-tile:hover{transform:translateY(-3px);}
+.subject-tile .emoji{font-size:38px;}
+.subject-tile .name{font-family:'Baloo 2';font-size:18px;margin-top:6px;}
+.subject-tile .prog{font-size:12px;margin-top:6px;opacity:.9;}
+.tile-maths{background:linear-gradient(160deg,#2ecc71,#20a85c);}
+.tile-francais{background:linear-gradient(160deg,#3aa0ff,#1f7ee0);}
+.tile-anglais{background:linear-gradient(160deg,#a06bff,#8248e5);}
+.tile-geographie{background:linear-gradient(160deg,#ff9f43,#e6822a);}
+.tile-lecture{background:linear-gradient(160deg,#ff5d8f,#e63f72);}
+.lesson-item{display:flex;align-items:center;gap:14px;background:#fbf7ee;border:2px solid var(--line);border-radius:16px;padding:14px 16px;margin-bottom:12px;cursor:pointer;}
+.lesson-item.locked{opacity:.5;cursor:not-allowed;}
+.lesson-item.done{border-color:var(--green);}
+.lesson-item .num{width:36px;height:36px;border-radius:50%;background:var(--gold);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-family:'Baloo 2';flex-shrink:0;}
+.lesson-item .info{flex:1;}
+.lesson-item .title{font-weight:800;font-family:'Baloo 2';font-size:16px;}
+.lesson-item .meta{font-size:12px;color:var(--ink2);}
+.mascot-bubble{display:flex;gap:12px;align-items:flex-start;background:#eafaf1;border:2px solid #bdeecb;border-radius:16px;padding:14px;margin-bottom:16px;}
+.mascot-bubble .emoji{font-size:36px;}
+.mascot-bubble p{margin:0;font-weight:700;}
+.cours-badge{display:inline-block;background:#eafaf1;color:#1f9d55;border-radius:20px;padding:4px 12px;font-size:12px;font-weight:800;margin-bottom:10px;}
+.cours-text p{line-height:1.7;font-size:16px;margin:0 0 10px;}
+.cours-example{background:#fff8e6;border:2px dashed var(--gold);border-radius:12px;padding:12px 14px;margin:10px 0;font-weight:700;}
+.vocab-line{display:flex;justify-content:space-between;background:#fff;border-radius:10px;padding:10px 14px;margin-bottom:8px;border:2px solid var(--line);font-weight:700;}
+.reading-text{background:#fbf7ee;border-radius:16px;padding:18px;line-height:1.8;font-size:17px;margin-bottom:16px;border:2px solid var(--line);}
+.question-box{background:#fbf7ee;border-radius:18px;padding:24px;text-align:center;border:2px solid var(--line);}
+.question-box .qlabel{font-size:12px;color:var(--ink2);font-weight:800;margin-bottom:6px;}
+.question-box .q{font-size:22px;font-weight:800;margin-bottom:18px;font-family:'Baloo 2';}
+.answers{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
+.answers button{background:#fff;border:3px solid var(--line);color:var(--ink);padding:14px 20px;border-radius:14px;font-size:17px;cursor:pointer;min-width:70px;font-weight:700;font-family:'Nunito';}
+.answers button:hover{border-color:var(--gold);background:#fff8e6;}
+.answers button.correct{background:#e3fbe9;border-color:var(--green);}
+.answers button.wrong{background:#ffe9e9;border-color:var(--red);}
+.feedback{margin-top:16px;font-size:17px;font-weight:800;min-height:26px;}
+.feedback.ok{color:#1f9d55;}
+.feedback.ko{color:#e04545;}
+.progress-outer{background:#eee2cf;border-radius:10px;height:14px;overflow:hidden;margin:14px 0;}
+.progress-inner{background:linear-gradient(90deg,#ffb400,#ff8a00);height:100%;transition:width .3s;}
+input[type=text]{background:#fff;border:2px solid var(--line);color:var(--ink);padding:12px;border-radius:10px;font-size:17px;font-family:'Nunito';}
 table.parent-table{width:100%;border-collapse:collapse;}
-table.parent-table th,table.parent-table td{text-align:left;padding:10px;border-bottom:1px solid var(--panel2);}
-.world-tag{display:inline-block;padding:2px 8px;border-radius:6px;font-size:11px;font-weight:700;margin-left:8px;}
-  .tag-math{background:rgba(46,204,113,.2);color:var(--green);}
-.tag-fr{background:rgba(52,152,219,.2);color:var(--blue);}
-.tag-en{background:rgba(155,89,182,.2);color:var(--purple);}
-.tag-offscreen{background:rgba(232,96,28,.2);color:var(--orange);}
-  </style>
+table.parent-table th,table.parent-table td{text-align:left;padding:10px;border-bottom:1px solid var(--line);font-size:14px;}
+.badge-pill{display:inline-block;background:#fff3d6;color:#c97e00;border:2px solid var(--gold);padding:5px 12px;border-radius:20px;font-size:13px;margin:4px 4px 0 0;font-weight:800;}
+.avatar-pick{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0;}
+.avatar-pick span{font-size:28px;padding:6px;border-radius:10px;border:2px solid transparent;cursor:pointer;}
+.avatar-pick span.sel{border-color:var(--gold);background:#fff3d6;}
+.track-label{display:inline-block;background:#eafaf1;color:#1f9d55;border-radius:20px;padding:3px 10px;font-size:12px;font-weight:800;margin-left:8px;}
+.result-emoji{font-size:60px;text-align:center;margin-bottom:10px;}
+.del-x{position:absolute;top:6px;right:8px;font-size:14px;color:#c33;cursor:pointer;opacity:.6;}
+.del-x:hover{opacity:1;}
+</style>
 </head>
-    <body>
-    <header>
-  <div>
-  <div class="logo">Genius Academy</div>
-    <div class="sub" id="headerSub">Choisis ton profil pour commencer</div>
-  </div>
-  <div id="starsDisplay" class="stars-bar" style="display:none;"></div>
+<body>
+<header>
+<div class="logo">🦉 Genius Academy</div>
+<div id="starsDisplay" class="stars-bar" style="display:none;"></div>
 </header>
-    <nav class="tabs" id="mainNav" style="display:none;">
-    <button data-screen="screen-home" class="navbtn">Accueil</button>
-    <button data-screen="screen-rewards" class="navbtn">Recompenses</button>
-    <button data-screen="screen-parent" class="navbtn">Espace parent</button>
-    <button id="switchProfileBtn">Changer de profil</button>
+<nav class="tabs" id="mainNav" style="display:none;">
+<button data-screen="screen-home" class="navbtn">🏠 Accueil</button>
+<button data-screen="screen-rewards" class="navbtn">🏆 Récompenses</button>
+<button data-screen="screen-parent" class="navbtn">👪 Espace parent</button>
+<button id="switchProfileBtn">🔄 Changer</button>
 </nav>
 <main>
+
 <section id="screen-select-profile" class="screen active">
-    <h1>Bienvenue sur Genius Academy</h1>
-    <p>Choisis ton profil pour commencer l aventure du jour.</p>
+<div style="text-align:center;margin-bottom:10px;">
+<h1>Bienvenue sur Genius Academy !</h1>
+<p>Choisis ton profil pour commencer l'aventure du jour 🚀</p>
+</div>
 <div class="profiles-grid" id="profilesGrid"></div>
-<div class="card" style="margin-top:20px;">
-    <h2>Ajouter un enfant</h2>
-<input type="text" id="newProfileName" placeholder="Prenom de l enfant">
-    <div style="margin:12px 0;">
-    <label><input type="radio" name="track" value="7" checked> Parcours 7 ans</label>
-    <label style="margin-left:16px;"><input type="radio" name="track" value="9"> Parcours 9 ans</label>
-    </div>
-    <button class="btn" id="addProfileBtn">Creer le profil</button>
+<div class="card" style="margin-top:22px;max-width:420px;margin-left:auto;margin-right:auto;">
+<h2>➕ Ajouter un enfant</h2>
+<input type="text" id="newProfileName" placeholder="Prenom de l'enfant" style="width:100%;">
+<div style="margin:12px 0;">
+<label><input type="radio" name="track" value="7" checked> Parcours 7 ans (CE1)</label><br><br>
+<label><input type="radio" name="track" value="9"> Parcours 9 ans (CE2-CM1)</label>
+</div>
+<div class="avatar-pick" id="avatarPick"></div>
+<button class="btn" id="addProfileBtn">Créer le profil</button>
 </div>
 </section>
+
 <section id="screen-home" class="screen">
-<h1 id="homeGreeting">Bonjour</h1>
-    <div class="card">
-    <h2>Mission du jour</h2>
-<div class="progress-outer"><div class="progress-inner" id="dayProgress" style="width:0%;"></div></div>
-    <div id="missionList"></div>
-    </div>
-    </section>
-    <section id="screen-lesson-math" class="screen">
-    <button class="btn secondary backbtn">Retour</button>
-    <h1>Foret des Nombres</h1>
+<div class="mascot-bubble">
+<div class="emoji">🦉</div>
+<p id="mascotHomeMsg">Bonjour !</p>
+</div>
 <div class="card">
-<div class="progress-outer"><div class="progress-inner" id="mathProgress" style="width:0%;"></div></div>
-    <div class="question-box">
-    <div class="q" id="mathQuestion">?</div>
-    <div class="answers" id="mathAnswers"></div>
-    <div class="feedback" id="mathFeedback"></div>
-    </div>
-    </div>
-    </section>
-    <section id="screen-lesson-fr" class="screen">
-    <button class="btn secondary backbtn">Retour</button>
-    <h1>Royaume des Mots</h1>
-<div class="card" id="frCard"></div>
+<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
+<h2 id="homeGreeting" style="margin:0;">Bonjour</h2>
+<div id="streakDisplay" style="font-weight:800;color:#e67e22;"></div>
+</div>
+<div class="progress-outer"><div class="progress-inner" id="dayProgress" style="width:0%;"></div></div>
+<div id="dayProgressLabel" style="font-size:13px;color:var(--ink2);"></div>
+</div>
+<div class="subject-grid" id="subjectGrid"></div>
 </section>
-<section id="screen-lesson-en" class="screen">
-    <button class="btn secondary backbtn">Retour</button>
-    <h1>English Island</h1>
-    <div class="card" id="enCard"></div>
+
+<section id="screen-subject" class="screen">
+<button class="btn secondary backbtn">⬅ Retour</button>
+<h1 id="subjectTitle">Matière</h1>
+<div id="lessonList"></div>
 </section>
-    <section id="screen-rewards" class="screen">
-    <h1>Mes Recompenses</h1>
-    <div class="card">
-    <div class="stars-bar" id="rewardsStars"></div>
-    <div class="progress-outer"><div class="progress-inner" id="badgeProgress" style="width:0%;"></div></div>
-    <p id="badgeNext"></p>
-    </div>
-    <div class="card">
-    <h2>Badges debloques</h2>
-    <div id="badgesList"></div>
-    </div>
-    </section>
-    <section id="screen-parent" class="screen">
-    <h1>Espace Parent</h1>
-    <div class="card">
-    <table class="parent-table" id="parentTable">
-    <thead><tr><th>Enfant</th><th>Parcours</th><th>Etoiles</th><th>Missions du jour</th><th>Derniere activite</th></tr></thead>
-    <tbody id="parentTbody"></tbody>
+
+<section id="screen-lesson" class="screen">
+<button class="btn secondary backbtn">⬅ Retour</button>
+<div id="lessonCard"></div>
+</section>
+
+<section id="screen-rewards" class="screen">
+<h1>🏆 Mes Récompenses</h1>
+<div class="card" style="text-align:center;">
+<div class="stars-bar" id="rewardsStars" style="font-size:26px;"></div>
+<div class="progress-outer"><div class="progress-inner" id="badgeProgress" style="width:0%;"></div></div>
+<p id="badgeNext"></p>
+</div>
+<div class="card">
+<h2>Badges débloqués</h2>
+<div id="badgesList"></div>
+</div>
+</section>
+
+<section id="screen-parent" class="screen">
+<h1>👪 Espace Parent</h1>
+<div class="card">
+<table class="parent-table" id="parentTable">
+<thead><tr><th>Enfant</th><th>Parcours</th><th>Étoiles</th><th>Série</th><th>Leçons faites</th><th>Dernière activité</th></tr></thead>
+<tbody id="parentTbody"></tbody>
 </table>
 </div>
+<div class="card" id="parentDetail"></div>
 </section>
+
 </main>
 <script>
+
 const STORAGE_KEY='geniusAcademyData';
+const AVATARS=['🦄','🐱','🐶','🦋','🐼','🦉','🐰','🦊','🐸','🐧'];
 function loadData(){
 try{return JSON.parse(localStorage.getItem(STORAGE_KEY))||{profiles:[],currentId:null};}catch(e){return {profiles:[],currentId:null};}
 }
@@ -159,40 +191,402 @@ let DATA=loadData();
 function todayStr(){return new Date().toISOString().slice(0,10);}
 function getProfile(id){return DATA.profiles.find(function(p){return p.id===id;});}
 function getCurrentProfile(){return getProfile(DATA.currentId);}
-function createProfile(name,track){
-  const p={id:'p'+Date.now(),name:name,track:track,stars:0,badges:[],missionsDoneToday:[],lastDate:todayStr(),lastActive:'-'};
-    DATA.profiles.push(p);
+function createProfile(name,track,avatar){
+const p={id:'p'+Date.now()+Math.floor(Math.random()*1000),name:name,track:String(track),avatar:avatar||(String(track)==='9'?'🦉':'🦄'),stars:0,badges:[],progress:{},streak:0,lastLessonDate:'',lastActive:'-'};
+DATA.profiles.push(p);
 saveData(DATA);
 return p;
-          }
-function ensureDay(p){
-  const t=todayStr();
-if(p.lastDate!==t){p.lastDate=t;p.missionsDoneToday=[];saveData(DATA);}
 }
-const MISSIONS_7=[
-{key:'calc7',icon:'\ud83e\uddee',label:'Echauffement de calcul mental',mins:10,type:'math'},
-  {key:'lecture7',icon:'\ud83d\udcd6',label:'Aventure de lecture',mins:20,type:'fr'},
-  {key:'ecriture7',icon:'\u270d',label:'Francais et ecriture',mins:20,type:'fr'},
-  {key:'pause7',icon:'\ud83e\udd38',label:'Pause active guidee',mins:10,type:'offscreen',desc:'Fais 10 minutes de saut a la corde, danse ou etirements.'},
-  {key:'maths7',icon:'\ud83d\udd22',label:'Mathematiques',mins:25,type:'math'},
-  {key:'anglais7',icon:'\ud83d\udde3',label:'Anglais oral',mins:15,type:'en'},
-  {key:'sciences7',icon:'\ud83d\udd2c',label:'Mission sciences hors ecran',mins:30,type:'offscreen',desc:'Observe une plante du jardin et dessine ce que tu vois.'},
-{key:'art7',icon:'\ud83c\udfa8',label:'Dessin ou musique',mins:20,type:'offscreen',desc:'Dessine ou chante quelque chose qui te rend heureux.'},
-{key:'lecturepersonnelle7',icon:'\ud83d\udcda',label:'Lecture personnelle',mins:20,type:'offscreen',desc:'Lis un livre de ton choix pendant 20 minutes.'},
-{key:'presentation7',icon:'\ud83c\udfa4',label:'Presentation de la decouverte du jour',mins:10,type:'offscreen',desc:'Raconte a un adulte ce que tu as appris aujourd hui.'}
+function migrateProfiles(){
+var changed=false;
+DATA.profiles.forEach(function(p){
+if(p.name==='Lina'){p.name='Louise';changed=true;}
+if(p.name==='Noe'||p.name==='Noé'){p.name='Béatrice';changed=true;}
+if(!p.avatar){p.avatar=p.track==='9'?'🦉':'🦄';changed=true;}
+if(!p.progress){p.progress={};changed=true;}
+if(typeof p.streak!=='number'){p.streak=0;changed=true;}
+if(typeof p.lastLessonDate!=='string'){p.lastLessonDate='';changed=true;}
+if(p.missionsDoneToday){delete p.missionsDoneToday;changed=true;}
+});
+if(DATA.profiles.length===0){
+createProfile('Louise','7','🦄');
+createProfile('Béatrice','9','🦉');
+changed=true;
+}
+if(changed)saveData(DATA);
+}
+function ensureProgress(p,subject,count){
+if(!p.progress[subject])p.progress[subject]=[];
+while(p.progress[subject].length<count)p.progress[subject].push(false);
+}
+const SUBJECTS=[
+{key:'maths',name:'Mathématiques',emoji:'🔢',tile:'tile-maths'},
+{key:'francais',name:'Français',emoji:'📘',tile:'tile-francais'},
+{key:'anglais',name:'Anglais',emoji:'🗣️',tile:'tile-anglais'},
+{key:'geographie',name:'Géographie',emoji:'🌍',tile:'tile-geographie'},
+{key:'lecture',name:'Lecture',emoji:'📖',tile:'tile-lecture'}
 ];
-const MISSIONS_9=[
-{key:'calc9',icon:'\ud83e\uddee',label:'Calcul mental adaptatif',mins:10,type:'math'},
-{key:'maths9',icon:'\ud83d\udd22',label:'Mathematiques et resolution de probleme',mins:30,type:'math'},
-{key:'redaction9',icon:'\u270d',label:'Francais et redaction',mins:30,type:'fr'},
-{key:'anglais9',icon:'\ud83d\udde3',label:'Anglais',mins:20,type:'en'},
-{key:'sciences9',icon:'\ud83c\udf0d',label:'Sciences ou histoire geographie',mins:30,type:'offscreen',desc:'Choisis un sujet et fais une petite recherche avec un adulte.'},
-{key:'info9',icon:'\ud83d\udcbb',label:'Projet informatique ou IA',mins:25,type:'offscreen',desc:'Reflechis a un petit programme ou une histoire que tu pourrais creer.'},
-{key:'exterieur9',icon:'\ud83c\udf33',label:'Mission exterieure ou experience',mins:25,type:'offscreen',desc:'Realise une experience ou une observation en exterieur.'},
-{key:'sport9',icon:'\u26bd',label:'Sport',mins:30,type:'offscreen',desc:'Fais 30 minutes de sport ou de jeu physique.'},
-{key:'lecture9',icon:'\ud83d\udcda',label:'Lecture',mins:20,type:'offscreen',desc:'Lis un livre de ton choix pendant 20 minutes.'}
+
+const CONTENT={maths:{},francais:{},anglais:{},geographie:{},lecture:{}};
+CONTENT.maths['7']=[
+{title:'Calcul mental',emoji:'⚡',procedural:'calc7',badge:'Nombres et calcul',cours:[
+"Le calcul mental, c'est calculer dans sa tête, sans poser l'opération sur une feuille !",
+"Astuce pour additionner : pars du plus grand nombre et avance. Astuce pour soustraire : pense à ce qu'il manque pour retrouver le nombre de départ."],
+example:"Exemple : 8 + 5, je pars de 8 et j'avance de 5 : 9, 10, 11, 12, 13. Le résultat est 13."},
+{title:"Les nombres jusqu'à 100",emoji:'🔢',badge:'Nombres',cours:[
+"Un nombre peut s'écrire avec des dizaines et des unités.",
+"Par exemple, 47 est composé de 4 dizaines et 7 unités : c'est 4 paquets de dix, plus 7.",
+"Pour ranger des nombres du plus petit au plus grand, on regarde d'abord le chiffre des dizaines, puis celui des unités."],
+example:"Exemple : 63 = 6 dizaines et 3 unités, car 6×10 + 3 = 63.",
+exercises:[
+{type:'qcm',q:'Combien de dizaines y a-t-il dans 63 ?',choices:['5','6','7','8'],correct:1,explain:"63 = 6 dizaines et 3 unités."},
+{type:'qcm',q:'Quel nombre vient juste après 59 ?',choices:['58','60','61','50'],correct:1,explain:"Après 59 vient 60."},
+{type:'qcm',q:"Dans 36, il y a 3 dizaines et ... unités.",choices:['3','6','9','0'],correct:1,explain:"36 = 3 dizaines et 6 unités."},
+{type:'qcm',q:'Quel est le plus petit de ces nombres ?',choices:['45','54','44','55'],correct:2,explain:"44 est plus petit que 45, 54 et 55."},
+{type:'text',q:'Écris en chiffres : soixante-douze',answer:'72',explain:"Soixante-douze s'écrit 72."}
+]},
+{title:"L'addition posée",emoji:'➕',badge:'Calcul',cours:[
+"Pour additionner deux grands nombres, on les pose l'un sous l'autre : unités sous unités, dizaines sous dizaines.",
+"On additionne d'abord les unités. Si le résultat dépasse 9, on pose une retenue que l'on ajoute aux dizaines."],
+example:"Exemple : 27 + 15 : 7+5=12, j'écris 2 et je retiens 1. 2+1+1=4. Résultat : 42.",
+exercises:[
+{type:'qcm',q:'27 + 16 = ?',choices:['43','42','44','53'],correct:0,explain:"27 + 16 = 43."},
+{type:'qcm',q:'38 + 25 = ?',choices:['63','53','73','62'],correct:0,explain:"38 + 25 = 63."},
+{type:'qcm',q:"Léo a 24 billes, il en gagne 19. Combien a-t-il de billes en tout ?",choices:['43','33','53','42'],correct:0,explain:"24 + 19 = 43."},
+{type:'qcm',q:"Quand la somme des unités dépasse 9, on pose une...",choices:['retenue','virgule','dizaine en moins','division'],correct:0,explain:"On pose une retenue qu'on ajoute aux dizaines."},
+{type:'text',q:'Calcule : 45 + 37 = ?',answer:'82',explain:"45 + 37 = 82."}
+]},
+{title:"La soustraction et les problèmes",emoji:'➖',badge:'Calcul',cours:[
+"Pour soustraire, on pose aussi les nombres unités sous unités. Si on ne peut pas retirer, on emprunte une dizaine.",
+"Dans un problème, cherche bien ce que l'on demande : ce qui reste, ce qui manque, ou une différence."],
+example:"Exemple : 52 - 27 : je ne peux pas faire 2-7, j'emprunte une dizaine : 12-7=5, puis 4-2=2. Résultat : 25.",
+exercises:[
+{type:'qcm',q:'52 - 27 = ?',choices:['25','35','24','26'],correct:0,explain:"52 - 27 = 25."},
+{type:'qcm',q:"Une classe de 30 élèves compte 14 garçons. Combien de filles ?",choices:['16','15','14','17'],correct:0,explain:"30 - 14 = 16."},
+{type:'qcm',q:'60 - 18 = ?',choices:['42','52','32','48'],correct:0,explain:"60 - 18 = 42."},
+{type:'vf',q:"Dans une soustraction, on peut échanger les deux nombres sans changer le résultat.",correct:false,explain:"Non, l'ordre compte : 10-3 n'est pas égal à 3-10."},
+{type:'text',q:'Sam a 50 bonbons, il en donne 23 à son ami. Combien lui en reste-t-il ?',answer:'27',explain:"50 - 23 = 27."}
+]}
 ];
-function getMissions(track){return track==='9'?MISSIONS_9:MISSIONS_7;}
+CONTENT.maths['9']=[
+{title:'Calcul mental',emoji:'⚡',procedural:'calc9',badge:'Nombres et calcul',cours:[
+"Bien connaître ses tables de multiplication permet de calculer très vite dans sa tête.",
+"Pour vérifier une division, pense à la multiplication inverse : si 56÷8=7, alors 8×7=56."],
+example:"Exemple : 7 × 8 = 56, donc 56 ÷ 8 = 7."},
+{title:'La multiplication',emoji:'✖️',badge:'Calcul',cours:[
+"Multiplier, c'est additionner plusieurs fois le même nombre. 4 × 3 veut dire 4+4+4.",
+"Pour poser une multiplication par un nombre à un chiffre, on multiplie chaque chiffre puis on gère les retenues."],
+example:"Exemple : 24 × 3 : 4×3=12 (je pose 2, retiens 1), 2×3=6, +1=7. Résultat : 72.",
+exercises:[
+{type:'qcm',q:'24 × 3 = ?',choices:['72','62','82','66'],correct:0,explain:"24 × 3 = 72."},
+{type:'qcm',q:'Une boîte contient 8 crayons. Combien de crayons dans 6 boîtes ?',choices:['48','42','54','46'],correct:0,explain:"8 × 6 = 48."},
+{type:'qcm',q:'6 × 7 = ?',choices:['42','36','48','40'],correct:0,explain:"6 × 7 = 42."},
+{type:'qcm',q:'Multiplier un nombre entier par 10, c\'est...',choices:["ajouter un zéro à droite",'le diviser par 10','ajouter 10','le multiplier par 2'],correct:0,explain:"24 × 10 = 240 : on ajoute un zéro."},
+{type:'text',q:'Calcule : 15 × 4 = ?',answer:'60',explain:"15 × 4 = 60."}
+]},
+{title:'La division',emoji:'➗',badge:'Calcul',cours:[
+"Diviser, c'est partager en parts égales ou faire des groupes égaux.",
+"Pour vérifier un résultat de division, on peut multiplier le quotient par le diviseur."],
+example:"Exemple : 56 ÷ 8 = 7, car 8 × 7 = 56.",
+exercises:[
+{type:'qcm',q:'56 ÷ 8 = ?',choices:['7','6','8','9'],correct:0,explain:"8 × 7 = 56, donc 56 ÷ 8 = 7."},
+{type:'qcm',q:'On partage 45 billes entre 5 amis. Combien de billes chacun ?',choices:['9','8','10','7'],correct:0,explain:"45 ÷ 5 = 9."},
+{type:'qcm',q:'63 ÷ 7 = ?',choices:['9','8','7','10'],correct:0,explain:"7 × 9 = 63."},
+{type:'vf',q:'Dans une division, le reste doit toujours être plus petit que le diviseur.',correct:true,explain:'Oui, sinon on pourrait encore diviser une fois de plus.'},
+{type:'text',q:'72 ÷ 9 = ?',answer:'8',explain:"9 × 8 = 72."}
+]},
+{title:'Les fractions simples',emoji:'🍕',badge:'Fractions',cours:[
+"Une fraction représente une partie d'un tout partagé en parts égales.",
+"1/2 veut dire une part sur deux, c'est-à-dire la moitié. 1/4 veut dire une part sur quatre."],
+example:"Exemple : une pizza coupée en 4 parts égales, j'en mange 1 : j'ai mangé 1/4 de la pizza.",
+exercises:[
+{type:'qcm',q:"Une pizza est coupée en 4 parts égales. J'en mange 1. Quelle fraction ai-je mangée ?",choices:['1/4','1/2','4/1','2/4'],correct:0,explain:"1 part sur 4 s'écrit 1/4."},
+{type:'qcm',q:"1/2 d'une tarte, c'est...",choices:['la moitié','le quart','le tiers','le tout'],correct:0,explain:"1/2 est la moitié."},
+{type:'qcm',q:'Quelle est la plus grande de ces fractions ?',choices:['1/2','1/4','1/8','1/10'],correct:0,explain:"Plus le nombre du bas est petit, plus la part est grande."},
+{type:'text',q:"Une boîte de 10 oeufs, 5 sont utilisés. Quelle fraction représente les oeufs utilisés ? (exemple de format : 5/10)",answer:'5/10',explain:"5 utilisés sur 10 au total : 5/10."},
+{type:'qcm',q:'3/4 se lit...',choices:['trois quarts','trois quatrièmes','quatre tiers','trois sur quatre seulement'],correct:0,explain:'On dit trois quarts.'}
+]}
+];
+
+CONTENT.francais['7']=[
+{title:'Le nom et le verbe',emoji:'📝',badge:'Grammaire',cours:[
+"Le nom désigne une personne, un animal ou une chose (chat, maison, Louise).",
+"Le verbe indique l'action que fait quelqu'un ou quelque chose (manger, courir, chanter)."],
+example:"Dans la phrase 'Le chat mange une souris', 'chat' et 'souris' sont des noms, 'mange' est le verbe.",
+exercises:[
+{type:'qcm',q:"Dans la phrase 'La petite fille chante une chanson', quel mot est le verbe ?",choices:['chante','fille','petite','chanson'],correct:0,explain:"'Chante' est l'action : c'est le verbe."},
+{type:'qcm',q:'Lequel de ces mots est un nom ?',choices:['maison','jouer','joli','vite'],correct:0,explain:"'Maison' désigne une chose : c'est un nom."},
+{type:'qcm',q:"Dans 'Les oiseaux volent dans le ciel', qui fait l'action ?",choices:['Les oiseaux','volent','le ciel','dans'],correct:0,explain:"Ce sont les oiseaux qui volent."},
+{type:'vf',q:'Un verbe peut changer de forme selon qui fait l\'action (je mange, tu manges).',correct:true,explain:"Oui, le verbe se conjugue."},
+{type:'text',q:"Trouve le verbe dans la phrase : 'Le chien court vite.'",answer:'court',explain:"'Court' est l'action faite par le chien."}
+]},
+{title:'Le pluriel des noms',emoji:'🔤',badge:'Orthographe',cours:[
+"En général, pour écrire un nom au pluriel, on ajoute un 's' à la fin.",
+"Certains noms sont des exceptions : les mots en -eau prennent souvent un 'x', et certains mots changent complètement."],
+example:"un chapeau → des chapeaux (avec un x). Un cheval → des chevaux (mot qui change).",
+exercises:[
+{type:'qcm',q:"Quel est le pluriel de 'chat' ?",choices:['chats','chates','chatx','chases'],correct:0,explain:"On ajoute simplement un s : chats."},
+{type:'qcm',q:"Quel est le pluriel de 'bateau' ?",choices:['bateaux','bateaus','bateau','bateauxs'],correct:0,explain:"Les mots en -eau prennent un x au pluriel."},
+{type:'qcm',q:'Quel mot est déjà au pluriel ?',choices:['des livres','le livre','la table','un stylo'],correct:0,explain:"'Des livres' est au pluriel grâce à 'des' et au 's'."},
+{type:'text',q:"Mets au pluriel : 'un animal' → des ...",answer:'animaux',explain:"Les mots en -al font souvent -aux au pluriel."},
+{type:'vf',q:"Tous les noms se mettent au pluriel en ajoutant simplement un 's'.",correct:false,explain:"Non, certains font exception comme cheval → chevaux."}
+]},
+{title:'La phrase et la ponctuation',emoji:'❓',badge:'Grammaire',cours:[
+"Une phrase commence toujours par une majuscule et se termine par un point.",
+"On utilise le point d'interrogation (?) pour une question, et le point d'exclamation (!) pour la surprise, la joie ou un ordre."],
+example:"Quelle heure est-il ? / Quelle bonne idée !",
+exercises:[
+{type:'qcm',q:'Quelle phrase est correctement écrite ?',choices:['Le chat dort.','le chat dort','Le chat dort','le Chat dort.'],correct:0,explain:"Elle a une majuscule et un point : c'est correct."},
+{type:'qcm',q:"Quelle ponctuation utilise-t-on à la fin d'une question ?",choices:['?','!','.',','],correct:0,explain:"Le point d'interrogation sert à poser une question."},
+{type:'qcm',q:"'Attention, la porte est ouverte' se termine par...",choices:['!','?','.',':'],correct:0,explain:"C'est une alerte, on utilise le point d'exclamation."},
+{type:'vf',q:'Une phrase commence toujours par une majuscule.',correct:true,explain:"Oui, c'est une règle de ponctuation."},
+{type:'qcm',q:"Comment faut-il écrire le début de : 'les enfants jouent dans le jardin' ?",choices:['Les enfants jouent dans le jardin.','les enfants jouent dans le jardin','LES enfants jouent dans le jardin','Les Enfants jouent dans le jardin.'],correct:0,explain:"Majuscule au début, point à la fin."}
+]}
+];
+CONTENT.francais['9']=[
+{title:'Nature des mots',emoji:'📝',badge:'Grammaire',cours:[
+"Le déterminant accompagne toujours le nom (le, la, un, une, des...).",
+"L'adjectif décrit le nom (sa couleur, sa taille, sa qualité). L'adverbe précise souvent le verbe."],
+example:"Dans 'la grande maison bleue', 'maison' est le nom, 'grande' et 'bleue' sont des adjectifs, 'la' est le déterminant.",
+exercises:[
+{type:'qcm',q:"Dans 'un petit chien noir aboie', quel mot décrit la couleur ?",choices:['noir','petit','chien','aboie'],correct:0,explain:"'Noir' décrit la couleur du chien : c'est un adjectif."},
+{type:'qcm',q:'Quel mot est un déterminant ?',choices:['la','courir','beau','doucement'],correct:0,explain:"'La' accompagne un nom : c'est un déterminant."},
+{type:'qcm',q:"Dans 'Elle mange rapidement', quelle est la nature de 'rapidement' ?",choices:['un adverbe','un nom','un verbe','un adjectif'],correct:0,explain:"'Rapidement' précise le verbe : c'est un adverbe."},
+{type:'vf',q:"Un adjectif s'accorde en genre et en nombre avec le nom qu'il décrit.",correct:true,explain:"Oui, c'est la règle de l'accord."},
+{type:'qcm',q:'Quel groupe contient un nom, un déterminant et un adjectif ?',choices:['la belle fleur','courir vite','très joli','elle chante'],correct:0,explain:"'La' (déterminant), 'belle' (adjectif), 'fleur' (nom)."}
+]},
+{title:'Conjugaison au présent',emoji:'🕐',badge:'Conjugaison',cours:[
+"Au présent, les verbes en -er se conjuguent avec les terminaisons : e, es, e, ons, ez, ent.",
+"Il faut bien identifier le sujet du verbe pour choisir la bonne terminaison."],
+example:"Chanter : je chante, tu chantes, il chante, nous chantons, vous chantez, ils chantent.",
+exercises:[
+{type:'qcm',q:"Conjugue 'jouer' avec 'nous' au présent : nous ...",choices:['jouons','joue','jouez','jouent'],correct:0,explain:"Avec 'nous', la terminaison est -ons."},
+{type:'qcm',q:"Conjugue 'aimer' avec 'elle' au présent : elle ...",choices:['aime','aimes','aimons','aiment'],correct:0,explain:"Avec 'elle', la terminaison est -e."},
+{type:'qcm',q:"Quelle terminaison utilise-t-on avec 'ils' pour un verbe en -er ?",choices:['-ent','-ons','-ez','-e'],correct:0,explain:"Avec 'ils', la terminaison est -ent."},
+{type:'text',q:"Conjugue 'parler' avec 'tu' : tu ...",answer:'parles',explain:"Avec 'tu', la terminaison est -es."},
+{type:'vf',q:"Le verbe être au présent avec 'je' donne 'je suis'.",correct:true,explain:"Oui, être est un verbe irrégulier très utilisé."}
+]},
+{title:'Les accords dans le groupe nominal',emoji:'🔤',badge:'Orthographe',cours:[
+"Dans un groupe nominal, le déterminant et l'adjectif s'accordent avec le nom en genre (masculin ou féminin) et en nombre (singulier ou pluriel)."],
+example:"un chat noir → une chatte noire → des chats noirs.",
+exercises:[
+{type:'qcm',q:"Accorde : 'une ... maison' (grand)",choices:['grande','grand','grands','grandes'],correct:0,explain:"Maison est féminin singulier : grande."},
+{type:'qcm',q:"Accorde : 'des chevaux ...' (rapide)",choices:['rapides','rapide','rapidement','rapidon'],correct:0,explain:"Chevaux est masculin pluriel : rapides."},
+{type:'qcm',q:'Quel groupe est correctement accordé ?',choices:['les petites filles','les petit filles','le petites filles','les petites fille'],correct:0,explain:"Tout s'accorde au féminin pluriel."},
+{type:'vf',q:"L'adjectif s'accorde toujours avec le sujet du verbe.",correct:false,explain:"Non, l'adjectif s'accorde avec le nom qu'il qualifie."},
+{type:'text',q:"Accorde : 'une robe ...' (bleu)",answer:'bleue',explain:"Robe est féminin : bleue."}
+]}
+];
+
+CONTENT.anglais['7']=[
+{title:'Colours & Animals',emoji:'🎨',badge:'Vocabulary',vocab:[
+{en:'red',fr:'rouge'},{en:'blue',fr:'bleu'},{en:'green',fr:'vert'},{en:'yellow',fr:'jaune'},
+{en:'cat',fr:'chat'},{en:'dog',fr:'chien'},{en:'bird',fr:'oiseau'}],
+cours:["Découvre les couleurs et quelques animaux en anglais.","Répète chaque mot à voix haute avant de commencer les exercices !"],
+exercises:[
+{type:'qcm',q:"Translate: 'cat'",choices:['chat','chien','oiseau','rouge'],correct:0,explain:"'Cat' veut dire chat."},
+{type:'qcm',q:"Translate: 'blue'",choices:['bleu','vert','jaune','rouge'],correct:0,explain:"'Blue' veut dire bleu."},
+{type:'qcm',q:"Translate: 'dog'",choices:['chien','chat','oiseau','vert'],correct:0,explain:"'Dog' veut dire chien."},
+{type:'qcm',q:"Comment dit-on 'rouge' en anglais ?",choices:['red','blue','green','yellow'],correct:0,explain:"Rouge se dit 'red'."},
+{type:'qcm',q:"Translate: 'bird'",choices:['oiseau','chien','chat','jaune'],correct:0,explain:"'Bird' veut dire oiseau."}
+]},
+{title:'Numbers & Greetings',emoji:'👋',badge:'Vocabulary',vocab:[
+{en:'one',fr:'un'},{en:'two',fr:'deux'},{en:'three',fr:'trois'},{en:'hello',fr:'bonjour'},
+{en:'goodbye',fr:'au revoir'},{en:'please',fr:"s'il te plaît"},{en:'thank you',fr:'merci'}],
+cours:["Apprends à compter et à dire bonjour en anglais.","Ces mots te serviront tous les jours !"],
+exercises:[
+{type:'qcm',q:"Translate: 'hello'",choices:['bonjour','au revoir','merci','trois'],correct:0,explain:"'Hello' veut dire bonjour."},
+{type:'qcm',q:"Comment dit-on 'merci' en anglais ?",choices:['thank you','please','goodbye','one'],correct:0,explain:"Merci se dit 'thank you'."},
+{type:'qcm',q:"Translate: 'three'",choices:['trois','deux','un','quatre'],correct:0,explain:"'Three' veut dire trois."},
+{type:'qcm',q:"Translate: 'goodbye'",choices:['au revoir','bonjour','merci','deux'],correct:0,explain:"'Goodbye' veut dire au revoir."},
+{type:'qcm',q:"Comment dit-on 's'il te plaît' en anglais ?",choices:['please','thank you','hello','two'],correct:0,explain:"S'il te plaît se dit 'please'."}
+]},
+{title:'My Family',emoji:'👪',badge:'Vocabulary',vocab:[
+{en:'mother',fr:'mère'},{en:'father',fr:'père'},{en:'sister',fr:'soeur'},{en:'brother',fr:'frère'}],
+cours:["Apprends à parler de ta famille en anglais.","Exemple de phrase : 'I am seven years old' veut dire 'J'ai sept ans'."],
+example:"I am seven years old = J'ai sept ans.",
+exercises:[
+{type:'qcm',q:"Translate: 'mother'",choices:['mère','père','soeur','frère'],correct:0,explain:"'Mother' veut dire mère."},
+{type:'qcm',q:"Translate: 'brother'",choices:['frère','soeur','mère','père'],correct:0,explain:"'Brother' veut dire frère."},
+{type:'qcm',q:"Comment dit-on 'soeur' en anglais ?",choices:['sister','brother','mother','father'],correct:0,explain:"Soeur se dit 'sister'."},
+{type:'qcm',q:"Complete: 'I ___ seven years old.'",choices:['am','is','are','be'],correct:0,explain:"On dit 'I am' (je suis / j'ai, pour l'âge)."},
+{type:'qcm',q:"Translate: 'father'",choices:['père','mère','soeur','frère'],correct:0,explain:"'Father' veut dire père."}
+]}
+];
+CONTENT.anglais['9']=[
+{title:'Daily Routine',emoji:'⏰',badge:'Vocabulary',vocab:[
+{en:'to wake up',fr:'se réveiller'},{en:'to eat breakfast',fr:'prendre le petit-déjeuner'},
+{en:'to go to school',fr:"aller à l'école"},{en:'to sleep',fr:'dormir'},{en:'every day',fr:'chaque jour'}],
+cours:["Découvre le vocabulaire de la routine quotidienne.","Exemple : 'I wake up at seven o'clock every day' veut dire 'Je me réveille à sept heures chaque jour'."],
+example:"I wake up at seven o'clock every day.",
+exercises:[
+{type:'qcm',q:"Translate: 'to wake up'",choices:['se réveiller','dormir',"aller à l'école",'manger'],correct:0,explain:"'To wake up' veut dire se réveiller."},
+{type:'qcm',q:"Comment dit-on 'dormir' en anglais ?",choices:['to sleep','to wake up','to eat','to go'],correct:0,explain:"Dormir se dit 'to sleep'."},
+{type:'qcm',q:"Complete: 'I ___ breakfast every morning.'",choices:['eat','eats','eating','ate'],correct:0,explain:"Avec 'I', on utilise la base du verbe : 'eat'."},
+{type:'qcm',q:"Translate: 'to go to school'",choices:['to go to school','to sleep','to wake up','to eat breakfast'],correct:0,explain:"C'est la traduction directe."},
+{type:'vf',q:"'Every day' means 'chaque jour'.",correct:true,explain:"Oui, c'est exact."}
+]},
+{title:'Weather & Seasons',emoji:'☀️',badge:'Vocabulary',vocab:[
+{en:'sunny',fr:'ensoleillé'},{en:'rainy',fr:'pluvieux'},{en:'cold',fr:'froid'},
+{en:'hot',fr:'chaud'},{en:'winter',fr:'hiver'},{en:'summer',fr:'été'}],
+cours:["Apprends à parler du temps et des saisons en anglais."],
+exercises:[
+{type:'qcm',q:"Translate: 'sunny'",choices:['ensoleillé','pluvieux','froid','chaud'],correct:0,explain:"'Sunny' veut dire ensoleillé."},
+{type:'qcm',q:"Comment dit-on 'été' en anglais ?",choices:['summer','winter','hot','cold'],correct:0,explain:"Été se dit 'summer'."},
+{type:'qcm',q:"Translate: 'cold'",choices:['froid','chaud','pluvieux','ensoleillé'],correct:0,explain:"'Cold' veut dire froid."},
+{type:'qcm',q:"Complete: 'In winter, it is often ___.'",choices:['cold','hot','sunny','warm'],correct:0,explain:"En hiver, il fait souvent froid."},
+{type:'qcm',q:"Translate: 'rainy'",choices:['pluvieux','ensoleillé','froid','chaud'],correct:0,explain:"'Rainy' veut dire pluvieux."}
+]},
+{title:'At School',emoji:'🏫',badge:'Vocabulary',vocab:[
+{en:'a pencil',fr:'un crayon'},{en:'a book',fr:'un livre'},{en:'a teacher',fr:'un professeur'},
+{en:'a classroom',fr:'une salle de classe'},{en:'to listen',fr:'écouter'}],
+cours:["Découvre le vocabulaire de la classe en anglais."],
+exercises:[
+{type:'qcm',q:"Translate: 'a pencil'",choices:['un crayon','un livre','un professeur','une salle de classe'],correct:0,explain:"'A pencil' veut dire un crayon."},
+{type:'qcm',q:"Comment dit-on 'écouter' en anglais ?",choices:['to listen','to write','to read','to speak'],correct:0,explain:"Écouter se dit 'to listen'."},
+{type:'qcm',q:"Translate: 'a teacher'",choices:['un professeur','un élève','un livre','un crayon'],correct:0,explain:"'A teacher' veut dire un professeur."},
+{type:'qcm',q:"Complete: 'Please, ___ to the teacher.'",choices:['listen','listens','listening','listened'],correct:0,explain:"Après 'please', on utilise la base du verbe."},
+{type:'qcm',q:"Translate: 'a classroom'",choices:['une salle de classe','un livre','un crayon','un professeur'],correct:0,explain:"'A classroom' veut dire une salle de classe."}
+]}
+];
+
+CONTENT.geographie['7']=[
+{title:'Se repérer : nord, sud, est, ouest',emoji:'🧭',badge:'Se repérer',cours:[
+"Pour se repérer sur une carte, on utilise quatre points cardinaux principaux : le nord, le sud, l'est et l'ouest.",
+"Une boussole permet de trouver facilement le nord, même en pleine nature."],
+example:"Sur une carte, le nord est en haut, le sud en bas, l'est à droite, l'ouest à gauche.",
+exercises:[
+{type:'qcm',q:'Sur une carte, où se trouve généralement le nord ?',choices:['En haut','En bas','À droite','À gauche'],correct:0,explain:"Par convention, le nord est placé en haut de la carte."},
+{type:'qcm',q:"Quel point cardinal est à l'opposé du nord ?",choices:['Le sud',"L'est","L'ouest",'Le centre'],correct:0,explain:"Le sud est opposé au nord."},
+{type:'qcm',q:"Sur une carte, l'est se trouve généralement...",choices:['À droite','À gauche','En haut','En bas'],correct:0,explain:"L'est est à droite sur une carte orientée classiquement."},
+{type:'vf',q:'Une boussole permet de se repérer et de trouver le nord.',correct:true,explain:"Oui, c'est son rôle principal."},
+{type:'qcm',q:'Combien y a-t-il de points cardinaux principaux ?',choices:['4','2','6','8'],correct:0,explain:"Nord, sud, est, ouest : cela fait 4."}
+]},
+{title:'Mon pays, la France',emoji:'🇫🇷',badge:'La France',cours:[
+"La France est un pays d'Europe. Sa capitale, Paris, est une grande ville où se trouvent de nombreux monuments.",
+"La France est bordée par plusieurs mers et océans, et possède aussi de belles chaînes de montagnes."],
+example:"Les Pyrénées séparent la France de l'Espagne, et les Alpes séparent la France de l'Italie.",
+exercises:[
+{type:'qcm',q:'Quelle est la capitale de la France ?',choices:['Paris','Lyon','Marseille','Nice'],correct:0,explain:"Paris est la capitale de la France."},
+{type:'qcm',q:'La France est située sur quel continent ?',choices:["L'Europe","L'Afrique","L'Asie","L'Amérique"],correct:0,explain:"La France est un pays européen."},
+{type:'qcm',q:'Quelle mer borde le sud de la France ?',choices:['La Méditerranée','La mer Rouge','La mer Noire',"L'océan Pacifique"],correct:0,explain:"La Méditerranée borde le sud de la France."},
+{type:'qcm',q:"Quelle chaîne de montagnes sépare la France de l'Espagne ?",choices:['Les Pyrénées','Les Alpes','Le Massif central','Les Vosges'],correct:0,explain:"Les Pyrénées forment cette frontière naturelle."},
+{type:'vf',q:'La France est un pays entouré uniquement de terres, sans accès à la mer.',correct:false,explain:"Non, la France a des côtes sur la Manche, l'Atlantique et la Méditerranée."}
+]},
+{title:'Ville et campagne, les paysages',emoji:'🏡',badge:'Paysages',cours:[
+"En ville, il y a beaucoup d'immeubles, de routes et d'habitants regroupés sur peu d'espace.",
+"À la campagne, on trouve surtout des champs, des fermes et des villages avec moins d'habitants."],
+exercises:[
+{type:'qcm',q:"Où trouve-t-on le plus d'immeubles et de circulation ?",choices:['En ville','À la campagne','En montagne','Dans le désert'],correct:0,explain:"La ville concentre immeubles et circulation."},
+{type:'qcm',q:'Un paysage avec des champs cultivés et des fermes est un paysage...',choices:['rural (campagne)','urbain (ville)','marin','sous-marin'],correct:0,explain:"C'est un paysage rural, typique de la campagne."},
+{type:'qcm',q:"Quel paysage compte le plus d'habitants au mètre carré ?",choices:['la ville','la campagne','la forêt','la montagne'],correct:0,explain:"La ville est très peuplée sur peu d'espace."},
+{type:'vf',q:'Un paysage montagneux se caractérise par un relief élevé.',correct:true,explain:"Oui, les montagnes ont une altitude élevée."},
+{type:'qcm',q:"Lequel de ces éléments trouve-t-on surtout à la campagne ?",choices:['des champs','des gratte-ciel','des embouteillages','des grands magasins'],correct:0,explain:"Les champs sont typiques des paysages de campagne."}
+]}
+];
+CONTENT.geographie['9']=[
+{title:'Les continents et les océans',emoji:'🌍',badge:'Le monde',cours:[
+"La Terre est organisée en grandes masses de terre appelées continents, et en grandes étendues d'eau appelées océans.",
+"On distingue généralement l'Afrique, l'Amérique, l'Antarctique, l'Asie, l'Europe et l'Océanie."],
+exercises:[
+{type:'qcm',q:'Combien y a-t-il de continents principaux ?',choices:['5 ou 6 selon les découpages','2','10','3'],correct:0,explain:"On compte généralement 5 ou 6 continents."},
+{type:'qcm',q:'Quel est le plus grand continent du monde ?',choices:["L'Asie","L'Europe","L'Océanie","L'Antarctique"],correct:0,explain:"L'Asie est le plus grand et le plus peuplé des continents."},
+{type:'qcm',q:'Quel océan est le plus grand du monde ?',choices:["L'océan Pacifique","L'océan Atlantique","L'océan Indien","L'océan Arctique"],correct:0,explain:"L'océan Pacifique est le plus vaste."},
+{type:'qcm',q:'La France se trouve sur quel continent ?',choices:["L'Europe","L'Afrique","L'Asie","L'Amérique"],correct:0,explain:"La France est un pays européen."},
+{type:'vf',q:'L\'Antarctique est un continent recouvert presque entièrement de glace.',correct:true,explain:"Oui, c'est un continent glacé très froid."}
+]},
+{title:'Les régions et fleuves de France',emoji:'🏞️',badge:'La France',cours:[
+"La France métropolitaine est divisée en plusieurs régions, chacune avec ses paysages et ses villes.",
+"De grands fleuves traversent le pays : la Seine, la Loire, le Rhône et la Garonne."],
+exercises:[
+{type:'qcm',q:'Quel est le plus long fleuve de France ?',choices:['La Loire','La Seine','Le Rhône','La Garonne'],correct:0,explain:"La Loire est le plus long fleuve de France."},
+{type:'qcm',q:'Quel fleuve traverse Paris ?',choices:['La Seine','La Loire','Le Rhône','La Garonne'],correct:0,explain:"La Seine traverse Paris."},
+{type:'qcm',q:'Un ensemble de départements regroupés forme une...',choices:['région','commune','continent','capitale'],correct:0,explain:"Plusieurs départements forment une région."},
+{type:'qcm',q:'Quel fleuve se jette dans la Méditerranée, près de Marseille ?',choices:['Le Rhône','La Seine','La Loire','La Garonne'],correct:0,explain:"Le Rhône se jette dans la Méditerranée."},
+{type:'vf',q:'La France métropolitaine est divisée en plusieurs régions.',correct:true,explain:"Oui, chaque région a ses propres caractéristiques."}
+]},
+{title:"L'Union européenne",emoji:'🇪🇺',badge:'Europe',cours:[
+"L'Union européenne regroupe plusieurs pays d'Europe qui coopèrent sur de nombreux sujets.",
+"Beaucoup de pays membres utilisent une monnaie commune, l'euro, ce qui facilite les échanges."],
+exercises:[
+{type:'qcm',q:"Quelle monnaie est utilisée par de nombreux pays de l'Union européenne ?",choices:["L'euro",'Le dollar','La livre','Le yen'],correct:0,explain:"L'euro est la monnaie commune de nombreux pays membres."},
+{type:'vf',q:"La France fait partie de l'Union européenne.",correct:true,explain:"Oui, la France est un pays membre."},
+{type:'qcm',q:"L'Union européenne regroupe plusieurs...",choices:['pays européens','continents','océans','planètes'],correct:0,explain:"C'est une union de pays européens."},
+{type:'qcm',q:"Quel est un avantage de faire partie de l'Union européenne ?",choices:['Voyager plus facilement entre pays membres','Ne plus avoir besoin d\'école','Supprimer toutes les langues','Ne plus avoir de frontières avec aucun pays du monde'],correct:0,explain:"La libre circulation facilite les voyages entre pays membres."},
+{type:'vf',q:'Tous les pays du monde font partie de l\'Union européenne.',correct:false,explain:"Non, seulement certains pays européens en sont membres."}
+]}
+];
+
+CONTENT.lecture['7']=[
+{title:'Le potager de Mia',emoji:'🌱',badge:'Compréhension',cours:[
+"Lis le texte une première fois en silence, puis relis-le doucement à voix haute avant de répondre aux questions."],
+text:"Mia plante des graines dans son jardin. Chaque matin, elle verse un peu d'eau sur la terre. Au bout de deux semaines, une petite tige verte sort du sol. Mia est très fière de sa plante.",
+exercises:[
+{type:'qcm',q:'Que fait Mia chaque matin ?',choices:["Elle verse un peu d'eau",'Elle chante une chanson','Elle mange une pomme'],correct:0,explain:"Le texte dit qu'elle verse un peu d'eau chaque matin."},
+{type:'qcm',q:'Combien de temps faut-il avant que la tige sorte du sol ?',choices:['Deux semaines','Deux jours','Deux mois'],correct:0,explain:"Le texte dit : au bout de deux semaines."},
+{type:'qcm',q:'Comment se sent Mia à la fin du texte ?',choices:['Fière','Triste','Fatiguée'],correct:0,explain:"Le texte dit qu'elle est très fière."},
+{type:'text',q:"Recopie le mot du texte qui désigne l'endroit où Mia plante ses graines.",answer:'jardin',explain:"Mia plante ses graines dans son jardin."},
+{type:'vf',q:'Mia plante des graines dans une forêt.',correct:false,explain:"Non, elle les plante dans son jardin."}
+]},
+{title:'Le chat curieux',emoji:'🐱',badge:'Compréhension',cours:["Lis bien chaque phrase avant de répondre : les indices sont cachés dans le texte !"],
+text:"Grelot est un chat gris qui aime explorer le quartier. Un jour, il entend un bruit étrange derrière la haie du jardin. Il avance doucement, les oreilles droites. Derrière la haie, il découvre un petit hérisson qui cherche des pommes tombées de l'arbre. Grelot observe le hérisson puis rentre se coucher, satisfait de sa découverte.",
+exercises:[
+{type:'qcm',q:'De quelle couleur est le chat ?',choices:['Gris','Noir','Blanc'],correct:0,explain:"Grelot est un chat gris."},
+{type:'qcm',q:"Qu'est-ce que Grelot découvre derrière la haie ?",choices:['Un hérisson','Un chien','Un oiseau'],correct:0,explain:"Il découvre un petit hérisson."},
+{type:'qcm',q:'Que cherche le hérisson ?',choices:['Des pommes tombées','Des fleurs','Des cailloux'],correct:0,explain:"Il cherche des pommes tombées de l'arbre."},
+{type:'qcm',q:'Comment Grelot avance-t-il vers le bruit ?',choices:['Doucement','Très vite','En courant'],correct:0,explain:"Le texte dit qu'il avance doucement."},
+{type:'text',q:'Recopie le nom du chat de l\'histoire.',answer:'Grelot',explain:"Le chat s'appelle Grelot."}
+]},
+{title:"La fête de l'école",emoji:'🎤',badge:'Compréhension',cours:["Repère les personnages et les lieux avant de répondre aux questions."],
+text:"Aujourd'hui, c'est la fête de l'école. Dans la cour, il y a des stands de jeux, un stand de gâteaux et une grande scène pour les chants. Louise a répété une chanson avec sa classe pendant plusieurs semaines. Quand son tour arrive, elle monte sur scène avec ses camarades et chante devant tous les parents. À la fin, tout le monde applaudit très fort.",
+exercises:[
+{type:'qcm',q:"Qu'est-ce qui se passe aujourd'hui à l'école ?",choices:['Une fête','Un examen','Une sortie au cinéma'],correct:0,explain:"C'est la fête de l'école."},
+{type:'qcm',q:'Qu\'a fait Louise pendant plusieurs semaines ?',choices:['Répéter une chanson','Peindre un tableau','Lire un livre'],correct:0,explain:"Elle a répété une chanson avec sa classe."},
+{type:'qcm',q:'Comment réagit le public à la fin ?',choices:['Il applaudit fort','Il reste silencieux','Il part tout de suite'],correct:0,explain:"Tout le monde applaudit très fort."},
+{type:'vf',q:"Louise chante seule sans personne d'autre sur scène.",correct:false,explain:"Non, elle chante avec ses camarades de classe."},
+{type:'text',q:"Recopie le mot du texte qui désigne l'endroit où les enfants chantent.",answer:'scène',explain:"Les enfants chantent sur la scène."}
+]}
+];
+CONTENT.lecture['9']=[
+{title:'La carte oubliée',emoji:'🗺️',badge:'Compréhension',cours:["Lis le texte en entier avant de répondre, même si certains mots te semblent nouveaux."],
+text:"Dans le grenier de la vieille maison, Noé découvre une carte jaunie. Elle montre un chemin qui traverse la forêt jusqu'à une rivière. Intrigué, Noé décide de suivre ce chemin avec sa soeur, un carnet et une boussole. Après une heure de marche, ils trouvent une vieille cabane cachée sous les arbres.",
+exercises:[
+{type:'qcm',q:"Qu'est-ce que Noé découvre dans le grenier ?",choices:['Une carte jaunie','Un livre de cuisine','Une boîte de jouets'],correct:0,explain:"Noé découvre une carte jaunie."},
+{type:'qcm',q:"Qu'emmène Noé pour l'aventure ?",choices:['Un carnet et une boussole','Un parapluie et des bottes','Une lampe et une corde'],correct:0,explain:"Il emmène un carnet et une boussole."},
+{type:'qcm',q:'Que trouvent Noé et sa soeur au bout du chemin ?',choices:['Une vieille cabane','Un lac','Une grotte'],correct:0,explain:"Ils trouvent une vieille cabane cachée sous les arbres."},
+{type:'qcm',q:'Combien de temps marchent-ils avant de trouver la cabane ?',choices:['Une heure','Dix minutes','Toute la journée'],correct:0,explain:"Le texte dit : après une heure de marche."},
+{type:'text',q:"Recopie l'objet qui permet de s'orienter, mentionné dans le texte.",answer:'boussole',explain:"La boussole permet de s'orienter."}
+]},
+{title:'Le concours de robots',emoji:'🤖',badge:'Compréhension',cours:["Cherche les informations précises dans le texte : qui, quoi, comment."],
+text:"Chaque année, l'école organise un concours de robots fabriqués en carton et en pièces recyclées. Cette année, l'équipe de Béatrice a construit un robot capable de ramasser de petits objets grâce à un bras mécanique. Pendant la présentation, le robot fonctionne parfaitement et l'équipe reçoit le premier prix, un livre sur les sciences.",
+exercises:[
+{type:'qcm',q:'Avec quoi les robots sont-ils fabriqués ?',choices:['Du carton et des pièces recyclées',"De l'or et de l'argent",'Du verre et du béton'],correct:0,explain:"Les robots sont fabriqués en carton et pièces recyclées."},
+{type:'qcm',q:"Que sait faire le robot de l'équipe de Béatrice ?",choices:['Ramasser de petits objets',"Voler dans les airs","Nager sous l'eau"],correct:0,explain:"Il ramasse de petits objets grâce à un bras mécanique."},
+{type:'qcm',q:"Quel prix reçoit l'équipe ?",choices:['Un livre sur les sciences','Une médaille en or','Un vélo'],correct:0,explain:"L'équipe reçoit un livre sur les sciences."},
+{type:'vf',q:'Le robot ne fonctionne pas du tout pendant la présentation.',correct:false,explain:"Au contraire, il fonctionne parfaitement."},
+{type:'qcm',q:"Comment s'appelle la partie du robot qui ramasse les objets ?",choices:['Un bras mécanique','Une roue','Une antenne'],correct:0,explain:"C'est un bras mécanique."}
+]},
+{title:'Le marché du village',emoji:'🧺',badge:'Compréhension',cours:["Repère le moment et le lieu de l'histoire avant de répondre."],
+text:"Le samedi matin, le village s'anime pour le marché. Les producteurs locaux installent leurs étals de fruits, de légumes et de fromages. Une odeur de pain chaud flotte dans les rues. Béatrice accompagne son grand-père pour choisir des tomates bien mûres et discuter avec les commerçants qu'ils connaissent depuis longtemps.",
+exercises:[
+{type:'qcm',q:'Quel jour le marché a-t-il lieu ?',choices:['Le samedi matin','Le dimanche soir','Le lundi midi'],correct:0,explain:"Le marché a lieu le samedi matin."},
+{type:'qcm',q:'Qui accompagne Béatrice au marché ?',choices:['Son grand-père','Sa maitresse','Son voisin'],correct:0,explain:"Elle accompagne son grand-père."},
+{type:'qcm',q:'Que choisissent-ils ensemble ?',choices:['Des tomates bien mûres','Des jouets','Des vêtements'],correct:0,explain:"Ils choisissent des tomates bien mûres."},
+{type:'qcm',q:'Quelle odeur flotte dans les rues ?',choices:['Du pain chaud','Des fleurs','De la peinture'],correct:0,explain:"Une odeur de pain chaud flotte dans les rues."},
+{type:'vf',q:'Les commerçants du marché sont des inconnus pour Béatrice et son grand-père.',correct:false,explain:"Non, ils les connaissent depuis longtemps."}
+]}
+];
+
+let selectedAvatar=AVATARS[0];
+let currentSubjectKey=null;
+let lessonState=null;
+const MASCOT_MSGS=[
+"Prêt pour une nouvelle aventure aujourd'hui ?",
+"Chaque leçon te rend un peu plus fort !",
+"N'oublie pas de bien lire le cours avant les exercices.",
+"Bravo pour ta régularité, continue comme ça !",
+"Choisis une matière et lance-toi !"
+];
 function showScreen(id){
 document.querySelectorAll('.screen').forEach(function(s){s.classList.remove('active');});
 document.getElementById(id).classList.add('active');
@@ -201,13 +595,33 @@ if(id==='screen-home')renderHome();
 if(id==='screen-rewards')renderRewards();
 if(id==='screen-parent')renderParent();
 }
+function renderAvatarPick(){
+const wrap=document.getElementById('avatarPick');
+if(!wrap)return;
+wrap.innerHTML='';
+AVATARS.forEach(function(a){
+const span=document.createElement('span');
+span.textContent=a;
+if(a===selectedAvatar)span.className='sel';
+span.onclick=function(){selectedAvatar=a;renderAvatarPick();};
+wrap.appendChild(span);
+});
+}
 function renderProfiles(){
 const grid=document.getElementById('profilesGrid');
 grid.innerHTML='';
 DATA.profiles.forEach(function(p){
 const div=document.createElement('div');
 div.className='profile-card';
-div.innerHTML='<div class="avatar">'+(p.track==='9'?'\ud83e\uddd1\u200d\ud83c\udf93':'\ud83d\udc66')+'</div><div><strong>'+p.name+'</strong></div><div style="color:var(--text2);font-size:12px;">Parcours '+p.track+' ans</div><div class="stars-bar" style="font-size:14px;margin-top:6px;">\u2b50 '+p.stars+'</div>';
+div.innerHTML='<span class="del-x" title="Supprimer">✕</span><div class="avatar">'+p.avatar+'</div><div><strong>'+p.name+'</strong></div><div style="color:var(--ink2);font-size:12px;">Parcours '+p.track+' ans</div><div class="stars-bar" style="font-size:13px;margin-top:8px;display:inline-block;">⭐ '+p.stars+'</div>';
+div.querySelector('.del-x').onclick=function(e){
+e.stopPropagation();
+if(confirm('Supprimer le profil de '+p.name+' ? Cette action est définitive.')){
+DATA.profiles=DATA.profiles.filter(function(x){return x.id!==p.id;});
+saveData(DATA);
+renderProfiles();
+}
+};
 div.onclick=function(){selectProfile(p.id);};
 grid.appendChild(div);
 });
@@ -216,52 +630,69 @@ function selectProfile(id){
 DATA.currentId=id;
 saveData(DATA);
 const p=getCurrentProfile();
-ensureDay(p);
 document.getElementById('mainNav').style.display='flex';
-document.getElementById('starsDisplay').style.display='block';
-document.getElementById('headerSub').textContent=p.name+' - Parcours '+p.track+' ans';
-document.getElementById('starsDisplay').textContent='\u2b50 '+p.stars;
+document.getElementById('starsDisplay').style.display='inline-block';
+document.getElementById('starsDisplay').textContent='⭐ '+p.stars;
 showScreen('screen-home');
 }
 function renderHome(){
 const p=getCurrentProfile();
 if(!p)return;
-ensureDay(p);
-document.getElementById('homeGreeting').textContent='Bonjour '+p.name;
-const missions=getMissions(p.track);
-const list=document.getElementById('missionList');
+document.getElementById('homeGreeting').textContent='Bonjour '+p.name+' '+p.avatar;
+document.getElementById('mascotHomeMsg').textContent=MASCOT_MSGS[Math.floor(Math.random()*MASCOT_MSGS.length)];
+document.getElementById('streakDisplay').textContent=p.streak>0?('🔥 '+p.streak+' jour(s) de suite'):'';
+let totalLessons=0,doneLessons=0;
+const grid=document.getElementById('subjectGrid');
+grid.innerHTML='';
+SUBJECTS.forEach(function(meta){
+const lessons=CONTENT[meta.key][p.track]||[];
+ensureProgress(p,meta.key,lessons.length);
+const done=p.progress[meta.key].filter(Boolean).length;
+totalLessons+=lessons.length;
+doneLessons+=done;
+const tile=document.createElement('div');
+tile.className='subject-tile '+meta.tile;
+tile.innerHTML='<div class="emoji">'+meta.emoji+'</div><div class="name">'+meta.name+'</div><div class="prog">'+done+' / '+lessons.length+' leçons</div>';
+tile.onclick=function(){openSubject(meta.key);};
+grid.appendChild(tile);
+});
+saveData(DATA);
+const pct=totalLessons?Math.round(100*doneLessons/totalLessons):0;
+document.getElementById('dayProgress').style.width=pct+'%';
+document.getElementById('dayProgressLabel').textContent=doneLessons+' / '+totalLessons+' leçons terminées au total';
+}
+function openSubject(key){
+currentSubjectKey=key;
+showScreen('screen-subject');
+renderSubjectScreen();
+}
+function renderSubjectScreen(){
+const p=getCurrentProfile();
+const meta=SUBJECTS.find(function(s){return s.key===currentSubjectKey;});
+document.getElementById('subjectTitle').textContent=meta.emoji+' '+meta.name;
+const lessons=CONTENT[currentSubjectKey][p.track]||[];
+ensureProgress(p,currentSubjectKey,lessons.length);
+const list=document.getElementById('lessonList');
 list.innerHTML='';
-missions.forEach(function(m){
-const done=p.missionsDoneToday.indexOf(m.key)>=0;
+lessons.forEach(function(lesson,i){
+const done=p.progress[currentSubjectKey][i];
+const locked=i>0 && !p.progress[currentSubjectKey][i-1];
 const div=document.createElement('div');
-div.className='mission-item'+(done?' done':'');
-const tagClass=m.type==='math'?'tag-math':m.type==='fr'?'tag-fr':m.type==='en'?'tag-en':'tag-offscreen';
-div.innerHTML='<div class="icon">'+m.icon+'</div><div class="info"><div>'+m.label+'<span class="world-tag '+tagClass+'">'+m.type+'</span></div><div class="mins">'+m.mins+' min'+(m.desc?' - '+m.desc:'')+'</div></div><div>'+(done?'\u2705':'\u25b6\ufe0f')+'</div>';
-div.onclick=function(){missionClick(m);};
+div.className='lesson-item'+(done?' done':'')+(locked?' locked':'');
+div.innerHTML='<div class="num">'+(done?'✅':(i+1))+'</div><div class="info"><div class="title">'+lesson.emoji+' '+lesson.title+'</div><div class="meta">'+(lesson.badge||'')+(locked?' · 🔒 Termine la leçon précédente':'')+'</div></div>';
+if(!locked){div.onclick=function(){openLesson(currentSubjectKey,i);};}
 list.appendChild(div);
 });
-const pct=Math.round(100*p.missionsDoneToday.length/missions.length);
-document.getElementById('dayProgress').style.width=pct+'%';
 }
-function missionClick(m){
-const p=getCurrentProfile();
-if(m.type==='math'){startMathLesson();return;}
-if(m.type==='fr'){startFrLesson();return;}
-if(m.type==='en'){startEnLesson();return;}
-const idx=p.missionsDoneToday.indexOf(m.key);
-if(idx>=0){p.missionsDoneToday.splice(idx,1);}else{p.missionsDoneToday.push(m.key);awardStars(2);}
-saveData(DATA);
-renderHome();
-}
-let mathState={index:0,total:8,correct:0,track:'7'};
-function generateMathQuestion(track){
+
+function generateMathQuestion(kind){
 let a,b,op,answer,text;
-if(track==='9'){
+if(kind==='calc9'){
 const ops=['x','div','frac'];
 op=ops[Math.floor(Math.random()*ops.length)];
-if(op==='x'){a=Math.floor(Math.random()*9)+2;b=Math.floor(Math.random()*9)+2;answer=a*b;text=a+' \u00d7 '+b;}
-else if(op==='div'){b=Math.floor(Math.random()*9)+2;answer=Math.floor(Math.random()*9)+2;a=b*answer;text=a+' \u00f7 '+b;}
-else{const den=[2,4,5,10][Math.floor(Math.random()*4)];const num=Math.floor(Math.random()*den);answer=Math.round((num/den)*100);text='Combien fait '+num+'/'+den+' en pourcentage';}
+if(op==='x'){a=Math.floor(Math.random()*9)+2;b=Math.floor(Math.random()*9)+2;answer=a*b;text=a+' × '+b;}
+else if(op==='div'){b=Math.floor(Math.random()*9)+2;answer=Math.floor(Math.random()*9)+2;a=b*answer;text=a+' ÷ '+b;}
+else{const den=[2,4,5,10][Math.floor(Math.random()*4)];const num=Math.floor(Math.random()*den);answer=Math.round((num/den)*100);text=num+'/'+den+' en pourcentage';}
 }else{
 const ops=['add','sub'];
 op=ops[Math.floor(Math.random()*ops.length)];
@@ -272,219 +703,174 @@ text=a+(op==='add'?' + ':' - ')+b;
 }
 return {text:text,answer:answer};
 }
-function startMathLesson(){
-  const p=getCurrentProfile();
-mathState={index:0,total:8,correct:0,track:p.track};
-document.getElementById('mathFeedback').textContent='';
-showScreen('screen-lesson-math');
-nextMathQuestion();
-}
-function nextMathQuestion(){
-if(mathState.index>=mathState.total){finishMathLesson();return;}
-const q=generateMathQuestion(mathState.track);
-mathState.current=q;
-document.getElementById('mathQuestion').textContent=q.text+' = ?';
-const choices=[q.answer];
+function currentExercise(){
+const lesson=lessonState.lesson;
+if(lesson.procedural){
+if(!lessonState.proceduralQuestions[lessonState.exIndex]){
+const q=generateMathQuestion(lesson.procedural);
+let choices=[q.answer];
 let pool=[];
 for(let d=-8;d<=8;d++){if(d!==0){const c=q.answer+d;if(c>=0&&pool.indexOf(c)<0)pool.push(c);}}
 pool.sort(function(){return Math.random()-0.5;});
 for(let i=0;i<3&&i<pool.length;i++){choices.push(pool[i]);}
 choices.sort(function(){return Math.random()-0.5;});
-const box=document.getElementById('mathAnswers');
-box.innerHTML='';
-choices.forEach(function(c){
-const btn=document.createElement('button');
-btn.textContent=c;
-btn.onclick=function(){answerMath(c);};
-box.appendChild(btn);
-});
-document.getElementById('mathFeedback').textContent='';
-document.getElementById('mathFeedback').className='feedback';
-document.getElementById('mathProgress').style.width=Math.round(100*mathState.index/mathState.total)+'%';
+lessonState.proceduralQuestions[lessonState.exIndex]={type:'qcm',q:q.text+' = ?',choices:choices.map(String),correct:choices.indexOf(q.answer),explain:''};
 }
-function answerMath(c){
-const fb=document.getElementById('mathFeedback');
-if(c===mathState.current.answer){
-fb.textContent='Bravo, c est exact !';
-fb.className='feedback ok';
-mathState.correct++;
-mathState.index++;
-setTimeout(nextMathQuestion,900);
-}else{
-fb.textContent='Cette competence est encore en entrainement, essaie encore.';
-fb.className='feedback ko';
+return lessonState.proceduralQuestions[lessonState.exIndex];
 }
+return lesson.exercises[lessonState.exIndex];
 }
-function finishMathLesson(){
-awardStars(5);
+function openLesson(subjectKey,lessonIndex){
 const p=getCurrentProfile();
-const missions=getMissions(p.track);
-missions.filter(function(m){return m.type==='math';}).forEach(function(m){
-if(p.missionsDoneToday.indexOf(m.key)<0)p.missionsDoneToday.push(m.key);
-});
-saveData(DATA);
-document.getElementById('mathQuestion').textContent='Mission terminee !';
-document.getElementById('mathAnswers').innerHTML='';
-document.getElementById('mathFeedback').textContent='Tu as gagne 5 etoiles. Retourne a l accueil.';
-document.getElementById('mathFeedback').className='feedback ok';
-document.getElementById('mathProgress').style.width='100%';
+const lesson=CONTENT[subjectKey][p.track][lessonIndex];
+lessonState={subjectKey:subjectKey,lessonIndex:lessonIndex,lesson:lesson,phase:'cours',exIndex:0,correctCount:0,mistakes:0,finished:false,proceduralQuestions:[]};
+lessonState.total=lesson.procedural?8:lesson.exercises.length;
+showScreen('screen-lesson');
+renderLessonCard();
 }
-const FR_CONTENT={
-'7':{
-title:'Le potager de Mia',
-text:'Mia plante des graines dans son jardin. Chaque matin, elle verse un peu d eau sur la terre. Au bout de deux semaines, une petite tige verte sort du sol. Mia est tres fiere de sa plante.',
-question:'Que fait Mia chaque matin ?',
-choices:['Elle chante une chanson','Elle verse un peu d eau','Elle mange une pomme'],
-correct:1,
-spellWord:'jardin'
-},
-'9':{
-title:'La carte oubliee',
-text:'Dans le grenier de la vieille maison, Noe decouvre une carte jaunie. Elle montre un chemin qui traverse la foret jusqu a une riviere. Intrigue, Noe decide de suivre ce chemin avec sa soeur, un carnet et une boussole.',
-question:'Qu est-ce que Noe decouvre dans le grenier ?',
-choices:['Un livre de cuisine','Une carte jaunie','Une boite de jouets'],
-correct:1,
-spellWord:'boussole'
-}
-};
-let frState={step:0};
-function startFrLesson(){
-frState={step:0};
-showScreen('screen-lesson-fr');
-renderFrStep();
-}
-function renderFrStep(){
-const p=getCurrentProfile();
-const c=FR_CONTENT[p.track]||FR_CONTENT['7'];
-const card=document.getElementById('frCard');
-if(frState.step===0){
-card.innerHTML='<h2>'+c.title+'</h2><div class="reading-text">'+c.text+'</div><button class="btn" id="frContinueBtn">Continuer</button>';
-document.getElementById('frContinueBtn').onclick=function(){frState.step=1;renderFrStep();};
-}else if(frState.step===1){
-card.innerHTML='<div class="question-box"><div class="q" style="font-size:20px;">'+c.question+'</div><div class="answers" id="frAnswers"></div><div class="feedback" id="frFeedback"></div></div>';
-const box=document.getElementById('frAnswers');
-c.choices.forEach(function(ch,i){
-const btn=document.createElement('button');
-btn.textContent=ch;
-btn.onclick=function(){frAnswerQuestion(i);};
-box.appendChild(btn);
-});
-}else if(frState.step===2){
-card.innerHTML='<h2>Orthographe</h2><p>Ecris ce mot correctement : <strong>'+c.spellWord+'</strong></p><input type="text" id="frSpellInput"><button class="btn" id="frSpellBtn" style="margin-left:10px;">Valider</button><div class="feedback" id="frFeedback2"></div>';
-document.getElementById('frSpellBtn').onclick=function(){checkSpelling(c.spellWord);};
-}else{
-card.innerHTML='<h2>Bravo !</h2><p>Tu as termine la mission Francais et gagne 5 etoiles.</p>';
-}
-}
-function frAnswerQuestion(i){
-const p=getCurrentProfile();
-const c=FR_CONTENT[p.track]||FR_CONTENT['7'];
-const fb=document.getElementById('frFeedback');
-if(i===c.correct){
-fb.textContent='Exact, bien lu !';
-fb.className='feedback ok';
-setTimeout(function(){frState.step=2;renderFrStep();},900);
-}else{
-fb.textContent='Relis le texte, tu vas trouver.';
-fb.className='feedback ko';
-}
-}
-function checkSpelling(word){
-const val=document.getElementById('frSpellInput').value.trim().toLowerCase();
-const fb=document.getElementById('frFeedback2');
-if(val===word.toLowerCase()){
-fb.textContent='Parfait !';
-fb.className='feedback ok';
-setTimeout(function(){finishFrLesson();},900);
-}else{
-fb.textContent='Presque, regarde bien chaque lettre.';
-fb.className='feedback ko';
-}
-}
-function finishFrLesson(){
-frState.step=3;
-renderFrStep();
-awardStars(5);
-const p=getCurrentProfile();
-const missions=getMissions(p.track);
-missions.filter(function(m){return m.type==='fr';}).forEach(function(m){
-if(p.missionsDoneToday.indexOf(m.key)<0)p.missionsDoneToday.push(m.key);
-});
-saveData(DATA);
-}
-const EN_CONTENT={
-'7':[{en:'cat',fr:'chat'},{en:'dog',fr:'chien'},{en:'red',fr:'rouge'},{en:'blue',fr:'bleu'},{en:'apple',fr:'pomme'}],
-'9':[{en:'weather',fr:'le temps'},{en:'yesterday',fr:'hier'},{en:'friendly',fr:'amical'},{en:'library',fr:'bibliotheque'},{en:'to explain',fr:'expliquer'}]
-};
-let enState={phase:'learn',index:0,words:[]};
-function startEnLesson(){
-const p=getCurrentProfile();
-enState={phase:'learn',index:0,words:EN_CONTENT[p.track]||EN_CONTENT['7']};
-showScreen('screen-lesson-en');
-renderEnStep();
-}
-function renderEnStep(){
-const card=document.getElementById('enCard');
-if(enState.phase==='learn'){
-let html='<h2>Vocabulaire</h2><div class="reading-text">';
-enState.words.forEach(function(w){html+='<div style="margin-bottom:8px;"><strong>'+w.en+'</strong> = '+w.fr+'</div>';});
-html+='</div><button class="btn" id="enStartQuizBtn">J ai memorise, commencer le quiz</button>';
+function renderLessonCard(){
+const card=document.getElementById('lessonCard');
+const lesson=lessonState.lesson;
+if(lessonState.phase==='cours'){
+let html='<div class="cours-badge">📚 Cours - '+(lesson.badge||'')+'</div><h1>'+lesson.emoji+' '+lesson.title+'</h1><div class="card cours-text">';
+(lesson.cours||[]).forEach(function(par){html+='<p>'+par+'</p>';});
+if(lesson.example)html+='<div class="cours-example">💡 '+lesson.example+'</div>';
+if(lesson.text)html+='<div class="reading-text">'+lesson.text+'</div>';
+if(lesson.vocab){lesson.vocab.forEach(function(w){html+='<div class="vocab-line"><span>'+w.en+'</span><span>'+w.fr+'</span></div>';});}
+html+='</div><button class="btn" id="startExercisesBtn">'+(lesson.procedural?'Commencer les exercices ⚡':"J'ai compris, aux exercices ! ✏️")+'</button>';
 card.innerHTML=html;
-document.getElementById('enStartQuizBtn').onclick=function(){enState.phase='quiz';enState.index=0;enState.correct=0;renderEnStep();};
-}else if(enState.phase==='quiz'){
-renderEnQuizQuestion();
+document.getElementById('startExercisesBtn').onclick=function(){lessonState.phase='exercise';renderLessonCard();};
+}else if(lessonState.phase==='exercise'){
+renderExerciseStep();
 }else{
-card.innerHTML='<h2>Bravo !</h2><p>Tu as termine la mission Anglais et gagne 5 etoiles.</p>';
+renderResultStep();
 }
 }
-function renderEnQuizQuestion(){
-if(enState.index>=enState.words.length){finishEnLesson();return;}
-const card=document.getElementById('enCard');
-const w=enState.words[enState.index];
-const others=enState.words.filter(function(x){return x!==w;}).map(function(x){return x.fr;});
-others.sort(function(){return Math.random()-0.5;});
-const choices=[w.fr].concat(others.slice(0,2));
-choices.sort(function(){return Math.random()-0.5;});
-card.innerHTML='<div class="question-box"><div class="q">Traduis: '+w.en+'</div><div class="answers" id="enAnswers"></div><div class="feedback" id="enFeedback"></div></div>';
-const box=document.getElementById('enAnswers');
-choices.forEach(function(ch){
-const btn=document.createElement('button');
-btn.textContent=ch;
-btn.onclick=function(){answerEn(ch,w.fr);};
-box.appendChild(btn);
+function normText(s){return String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').trim();}
+function renderExerciseStep(){
+const ex=currentExercise();
+const total=lessonState.total;
+const card=document.getElementById('lessonCard');
+let html='<div class="progress-outer"><div class="progress-inner" style="width:'+Math.round(100*lessonState.exIndex/total)+'%;"></div></div>';
+html+='<div class="question-box"><div class="qlabel">Exercice '+(lessonState.exIndex+1)+' / '+total+'</div><div class="q">'+ex.q+'</div>';
+if(ex.type==='qcm'){
+html+='<div class="answers" id="exAnswers">';
+ex.choices.forEach(function(c,i){html+='<button data-i="'+i+'">'+c+'</button>';});
+html+='</div>';
+}else if(ex.type==='vf'){
+html+='<div class="answers" id="exAnswers"><button data-v="true">Vrai ✅</button><button data-v="false">Faux ❌</button></div>';
+}else if(ex.type==='text'){
+html+='<div style="margin-top:10px;"><input type="text" id="exTextInput" placeholder="Ta réponse"> <button class="btn" id="exTextBtn" style="margin-left:8px;">Valider</button></div>';
+}
+html+='<div class="feedback" id="exFeedback"></div></div>';
+card.innerHTML=html;
+if(ex.type==='qcm'){
+document.querySelectorAll('#exAnswers button').forEach(function(btn){
+btn.onclick=function(){answerQCM(parseInt(btn.getAttribute('data-i'),10));};
 });
+}else if(ex.type==='vf'){
+document.querySelectorAll('#exAnswers button').forEach(function(btn){
+btn.onclick=function(){answerVF(btn.getAttribute('data-v')==='true');};
+});
+}else if(ex.type==='text'){
+document.getElementById('exTextBtn').onclick=function(){answerText();};
+document.getElementById('exTextInput').addEventListener('keydown',function(e){if(e.key==='Enter')answerText();});
 }
-function answerEn(choice,correct){
-const fb=document.getElementById('enFeedback');
-if(choice===correct){
-fb.textContent='Very good !';
+}
+function answerQCM(i){
+const ex=currentExercise();
+const fb=document.getElementById('exFeedback');
+const buttons=document.querySelectorAll('#exAnswers button');
+if(i===ex.correct){
+buttons[i].classList.add('correct');
+fb.textContent='Bravo, c\'est exact ! '+(ex.explain||'');
 fb.className='feedback ok';
-enState.index++;
-setTimeout(renderEnQuizQuestion,700);
+buttons.forEach(function(b){b.disabled=true;});
+lessonState.correctCount++;
+setTimeout(nextExercise,1300);
 }else{
-fb.textContent='Try again !';
+buttons[i].classList.add('wrong');
+lessonState.mistakes++;
+fb.textContent='Pas tout à fait, essaie encore !';
 fb.className='feedback ko';
 }
 }
-function finishEnLesson(){
-enState.phase='done';
-renderEnStep();
-awardStars(5);
+function answerVF(val){
+const ex=currentExercise();
+const fb=document.getElementById('exFeedback');
+const buttons=document.querySelectorAll('#exAnswers button');
+if(val===ex.correct){
+buttons.forEach(function(b){if((b.getAttribute('data-v')==='true')===ex.correct)b.classList.add('correct');b.disabled=true;});
+fb.textContent='Bravo, c\'est exact ! '+(ex.explain||'');
+fb.className='feedback ok';
+lessonState.correctCount++;
+setTimeout(nextExercise,1300);
+}else{
+lessonState.mistakes++;
+fb.textContent='Pas tout à fait, essaie encore !';
+fb.className='feedback ko';
+}
+}
+function answerText(){
+const ex=currentExercise();
+const input=document.getElementById('exTextInput');
+const fb=document.getElementById('exFeedback');
+if(normText(input.value)===normText(ex.answer)){
+fb.textContent='Parfait ! '+(ex.explain||'');
+fb.className='feedback ok';
+input.disabled=true;
+document.getElementById('exTextBtn').disabled=true;
+lessonState.correctCount++;
+setTimeout(nextExercise,1300);
+}else{
+lessonState.mistakes++;
+fb.textContent='Presque, regarde bien et réessaie.';
+fb.className='feedback ko';
+}
+}
+function nextExercise(){
+lessonState.exIndex++;
+if(lessonState.exIndex>=lessonState.total){lessonState.phase='result';finishLesson();}
+renderLessonCard();
+}
+function bumpStreak(p){
+const t=todayStr();
+if(p.lastLessonDate===t)return;
+const y=new Date(Date.now()-86400000).toISOString().slice(0,10);
+p.streak=(p.lastLessonDate===y)?(p.streak+1):1;
+p.lastLessonDate=t;
+}
+function finishLesson(){
+if(lessonState.finished)return;
+lessonState.finished=true;
 const p=getCurrentProfile();
-const missions=getMissions(p.track);
-missions.filter(function(m){return m.type==='en';}).forEach(function(m){
-if(p.missionsDoneToday.indexOf(m.key)<0)p.missionsDoneToday.push(m.key);
-});
+ensureProgress(p,lessonState.subjectKey,CONTENT[lessonState.subjectKey][p.track].length);
+const already=p.progress[lessonState.subjectKey][lessonState.lessonIndex];
+p.progress[lessonState.subjectKey][lessonState.lessonIndex]=true;
+const base=lessonState.total;
+const bonus=(lessonState.mistakes===0)?3:0;
+const stars=already?Math.max(1,Math.round(base/2)):(base+bonus);
+lessonState.starsEarned=stars;
+bumpStreak(p);
+awardStars(stars);
 saveData(DATA);
 }
-const BADGE_THRESHOLDS=[10,25,50,100,200];
+function renderResultStep(){
+const card=document.getElementById('lessonCard');
+const lesson=lessonState.lesson;
+card.innerHTML='<div class="result-emoji">🎉</div><h1 style="text-align:center;">Bravo !</h1><div class="card" style="text-align:center;"><p>Tu as terminé la leçon <strong>'+lesson.title+'</strong> !</p><p style="font-size:22px;font-weight:800;color:#c97e00;">⭐ +'+lessonState.starsEarned+' étoiles</p><button class="btn" id="lessonDoneBtn">Retour aux leçons</button></div>';
+document.getElementById('lessonDoneBtn').onclick=function(){openSubject(lessonState.subjectKey);};
+}
+
+const BADGE_THRESHOLDS=[10,25,50,100,200,350];
 function awardStars(n){
 const p=getCurrentProfile();
 p.stars+=n;
 p.lastActive=new Date().toLocaleDateString('fr-FR');
 checkBadges(p);
 saveData(DATA);
-document.getElementById('starsDisplay').textContent='\u2b50 '+p.stars;
+const disp=document.getElementById('starsDisplay');
+if(disp)disp.textContent='⭐ '+p.stars;
 }
 function checkBadges(p){
 BADGE_THRESHOLDS.forEach(function(t){
@@ -493,46 +879,69 @@ if(p.stars>=t&&p.badges.indexOf(t)<0)p.badges.push(t);
 }
 function renderRewards(){
 const p=getCurrentProfile();
-document.getElementById('rewardsStars').textContent='\u2b50 '+p.stars+' etoiles';
+if(!p)return;
+document.getElementById('rewardsStars').textContent='⭐ '+p.stars+' étoiles';
 const next=BADGE_THRESHOLDS.find(function(t){return t>p.stars;});
 const prevT=BADGE_THRESHOLDS.filter(function(t){return t<=p.stars;}).pop()||0;
 if(next){
 const pct=Math.round(100*(p.stars-prevT)/(next-prevT));
 document.getElementById('badgeProgress').style.width=pct+'%';
-document.getElementById('badgeNext').textContent='Encore '+(next-p.stars)+' etoiles pour le prochain badge.';
+document.getElementById('badgeNext').textContent='Encore '+(next-p.stars)+' étoiles pour le prochain badge.';
 }else{
 document.getElementById('badgeProgress').style.width='100%';
-document.getElementById('badgeNext').textContent='Tous les badges sont debloques, bravo !';
+document.getElementById('badgeNext').textContent='Tous les badges sont débloqués, bravo !';
 }
 const list=document.getElementById('badgesList');
 list.innerHTML='';
-if(p.badges.length===0)list.innerHTML='<p style="color:var(--text2);">Pas encore de badge, continue tes missions !</p>';
+if(p.badges.length===0)list.innerHTML='<p style="color:var(--ink2);">Pas encore de badge, continue tes leçons !</p>';
 p.badges.forEach(function(b){
 const span=document.createElement('span');
 span.className='badge-pill';
-span.textContent='\ud83c\udfc6 '+b+' etoiles';
+span.textContent='🏆 '+b+' étoiles';
 list.appendChild(span);
 });
 }
 function renderParent(){
 const tbody=document.getElementById('parentTbody');
 tbody.innerHTML='';
+const detail=document.getElementById('parentDetail');
+detail.innerHTML='<p style="color:var(--ink2);">Clique sur un enfant pour voir le détail par matière.</p>';
 DATA.profiles.forEach(function(p){
-ensureDay(p);
-const missions=getMissions(p.track);
+let totalLessons=0,doneLessons=0;
+SUBJECTS.forEach(function(meta){
+const lessons=CONTENT[meta.key][p.track]||[];
+ensureProgress(p,meta.key,lessons.length);
+totalLessons+=lessons.length;
+doneLessons+=p.progress[meta.key].filter(Boolean).length;
+});
 const tr=document.createElement('tr');
-tr.innerHTML='<td>'+p.name+'</td><td>'+p.track+' ans</td><td>\u2b50 '+p.stars+'</td><td>'+p.missionsDoneToday.length+' / '+missions.length+'</td><td>'+(p.lastActive||'-')+'</td>';
+tr.style.cursor='pointer';
+tr.innerHTML='<td>'+p.name+'</td><td>'+p.track+' ans</td><td>⭐ '+p.stars+'</td><td>🔥 '+(p.streak||0)+'</td><td>'+doneLessons+' / '+totalLessons+'</td><td>'+(p.lastActive||'-')+'</td>';
+tr.onclick=function(){renderParentDetail(p);};
 tbody.appendChild(tr);
 });
+saveData(DATA);
+}
+function renderParentDetail(p){
+const detail=document.getElementById('parentDetail');
+let html='<h2>Détail de '+p.name+'</h2>';
+SUBJECTS.forEach(function(meta){
+const lessons=CONTENT[meta.key][p.track]||[];
+const done=p.progress[meta.key]?p.progress[meta.key].filter(Boolean).length:0;
+html+='<div style="margin-bottom:8px;"><strong>'+meta.emoji+' '+meta.name+'</strong> : '+done+' / '+lessons.length+' leçons terminées</div>';
+});
+detail.innerHTML=html;
 }
 function initApp(){
+migrateProfiles();
+renderAvatarPick();
 renderProfiles();
 document.getElementById('addProfileBtn').onclick=function(){
 const nameInput=document.getElementById('newProfileName');
 const name=nameInput.value.trim();
-if(!name){alert('Merci d indiquer un prenom.');return;}
+if(!name){alert("Merci d'indiquer un prénom.");return;}
 const track=document.querySelector('input[name=track]:checked').value;
-createProfile(name,track);
+createProfile(name,track,selectedAvatar);
 nameInput.value='';
 renderProfiles();
 };
@@ -540,20 +949,21 @@ document.querySelectorAll('.navbtn').forEach(function(b){
 b.onclick=function(){showScreen(b.getAttribute('data-screen'));};
 });
 document.querySelectorAll('.backbtn').forEach(function(b){
-b.onclick=function(){showScreen('screen-home');};
+b.onclick=function(){
+const sec=b.closest('.screen').id;
+if(sec==='screen-subject')showScreen('screen-home');
+else if(sec==='screen-lesson')openSubject(lessonState.subjectKey);
+};
 });
 document.getElementById('switchProfileBtn').onclick=function(){
 DATA.currentId=null;
 saveData(DATA);
 document.getElementById('mainNav').style.display='none';
 document.getElementById('starsDisplay').style.display='none';
-document.getElementById('headerSub').textContent='Choisis ton profil pour commencer';
 renderProfiles();
 showScreen('screen-select-profile');
 };
 if(DATA.currentId&&getCurrentProfile()){selectProfile(DATA.currentId);}
 }
 initApp();
-</script>
-</body>
-</html>
+</script></body></html>
