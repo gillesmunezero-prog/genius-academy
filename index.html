@@ -261,7 +261,7 @@ const ops=['x','div','frac'];
 op=ops[Math.floor(Math.random()*ops.length)];
 if(op==='x'){a=Math.floor(Math.random()*9)+2;b=Math.floor(Math.random()*9)+2;answer=a*b;text=a+' \u00d7 '+b;}
 else if(op==='div'){b=Math.floor(Math.random()*9)+2;answer=Math.floor(Math.random()*9)+2;a=b*answer;text=a+' \u00f7 '+b;}
-else{const den=[2,4,5,10][Math.floor(Math.random()*4)];const num=Math.floor(Math.random()*den);answer=Math.round((num/den)*100);text='Combien fait '+num+'/'+den+' en pourcentage ?';}
+else{const den=[2,4,5,10][Math.floor(Math.random()*4)];const num=Math.floor(Math.random()*den);answer=Math.round((num/den)*100);text='Combien fait '+num+'/'+den+' en pourcentage';}
 }else{
 const ops=['add','sub'];
 op=ops[Math.floor(Math.random()*ops.length)];
