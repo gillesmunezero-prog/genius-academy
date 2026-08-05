@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+  <html lang="fr">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genius Academy</title>
+  <style>
+  :root{
+  --bg:#0f1226;
+--panel:#181c3a;
+--panel2:#20244a;
+--text:#eef0ff;
+  --text2:#a9adcf;
+  --gold:#f0a500;
+  --green:#2ecc71;
+--blue:#3498db;
+--purple:#9b59b6;
+--red:#e74c3c;
+  --orange:#e8601c;
+  }
+*{box-sizing:border-box;}
+body{margin:0;font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--text);}
+.screen{display:none;padding:20px;max-width:900px;margin:0 auto;}
+.screen.active{display:block;}
+header{background:var(--panel);padding:14px 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:3px solid var(--gold);}
+header .logo{font-size:22px;font-weight:800;color:var(--gold);}
+header .sub{font-size:12px;color:var(--text2);}
+nav.tabs{display:flex;gap:8px;padding:10px 20px;background:var(--panel2);flex-wrap:wrap;}
+nav.tabs button{background:transparent;border:1px solid var(--text2);color:var(--text);padding:8px 14px;border-radius:20px;cursor:pointer;font-size:13px;}
+nav.tabs button.active{background:var(--gold);color:#0f1226;border-color:var(--gold);font-weight:700;}
+.card{background:var(--panel);border-radius:14px;padding:18px;margin-bottom:16px;box-shadow:0 4px 14px rgba(0,0,0,.3);}
+h1{font-size:26px;margin-top:0;}
+h2{color:var(--gold);}
+  .btn{background:var(--gold);color:#0f1226;border:none;padding:12px 20px;border-radius:10px;font-weight:700;cursor:pointer;font-size:15px;}
+.btn.secondary{background:var(--panel2);color:var(--text);border:1px solid var(--text2);}
+.btn.green{background:var(--green);color:#08331a;}
+.btn.blue{background:var(--blue);color:#04263f;}
+.btn:disabled{opacity:.4;cursor:not-allowed;}
+  .profiles-grid{display:flex;flex-wrap:wrap;gap:16px;}
+  .profile-card{background:var(--panel);border:2px solid var(--panel2);border-radius:16px;padding:20px;width:160px;text-align:center;cursor:pointer;transition:.2s;}
+.profile-card:hover{border-color:var(--gold);transform:translateY(-3px);}
+  .profile-card .avatar{font-size:46px;}
+  .mission-item{display:flex;align-items:center;gap:12px;background:var(--panel2);border-radius:10px;padding:12px 14px;margin-bottom:10px;cursor:pointer;}
+.mission-item.done{opacity:.5;text-decoration:line-through;}
+.mission-item .icon{font-size:26px;}
+.mission-item .info{flex:1;}
+.mission-item .mins{font-size:12px;color:var(--text2);}
+.badge-pill{display:inline-block;background:rgba(240,165,0,.15);color:var(--gold);border:1px solid var(--gold);padding:4px 10px;border-radius:20px;font-size:12px;margin-right:6px;}
+  .stars-bar{font-size:20px;color:var(--gold);font-weight:800;}
+.question-box{background:var(--panel2);border-radius:14px;padding:26px;text-align:center;}
+.question-box .q{font-size:28px;margin-bottom:20px;}
+  .answers{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
+.answers button{background:var(--panel);border:2px solid var(--text2);color:var(--text);padding:14px 22px;border-radius:10px;font-size:18px;cursor:pointer;min-width:70px;}
+.answers button:hover{border-color:var(--gold);}
+  .feedback{margin-top:16px;font-size:18px;font-weight:700;min-height:26px;}
+  .feedback.ok{color:var(--green);}
+.feedback.ko{color:var(--red);}
+.progress-outer{background:var(--panel2);border-radius:10px;height:14px;overflow:hidden;margin:14px 0;}
+  .progress-inner{background:var(--gold);height:100%;transition:width .3s;}
+.reading-text{background:var(--panel2);border-radius:12px;padding:18px;line-height:1.7;font-size:16px;margin-bottom:16px;}
+input[type=text]{background:var(--panel2);border:1px solid var(--text2);color:var(--text);padding:10px;border-radius:8px;font-size:16px;}
+table.parent-table{width:100%;border-collapse:collapse;}
+table.parent-table th,table.parent-table td{text-align:left;padding:10px;border-bottom:1px solid var(--panel2);}
+.world-tag{display:inline-block;padding:2px 8px;border-radius:6px;font-size:11px;font-weight:700;margin-left:8px;}
+  .tag-math{background:rgba(46,204,113,.2);color:var(--green);}
+.tag-fr{background:rgba(52,152,219,.2);color:var(--blue);}
+.tag-en{background:rgba(155,89,182,.2);color:var(--purple);}
+.tag-offscreen{background:rgba(232,96,28,.2);color:var(--orange);}
+  </style>
+</head>
+    <body>
+    <header>
+  <div>
+  <div class="logo">Genius Academy</div>
+    <div class="sub" id="headerSub">Choisis ton profil pour commencer</div>
+  </div>
+  <div id="starsDisplay" class="stars-bar" style="display:none;"></div>
+</header>
+    <nav class="tabs" id="mainNav" style="display:none;">
+    <button data-screen="screen-home" class="navbtn">Accueil</button>
+    <button data-screen="screen-rewards" class="navbtn">Recompenses</button>
+    <button data-screen="screen-parent" class="navbtn">Espace parent</button>
+    <button id="switchProfileBtn">Changer de profil</button>
+</nav>
+<main>
+<section id="screen-select-profile" class="screen active">
+    <h1>Bienvenue sur Genius Academy</h1>
+    <p>Choisis ton profil pour commencer l aventure du jour.</p>
+<div class="profiles-grid" id="profilesGrid"></div>
+<div class="card" style="margin-top:20px;">
+    <h2>Ajouter un enfant</h2>
+<input type="text" id="newProfileName" placeholder="Prenom de l enfant">
+    <div style="margin:12px 0;">
+    <label><input type="radio" name="track" value="7" checked> Parcours 7 ans</label>
+    <label style="margin-left:16px;"><input type="radio" name="track" value="9"> Parcours 9 ans</label>
+    </div>
+    <button class="btn" id="addProfileBtn">Creer le profil</button>
+</div>
+</section>
+<section id="screen-home" class="screen">
+<h1 id="homeGreeting">Bonjour</h1>
+    <div class="card">
+    <h2>Mission du jour</h2>
+<div class="progress-outer"><div class="progress-inner" id="dayProgress" style="width:0%;"></div></div>
+    <div id="missionList"></div>
+    </div>
+    </section>
+    <section id="screen-lesson-math" class="screen">
+    <button class="btn secondary backbtn">Retour</button>
+    <h1>Foret des Nombres</h1>
+<div class="card">
+<div class="progress-outer"><div class="progress-inner" id="mathProgress" style="width:0%;"></div></div>
+    <div class="question-box">
+    <div class="q" id="mathQuestion">?</div>
+    <div class="answers" id="mathAnswers"></div>
+    <div class="feedback" id="mathFeedback"></div>
+    </div>
+    </div>
+    </section>
+    <section id="screen-lesson-fr" class="screen">
+    <button class="btn secondary backbtn">Retour</button>
+    <h1>Royaume des Mots</h1>
+<div class="card" id="frCard"></div>
+</section>
+<section id="screen-lesson-en" class="screen">
+    <button class="btn secondary backbtn">Retour</button>
+    <h1>English Island</h1>
+    <div class="card" id="enCard"></div>
+</section>
+    <section id="screen-rewards" class="screen">
+    <h1>Mes Recompenses</h1>
+    <div class="card">
+    <div class="stars-bar" id="rewardsStars"></div>
+    <div class="progress-outer"><div class="progress-inner" id="badgeProgress" style="width:0%;"></div></div>
+    <p id="badgeNext"></p>
+    </div>
+    <div class="card">
+    <h2>Badges debloques</h2>
+    <div id="badgesList"></div>
+    </div>
+    </section>
+    <section id="screen-parent" class="screen">
+    <h1>Espace Parent</h1>
+    <div class="card">
+    <table class="parent-table" id="parentTable">
+    <thead><tr><th>Enfant</th><th>Parcours</th><th>Etoiles</th><th>Missions du jour</th><th>Derniere activite</th></tr></thead>
+    <tbody id="parentTbody"></tbody>
+</table>
+</div>
+</section>
+</main>
+<script>
+const STORAGE_KEY='geniusAcademyData';
+function loadData(){
+try{return JSON.parse(localStorage.getItem(STORAGE_KEY))||{profiles:[],currentId:null};}catch(e){return {profiles:[],currentId:null};}
+}
+function saveData(d){localStorage.setItem(STORAGE_KEY,JSON.stringify(d));}
+let DATA=loadData();
+function todayStr(){return new Date().toISOString().slice(0,10);}
+function getProfile(id){return DATA.profiles.find(function(p){return p.id===id;});}
+function getCurrentProfile(){return getProfile(DATA.currentId);}
+function createProfile(name,track){
+  const p={id:'p'+Date.now(),name:name,track:track,stars:0,badges:[],missionsDoneToday:[],lastDate:todayStr(),lastActive:'-'};
+    DATA.profiles.push(p);
+saveData(DATA);
+return p;
+          }
+function ensureDay(p){
+  const t=todayStr();
+if(p.lastDate!==t){p.lastDate=t;p.missionsDoneToday=[];saveData(DATA);}
+}
+const MISSIONS_7=[
+{key:'calc7',icon:'\ud83e\uddee',label:'Echauffement de calcul mental',mins:10,type:'math'},
+  {key:'lecture7',icon:'\ud83d\udcd6',label:'Aventure de lecture',mins:20,type:'fr'},
+  {key:'ecriture7',icon:'\u270d',label:'Francais et ecriture',mins:20,type:'fr'},
+  {key:'pause7',icon:'\ud83e\udd38',label:'Pause active guidee',mins:10,type:'offscreen',desc:'Fais 10 minutes de saut a la corde, danse ou etirements.'},
+  {key:'maths7',icon:'\ud83d\udd22',label:'Mathematiques',mins:25,type:'math'},
+  {key:'anglais7',icon:'\ud83d\udde3',label:'Anglais oral',mins:15,type:'en'},
+  {key:'sciences7',icon:'\ud83d\udd2c',label:'Mission sciences hors ecran',mins:30,type:'offscreen',desc:'Observe une plante du jardin et dessine ce que tu vois.'},
+{key:'art7',icon:'\ud83c\udfa8',label:'Dessin ou musique',mins:20,type:'offscreen',desc:'Dessine ou chante quelque chose qui te rend heureux.'},
+{key:'lecturepersonnelle7',icon:'\ud83d\udcda',label:'Lecture personnelle',mins:20,type:'offscreen',desc:'Lis un livre de ton choix pendant 20 minutes.'},
+{key:'presentation7',icon:'\ud83c\udfa4',label:'Presentation de la decouverte du jour',mins:10,type:'offscreen',desc:'Raconte a un adulte ce que tu as appris aujourd hui.'}
+];
+const MISSIONS_9=[
+{key:'calc9',icon:'\ud83e\uddee',label:'Calcul mental adaptatif',mins:10,type:'math'},
+{key:'maths9',icon:'\ud83d\udd22',label:'Mathematiques et resolution de probleme',mins:30,type:'math'},
+{key:'redaction9',icon:'\u270d',label:'Francais et redaction',mins:30,type:'fr'},
+{key:'anglais9',icon:'\ud83d\udde3',label:'Anglais',mins:20,type:'en'},
+{key:'sciences9',icon:'\ud83c\udf0d',label:'Sciences ou histoire geographie',mins:30,type:'offscreen',desc:'Choisis un sujet et fais une petite recherche avec un adulte.'},
+{key:'info9',icon:'\ud83d\udcbb',label:'Projet informatique ou IA',mins:25,type:'offscreen',desc:'Reflechis a un petit programme ou une histoire que tu pourrais creer.'},
+{key:'exterieur9',icon:'\ud83c\udf33',label:'Mission exterieure ou experience',mins:25,type:'offscreen',desc:'Realise une experience ou une observation en exterieur.'},
+{key:'sport9',icon:'\u26bd',label:'Sport',mins:30,type:'offscreen',desc:'Fais 30 minutes de sport ou de jeu physique.'},
+{key:'lecture9',icon:'\ud83d\udcda',label:'Lecture',mins:20,type:'offscreen',desc:'Lis un livre de ton choix pendant 20 minutes.'}
+];
+function getMissions(track){return track==='9'?MISSIONS_9:MISSIONS_7;}
+function showScreen(id){
+document.querySelectorAll('.screen').forEach(function(s){s.classList.remove('active');});
+document.getElementById(id).classList.add('active');
+document.querySelectorAll('.navbtn').forEach(function(b){b.classList.toggle('active',b.getAttribute('data-screen')===id);});
+if(id==='screen-home')renderHome();
+if(id==='screen-rewards')renderRewards();
+if(id==='screen-parent')renderParent();
+}
+function renderProfiles(){
+const grid=document.getElementById('profilesGrid');
+grid.innerHTML='';
+DATA.profiles.forEach(function(p){
+const div=document.createElement('div');
+div.className='profile-card';
+div.innerHTML='<div class="avatar">'+(p.track==='9'?'\ud83e\uddd1\u200d\ud83c\udf93':'\ud83d\udc66')+'</div><div><strong>'+p.name+'</strong></div><div style="color:var(--text2);font-size:12px;">Parcours '+p.track+' ans</div><div class="stars-bar" style="font-size:14px;margin-top:6px;">\u2b50 '+p.stars+'</div>';
+div.onclick=function(){selectProfile(p.id);};
+grid.appendChild(div);
+});
+}
+function selectProfile(id){
+DATA.currentId=id;
+saveData(DATA);
+const p=getCurrentProfile();
+ensureDay(p);
+document.getElementById('mainNav').style.display='flex';
+document.getElementById('starsDisplay').style.display='block';
+document.getElementById('headerSub').textContent=p.name+' - Parcours '+p.track+' ans';
+document.getElementById('starsDisplay').textContent='\u2b50 '+p.stars;
+showScreen('screen-home');
+}
+function renderHome(){
+const p=getCurrentProfile();
+if(!p)return;
+ensureDay(p);
+document.getElementById('homeGreeting').textContent='Bonjour '+p.name;
+const missions=getMissions(p.track);
+const list=document.getElementById('missionList');
+list.innerHTML='';
+missions.forEach(function(m){
+const done=p.missionsDoneToday.indexOf(m.key)>=0;
+const div=document.createElement('div');
+div.className='mission-item'+(done?' done':'');
+const tagClass=m.type==='math'?'tag-math':m.type==='fr'?'tag-fr':m.type==='en'?'tag-en':'tag-offscreen';
+div.innerHTML='<div class="icon">'+m.icon+'</div><div class="info"><div>'+m.label+'<span class="world-tag '+tagClass+'">'+m.type+'</span></div><div class="mins">'+m.mins+' min'+(m.desc?' - '+m.desc:'')+'</div></div><div>'+(done?'\u2705':'\u25b6\ufe0f')+'</div>';
+div.onclick=function(){missionClick(m);};
+list.appendChild(div);
+});
+const pct=Math.round(100*p.missionsDoneToday.length/missions.length);
+document.getElementById('dayProgress').style.width=pct+'%';
+}
+function missionClick(m){
+const p=getCurrentProfile();
+if(m.type==='math'){startMathLesson();return;}
+if(m.type==='fr'){startFrLesson();return;}
+if(m.type==='en'){startEnLesson();return;}
+const idx=p.missionsDoneToday.indexOf(m.key);
+if(idx>=0){p.missionsDoneToday.splice(idx,1);}else{p.missionsDoneToday.push(m.key);awardStars(2);}
+saveData(DATA);
+renderHome();
+}
+let mathState={index:0,total:8,correct:0,track:'7'};
+function generateMathQuestion(track){
+let a,b,op,answer,text;
+if(track==='9'){
+const ops=['x','div','frac'];
+op=ops[Math.floor(Math.random()*ops.length)];
+if(op==='x'){a=Math.floor(Math.random()*9)+2;b=Math.floor(Math.random()*9)+2;answer=a*b;text=a+' \u00d7 '+b;}
+else if(op==='div'){b=Math.floor(Math.random()*9)+2;answer=Math.floor(Math.random()*9)+2;a=b*answer;text=a+' \u00f7 '+b;}
+else{const den=[2,4,5,10][Math.floor(Math.random()*4)];const num=Math.floor(Math.random()*den);answer=Math.round((num/den)*100);text='Combien fait '+num+'/'+den+' en pourcentage ?';}
+}else{
+const ops=['add','sub'];
+op=ops[Math.floor(Math.random()*ops.length)];
+a=Math.floor(Math.random()*15)+1;b=Math.floor(Math.random()*15)+1;
+if(op==='sub'&&b>a){const tmp=a;a=b;b=tmp;}
+answer=op==='add'?a+b:a-b;
+text=a+(op==='add'?' + ':' - ')+b;
+}
+return {text:text,answer:answer};
+}
+function startMathLesson(){
+  const p=getCurrentProfile();
+mathState={index:0,total:8,correct:0,track:p.track};
+document.getElementById('mathFeedback').textContent='';
+showScreen('screen-lesson-math');
+nextMathQuestion();
+}
+function nextMathQuestion(){
+if(mathState.index>=mathState.total){finishMathLesson();return;}
+const q=generateMathQuestion(mathState.track);
+mathState.current=q;
+document.getElementById('mathQuestion').textContent=q.text+' = ?';
+const choices=[q.answer];
+while(choices.length<4){
+const delta=Math.floor(Math.random()*6)-3;
+const c=q.answer+delta;
+if(delta!==0&&choices.indexOf(c)<0&&c>=0)choices.push(c);
+}
+choices.sort(function(){return Math.random()-0.5;});
+const box=document.getElementById('mathAnswers');
+box.innerHTML='';
+choices.forEach(function(c){
+const btn=document.createElement('button');
+btn.textContent=c;
+btn.onclick=function(){answerMath(c);};
+box.appendChild(btn);
+});
+document.getElementById('mathFeedback').textContent='';
+document.getElementById('mathFeedback').className='feedback';
+document.getElementById('mathProgress').style.width=Math.round(100*mathState.index/mathState.total)+'%';
+}
+function answerMath(c){
+const fb=document.getElementById('mathFeedback');
+if(c===mathState.current.answer){
+fb.textContent='Bravo, c est exact !';
+fb.className='feedback ok';
+mathState.correct++;
+mathState.index++;
+setTimeout(nextMathQuestion,900);
+}else{
+fb.textContent='Cette competence est encore en entrainement, essaie encore.';
+fb.className='feedback ko';
+}
+}
+function finishMathLesson(){
+awardStars(5);
+const p=getCurrentProfile();
+const missions=getMissions(p.track);
+missions.filter(function(m){return m.type==='math';}).forEach(function(m){
+if(p.missionsDoneToday.indexOf(m.key)<0)p.missionsDoneToday.push(m.key);
+});
+saveData(DATA);
+document.getElementById('mathQuestion').textContent='Mission terminee !';
+document.getElementById('mathAnswers').innerHTML='';
+document.getElementById('mathFeedback').textContent='Tu as gagne 5 etoiles. Retourne a l accueil.';
+document.getElementById('mathFeedback').className='feedback ok';
+document.getElementById('mathProgress').style.width='100%';
+}
+const FR_CONTENT={
+'7':{
+title:'Le potager de Mia',
+text:'Mia plante des graines dans son jardin. Chaque matin, elle verse un peu d eau sur la terre. Au bout de deux semaines, une petite tige verte sort du sol. Mia est tres fiere de sa plante.',
+question:'Que fait Mia chaque matin ?',
+choices:['Elle chante une chanson','Elle verse un peu d eau','Elle mange une pomme'],
+correct:1,
+spellWord:'jardin'
+},
+'9':{
+title:'La carte oubliee',
+text:'Dans le grenier de la vieille maison, Noe decouvre une carte jaunie. Elle montre un chemin qui traverse la foret jusqu a une riviere. Intrigue, Noe decide de suivre ce chemin avec sa soeur, un carnet et une boussole.',
+question:'Qu est-ce que Noe decouvre dans le grenier ?',
+choices:['Un livre de cuisine','Une carte jaunie','Une boite de jouets'],
+correct:1,
+spellWord:'boussole'
+}
+};
+let frState={step:0};
+function startFrLesson(){
+frState={step:0};
+showScreen('screen-lesson-fr');
+renderFrStep();
+}
+function renderFrStep(){
+const p=getCurrentProfile();
+const c=FR_CONTENT[p.track]||FR_CONTENT['7'];
+const card=document.getElementById('frCard');
+if(frState.step===0){
+card.innerHTML='<h2>'+c.title+'</h2><div class="reading-text">'+c.text+'</div><button class="btn" id="frContinueBtn">Continuer</button>';
+document.getElementById('frContinueBtn').onclick=function(){frState.step=1;renderFrStep();};
+}else if(frState.step===1){
+card.innerHTML='<div class="question-box"><div class="q" style="font-size:20px;">'+c.question+'</div><div class="answers" id="frAnswers"></div><div class="feedback" id="frFeedback"></div></div>';
+const box=document.getElementById('frAnswers');
+c.choices.forEach(function(ch,i){
+const btn=document.createElement('button');
+btn.textContent=ch;
+btn.onclick=function(){frAnswerQuestion(i);};
+box.appendChild(btn);
+});
+}else if(frState.step===2){
+card.innerHTML='<h2>Orthographe</h2><p>Ecris ce mot correctement : <strong>'+c.spellWord+'</strong></p><input type="text" id="frSpellInput"><button class="btn" id="frSpellBtn" style="margin-left:10px;">Valider</button><div class="feedback" id="frFeedback2"></div>';
+document.getElementById('frSpellBtn').onclick=function(){checkSpelling(c.spellWord);};
+}else{
+card.innerHTML='<h2>Bravo !</h2><p>Tu as termine la mission Francais et gagne 5 etoiles.</p>';
+}
+}
+function frAnswerQuestion(i){
+const p=getCurrentProfile();
+const c=FR_CONTENT[p.track]||FR_CONTENT['7'];
+const fb=document.getElementById('frFeedback');
+if(i===c.correct){
+fb.textContent='Exact, bien lu !';
+fb.className='feedback ok';
+setTimeout(function(){frState.step=2;renderFrStep();},900);
+}else{
+fb.textContent='Relis le texte, tu vas trouver.';
+fb.className='feedback ko';
+}
+}
+function checkSpelling(word){
+const val=document.getElementById('frSpellInput').value.trim().toLowerCase();
+const fb=document.getElementById('frFeedback2');
+if(val===word.toLowerCase()){
+fb.textContent='Parfait !';
+fb.className='feedback ok';
+setTimeout(function(){finishFrLesson();},900);
+}else{
+fb.textContent='Presque, regarde bien chaque lettre.';
+fb.className='feedback ko';
+}
+}
+function finishFrLesson(){
+frState.step=3;
+renderFrStep();
+awardStars(5);
+const p=getCurrentProfile();
+const missions=getMissions(p.track);
+missions.filter(function(m){return m.type==='fr';}).forEach(function(m){
+if(p.missionsDoneToday.indexOf(m.key)<0)p.missionsDoneToday.push(m.key);
+});
+saveData(DATA);
+}
+const EN_CONTENT={
+'7':[{en:'cat',fr:'chat'},{en:'dog',fr:'chien'},{en:'red',fr:'rouge'},{en:'blue',fr:'bleu'},{en:'apple',fr:'pomme'}],
+'9':[{en:'weather',fr:'le temps'},{en:'yesterday',fr:'hier'},{en:'friendly',fr:'amical'},{en:'library',fr:'bibliotheque'},{en:'to explain',fr:'expliquer'}]
+};
+let enState={phase:'learn',index:0,words:[]};
+function startEnLesson(){
+const p=getCurrentProfile();
+enState={phase:'learn',index:0,words:EN_CONTENT[p.track]||EN_CONTENT['7']};
+showScreen('screen-lesson-en');
+renderEnStep();
+}
+function renderEnStep(){
+const card=document.getElementById('enCard');
+if(enState.phase==='learn'){
+let html='<h2>Vocabulaire</h2><div class="reading-text">';
+enState.words.forEach(function(w){html+='<div style="margin-bottom:8px;"><strong>'+w.en+'</strong> = '+w.fr+'</div>';});
+html+='</div><button class="btn" id="enStartQuizBtn">J ai memorise, commencer le quiz</button>';
+card.innerHTML=html;
+document.getElementById('enStartQuizBtn').onclick=function(){enState.phase='quiz';enState.index=0;enState.correct=0;renderEnStep();};
+}else if(enState.phase==='quiz'){
+renderEnQuizQuestion();
+}else{
+card.innerHTML='<h2>Bravo !</h2><p>Tu as termine la mission Anglais et gagne 5 etoiles.</p>';
+}
+}
+function renderEnQuizQuestion(){
+if(enState.index>=enState.words.length){finishEnLesson();return;}
+const card=document.getElementById('enCard');
+const w=enState.words[enState.index];
+const others=enState.words.filter(function(x){return x!==w;}).map(function(x){return x.fr;});
+others.sort(function(){return Math.random()-0.5;});
+const choices=[w.fr].concat(others.slice(0,2));
+choices.sort(function(){return Math.random()-0.5;});
+card.innerHTML='<div class="question-box"><div class="q">Traduis: '+w.en+'</div><div class="answers" id="enAnswers"></div><div class="feedback" id="enFeedback"></div></div>';
+const box=document.getElementById('enAnswers');
+choices.forEach(function(ch){
+const btn=document.createElement('button');
+btn.textContent=ch;
+btn.onclick=function(){answerEn(ch,w.fr);};
+box.appendChild(btn);
+});
+}
+function answerEn(choice,correct){
+const fb=document.getElementById('enFeedback');
+if(choice===correct){
+fb.textContent='Very good !';
+fb.className='feedback ok';
+enState.index++;
+setTimeout(renderEnQuizQuestion,700);
+}else{
+fb.textContent='Try again !';
+fb.className='feedback ko';
+}
+}
+function finishEnLesson(){
+enState.phase='done';
+renderEnStep();
+awardStars(5);
+const p=getCurrentProfile();
+const missions=getMissions(p.track);
+missions.filter(function(m){return m.type==='en';}).forEach(function(m){
+if(p.missionsDoneToday.indexOf(m.key)<0)p.missionsDoneToday.push(m.key);
+});
+saveData(DATA);
+}
+const BADGE_THRESHOLDS=[10,25,50,100,200];
+function awardStars(n){
+const p=getCurrentProfile();
+p.stars+=n;
+p.lastActive=new Date().toLocaleDateString('fr-FR');
+checkBadges(p);
+saveData(DATA);
+document.getElementById('starsDisplay').textContent='\u2b50 '+p.stars;
+}
+function checkBadges(p){
+BADGE_THRESHOLDS.forEach(function(t){
+if(p.stars>=t&&p.badges.indexOf(t)<0)p.badges.push(t);
+});
+}
+function renderRewards(){
+const p=getCurrentProfile();
+document.getElementById('rewardsStars').textContent='\u2b50 '+p.stars+' etoiles';
+const next=BADGE_THRESHOLDS.find(function(t){return t>p.stars;});
+const prevT=BADGE_THRESHOLDS.filter(function(t){return t<=p.stars;}).pop()||0;
+if(next){
+const pct=Math.round(100*(p.stars-prevT)/(next-prevT));
+document.getElementById('badgeProgress').style.width=pct+'%';
+document.getElementById('badgeNext').textContent='Encore '+(next-p.stars)+' etoiles pour le prochain badge.';
+}else{
+document.getElementById('badgeProgress').style.width='100%';
+document.getElementById('badgeNext').textContent='Tous les badges sont debloques, bravo !';
+}
+const list=document.getElementById('badgesList');
+list.innerHTML='';
+if(p.badges.length===0)list.innerHTML='<p style="color:var(--text2);">Pas encore de badge, continue tes missions !</p>';
+p.badges.forEach(function(b){
+const span=document.createElement('span');
+span.className='badge-pill';
+span.textContent='\ud83c\udfc6 '+b+' etoiles';
+list.appendChild(span);
+});
+}
+function renderParent(){
+const tbody=document.getElementById('parentTbody');
+tbody.innerHTML='';
+DATA.profiles.forEach(function(p){
+ensureDay(p);
+const missions=getMissions(p.track);
+const tr=document.createElement('tr');
+tr.innerHTML='<td>'+p.name+'</td><td>'+p.track+' ans</td><td>\u2b50 '+p.stars+'</td><td>'+p.missionsDoneToday.length+' / '+missions.length+'</td><td>'+(p.lastActive||'-')+'</td>';
+tbody.appendChild(tr);
+});
+}
+function initApp(){
+renderProfiles();
+document.getElementById('addProfileBtn').onclick=function(){
+const nameInput=document.getElementById('newProfileName');
+const name=nameInput.value.trim();
+if(!name){alert('Merci d indiquer un prenom.');return;}
+const track=document.querySelector('input[name=track]:checked').value;
+createProfile(name,track);
+nameInput.value='';
+renderProfiles();
+};
+document.querySelectorAll('.navbtn').forEach(function(b){
+b.onclick=function(){showScreen(b.getAttribute('data-screen'));};
+});
+document.querySelectorAll('.backbtn').forEach(function(b){
+b.onclick=function(){showScreen('screen-home');};
+});
+document.getElementById('switchProfileBtn').onclick=function(){
+DATA.currentId=null;
+saveData(DATA);
+document.getElementById('mainNav').style.display='none';
+document.getElementById('starsDisplay').style.display='none';
+document.getElementById('headerSub').textContent='Choisis ton profil pour commencer';
+renderProfiles();
+showScreen('screen-select-profile');
+};
+if(DATA.currentId&&getCurrentProfile()){selectProfile(DATA.currentId);}
+}
+initApp();
+</script>
+</body>
+</html>
