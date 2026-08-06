@@ -1,0 +1,300 @@
+{
+  "subject": "echecs",
+  "name": "Échecs",
+  "niveaux": {
+    "7": [
+      {
+        "title": "Le plateau et les pions",
+        "emoji": "♟️",
+        "badge": "⬛",
+        "cours": [
+          "L'échiquier a 64 cases, claires et foncées, alternées.",
+          "Chaque joueur commence avec 16 pièces : 8 pions, 2 tours, 2 cavaliers, 2 fous, 1 dame, 1 roi.",
+          "Le pion avance tout droit d'une case (ou deux au premier coup), et capture en diagonale."
+        ],
+        "example": "Au premier coup, un pion peut avancer de 1 ou 2 cases.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Combien de cases y a-t-il sur l'échiquier ?",
+            "choices": [
+              "32",
+              "64",
+              "100"
+            ],
+            "answer": 1,
+            "exp": "Il y a 64 cases."
+          },
+          {
+            "type": "qcm",
+            "q": "Combien de pions chaque joueur a-t-il au départ ?",
+            "choices": [
+              "6",
+              "8",
+              "10"
+            ],
+            "answer": 1,
+            "exp": "Chaque joueur a 8 pions."
+          },
+          {
+            "type": "vf",
+            "q": "Le pion peut avancer de 2 cases à son premier coup.",
+            "answer": true,
+            "exp": "Oui, exact."
+          }
+        ],
+        "id": "echecs-7-0",
+        "module": "Programme 7 ans - Échecs",
+        "chapter": "Le plateau et les pions",
+        "skills": [
+          "Strategie",
+          "Logique",
+          "Concentration"
+        ],
+        "difficulty": 1,
+        "duration": 15
+      },
+      {
+        "title": "Comment se déplacent les pièces",
+        "emoji": "♞",
+        "badge": "♜",
+        "cours": [
+          "La tour se déplace en ligne droite, horizontalement ou verticalement.",
+          "Le fou se déplace en diagonale, aussi loin qu'il veut.",
+          "Le cavalier se déplace en forme de \"L\", et peut sauter par-dessus les autres pièces."
+        ],
+        "example": "Le cavalier est la seule pièce qui peut sauter par-dessus les autres.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Comment se déplace la tour ?",
+            "choices": [
+              "en diagonale",
+              "en ligne droite",
+              "en forme de L"
+            ],
+            "answer": 1,
+            "exp": "La tour se déplace en ligne droite."
+          },
+          {
+            "type": "qcm",
+            "q": "Quelle pièce peut sauter par-dessus les autres ?",
+            "choices": [
+              "le fou",
+              "la tour",
+              "le cavalier"
+            ],
+            "answer": 2,
+            "exp": "Le cavalier peut sauter par-dessus les autres pièces."
+          },
+          {
+            "type": "vf",
+            "q": "Le fou se déplace en diagonale.",
+            "answer": true,
+            "exp": "Oui, exact."
+          }
+        ],
+        "id": "echecs-7-1",
+        "module": "Programme 7 ans - Échecs",
+        "chapter": "Comment se déplacent les pièces",
+        "skills": [
+          "Strategie",
+          "Logique",
+          "Concentration"
+        ],
+        "difficulty": 2,
+        "duration": 15
+      },
+      {
+        "title": "Le roi est en échec !",
+        "emoji": "👑",
+        "badge": "🛡️",
+        "cours": [
+          "Le roi est \"en échec\" quand il est menacé par une pièce adverse.",
+          "On doit alors protéger le roi : le déplacer, bloquer, ou capturer la pièce qui menace.",
+          "Si le roi ne peut pas échapper à l'échec, c'est échec et mat : la partie est perdue."
+        ],
+        "example": "Si le roi est menacé et ne peut pas se sauver, c'est échec et mat.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Que veut dire \"le roi est en échec\" ?",
+            "choices": [
+              "il est menacé",
+              "il a gagné",
+              "il ne peut plus bouger"
+            ],
+            "answer": 0,
+            "exp": "Le roi est menacé par une pièce adverse."
+          },
+          {
+            "type": "vf",
+            "q": "Échec et mat signifie que la partie est perdue pour le roi menacé.",
+            "answer": true,
+            "exp": "Oui, exact."
+          },
+          {
+            "type": "text",
+            "q": "Comment appelle-t-on la fin de partie où le roi ne peut plus échapper ?",
+            "answer": "échec et mat",
+            "exp": "Échec et mat."
+          }
+        ],
+        "id": "echecs-7-2",
+        "module": "Programme 7 ans - Échecs",
+        "chapter": "Le roi est en échec !",
+        "skills": [
+          "Strategie",
+          "Logique",
+          "Concentration"
+        ],
+        "difficulty": 3,
+        "duration": 15
+      }
+    ],
+    "9": [
+      {
+        "title": "Les ouvertures simples",
+        "emoji": "♟️",
+        "badge": "📖",
+        "cours": [
+          "L'ouverture, ce sont les premiers coups d'une partie d'échecs.",
+          "Il est conseillé de contrôler le centre de l'échiquier dès le début.",
+          "Il faut aussi développer ses pièces (cavaliers, fous) avant d'attaquer."
+        ],
+        "example": "Avancer le pion central (e4 ou d4) est une ouverture classique et solide.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Que faut-il contrôler dès le début de la partie ?",
+            "choices": [
+              "le centre de l'échiquier",
+              "les coins",
+              "rien de particulier"
+            ],
+            "answer": 0,
+            "exp": "Il faut contrôler le centre."
+          },
+          {
+            "type": "qcm",
+            "q": "Que faut-il faire avant d'attaquer ?",
+            "choices": [
+              "développer ses pièces",
+              "avancer la dame seule",
+              "rien"
+            ],
+            "answer": 0,
+            "exp": "Il faut développer ses pièces."
+          },
+          {
+            "type": "vf",
+            "q": "Il est utile de contrôler le centre de l'échiquier au début.",
+            "answer": true,
+            "exp": "Oui, exact."
+          }
+        ],
+        "id": "echecs-9-0",
+        "module": "Programme 9 ans - Échecs",
+        "chapter": "Les ouvertures simples",
+        "skills": [
+          "Strategie",
+          "Logique",
+          "Concentration"
+        ],
+        "difficulty": 1,
+        "duration": 15
+      },
+      {
+        "title": "Les tactiques de base",
+        "emoji": "🎯",
+        "badge": "⚔️",
+        "cours": [
+          "La fourchette : une pièce attaque deux pièces adverses en même temps.",
+          "Le clouage : une pièce adverse ne peut pas bouger sans exposer une pièce plus importante.",
+          "Ces tactiques permettent de gagner du matériel sur l'adversaire."
+        ],
+        "example": "Un cavalier peut faire une fourchette en attaquant la tour et le roi en même temps.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Qu'est-ce qu'une fourchette ?",
+            "choices": [
+              "attaquer deux pièces en même temps",
+              "protéger le roi",
+              "avancer un pion"
+            ],
+            "answer": 0,
+            "exp": "C'est attaquer deux pièces en même temps."
+          },
+          {
+            "type": "qcm",
+            "q": "Qu'est-ce que le clouage ?",
+            "choices": [
+              "une pièce ne peut pas bouger sans risque",
+              "un pion qui avance",
+              "le roque"
+            ],
+            "answer": 0,
+            "exp": "Une pièce clouée ne peut pas bouger sans exposer une pièce importante."
+          },
+          {
+            "type": "vf",
+            "q": "La fourchette permet parfois de gagner une pièce adverse.",
+            "answer": true,
+            "exp": "Oui, exact."
+          }
+        ],
+        "id": "echecs-9-1",
+        "module": "Programme 9 ans - Échecs",
+        "chapter": "Les tactiques de base",
+        "skills": [
+          "Strategie",
+          "Logique",
+          "Concentration"
+        ],
+        "difficulty": 2,
+        "duration": 15
+      },
+      {
+        "title": "Faire mat : les échecs et mats simples",
+        "emoji": "🏆",
+        "badge": "👑",
+        "cours": [
+          "Le mat du couloir se produit quand le roi est bloqué sur sa dernière rangée.",
+          "La dame et la tour sont de puissantes pièces pour donner échec et mat.",
+          "Il faut toujours vérifier que le roi adverse n'a aucune case pour s'échapper."
+        ],
+        "example": "Avec une tour, on peut acculer le roi adverse sur le bord de l'échiquier pour le mater.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Quelles pièces sont très utiles pour mater ?",
+            "choices": [
+              "la dame et la tour",
+              "les pions seuls",
+              "le fou seul"
+            ],
+            "answer": 0,
+            "exp": "La dame et la tour sont très puissantes pour mater."
+          },
+          {
+            "type": "vf",
+            "q": "Avant de dire échec et mat, il faut vérifier que le roi n'a aucune case libre.",
+            "answer": true,
+            "exp": "Oui, exact."
+          }
+        ],
+        "id": "echecs-9-2",
+        "module": "Programme 9 ans - Échecs",
+        "chapter": "Faire mat : les échecs et mats simples",
+        "skills": [
+          "Strategie",
+          "Logique",
+          "Concentration"
+        ],
+        "difficulty": 3,
+        "duration": 15
+      }
+    ]
+  }
+          }
