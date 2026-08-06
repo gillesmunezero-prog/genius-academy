@@ -1,0 +1,352 @@
+{
+  "subject": "anglais",
+  "name": "Anglais",
+  "niveaux": {
+    "7": [
+      {
+        "title": "Colours & Animals",
+        "emoji": "🎨",
+        "badge": "🐶",
+        "cours": [
+          "Let's learn colours: red, blue, green, yellow, black, white.",
+          "Let's learn animals: cat, dog, bird, fish, horse.",
+          "We can mix them: a red cat, a blue bird!"
+        ],
+        "example": "The dog is brown.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "How do you say \"chat\" in English?",
+            "choices": [
+              "dog",
+              "cat",
+              "bird"
+            ],
+            "answer": 1,
+            "exp": "Cat means chat."
+          },
+          {
+            "type": "qcm",
+            "q": "What colour is the sky?",
+            "choices": [
+              "red",
+              "blue",
+              "green"
+            ],
+            "answer": 1,
+            "exp": "The sky is blue."
+          },
+          {
+            "type": "vf",
+            "q": "\"Dog\" means \"chien\".",
+            "answer": true,
+            "exp": "Yes, dog = chien."
+          },
+          {
+            "type": "text",
+            "q": "Translate: rouge",
+            "answer": "red",
+            "exp": "Rouge means red."
+          }
+        ],
+        "id": "anglais-7-0",
+        "module": "Programme 7 ans - Anglais",
+        "chapter": "Colours & Animals",
+        "skills": [
+          "Expression orale",
+          "Prononciation",
+          "Vocabulaire"
+        ],
+        "difficulty": 1,
+        "duration": 15
+      },
+      {
+        "title": "Numbers & Greetings",
+        "emoji": "🔢",
+        "badge": "👋",
+        "cours": [
+          "Numbers: one, two, three, four, five, six, seven, eight, nine, ten.",
+          "Greetings: Hello! Good morning! How are you? I'm fine, thank you.",
+          "We say Goodbye! when we leave."
+        ],
+        "example": "Hello! I am fine, thank you!",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "What comes after \"four\"?",
+            "choices": [
+              "three",
+              "five",
+              "six"
+            ],
+            "answer": 1,
+            "exp": "Five comes after four."
+          },
+          {
+            "type": "qcm",
+            "q": "How do you say hello?",
+            "choices": [
+              "Goodbye",
+              "Hello",
+              "Please"
+            ],
+            "answer": 1,
+            "exp": "Hello is used to greet someone."
+          },
+          {
+            "type": "vf",
+            "q": "\"Ten\" means dix.",
+            "answer": true,
+            "exp": "Yes, ten = dix."
+          },
+          {
+            "type": "text",
+            "q": "Translate: sept",
+            "answer": "seven",
+            "exp": "Sept means seven."
+          }
+        ],
+        "id": "anglais-7-1",
+        "module": "Programme 7 ans - Anglais",
+        "chapter": "Numbers & Greetings",
+        "skills": [
+          "Expression orale",
+          "Prononciation",
+          "Vocabulaire"
+        ],
+        "difficulty": 2,
+        "duration": 15
+      },
+      {
+        "title": "My Family",
+        "emoji": "👪",
+        "badge": "❤️",
+        "cours": [
+          "Family words: mother, father, sister, brother, grandmother, grandfather.",
+          "We say: This is my mother. He is my brother.",
+          "Family is important everywhere in the world."
+        ],
+        "example": "This is my sister.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "How do you say \"mère\" in English?",
+            "choices": [
+              "father",
+              "mother",
+              "sister"
+            ],
+            "answer": 1,
+            "exp": "Mother means mère."
+          },
+          {
+            "type": "qcm",
+            "q": "How do you say \"frère\"?",
+            "choices": [
+              "brother",
+              "sister",
+              "father"
+            ],
+            "answer": 0,
+            "exp": "Brother means frère."
+          },
+          {
+            "type": "vf",
+            "q": "\"Grandmother\" means grand-mère.",
+            "answer": true,
+            "exp": "Yes, correct."
+          },
+          {
+            "type": "text",
+            "q": "Translate: père",
+            "answer": "father",
+            "exp": "Père means father."
+          }
+        ],
+        "id": "anglais-7-2",
+        "module": "Programme 7 ans - Anglais",
+        "chapter": "My Family",
+        "skills": [
+          "Expression orale",
+          "Prononciation",
+          "Vocabulaire"
+        ],
+        "difficulty": 3,
+        "duration": 15
+      }
+    ],
+    "9": [
+      {
+        "title": "Daily Routine",
+        "emoji": "⏰",
+        "badge": "🛏️",
+        "cours": [
+          "Daily routine verbs: wake up, eat breakfast, go to school, do homework, sleep.",
+          "We use \"I\" + verb: I wake up at 7 o'clock.",
+          "Time words: morning, afternoon, evening, night."
+        ],
+        "example": "I go to school in the morning.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "What do you do in the morning?",
+            "choices": [
+              "sleep",
+              "wake up",
+              "dream"
+            ],
+            "answer": 1,
+            "exp": "We wake up in the morning."
+          },
+          {
+            "type": "qcm",
+            "q": "Translate: se coucher",
+            "choices": [
+              "wake up",
+              "go to bed",
+              "eat"
+            ],
+            "answer": 1,
+            "exp": "Se coucher means go to bed."
+          },
+          {
+            "type": "vf",
+            "q": "\"Breakfast\" is a meal.",
+            "answer": true,
+            "exp": "Yes, breakfast is the morning meal."
+          },
+          {
+            "type": "text",
+            "q": "Translate: le soir",
+            "answer": "evening",
+            "exp": "Le soir means evening."
+          }
+        ],
+        "id": "anglais-9-0",
+        "module": "Programme 9 ans - Anglais",
+        "chapter": "Daily Routine",
+        "skills": [
+          "Expression orale",
+          "Prononciation",
+          "Vocabulaire"
+        ],
+        "difficulty": 1,
+        "duration": 15
+      },
+      {
+        "title": "Weather & Seasons",
+        "emoji": "☀️",
+        "badge": "🌦️",
+        "cours": [
+          "Weather words: sunny, rainy, cloudy, windy, snowy.",
+          "Seasons: spring, summer, autumn, winter.",
+          "We say: It is sunny today. In winter, it snows."
+        ],
+        "example": "In summer, it is sunny and hot.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Translate: il pleut",
+            "choices": [
+              "it is sunny",
+              "it is raining",
+              "it is snowing"
+            ],
+            "answer": 1,
+            "exp": "Il pleut means it is raining."
+          },
+          {
+            "type": "qcm",
+            "q": "Which season comes after winter?",
+            "choices": [
+              "summer",
+              "autumn",
+              "spring"
+            ],
+            "answer": 2,
+            "exp": "Spring comes after winter."
+          },
+          {
+            "type": "vf",
+            "q": "\"Snowy\" means neigeux.",
+            "answer": true,
+            "exp": "Yes, correct."
+          },
+          {
+            "type": "text",
+            "q": "Translate: l'été",
+            "answer": "summer",
+            "exp": "L'été means summer."
+          }
+        ],
+        "id": "anglais-9-1",
+        "module": "Programme 9 ans - Anglais",
+        "chapter": "Weather & Seasons",
+        "skills": [
+          "Expression orale",
+          "Prononciation",
+          "Vocabulaire"
+        ],
+        "difficulty": 2,
+        "duration": 15
+      },
+      {
+        "title": "At School",
+        "emoji": "🏫",
+        "badge": "🎒",
+        "cours": [
+          "School words: teacher, classroom, book, pencil, schoolbag.",
+          "We say: My teacher is nice. I have a red pencil.",
+          "Subjects: maths, English, geography, reading."
+        ],
+        "example": "My favourite subject is maths.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Translate: le professeur",
+            "choices": [
+              "student",
+              "teacher",
+              "pencil"
+            ],
+            "answer": 1,
+            "exp": "Le professeur means teacher."
+          },
+          {
+            "type": "qcm",
+            "q": "Translate: le cartable",
+            "choices": [
+              "schoolbag",
+              "classroom",
+              "book"
+            ],
+            "answer": 0,
+            "exp": "Le cartable means schoolbag."
+          },
+          {
+            "type": "vf",
+            "q": "\"Pencil\" means crayon.",
+            "answer": true,
+            "exp": "Yes, correct."
+          },
+          {
+            "type": "text",
+            "q": "Translate: la salle de classe",
+            "answer": "classroom",
+            "exp": "La salle de classe means classroom."
+          }
+        ],
+        "id": "anglais-9-2",
+        "module": "Programme 9 ans - Anglais",
+        "chapter": "At School",
+        "skills": [
+          "Expression orale",
+          "Prononciation",
+          "Vocabulaire"
+        ],
+        "difficulty": 3,
+        "duration": 15
+      }
+    ]
+  }
+          }
