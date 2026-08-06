@@ -1,0 +1,185 @@
+{
+  "subject": "arts",
+  "name": "Arts & Musique",
+  "niveaux": {
+    "7": [
+      {
+        "title": "Les couleurs et les formes",
+        "emoji": "🎨",
+        "badge": "🟡",
+        "cours": [
+          "Il existe 3 couleurs primaires : rouge, bleu, jaune.",
+          "En les mélangeant, on obtient des couleurs secondaires : orange, vert, violet.",
+          "Les formes de base sont le cercle, le carré, le triangle et le rectangle."
+        ],
+        "example": "Bleu + jaune = vert !",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Que donne le mélange rouge + jaune ?",
+            "choices": [
+              "orange",
+              "vert",
+              "violet"
+            ],
+            "answer": 0,
+            "exp": "Rouge + jaune = orange."
+          },
+          {
+            "type": "qcm",
+            "q": "Que donne le mélange bleu + jaune ?",
+            "choices": [
+              "orange",
+              "vert",
+              "violet"
+            ],
+            "answer": 1,
+            "exp": "Bleu + jaune = vert."
+          },
+          {
+            "type": "vf",
+            "q": "Le rouge est une couleur primaire.",
+            "answer": true,
+            "exp": "Oui, exact."
+          }
+        ],
+        "id": "arts-7-0",
+        "module": "Programme 7 ans - Arts & Musique",
+        "chapter": "Les couleurs et les formes",
+        "skills": [
+          "Creativite"
+        ],
+        "difficulty": 1,
+        "duration": 15
+      },
+      {
+        "title": "Découverte de la musique et du rythme",
+        "emoji": "🎵",
+        "badge": "🥁",
+        "cours": [
+          "La musique est faite de sons, de silences et de rythme.",
+          "On peut taper des mains pour suivre un rythme régulier.",
+          "Certains instruments se frappent (percussions), d'autres se soufflent, d'autres ont des cordes."
+        ],
+        "example": "Le tambour est un instrument à percussion.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Comment joue-t-on du tambour ?",
+            "choices": [
+              "en soufflant",
+              "en le frappant",
+              "avec des cordes"
+            ],
+            "answer": 1,
+            "exp": "On frappe le tambour, c'est une percussion."
+          },
+          {
+            "type": "vf",
+            "q": "La guitare est un instrument à cordes.",
+            "answer": true,
+            "exp": "Oui, exact."
+          },
+          {
+            "type": "text",
+            "q": "Cite un instrument à percussion",
+            "answer": "tambour",
+            "exp": "tambour, xylophone, batterie..."
+          }
+        ],
+        "id": "arts-7-1",
+        "module": "Programme 7 ans - Arts & Musique",
+        "chapter": "Découverte de la musique et du rythme",
+        "skills": [
+          "Creativite"
+        ],
+        "difficulty": 2,
+        "duration": 15
+      }
+    ],
+    "9": [
+      {
+        "title": "La perspective et le dessin",
+        "emoji": "✏️",
+        "badge": "🖼️",
+        "cours": [
+          "La perspective permet de donner une impression de profondeur sur un dessin plat.",
+          "Les objets plus loin paraissent plus petits que les objets proches.",
+          "Les lignes qui s'éloignent semblent se rejoindre vers un point de fuite."
+        ],
+        "example": "Une route dessinée en perspective semble se rétrécir au loin.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Comment paraissent les objets éloignés en perspective ?",
+            "choices": [
+              "plus grands",
+              "plus petits",
+              "de la même taille"
+            ],
+            "answer": 1,
+            "exp": "Ils paraissent plus petits."
+          },
+          {
+            "type": "vf",
+            "q": "La perspective donne une impression de profondeur.",
+            "answer": true,
+            "exp": "Oui, exact."
+          }
+        ],
+        "id": "arts-9-0",
+        "module": "Programme 9 ans - Arts & Musique",
+        "chapter": "La perspective et le dessin",
+        "skills": [
+          "Creativite"
+        ],
+        "difficulty": 1,
+        "duration": 15
+      },
+      {
+        "title": "Les grands artistes et leurs œuvres",
+        "emoji": "🖌️",
+        "badge": "🎭",
+        "cours": [
+          "Léonard de Vinci a peint la célèbre Joconde.",
+          "Vincent Van Gogh est connu pour ses tableaux avec des couleurs vives, comme La Nuit étoilée.",
+          "Chaque artiste a un style unique qui le rend reconnaissable."
+        ],
+        "example": "La Joconde est un tableau très célèbre exposé au musée du Louvre.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Qui a peint la Joconde ?",
+            "choices": [
+              "Vincent Van Gogh",
+              "Léonard de Vinci",
+              "Pablo Picasso"
+            ],
+            "answer": 1,
+            "exp": "Léonard de Vinci a peint la Joconde."
+          },
+          {
+            "type": "vf",
+            "q": "Van Gogh est connu pour ses couleurs vives.",
+            "answer": true,
+            "exp": "Oui, exact."
+          },
+          {
+            "type": "text",
+            "q": "Dans quel musée est exposée la Joconde ?",
+            "answer": "Louvre",
+            "exp": "Le musée du Louvre."
+          }
+        ],
+        "id": "arts-9-1",
+        "module": "Programme 9 ans - Arts & Musique",
+        "chapter": "Les grands artistes et leurs œuvres",
+        "skills": [
+          "Creativite"
+        ],
+        "difficulty": 2,
+        "duration": 15
+      }
+    ]
+  }
+}
