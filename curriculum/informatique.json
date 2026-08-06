@@ -1,0 +1,300 @@
+{
+  "subject": "informatique",
+  "name": "Informatique",
+  "niveaux": {
+    "7": [
+      {
+        "title": "Découvrir l'ordinateur",
+        "emoji": "🖥️",
+        "badge": "⌨️",
+        "cours": [
+          "Un ordinateur a un écran, un clavier et une souris.",
+          "L'écran affiche les images, le clavier sert à écrire, la souris à cliquer.",
+          "Une tablette fonctionne un peu comme un ordinateur, mais avec un écran tactile."
+        ],
+        "example": "On clique sur une icône avec la souris pour ouvrir un programme.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Avec quoi écrit-on sur un ordinateur ?",
+            "choices": [
+              "la souris",
+              "le clavier",
+              "l'écran"
+            ],
+            "answer": 1,
+            "exp": "On écrit avec le clavier."
+          },
+          {
+            "type": "qcm",
+            "q": "Que fait la souris ?",
+            "choices": [
+              "elle affiche les images",
+              "elle sert à cliquer",
+              "elle écrit"
+            ],
+            "answer": 1,
+            "exp": "Elle sert à cliquer et se déplacer."
+          },
+          {
+            "type": "vf",
+            "q": "L'écran sert à afficher les images.",
+            "answer": true,
+            "exp": "Oui, exact."
+          }
+        ],
+        "id": "informatique-7-0",
+        "module": "Programme 7 ans - Informatique",
+        "chapter": "Découvrir l'ordinateur",
+        "skills": [
+          "Programmation",
+          "Logique"
+        ],
+        "difficulty": 1,
+        "duration": 15
+      },
+      {
+        "title": "Rester en sécurité sur internet",
+        "emoji": "🛡️",
+        "badge": "🔒",
+        "cours": [
+          "Il ne faut jamais donner son nom complet, son adresse ou son mot de passe à un inconnu.",
+          "Il faut toujours demander à un adulte avant de télécharger quelque chose.",
+          "Si un message ou un site nous met mal à l'aise, il faut en parler à un adulte."
+        ],
+        "example": "Si quelqu'un demande ton adresse sur internet, n'y réponds pas et parles-en à un adulte.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Que faire si un inconnu demande ton adresse sur internet ?",
+            "choices": [
+              "la donner",
+              "ne pas répondre et en parler à un adulte",
+              "donner une fausse adresse"
+            ],
+            "answer": 1,
+            "exp": "Il ne faut jamais donner ces informations et en parler à un adulte."
+          },
+          {
+            "type": "vf",
+            "q": "On peut donner son mot de passe à un ami sur internet.",
+            "answer": false,
+            "exp": "Non, le mot de passe ne se partage jamais."
+          },
+          {
+            "type": "text",
+            "q": "À qui parler si un site nous met mal à l'aise ?",
+            "answer": "un adulte",
+            "exp": "À un adulte de confiance."
+          }
+        ],
+        "id": "informatique-7-1",
+        "module": "Programme 7 ans - Informatique",
+        "chapter": "Rester en sécurité sur internet",
+        "skills": [
+          "Programmation",
+          "Logique"
+        ],
+        "difficulty": 2,
+        "duration": 15
+      },
+      {
+        "title": "Mes premiers pas en code",
+        "emoji": "🧩",
+        "badge": "🤖",
+        "cours": [
+          "Programmer, c'est donner des instructions précises, dans l'ordre, à un ordinateur.",
+          "Une suite d'instructions s'appelle un algorithme.",
+          "Par exemple pour faire avancer un robot : avance, tourne à droite, avance."
+        ],
+        "example": "Pour dessiner un carré : avance, tourne, avance, tourne, avance, tourne, avance.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Comment s'appelle une suite d'instructions ?",
+            "choices": [
+              "un algorithme",
+              "un dessin",
+              "une image"
+            ],
+            "answer": 0,
+            "exp": "C'est un algorithme."
+          },
+          {
+            "type": "qcm",
+            "q": "Pour faire avancer un robot puis tourner, dans quel ordre donner les instructions ?",
+            "choices": [
+              "tourner puis avancer",
+              "avancer puis tourner",
+              "cela n'a pas d'importance"
+            ],
+            "answer": 1,
+            "exp": "L'ordre des instructions compte : avancer puis tourner."
+          },
+          {
+            "type": "vf",
+            "q": "Programmer, c'est donner des instructions dans le désordre.",
+            "answer": false,
+            "exp": "Non, l'ordre est très important."
+          }
+        ],
+        "id": "informatique-7-2",
+        "module": "Programme 7 ans - Informatique",
+        "chapter": "Mes premiers pas en code",
+        "skills": [
+          "Programmation",
+          "Logique"
+        ],
+        "difficulty": 3,
+        "duration": 15
+      }
+    ],
+    "9": [
+      {
+        "title": "Comment fonctionne un ordinateur",
+        "emoji": "⚙️",
+        "badge": "💾",
+        "cours": [
+          "Un ordinateur traite des informations grâce à son processeur, son cerveau électronique.",
+          "Il stocke les données dans une mémoire (RAM) et un disque de stockage.",
+          "Tout, dans un ordinateur, est transformé en 0 et en 1 : c'est le code binaire."
+        ],
+        "example": "Le processeur exécute des milliards d'instructions chaque seconde.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Comment s'appelle le \"cerveau\" de l'ordinateur ?",
+            "choices": [
+              "le processeur",
+              "l'écran",
+              "le clavier"
+            ],
+            "answer": 0,
+            "exp": "C'est le processeur."
+          },
+          {
+            "type": "qcm",
+            "q": "Avec quels chiffres fonctionne le code binaire ?",
+            "choices": [
+              "0 et 1",
+              "1 et 2",
+              "2 et 3"
+            ],
+            "answer": 0,
+            "exp": "Le binaire utilise 0 et 1."
+          },
+          {
+            "type": "vf",
+            "q": "L'ordinateur stocke des données dans sa mémoire.",
+            "answer": true,
+            "exp": "Oui, exact."
+          }
+        ],
+        "id": "informatique-9-0",
+        "module": "Programme 9 ans - Informatique",
+        "chapter": "Comment fonctionne un ordinateur",
+        "skills": [
+          "Programmation",
+          "Logique"
+        ],
+        "difficulty": 1,
+        "duration": 15
+      },
+      {
+        "title": "Créer un programme pas à pas",
+        "emoji": "👨‍💻",
+        "badge": "🚀",
+        "cours": [
+          "Un programme est une suite d'instructions que l'ordinateur exécute dans l'ordre.",
+          "On utilise souvent des boucles pour répéter une action plusieurs fois.",
+          "On utilise des conditions (si... alors...) pour faire des choix."
+        ],
+        "example": "Si le robot voit un mur, alors il tourne. Sinon, il avance.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "À quoi sert une boucle en programmation ?",
+            "choices": [
+              "à répéter une action",
+              "à arrêter le programme",
+              "à dessiner"
+            ],
+            "answer": 0,
+            "exp": "Une boucle répète une action plusieurs fois."
+          },
+          {
+            "type": "qcm",
+            "q": "Que permet une condition (si... alors...) ?",
+            "choices": [
+              "de faire un choix",
+              "de répéter",
+              "de stocker des données"
+            ],
+            "answer": 0,
+            "exp": "Elle permet de faire un choix selon une situation."
+          },
+          {
+            "type": "vf",
+            "q": "Un programme s'exécute toujours dans le désordre.",
+            "answer": false,
+            "exp": "Non, il s'exécute dans l'ordre des instructions."
+          }
+        ],
+        "id": "informatique-9-1",
+        "module": "Programme 9 ans - Informatique",
+        "chapter": "Créer un programme pas à pas",
+        "skills": [
+          "Programmation",
+          "Logique"
+        ],
+        "difficulty": 2,
+        "duration": 15
+      },
+      {
+        "title": "L'intelligence artificielle, comment ça marche ?",
+        "emoji": "🤖",
+        "badge": "🧠",
+        "cours": [
+          "L'intelligence artificielle (IA) est un programme qui apprend à partir d'exemples.",
+          "L'IA peut reconnaître des images, comprendre du texte ou répondre à des questions.",
+          "Il faut toujours vérifier les réponses d'une IA, car elle peut se tromper."
+        ],
+        "example": "Une IA peut apprendre à reconnaître des chats après avoir vu des milliers de photos de chats.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Comment une IA apprend-elle généralement ?",
+            "choices": [
+              "à partir d'exemples",
+              "par magie",
+              "en dormant"
+            ],
+            "answer": 0,
+            "exp": "Elle apprend à partir de nombreux exemples."
+          },
+          {
+            "type": "vf",
+            "q": "Une IA peut parfois se tromper.",
+            "answer": true,
+            "exp": "Oui, il faut toujours vérifier ses réponses."
+          },
+          {
+            "type": "text",
+            "q": "Que faut-il toujours faire avec les réponses d'une IA ?",
+            "answer": "les vérifier",
+            "exp": "Il faut toujours les vérifier."
+          }
+        ],
+        "id": "informatique-9-2",
+        "module": "Programme 9 ans - Informatique",
+        "chapter": "L'intelligence artificielle, comment ça marche ?",
+        "skills": [
+          "Programmation",
+          "Logique"
+        ],
+        "difficulty": 3,
+        "duration": 15
+      }
+    ]
+  }
+          }
