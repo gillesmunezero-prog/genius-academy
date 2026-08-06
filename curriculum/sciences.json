@@ -1,4 +1,809 @@
 {
+ "subject": "sciences",
+ "name": "Sciences",
+ "niveaux": {
+  "7": [
+   {
+    "title": "Le corps humain",
+    "emoji": "🫀",
+    "badge": "🩺",
+    "cours": [
+     "Notre corps est composé d'organes qui travaillent ensemble.",
+     "Le cœur pompe le sang dans tout le corps.",
+     "Les poumons nous permettent de respirer l'air."
+    ],
+    "example": "Quand tu cours, ton cœur bat plus vite.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Quel organe pompe le sang ?",
+      "choices": [
+       "le cerveau",
+       "le cœur",
+       "l'estomac"
+      ],
+      "answer": 1,
+      "exp": "Le cœur pompe le sang."
+     },
+     {
+      "type": "qcm",
+      "q": "Avec quoi respire-t-on ?",
+      "choices": [
+       "les poumons",
+       "les os",
+       "les muscles"
+      ],
+      "answer": 0,
+      "exp": "On respire avec les poumons."
+     },
+     {
+      "type": "vf",
+      "q": "Le cœur bat plus vite quand on court.",
+      "answer": true,
+      "exp": "Oui, exact."
+     },
+     {
+      "type": "text",
+      "q": "Quel organe permet de respirer ?",
+      "answer": "poumons",
+      "exp": "Les poumons."
+     }
+    ],
+    "id": "sciences-7-0",
+    "module": "Programme 7 ans - Sciences",
+    "chapter": "Le corps humain",
+    "skills": [
+     "Esprit critique",
+     "Resolution de probleme",
+     "Curiosite"
+    ],
+    "difficulty": 1,
+    "duration": 15
+   },
+   {
+    "title": "Les animaux et leur habitat",
+    "emoji": "🐻",
+    "badge": "🌳",
+    "cours": [
+     "Chaque animal vit dans un habitat adapté à ses besoins.",
+     "L'ours polaire vit dans le froid de la banquise.",
+     "Le poisson vit dans l'eau grâce à ses branchies."
+    ],
+    "example": "Le poisson respire sous l'eau grâce à ses branchies.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Où vit l'ours polaire ?",
+      "choices": [
+       "dans le désert",
+       "sur la banquise",
+       "dans la forêt tropicale"
+      ],
+      "answer": 1,
+      "exp": "Il vit sur la banquise, dans le froid."
+     },
+     {
+      "type": "qcm",
+      "q": "Grâce à quoi le poisson respire-t-il sous l'eau ?",
+      "choices": [
+       "des poumons",
+       "des branchies",
+       "des ailes"
+      ],
+      "answer": 1,
+      "exp": "Grâce à ses branchies."
+     },
+     {
+      "type": "vf",
+      "q": "Tous les animaux vivent dans le même habitat.",
+      "answer": false,
+      "exp": "Non, chaque animal a un habitat adapté."
+     },
+     {
+      "type": "text",
+      "q": "Où vit un poisson ?",
+      "answer": "dans l'eau",
+      "exp": "Dans l'eau."
+     }
+    ],
+    "id": "sciences-7-1",
+    "module": "Programme 7 ans - Sciences",
+    "chapter": "Les animaux et leur habitat",
+    "skills": [
+     "Esprit critique",
+     "Resolution de probleme",
+     "Curiosite"
+    ],
+    "difficulty": 2,
+    "duration": 15
+   },
+   {
+    "title": "L'eau et ses états",
+    "emoji": "💧",
+    "badge": "❄️",
+    "cours": [
+     "L'eau peut exister sous 3 états : solide (glace), liquide (eau), gazeux (vapeur).",
+     "Quand il fait très froid, l'eau devient de la glace.",
+     "Quand on la chauffe fort, l'eau devient de la vapeur."
+    ],
+    "example": "Un glaçon est de l'eau à l'état solide.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Comment s'appelle l'eau à l'état solide ?",
+      "choices": [
+       "la vapeur",
+       "la glace",
+       "la pluie"
+      ],
+      "answer": 1,
+      "exp": "C'est la glace."
+     },
+     {
+      "type": "qcm",
+      "q": "Que se passe-t-il quand on chauffe très fort de l'eau ?",
+      "choices": [
+       "elle gèle",
+       "elle devient vapeur",
+       "rien"
+      ],
+      "answer": 1,
+      "exp": "Elle devient de la vapeur."
+     },
+     {
+      "type": "vf",
+      "q": "L'eau peut exister sous 3 états différents.",
+      "answer": true,
+      "exp": "Oui, solide, liquide, gazeux."
+     },
+     {
+      "type": "text",
+      "q": "Comment s'appelle l'eau à l'état gazeux ?",
+      "answer": "vapeur",
+      "exp": "La vapeur."
+     }
+    ],
+    "id": "sciences-7-2",
+    "module": "Programme 7 ans - Sciences",
+    "chapter": "L'eau et ses états",
+    "skills": [
+     "Esprit critique",
+     "Resolution de probleme",
+     "Curiosite"
+    ],
+    "difficulty": 3,
+    "duration": 15
+   },
+   {
+    "id": "sciences-7-3",
+    "title": "Les plantes et leur croissance",
+    "emoji": "🌱",
+    "badge": "🔬",
+    "module": "Programme 7 ans - Sciences",
+    "chapter": "Les plantes et leur croissance",
+    "prerequisites": [],
+    "skills": [
+     "Esprit critique",
+     "Vocabulaire",
+     "Expression orale"
+    ],
+    "difficulty": 2,
+    "duration": 16,
+    "objectif": "Comprendre ce dont une plante a besoin pour grandir et savoir décrire une expérience simple.",
+    "intro": "Pourquoi les plantes poussent-elles ? Faisons une petite expérience pour le découvrir !",
+    "cours": [
+     "Une plante a besoin d'eau, de lumière et d'air pour grandir.",
+     "La graine germe d'abord, puis une petite racine et une petite tige apparaissent.",
+     "Sans lumière, une plante pousse plus faiblement et devient pâle."
+    ],
+    "example": "Une graine de haricot posée dans du coton humide et exposée à la lumière germe en quelques jours.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "De quoi une plante a-t-elle besoin pour grandir ?",
+      "choices": [
+       "d'eau, de lumière et d'air",
+       "seulement d'eau",
+       "seulement de terre"
+      ],
+      "answer": 0,
+      "exp": "Une plante a besoin de ces trois éléments essentiels."
+     },
+     {
+      "type": "vf",
+      "q": "Une plante sans lumière pousse aussi bien qu'une plante avec de la lumière.",
+      "answer": false,
+      "exp": "Non, sans lumière, la plante pousse plus faiblement et pâlit."
+     },
+     {
+      "type": "qcm",
+      "q": "Que se passe-t-il en premier quand une graine germe ?",
+      "choices": [
+       "une fleur apparait",
+       "une petite racine apparait",
+       "un fruit se forme"
+      ],
+      "answer": 1,
+      "exp": "La racine apparait généralement en premier."
+     },
+     {
+      "type": "oral",
+      "q": "Formule une hypothèse : que penses-tu qu'il se passerait si on ne donnait jamais d'eau à une plante ?",
+      "keywords": [
+       "elle mourrait",
+       "elle secherait",
+       "elle ne pousserait pas"
+      ],
+      "exp": "Bonne hypothèse ! Une plante sans eau finit par se dessécher."
+     },
+     {
+      "type": "oral",
+      "q": "Décris à voix haute les étapes d'une expérience où tu fais germer une graine.",
+      "keywords": [
+       "graine",
+       "eau",
+       "coton",
+       "lumiere",
+       "pousse"
+      ],
+      "exp": "Bravo pour cette belle description d'expérience scientifique !"
+     }
+    ],
+    "activity": "Plante une graine de haricot dans du coton humide et observe-la pendant une semaine.",
+    "practice": "Dessine chaque jour ce que tu observes sur ta graine dans un petit carnet d'observation.",
+    "summary": "Une plante a besoin d'eau, de lumière et d'air pour grandir ; elle germe d'abord par sa racine.",
+    "metacognition": "Qu'est-ce que tu penses qu'il se passerait si tu mettais ta plante dans un endroit très sombre ?"
+   },
+   {
+    "id": "sciences-7-4",
+    "title": "Le jour et la nuit",
+    "emoji": "🌗",
+    "badge": "🔬",
+    "module": "Programme 7 ans - Sciences",
+    "chapter": "Le jour et la nuit",
+    "prerequisites": [],
+    "skills": [
+     "Esprit critique",
+     "Logique"
+    ],
+    "difficulty": 2,
+    "duration": 15,
+    "objectif": "Comprendre pourquoi il y a le jour et la nuit sur Terre.",
+    "intro": "As-tu déjà remarqué que le soleil se lève et se couche chaque jour ? Voyons pourquoi.",
+    "cours": [
+     "La Terre tourne sur elle-même comme une toupie : c'est ce qu'on appelle la rotation.",
+     "Un tour complet de la Terre sur elle-même dure environ 24 heures, soit un jour.",
+     "La partie de la Terre face au Soleil vit le jour ; la partie opposée vit la nuit."
+    ],
+    "example": "Quand il fait jour chez toi, il fait nuit à l'autre bout du monde, car la Terre tourne sur elle-même.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Pourquoi y a-t-il le jour et la nuit ?",
+      "choices": [
+       "le Soleil se déplace autour de la Terre chaque jour",
+       "la Terre tourne sur elle-même",
+       "les nuages cachent le soleil la nuit"
+      ],
+      "answer": 1,
+      "exp": "C'est la rotation de la Terre qui crée le jour et la nuit."
+     },
+     {
+      "type": "vf",
+      "q": "Un tour complet de la Terre sur elle-même dure environ 24 heures.",
+      "answer": true,
+      "exp": "Exact, c'est la durée d'une journée complète."
+     },
+     {
+      "type": "qcm",
+      "q": "Quand il fait nuit chez toi, que se passe-t-il de l'autre côté de la Terre ?",
+      "choices": [
+       "il fait aussi nuit",
+       "il fait jour",
+       "il n'y a pas de différence"
+      ],
+      "answer": 1,
+      "exp": "L'autre côté de la Terre, face au Soleil, vit le jour."
+     },
+     {
+      "type": "text",
+      "q": "Comment appelle-t-on le mouvement de la Terre sur elle-même ? (rot...)",
+      "answer": "rotation",
+      "exp": "On appelle ce mouvement la rotation."
+     },
+     {
+      "type": "vf",
+      "q": "C'est le Soleil qui tourne autour de la Terre chaque jour pour créer le jour et la nuit.",
+      "answer": false,
+      "exp": "Non, c'est la Terre qui tourne sur elle-même."
+     }
+    ],
+    "activity": "Avec une lampe de poche (le Soleil) et une balle (la Terre), fais tourner la balle pour observer le jour et la nuit.",
+    "practice": "Observe et note l'heure du lever et du coucher du soleil pendant 3 jours avec un adulte.",
+    "summary": "La Terre tourne sur elle-même en 24 heures environ, ce qui crée l'alternance du jour et de la nuit.",
+    "metacognition": "Que penses-tu qu'il se passerait si la Terre s'arrêtait de tourner ?"
+   },
+   {
+    "id": "sciences-7-5",
+    "title": "Les matériaux et leurs propriétés",
+    "emoji": "🧱",
+    "badge": "🔬",
+    "module": "Programme 7 ans - Sciences",
+    "chapter": "Les matériaux et leurs propriétés",
+    "prerequisites": [],
+    "skills": [
+     "Esprit critique",
+     "Vocabulaire"
+    ],
+    "difficulty": 2,
+    "duration": 15,
+    "objectif": "Reconnaitre différents matériaux et comparer leurs propriétés (dur, souple, transparent...).",
+    "intro": "Le bois, le verre, le métal, le plastique... chaque matériau a ses propres qualités !",
+    "cours": [
+     "Le bois est dur mais léger, et on peut le couper.",
+     "Le verre est dur et transparent, mais il peut se casser facilement.",
+     "Le métal est dur, lourd et résistant.",
+     "Le plastique est léger, souple et souvent imperméable à l'eau."
+    ],
+    "example": "Une fenêtre est faite de verre car il est transparent : on peut voir à travers.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Quel matériau est transparent, comme une fenêtre ?",
+      "choices": [
+       "le bois",
+       "le verre",
+       "le métal"
+      ],
+      "answer": 1,
+      "exp": "Le verre est transparent, on voit à travers."
+     },
+     {
+      "type": "vf",
+      "q": "Le métal est généralement plus lourd que le plastique.",
+      "answer": true,
+      "exp": "Exact, le métal est un matériau lourd et résistant."
+     },
+     {
+      "type": "qcm",
+      "q": "Quel matériau est souple et souvent imperméable ?",
+      "choices": [
+       "le plastique",
+       "le verre",
+       "le métal"
+      ],
+      "answer": 0,
+      "exp": "Le plastique est souple et résiste bien à l'eau."
+     },
+     {
+      "type": "oral",
+      "q": "Compare deux objets de matériaux différents autour de toi et explique leurs différences à voix haute.",
+      "keywords": [
+       "dur",
+       "souple",
+       "lourd",
+       "leger",
+       "transparent"
+      ],
+      "exp": "Bravo pour cette comparaison scientifique !"
+     },
+     {
+      "type": "vf",
+      "q": "Le verre est un matériau incassable.",
+      "answer": false,
+      "exp": "Non, le verre est dur mais peut se casser facilement."
+     }
+    ],
+    "activity": "Trouve 4 objets faits de matériaux différents (bois, verre, métal, plastique) et compare-les.",
+    "practice": "Fais un tableau avec un adulte listant plusieurs objets et leur matériau principal.",
+    "summary": "Chaque matériau a des propriétés différentes : dureté, poids, transparence ou souplesse.",
+    "metacognition": "Pourquoi penses-tu qu'on utilise le verre pour les fenêtres plutôt que le bois ?"
+   }
+  ],
+  "9": [
+   {
+    "title": "Les cinq sens et le cerveau",
+    "emoji": "🧠",
+    "badge": "👀",
+    "cours": [
+     "Nous avons cinq sens : la vue, l'ouïe, l'odorat, le goût, le toucher.",
+     "Chaque sens envoie des informations au cerveau grâce aux nerfs.",
+     "Le cerveau analyse ces informations et nous permet de réagir."
+    ],
+    "example": "Quand tu touches quelque chose de chaud, ton cerveau te fait retirer la main.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Combien y a-t-il de sens principaux ?",
+      "choices": [
+       "3",
+       "5",
+       "7"
+      ],
+      "answer": 1,
+      "exp": "Il y a 5 sens."
+     },
+     {
+      "type": "qcm",
+      "q": "Quel organe analyse les informations des sens ?",
+      "choices": [
+       "le cœur",
+       "le cerveau",
+       "l'estomac"
+      ],
+      "answer": 1,
+      "exp": "Le cerveau analyse les informations."
+     },
+     {
+      "type": "vf",
+      "q": "L'odorat est un des cinq sens.",
+      "answer": true,
+      "exp": "Oui, exact."
+     },
+     {
+      "type": "text",
+      "q": "Cite un des cinq sens",
+      "answer": "la vue",
+      "exp": "vue, ouïe, odorat, goût, toucher."
+     }
+    ],
+    "id": "sciences-9-0",
+    "module": "Programme 9 ans - Sciences",
+    "chapter": "Les cinq sens et le cerveau",
+    "skills": [
+     "Esprit critique",
+     "Resolution de probleme",
+     "Curiosite"
+    ],
+    "difficulty": 1,
+    "duration": 15
+   },
+   {
+    "title": "Les plantes et la photosynthèse",
+    "emoji": "🌱",
+    "badge": "☀️",
+    "cours": [
+     "Les plantes fabriquent leur nourriture grâce à la lumière du soleil.",
+     "Ce phénomène s'appelle la photosynthèse.",
+     "Les plantes ont besoin d'eau, de lumière et de CO2 pour grandir."
+    ],
+    "example": "Une plante placée dans le noir pousse mal car elle manque de lumière.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Comment s'appelle le phénomène qui permet aux plantes de fabriquer leur nourriture ?",
+      "choices": [
+       "la respiration",
+       "la photosynthèse",
+       "la digestion"
+      ],
+      "answer": 1,
+      "exp": "C'est la photosynthèse."
+     },
+     {
+      "type": "qcm",
+      "q": "De quoi une plante a-t-elle besoin pour pousser ?",
+      "choices": [
+       "d'eau et de lumière",
+       "de sucre",
+       "de sable"
+      ],
+      "answer": 0,
+      "exp": "Elle a besoin d'eau, de lumière et de CO2."
+     },
+     {
+      "type": "vf",
+      "q": "Les plantes ont besoin de lumière pour la photosynthèse.",
+      "answer": true,
+      "exp": "Oui, exact."
+     },
+     {
+      "type": "text",
+      "q": "Quel astre donne la lumière nécessaire aux plantes ?",
+      "answer": "le soleil",
+      "exp": "Le soleil."
+     }
+    ],
+    "id": "sciences-9-1",
+    "module": "Programme 9 ans - Sciences",
+    "chapter": "Les plantes et la photosynthèse",
+    "skills": [
+     "Esprit critique",
+     "Resolution de probleme",
+     "Curiosite"
+    ],
+    "difficulty": 2,
+    "duration": 15
+   },
+   {
+    "title": "La matière : solide, liquide, gaz",
+    "emoji": "🧪",
+    "badge": "⚗️",
+    "cours": [
+     "La matière existe sous 3 états : solide, liquide, gazeux.",
+     "Un solide garde sa forme, un liquide prend la forme de son contenant.",
+     "Un gaz se répand partout et occupe tout l'espace disponible."
+    ],
+    "example": "Le bois est solide, l'eau est liquide, l'air est gazeux.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Quel état garde toujours la même forme ?",
+      "choices": [
+       "solide",
+       "liquide",
+       "gazeux"
+      ],
+      "answer": 0,
+      "exp": "Le solide garde sa forme."
+     },
+     {
+      "type": "qcm",
+      "q": "Quel état prend la forme de son contenant ?",
+      "choices": [
+       "solide",
+       "liquide",
+       "gazeux"
+      ],
+      "answer": 1,
+      "exp": "Le liquide prend la forme du contenant."
+     },
+     {
+      "type": "vf",
+      "q": "L'air est un gaz.",
+      "answer": true,
+      "exp": "Oui, exact."
+     },
+     {
+      "type": "text",
+      "q": "Cite un exemple de solide",
+      "answer": "bois",
+      "exp": "bois, pierre, métal... sont des solides."
+     }
+    ],
+    "id": "sciences-9-2",
+    "module": "Programme 9 ans - Sciences",
+    "chapter": "La matière : solide, liquide, gaz",
+    "skills": [
+     "Esprit critique",
+     "Resolution de probleme",
+     "Curiosite"
+    ],
+    "difficulty": 3,
+    "duration": 15
+   },
+   {
+    "id": "sciences-9-3",
+    "title": "Le système solaire",
+    "emoji": "🪐",
+    "badge": "🔬",
+    "module": "Programme 9 ans - Sciences",
+    "chapter": "Le système solaire",
+    "prerequisites": [],
+    "skills": [
+     "Esprit critique",
+     "Vocabulaire",
+     "Expression orale"
+    ],
+    "difficulty": 3,
+    "duration": 17,
+    "objectif": "Connaitre les planètes du système solaire et savoir présenter l'une d'elles à voix haute.",
+    "intro": "Notre Terre n'est pas seule : elle fait partie d'une grande famille de planètes autour du Soleil !",
+    "cours": [
+     "Le système solaire compte 8 planètes qui tournent autour du Soleil : Mercure, Vénus, Terre, Mars, Jupiter, Saturne, Uranus et Neptune.",
+     "Les 4 premières planètes (proches du Soleil) sont rocheuses ; les 4 suivantes sont surtout composées de gaz.",
+     "La Terre est la seule planète connue où la vie existe, grâce à l'eau liquide et l'atmosphère."
+    ],
+    "example": "Jupiter est la plus grande planète du système solaire ; elle est si grande qu'on pourrait y ranger plus de 1000 fois la Terre.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Combien de planètes compte le système solaire ?",
+      "choices": [
+       "6",
+       "8",
+       "10"
+      ],
+      "answer": 1,
+      "exp": "Il y a 8 planètes autour du Soleil."
+     },
+     {
+      "type": "qcm",
+      "q": "Quelle est la plus grande planète du système solaire ?",
+      "choices": [
+       "la Terre",
+       "Mars",
+       "Jupiter"
+      ],
+      "answer": 2,
+      "exp": "Jupiter est la plus grande planète."
+     },
+     {
+      "type": "vf",
+      "q": "La Terre est la seule planète connue où la vie existe.",
+      "answer": true,
+      "exp": "Exact, grâce à son eau liquide et son atmosphère."
+     },
+     {
+      "type": "text",
+      "q": "Quelle planète est la plus proche du Soleil ?",
+      "answer": "Mercure",
+      "exp": "Mercure est la planète la plus proche du Soleil."
+     },
+     {
+      "type": "oral",
+      "q": "Présente à voix haute une planète de ton choix : sa position et une de ses caractéristiques.",
+      "keywords": [
+       "planete",
+       "soleil",
+       "terre",
+       "mars",
+       "jupiter",
+       "grande",
+       "petite"
+      ],
+      "exp": "Excellente présentation de ta planète !"
+     }
+    ],
+    "activity": "Classe les 8 planètes dans l'ordre, de la plus proche à la plus lointaine du Soleil.",
+    "practice": "Fabrique une petite affiche ou un dessin représentant le système solaire avec les 8 planètes.",
+    "summary": "Le système solaire compte 8 planètes tournant autour du Soleil ; la Terre est la seule connue à abriter la vie.",
+    "metacognition": "Quelle planète aimerais-tu visiter si c'était possible, et pourquoi ?"
+   },
+   {
+    "id": "sciences-9-4",
+    "title": "Le cycle de l'eau",
+    "emoji": "🌧️",
+    "badge": "🔬",
+    "module": "Programme 9 ans - Sciences",
+    "chapter": "Le cycle de l'eau",
+    "prerequisites": [],
+    "skills": [
+     "Esprit critique",
+     "Logique",
+     "Vocabulaire"
+    ],
+    "difficulty": 3,
+    "duration": 16,
+    "objectif": "Comprendre les grandes étapes du cycle de l'eau et savoir comparer deux phénomènes météorologiques.",
+    "intro": "L'eau voyage sans arrêt entre le ciel, la terre et la mer : c'est le cycle de l'eau !",
+    "cours": [
+     "L'eau des océans et des lacs s'évapore sous l'effet de la chaleur du Soleil : c'est l'évaporation.",
+     "La vapeur d'eau monte, se refroidit et forme des nuages : c'est la condensation.",
+     "Quand les nuages sont trop chargés en eau, il pleut : c'est la précipitation. L'eau retourne ensuite vers les rivières et les océans."
+    ],
+    "example": "L'eau d'un lac s'évapore, forme un nuage, puis retombe en pluie sur les montagnes, alimentant à nouveau les rivières.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Comment s'appelle le passage de l'eau liquide à la vapeur ?",
+      "choices": [
+       "la précipitation",
+       "l'évaporation",
+       "la condensation"
+      ],
+      "answer": 1,
+      "exp": "L'évaporation transforme l'eau liquide en vapeur."
+     },
+     {
+      "type": "qcm",
+      "q": "Comment se forment les nuages ?",
+      "choices": [
+       "par évaporation directe",
+       "par condensation de la vapeur d'eau",
+       "par précipitation"
+      ],
+      "answer": 1,
+      "exp": "La vapeur d'eau se condense en petites gouttelettes qui forment les nuages."
+     },
+     {
+      "type": "vf",
+      "q": "La pluie fait partie du cycle de l'eau.",
+      "answer": true,
+      "exp": "Exact, c'est l'étape de précipitation."
+     },
+     {
+      "type": "oral",
+      "q": "Compare la pluie et la neige : en quoi sont-elles différentes ?",
+      "keywords": [
+       "pluie",
+       "neige",
+       "eau",
+       "froid",
+       "liquide",
+       "solide"
+      ],
+      "exp": "Belle comparaison entre ces deux phénomènes météorologiques !"
+     },
+     {
+      "type": "text",
+      "q": "Quelle est la source d'énergie qui permet l'évaporation de l'eau ? (le ...)",
+      "answer": "soleil",
+      "exp": "C'est la chaleur du Soleil qui provoque l'évaporation."
+     }
+    ],
+    "activity": "Observe un verre d'eau chaude qui fume et explique ce phénomène en lien avec l'évaporation.",
+    "practice": "Dessine un schéma du cycle de l'eau avec le Soleil, les nuages, la pluie et la mer.",
+    "summary": "Le cycle de l'eau comprend l'évaporation, la condensation en nuages, puis la précipitation sous forme de pluie ou neige.",
+    "metacognition": "Que se passerait-il, selon toi, si le Soleil n'existait plus pour ce cycle ?"
+   },
+   {
+    "id": "sciences-9-5",
+    "title": "L'électricité simple",
+    "emoji": "💡",
+    "badge": "🔬",
+    "module": "Programme 9 ans - Sciences",
+    "chapter": "L'électricité et les circuits simples",
+    "prerequisites": [],
+    "skills": [
+     "Esprit critique",
+     "Logique",
+     "Resolution de probleme"
+    ],
+    "difficulty": 3,
+    "duration": 17,
+    "objectif": "Comprendre ce qu'est un circuit électrique simple et savoir justifier pourquoi une ampoule s'allume ou non.",
+    "intro": "Comment une simple pile peut-elle allumer une ampoule ? Découvrons les circuits électriques !",
+    "cours": [
+     "Un circuit électrique simple est composé d'une pile, de fils et d'une ampoule.",
+     "Pour que l'ampoule s'allume, le circuit doit être fermé, c'est-à-dire former une boucle complète sans interruption.",
+     "Si un fil est coupé ou mal branché, le circuit est ouvert et l'ampoule ne s'allume pas."
+    ],
+    "example": "Si on relie une pile à une ampoule avec deux fils formant une boucle complète, l'ampoule s'allume.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Que faut-il pour qu'une ampoule s'allume dans un circuit ?",
+      "choices": [
+       "un circuit ouvert",
+       "un circuit fermé (une boucle complète)",
+       "seulement une pile, sans fil"
+      ],
+      "answer": 1,
+      "exp": "Le circuit doit former une boucle complète et fermée."
+     },
+     {
+      "type": "vf",
+      "q": "Un fil coupé empêche le courant électrique de circuler.",
+      "answer": true,
+      "exp": "Exact, cela ouvre le circuit et l'ampoule ne s'allume pas."
+     },
+     {
+      "type": "qcm",
+      "q": "Quels éléments composent un circuit électrique simple ?",
+      "choices": [
+       "une pile, des fils, une ampoule",
+       "seulement de l'eau",
+       "seulement de l'air"
+      ],
+      "answer": 0,
+      "exp": "Ce sont les éléments de base d'un circuit simple."
+     },
+     {
+      "type": "oral",
+      "q": "Justifie à voix haute : pourquoi une ampoule ne s'allume-t-elle pas si un fil est débranché ?",
+      "keywords": [
+       "circuit ouvert",
+       "le courant ne passe pas",
+       "fil debranche"
+      ],
+      "exp": "Très bonne justification scientifique !"
+     },
+     {
+      "type": "text",
+      "q": "Comment appelle-t-on un circuit qui ne forme pas une boucle complète ? (circuit ...)",
+      "answer": "ouvert",
+      "exp": "On parle de circuit ouvert quand la boucle est interrompue."
+     }
+    ],
+    "activity": "Avec un adulte et du matériel adapté (pile, fil, petite ampoule), essaie de construire un circuit simple.",
+    "practice": "Dessine un circuit électrique simple avec une pile, deux fils et une ampoule, en indiquant le sens du courant.",
+    "summary": "Un circuit électrique doit être fermé (en boucle complète) pour que le courant circule et allume l'ampoule.",
+    "metacognition": "Peux-tu expliquer avec tes propres mots pourquoi un circuit ouvert ne fonctionne pas ?"
+   }
+  ]
+ }
+      }{
   "subject": "sciences",
   "name": "Sciences",
   "niveaux": {
