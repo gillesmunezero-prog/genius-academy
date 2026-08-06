@@ -1,340 +1,795 @@
 {
-  "subject": "lecture",
-  "name": "Lecture",
-  "niveaux": {
-    "7": [
-      {
-        "title": "Le potager de Mia",
-        "emoji": "🥕",
-        "badge": "📖",
-        "cours": [
-          "Lis bien le texte suivant, puis réponds aux questions.",
-          "Mia a planté des carottes, des tomates et des radis dans son potager. Chaque matin, elle arrose ses plantes avec un petit arrosoir vert. Un jour, elle voit une coccinelle rouge posée sur une feuille de tomate. Mia est très contente, car la coccinelle protège son potager des pucerons."
-        ],
-        "example": "",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "Qu'est-ce que Mia a planté ?",
-            "choices": [
-              "des fleurs",
-              "des carottes, tomates et radis",
-              "des arbres"
-            ],
-            "answer": 1,
-            "exp": "Le texte dit qu'elle a planté des carottes, tomates et radis."
-          },
-          {
-            "type": "qcm",
-            "q": "De quelle couleur est l'arrosoir de Mia ?",
-            "choices": [
-              "bleu",
-              "vert",
-              "rouge"
-            ],
-            "answer": 1,
-            "exp": "L'arrosoir est vert."
-          },
-          {
-            "type": "vf",
-            "q": "La coccinelle est bleue.",
-            "answer": false,
-            "exp": "Non, la coccinelle est rouge."
-          },
-          {
-            "type": "text",
-            "q": "Que fait la coccinelle pour le potager ?",
-            "answer": "elle le protège",
-            "exp": "La coccinelle protège le potager des pucerons."
-          }
-        ],
-        "id": "lecture-7-0",
-        "module": "Programme 7 ans - Lecture",
-        "chapter": "Le potager de Mia",
-        "skills": [
-          "Lecture",
-          "Expression orale"
-        ],
-        "difficulty": 1,
-        "duration": 15
-      },
-      {
-        "title": "Le chat curieux",
-        "emoji": "🐱",
-        "badge": "📚",
-        "cours": [
-          "Lis bien le texte suivant, puis réponds aux questions.",
-          "Félix est un chat très curieux. Il aime regarder par la fenêtre et observer les oiseaux. Un jour, une souris entre dans le jardin. Félix se cache derrière un pot de fleurs et l'observe sans bouger. Puis, il bondit doucement, mais la souris s'échappe dans un trou."
-        ],
-        "example": "",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "Comment s'appelle le chat ?",
-            "choices": [
-              "Félix",
-              "Milo",
-              "Tom"
-            ],
-            "answer": 0,
-            "exp": "Le chat s'appelle Félix."
-          },
-          {
-            "type": "qcm",
-            "q": "Que regarde Félix par la fenêtre ?",
-            "choices": [
-              "des voitures",
-              "des oiseaux",
-              "des enfants"
-            ],
-            "answer": 1,
-            "exp": "Il observe les oiseaux."
-          },
-          {
-            "type": "vf",
-            "q": "La souris a été attrapée par Félix.",
-            "answer": false,
-            "exp": "Non, la souris s'échappe dans un trou."
-          },
-          {
-            "type": "text",
-            "q": "Où se cache Félix pour observer la souris ?",
-            "answer": "derrière un pot de fleurs",
-            "exp": "Il se cache derrière un pot de fleurs."
-          }
-        ],
-        "id": "lecture-7-1",
-        "module": "Programme 7 ans - Lecture",
-        "chapter": "Le chat curieux",
-        "skills": [
-          "Lecture",
-          "Expression orale"
-        ],
-        "difficulty": 2,
-        "duration": 15
-      },
-      {
-        "title": "La fête de l'école",
-        "emoji": "🎉",
-        "badge": "🎈",
-        "cours": [
-          "Lis bien le texte suivant, puis réponds aux questions.",
-          "Aujourd'hui, c'est la fête de l'école. Il y a des ballons de toutes les couleurs et de la musique. Les enfants ont préparé un spectacle de danse. Béatrice chante une chanson avec ses amis sur la scène. À la fin, tout le monde applaudit très fort."
-        ],
-        "example": "",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "Quel événement a lieu aujourd'hui ?",
-            "choices": [
-              "un anniversaire",
-              "la fête de l'école",
-              "un match"
-            ],
-            "answer": 1,
-            "exp": "C'est la fête de l'école."
-          },
-          {
-            "type": "qcm",
-            "q": "Que fait Béatrice sur la scène ?",
-            "choices": [
-              "elle danse",
-              "elle chante",
-              "elle dessine"
-            ],
-            "answer": 1,
-            "exp": "Elle chante une chanson."
-          },
-          {
-            "type": "vf",
-            "q": "Personne n'applaudit à la fin.",
-            "answer": false,
-            "exp": "Non, tout le monde applaudit très fort."
-          },
-          {
-            "type": "text",
-            "q": "Que préparent les enfants ?",
-            "answer": "un spectacle de danse",
-            "exp": "Un spectacle de danse."
-          }
-        ],
-        "id": "lecture-7-2",
-        "module": "Programme 7 ans - Lecture",
-        "chapter": "La fête de l'école",
-        "skills": [
-          "Lecture",
-          "Expression orale"
-        ],
-        "difficulty": 3,
-        "duration": 15
-      }
+ "subject": "lecture",
+ "name": "Lecture",
+ "niveaux": {
+  "7": [
+   {
+    "title": "Le potager de Mia",
+    "emoji": "🥕",
+    "badge": "📖",
+    "cours": [
+     "Lis bien le texte suivant, puis réponds aux questions.",
+     "Mia a planté des carottes, des tomates et des radis dans son potager. Chaque matin, elle arrose ses plantes avec un petit arrosoir vert. Un jour, elle voit une coccinelle rouge posée sur une feuille de tomate. Mia est très contente, car la coccinelle protège son potager des pucerons."
     ],
-    "9": [
-      {
-        "title": "La carte oubliée",
-        "emoji": "🗺️",
-        "badge": "📖",
-        "cours": [
-          "Lis bien le texte suivant, puis réponds aux questions.",
-          "Nathan et sa sœur explorent le grenier de leurs grands-parents. Dans une vieille malle, ils trouvent une carte jaunie représentant une île mystérieuse, avec une croix rouge marquée près d'une forêt. Intrigués, ils décident de demander à leur grand-père d'où vient cette carte. Il leur raconte alors qu'il l'avait dessinée lui-même, enfant, pour un jeu d'aventure avec ses amis."
-        ],
-        "example": "",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "Où Nathan et sa sœur trouvent-ils la carte ?",
-            "choices": [
-              "dans le jardin",
-              "dans une malle au grenier",
-              "sous leur lit"
-            ],
-            "answer": 1,
-            "exp": "Ils la trouvent dans une vieille malle du grenier."
-          },
-          {
-            "type": "qcm",
-            "q": "Que représente la carte ?",
-            "choices": [
-              "une île mystérieuse",
-              "une ville",
-              "un zoo"
-            ],
-            "answer": 0,
-            "exp": "La carte représente une île mystérieuse."
-          },
-          {
-            "type": "vf",
-            "q": "Le grand-père a acheté la carte dans un magasin.",
-            "answer": false,
-            "exp": "Non, il l'a dessinée lui-même, enfant."
-          },
-          {
-            "type": "text",
-            "q": "Pourquoi le grand-père avait-il dessiné cette carte ?",
-            "answer": "pour un jeu d'aventure",
-            "exp": "Pour jouer à un jeu d'aventure avec ses amis."
-          }
-        ],
-        "id": "lecture-9-0",
-        "module": "Programme 9 ans - Lecture",
-        "chapter": "La carte oubliée",
-        "skills": [
-          "Lecture",
-          "Expression orale"
-        ],
-        "difficulty": 1,
-        "duration": 15
-      },
-      {
-        "title": "Le concours de robots",
-        "emoji": "🤖",
-        "badge": "🔧",
-        "cours": [
-          "Lis bien le texte suivant, puis réponds aux questions.",
-          "Chaque année, l'école organise un concours de robots construits par les élèves. Cette année, l'équipe de Louise a conçu un petit robot capable de suivre une ligne noire tracée au sol grâce à un capteur de lumière. Après plusieurs essais et quelques réglages, leur robot termine le parcours sans sortir de la piste, sous les applaudissements du public."
-        ],
-        "example": "",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "Qu'organise l'école chaque année ?",
-            "choices": [
-              "un concours de robots",
-              "un concours de dessin",
-              "une chasse au trésor"
-            ],
-            "answer": 0,
-            "exp": "L'école organise un concours de robots."
-          },
-          {
-            "type": "qcm",
-            "q": "Grâce à quoi le robot suit-il la ligne noire ?",
-            "choices": [
-              "un aimant",
-              "un capteur de lumière",
-              "une télécommande"
-            ],
-            "answer": 1,
-            "exp": "Grâce à un capteur de lumière."
-          },
-          {
-            "type": "vf",
-            "q": "Le robot de l'équipe de Louise sort de la piste.",
-            "answer": false,
-            "exp": "Non, il termine le parcours sans sortir de la piste."
-          },
-          {
-            "type": "text",
-            "q": "Que doit suivre le robot au sol ?",
-            "answer": "une ligne noire",
-            "exp": "Il doit suivre une ligne noire."
-          }
-        ],
-        "id": "lecture-9-1",
-        "module": "Programme 9 ans - Lecture",
-        "chapter": "Le concours de robots",
-        "skills": [
-          "Lecture",
-          "Expression orale"
-        ],
-        "difficulty": 2,
-        "duration": 15
-      },
-      {
-        "title": "Le marché du village",
-        "emoji": "🧺",
-        "badge": "🍎",
-        "cours": [
-          "Lis bien le texte suivant, puis réponds aux questions.",
-          "Chaque samedi matin, le marché s'installe sur la place du village. On y trouve des fruits, des légumes, du fromage et du pain frais. Une odeur de pain chaud flotte dans l'air. Beaucoup d'habitants s'y retrouvent pour discuter tout en faisant leurs courses, ce qui rend l'ambiance très conviviale."
-        ],
-        "example": "",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "Quel jour a lieu le marché ?",
-            "choices": [
-              "le samedi matin",
-              "le dimanche soir",
-              "le lundi"
-            ],
-            "answer": 0,
-            "exp": "Le marché a lieu le samedi matin."
-          },
-          {
-            "type": "qcm",
-            "q": "Que sent-on flotter dans l'air ?",
-            "choices": [
-              "une odeur de fleurs",
-              "une odeur de pain chaud",
-              "une odeur de peinture"
-            ],
-            "answer": 1,
-            "exp": "Une odeur de pain chaud."
-          },
-          {
-            "type": "vf",
-            "q": "Les habitants ne se parlent jamais au marché.",
-            "answer": false,
-            "exp": "Non, ils discutent tout en faisant leurs courses."
-          },
-          {
-            "type": "text",
-            "q": "Cite un aliment vendu au marché",
-            "answer": "fromage",
-            "exp": "fruits, légumes, fromage, pain sont vendus."
-          }
-        ],
-        "id": "lecture-9-2",
-        "module": "Programme 9 ans - Lecture",
-        "chapter": "Le marché du village",
-        "skills": [
-          "Lecture",
-          "Expression orale"
-        ],
-        "difficulty": 3,
-        "duration": 15
-      }
-    ]
-  }
-          }
+    "example": "",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Qu'est-ce que Mia a planté ?",
+      "choices": [
+       "des fleurs",
+       "des carottes, tomates et radis",
+       "des arbres"
+      ],
+      "answer": 1,
+      "exp": "Le texte dit qu'elle a planté des carottes, tomates et radis."
+     },
+     {
+      "type": "qcm",
+      "q": "De quelle couleur est l'arrosoir de Mia ?",
+      "choices": [
+       "bleu",
+       "vert",
+       "rouge"
+      ],
+      "answer": 1,
+      "exp": "L'arrosoir est vert."
+     },
+     {
+      "type": "vf",
+      "q": "La coccinelle est bleue.",
+      "answer": false,
+      "exp": "Non, la coccinelle est rouge."
+     },
+     {
+      "type": "text",
+      "q": "Que fait la coccinelle pour le potager ?",
+      "answer": "elle le protège",
+      "exp": "La coccinelle protège le potager des pucerons."
+     }
+    ],
+    "id": "lecture-7-0",
+    "module": "Programme 7 ans - Lecture",
+    "chapter": "Le potager de Mia",
+    "skills": [
+     "Lecture",
+     "Expression orale"
+    ],
+    "difficulty": 1,
+    "duration": 15
+   },
+   {
+    "title": "Le chat curieux",
+    "emoji": "🐱",
+    "badge": "📚",
+    "cours": [
+     "Lis bien le texte suivant, puis réponds aux questions.",
+     "Félix est un chat très curieux. Il aime regarder par la fenêtre et observer les oiseaux. Un jour, une souris entre dans le jardin. Félix se cache derrière un pot de fleurs et l'observe sans bouger. Puis, il bondit doucement, mais la souris s'échappe dans un trou."
+    ],
+    "example": "",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Comment s'appelle le chat ?",
+      "choices": [
+       "Félix",
+       "Milo",
+       "Tom"
+      ],
+      "answer": 0,
+      "exp": "Le chat s'appelle Félix."
+     },
+     {
+      "type": "qcm",
+      "q": "Que regarde Félix par la fenêtre ?",
+      "choices": [
+       "des voitures",
+       "des oiseaux",
+       "des enfants"
+      ],
+      "answer": 1,
+      "exp": "Il observe les oiseaux."
+     },
+     {
+      "type": "vf",
+      "q": "La souris a été attrapée par Félix.",
+      "answer": false,
+      "exp": "Non, la souris s'échappe dans un trou."
+     },
+     {
+      "type": "text",
+      "q": "Où se cache Félix pour observer la souris ?",
+      "answer": "derrière un pot de fleurs",
+      "exp": "Il se cache derrière un pot de fleurs."
+     }
+    ],
+    "id": "lecture-7-1",
+    "module": "Programme 7 ans - Lecture",
+    "chapter": "Le chat curieux",
+    "skills": [
+     "Lecture",
+     "Expression orale"
+    ],
+    "difficulty": 2,
+    "duration": 15
+   },
+   {
+    "title": "La fête de l'école",
+    "emoji": "🎉",
+    "badge": "🎈",
+    "cours": [
+     "Lis bien le texte suivant, puis réponds aux questions.",
+     "Aujourd'hui, c'est la fête de l'école. Il y a des ballons de toutes les couleurs et de la musique. Les enfants ont préparé un spectacle de danse. Béatrice chante une chanson avec ses amis sur la scène. À la fin, tout le monde applaudit très fort."
+    ],
+    "example": "",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Quel événement a lieu aujourd'hui ?",
+      "choices": [
+       "un anniversaire",
+       "la fête de l'école",
+       "un match"
+      ],
+      "answer": 1,
+      "exp": "C'est la fête de l'école."
+     },
+     {
+      "type": "qcm",
+      "q": "Que fait Béatrice sur la scène ?",
+      "choices": [
+       "elle danse",
+       "elle chante",
+       "elle dessine"
+      ],
+      "answer": 1,
+      "exp": "Elle chante une chanson."
+     },
+     {
+      "type": "vf",
+      "q": "Personne n'applaudit à la fin.",
+      "answer": false,
+      "exp": "Non, tout le monde applaudit très fort."
+     },
+     {
+      "type": "text",
+      "q": "Que préparent les enfants ?",
+      "answer": "un spectacle de danse",
+      "exp": "Un spectacle de danse."
+     }
+    ],
+    "id": "lecture-7-2",
+    "module": "Programme 7 ans - Lecture",
+    "chapter": "La fête de l'école",
+    "skills": [
+     "Lecture",
+     "Expression orale"
+    ],
+    "difficulty": 3,
+    "duration": 15
+   },
+   {
+    "id": "lecture-7-3",
+    "title": "Le petit robot perdu",
+    "emoji": "🤖",
+    "badge": "📖",
+    "module": "Programme 7 ans - Lecture",
+    "chapter": "Compréhension et lecture à voix haute",
+    "prerequisites": [],
+    "skills": [
+     "Lecture",
+     "Comprehension",
+     "Expression orale"
+    ],
+    "difficulty": 2,
+    "duration": 16,
+    "objectif": "Lire une histoire courte, comprendre les informations essentielles, et la lire à voix haute.",
+    "intro": "Suis les aventures d'un petit robot qui a perdu son chemin !",
+    "cours": [
+     "Léo est un petit robot qui explore un jardin pour la première fois.",
+     "Il rencontre une coccinelle qui lui montre le chemin vers la maison.",
+     "Grâce à la coccinelle, Léo retrouve enfin son ami Max, qui l'attendait avec impatience."
+    ],
+    "example": "Léo dit : 'Merci petite coccinelle, sans toi je serais encore perdu dans ce grand jardin !'",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Qui aide Léo à retrouver son chemin ?",
+      "choices": [
+       "un chat",
+       "une coccinelle",
+       "un oiseau"
+      ],
+      "answer": 1,
+      "exp": "C'est une coccinelle qui montre le chemin à Léo."
+     },
+     {
+      "type": "qcm",
+      "q": "Où se trouve Léo au début de l'histoire ?",
+      "choices": [
+       "dans une maison",
+       "dans un jardin",
+       "dans une école"
+      ],
+      "answer": 1,
+      "exp": "Léo explore un jardin."
+     },
+     {
+      "type": "vf",
+      "q": "Léo retrouve son ami Max à la fin de l'histoire.",
+      "answer": true,
+      "exp": "Exact, Max attendait Léo avec impatience."
+     },
+     {
+      "type": "text",
+      "q": "Comment s'appelle le petit robot de l'histoire ?",
+      "answer": "Léo",
+      "exp": "Le robot s'appelle Léo."
+     },
+     {
+      "type": "oral",
+      "q": "Raconte à voix haute, avec tes propres mots, ce qui arrive à Léo dans l'histoire.",
+      "keywords": [
+       "robot",
+       "jardin",
+       "coccinelle",
+       "perdu",
+       "ami"
+      ],
+      "exp": "Bravo pour ta belle narration de l'histoire !"
+     }
+    ],
+    "activity": "Lis l'histoire une deuxième fois à voix haute, en essayant de bien articuler chaque mot.",
+    "practice": "Dessine le moment de l'histoire que tu as préféré et explique pourquoi à un adulte.",
+    "summary": "Léo le petit robot se perd dans un jardin, puis une coccinelle l'aide à retrouver son ami Max.",
+    "metacognition": "Comment te sentirais-tu si tu étais perdu comme Léo, et que ferais-tu ?"
+   },
+   {
+    "id": "lecture-7-4",
+    "title": "La poésie des quatre saisons",
+    "emoji": "🍁",
+    "badge": "📖",
+    "module": "Programme 7 ans - Lecture",
+    "chapter": "Récitation et mémorisation",
+    "prerequisites": [],
+    "skills": [
+     "Lecture",
+     "Memoire",
+     "Expression orale",
+     "Prononciation"
+    ],
+    "difficulty": 2,
+    "duration": 15,
+    "objectif": "Lire, comprendre puis réciter un court poème sur les saisons.",
+    "intro": "Un poème est un texte court où les mots jouent avec les sons et les images.",
+    "cours": [
+     "Ce petit poème parle du printemps qui fleurit, de l'été qui brille, de l'automne qui tombe et de l'hiver qui gèle.",
+     "Pour bien réciter, on apprend le texte petit bout par petit bout.",
+     "On peut s'aider de gestes ou d'images pour se souvenir de chaque vers."
+    ],
+    "example": "'Au printemps, les fleurs éclosent, en été le soleil se pose, en automne les feuilles dansent, en hiver la neige avance.'",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Que fait le soleil pendant l'été dans le poème ?",
+      "choices": [
+       "il se cache",
+       "il se pose (il brille)",
+       "il pleut"
+      ],
+      "answer": 1,
+      "exp": "Le poème dit que le soleil 'se pose', c'est-à-dire qu'il brille."
+     },
+     {
+      "type": "vf",
+      "q": "Le poème parle des quatre saisons.",
+      "answer": true,
+      "exp": "Exact : printemps, été, automne, hiver."
+     },
+     {
+      "type": "qcm",
+      "q": "Que font les feuilles en automne selon le poème ?",
+      "choices": [
+       "elles poussent",
+       "elles dansent (elles tombent)",
+       "elles restent immobiles"
+      ],
+      "answer": 1,
+      "exp": "Le poème dit que les feuilles 'dansent' en automne."
+     },
+     {
+      "type": "oral",
+      "q": "Récite à voix haute les deux premiers vers du poème.",
+      "keywords": [
+       "au printemps les fleurs eclosent",
+       "en ete le soleil se pose"
+      ],
+      "exp": "Bravo pour ta récitation, continue à t'entrainer !"
+     },
+     {
+      "type": "text",
+      "q": "Quelle saison est associée à la neige dans le poème ?",
+      "answer": "hiver",
+      "exp": "C'est l'hiver qui est associé à la neige."
+     }
+    ],
+    "activity": "Mime avec ton corps chaque saison du poème pendant que tu le récites.",
+    "practice": "Apprends le poème entier par cœur, vers par vers, avec l'aide d'un adulte.",
+    "summary": "Ce poème décrit les quatre saisons à travers des images simples : fleurs, soleil, feuilles et neige.",
+    "metacognition": "Quelle saison du poème préfères-tu, et pourquoi ?"
+   },
+   {
+    "id": "lecture-7-5",
+    "title": "Le marché aux couleurs",
+    "emoji": "🎨",
+    "badge": "📖",
+    "module": "Programme 7 ans - Lecture",
+    "chapter": "Description d'image et vocabulaire",
+    "prerequisites": [],
+    "skills": [
+     "Lecture",
+     "Vocabulaire",
+     "Expression orale"
+    ],
+    "difficulty": 2,
+    "duration": 15,
+    "objectif": "Lire un texte descriptif et savoir décrire une scène avec du vocabulaire précis.",
+    "intro": "Au marché du village, les couleurs et les odeurs sont partout !",
+    "cours": [
+     "Le texte décrit un marché avec des fruits rouges et jaunes, des légumes verts, et des fleurs de toutes les couleurs.",
+     "Décrire une image, c'est nommer ce que l'on voit avec des mots précis : couleurs, formes, tailles.",
+     "On peut utiliser des adjectifs pour rendre une description plus vivante."
+    ],
+    "example": "Sur l'étal, il y a des pommes rouges brillantes, des bananes jaunes bien mûres et des poireaux verts et longs.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Quelle couleur ont les pommes décrites dans le texte ?",
+      "choices": [
+       "vertes",
+       "rouges",
+       "bleues"
+      ],
+      "answer": 1,
+      "exp": "Le texte décrit des pommes rouges brillantes."
+     },
+     {
+      "type": "vf",
+      "q": "Le texte parle d'un marché avec des fruits, légumes et fleurs.",
+      "answer": true,
+      "exp": "Exact, le marché est plein de couleurs variées."
+     },
+     {
+      "type": "qcm",
+      "q": "Que sont les poireaux dans le texte ?",
+      "choices": [
+       "verts et longs",
+       "rouges et ronds",
+       "jaunes et petits"
+      ],
+      "answer": 0,
+      "exp": "Les poireaux sont décrits verts et longs."
+     },
+     {
+      "type": "oral",
+      "q": "Décris à voix haute une image ou une photo que tu as devant toi, en citant au moins 3 couleurs.",
+      "keywords": [
+       "rouge",
+       "bleu",
+       "vert",
+       "jaune",
+       "noir",
+       "blanc",
+       "orange",
+       "violet"
+      ],
+      "exp": "Bravo pour ta description riche en couleurs !"
+     },
+     {
+      "type": "text",
+      "q": "Quelle couleur ont les bananes selon le texte ?",
+      "answer": "jaunes",
+      "exp": "Les bananes sont décrites jaunes et bien mûres."
+     }
+    ],
+    "activity": "Observe une image ou une pièce de ta maison et décris-la à voix haute avec le plus de détails possible.",
+    "practice": "Dessine ton propre marché imaginaire et décris-le par écrit avec des couleurs et des formes.",
+    "summary": "Décrire une scène demande d'observer et de choisir des mots précis pour les couleurs, formes et tailles.",
+    "metacognition": "Quels mots utilises-tu le plus souvent pour décrire ce que tu vois ?"
+   }
+  ],
+  "9": [
+   {
+    "title": "La carte oubliée",
+    "emoji": "🗺️",
+    "badge": "📖",
+    "cours": [
+     "Lis bien le texte suivant, puis réponds aux questions.",
+     "Nathan et sa sœur explorent le grenier de leurs grands-parents. Dans une vieille malle, ils trouvent une carte jaunie représentant une île mystérieuse, avec une croix rouge marquée près d'une forêt. Intrigués, ils décident de demander à leur grand-père d'où vient cette carte. Il leur raconte alors qu'il l'avait dessinée lui-même, enfant, pour un jeu d'aventure avec ses amis."
+    ],
+    "example": "",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Où Nathan et sa sœur trouvent-ils la carte ?",
+      "choices": [
+       "dans le jardin",
+       "dans une malle au grenier",
+       "sous leur lit"
+      ],
+      "answer": 1,
+      "exp": "Ils la trouvent dans une vieille malle du grenier."
+     },
+     {
+      "type": "qcm",
+      "q": "Que représente la carte ?",
+      "choices": [
+       "une île mystérieuse",
+       "une ville",
+       "un zoo"
+      ],
+      "answer": 0,
+      "exp": "La carte représente une île mystérieuse."
+     },
+     {
+      "type": "vf",
+      "q": "Le grand-père a acheté la carte dans un magasin.",
+      "answer": false,
+      "exp": "Non, il l'a dessinée lui-même, enfant."
+     },
+     {
+      "type": "text",
+      "q": "Pourquoi le grand-père avait-il dessiné cette carte ?",
+      "answer": "pour un jeu d'aventure",
+      "exp": "Pour jouer à un jeu d'aventure avec ses amis."
+     }
+    ],
+    "id": "lecture-9-0",
+    "module": "Programme 9 ans - Lecture",
+    "chapter": "La carte oubliée",
+    "skills": [
+     "Lecture",
+     "Expression orale"
+    ],
+    "difficulty": 1,
+    "duration": 15
+   },
+   {
+    "title": "Le concours de robots",
+    "emoji": "🤖",
+    "badge": "🔧",
+    "cours": [
+     "Lis bien le texte suivant, puis réponds aux questions.",
+     "Chaque année, l'école organise un concours de robots construits par les élèves. Cette année, l'équipe de Louise a conçu un petit robot capable de suivre une ligne noire tracée au sol grâce à un capteur de lumière. Après plusieurs essais et quelques réglages, leur robot termine le parcours sans sortir de la piste, sous les applaudissements du public."
+    ],
+    "example": "",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Qu'organise l'école chaque année ?",
+      "choices": [
+       "un concours de robots",
+       "un concours de dessin",
+       "une chasse au trésor"
+      ],
+      "answer": 0,
+      "exp": "L'école organise un concours de robots."
+     },
+     {
+      "type": "qcm",
+      "q": "Grâce à quoi le robot suit-il la ligne noire ?",
+      "choices": [
+       "un aimant",
+       "un capteur de lumière",
+       "une télécommande"
+      ],
+      "answer": 1,
+      "exp": "Grâce à un capteur de lumière."
+     },
+     {
+      "type": "vf",
+      "q": "Le robot de l'équipe de Louise sort de la piste.",
+      "answer": false,
+      "exp": "Non, il termine le parcours sans sortir de la piste."
+     },
+     {
+      "type": "text",
+      "q": "Que doit suivre le robot au sol ?",
+      "answer": "une ligne noire",
+      "exp": "Il doit suivre une ligne noire."
+     }
+    ],
+    "id": "lecture-9-1",
+    "module": "Programme 9 ans - Lecture",
+    "chapter": "Le concours de robots",
+    "skills": [
+     "Lecture",
+     "Expression orale"
+    ],
+    "difficulty": 2,
+    "duration": 15
+   },
+   {
+    "title": "Le marché du village",
+    "emoji": "🧺",
+    "badge": "🍎",
+    "cours": [
+     "Lis bien le texte suivant, puis réponds aux questions.",
+     "Chaque samedi matin, le marché s'installe sur la place du village. On y trouve des fruits, des légumes, du fromage et du pain frais. Une odeur de pain chaud flotte dans l'air. Beaucoup d'habitants s'y retrouvent pour discuter tout en faisant leurs courses, ce qui rend l'ambiance très conviviale."
+    ],
+    "example": "",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Quel jour a lieu le marché ?",
+      "choices": [
+       "le samedi matin",
+       "le dimanche soir",
+       "le lundi"
+      ],
+      "answer": 0,
+      "exp": "Le marché a lieu le samedi matin."
+     },
+     {
+      "type": "qcm",
+      "q": "Que sent-on flotter dans l'air ?",
+      "choices": [
+       "une odeur de fleurs",
+       "une odeur de pain chaud",
+       "une odeur de peinture"
+      ],
+      "answer": 1,
+      "exp": "Une odeur de pain chaud."
+     },
+     {
+      "type": "vf",
+      "q": "Les habitants ne se parlent jamais au marché.",
+      "answer": false,
+      "exp": "Non, ils discutent tout en faisant leurs courses."
+     },
+     {
+      "type": "text",
+      "q": "Cite un aliment vendu au marché",
+      "answer": "fromage",
+      "exp": "fruits, légumes, fromage, pain sont vendus."
+     }
+    ],
+    "id": "lecture-9-2",
+    "module": "Programme 9 ans - Lecture",
+    "chapter": "Le marché du village",
+    "skills": [
+     "Lecture",
+     "Expression orale"
+    ],
+    "difficulty": 3,
+    "duration": 15
+   },
+   {
+    "id": "lecture-9-3",
+    "title": "Le mystère de la bibliothèque",
+    "emoji": "📚",
+    "badge": "📖",
+    "module": "Programme 9 ans - Lecture",
+    "chapter": "Lecture longue et résumé",
+    "prerequisites": [],
+    "skills": [
+     "Lecture",
+     "Comprehension",
+     "Memoire",
+     "Expression orale"
+    ],
+    "difficulty": 3,
+    "duration": 18,
+    "objectif": "Lire un texte plus long, en comprendre les éléments clés et savoir le résumer oralement.",
+    "intro": "Une bibliothécaire découvre qu'un vieux livre disparait chaque nuit... jusqu'à ce qu'elle mène l'enquête !",
+    "cours": [
+     "Chaque matin, la bibliothécaire Nora trouve un livre différent posé grand ouvert sur une table, alors que la bibliothèque était fermée.",
+     "Une nuit, elle décide de rester cachée pour observer et découvre un chat qui pousse délicatement les livres du haut d'une étagère.",
+     "Le chat n'était pas malicieux : il cherchait juste un livre avec des images de chats pour s'endormir dessus, au chaud."
+    ],
+    "example": "Nora sourit en comprenant le mystère : 'Ce n'était donc que toi, petit chat curieux !'",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Qui provoque le mystère de la bibliothèque ?",
+      "choices": [
+       "un fantôme",
+       "un chat",
+       "un autre bibliothécaire"
+      ],
+      "answer": 1,
+      "exp": "C'est un chat qui fait tomber les livres."
+     },
+     {
+      "type": "qcm",
+      "q": "Pourquoi le chat fait-il tomber les livres ?",
+      "choices": [
+       "pour jouer",
+       "pour trouver un livre avec des images de chats",
+       "pour embêter Nora"
+      ],
+      "answer": 1,
+      "exp": "Le chat cherche un livre à images de chats pour s'endormir dessus."
+     },
+     {
+      "type": "vf",
+      "q": "Nora découvre le mystère en restant cachée une nuit.",
+      "answer": true,
+      "exp": "Exact, c'est ainsi qu'elle observe le chat."
+     },
+     {
+      "type": "oral",
+      "q": "Résume à voix haute, en 2 phrases maximum, cette histoire du mystère de la bibliothèque.",
+      "keywords": [
+       "bibliotheque",
+       "chat",
+       "livre",
+       "nora",
+       "mystere"
+      ],
+      "exp": "Bravo, ton résumé va droit à l'essentiel de l'histoire !"
+     },
+     {
+      "type": "text",
+      "q": "Quel est le métier de Nora ?",
+      "answer": "bibliothecaire",
+      "exp": "Nora est bibliothécaire."
+     }
+    ],
+    "activity": "Imagine et raconte à voix haute une suite possible à cette histoire.",
+    "practice": "Écris un court résumé de 3 phrases de cette histoire dans ton cahier.",
+    "summary": "Une bibliothécaire découvre que le mystère des livres déplacés est en fait causé par un chat curieux.",
+    "metacognition": "Quels indices dans le texte t'ont aidé à comprendre le mystère avant la fin ?"
+   },
+   {
+    "id": "lecture-9-4",
+    "title": "L'interview imaginaire",
+    "emoji": "🎙️",
+    "badge": "📖",
+    "module": "Programme 9 ans - Lecture",
+    "chapter": "Narration orale",
+    "prerequisites": [],
+    "skills": [
+     "Lecture",
+     "Expression orale",
+     "Creativite"
+    ],
+    "difficulty": 3,
+    "duration": 17,
+    "objectif": "Lire un texte sous forme d'interview et savoir raconter une histoire à la première personne.",
+    "intro": "Et si tu pouvais interviewer un explorateur qui revient d'un lointain voyage ?",
+    "cours": [
+     "Une interview est un texte où une personne pose des questions et une autre y répond.",
+     "Dans ce texte, un explorateur raconte son voyage dans la jungle, où il a découvert une cascade cachée.",
+     "Raconter à la première personne, c'est utiliser 'je' pour dire ce que l'on a vécu soi-même."
+    ],
+    "example": "Question : 'Qu'avez-vous découvert ?' Réponse : 'J'ai découvert une cascade magnifique, cachée derrière un rideau de lianes.'",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Qu'est-ce qu'une interview ?",
+      "choices": [
+       "un texte de questions-réponses",
+       "une liste de mots",
+       "un poème"
+      ],
+      "answer": 0,
+      "exp": "Une interview alterne questions et réponses."
+     },
+     {
+      "type": "qcm",
+      "q": "Qu'a découvert l'explorateur dans le texte ?",
+      "choices": [
+       "une grotte",
+       "une cascade cachée",
+       "un volcan"
+      ],
+      "answer": 1,
+      "exp": "Il a découvert une cascade cachée dans la jungle."
+     },
+     {
+      "type": "vf",
+      "q": "Raconter à la première personne signifie utiliser 'il' pour parler de soi.",
+      "answer": false,
+      "exp": "Non, la première personne utilise 'je', pas 'il'."
+     },
+     {
+      "type": "oral",
+      "q": "Imagine que tu es cet explorateur et raconte à voix haute, en disant 'je', ce que tu as découvert.",
+      "keywords": [
+       "j'ai decouvert",
+       "j'ai vu",
+       "j'ai trouve"
+      ],
+      "exp": "Bravo pour ta narration à la première personne !"
+     },
+     {
+      "type": "text",
+      "q": "Dans quel lieu se déroule le voyage de l'explorateur ?",
+      "answer": "jungle",
+      "exp": "L'explorateur voyage dans la jungle."
+     }
+    ],
+    "activity": "Prépare 3 questions que tu aimerais poser à un explorateur imaginaire, puis réponds-y toi-même à voix haute.",
+    "practice": "Écris un court paragraphe où tu racontes, à la première personne, une aventure imaginaire.",
+    "summary": "Une interview alterne questions et réponses ; raconter à la première personne signifie utiliser 'je'.",
+    "metacognition": "Pourquoi est-ce parfois plus intéressant de raconter une histoire en disant 'je' ?"
+   },
+   {
+    "id": "lecture-9-5",
+    "title": "Le journal d'un jeune explorateur",
+    "emoji": "📔",
+    "badge": "📖",
+    "module": "Programme 9 ans - Lecture",
+    "chapter": "Expression des émotions à l'oral",
+    "prerequisites": [],
+    "skills": [
+     "Lecture",
+     "Expression orale",
+     "Emotions"
+    ],
+    "difficulty": 3,
+    "duration": 17,
+    "objectif": "Lire un extrait de journal intime et savoir exprimer à l'oral les émotions ressenties par un personnage.",
+    "intro": "Un jeune explorateur écrit dans son journal ses aventures et ses émotions, jour après jour.",
+    "cours": [
+     "Un journal intime raconte les événements vécus par une personne, souvent avec ses sentiments.",
+     "Dans cet extrait, le jeune explorateur a d'abord peur en entendant un bruit dans la forêt, puis il est rassuré en découvrant que c'était juste un petit renard.",
+     "Exprimer une émotion à l'oral, c'est utiliser sa voix (ton, intensité) et des mots précis comme 'j'avais peur' ou 'j'étais content'."
+    ],
+    "example": "'J'ai eu très peur en entendant ce bruit... puis j'ai éclaté de rire en voyant que ce n'était qu'un petit renard curieux !'",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Quelle émotion ressent d'abord l'explorateur en entendant le bruit ?",
+      "choices": [
+       "la joie",
+       "la peur",
+       "la tristesse"
+      ],
+      "answer": 1,
+      "exp": "Il a d'abord peur avant de comprendre ce que c'est."
+     },
+     {
+      "type": "qcm",
+      "q": "Qu'est-ce qui faisait le bruit dans la forêt ?",
+      "choices": [
+       "un ours",
+       "un petit renard",
+       "le vent"
+      ],
+      "answer": 1,
+      "exp": "C'était un petit renard curieux."
+     },
+     {
+      "type": "vf",
+      "q": "Un journal intime peut exprimer les émotions de la personne qui l'écrit.",
+      "answer": true,
+      "exp": "Exact, c'est souvent l'un des buts d'un journal intime."
+     },
+     {
+      "type": "oral",
+      "q": "Raconte à voix haute un moment où tu as eu peur, puis où tu as été rassuré(e), en exprimant bien tes émotions.",
+      "keywords": [
+       "j'ai eu peur",
+       "j'etais content",
+       "rassure",
+       "j'ai eu peur puis"
+      ],
+      "exp": "Bravo pour avoir partagé et exprimé tes émotions à voix haute !"
+     },
+     {
+      "type": "text",
+      "q": "Quel animal a fait peur à l'explorateur avant qu'il ne le voie ?",
+      "answer": "renard",
+      "exp": "C'était un petit renard."
+     }
+    ],
+    "activity": "Choisis une émotion (peur, joie, surprise) et raconte-la à voix haute avec le ton qui correspond.",
+    "practice": "Écris une courte page de journal intime racontant un moment où tu as ressenti une émotion forte.",
+    "summary": "Un journal intime raconte des événements et des émotions ; on peut exprimer ces émotions à l'oral avec des mots et un ton adaptés.",
+    "metacognition": "Est-ce facile ou difficile pour toi de parler de tes émotions à voix haute ? Pourquoi ?"
+   }
+  ]
+ }
+     }
