@@ -1825,4 +1825,581 @@ GT.CHESS_PUZZLES = [
     success:'Bien vu ! Ton fou change de diagonale et échappe à l\'attaque de la dame tout en restant actif.',
     hint:'Un fou se déplace uniquement en diagonale. Cherche une autre diagonale, loin de la dame, pour te mettre à l\'abri.' }
 ];
-</script></body></html>
+</script>
+<script>
+/* ===================== GENIUS ACADEMY - MOTEUR PEDAGOGIQUE (v3) =====================
+   Modules ajoutes (additifs, ne modifient pas le code existant) :
+   - GT.Curriculum : chargement des lecons depuis /curriculum/*.json (data-driven)
+   - GT.Skills     : suivi de la maitrise par competence (6 niveaux)
+   - GT.DailyProgram : generation du programme du jour
+   - GT.Editor     : editeur de cours reserve au parent (stockage local, sans backend)
+   - GT.MiniGames  : mini-jeux generiques reutilisables par competence
+   - GT.Tutor      : abstraction du "professeur IA" (regles aujourd'hui, LLM plus tard)
+   ===================================================================================== */
+(function(){
+  if (!window.GT) { console.warn('GT v2 introuvable, v3 annule'); return; }
+  var GT = window.GT;
+  GT.v3 = true;
+
+  /* ---------- GT.Curriculum : chargement data-driven des lecons ---------- */
+  GT.Curriculum = {
+    subjects: ['maths','francais','anglais','geographie','lecture','sciences','histoire','informatique','echecs','arts','viepratique'],
+    loaded: false,
+    overlayKey: 'geniusAcademyOverlay',
+    getOverlay: function(){
+      try { return JSON.parse(localStorage.getItem(this.overlayKey)) || {lessons:{}}; }
+      catch(e){ return {lessons:{}}; }
+    },
+    saveOverlay: function(ov){ localStorage.setItem(this.overlayKey, JSON.stringify(ov)); },
+    mergeLevel: function(base, overlayArr){
+      base = (base||[]).slice();
+      if (!overlayArr) return base;
+      overlayArr.forEach(function(ov){
+        var idx = base.findIndex(function(l){ return l.id === ov.id; });
+        if (ov._deleted) { if (idx>=0) base.splice(idx,1); return; }
+        if (idx>=0) base[idx] = ov; else base.push(ov);
+      });
+      return base;
+    },
+    applyOverlay: function(){
+      var ov = this.getOverlay();
+      var self = this;
+      this._base = this._base || {};
+      this.subjects.forEach(function(subj){
+        if (!CONTENT[subj]) CONTENT[subj] = {};
+        if (!self._base[subj]) self._base[subj] = {};
+        ['7','9'].forEach(function(lvl){
+          if (!self._base[subj][lvl]) self._base[subj][lvl] = (CONTENT[subj][lvl]||[]).slice();
+          var overlayArr = ov.lessons && ov.lessons[subj] && ov.lessons[subj][lvl];
+          CONTENT[subj][lvl] = self.mergeLevel(self._base[subj][lvl], overlayArr);
+        });
+      });
+    },
+    load: async function(){
+      var self = this;
+      await Promise.all(this.subjects.map(async function(subj){
+        try {
+          var res = await fetch('curriculum/' + subj + '.json', {cache:'no-cache'});
+          if (!res.ok) return;
+          var data = await res.json();
+          if (data && data.niveaux){
+            CONTENT[subj] = CONTENT[subj] || {};
+            Object.keys(data.niveaux).forEach(function(lvl){
+              CONTENT[subj][lvl] = data.niveaux[lvl];
+            });
+          }
+        } catch(e){ /* mode hors-ligne : on garde le contenu embarque */ }
+      }));
+      this.applyOverlay();
+      this.loaded = true;
+      document.dispatchEvent(new CustomEvent('gt:curriculum-loaded'));
+    }
+  };
+
+  /* ---------- GT.Skills : maitrise par competence (6 niveaux) ---------- */
+  GT.SKILL_LEVELS = ['Decouverte','Comprehension','Entrainement','Maitrise','Expert','Transmission'];
+  GT.Skills = {
+    get: function(profile){ profile.skillStats = profile.skillStats || {}; return profile.skillStats; },
+    levelIndex: function(score){ return Math.max(0, Math.min(5, Math.floor(score/3))); },
+    record: function(profile, skillNames, correct){
+      if (!skillNames || !skillNames.length) return;
+      var stats = this.get(profile);
+      skillNames.forEach(function(name){
+        var s = stats[name] || {score:0, success:0, error:0, lastReview:null};
+        if (correct){ s.score += 1; s.success += 1; } else { s.score = Math.max(0, s.score - 0.5); s.error += 1; }
+        s.lastReview = Date.now();
+        stats[name] = s;
+      });
+      GT.saveProfile && GT.saveProfile(profile);
+    },
+    daysSince: function(ts){ if(!ts) return null; return Math.floor((Date.now()-ts)/86400000); },
+    summary: function(profile){
+      var stats = this.get(profile);
+      var self = this;
+      return Object.keys(stats).map(function(name){
+        var s = stats[name];
+        var days = self.daysSince(s.lastReview);
+        return {
+          name: name,
+          levelIndex: self.levelIndex(s.score),
+          levelLabel: GT.SKILL_LEVELS[self.levelIndex(s.score)],
+          success: s.success, error: s.error, lastReview: s.lastReview, daysSince: days,
+          toReview: (days === null) || (days >= 7)
+        };
+      }).sort(function(a,b){ return a.name.localeCompare(b.name); });
+    }
+  };
+
+  /* ---------- Rattachement du suivi de competences aux reponses ---------- */
+  var __v3_answerExercise = answerExercise;
+  answerExercise = function(value){
+    var list = currentExerciseList();
+    var ex = list && list[LS.exIndex];
+    var correct = null;
+    if (ex){
+      if (ex.type==='qcm' || ex.type==='vf') correct = (value===ex.answer);
+      else if (ex.type==='text') { var __inp = document.getElementById('textAnsInput'); correct = __inp ? (normText(__inp.value)===normText(ex.answer)) : null; }
+    }
+    __v3_answerExercise(value);
+    if (correct !== null && LS.lesson && LS.lesson.skills && LS.lesson.skills.length){
+      var profile = getCurrentProfile();
+      if (profile){ GT.Skills.record(profile, LS.lesson.skills, correct); saveData(DATA); }
+    }
+  };
+
+  /* ---------- GT.DailyProgram : programme du jour genere automatiquement ---------- */
+  GT.DailyProgram = {
+    build: function(profile){
+      var items = [];
+      var due = GT.getDueReviews(profile) || [];
+      due.slice(0,3).forEach(function(d){
+        items.push({type:'revision', subjectKey:d.subjectKey, track:d.track, index:d.index,
+          label:'Revision : ' + (subjectByKey(d.subjectKey)?subjectByKey(d.subjectKey).name:d.subjectKey)});
+      });
+      SUBJECTS.forEach(function(s){
+        if (items.filter(function(i){return i.type==='lesson';}).length >= 2) return;
+        var track = getSubjectTrack(profile, s.key);
+        var lessons = getLessons(s.key, track);
+        var progress = ensureProgress(profile, s.key, track, lessons.length);
+        var idx = progress.findIndex(function(done){ return !done; });
+        if (idx>=0){
+          items.push({type:'lesson', subjectKey:s.key, track:track, index:idx,
+            label:'Nouvelle lecon : ' + lessons[idx].title + ' (' + s.name + ')'});
+        }
+      });
+      var undoneChallenges = GT.LIFE_CHALLENGES.filter(function(c){
+        return !(profile.lifeChallenges && profile.lifeChallenges[c.id] && profile.lifeChallenges[c.id].done);
+      });
+      if (undoneChallenges.length){
+        var c = undoneChallenges[Math.floor(Math.random()*undoneChallenges.length)];
+        items.push({type:'defi', id:c.id, label:'Defi de vie : ' + c.emoji + ' ' + c.title});
+      }
+      var withPauses = [];
+      items.forEach(function(it, i){
+        withPauses.push(it);
+        if ((i+1)%2===0 && i<items.length-1) withPauses.push({type:'pause', label:'Petite pause ! Etire-toi, bois de l eau.'});
+      });
+      return withPauses;
+    },
+    go: function(item){
+      if (item.type==='lesson' || item.type==='revision'){
+        window.__curSubject = item.subjectKey;
+        openLesson(item.subjectKey, item.track, item.index);
+      } else if (item.type==='defi'){
+        showScreen('lifechallenges');
+        GT.renderLifeChallenges();
+      }
+    }
+  };
+
+  /* ---------- GT.Editor : editeur de cours reserve au parent ---------- */
+  GT.Editor = {
+    pinKey: 'geniusAcademyParentPin',
+    unlocked: false,
+    state: { subject:'maths', level:'7' },
+    checkPin: function(){
+      var saved = localStorage.getItem(this.pinKey) || '1234';
+      var entered = prompt('Code parent (4 chiffres) pour acceder a l\'editeur de cours :');
+      if (entered === null) return false;
+      if (entered === saved) { this.unlocked = true; return true; }
+      alert('Code incorrect.');
+      return false;
+    },
+    open: function(){
+      if (!this.unlocked && !this.checkPin()) return;
+      showScreen('editeur');
+      this.render();
+    },
+    emptyLesson: function(){
+      return {id:'', title:'', emoji:'✏️', badge:'⭐', module:'', chapter:'', skills:[],
+        difficulty:1, duration:15, cours:[''], example:'', exercises:[]};
+    },
+    render: function(){
+      var scr = GT.ensureScreen('editeur');
+      var self = this;
+      var lessons = (CONTENT[this.state.subject] && CONTENT[this.state.subject][this.state.level]) || [];
+      lessons.forEach(function(l,i){ if(!l.id) l.id = self.state.subject+'-'+self.state.level+'-'+i; });
+      var subjOptions = SUBJECTS.map(function(s){
+        return '<option value="'+s.key+'"'+(s.key===self.state.subject?' selected':'')+'>'+s.name+'</option>';
+      }).join('');
+      var rows = lessons.map(function(l, i){
+        return '<tr>' +
+          '<td>'+l.emoji+' '+l.title+'</td>' +
+          '<td>'+(l.module||'')+'</td>' +
+          '<td>'+(l.chapter||'')+'</td>' +
+          '<td>'+(l.exercises?l.exercises.length:0)+'</td>' +
+          '<td><button class="gtBtn gtEditLesson" data-i="'+i+'">Modifier</button> ' +
+          '<button class="gtBtn gtDelLesson" data-i="'+i+'">Supprimer</button></td>' +
+          '</tr>';
+      }).join('');
+      scr.innerHTML =
+        '<div class="backbar"><button class="gtBtn" id="gtEditorBack">Retour</button></div>' +
+        '<h2>Editeur de cours (parent)</h2>' +
+        '<p>Matiere : <select id="gtEditSubject">'+subjOptions+'</select> ' +
+        'Niveau : <select id="gtEditLevel"><option value="7"'+(self.state.level==='7'?' selected':'')+'>7 ans</option>' +
+        '<option value="9"'+(self.state.level==='9'?' selected':'')+'>9 ans</option></select> ' +
+        '<button class="gtBtn" id="gtNewLesson">+ Nouvelle lecon</button></p>' +
+        '<table class="gtEditTable"><thead><tr><th>Lecon</th><th>Module</th><th>Chapitre</th><th>Exercices</th><th>Actions</th></tr></thead>' +
+        '<tbody>'+rows+'</tbody></table>' +
+        '<div id="gtEditorForm"></div>';
+      document.getElementById('gtEditorBack').onclick = function(){ showScreen('parent'); };
+      document.getElementById('gtEditSubject').onchange = function(e){ self.state.subject = e.target.value; self.render(); };
+      document.getElementById('gtEditLevel').onchange = function(e){ self.state.level = e.target.value; self.render(); };
+      document.getElementById('gtNewLesson').onclick = function(){ self.showForm(self.emptyLesson()); };
+      Array.from(document.getElementsByClassName('gtEditLesson')).forEach(function(btn){
+        btn.onclick = function(){ self.showForm(lessons[parseInt(btn.dataset.i,10)]); };
+      });
+      Array.from(document.getElementsByClassName('gtDelLesson')).forEach(function(btn){
+        btn.onclick = function(){
+          var l = lessons[parseInt(btn.dataset.i,10)];
+          if (!confirm('Supprimer la lecon "'+l.title+'" ?')) return;
+          self.deleteLesson(l);
+        };
+      });
+    }
+  };
+
+  GT.Editor.showForm = function(lesson){
+    var self = this;
+    this._draft = JSON.parse(JSON.stringify(lesson));
+    if (!this._draft.exercises) this._draft.exercises = [];
+    if (!this._draft.skills) this._draft.skills = [];
+    if (!this._draft.cours) this._draft.cours = [''];
+    this.renderForm();
+  };
+  GT.Editor.renderForm = function(){
+    var self = this; var d = this._draft;
+    var box = document.getElementById('gtEditorForm');
+    box.innerHTML =
+      '<div class="gtEditForm">' +
+      '<h3>'+(d.id ? 'Modifier la lecon' : 'Nouvelle lecon')+'</h3>' +
+      '<label>Titre <input id="fTitle" value="'+(d.title||'').replace(/"/g,'&quot;')+'"></label>' +
+      '<label>Emoji <input id="fEmoji" value="'+(d.emoji||'')+'" style="width:50px"></label>' +
+      '<label>Badge <input id="fBadge" value="'+(d.badge||'')+'" style="width:50px"></label>' +
+      '<label>Module <input id="fModule" value="'+(d.module||'').replace(/"/g,'&quot;')+'"></label>' +
+      '<label>Chapitre <input id="fChapter" value="'+(d.chapter||'').replace(/"/g,'&quot;')+'"></label>' +
+      '<label>Competences (separees par des virgules) <input id="fSkills" value="'+d.skills.join(', ')+'"></label>' +
+      '<label>Difficulte (1-5) <input id="fDiff" type="number" min="1" max="5" value="'+(d.difficulty||1)+'" style="width:60px"></label>' +
+      '<label>Duree (min) <input id="fDur" type="number" min="5" max="60" value="'+(d.duration||15)+'" style="width:60px"></label>' +
+      '<label>Cours (un paragraphe par ligne)<textarea id="fCours" rows="4">'+d.cours.join('\n')+'</textarea></label>' +
+      '<label>Exemple <input id="fExample" value="'+(d.example||'').replace(/"/g,'&quot;')+'"></label>' +
+      '<h4>Exercices</h4><div id="fExercises"></div>' +
+      '<button class="gtBtn" id="fAddEx">+ Ajouter un exercice</button>' +
+      '<div style="margin-top:14px"><button class="gtBtn" id="fSave">Enregistrer</button> ' +
+      '<button class="gtBtn" id="fCancel">Annuler</button></div>' +
+      '</div>';
+    this.renderFormExercises();
+    document.getElementById('fAddEx').onclick = function(){
+      d.exercises.push({type:'qcm', q:'', choices:['',''], answer:0, exp:''});
+      self.renderFormExercises();
+    };
+    document.getElementById('fSave').onclick = function(){ self.collectAndSave(); };
+    document.getElementById('fCancel').onclick = function(){ box.innerHTML=''; };
+  };
+  GT.Editor.renderFormExercises = function(){
+    var self = this; var d = this._draft;
+    var box = document.getElementById('fExercises');
+    box.innerHTML = d.exercises.map(function(ex, i){
+      var typeSel = '<select class="exType" data-i="'+i+'">' +
+        ['qcm','vf','text'].map(function(t){ return '<option value="'+t+'"'+(ex.type===t?' selected':'')+'>'+t+'</option>'; }).join('') +
+        '</select>';
+      var fields = '<input class="exQ" data-i="'+i+'" placeholder="Question" value="'+(ex.q||'').replace(/"/g,'&quot;')+'" style="width:260px">';
+      if (ex.type==='qcm'){
+        fields += '<input class="exChoices" data-i="'+i+'" placeholder="Choix separes par ;" value="'+(ex.choices||[]).join(';').replace(/"/g,'&quot;')+'" style="width:220px">';
+        fields += '<input class="exAnswer" data-i="'+i+'" placeholder="Index bonne reponse (0,1,2..)" value="'+(ex.answer!=null?ex.answer:0)+'" style="width:80px">';
+      } else if (ex.type==='vf'){
+        fields += '<select class="exAnswerBool" data-i="'+i+'"><option value="true"'+(ex.answer===true?' selected':'')+'>Vrai</option><option value="false"'+(ex.answer===false?' selected':'')+'>Faux</option></select>';
+      } else {
+        fields += '<input class="exAnswerText" data-i="'+i+'" placeholder="Reponse attendue" value="'+(ex.answer||'').toString().replace(/"/g,'&quot;')+'" style="width:150px">';
+      }
+      fields += '<input class="exExp" data-i="'+i+'" placeholder="Explication" value="'+(ex.exp||'').replace(/"/g,'&quot;')+'" style="width:220px">';
+      return '<div class="gtExRow">'+typeSel+' '+fields+' <button class="gtBtn exRemove" data-i="'+i+'">x</button></div>';
+    }).join('');
+    Array.from(box.getElementsByClassName('exType')).forEach(function(el){
+      el.onchange = function(){ d.exercises[el.dataset.i].type = el.value; self.renderFormExercises(); };
+    });
+    Array.from(box.getElementsByClassName('exQ')).forEach(function(el){ el.oninput = function(){ d.exercises[el.dataset.i].q = el.value; }; });
+    Array.from(box.getElementsByClassName('exChoices')).forEach(function(el){ el.oninput = function(){ d.exercises[el.dataset.i].choices = el.value.split(';').map(function(s){return s.trim();}); }; });
+    Array.from(box.getElementsByClassName('exAnswer')).forEach(function(el){ el.oninput = function(){ d.exercises[el.dataset.i].answer = parseInt(el.value,10)||0; }; });
+    Array.from(box.getElementsByClassName('exAnswerBool')).forEach(function(el){ el.onchange = function(){ d.exercises[el.dataset.i].answer = (el.value==='true'); }; });
+    Array.from(box.getElementsByClassName('exAnswerText')).forEach(function(el){ el.oninput = function(){ d.exercises[el.dataset.i].answer = el.value; }; });
+    Array.from(box.getElementsByClassName('exExp')).forEach(function(el){ el.oninput = function(){ d.exercises[el.dataset.i].exp = el.value; }; });
+    Array.from(box.getElementsByClassName('exRemove')).forEach(function(el){
+      el.onclick = function(){ d.exercises.splice(el.dataset.i,1); self.renderFormExercises(); };
+    });
+  };
+
+  GT.Editor.collectAndSave = function(){
+    var d = this._draft;
+    d.title = document.getElementById('fTitle').value.trim();
+    d.emoji = document.getElementById('fEmoji').value.trim() || '✏️';
+    d.badge = document.getElementById('fBadge').value.trim() || '⭐';
+    d.module = document.getElementById('fModule').value.trim();
+    d.chapter = document.getElementById('fChapter').value.trim();
+    d.skills = document.getElementById('fSkills').value.split(',').map(function(s){return s.trim();}).filter(Boolean);
+    d.difficulty = parseInt(document.getElementById('fDiff').value,10) || 1;
+    d.duration = parseInt(document.getElementById('fDur').value,10) || 15;
+    d.cours = document.getElementById('fCours').value.split('\n').map(function(s){return s.trim();}).filter(Boolean);
+    d.example = document.getElementById('fExample').value.trim();
+    if (!d.title){ alert('Le titre est obligatoire.'); return; }
+    this.saveLesson(d);
+  };
+  GT.Editor.saveLesson = function(lesson){
+    var subject = this.state.subject, level = this.state.level;
+    if (!lesson.id) lesson.id = subject + '-' + level + '-custom-' + Date.now();
+    var ov = GT.Curriculum.getOverlay();
+    ov.lessons = ov.lessons || {};
+    ov.lessons[subject] = ov.lessons[subject] || {};
+    ov.lessons[subject][level] = ov.lessons[subject][level] || [];
+    var arr = ov.lessons[subject][level];
+    var idx = arr.findIndex(function(l){ return l.id === lesson.id; });
+    if (idx>=0) arr[idx] = lesson; else arr.push(lesson);
+    GT.Curriculum.saveOverlay(ov);
+    GT.Curriculum.applyOverlay();
+    document.getElementById('gtEditorForm').innerHTML = '';
+    this.render();
+    alert('Lecon enregistree ! Elle est disponible immediatement dans l\'application (stockee sur cet appareil).');
+  };
+  GT.Editor.deleteLesson = function(lesson){
+    var subject = this.state.subject, level = this.state.level;
+    var ov = GT.Curriculum.getOverlay();
+    ov.lessons = ov.lessons || {};
+    ov.lessons[subject] = ov.lessons[subject] || {};
+    ov.lessons[subject][level] = ov.lessons[subject][level] || [];
+    var arr = ov.lessons[subject][level];
+    var idx = arr.findIndex(function(l){ return l.id === lesson.id; });
+    var marker = {id: lesson.id, _deleted:true};
+    if (idx>=0) arr[idx] = marker; else arr.push(marker);
+    GT.Curriculum.saveOverlay(ov);
+    GT.Curriculum.applyOverlay();
+    this.render();
+  };
+
+  /* ---------- GT.renderSkillsDashboard : carte des competences (parent) ---------- */
+  GT.renderSkillsDashboard = function(){
+    var scr = GT.ensureScreen('competences');
+    var rows = '';
+    DATA.profiles.forEach(function(p){
+      var summary = GT.Skills.summary(p);
+      if (!summary.length){
+        rows += '<tr><td>'+p.avatar+' '+p.name+'</td><td colspan="5"><em>Aucune competence suivie pour le moment.</em></td></tr>';
+        return;
+      }
+      summary.forEach(function(s, i){
+        rows += '<tr>' +
+          (i===0 ? '<td rowspan="'+summary.length+'">'+p.avatar+' '+p.name+'</td>' : '') +
+          '<td>'+s.name+'</td>' +
+          '<td>'+GT.SKILL_LEVELS[s.levelIndex]+'</td>' +
+          '<td>'+s.success+'</td>' +
+          '<td>'+s.error+'</td>' +
+          '<td>'+(s.daysSince==null?'jamais':s.daysSince+' j.')+(s.toReview?' - <strong>a revoir</strong>':'') +
+          '</td><td><button class="gtBtn gtPlayMini" data-skill="'+s.name.replace(/"/g,'&quot;')+'">Mini-jeu</button></td></tr>';
+      });
+    });
+    scr.innerHTML =
+      '<div class="backbar"><button class="gtBtn" id="gtSkillsBack">Retour</button></div>' +
+      '<h2>Carte des competences</h2>' +
+      '<table class="gtEditTable"><thead><tr><th>Enfant</th><th>Competence</th><th>Niveau</th>' +
+      '<th>Reussites</th><th>Erreurs</th><th>Derniere revision</th><th></th></tr></thead><tbody>'+rows+'</tbody></table>';
+    document.getElementById('gtSkillsBack').onclick = function(){ showScreen('parent'); };
+    Array.from(scr.getElementsByClassName('gtPlayMini')).forEach(function(btn){
+      btn.onclick = function(){ GT.MiniGames.launch(btn.dataset.skill); };
+    });
+  };
+
+  /* ---------- Liens parent : Editeur de cours + Carte des competences + export/import ---------- */
+  var __v3_renderParent = renderParent;
+  renderParent = function(){
+    __v3_renderParent();
+    var extra = document.getElementById('gtParentExtra');
+    if (extra && !document.getElementById('gtV3Links')){
+      var box = document.createElement('div');
+      box.id = 'gtV3Links';
+      box.style.marginTop = '18px';
+      box.innerHTML = '<button class="gtBtn" id="gtOpenEditor">Editeur de cours (parent)</button> ' +
+        '<button class="gtBtn" id="gtOpenSkills">Carte des competences</button> ' +
+        '<button class="gtBtn" id="gtExportOverlay">Exporter mes cours perso (JSON)</button> ' +
+        '<button class="gtBtn" id="gtImportOverlay">Importer des cours (JSON)</button>' +
+        '<input type="file" id="gtImportFile" accept=".json" style="display:none">' +
+        '<p style="font-size:12px;color:#666;max-width:520px">Les cours crees ou modifies par l\'editeur sont stockes uniquement sur cet appareil (pas de serveur). Utilisez l\'export/import pour les recopier sur un autre appareil.</p>';
+      extra.appendChild(box);
+      document.getElementById('gtOpenEditor').onclick = function(){ GT.Editor.open(); };
+      document.getElementById('gtOpenSkills').onclick = function(){ showScreen('competences'); };
+      document.getElementById('gtExportOverlay').onclick = function(){
+        var ov = GT.Curriculum.getOverlay();
+        var blob = new Blob([JSON.stringify(ov, null, 2)], {type:'application/json'});
+        var a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = 'genius-academy-mes-cours.json';
+        a.click();
+      };
+      document.getElementById('gtImportOverlay').onclick = function(){ document.getElementById('gtImportFile').click(); };
+      document.getElementById('gtImportFile').onchange = function(e){
+        var file = e.target.files[0]; if (!file) return;
+        var reader = new FileReader();
+        reader.onload = function(){
+          try {
+            var incoming = JSON.parse(reader.result);
+            var current = GT.Curriculum.getOverlay();
+            Object.keys(incoming.lessons||{}).forEach(function(subj){
+              current.lessons[subj] = current.lessons[subj] || {};
+              Object.keys(incoming.lessons[subj]).forEach(function(lvl){
+                current.lessons[subj][lvl] = incoming.lessons[subj][lvl];
+              });
+            });
+            GT.Curriculum.saveOverlay(current);
+            GT.Curriculum.applyOverlay();
+            alert('Cours importes avec succes !');
+          } catch(err){ alert('Fichier invalide.'); }
+        };
+        reader.readAsText(file);
+      };
+    }
+  };
+
+  /* ---------- Rattachement des nouveaux ecrans a showScreen ---------- */
+  var __v3_showScreen = showScreen;
+  showScreen = function(name){
+    if (name==='editeur') GT.Editor.render();
+    if (name==='competences') GT.renderSkillsDashboard();
+    __v3_showScreen(name);
+  };
+
+  /* ---------- Programme du jour sur l'accueil ---------- */
+  var __v3_renderHome = renderHome;
+  renderHome = function(){
+    __v3_renderHome();
+    try {
+      var profile = getCurrentProfile();
+      if (!profile) return;
+      var items = GT.DailyProgram.build(profile);
+      var host = document.getElementById('subjectGrid');
+      if (!host || !host.parentNode) return;
+      var old = document.getElementById('gtDailyProgram');
+      if (old) old.remove();
+      var box = document.createElement('div');
+      box.id = 'gtDailyProgram';
+      box.className = 'gtDailyProgram';
+      box.innerHTML = '<h3>Programme du jour</h3><div class="gtDailyList">' +
+        items.map(function(it, i){
+          return '<div class="gtDailyItem'+(it.type==='pause'?' gtPause':'')+'" data-i="'+i+'">' + it.label + '</div>';
+        }).join('') + '</div>';
+      host.parentNode.insertBefore(box, host);
+      Array.from(box.getElementsByClassName('gtDailyItem')).forEach(function(el){
+        el.onclick = function(){
+          var it = items[parseInt(el.dataset.i,10)];
+          if (it.type!=='pause') GT.DailyProgram.go(it);
+        };
+      });
+    } catch(e){ console.warn('Programme du jour indisponible', e); }
+  };
+
+  /* ---------- GT.Tutor : abstraction du "professeur IA" -----------------------------
+     Aujourd'hui : moteur a regles (GT.HINTS / GT.pickHint). Demain : il suffira de
+     remplacer GT.Tutor.provider par 'llm' et d'implementer l'appel a une vraie IA
+     dans GT.Tutor._respondLLM (necessite une cle API, non fournie ici). Tout le reste
+     de l'application appelle uniquement GT.Tutor.respond(context), jamais le detail
+     de l'implementation : le changement sera donc invisible pour le reste du code. */
+  GT.Tutor = {
+    provider: 'rules',
+    ENCOURAGEMENTS: ['Continue, tu progresses !','Bien joue, encore un effort !','Tu es sur la bonne voie !','Chaque erreur t\'aide a apprendre, bravo pour ta perseverance !'],
+    respond: function(context){
+      if (this.provider === 'llm') return this._respondLLM(context);
+      return this._respondRules(context);
+    },
+    _respondRules: function(context){
+      context = context || {};
+      if (context.subjectKey && context.exercise){
+        return GT.pickHint(context.subjectKey, context.exercise);
+      }
+      return this.ENCOURAGEMENTS[Math.floor(Math.random()*this.ENCOURAGEMENTS.length)];
+    },
+    _respondLLM: function(context){
+      return this._respondRules(context);
+    }
+  };
+
+  /* ---------- GT.MiniGames : mini-jeux generiques reutilisables ---------- */
+  GT.MiniGames = {
+    currentSkill: '',
+    EMOJIS: ['🍎','🚀','🐱','⭐','🌈','🎵','🐢','🔵','🌻','📚','⚽','🎨'],
+    launch: function(skillName){
+      this.currentSkill = skillName || '';
+      this.renderMemory();
+      showScreen('minigame');
+    },
+    renderMemory: function(){
+      var scr = GT.ensureScreen('minigame');
+      var self = this;
+      var chosen = this.EMOJIS.slice(0, 6);
+      var cards = chosen.concat(chosen).map(function(e,i){ return {id:i, emoji:e, revealed:false, matched:false}; });
+      for (var i=cards.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=cards[i]; cards[i]=cards[j]; cards[j]=t; }
+      this._cards = cards; this._first = null; this._lock = false;
+      scr.innerHTML = '<div class="backbar"><button class="gtBtn" id="gtMGBack">Retour</button></div>' +
+        '<h2>Mini-jeu memoire'+(this.currentSkill?(' - '+this.currentSkill):'')+'</h2>' +
+        '<div class="gtMemoryGrid" id="gtMemoryGrid"></div>';
+      document.getElementById('gtMGBack').onclick = function(){ showScreen('competences'); };
+      this.paintMemory();
+    },
+    paintMemory: function(){
+      var self = this;
+      var grid = document.getElementById('gtMemoryGrid');
+      grid.innerHTML = this._cards.map(function(c){
+        return '<div class="gtMemCard'+(c.revealed||c.matched?' revealed':'')+'" data-id="'+c.id+'">' +
+          (c.revealed||c.matched ? c.emoji : '❓') + '</div>';
+      }).join('');
+      Array.from(grid.getElementsByClassName('gtMemCard')).forEach(function(el){
+        el.onclick = function(){ self.flip(parseInt(el.dataset.id,10)); };
+      });
+    },
+    flip: function(id){
+      if (this._lock) return;
+      var card = this._cards.find(function(c){ return c.id===id; });
+      if (!card || card.revealed || card.matched) return;
+      card.revealed = true;
+      if (this._first === null){ this._first = card; this.paintMemory(); return; }
+      var first = this._first;
+      this.paintMemory();
+      if (first.emoji === card.emoji){
+        first.matched = true; card.matched = true; this._first = null; this.paintMemory();
+        if (this._cards.every(function(c){ return c.matched; })) setTimeout(function(){ alert('Bravo, tu as tout trouve !'); }, 200);
+      } else {
+        this._lock = true;
+        setTimeout(function(){ first.revealed=false; card.revealed=false; this._first=null; this._lock=false; this.paintMemory(); }.bind(this), 700);
+      }
+    }
+  };
+
+  /* ---------- Styles CSS additionnels (v3) ---------- */
+  var v3style = document.createElement('style');
+  v3style.id = 'gtStylesV3';
+  v3style.textContent = [
+    '.gtEditTable{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px;}',
+    '.gtEditTable th,.gtEditTable td{border:1px solid #e0d8f0;padding:6px 8px;text-align:left;}',
+    '.gtEditForm{background:#fbf8ff;border:2px solid #d9c8f5;border-radius:14px;padding:16px;margin-top:14px;max-width:720px;}',
+    '.gtEditForm label{display:block;margin:8px 0;font-weight:600;font-size:13px;}',
+    '.gtEditForm input,.gtEditForm textarea,.gtEditForm select{display:block;margin-top:4px;padding:6px;border-radius:8px;border:1px solid #ccc;font-size:14px;width:100%;max-width:400px;}',
+    '.gtExRow{display:flex;gap:6px;align-items:center;margin:6px 0;flex-wrap:wrap;}',
+    '.gtDailyProgram{background:linear-gradient(135deg,#fff3d6,#ffe3f1);border-radius:16px;padding:14px 18px;margin:14px 0;}',
+    '.gtDailyList{display:flex;flex-direction:column;gap:8px;margin-top:8px;}',
+    '.gtDailyItem{background:#fff;border-radius:10px;padding:8px 12px;cursor:pointer;box-shadow:0 2px 4px rgba(0,0,0,.08);}',
+    '.gtDailyItem:hover{transform:translateY(-1px);}',
+    '.gtDailyItem.gtPause{background:#eafbe7;font-style:italic;cursor:default;}',
+    '.gtMemoryGrid{display:grid;grid-template-columns:repeat(4,80px);gap:10px;margin-top:16px;}',
+    '.gtMemCard{width:80px;height:80px;background:#5b4b8a;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:30px;cursor:pointer;color:#fff;}',
+    '.gtMemCard.revealed{background:#fff;border:2px solid #5b4b8a;}'
+  ].join('\n');
+  document.head.appendChild(v3style);
+
+  /* ---------- Initialisation : chargement du programme depuis /curriculum ---------- */
+  document.addEventListener('gt:curriculum-loaded', function(){
+    var active = document.querySelector('.screen.active');
+    if (active && active.id === 'screen-home') renderHome();
+    if (active && active.id === 'screen-subject') { try { renderSubjectScreen(); } catch(e){} }
+  });
+  GT.Curriculum.load();
+
+  console.log('GT v3 module loaded OK');
+})();
+</script>
+</body></html>
