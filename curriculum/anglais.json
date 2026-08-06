@@ -1,352 +1,799 @@
 {
-  "subject": "anglais",
-  "name": "Anglais",
-  "niveaux": {
-    "7": [
-      {
-        "title": "Colours & Animals",
-        "emoji": "🎨",
-        "badge": "🐶",
-        "cours": [
-          "Let's learn colours: red, blue, green, yellow, black, white.",
-          "Let's learn animals: cat, dog, bird, fish, horse.",
-          "We can mix them: a red cat, a blue bird!"
-        ],
-        "example": "The dog is brown.",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "How do you say \"chat\" in English?",
-            "choices": [
-              "dog",
-              "cat",
-              "bird"
-            ],
-            "answer": 1,
-            "exp": "Cat means chat."
-          },
-          {
-            "type": "qcm",
-            "q": "What colour is the sky?",
-            "choices": [
-              "red",
-              "blue",
-              "green"
-            ],
-            "answer": 1,
-            "exp": "The sky is blue."
-          },
-          {
-            "type": "vf",
-            "q": "\"Dog\" means \"chien\".",
-            "answer": true,
-            "exp": "Yes, dog = chien."
-          },
-          {
-            "type": "text",
-            "q": "Translate: rouge",
-            "answer": "red",
-            "exp": "Rouge means red."
-          }
-        ],
-        "id": "anglais-7-0",
-        "module": "Programme 7 ans - Anglais",
-        "chapter": "Colours & Animals",
-        "skills": [
-          "Expression orale",
-          "Prononciation",
-          "Vocabulaire"
-        ],
-        "difficulty": 1,
-        "duration": 15
-      },
-      {
-        "title": "Numbers & Greetings",
-        "emoji": "🔢",
-        "badge": "👋",
-        "cours": [
-          "Numbers: one, two, three, four, five, six, seven, eight, nine, ten.",
-          "Greetings: Hello! Good morning! How are you? I'm fine, thank you.",
-          "We say Goodbye! when we leave."
-        ],
-        "example": "Hello! I am fine, thank you!",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "What comes after \"four\"?",
-            "choices": [
-              "three",
-              "five",
-              "six"
-            ],
-            "answer": 1,
-            "exp": "Five comes after four."
-          },
-          {
-            "type": "qcm",
-            "q": "How do you say hello?",
-            "choices": [
-              "Goodbye",
-              "Hello",
-              "Please"
-            ],
-            "answer": 1,
-            "exp": "Hello is used to greet someone."
-          },
-          {
-            "type": "vf",
-            "q": "\"Ten\" means dix.",
-            "answer": true,
-            "exp": "Yes, ten = dix."
-          },
-          {
-            "type": "text",
-            "q": "Translate: sept",
-            "answer": "seven",
-            "exp": "Sept means seven."
-          }
-        ],
-        "id": "anglais-7-1",
-        "module": "Programme 7 ans - Anglais",
-        "chapter": "Numbers & Greetings",
-        "skills": [
-          "Expression orale",
-          "Prononciation",
-          "Vocabulaire"
-        ],
-        "difficulty": 2,
-        "duration": 15
-      },
-      {
-        "title": "My Family",
-        "emoji": "👪",
-        "badge": "❤️",
-        "cours": [
-          "Family words: mother, father, sister, brother, grandmother, grandfather.",
-          "We say: This is my mother. He is my brother.",
-          "Family is important everywhere in the world."
-        ],
-        "example": "This is my sister.",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "How do you say \"mère\" in English?",
-            "choices": [
-              "father",
-              "mother",
-              "sister"
-            ],
-            "answer": 1,
-            "exp": "Mother means mère."
-          },
-          {
-            "type": "qcm",
-            "q": "How do you say \"frère\"?",
-            "choices": [
-              "brother",
-              "sister",
-              "father"
-            ],
-            "answer": 0,
-            "exp": "Brother means frère."
-          },
-          {
-            "type": "vf",
-            "q": "\"Grandmother\" means grand-mère.",
-            "answer": true,
-            "exp": "Yes, correct."
-          },
-          {
-            "type": "text",
-            "q": "Translate: père",
-            "answer": "father",
-            "exp": "Père means father."
-          }
-        ],
-        "id": "anglais-7-2",
-        "module": "Programme 7 ans - Anglais",
-        "chapter": "My Family",
-        "skills": [
-          "Expression orale",
-          "Prononciation",
-          "Vocabulaire"
-        ],
-        "difficulty": 3,
-        "duration": 15
-      }
+ "subject": "anglais",
+ "name": "Anglais",
+ "niveaux": {
+  "7": [
+   {
+    "title": "Colours & Animals",
+    "emoji": "🎨",
+    "badge": "🐶",
+    "cours": [
+     "Let's learn colours: red, blue, green, yellow, black, white.",
+     "Let's learn animals: cat, dog, bird, fish, horse.",
+     "We can mix them: a red cat, a blue bird!"
     ],
-    "9": [
-      {
-        "title": "Daily Routine",
-        "emoji": "⏰",
-        "badge": "🛏️",
-        "cours": [
-          "Daily routine verbs: wake up, eat breakfast, go to school, do homework, sleep.",
-          "We use \"I\" + verb: I wake up at 7 o'clock.",
-          "Time words: morning, afternoon, evening, night."
-        ],
-        "example": "I go to school in the morning.",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "What do you do in the morning?",
-            "choices": [
-              "sleep",
-              "wake up",
-              "dream"
-            ],
-            "answer": 1,
-            "exp": "We wake up in the morning."
-          },
-          {
-            "type": "qcm",
-            "q": "Translate: se coucher",
-            "choices": [
-              "wake up",
-              "go to bed",
-              "eat"
-            ],
-            "answer": 1,
-            "exp": "Se coucher means go to bed."
-          },
-          {
-            "type": "vf",
-            "q": "\"Breakfast\" is a meal.",
-            "answer": true,
-            "exp": "Yes, breakfast is the morning meal."
-          },
-          {
-            "type": "text",
-            "q": "Translate: le soir",
-            "answer": "evening",
-            "exp": "Le soir means evening."
-          }
-        ],
-        "id": "anglais-9-0",
-        "module": "Programme 9 ans - Anglais",
-        "chapter": "Daily Routine",
-        "skills": [
-          "Expression orale",
-          "Prononciation",
-          "Vocabulaire"
-        ],
-        "difficulty": 1,
-        "duration": 15
-      },
-      {
-        "title": "Weather & Seasons",
-        "emoji": "☀️",
-        "badge": "🌦️",
-        "cours": [
-          "Weather words: sunny, rainy, cloudy, windy, snowy.",
-          "Seasons: spring, summer, autumn, winter.",
-          "We say: It is sunny today. In winter, it snows."
-        ],
-        "example": "In summer, it is sunny and hot.",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "Translate: il pleut",
-            "choices": [
-              "it is sunny",
-              "it is raining",
-              "it is snowing"
-            ],
-            "answer": 1,
-            "exp": "Il pleut means it is raining."
-          },
-          {
-            "type": "qcm",
-            "q": "Which season comes after winter?",
-            "choices": [
-              "summer",
-              "autumn",
-              "spring"
-            ],
-            "answer": 2,
-            "exp": "Spring comes after winter."
-          },
-          {
-            "type": "vf",
-            "q": "\"Snowy\" means neigeux.",
-            "answer": true,
-            "exp": "Yes, correct."
-          },
-          {
-            "type": "text",
-            "q": "Translate: l'été",
-            "answer": "summer",
-            "exp": "L'été means summer."
-          }
-        ],
-        "id": "anglais-9-1",
-        "module": "Programme 9 ans - Anglais",
-        "chapter": "Weather & Seasons",
-        "skills": [
-          "Expression orale",
-          "Prononciation",
-          "Vocabulaire"
-        ],
-        "difficulty": 2,
-        "duration": 15
-      },
-      {
-        "title": "At School",
-        "emoji": "🏫",
-        "badge": "🎒",
-        "cours": [
-          "School words: teacher, classroom, book, pencil, schoolbag.",
-          "We say: My teacher is nice. I have a red pencil.",
-          "Subjects: maths, English, geography, reading."
-        ],
-        "example": "My favourite subject is maths.",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "Translate: le professeur",
-            "choices": [
-              "student",
-              "teacher",
-              "pencil"
-            ],
-            "answer": 1,
-            "exp": "Le professeur means teacher."
-          },
-          {
-            "type": "qcm",
-            "q": "Translate: le cartable",
-            "choices": [
-              "schoolbag",
-              "classroom",
-              "book"
-            ],
-            "answer": 0,
-            "exp": "Le cartable means schoolbag."
-          },
-          {
-            "type": "vf",
-            "q": "\"Pencil\" means crayon.",
-            "answer": true,
-            "exp": "Yes, correct."
-          },
-          {
-            "type": "text",
-            "q": "Translate: la salle de classe",
-            "answer": "classroom",
-            "exp": "La salle de classe means classroom."
-          }
-        ],
-        "id": "anglais-9-2",
-        "module": "Programme 9 ans - Anglais",
-        "chapter": "At School",
-        "skills": [
-          "Expression orale",
-          "Prononciation",
-          "Vocabulaire"
-        ],
-        "difficulty": 3,
-        "duration": 15
+    "example": "The dog is brown.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "How do you say \"chat\" in English?",
+      "choices": [
+       "dog",
+       "cat",
+       "bird"
+      ],
+      "answer": 1,
+      "exp": "Cat means chat."
+     },
+     {
+      "type": "qcm",
+      "q": "What colour is the sky?",
+      "choices": [
+       "red",
+       "blue",
+       "green"
+      ],
+      "answer": 1,
+      "exp": "The sky is blue."
+     },
+     {
+      "type": "vf",
+      "q": "\"Dog\" means \"chien\".",
+      "answer": true,
+      "exp": "Yes, dog = chien."
+     },
+     {
+      "type": "text",
+      "q": "Translate: rouge",
+      "answer": "red",
+      "exp": "Rouge means red."
+     }
+    ],
+    "id": "anglais-7-0",
+    "module": "Programme 7 ans - Anglais",
+    "chapter": "Colours & Animals",
+    "skills": [
+     "Expression orale",
+     "Prononciation",
+     "Vocabulaire"
+    ],
+    "difficulty": 1,
+    "duration": 15
+   },
+   {
+    "title": "Numbers & Greetings",
+    "emoji": "🔢",
+    "badge": "👋",
+    "cours": [
+     "Numbers: one, two, three, four, five, six, seven, eight, nine, ten.",
+     "Greetings: Hello! Good morning! How are you? I'm fine, thank you.",
+     "We say Goodbye! when we leave."
+    ],
+    "example": "Hello! I am fine, thank you!",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "What comes after \"four\"?",
+      "choices": [
+       "three",
+       "five",
+       "six"
+      ],
+      "answer": 1,
+      "exp": "Five comes after four."
+     },
+     {
+      "type": "qcm",
+      "q": "How do you say hello?",
+      "choices": [
+       "Goodbye",
+       "Hello",
+       "Please"
+      ],
+      "answer": 1,
+      "exp": "Hello is used to greet someone."
+     },
+     {
+      "type": "vf",
+      "q": "\"Ten\" means dix.",
+      "answer": true,
+      "exp": "Yes, ten = dix."
+     },
+     {
+      "type": "text",
+      "q": "Translate: sept",
+      "answer": "seven",
+      "exp": "Sept means seven."
+     }
+    ],
+    "id": "anglais-7-1",
+    "module": "Programme 7 ans - Anglais",
+    "chapter": "Numbers & Greetings",
+    "skills": [
+     "Expression orale",
+     "Prononciation",
+     "Vocabulaire"
+    ],
+    "difficulty": 2,
+    "duration": 15
+   },
+   {
+    "title": "My Family",
+    "emoji": "👪",
+    "badge": "❤️",
+    "cours": [
+     "Family words: mother, father, sister, brother, grandmother, grandfather.",
+     "We say: This is my mother. He is my brother.",
+     "Family is important everywhere in the world."
+    ],
+    "example": "This is my sister.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "How do you say \"mère\" in English?",
+      "choices": [
+       "father",
+       "mother",
+       "sister"
+      ],
+      "answer": 1,
+      "exp": "Mother means mère."
+     },
+     {
+      "type": "qcm",
+      "q": "How do you say \"frère\"?",
+      "choices": [
+       "brother",
+       "sister",
+       "father"
+      ],
+      "answer": 0,
+      "exp": "Brother means frère."
+     },
+     {
+      "type": "vf",
+      "q": "\"Grandmother\" means grand-mère.",
+      "answer": true,
+      "exp": "Yes, correct."
+     },
+     {
+      "type": "text",
+      "q": "Translate: père",
+      "answer": "father",
+      "exp": "Père means father."
+     }
+    ],
+    "id": "anglais-7-2",
+    "module": "Programme 7 ans - Anglais",
+    "chapter": "My Family",
+    "skills": [
+     "Expression orale",
+     "Prononciation",
+     "Vocabulaire"
+    ],
+    "difficulty": 3,
+    "duration": 15
+   },
+   {
+    "id": "anglais-7-3",
+    "title": "How old are you?",
+    "emoji": "🎂",
+    "badge": "🇬🇧",
+    "module": "Programme 7 ans - Anglais",
+    "chapter": "Donner son âge",
+    "prerequisites": [
+     "anglais-7-1"
+    ],
+    "skills": [
+     "Expression orale",
+     "Vocabulaire",
+     "Prononciation"
+    ],
+    "difficulty": 2,
+    "duration": 15,
+    "objectif": "Savoir demander et dire son âge en anglais.",
+    "intro": "Let's learn how to talk about our age in English!",
+    "cours": [
+     "Pour demander l'âge : 'How old are you ?'",
+     "Pour répondre : 'I am ... years old.' (par exemple : I am 7 years old.)",
+     "On peut aussi répondre plus simplement : 'I am seven.'"
+    ],
+    "example": "Question: 'How old are you?' Réponse: 'I am seven years old.'",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Comment demande-t-on l'âge en anglais ?",
+      "choices": [
+       "What is your name?",
+       "How old are you?",
+       "Where do you live?"
+      ],
+      "answer": 1,
+      "exp": "'How old are you?' signifie 'Quel âge as-tu ?'"
+     },
+     {
+      "type": "text",
+      "q": "Complète : 'I ___ 7 years old.' (verbe être)",
+      "answer": "am",
+      "exp": "On dit 'I am 7 years old.'"
+     },
+     {
+      "type": "vf",
+      "q": "'I am seven years old' signifie 'J'ai sept ans'.",
+      "answer": true,
+      "exp": "Exact, c'est la traduction correcte."
+     },
+     {
+      "type": "oral",
+      "q": "How old are you? Answer in English.",
+      "keywords": [
+       "i am",
+       "years old",
+       "seven",
+       "i'm"
+      ],
+      "exp": "Great answer! Bien joué pour ta réponse en anglais !"
+     },
+     {
+      "type": "oral",
+      "q": "Ask your parent: 'How old are you?' and try to understand their answer.",
+      "keywords": [
+       "how old are you"
+      ],
+      "exp": "Awesome, tu sais maintenant poser la question toi-même !"
+     }
+    ],
+    "activity": "Demande leur âge à 3 membres de ta famille en anglais : 'How old are you?'",
+    "practice": "Écris une petite carte où tu présentes ton âge en anglais : 'I am ... years old.'",
+    "summary": "On demande l'âge avec 'How old are you?' et on répond avec 'I am ... years old.'",
+    "metacognition": "Arrives-tu à dire ton âge en anglais sans regarder ton cours ?"
+   },
+   {
+    "id": "anglais-7-4",
+    "title": "I like / I don't like",
+    "emoji": "😋",
+    "badge": "🇬🇧",
+    "module": "Programme 7 ans - Anglais",
+    "chapter": "Parler de ses goûts",
+    "prerequisites": [
+     "anglais-7-0"
+    ],
+    "skills": [
+     "Expression orale",
+     "Vocabulaire"
+    ],
+    "difficulty": 2,
+    "duration": 15,
+    "objectif": "Savoir exprimer ses goûts et préférences simples en anglais.",
+    "intro": "Let's talk about what we like and what we don't like!",
+    "cours": [
+     "Pour dire qu'on aime quelque chose : 'I like...' (exemple : I like apples.)",
+     "Pour dire qu'on n'aime pas : 'I don't like...' (exemple : I don't like spinach.)",
+     "On peut ajouter 'a lot' (beaucoup) pour insister : 'I like chocolate a lot!'"
+    ],
+    "example": "'I like ice cream, but I don't like broccoli.' (J'aime la glace, mais je n'aime pas le brocoli.)",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Comment dit-on 'j'aime' en anglais ?",
+      "choices": [
+       "I don't like",
+       "I like",
+       "I am"
+      ],
+      "answer": 1,
+      "exp": "'I like' signifie 'j'aime'."
+     },
+     {
+      "type": "text",
+      "q": "Comment dit-on 'je n'aime pas' en anglais ? (2 mots + like)",
+      "answer": "I don't like",
+      "exp": "'I don't like' signifie 'je n'aime pas'."
+     },
+     {
+      "type": "vf",
+      "q": "'I like chocolate' signifie 'je n'aime pas le chocolat'.",
+      "answer": false,
+      "exp": "Non, cela signifie 'j'aime le chocolat'."
+     },
+     {
+      "type": "oral",
+      "q": "Say in English something you like to eat.",
+      "keywords": [
+       "i like"
+      ],
+      "exp": "Nice! Well done for expressing what you like!"
+     },
+     {
+      "type": "oral",
+      "q": "Say in English something you don't like.",
+      "keywords": [
+       "i don't like",
+       "i do not like"
+      ],
+      "exp": "Great job expressing your preferences in English!"
+     }
+    ],
+    "activity": "Fais une liste de 3 choses que tu aimes et 3 choses que tu n'aimes pas, en anglais.",
+    "practice": "Demande à un membre de ta famille ce qu'il aime, en anglais : 'What do you like?'",
+    "summary": "On utilise 'I like...' pour exprimer ce qu'on aime et 'I don't like...' pour ce qu'on n'aime pas.",
+    "metacognition": "Quels mots anglais de nourriture connais-tu déjà pour parler de tes goûts ?"
+   },
+   {
+    "id": "anglais-7-5",
+    "title": "Describe an animal",
+    "emoji": "🐾",
+    "badge": "🇬🇧",
+    "module": "Programme 7 ans - Anglais",
+    "chapter": "Décrire un animal",
+    "prerequisites": [
+     "anglais-7-0"
+    ],
+    "skills": [
+     "Expression orale",
+     "Vocabulaire",
+     "Creativite"
+    ],
+    "difficulty": 2,
+    "duration": 15,
+    "objectif": "Savoir décrire un animal simple en anglais (couleur, taille, cri).",
+    "intro": "Let's describe animals in English using colours and simple words!",
+    "cours": [
+     "On peut décrire un animal avec sa couleur : 'The cat is black.'",
+     "On peut dire sa taille : 'The elephant is big.' / 'The mouse is small.'",
+     "On peut dire ce qu'il fait : 'The dog runs.' / 'The bird sings.'"
+    ],
+    "example": "'The dog is brown and small. It runs very fast.' (Le chien est marron et petit. Il court très vite.)",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Comment dit-on 'l'éléphant est grand' en anglais ?",
+      "choices": [
+       "The elephant is small",
+       "The elephant is big",
+       "The elephant is red"
+      ],
+      "answer": 1,
+      "exp": "'Big' signifie 'grand'."
+     },
+     {
+      "type": "text",
+      "q": "Complète : 'The cat is ___.' (une couleur en anglais)",
+      "answer": "black",
+      "exp": "On peut dire black, white, brown... selon la couleur du chat."
+     },
+     {
+      "type": "vf",
+      "q": "'Small' signifie 'grand' en anglais.",
+      "answer": false,
+      "exp": "Non, 'small' signifie 'petit'. 'Grand' se dit 'big'."
+     },
+     {
+      "type": "oral",
+      "q": "Describe your favourite animal in English (colour and size).",
+      "keywords": [
+       "is big",
+       "is small",
+       "is black",
+       "is white",
+       "is brown"
+      ],
+      "exp": "Excellent description! Bravo pour ta description en anglais !"
+     },
+     {
+      "type": "qcm",
+      "q": "Comment dit-on 'le chien court' en anglais ?",
+      "choices": [
+       "The dog sings",
+       "The dog runs",
+       "The dog sleeps"
+      ],
+      "answer": 1,
+      "exp": "'Runs' signifie 'court'."
+     }
+    ],
+    "activity": "Choisis un animal en peluche ou une image et décris-le en anglais avec au moins 2 mots (couleur, taille).",
+    "practice": "Dessine un animal imaginaire et écris sa description en anglais : couleur et taille.",
+    "summary": "On décrit un animal en anglais avec sa couleur (colour), sa taille (big/small) et son action.",
+    "metacognition": "Quel animal préfères-tu décrire en anglais, et pourquoi ?"
+   }
+  ],
+  "9": [
+   {
+    "title": "Daily Routine",
+    "emoji": "⏰",
+    "badge": "🛏️",
+    "cours": [
+     "Daily routine verbs: wake up, eat breakfast, go to school, do homework, sleep.",
+     "We use \"I\" + verb: I wake up at 7 o'clock.",
+     "Time words: morning, afternoon, evening, night."
+    ],
+    "example": "I go to school in the morning.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "What do you do in the morning?",
+      "choices": [
+       "sleep",
+       "wake up",
+       "dream"
+      ],
+      "answer": 1,
+      "exp": "We wake up in the morning."
+     },
+     {
+      "type": "qcm",
+      "q": "Translate: se coucher",
+      "choices": [
+       "wake up",
+       "go to bed",
+       "eat"
+      ],
+      "answer": 1,
+      "exp": "Se coucher means go to bed."
+     },
+     {
+      "type": "vf",
+      "q": "\"Breakfast\" is a meal.",
+      "answer": true,
+      "exp": "Yes, breakfast is the morning meal."
+     },
+     {
+      "type": "text",
+      "q": "Translate: le soir",
+      "answer": "evening",
+      "exp": "Le soir means evening."
+     }
+    ],
+    "id": "anglais-9-0",
+    "module": "Programme 9 ans - Anglais",
+    "chapter": "Daily Routine",
+    "skills": [
+     "Expression orale",
+     "Prononciation",
+     "Vocabulaire"
+    ],
+    "difficulty": 1,
+    "duration": 15
+   },
+   {
+    "title": "Weather & Seasons",
+    "emoji": "☀️",
+    "badge": "🌦️",
+    "cours": [
+     "Weather words: sunny, rainy, cloudy, windy, snowy.",
+     "Seasons: spring, summer, autumn, winter.",
+     "We say: It is sunny today. In winter, it snows."
+    ],
+    "example": "In summer, it is sunny and hot.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Translate: il pleut",
+      "choices": [
+       "it is sunny",
+       "it is raining",
+       "it is snowing"
+      ],
+      "answer": 1,
+      "exp": "Il pleut means it is raining."
+     },
+     {
+      "type": "qcm",
+      "q": "Which season comes after winter?",
+      "choices": [
+       "summer",
+       "autumn",
+       "spring"
+      ],
+      "answer": 2,
+      "exp": "Spring comes after winter."
+     },
+     {
+      "type": "vf",
+      "q": "\"Snowy\" means neigeux.",
+      "answer": true,
+      "exp": "Yes, correct."
+     },
+     {
+      "type": "text",
+      "q": "Translate: l'été",
+      "answer": "summer",
+      "exp": "L'été means summer."
+     }
+    ],
+    "id": "anglais-9-1",
+    "module": "Programme 9 ans - Anglais",
+    "chapter": "Weather & Seasons",
+    "skills": [
+     "Expression orale",
+     "Prononciation",
+     "Vocabulaire"
+    ],
+    "difficulty": 2,
+    "duration": 15
+   },
+   {
+    "title": "At School",
+    "emoji": "🏫",
+    "badge": "🎒",
+    "cours": [
+     "School words: teacher, classroom, book, pencil, schoolbag.",
+     "We say: My teacher is nice. I have a red pencil.",
+     "Subjects: maths, English, geography, reading."
+    ],
+    "example": "My favourite subject is maths.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Translate: le professeur",
+      "choices": [
+       "student",
+       "teacher",
+       "pencil"
+      ],
+      "answer": 1,
+      "exp": "Le professeur means teacher."
+     },
+     {
+      "type": "qcm",
+      "q": "Translate: le cartable",
+      "choices": [
+       "schoolbag",
+       "classroom",
+       "book"
+      ],
+      "answer": 0,
+      "exp": "Le cartable means schoolbag."
+     },
+     {
+      "type": "vf",
+      "q": "\"Pencil\" means crayon.",
+      "answer": true,
+      "exp": "Yes, correct."
+     },
+     {
+      "type": "text",
+      "q": "Translate: la salle de classe",
+      "answer": "classroom",
+      "exp": "La salle de classe means classroom."
+     }
+    ],
+    "id": "anglais-9-2",
+    "module": "Programme 9 ans - Anglais",
+    "chapter": "At School",
+    "skills": [
+     "Expression orale",
+     "Prononciation",
+     "Vocabulaire"
+    ],
+    "difficulty": 3,
+    "duration": 15
+   },
+   {
+    "id": "anglais-9-3",
+    "title": "At the restaurant",
+    "emoji": "🍽️",
+    "badge": "🇬🇧",
+    "module": "Programme 9 ans - Anglais",
+    "chapter": "Commander au restaurant",
+    "prerequisites": [
+     "anglais-9-0"
+    ],
+    "skills": [
+     "Expression orale",
+     "Vocabulaire"
+    ],
+    "difficulty": 3,
+    "duration": 16,
+    "objectif": "Savoir commander un repas simple en anglais dans un restaurant.",
+    "intro": "Let's learn how to order food at a restaurant in English!",
+    "cours": [
+     "Pour commander, on dit : 'I would like...' ou plus simplement 'Can I have...?'",
+     "Exemple : 'I would like a pizza, please.' ou 'Can I have some water, please?'",
+     "Il est poli d'ajouter 'please' (s'il vous plait) et de dire 'thank you' (merci) à la fin."
+    ],
+    "example": "Waiter: 'What would you like?' Vous: 'I would like a sandwich and some juice, please.'",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Comment commander poliment en anglais ?",
+      "choices": [
+       "Give me pizza!",
+       "I would like a pizza, please.",
+       "Pizza now!"
+      ],
+      "answer": 1,
+      "exp": "'I would like...please' est la formule polie."
+     },
+     {
+      "type": "text",
+      "q": "Complète : 'Can I ___ some water, please?'",
+      "answer": "have",
+      "exp": "'Can I have...?' est une façon polie de demander quelque chose."
+     },
+     {
+      "type": "vf",
+      "q": "Il est poli d'ajouter 'please' quand on commande quelque chose.",
+      "answer": true,
+      "exp": "Exact, 'please' montre la politesse."
+     },
+     {
+      "type": "oral",
+      "q": "Order your favourite food in English, using 'I would like...'",
+      "keywords": [
+       "i would like",
+       "can i have"
+      ],
+      "exp": "Perfect! Great job ordering in English!"
+     },
+     {
+      "type": "oral",
+      "q": "Say 'thank you' and explain when you should use it.",
+      "keywords": [
+       "thank you"
+      ],
+      "exp": "Well done! 'Thank you' is used to be polite after receiving something."
+     }
+    ],
+    "activity": "Joue une petite scène avec un adulte : toi le client, lui le serveur, en anglais.",
+    "practice": "Écris un petit dialogue de commande au restaurant en anglais (3-4 phrases).",
+    "summary": "On commande poliment en anglais avec 'I would like...' ou 'Can I have...?', en ajoutant 'please' et 'thank you'.",
+    "metacognition": "Pourquoi est-il important d'être poli quand on commande quelque chose ?"
+   },
+   {
+    "id": "anglais-9-4",
+    "title": "Asking the way",
+    "emoji": "🧭",
+    "badge": "🇬🇧",
+    "module": "Programme 9 ans - Anglais",
+    "chapter": "Demander son chemin",
+    "prerequisites": [
+     "anglais-9-0"
+    ],
+    "skills": [
+     "Expression orale",
+     "Vocabulaire",
+     "Reperage spatial"
+    ],
+    "difficulty": 3,
+    "duration": 16,
+    "objectif": "Savoir demander et comprendre un chemin simple en anglais.",
+    "intro": "Let's learn how to ask for directions in English!",
+    "cours": [
+     "Pour demander son chemin : 'Excuse me, where is the...?' (exemple : where is the park?)",
+     "Pour indiquer une direction : 'Turn left' (tourne à gauche), 'Turn right' (tourne à droite), 'Go straight' (va tout droit).",
+     "Il est poli de commencer par 'Excuse me' avant de poser la question."
+    ],
+    "example": "'Excuse me, where is the library?' 'Go straight, then turn left.'",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Comment demande-t-on poliment son chemin en anglais ?",
+      "choices": [
+       "Where is it?!",
+       "Excuse me, where is the...?",
+       "Tell me now!"
+      ],
+      "answer": 1,
+      "exp": "'Excuse me' rend la question polie."
+     },
+     {
+      "type": "qcm",
+      "q": "Que signifie 'turn left' ?",
+      "choices": [
+       "tourne à droite",
+       "tourne à gauche",
+       "va tout droit"
+      ],
+      "answer": 1,
+      "exp": "'Turn left' signifie 'tourne à gauche'."
+     },
+     {
+      "type": "text",
+      "q": "Comment dit-on 'va tout droit' en anglais ? (2 mots)",
+      "answer": "go straight",
+      "exp": "'Go straight' signifie 'va tout droit'."
+     },
+     {
+      "type": "oral",
+      "q": "Ask in English where the nearest park is.",
+      "keywords": [
+       "excuse me where is the park",
+       "where is the park"
+      ],
+      "exp": "Great! You asked for directions correctly!"
+     },
+     {
+      "type": "oral",
+      "q": "Give a simple direction in English (turn left, turn right, or go straight).",
+      "keywords": [
+       "turn left",
+       "turn right",
+       "go straight"
+      ],
+      "exp": "Perfect direction! Well done!"
+     }
+    ],
+    "activity": "Trace un petit plan de ton quartier et explique le chemin vers un lieu en anglais.",
+    "practice": "Avec un adulte, simule une scène où tu demandes ton chemin dans la rue, en anglais.",
+    "summary": "On demande son chemin poliment avec 'Excuse me, where is...?' et on répond avec 'turn left/right' ou 'go straight'.",
+    "metacognition": "Quel endroit aimerais-tu savoir demander en anglais : l'école, le parc, la boulangerie ?"
+   },
+   {
+    "id": "anglais-9-5",
+    "title": "Talking about the weather",
+    "emoji": "🌦️",
+    "badge": "🇬🇧",
+    "module": "Programme 9 ans - Anglais",
+    "chapter": "Parler de la météo",
+    "prerequisites": [
+     "anglais-9-1"
+    ],
+    "skills": [
+     "Expression orale",
+     "Vocabulaire"
+    ],
+    "difficulty": 2,
+    "duration": 15,
+    "objectif": "Savoir décrire la météo simple en anglais.",
+    "intro": "Let's learn how to talk about the weather in English!",
+    "cours": [
+     "Pour parler du temps : 'It is sunny.' (Il fait soleil), 'It is raining.' (Il pleut), 'It is cold.' (Il fait froid), 'It is windy.' (Il y a du vent).",
+     "Pour demander : 'What is the weather like today?'",
+     "On utilise souvent 'It is...' pour décrire la météo."
+    ],
+    "example": "'What is the weather like today?' 'It is sunny and a little windy.'",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Comment dit-on 'il pleut' en anglais ?",
+      "choices": [
+       "It is sunny",
+       "It is raining",
+       "It is cold"
+      ],
+      "answer": 1,
+      "exp": "'It is raining' signifie 'il pleut'."
+     },
+     {
+      "type": "text",
+      "q": "Complète : 'It ___ sunny today.' (verbe être)",
+      "answer": "is",
+      "exp": "On dit 'It is sunny today.'"
+     },
+     {
+      "type": "vf",
+      "q": "'It is windy' signifie 'il fait chaud'.",
+      "answer": false,
+      "exp": "Non, 'windy' signifie qu'il y a du vent, pas qu'il fait chaud."
+     },
+     {
+      "type": "oral",
+      "q": "Describe today's weather in English using 'It is...'",
+      "keywords": [
+       "it is sunny",
+       "it is raining",
+       "it is cold",
+       "it is windy",
+       "it is cloudy"
+      ],
+      "exp": "Great! You described the weather very well!"
+     },
+     {
+      "type": "oral",
+      "q": "Ask in English: 'What is the weather like today?' and try to answer it yourself.",
+      "keywords": [
+       "what is the weather like today"
+      ],
+      "exp": "Awesome question and answer about the weather!"
+     }
+    ],
+    "activity": "Regarde par la fenêtre et décris la météo du jour en anglais.",
+    "practice": "Fais un petit bulletin météo en anglais pour les 3 prochains jours (imaginé ou réel).",
+    "summary": "On décrit la météo en anglais avec 'It is...' (sunny, raining, cold, windy) et on demande avec 'What is the weather like?'",
+    "metacognition": "Quel mot de météo en anglais connaissais-tu déjà avant cette leçon ?"
+   }
+  ]
+ }
       }
-    ]
-  }
-          }
