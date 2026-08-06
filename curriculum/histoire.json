@@ -1,0 +1,312 @@
+{
+  "subject": "histoire",
+  "name": "Histoire",
+  "niveaux": {
+    "7": [
+      {
+        "title": "C'est quoi le temps qui passe ?",
+        "emoji": "⏳",
+        "badge": "📅",
+        "cours": [
+          "Le temps passe : hier, aujourd'hui, demain.",
+          "On utilise un calendrier pour compter les jours, les mois, les années.",
+          "Une frise chronologique permet de voir les événements dans l'ordre."
+        ],
+        "example": "Hier j'étais à l'école, aujourd'hui aussi, demain je serai en vacances.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Quel jour vient avant aujourd'hui ?",
+            "choices": [
+              "demain",
+              "hier",
+              "la semaine prochaine"
+            ],
+            "answer": 1,
+            "exp": "Hier vient avant aujourd'hui."
+          },
+          {
+            "type": "vf",
+            "q": "Un calendrier sert à compter les jours.",
+            "answer": true,
+            "exp": "Oui, exact."
+          },
+          {
+            "type": "text",
+            "q": "Comment appelle-t-on un outil qui montre les événements dans l'ordre ?",
+            "answer": "frise chronologique",
+            "exp": "Une frise chronologique."
+          }
+        ],
+        "id": "histoire-7-0",
+        "module": "Programme 7 ans - Histoire",
+        "chapter": "C'est quoi le temps qui passe ?",
+        "skills": [
+          "Culture generale",
+          "Memoire"
+        ],
+        "difficulty": 1,
+        "duration": 15
+      },
+      {
+        "title": "Les chevaliers et les châteaux",
+        "emoji": "🏰",
+        "badge": "⚔️",
+        "cours": [
+          "Au Moyen Âge, les chevaliers protégeaient les seigneurs et les villages.",
+          "Les châteaux forts avaient des tours et des douves pour se défendre.",
+          "Les chevaliers s'entraînaient dès l'enfance au combat et à l'équitation."
+        ],
+        "example": "Le château fort avait de hautes murailles pour se protéger.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Que protégeaient les chevaliers ?",
+            "choices": [
+              "les seigneurs et villages",
+              "les animaux uniquement",
+              "rien"
+            ],
+            "answer": 0,
+            "exp": "Ils protégeaient les seigneurs et les villages."
+          },
+          {
+            "type": "qcm",
+            "q": "Qu'est-ce qu'une douve ?",
+            "choices": [
+              "un fossé rempli d'eau",
+              "une tour",
+              "une épée"
+            ],
+            "answer": 0,
+            "exp": "C'est un fossé rempli d'eau autour du château."
+          },
+          {
+            "type": "vf",
+            "q": "Les châteaux forts avaient des tours.",
+            "answer": true,
+            "exp": "Oui, exact."
+          }
+        ],
+        "id": "histoire-7-1",
+        "module": "Programme 7 ans - Histoire",
+        "chapter": "Les chevaliers et les châteaux",
+        "skills": [
+          "Culture generale",
+          "Memoire"
+        ],
+        "difficulty": 2,
+        "duration": 15
+      },
+      {
+        "title": "Les inventions qui ont changé le monde",
+        "emoji": "💡",
+        "badge": "🔧",
+        "cours": [
+          "L'écriture a permis de garder une trace des idées et des histoires.",
+          "L'imprimerie a permis de copier des livres plus vite.",
+          "L'électricité a changé la vie quotidienne des gens."
+        ],
+        "example": "Grâce à l'imprimerie, les livres sont devenus moins chers.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Quelle invention a permis de copier les livres plus vite ?",
+            "choices": [
+              "l'imprimerie",
+              "la roue",
+              "le feu"
+            ],
+            "answer": 0,
+            "exp": "L'imprimerie."
+          },
+          {
+            "type": "vf",
+            "q": "L'écriture permet de garder une trace des idées.",
+            "answer": true,
+            "exp": "Oui, exact."
+          },
+          {
+            "type": "text",
+            "q": "Cite une invention importante dans l'histoire",
+            "answer": "l'électricité",
+            "exp": "l'écriture, l'imprimerie, l'électricité..."
+          }
+        ],
+        "id": "histoire-7-2",
+        "module": "Programme 7 ans - Histoire",
+        "chapter": "Les inventions qui ont changé le monde",
+        "skills": [
+          "Culture generale",
+          "Memoire"
+        ],
+        "difficulty": 3,
+        "duration": 15
+      }
+    ],
+    "9": [
+      {
+        "title": "La Préhistoire",
+        "emoji": "🦴",
+        "badge": "🔥",
+        "cours": [
+          "La Préhistoire est la période avant l'écriture.",
+          "Les hommes préhistoriques ont découvert le feu, ce qui a changé leur vie.",
+          "Ils peignaient des animaux sur les parois des grottes, comme à Lascaux."
+        ],
+        "example": "La grotte de Lascaux contient des peintures préhistoriques d'animaux.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Qu'est-ce que les hommes préhistoriques ont découvert ?",
+            "choices": [
+              "l'électricité",
+              "le feu",
+              "l'imprimerie"
+            ],
+            "answer": 1,
+            "exp": "Ils ont découvert le feu."
+          },
+          {
+            "type": "qcm",
+            "q": "Où peignaient-ils des animaux ?",
+            "choices": [
+              "sur du papier",
+              "sur les parois des grottes",
+              "sur des tissus"
+            ],
+            "answer": 1,
+            "exp": "Sur les parois des grottes."
+          },
+          {
+            "type": "vf",
+            "q": "La Préhistoire est la période avant l'écriture.",
+            "answer": true,
+            "exp": "Oui, exact."
+          },
+          {
+            "type": "text",
+            "q": "Cite une grotte célèbre avec des peintures préhistoriques",
+            "answer": "Lascaux",
+            "exp": "La grotte de Lascaux."
+          }
+        ],
+        "id": "histoire-9-0",
+        "module": "Programme 9 ans - Histoire",
+        "chapter": "La Préhistoire",
+        "skills": [
+          "Culture generale",
+          "Memoire"
+        ],
+        "difficulty": 1,
+        "duration": 15
+      },
+      {
+        "title": "L'Égypte ancienne",
+        "emoji": "🏺",
+        "badge": "👑",
+        "cours": [
+          "Les Égyptiens anciens ont construit de grandes pyramides pour leurs pharaons.",
+          "Le Nil est un fleuve essentiel qui a permis à cette civilisation de se développer.",
+          "Ils utilisaient une écriture avec des dessins appelée hiéroglyphes."
+        ],
+        "example": "Les pyramides d'Égypte servaient de tombeaux pour les pharaons.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Qui dirigeait l'Égypte ancienne ?",
+            "choices": [
+              "le pharaon",
+              "le roi",
+              "le président"
+            ],
+            "answer": 0,
+            "exp": "Le pharaon dirigeait l'Égypte."
+          },
+          {
+            "type": "qcm",
+            "q": "Comment s'appelle l'écriture égyptienne avec des dessins ?",
+            "choices": [
+              "les hiéroglyphes",
+              "l'alphabet",
+              "le braille"
+            ],
+            "answer": 0,
+            "exp": "Les hiéroglyphes."
+          },
+          {
+            "type": "vf",
+            "q": "Le Nil est un fleuve important pour l'Égypte ancienne.",
+            "answer": true,
+            "exp": "Oui, exact."
+          },
+          {
+            "type": "text",
+            "q": "Que construisaient les Égyptiens pour leurs pharaons ?",
+            "answer": "des pyramides",
+            "exp": "Des pyramides."
+          }
+        ],
+        "id": "histoire-9-1",
+        "module": "Programme 9 ans - Histoire",
+        "chapter": "L'Égypte ancienne",
+        "skills": [
+          "Culture generale",
+          "Memoire"
+        ],
+        "difficulty": 2,
+        "duration": 15
+      },
+      {
+        "title": "La Rome antique",
+        "emoji": "🏛️",
+        "badge": "🛡️",
+        "cours": [
+          "Rome était une grande civilisation avec un immense empire.",
+          "Les Romains construisaient des routes, des aqueducs et des arènes.",
+          "Le Colisée à Rome accueillait des spectacles de gladiateurs."
+        ],
+        "example": "Le Colisée est un immense amphithéâtre construit par les Romains.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Comment s'appelle le grand amphithéâtre de Rome ?",
+            "choices": [
+              "le Colisée",
+              "le Panthéon",
+              "le Forum"
+            ],
+            "answer": 0,
+            "exp": "Le Colisée."
+          },
+          {
+            "type": "qcm",
+            "q": "Que construisaient les Romains pour transporter l'eau ?",
+            "choices": [
+              "des aqueducs",
+              "des ports",
+              "des tunnels"
+            ],
+            "answer": 0,
+            "exp": "Des aqueducs."
+          },
+          {
+            "type": "vf",
+            "q": "Les gladiateurs combattaient dans le Colisée.",
+            "answer": true,
+            "exp": "Oui, exact."
+          }
+        ],
+        "id": "histoire-9-2",
+        "module": "Programme 9 ans - Histoire",
+        "chapter": "La Rome antique",
+        "skills": [
+          "Culture generale",
+          "Memoire"
+        ],
+        "difficulty": 3,
+        "duration": 15
+      }
+    ]
+  }
+      }
