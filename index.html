@@ -988,4 +988,841 @@ navigator.serviceWorker.register('sw.js').catch(()=>{});
 }
 }
 initApp();
+</script><script>
+/* ===== GENIUS ACADEMY - MODULE TUTEUR IA v2 (additif) ===== */
+window.GT = window.GT || {};
+GT.INTERVALS = [1,3,7,15,30,90];
+
+GT.norm = function(s){
+  return (s||'').toString().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim();
+};
+GT.wordOverlap = function(a,b){
+  a = GT.norm(a); b = GT.norm(b);
+  if(!a || !b) return 0;
+  const aw = a.split(' ').filter(Boolean);
+  const bw = b.split(' ').filter(Boolean);
+  if(bw.length===0) return 0;
+  let hit = 0;
+  bw.forEach(w=>{ if(aw.includes(w)) hit++; });
+  return hit/bw.length;
+};
+
+/* ---- SPEECH : synthese vocale + reconnaissance vocale (API natives navigateur) ---- */
+GT.speak = function(text, lang){
+  try{
+    if(!('speechSynthesis' in window) || !text) return;
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = lang || 'fr-FR';
+    u.rate = 0.92;
+    window.speechSynthesis.speak(u);
+  }catch(e){}
+};
+GT.speechSupported = function(){
+  return !!(window.SpeechRecognition || window.webkitSpeechRecognition);
+};
+GT.currentRec = null;
+GT.listen = function(opts){
+  opts = opts||{};
+  const R = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if(!R){ opts.onError && opts.onError('unsupported'); return null; }
+  try{ if(GT.currentRec) GT.currentRec.abort(); }catch(e){}
+  const rec = new R();
+  rec.lang = opts.lang || 'fr-FR';
+  rec.interimResults = false;
+  rec.maxAlternatives = 1;
+  rec.onresult = function(e){ try{ const t = e.results[0][0].transcript; opts.onResult && opts.onResult(t); }catch(err){} };
+  rec.onerror = function(e){ opts.onError && opts.onError(e.error||'error'); };
+  rec.onend = function(){ opts.onEnd && opts.onEnd(); };
+  GT.currentRec = rec;
+  try{ rec.start(); }catch(e){ opts.onError && opts.onError(e.message||'error'); }
+  return rec;
+};
+
+/* ---- PROFESSEUR IA : indices bienveillants (jamais juste "faux") ---- */
+GT.HINTS = {
+  maths: ["Relis bien l'énoncé : que te demande-t-on exactement ?","Essaie de dessiner ou de compter sur tes doigts, ça aide beaucoup.","Regarde les nombres un par un, sans te précipiter."],
+  francais: ["Relis la phrase à voix haute, ça aide souvent à entendre la bonne réponse.","Cherche le mot clé dans la question.","Pense aux règles que tu as apprises dans le cours juste avant."],
+  anglais: ["Try to say the sentence out loud, it can help you find the answer.","Think about the words you just learned in the lesson.","Listen to the sound of the word in your head."],
+  default: ["Pas de souci, on apprend aussi en se trompant !","Relis le cours juste avant, l'indice y est peut-être caché.","Prends ton temps, réfléchis encore une fois calmement."]
+};
+GT.pickHint = function(subjectKey, ex){
+  if(ex && ex.hint) return ex.hint;
+  const pool = GT.HINTS[subjectKey] || GT.HINTS.default;
+  return pool[Math.floor(Math.random()*pool.length)];
+};
+GT.appendHint = function(subjectKey, ex){
+  const expBox = document.getElementById('expBox');
+  if(!expBox) return;
+  if(expBox.querySelector('.gt-hint')) return;
+  const div = document.createElement('div');
+  div.className = 'gt-hint';
+  div.innerHTML = '🤔 <b>Petit conseil de ton professeur :</b> ' + GT.pickHint(subjectKey, ex);
+  expBox.appendChild(div);
+};
+
+/* ---- EXERCICES ORAUX (type "oral") ---- */
+GT.LANG_FOR = { anglais:'en-US' };
+GT.langForSubject = function(subjectKey){ return GT.LANG_FOR[subjectKey] || 'fr-FR'; };
+
+GT.renderOralExercise = function(ex){
+  const body = document.getElementById('lessonBody');
+  if(!body) return;
+  const lang = GT.langForSubject(LS.subjectKey);
+  let html = '<div class="exo-box"><div class="exo-q">🎤 '+ex.q+'</div>';
+  html += '<div style="text-align:center;margin:10px 0;">';
+  html += '<button class="btn" onclick="GT.speakQuestion()">🔊 Écouter la question</button> ';
+  html += '<button class="btn" id="gtMicBtn" onclick="GT.startOralAnswer()">🎤 Parler</button>';
+  html += '</div>';
+  html += '<div id="gtTranscript" style="text-align:center;font-style:italic;min-height:24px;color:#555;"></div>';
+  html += '<div id="expBox"></div></div>';
+  body.innerHTML = html;
+  GT._currentOralEx = ex;
+};
+GT.speakQuestion = function(){
+  if(GT._currentOralEx) GT.speak(GT._currentOralEx.q, GT.langForSubject(LS.subjectKey));
+};
+GT.startOralAnswer = function(){
+  if(LS.answered) return;
+  const lang = GT.langForSubject(LS.subjectKey);
+  const micBtn = document.getElementById('gtMicBtn');
+  const transcriptEl = document.getElementById('gtTranscript');
+  if(!GT.speechSupported()){
+    if(transcriptEl) transcriptEl.textContent = "🎤 Le micro n'est pas disponible sur cet appareil/navigateur. Tu peux répondre en imaginant ta réponse à voix haute avec un adulte !";
+    return;
+  }
+  if(micBtn){ micBtn.textContent = '🎤 Écoute en cours...'; micBtn.disabled = true; }
+  GT.listen({
+    lang: lang,
+    onResult: function(transcript){
+      if(transcriptEl) transcriptEl.textContent = '💬 « ' + transcript + ' »';
+      GT.finishOralAnswer(transcript);
+    },
+    onError: function(err){
+      if(transcriptEl) transcriptEl.textContent = "😕 Je n'ai pas bien entendu, réessaie en cliquant sur le micro.";
+      if(micBtn){ micBtn.textContent = '🎤 Parler'; micBtn.disabled = false; }
+    },
+    onEnd: function(){
+      if(micBtn){ micBtn.textContent = '🎤 Parler'; micBtn.disabled = false; }
+    }
+  });
+};
+GT.finishOralAnswer = function(transcript){
+  if(LS.answered) return;
+  LS.answered = true;
+  const ex = GT._currentOralEx;
+  const expected = ex.answer || ex.keywords || ex.q;
+  const score = Array.isArray(ex.keywords)
+    ? Math.max.apply(null, ex.keywords.map(function(k){ return GT.wordOverlap(transcript, k); }))
+    : GT.wordOverlap(transcript, expected);
+  const correct = score >= 0.34;
+  if(!correct) LS.mistakes++;
+  const expBox = document.getElementById('expBox');
+  const list = currentExerciseList();
+  let html = '<div class="exp-box">'+(correct ? '✅ Très bien, bravo pour ta réponse orale ! ' : '🤔 Presque ! ')+ex.exp+'</div>';
+  if(!correct) html += '<div class="gt-hint">🤔 <b>Petit conseil de ton professeur :</b> '+GT.pickHint(LS.subjectKey, ex)+'</div>';
+  html += '<div style="text-align:center;margin-top:14px;"><button class="btn" onclick="nextExercise()">'+(LS.exIndex+1<list.length?'Suivant ➡️':'Terminer 🏁')+'</button></div>';
+  expBox.innerHTML = html;
+};
+
+/* ---- REPETITION ESPACEE ---- */
+GT.scheduleReview = function(p, key, mistakes){
+  p.srs = p.srs || {};
+  let entry = p.srs[key] || {step:-1};
+  if(mistakes>0){ entry.step = 0; } else { entry.step = Math.min((entry.step||0)+1, GT.INTERVALS.length-1); if(entry.step<0) entry.step=0; }
+  const days = GT.INTERVALS[Math.max(entry.step,0)];
+  const due = new Date(); due.setDate(due.getDate()+days);
+  entry.due = due.toISOString().slice(0,10);
+  p.srs[key] = entry;
+};
+GT.getDueReviews = function(p){
+  const today = new Date().toISOString().slice(0,10);
+  const due = [];
+  Object.keys(p.srs||{}).forEach(function(k){
+    if(p.srs[k].due <= today){
+      const parts = k.split(':');
+      due.push({subjectKey:parts[0], track:parts[1], index:parseInt(parts[2],10)});
+    }
+  });
+  return due;
+};
+
+/* ---- HISTORIQUE (pour le tableau de bord parent) ---- */
+GT.logHistory = function(p, subjectKey, track, index, title, stars, mistakes){
+  p.history = p.history || [];
+  p.history.push({date: new Date().toISOString().slice(0,10), subjectKey:subjectKey, track:track, title:title, stars:stars, mistakes:mistakes});
+  if(p.history.length>200) p.history = p.history.slice(-200);
+};
+
+/* ---- SUIVI DU TEMPS PASSE ---- */
+GT.startTimeTracking = function(){
+  if(GT._timeInterval) return;
+  GT._timeInterval = setInterval(function(){
+    if(document.hidden) return;
+    const p = getCurrentProfile();
+    if(!p) return;
+    p.timeSpentMin = (p.timeSpentMin||0)+1;
+    saveData(DATA);
+  }, 60000);
+};
+
+/* ---- BRANCHEMENT SUR LES FONCTIONS EXISTANTES (sans les casser) ---- */
+(function(){
+  const _renderExerciseStep = renderExerciseStep;
+  renderExerciseStep = function(){
+    const list = currentExerciseList();
+    const ex = list[LS.exIndex];
+    if(ex && ex.type === 'oral'){
+      updateLessonProgressBar();
+      LS.answered = false;
+      GT.renderOralExercise(ex);
+    } else {
+      _renderExerciseStep();
+      GT.addSpeakButton(ex);
+    }
+  };
+
+  const _answerExercise = answerExercise;
+  answerExercise = function(value){
+    if(LS.answered){ return _answerExercise(value); }
+    const list = currentExerciseList();
+    const ex = list[LS.exIndex];
+    let willBeCorrect = null;
+    if(ex && (ex.type==='qcm' || ex.type==='vf')) willBeCorrect = (value===ex.answer);
+    _answerExercise(value);
+    if(willBeCorrect === false){ GT.appendHint(LS.subjectKey, ex); }
+  };
+
+  const _finishLesson = finishLesson;
+  finishLesson = function(){
+    const subjectKey = LS.subjectKey, track = LS.track, index = LS.index, title = (LS.lesson && LS.lesson.title) || '';
+    const mistakes = LS.mistakes;
+    _finishLesson();
+    const p = getCurrentProfile();
+    if(p){
+      GT.scheduleReview(p, subjectKey+':'+track+':'+index, mistakes);
+      GT.logHistory(p, subjectKey, track, index, title, LS.starsEarned||0, mistakes);
+      saveData(DATA);
+    }
+  };
+
+  const _renderHome = renderHome;
+  renderHome = function(){
+    _renderHome();
+    GT.decorateHome();
+  };
+
+  const _showScreen = showScreen;
+  showScreen = function(name){
+    if(name==='revisions') GT.renderRevisions();
+    if(name==='lifechallenges') GT.renderLifeChallenges();
+    if(name==='chess') GT.renderChessHub();
+    if(name==='metastats') GT.renderMetaStats();
+    _showScreen(name);
+  };
+
+  const _renderParent = renderParent;
+  renderParent = function(){
+    _renderParent();
+    GT.decorateParent();
+  };
+
+  GT.startTimeTracking();
+})();
+
+/* ---- BOUTON ECOUTER SUR LES EXERCICES CLASSIQUES ---- */
+GT.addSpeakButton = function(ex){
+  if(!ex) return;
+  const body = document.getElementById('lessonBody');
+  if(!body) return;
+  const box = body.querySelector('.exo-box');
+  if(!box || box.querySelector('.gt-listen-btn')) return;
+  const btn = document.createElement('button');
+  btn.className = 'gt-listen-btn';
+  btn.textContent = '🔊';
+  btn.title = 'Écouter la question';
+  btn.onclick = function(e){ e.stopPropagation(); GT.speak(ex.q, GT.langForSubject(LS.subjectKey)); };
+  box.insertBefore(btn, box.firstChild);
+};
+
+/* ---- ACCUEIL : bandeau révisions + tuiles supplémentaires ---- */
+GT.decorateHome = function(){
+  const p = getCurrentProfile();
+  if(!p) return;
+  const grid = document.getElementById('subjectGrid');
+  if(!grid) return;
+  let banner = document.getElementById('gtRevBanner');
+  if(!banner){
+    banner = document.createElement('div');
+    banner.id = 'gtRevBanner';
+    banner.className = 'gt-banner';
+    banner.onclick = function(){ showScreen('revisions'); };
+    grid.parentNode.insertBefore(banner, grid);
+  }
+  const due = GT.getDueReviews(p);
+  banner.textContent = due.length>0 ? ('🔁 '+due.length+' révision(s) t\'attendent aujourd\'hui — clique ici !') : '✅ Aucune révision aujourd\'hui, continue comme ça !';
+
+  let extra = document.getElementById('gtExtraTiles');
+  if(!extra){
+    extra = document.createElement('div');
+    extra.id = 'gtExtraTiles';
+    extra.className = 'subject-grid';
+    grid.parentNode.insertBefore(extra, grid.nextSibling);
+  }
+  extra.innerHTML = '';
+  const tiles = [
+    {emoji:'♟️', name:'Plateau & Puzzles', action:function(){ showScreen('chess'); }},
+    {emoji:'🌱', name:'Défis de vie', action:function(){ showScreen('lifechallenges'); }},
+    {emoji:'🧠', name:'Mes progrès secrets', action:function(){ showScreen('metastats'); }}
+  ];
+  tiles.forEach(function(t){
+    const tile = document.createElement('div');
+    tile.className = 'tile gt-tile';
+    tile.innerHTML = '<div class="em">'+t.emoji+'</div><div class="nm">'+t.name+'</div>';
+    tile.onclick = t.action;
+    extra.appendChild(tile);
+  });
+};
+
+/* ---- Ecrans additionnels (crees dynamiquement, jamais dans le HTML statique) ---- */
+GT.ensureScreen = function(name){
+  let el = document.getElementById('screen-'+name);
+  if(!el){
+    el = document.createElement('div');
+    el.className = 'screen';
+    el.id = 'screen-'+name;
+    document.body.appendChild(el);
+  }
+  return el;
+};
+
+GT.renderRevisions = function(){
+  const p = getCurrentProfile(); if(!p) return;
+  const el = GT.ensureScreen('revisions');
+  const due = GT.getDueReviews(p);
+  let html = '<div class="topbar"><button class="btn" onclick="showScreen(\'home\')">⬅️ Retour</button></div><h2>🔁 Révisions du jour</h2>';
+  if(due.length===0){
+    html += '<p class="gt-empty">Bravo, tu n\'as aucune révision aujourd\'hui ! Reviens demain 🎉</p>';
+  } else {
+    html += '<div class="gt-list">';
+    due.forEach(function(d){
+      const lessons = getLessons(d.subjectKey, d.track);
+      const lesson = lessons[d.index];
+      const subj = SUBJECTS.find(function(s){ return s.key===d.subjectKey; });
+      if(!lesson || !subj) return;
+      html += '<div class="gt-item" onclick="openLesson(\''+d.subjectKey+'\',\''+d.track+'\','+d.index+')">'+
+        '<span class="em">'+lesson.emoji+'</span> <b>'+subj.name+'</b> — '+lesson.title+' <span class="gt-arrow">➡️</span></div>';
+    });
+    html += '</div>';
+  }
+  el.innerHTML = html;
+};
+
+/* ---- DEFIS DE VIE ---- */
+GT.LIFE_CHALLENGES = [
+  {id:'lit', emoji:'🛏️', title:'Faire son lit tout seul'},
+  {id:'repas', emoji:'🍳', title:'Aider à préparer un repas'},
+  {id:'plante', emoji:'🌱', title:'Arroser une plante et l\'observer'},
+  {id:'ciel', emoji:'🌌', title:'Observer le ciel le soir'},
+  {id:'experience', emoji:'🧪', title:'Faire une petite expérience scientifique'},
+  {id:'livre', emoji:'📖', title:'Lire un livre en entier'},
+  {id:'telephone', emoji:'📞', title:'Téléphoner à quelqu\'un pour prendre de ses nouvelles'},
+  {id:'budget', emoji:'💰', title:'Faire un petit budget avec de l\'argent de poche'}
+];
+GT.renderLifeChallenges = function(){
+  const p = getCurrentProfile(); if(!p) return;
+  p.lifeChallenges = p.lifeChallenges || {};
+  const el = GT.ensureScreen('lifechallenges');
+  let html = '<div class="topbar"><button class="btn" onclick="showScreen(\'home\')">⬅️ Retour</button></div>';
+  html += '<h2>🌱 Défis de vie</h2><p class="gt-sub">Des missions à vivre en vrai, puis à raconter !</p><div class="gt-list">';
+  GT.LIFE_CHALLENGES.forEach(function(c){
+    const done = p.lifeChallenges[c.id] && p.lifeChallenges[c.id].done;
+    html += '<div class="gt-challenge'+(done?' gt-done':'')+'">';
+    html += '<div class="gt-ch-head"><span class="em">'+c.emoji+'</span> <b>'+c.title+'</b>'+(done?' ✅':'')+'</div>';
+    if(done){
+      html += '<div class="gt-ch-story">« '+p.lifeChallenges[c.id].text.replace(/</g,'&lt;')+' »</div>';
+    } else {
+      html += '<textarea id="gtCh_'+c.id+'" class="gt-textarea" placeholder="Raconte ce que tu as fait..."></textarea>';
+      html += '<button class="btn" onclick="GT.submitChallenge(\''+c.id+'\')">J\'ai réussi ce défi !</button>';
+    }
+    html += '</div>';
+  });
+  html += '</div>';
+  el.innerHTML = html;
+};
+GT.submitChallenge = function(id){
+  const p = getCurrentProfile(); if(!p) return;
+  const inp = document.getElementById('gtCh_'+id);
+  const text = inp ? inp.value.trim() : '';
+  if(!text){ alert('Raconte un petit peu ce que tu as fait avant de valider !'); return; }
+  p.lifeChallenges = p.lifeChallenges || {};
+  if(!p.lifeChallenges[id]){
+    p.stars = (p.stars||0) + 3;
+  }
+  p.lifeChallenges[id] = {done:true, date:new Date().toISOString().slice(0,10), text:text};
+  saveData(DATA);
+  updateStarsBar();
+  GT.renderLifeChallenges();
+};
+
+/* ---- MES PROGRES SECRETS (profil intelligent simplifie, cote enfant) ---- */
+GT.computeProfileStats = function(p){
+  const stats = [];
+  SUBJECTS.forEach(function(s){
+    const track = getSubjectTrack(p, s.key);
+    const lessons = getLessons(s.key, track);
+    const prog = (p.progress[s.key] && p.progress[s.key][track]) || [];
+    const done = prog.filter(Boolean).length;
+    const hist = (p.history||[]).filter(function(h){ return h.subjectKey===s.key; });
+    const totalMistakes = hist.reduce(function(a,h){ return a+(h.mistakes||0); }, 0);
+    stats.push({key:s.key, name:s.name, emoji:s.emoji, done:done, total:lessons.length, mistakes:totalMistakes, attempts:hist.length});
+  });
+  return stats;
+};
+GT.renderMetaStats = function(){
+  const p = getCurrentProfile(); if(!p) return;
+  const el = GT.ensureScreen('metastats');
+  const stats = GT.computeProfileStats(p).filter(function(s){ return s.total>0; });
+  const withAttempts = stats.filter(function(s){ return s.attempts>0; });
+  let strong=null, toEncourage=null;
+  withAttempts.forEach(function(s){
+    const rate = s.mistakes / Math.max(s.attempts,1);
+    if(!strong || rate < strong._rate) { strong = s; strong._rate = rate; }
+    if(!toEncourage || rate > toEncourage._rate) { toEncourage = s; toEncourage._rate = rate; }
+  });
+  let html = '<div class="topbar"><button class="btn" onclick="showScreen(\'home\')">⬅️ Retour</button></div>';
+  html += '<h2>🧠 Mes progrès secrets</h2>';
+  html += '<div class="gt-stat-row"><div class="gt-stat-card">⏱️<br>'+(p.timeSpentMin||0)+' min sur Genius Academy</div>';
+  html += '<div class="gt-stat-card">🔥<br>Série de '+(p.streak||0)+' jour(s)</div>';
+  html += '<div class="gt-stat-card">⭐<br>'+(p.stars||0)+' étoiles au total</div></div>';
+  if(strong) html += '<p class="gt-highlight">💪 Tu es particulièrement à l\'aise en <b>'+strong.name+'</b> '+strong.emoji+' !</p>';
+  if(toEncourage && toEncourage!==strong) html += '<p class="gt-highlight">🌟 Continue à t\'entraîner en <b>'+toEncourage.name+'</b> '+toEncourage.emoji+', tu progresses !</p>';
+  html += '<div class="gt-list">';
+  stats.forEach(function(s){
+    html += '<div class="gt-item"><span class="em">'+s.emoji+'</span> <b>'+s.name+'</b> — '+s.done+' / '+s.total+' leçons</div>';
+  });
+  html += '</div>';
+  el.innerHTML = html;
+};
+
+/* ---- ESPACE PARENT ENRICHI ---- */
+GT.decorateParent = function(){
+  const body = document.getElementById('parentBody');
+  if(!body) return;
+  let box = document.getElementById('gtParentExtra');
+  if(!box){
+    box = document.createElement('div');
+    box.id = 'gtParentExtra';
+    body.appendChild(box);
+  }
+  let html = '<h3>🔁 Compétences à revoir bientôt</h3>';
+  DATA.profiles.forEach(function(p){
+    const due = GT.getDueReviews(p);
+    html += '<div class="gt-parent-block"><b>'+p.avatar+' '+p.name+'</b> : ';
+    html += due.length===0 ? 'aucune révision en attente.' : (due.length+' compétence(s) à revoir.');
+    html += '</div>';
+  });
+  html += '<h3>⏱️ Temps passé</h3>';
+  DATA.profiles.forEach(function(p){
+    html += '<div class="gt-parent-block"><b>'+p.avatar+' '+p.name+'</b> : '+(p.timeSpentMin||0)+' minute(s) au total.</div>';
+  });
+  html += '<h3>📜 Historique récent</h3>';
+  DATA.profiles.forEach(function(p){
+    const hist = (p.history||[]).slice(-8).reverse();
+    html += '<div class="gt-parent-block"><b>'+p.avatar+' '+p.name+'</b>';
+    if(hist.length===0){ html += ' : pas encore de leçon terminée.'; }
+    else {
+      html += '<ul class="gt-hist-list">';
+      hist.forEach(function(h){
+        html += '<li>'+h.date+' — '+(h.title||h.subjectKey)+' ('+h.stars+' ⭐, '+h.mistakes+' erreur(s))</li>';
+      });
+      html += '</ul>';
+    }
+    html += '</div>';
+  });
+  html += '<h3>🌱 Défis de vie réalisés</h3>';
+  DATA.profiles.forEach(function(p){
+    const lc = p.lifeChallenges || {};
+    const doneCount = Object.keys(lc).filter(function(k){ return lc[k].done; }).length;
+    html += '<div class="gt-parent-block"><b>'+p.avatar+' '+p.name+'</b> : '+doneCount+' / '+GT.LIFE_CHALLENGES.length+' défis réalisés.</div>';
+  });
+  box.innerHTML = html;
+};
+
+/* ---- ECHECS : plateau interactif + puzzles (deplacement reel, sans moteur complet) ---- */
+GT.CHESS_UNI = { K:'\u2654',Q:'\u2655',R:'\u2656',B:'\u2657',N:'\u2658',P:'\u2659', k:'\u265A',q:'\u265B',r:'\u265C',b:'\u265D',n:'\u265E',p:'\u265F' };
+GT.chessStartBoard = function(){
+  return [
+    ['r','n','b','q','k','b','n','r'],
+    ['p','p','p','p','p','p','p','p'],
+    [null,null,null,null,null,null,null,null],
+    [null,null,null,null,null,null,null,null],
+    [null,null,null,null,null,null,null,null],
+    [null,null,null,null,null,null,null,null],
+    ['P','P','P','P','P','P','P','P'],
+    ['R','N','B','Q','K','B','N','R']
+  ];
+};
+GT.isWhite = function(piece){ return piece && piece===piece.toUpperCase(); };
+GT.inBounds = function(r,c){ return r>=0 && r<8 && c>=0 && c<8; };
+GT.pieceMoves = function(board, r, c){
+  const piece = board[r][c];
+  if(!piece) return [];
+  const white = GT.isWhite(piece);
+  const type = piece.toUpperCase();
+  const moves = [];
+  function tryAdd(rr,cc, onlyIfEmpty, onlyIfEnemy){
+    if(!GT.inBounds(rr,cc)) return false;
+    const target = board[rr][cc];
+    if(target===null){ if(!onlyIfEnemy) moves.push([rr,cc]); return true; }
+    if(GT.isWhite(target)!==white){ if(!onlyIfEmpty) moves.push([rr,cc]); return false; }
+    return false;
+  }
+  function slide(dirs){
+    dirs.forEach(function(d){
+      let rr=r+d[0], cc=c+d[1];
+      while(GT.inBounds(rr,cc)){
+        const cont = tryAdd(rr,cc,false,false);
+        if(board[rr][cc]!==null) break;
+        rr+=d[0]; cc+=d[1];
+      }
+    });
+  }
+  if(type==='P'){
+    const dir = white ? -1 : 1;
+    const startRow = white ? 6 : 1;
+    if(GT.inBounds(r+dir,c) && board[r+dir][c]===null){
+      moves.push([r+dir,c]);
+      if(r===startRow && board[r+2*dir][c]===null) moves.push([r+2*dir,c]);
+    }
+    [c-1,c+1].forEach(function(cc){
+      if(GT.inBounds(r+dir,cc) && board[r+dir][cc]!==null && GT.isWhite(board[r+dir][cc])!==white) moves.push([r+dir,cc]);
+    });
+  } else if(type==='N'){
+    [[-2,-1],[-2,1],[-1,-2],[-1,2],[1,-2],[1,2],[2,-1],[2,1]].forEach(function(d){
+      const rr=r+d[0], cc=c+d[1];
+      if(GT.inBounds(rr,cc) && (board[rr][cc]===null || GT.isWhite(board[rr][cc])!==white)) moves.push([rr,cc]);
+    });
+  } else if(type==='K'){
+    for(let dr=-1;dr<=1;dr++) for(let dc=-1;dc<=1;dc++){
+      if(dr===0 && dc===0) continue;
+      const rr=r+dr, cc=c+dc;
+      if(GT.inBounds(rr,cc) && (board[rr][cc]===null || GT.isWhite(board[rr][cc])!==white)) moves.push([rr,cc]);
+    }
+  } else if(type==='R'){ slide([[1,0],[-1,0],[0,1],[0,-1]]); }
+  else if(type==='B'){ slide([[1,1],[1,-1],[-1,1],[-1,-1]]); }
+  else if(type==='Q'){ slide([[1,0],[-1,0],[0,1],[0,-1],[1,1],[1,-1],[-1,1],[-1,-1]]); }
+  return moves;
+};
+
+GT.chess = { board:null, selected:null, mode:'explore', puzzleIdx:0, moveCount:0 };
+
+GT.CHESS_PUZZLES = [
+  { title:'Capture la dame !', instr:'Les blancs jouent. Trouve le coup qui permet de capturer la dame noire.',
+    board:[
+      [null,null,null,null,'k',null,null,null],
+      [null,null,null,null,null,null,null,null],
+      [null,null,null,null,null,null,null,null],
+      [null,null,null,'q',null,null,null,null],
+      [null,null,null,null,null,null,null,null],
+      [null,null,null,null,null,null,null,null],
+      [null,null,null,null,'R',null,null,null],
+      [null,null,null,null,'K',null,null,null]
+    ],
+    from:[6,4], to:[3,4],
+    success:'Bravo ! Ta tour remonte la colonne et capture la dame, elle n\'était pas protégée.',
+    hint:'Regarde ta tour : peut-elle se déplacer tout droit jusqu\'à la dame ?' },
+  { title:'Une fourchette de cavalier', instr:'Les blancs jouent. Un coup de cavalier attaque deux pièces noires en même temps !',
+    board:[
+      [null,null,null,null,'k',null,null,null],
+      [null,null,null,null,null,null,null,null],
+      [null,null,'r',null,null,'q',null,null],
+      [null,null,null,null,null,null,null,null],
+      [null,null,null,null,'N',null,null,null],
+      [null,null,null,null,null,null,null,null],
+      [null,null,null,null,null,null,null,null],
+      [null,null,null,null,'K',null,null,null]
+    ],
+    from:[4,4], to:[2,5],
+    success:'Excellent ! Ton cavalier attaque en même temps la tour et la dame : c\'est une fourchette !',
+    hint:'Le cavalier se déplace en forme de "L". Peux-tu trouver une case d\'où il menace deux pièces à la fois ?' },
+  { title:'Protège ta pièce', instr:'Les blancs jouent. Ton fou est attaqué ! Trouve un coup pour le mettre en sécurité en avançant sur la diagonale.',
+    board:[
+      [null,null,null,null,'k',null,null,null],
+      [null,null,null,null,null,null,null,null],
+      [null,null,null,null,null,null,null,null],
+      [null,null,null,null,null,null,'q',null],
+      [null,null,null,null,null,null,null,null],
+      [null,null,'B',null,null,null,null,null],
+      [null,null,null,null,null,null,null,null],
+      [null,null,null,null,'K',null,null,null]
+    ],
+    from:[5,2], to:[1,6],
+    success:'Bien vu ! Ton fou se met à l\'abri tout en restant actif sur la diagonale.',
+    hint:'Un fou se déplace uniquement en diagonale. Cherche une case sûre, loin de la dame noire.' }
+];
+
+GT.renderChessHub = function(){
+  const el = GT.ensureScreen('chess');
+  GT.chess.mode = 'explore';
+  GT.chess.board = GT.chessStartBoard();
+  GT.chess.selected = null;
+  let html = '<div class="topbar"><button class="btn" onclick="showScreen(\'home\')">⬅️ Retour</button></div>';
+  html += '<h2>♟️ Plateau & Puzzles</h2>';
+  html += '<div class="gt-chess-tabs"><button class="btn" onclick="GT.chessExploreMode()">🧭 Explorer le plateau</button> <button class="btn" onclick="GT.chessPuzzleMode(0)">🧩 Puzzles</button></div>';
+  html += '<div id="gtChessMsg" class="gt-chess-msg">Clique sur une pièce pour voir où elle peut aller, puis clique sur une case en surbrillance pour la déplacer.</div>';
+  html += '<div id="gtChessBoard" class="gt-chess-board"></div>';
+  el.innerHTML = html;
+  GT.drawChessBoard([]);
+};
+GT.chessExploreMode = function(){
+  GT.chess.mode='explore'; GT.chess.board = GT.chessStartBoard(); GT.chess.selected=null;
+  document.getElementById('gtChessMsg').textContent = 'Clique sur une pièce pour voir où elle peut aller, puis clique sur une case en surbrillance pour la déplacer.';
+  GT.drawChessBoard([]);
+};
+GT.chessPuzzleMode = function(idx){
+  GT.chess.mode='puzzle'; GT.chess.puzzleIdx = idx;
+  const puz = GT.CHESS_PUZZLES[idx];
+  GT.chess.board = puz.board.map(function(row){ return row.slice(); });
+  GT.chess.selected = null;
+  document.getElementById('gtChessMsg').innerHTML = '<b>'+puz.title+'</b> — '+puz.instr;
+  GT.drawChessBoard([]);
+};
+GT.drawChessBoard = function(highlight){
+  const boardEl = document.getElementById('gtChessBoard');
+  if(!boardEl) return;
+  highlight = highlight || [];
+  let html = '';
+  for(let r=0;r<8;r++){
+    for(let c=0;c<8;c++){
+      const dark = (r+c)%2===1;
+      const piece = GT.chess.board[r][c];
+      const isSel = GT.chess.selected && GT.chess.selected[0]===r && GT.chess.selected[1]===c;
+      const isHl = highlight.some(function(m){ return m[0]===r && m[1]===c; });
+      html += '<div class="gt-sq '+(dark?'gt-sq-d':'gt-sq-l')+(isSel?' gt-sq-sel':'')+(isHl?' gt-sq-hl':'')+'" onclick="GT.chessClick('+r+','+c+')">'+(piece?GT.CHESS_UNI[piece]:'')+'</div>';
+    }
+  }
+  boardEl.innerHTML = html;
+};
+GT.chessClick = function(r,c){
+  const board = GT.chess.board;
+  const sel = GT.chess.selected;
+  if(sel){
+    const moves = GT.pieceMoves(board, sel[0], sel[1]);
+    const isLegal = moves.some(function(m){ return m[0]===r && m[1]===c; });
+    if(isLegal){
+      GT.chessMove(sel, [r,c]);
+      return;
+    }
+    GT.chess.selected = null;
+    if(board[r][c]){ GT.chess.selected=[r,c]; GT.drawChessBoard(GT.pieceMoves(board,r,c)); }
+    else GT.drawChessBoard([]);
+    return;
+  }
+  if(board[r][c]){
+    GT.chess.selected=[r,c];
+    GT.drawChessBoard(GT.pieceMoves(board,r,c));
+  }
+};
+GT.chessMove = function(from,to){
+  const board = GT.chess.board;
+  board[to[0]][to[1]] = board[from[0]][from[1]];
+  board[from[0]][from[1]] = null;
+  GT.chess.selected = null;
+  GT.drawChessBoard([]);
+  if(GT.chess.mode==='puzzle'){
+    const puz = GT.CHESS_PUZZLES[GT.chess.puzzleIdx];
+    const msg = document.getElementById('gtChessMsg');
+    const correct = from[0]===puz.from[0] && from[1]===puz.from[1] && to[0]===puz.to[0] && to[1]===puz.to[1];
+    if(correct){
+      msg.innerHTML = '✅ <b>'+puz.success+'</b> <button class="btn" onclick="GT.chessNextPuzzle()" style="margin-left:8px;">Puzzle suivant ➡️</button>';
+      const p = getCurrentProfile();
+      if(p){ p.stars=(p.stars||0)+2; saveData(DATA); updateStarsBar(); }
+    } else {
+      msg.innerHTML = '🤔 <b>Pas encore !</b> '+puz.hint+' <button class="btn" onclick="GT.chessPuzzleMode('+GT.chess.puzzleIdx+')" style="margin-left:8px;">Recommencer</button>';
+    }
+  }
+};
+GT.chessNextPuzzle = function(){
+  const next = (GT.chess.puzzleIdx+1) % GT.CHESS_PUZZLES.length;
+  GT.chessPuzzleMode(next);
+};
+
+/* ---- METACOGNITION : "Apprendre a apprendre" (ajout additif dans Vie pratique) ---- */
+GT.META_LESSONS_7 = [
+  { title:'Comment marche mon cerveau ?', emoji:'🧠', badge:'🧠',
+    cours:['Ton cerveau est comme un immense réseau de petits fils qui parlent entre eux.','Quand tu apprends quelque chose de nouveau, de nouvelles connexions se créent.','Plus tu t\'entraînes, plus ces connexions deviennent fortes, comme un chemin qu\'on utilise souvent.'],
+    example:'Apprendre à faire du vélo : au début c\'est dur, puis ça devient facile car ton cerveau a créé le chemin.',
+    exercises:[
+      {type:'qcm', q:'Que se passe-t-il dans ton cerveau quand tu apprends ?', choices:['Rien du tout','De nouvelles connexions se créent','Il rétrécit'], answer:1, exp:'Ton cerveau crée de nouvelles connexions entre les neurones.'},
+      {type:'vf', q:'Plus on s\'entraîne, plus une compétence devient facile.', answer:true, exp:'Exact, c\'est le principe de l\'entraînement du cerveau.'}
+    ]},
+  { title:'Pourquoi on oublie (et comment mieux retenir)', emoji:'⏳', badge:'⏳',
+    cours:['Si on apprend une chose une seule fois, on l\'oublie souvent après quelques jours.','Mais si on la revoit plusieurs fois, à quelques jours d\'écart, on la retient beaucoup plus longtemps.','C\'est pour cela que Genius Academy te propose des révisions régulières !'],
+    example:'Revoir une leçon 1 jour, puis 3 jours, puis 7 jours après l\'avoir apprise aide à ne jamais l\'oublier.',
+    exercises:[
+      {type:'qcm', q:'Comment mieux retenir une leçon ?', choices:['En la lisant une seule fois très vite','En la revoyant plusieurs fois espacées dans le temps','En ne la relisant jamais'], answer:1, exp:'Revoir une information plusieurs fois, à intervalles, aide à la mémoriser durablement.'},
+      {type:'vf', q:'On retient toujours tout pour toujours après une seule lecture.', answer:false, exp:'Non, sans révision on oublie vite : c\'est normal !'}
+    ]},
+  { title:'Pourquoi dormir et faire des pauses aide à apprendre', emoji:'😴', badge:'😴',
+    cours:['Pendant que tu dors, ton cerveau range et solidifie ce que tu as appris dans la journée.','Faire des petites pauses pendant le travail aide aussi ton cerveau à mieux se concentrer ensuite.','Un cerveau fatigué apprend moins bien qu\'un cerveau reposé.'],
+    example:'Après 20-25 minutes de travail, une pause de 5 minutes aide à repartir plus concentré.',
+    exercises:[
+      {type:'vf', q:'Dormir aide le cerveau à mieux mémoriser ce qu\'on a appris.', answer:true, exp:'Oui, le sommeil aide à consolider les apprentissages.'},
+      {type:'qcm', q:'Que faut-il faire après 20-25 minutes de travail concentré ?', choices:['Continuer sans jamais s\'arrêter','Faire une petite pause','Arrêter de travailler pour la journée'], answer:1, exp:'Une petite pause permet de repartir plus concentré.'}
+    ]}
+];
+GT.META_LESSONS_9 = [
+  { title:'Comment prendre de bonnes notes', emoji:'📝', badge:'📝',
+    cours:['Prendre des notes, ce n\'est pas tout recopier : c\'est noter les idées les plus importantes.','On peut utiliser des mots-clés, des flèches, des couleurs pour organiser ses idées.','Se relire juste après avoir pris des notes aide à mieux comprendre et mémoriser.'],
+    example:'Pour un cours sur les volcans, on peut noter juste : "magma - éruption - cendres - lave" plutôt que des phrases entières.',
+    exercises:[
+      {type:'qcm', q:'Quelle est la meilleure façon de prendre des notes ?', choices:['Tout recopier mot à mot','Noter les mots-clés et idées importantes','Ne rien noter'], answer:1, exp:'Noter l\'essentiel avec des mots-clés est plus efficace.'},
+      {type:'text', q:'Complète : prendre des notes efficaces veut dire noter les mots ______.', answer:'cles', exp:'On retient l\'essentiel avec des mots-clés.'}
+    ]},
+  { title:'Comment résoudre un problème étape par étape', emoji:'🧩', badge:'🧩',
+    cours:['Face à un problème difficile, il faut d\'abord bien comprendre ce qui est demandé.','Ensuite, on peut découper le problème en petites étapes plus simples.','Enfin, on vérifie sa réponse en se demandant si elle a du sens.'],
+    example:'Pour un long problème de mathématiques, on peut d\'abord souligner les nombres importants, puis résoudre étape par étape.',
+    exercises:[
+      {type:'qcm', q:'Quelle est la première étape pour résoudre un problème difficile ?', choices:['Répondre immédiatement au hasard','Bien comprendre ce qui est demandé','Abandonner tout de suite'], answer:1, exp:'Il faut toujours commencer par bien comprendre la question.'},
+      {type:'vf', q:'Il est utile de vérifier sa réponse à la fin.', answer:true, exp:'Oui, vérifier permet de repérer ses erreurs.'}
+    ]},
+  { title:'Comment rester concentré et gérer son temps', emoji:'⏰', badge:'⏰',
+    cours:['La concentration, c\'est comme un muscle : elle se fatigue puis se repose.','Travailler dans un endroit calme, sans écran inutile, aide à rester concentré.','Faire une petite liste des choses à faire aide à mieux gérer son temps.'],
+    example:'Faire une leçon de maths, puis une pause, puis une leçon de français : cela évite de se fatiguer sur une seule matière trop longtemps.',
+    exercises:[
+      {type:'qcm', q:'Qu\'est-ce qui aide à rester concentré ?', choices:['Un endroit calme sans distraction','La télévision allumée en fond','Faire dix choses à la fois'], answer:0, exp:'Un environnement calme aide beaucoup à se concentrer.'},
+      {type:'vf', q:'Faire une liste de tâches aide à mieux gérer son temps.', answer:true, exp:'Exact, cela aide à organiser son travail.'}
+    ]}
+];
+(function(){
+  CONTENT.viepratique = CONTENT.viepratique || {};
+  CONTENT.viepratique['7'] = (CONTENT.viepratique['7']||[]).concat(GT.META_LESSONS_7);
+  CONTENT.viepratique['9'] = (CONTENT.viepratique['9']||[]).concat(GT.META_LESSONS_9);
+})();
+
+/* ---- HISTOIRES INTERACTIVES : habillage narratif leger sur l'ecran de cours ---- */
+GT.STORY_INTRO = {
+  maths: '🔢 Bienvenue dans la Forêt des Nombres ! Pour avancer, il va falloir comprendre cette astuce...',
+  francais: '📖 Te voici au Royaume des Mots. Un nouveau secret de la langue t\'attend...',
+  anglais: '🏝️ Welcome to English Island! A new adventure in English begins now...',
+  sciences: '🔬 Direction le Laboratoire Nova pour une nouvelle découverte scientifique !',
+  histoire: '⏳ La machine à voyager dans le temps s\'active... Direction une autre époque !',
+  geographie: '🌍 Le globe interactif tourne... Un nouveau lieu du monde t\'attend !',
+  lecture: '📚 Un nouveau livre s\'ouvre devant toi...',
+  echecs: '♟️ Bienvenue à l\'Académie des Échecs !',
+  informatique: '💻 Bienvenue dans la Ville Numérique !',
+  arts: '🎨 Bienvenue au Studio Créatif !',
+  viepratique: '🌟 Une nouvelle aventure de la vie quotidienne commence...'
+};
+(function(){
+  const _renderLessonCours = renderLessonCours;
+  renderLessonCours = function(){
+    _renderLessonCours();
+    const body = document.getElementById('lessonBody');
+    const box = body && body.querySelector('.cours-box');
+    if(box && !box.querySelector('.gt-story-intro')){
+      const intro = document.createElement('div');
+      intro.className = 'gt-story-intro';
+      intro.textContent = GT.STORY_INTRO[LS.subjectKey] || '✨ Une nouvelle leçon commence !';
+      box.insertBefore(intro, box.firstChild);
+      const speakBtn = document.createElement('button');
+      speakBtn.className = 'gt-listen-btn gt-listen-cours';
+      speakBtn.textContent = '🔊 Écouter le cours';
+      speakBtn.onclick = function(){
+        const text = LS.lesson.cours.join('. ');
+        GT.speak(text, GT.langForSubject(LS.subjectKey));
+      };
+      box.appendChild(speakBtn);
+    }
+  };
+})();
+
+/* ---- CSS additif injecte en JS (pas besoin de toucher le head) ---- */
+(function(){
+  const css = `
+  .gt-banner{background:linear-gradient(90deg,#ffb703,#fb8500);color:#fff;padding:12px 16px;border-radius:14px;margin:10px 0 16px;font-weight:700;text-align:center;cursor:pointer;box-shadow:0 3px 8px rgba(0,0,0,.15);}
+  .gt-tile{background:linear-gradient(160deg,#8ecae6,#219ebc);}
+  .gt-hint{margin-top:10px;padding:10px 12px;background:#fff3cd;border-left:5px solid #ffb703;border-radius:8px;font-size:.95em;}
+  .gt-listen-btn{display:inline-block;background:#023047;color:#fff;border:none;border-radius:20px;padding:6px 12px;cursor:pointer;font-size:.9em;margin:4px 4px;}
+  .gt-listen-cours{display:block;margin:12px auto 0;}
+  .gt-list{display:flex;flex-direction:column;gap:10px;margin-top:14px;}
+  .gt-item{background:#f1f5f9;border-radius:12px;padding:12px 14px;cursor:pointer;transition:.15s;}
+  .gt-item:hover{background:#e2e8f0;}
+  .gt-arrow{float:right;}
+  .gt-empty{text-align:center;font-size:1.1em;margin-top:20px;}
+  .gt-sub{text-align:center;color:#666;margin-top:-6px;}
+  .gt-challenge{background:#f8fafc;border:1px solid #e2e8f0;border-radius:14px;padding:14px;margin-bottom:4px;}
+  .gt-done{background:#ecfdf5;border-color:#6ee7b7;}
+  .gt-ch-head{font-size:1.05em;margin-bottom:8px;}
+  .gt-ch-story{font-style:italic;color:#444;background:#fff;border-radius:8px;padding:8px;}
+  .gt-textarea{width:100%;min-height:60px;border-radius:8px;border:1px solid #cbd5e1;padding:8px;margin-bottom:8px;font-family:inherit;}
+  .gt-stat-row{display:flex;gap:10px;margin:14px 0;flex-wrap:wrap;}
+  .gt-stat-card{flex:1;min-width:110px;background:#eef2ff;border-radius:14px;padding:14px;text-align:center;font-weight:700;}
+  .gt-highlight{background:#fff7ed;border-radius:10px;padding:10px 14px;margin:8px 0;}
+  .gt-parent-block{margin-bottom:8px;}
+  .gt-hist-list{margin:4px 0 0 18px;padding:0;}
+  .gt-story-intro{background:#f0f9ff;border-radius:10px;padding:10px 12px;margin-bottom:12px;font-style:italic;color:#0369a1;}
+  .gt-chess-tabs{text-align:center;margin:10px 0;}
+  .gt-chess-msg{text-align:center;background:#f8fafc;border-radius:10px;padding:10px;margin:10px auto;max-width:520px;}
+  .gt-chess-board{display:grid;grid-template-columns:repeat(8,42px);grid-template-rows:repeat(8,42px);justify-content:center;margin:14px auto;border:3px solid #333;width:max-content;}
+  .gt-sq{display:flex;align-items:center;justify-content:center;font-size:28px;cursor:pointer;user-select:none;}
+  .gt-sq-l{background:#f0d9b5;}
+  .gt-sq-d{background:#b58863;}
+  .gt-sq-sel{outline:3px solid #ffb703;}
+  .gt-sq-hl{box-shadow:inset 0 0 0 4px rgba(46,204,113,.7);}
+  @media print{ #screen-revisions, #screen-lifechallenges, #screen-chess, #screen-metastats { display:none !important; } }
+  `;
+  const styleEl = document.createElement('style');
+  styleEl.id = 'gtStyles';
+  styleEl.textContent = css;
+  document.head.appendChild(styleEl);
+})();
+console.log('GT module loaded OK');
+
+/* ---- CORRECTIF puzzles d'echecs (positions verifiees) ---- */
+GT.CHESS_PUZZLES = [
+  { title:'Capture la dame !', instr:'Les blancs jouent. Trouve le coup qui permet de capturer la dame noire.',
+    board:[
+      [null,null,null,null,'k',null,null,null],
+      [null,null,null,null,null,null,null,null],
+      [null,null,null,null,null,null,null,null],
+      [null,null,null,null,'q',null,null,null],
+      [null,null,null,null,null,null,null,null],
+      [null,null,null,null,null,null,null,null],
+      [null,null,null,null,'R',null,null,null],
+      [null,null,null,null,'K',null,null,null]
+    ],
+    from:[6,4], to:[3,4],
+    success:'Bravo ! Ta tour remonte la colonne et capture la dame, elle n\'était pas protégée.',
+    hint:'Regarde ta tour : peut-elle se déplacer tout droit jusqu\'à la dame, sur la même colonne ?' },
+  { title:'Une fourchette de cavalier', instr:'Les blancs jouent. Trouve la case où ton cavalier attaquera en même temps la tour et la dame noires !',
+    board:[
+      [null,null,null,null,'k',null,null,null],
+      [null,null,null,null,null,null,null,null],
+      [null,null,'r',null,'q',null,null,null],
+      [null,null,null,null,null,null,null,null],
+      [null,null,null,null,null,null,null,null],
+      [null,null,null,null,null,null,null,null],
+      [null,null,null,null,'N',null,null,null],
+      [null,null,null,null,'K',null,null,null]
+    ],
+    from:[6,4], to:[4,3],
+    success:'Excellent ! Depuis cette case, ton cavalier attaque en même temps la tour et la dame : c\'est une fourchette !',
+    hint:'Le cavalier se déplace en forme de "L". Cherche une case vide d\'où il menace deux pièces à la fois.' },
+  { title:'Protège ta pièce', instr:'Les blancs jouent. La dame noire attaque ton fou en diagonale ! Trouve un coup pour le mettre à l\'abri sur une autre diagonale.',
+    board:[
+      [null,null,null,null,'k',null,null,null],
+      [null,null,null,null,null,null,null,null],
+      [null,null,null,null,null,'q',null,null],
+      [null,null,null,null,null,null,null,null],
+      [null,null,null,null,null,null,null,null],
+      [null,null,'B',null,null,null,null,null],
+      [null,null,null,null,null,null,null,null],
+      ['K',null,null,null,null,null,null,null]
+    ],
+    from:[5,2], to:[7,4],
+    success:'Bien vu ! Ton fou change de diagonale et échappe à l\'attaque de la dame tout en restant actif.',
+    hint:'Un fou se déplace uniquement en diagonale. Cherche une autre diagonale, loin de la dame, pour te mettre à l\'abri.' }
+];
 </script></body></html>
