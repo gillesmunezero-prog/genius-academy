@@ -1,0 +1,428 @@
+{
+  "subject": "viepratique",
+  "name": "Vie pratique",
+  "niveaux": {
+    "7": [
+      {
+        "title": "Mes émotions et comment les exprimer",
+        "emoji": "😊",
+        "badge": "💛",
+        "cours": [
+          "Il existe plusieurs émotions : la joie, la tristesse, la colère, la peur.",
+          "Toutes les émotions sont normales, il n'y a pas de mauvaise émotion.",
+          "On peut exprimer une émotion avec des mots, calmement, au lieu de crier ou taper."
+        ],
+        "example": "Si je suis en colère, je peux dire : \"Je suis en colère parce que...\"",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Quelle émotion ressent-on quand on a peur d'un monstre imaginaire ?",
+            "choices": [
+              "la joie",
+              "la peur",
+              "la fierté"
+            ],
+            "answer": 1,
+            "exp": "C'est la peur."
+          },
+          {
+            "type": "vf",
+            "q": "Il est possible d'exprimer sa colère calmement avec des mots.",
+            "answer": true,
+            "exp": "Oui, exact."
+          },
+          {
+            "type": "text",
+            "q": "Cite une émotion",
+            "answer": "joie",
+            "exp": "joie, tristesse, colère, peur..."
+          }
+        ],
+        "id": "viepratique-7-0",
+        "module": "Programme 7 ans - Vie pratique",
+        "chapter": "Mes émotions et comment les exprimer",
+        "skills": [
+          "Autonomie",
+          "Concentration",
+          "Memoire"
+        ],
+        "difficulty": 1,
+        "duration": 15
+      },
+      {
+        "title": "Partager, coopérer, être un bon copain",
+        "emoji": "🤝",
+        "badge": "⭐",
+        "cours": [
+          "Partager, c'est donner une partie de ce qu'on a à quelqu'un d'autre.",
+          "Coopérer, c'est travailler ensemble pour atteindre un but commun.",
+          "Un bon copain écoute les autres et les aide quand ils en ont besoin."
+        ],
+        "example": "Si un ami est triste, un bon copain vient lui parler et l'écoute.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Que veut dire \"coopérer\" ?",
+            "choices": [
+              "travailler seul",
+              "travailler ensemble",
+              "se disputer"
+            ],
+            "answer": 1,
+            "exp": "Coopérer, c'est travailler ensemble."
+          },
+          {
+            "type": "vf",
+            "q": "Un bon copain écoute les autres.",
+            "answer": true,
+            "exp": "Oui, exact."
+          }
+        ],
+        "id": "viepratique-7-1",
+        "module": "Programme 7 ans - Vie pratique",
+        "chapter": "Partager, coopérer, être un bon copain",
+        "skills": [
+          "Autonomie",
+          "Concentration",
+          "Memoire"
+        ],
+        "difficulty": 2,
+        "duration": 15
+      },
+      {
+        "title": "Comment marche mon cerveau ?",
+        "emoji": "🧠",
+        "badge": "🧠",
+        "cours": [
+          "Ton cerveau est comme un immense réseau de petits fils qui parlent entre eux.",
+          "Quand tu apprends quelque chose de nouveau, de nouvelles connexions se créent.",
+          "Plus tu t'entraînes, plus ces connexions deviennent fortes, comme un chemin qu'on utilise souvent."
+        ],
+        "example": "Apprendre à faire du vélo : au début c'est dur, puis ça devient facile car ton cerveau a créé le chemin.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Que se passe-t-il dans ton cerveau quand tu apprends ?",
+            "choices": [
+              "Rien du tout",
+              "De nouvelles connexions se créent",
+              "Il rétrécit"
+            ],
+            "answer": 1,
+            "exp": "Ton cerveau crée de nouvelles connexions entre les neurones."
+          },
+          {
+            "type": "vf",
+            "q": "Plus on s'entraîne, plus une compétence devient facile.",
+            "answer": true,
+            "exp": "Exact, c'est le principe de l'entraînement du cerveau."
+          }
+        ],
+        "id": "viepratique-7-2",
+        "module": "Programme 7 ans - Vie pratique",
+        "chapter": "Comment marche mon cerveau ?",
+        "skills": [
+          "Autonomie",
+          "Concentration",
+          "Memoire"
+        ],
+        "difficulty": 3,
+        "duration": 15
+      },
+      {
+        "title": "Pourquoi on oublie (et comment mieux retenir)",
+        "emoji": "⏳",
+        "badge": "⏳",
+        "cours": [
+          "Si on apprend une chose une seule fois, on l'oublie souvent après quelques jours.",
+          "Mais si on la revoit plusieurs fois, à quelques jours d'écart, on la retient beaucoup plus longtemps.",
+          "C'est pour cela que Genius Academy te propose des révisions régulières !"
+        ],
+        "example": "Revoir une leçon 1 jour, puis 3 jours, puis 7 jours après l'avoir apprise aide à ne jamais l'oublier.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Comment mieux retenir une leçon ?",
+            "choices": [
+              "En la lisant une seule fois très vite",
+              "En la revoyant plusieurs fois espacées dans le temps",
+              "En ne la relisant jamais"
+            ],
+            "answer": 1,
+            "exp": "Revoir une information plusieurs fois, à intervalles, aide à la mémoriser durablement."
+          },
+          {
+            "type": "vf",
+            "q": "On retient toujours tout pour toujours après une seule lecture.",
+            "answer": false,
+            "exp": "Non, sans révision on oublie vite : c'est normal !"
+          }
+        ],
+        "id": "viepratique-7-3",
+        "module": "Programme 7 ans - Vie pratique",
+        "chapter": "Pourquoi on oublie (et comment mieux retenir)",
+        "skills": [
+          "Autonomie",
+          "Concentration",
+          "Memoire"
+        ],
+        "difficulty": 4,
+        "duration": 15
+      },
+      {
+        "title": "Pourquoi dormir et faire des pauses aide à apprendre",
+        "emoji": "😴",
+        "badge": "😴",
+        "cours": [
+          "Pendant que tu dors, ton cerveau range et solidifie ce que tu as appris dans la journée.",
+          "Faire des petites pauses pendant le travail aide aussi ton cerveau à mieux se concentrer ensuite.",
+          "Un cerveau fatigué apprend moins bien qu'un cerveau reposé."
+        ],
+        "example": "Après 20-25 minutes de travail, une pause de 5 minutes aide à repartir plus concentré.",
+        "exercises": [
+          {
+            "type": "vf",
+            "q": "Dormir aide le cerveau à mieux mémoriser ce qu'on a appris.",
+            "answer": true,
+            "exp": "Oui, le sommeil aide à consolider les apprentissages."
+          },
+          {
+            "type": "qcm",
+            "q": "Que faut-il faire après 20-25 minutes de travail concentré ?",
+            "choices": [
+              "Continuer sans jamais s'arrêter",
+              "Faire une petite pause",
+              "Arrêter de travailler pour la journée"
+            ],
+            "answer": 1,
+            "exp": "Une petite pause permet de repartir plus concentré."
+          }
+        ],
+        "id": "viepratique-7-4",
+        "module": "Programme 7 ans - Vie pratique",
+        "chapter": "Pourquoi dormir et faire des pauses aide à apprendre",
+        "skills": [
+          "Autonomie",
+          "Concentration",
+          "Memoire"
+        ],
+        "difficulty": 5,
+        "duration": 15
+      }
+    ],
+    "9": [
+      {
+        "title": "Comprendre l'argent et l'épargne",
+        "emoji": "💰",
+        "badge": "🐷",
+        "cours": [
+          "L'argent sert à échanger contre des biens ou des services.",
+          "Épargner, c'est mettre de côté une partie de son argent pour plus tard.",
+          "Il est important de faire la différence entre ce qu'on veut et ce dont on a besoin."
+        ],
+        "example": "Si je reçois 10 euros, je peux en dépenser une partie et en épargner une autre.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Que veut dire \"épargner\" ?",
+            "choices": [
+              "dépenser tout de suite",
+              "mettre de côté pour plus tard",
+              "perdre son argent"
+            ],
+            "answer": 1,
+            "exp": "Épargner, c'est mettre de côté."
+          },
+          {
+            "type": "vf",
+            "q": "Il est utile de distinguer ses besoins de ses envies.",
+            "answer": true,
+            "exp": "Oui, exact."
+          },
+          {
+            "type": "text",
+            "q": "Comment appelle-t-on l'argent mis de côté ?",
+            "answer": "épargne",
+            "exp": "L'épargne."
+          }
+        ],
+        "id": "viepratique-9-0",
+        "module": "Programme 9 ans - Vie pratique",
+        "chapter": "Comprendre l'argent et l'épargne",
+        "skills": [
+          "Autonomie",
+          "Concentration",
+          "Memoire"
+        ],
+        "difficulty": 1,
+        "duration": 15
+      },
+      {
+        "title": "Apprendre à apprendre",
+        "emoji": "🧠",
+        "badge": "📌",
+        "cours": [
+          "Notre mémoire retient mieux quand on répète une information plusieurs fois, à intervalles réguliers.",
+          "Pour bien se concentrer, il est utile de travailler dans un endroit calme, sans écran.",
+          "Se tester soi-même (essayer de se souvenir) aide à mieux mémoriser qu'à relire seulement."
+        ],
+        "example": "Réviser une leçon plusieurs fois sur plusieurs jours aide à mieux la retenir.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Que faut-il faire pour bien se concentrer ?",
+            "choices": [
+              "travailler devant la télé",
+              "travailler dans un endroit calme",
+              "travailler en musique forte"
+            ],
+            "answer": 1,
+            "exp": "Un endroit calme aide à se concentrer."
+          },
+          {
+            "type": "vf",
+            "q": "Se tester soi-même aide à mieux mémoriser que relire seulement.",
+            "answer": true,
+            "exp": "Oui, exact, c'est le \"retrieval practice\"."
+          },
+          {
+            "type": "text",
+            "q": "Comment appelle-t-on le fait de répéter une leçon à intervalles réguliers pour bien la retenir ?",
+            "answer": "répétition espacée",
+            "exp": "La répétition espacée."
+          }
+        ],
+        "id": "viepratique-9-1",
+        "module": "Programme 9 ans - Vie pratique",
+        "chapter": "Apprendre à apprendre",
+        "skills": [
+          "Autonomie",
+          "Concentration",
+          "Memoire"
+        ],
+        "difficulty": 2,
+        "duration": 15
+      },
+      {
+        "title": "Comment prendre de bonnes notes",
+        "emoji": "📝",
+        "badge": "📝",
+        "cours": [
+          "Prendre des notes, ce n'est pas tout recopier : c'est noter les idées les plus importantes.",
+          "On peut utiliser des mots-clés, des flèches, des couleurs pour organiser ses idées.",
+          "Se relire juste après avoir pris des notes aide à mieux comprendre et mémoriser."
+        ],
+        "example": "Pour un cours sur les volcans, on peut noter juste : \"magma - éruption - cendres - lave\" plutôt que des phrases entières.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Quelle est la meilleure façon de prendre des notes ?",
+            "choices": [
+              "Tout recopier mot à mot",
+              "Noter les mots-clés et idées importantes",
+              "Ne rien noter"
+            ],
+            "answer": 1,
+            "exp": "Noter l'essentiel avec des mots-clés est plus efficace."
+          },
+          {
+            "type": "text",
+            "q": "Complète : prendre des notes efficaces veut dire noter les mots ______.",
+            "answer": "cles",
+            "exp": "On retient l'essentiel avec des mots-clés."
+          }
+        ],
+        "id": "viepratique-9-2",
+        "module": "Programme 9 ans - Vie pratique",
+        "chapter": "Comment prendre de bonnes notes",
+        "skills": [
+          "Autonomie",
+          "Concentration",
+          "Memoire"
+        ],
+        "difficulty": 3,
+        "duration": 15
+      },
+      {
+        "title": "Comment résoudre un problème étape par étape",
+        "emoji": "🧩",
+        "badge": "🧩",
+        "cours": [
+          "Face à un problème difficile, il faut d'abord bien comprendre ce qui est demandé.",
+          "Ensuite, on peut découper le problème en petites étapes plus simples.",
+          "Enfin, on vérifie sa réponse en se demandant si elle a du sens."
+        ],
+        "example": "Pour un long problème de mathématiques, on peut d'abord souligner les nombres importants, puis résoudre étape par étape.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Quelle est la première étape pour résoudre un problème difficile ?",
+            "choices": [
+              "Répondre immédiatement au hasard",
+              "Bien comprendre ce qui est demandé",
+              "Abandonner tout de suite"
+            ],
+            "answer": 1,
+            "exp": "Il faut toujours commencer par bien comprendre la question."
+          },
+          {
+            "type": "vf",
+            "q": "Il est utile de vérifier sa réponse à la fin.",
+            "answer": true,
+            "exp": "Oui, vérifier permet de repérer ses erreurs."
+          }
+        ],
+        "id": "viepratique-9-3",
+        "module": "Programme 9 ans - Vie pratique",
+        "chapter": "Comment résoudre un problème étape par étape",
+        "skills": [
+          "Autonomie",
+          "Concentration",
+          "Memoire"
+        ],
+        "difficulty": 4,
+        "duration": 15
+      },
+      {
+        "title": "Comment rester concentré et gérer son temps",
+        "emoji": "⏰",
+        "badge": "⏰",
+        "cours": [
+          "La concentration, c'est comme un muscle : elle se fatigue puis se repose.",
+          "Travailler dans un endroit calme, sans écran inutile, aide à rester concentré.",
+          "Faire une petite liste des choses à faire aide à mieux gérer son temps."
+        ],
+        "example": "Faire une leçon de maths, puis une pause, puis une leçon de français : cela évite de se fatiguer sur une seule matière trop longtemps.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Qu'est-ce qui aide à rester concentré ?",
+            "choices": [
+              "Un endroit calme sans distraction",
+              "La télévision allumée en fond",
+              "Faire dix choses à la fois"
+            ],
+            "answer": 0,
+            "exp": "Un environnement calme aide beaucoup à se concentrer."
+          },
+          {
+            "type": "vf",
+            "q": "Faire une liste de tâches aide à mieux gérer son temps.",
+            "answer": true,
+            "exp": "Exact, cela aide à organiser son travail."
+          }
+        ],
+        "id": "viepratique-9-4",
+        "module": "Programme 9 ans - Vie pratique",
+        "chapter": "Comment rester concentré et gérer son temps",
+        "skills": [
+          "Autonomie",
+          "Concentration",
+          "Memoire"
+        ],
+        "difficulty": 5,
+        "duration": 15
+      }
+    ]
+  }
+          }
