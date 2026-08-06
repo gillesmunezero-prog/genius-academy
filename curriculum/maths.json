@@ -1,446 +1,866 @@
 {
-  "subject": "maths",
-  "name": "Mathématiques",
-  "niveaux": {
-    "7": [
-      {
-        "title": "Calcul mental",
-        "emoji": "➕",
-        "badge": "🔟",
-        "cours": [
-          "Le calcul mental, c'est calculer dans sa tête, sans poser l'opération.",
-          "On peut additionner et soustraire des petits nombres en les décomposant.",
-          "Exemple : pour 8 + 5, je pense 8+2=10 puis +3 = 13."
-        ],
-        "example": "8 + 5 = 10 + 3 = 13",
-        "procedural": "mental7",
-        "procCount": 6,
-        "id": "maths-7-0",
-        "module": "Programme 7 ans - Mathématiques",
-        "chapter": "Calcul mental",
-        "skills": [
-          "Calcul",
-          "Logique",
-          "Resolution de probleme"
-        ],
-        "difficulty": 1,
-        "duration": 15
-      },
-      {
-        "title": "Les nombres jusqu'à 100",
-        "emoji": "🔢",
-        "badge": "💯",
-        "cours": [
-          "Les nombres sont composés de dizaines et d'unités.",
-          "Par exemple 47, c'est 4 dizaines et 7 unités.",
-          "Compter de 10 en 10 aide à se repérer jusqu'à 100."
-        ],
-        "example": "53 = 5 dizaines + 3 unités",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "Combien de dizaines dans 62 ?",
-            "choices": [
-              "5",
-              "6",
-              "7",
-              "2"
-            ],
-            "answer": 1,
-            "exp": "62 = 6 dizaines et 2 unités."
-          },
-          {
-            "type": "qcm",
-            "q": "Quel nombre vient juste après 79 ?",
-            "choices": [
-              "80",
-              "78",
-              "89",
-              "70"
-            ],
-            "answer": 0,
-            "exp": "Après 79 vient 80."
-          },
-          {
-            "type": "vf",
-            "q": "90 est plus grand que 89.",
-            "answer": true,
-            "exp": "Oui, 90 > 89."
-          },
-          {
-            "type": "text",
-            "q": "Écris en chiffres : soixante-quinze",
-            "answer": "75",
-            "exp": "75 s'écrit 7 dizaines et 5 unités."
-          },
-          {
-            "type": "qcm",
-            "q": "Combien font 3 dizaines ?",
-            "choices": [
-              "3",
-              "13",
-              "30",
-              "300"
-            ],
-            "answer": 2,
-            "exp": "3 dizaines = 30."
-          }
-        ],
-        "id": "maths-7-1",
-        "module": "Programme 7 ans - Mathématiques",
-        "chapter": "Les nombres jusqu'à 100",
-        "skills": [
-          "Calcul",
-          "Logique",
-          "Resolution de probleme"
-        ],
-        "difficulty": 2,
-        "duration": 15
-      },
-      {
-        "title": "L'addition posée",
-        "emoji": "➕",
-        "badge": "✏️",
-        "cours": [
-          "Pour additionner de grands nombres, on les pose en colonnes.",
-          "On aligne les unités sous les unités, les dizaines sous les dizaines.",
-          "On additionne en commençant par la droite, et on retient si besoin."
-        ],
-        "example": "24 + 18 = 42",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "24 + 13 = ?",
-            "choices": [
-              "37",
-              "36",
-              "47",
-              "27"
-            ],
-            "answer": 0,
-            "exp": "24+13 : 4+3=7, 2+1=3 donc 37."
-          },
-          {
-            "type": "qcm",
-            "q": "45 + 27 = ?",
-            "choices": [
-              "62",
-              "72",
-              "71",
-              "82"
-            ],
-            "answer": 1,
-            "exp": "45+27=72."
-          },
-          {
-            "type": "vf",
-            "q": "19 + 5 = 24",
-            "answer": true,
-            "exp": "Oui, correct."
-          },
-          {
-            "type": "text",
-            "q": "36 + 26 = ?",
-            "answer": "62",
-            "exp": "36+26=62."
-          },
-          {
-            "type": "qcm",
-            "q": "58 + 15 = ?",
-            "choices": [
-              "73",
-              "63",
-              "72",
-              "83"
-            ],
-            "answer": 0,
-            "exp": "58+15=73."
-          }
-        ],
-        "id": "maths-7-2",
-        "module": "Programme 7 ans - Mathématiques",
-        "chapter": "L'addition posée",
-        "skills": [
-          "Calcul",
-          "Logique",
-          "Resolution de probleme"
-        ],
-        "difficulty": 3,
-        "duration": 15
-      },
-      {
-        "title": "La soustraction et les problèmes",
-        "emoji": "➖",
-        "badge": "🧩",
-        "cours": [
-          "Soustraire, c'est enlever une quantité à une autre.",
-          "Dans un problème, il faut bien repérer ce qu'on cherche.",
-          "On peut s'aider d'un dessin pour mieux comprendre."
-        ],
-        "example": "Léo a 15 billes, il en donne 6. Il lui reste 15-6=9 billes.",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "23 - 8 = ?",
-            "choices": [
-              "14",
-              "15",
-              "16",
-              "17"
-            ],
-            "answer": 1,
-            "exp": "23-8=15."
-          },
-          {
-            "type": "qcm",
-            "q": "Louise a 20 bonbons, elle en mange 7. Combien lui en reste-t-il ?",
-            "choices": [
-              "13",
-              "12",
-              "14",
-              "15"
-            ],
-            "answer": 0,
-            "exp": "20-7=13."
-          },
-          {
-            "type": "vf",
-            "q": "30 - 10 = 20",
-            "answer": true,
-            "exp": "Oui."
-          },
-          {
-            "type": "text",
-            "q": "45 - 20 = ?",
-            "answer": "25",
-            "exp": "45-20=25."
-          }
-        ],
-        "id": "maths-7-3",
-        "module": "Programme 7 ans - Mathématiques",
-        "chapter": "La soustraction et les problèmes",
-        "skills": [
-          "Calcul",
-          "Logique",
-          "Resolution de probleme"
-        ],
-        "difficulty": 4,
-        "duration": 15
-      }
+ "subject": "maths",
+ "name": "Mathématiques",
+ "niveaux": {
+  "7": [
+   {
+    "title": "Calcul mental",
+    "emoji": "➕",
+    "badge": "🔟",
+    "cours": [
+     "Le calcul mental, c'est calculer dans sa tête, sans poser l'opération.",
+     "On peut additionner et soustraire des petits nombres en les décomposant.",
+     "Exemple : pour 8 + 5, je pense 8+2=10 puis +3 = 13."
     ],
-    "9": [
-      {
-        "title": "Calcul mental",
-        "emoji": "⚡",
-        "badge": "🔟",
-        "cours": [
-          "Le calcul mental rapide aide dans la vie de tous les jours.",
-          "On peut multiplier par 10 en ajoutant un zéro.",
-          "On peut diviser par 2 en cherchant la moitié."
-        ],
-        "example": "7 x 10 = 70",
-        "procedural": "mental9",
-        "procCount": 6,
-        "id": "maths-9-0",
-        "module": "Programme 9 ans - Mathématiques",
-        "chapter": "Calcul mental",
-        "skills": [
-          "Calcul",
-          "Logique",
-          "Resolution de probleme"
-        ],
-        "difficulty": 1,
-        "duration": 15
-      },
-      {
-        "title": "La multiplication",
-        "emoji": "✖️",
-        "badge": "📐",
-        "cours": [
-          "Multiplier, c'est additionner plusieurs fois le même nombre.",
-          "4 x 3 veut dire 4 + 4 + 4 = 12.",
-          "Connaître ses tables aide à calculer plus vite."
-        ],
-        "example": "6 x 7 = 42",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "7 x 8 = ?",
-            "choices": [
-              "54",
-              "56",
-              "58",
-              "64"
-            ],
-            "answer": 1,
-            "exp": "7x8=56."
-          },
-          {
-            "type": "qcm",
-            "q": "9 x 6 = ?",
-            "choices": [
-              "52",
-              "56",
-              "54",
-              "63"
-            ],
-            "answer": 2,
-            "exp": "9x6=54."
-          },
-          {
-            "type": "vf",
-            "q": "5 x 5 = 25",
-            "answer": true,
-            "exp": "Oui, 5x5=25."
-          },
-          {
-            "type": "text",
-            "q": "12 x 3 = ?",
-            "answer": "36",
-            "exp": "12x3=36."
-          },
-          {
-            "type": "qcm",
-            "q": "8 x 8 = ?",
-            "choices": [
-              "64",
-              "72",
-              "56",
-              "60"
-            ],
-            "answer": 0,
-            "exp": "8x8=64."
-          }
-        ],
-        "id": "maths-9-1",
-        "module": "Programme 9 ans - Mathématiques",
-        "chapter": "La multiplication",
-        "skills": [
-          "Calcul",
-          "Logique",
-          "Resolution de probleme"
-        ],
-        "difficulty": 2,
-        "duration": 15
-      },
-      {
-        "title": "La division",
-        "emoji": "➗",
-        "badge": "🔑",
-        "cours": [
-          "Diviser, c'est partager en parts égales.",
-          "12 divisé par 3 veut dire : combien de fois 3 dans 12 ? Réponse 4.",
-          "La division est l'opération inverse de la multiplication."
-        ],
-        "example": "20 ÷ 4 = 5",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "18 ÷ 3 = ?",
-            "choices": [
-              "5",
-              "6",
-              "7",
-              "9"
-            ],
-            "answer": 1,
-            "exp": "18÷3=6."
-          },
-          {
-            "type": "qcm",
-            "q": "45 ÷ 5 = ?",
-            "choices": [
-              "8",
-              "9",
-              "10",
-              "7"
-            ],
-            "answer": 1,
-            "exp": "45÷5=9."
-          },
-          {
-            "type": "vf",
-            "q": "24 ÷ 6 = 4",
-            "answer": true,
-            "exp": "Oui."
-          },
-          {
-            "type": "text",
-            "q": "36 ÷ 4 = ?",
-            "answer": "9",
-            "exp": "36÷4=9."
-          }
-        ],
-        "id": "maths-9-2",
-        "module": "Programme 9 ans - Mathématiques",
-        "chapter": "La division",
-        "skills": [
-          "Calcul",
-          "Logique",
-          "Resolution de probleme"
-        ],
-        "difficulty": 3,
-        "duration": 15
-      },
-      {
-        "title": "Les fractions simples",
-        "emoji": "🍕",
-        "badge": "🍰",
-        "cours": [
-          "Une fraction représente une partie d'un tout.",
-          "1/2 veut dire une part sur deux parts égales.",
-          "1/4, c'est une part sur quatre parts égales."
-        ],
-        "example": "Une pizza coupée en 4 : chaque part = 1/4",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "Quelle fraction représente la moitié ?",
-            "choices": [
-              "1/3",
-              "1/2",
-              "2/2",
-              "1/4"
-            ],
-            "answer": 1,
-            "exp": "La moitié, c'est 1/2."
-          },
-          {
-            "type": "qcm",
-            "q": "Dans 3/4, combien de parts sont prises ?",
-            "choices": [
-              "4",
-              "3",
-              "1",
-              "7"
-            ],
-            "answer": 1,
-            "exp": "Le nombre du haut (numérateur) indique 3 parts prises."
-          },
-          {
-            "type": "vf",
-            "q": "1/4 est plus petit que 1/2.",
-            "answer": true,
-            "exp": "Oui, 1/4 < 1/2."
-          },
-          {
-            "type": "text",
-            "q": "Combien de quarts font un tout ? (chiffre)",
-            "answer": "4",
-            "exp": "4 quarts = 1 tout."
-          }
-        ],
-        "id": "maths-9-3",
-        "module": "Programme 9 ans - Mathématiques",
-        "chapter": "Les fractions simples",
-        "skills": [
-          "Calcul",
-          "Logique",
-          "Resolution de probleme"
-        ],
-        "difficulty": 4,
-        "duration": 15
-      }
-    ]
-  }
-}
+    "example": "8 + 5 = 10 + 3 = 13",
+    "procedural": "mental7",
+    "procCount": 6,
+    "id": "maths-7-0",
+    "module": "Programme 7 ans - Mathématiques",
+    "chapter": "Calcul mental",
+    "skills": [
+     "Calcul",
+     "Logique",
+     "Resolution de probleme"
+    ],
+    "difficulty": 1,
+    "duration": 15
+   },
+   {
+    "title": "Les nombres jusqu'à 100",
+    "emoji": "🔢",
+    "badge": "💯",
+    "cours": [
+     "Les nombres sont composés de dizaines et d'unités.",
+     "Par exemple 47, c'est 4 dizaines et 7 unités.",
+     "Compter de 10 en 10 aide à se repérer jusqu'à 100."
+    ],
+    "example": "53 = 5 dizaines + 3 unités",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Combien de dizaines dans 62 ?",
+      "choices": [
+       "5",
+       "6",
+       "7",
+       "2"
+      ],
+      "answer": 1,
+      "exp": "62 = 6 dizaines et 2 unités."
+     },
+     {
+      "type": "qcm",
+      "q": "Quel nombre vient juste après 79 ?",
+      "choices": [
+       "80",
+       "78",
+       "89",
+       "70"
+      ],
+      "answer": 0,
+      "exp": "Après 79 vient 80."
+     },
+     {
+      "type": "vf",
+      "q": "90 est plus grand que 89.",
+      "answer": true,
+      "exp": "Oui, 90 > 89."
+     },
+     {
+      "type": "text",
+      "q": "Écris en chiffres : soixante-quinze",
+      "answer": "75",
+      "exp": "75 s'écrit 7 dizaines et 5 unités."
+     },
+     {
+      "type": "qcm",
+      "q": "Combien font 3 dizaines ?",
+      "choices": [
+       "3",
+       "13",
+       "30",
+       "300"
+      ],
+      "answer": 2,
+      "exp": "3 dizaines = 30."
+     }
+    ],
+    "id": "maths-7-1",
+    "module": "Programme 7 ans - Mathématiques",
+    "chapter": "Les nombres jusqu'à 100",
+    "skills": [
+     "Calcul",
+     "Logique",
+     "Resolution de probleme"
+    ],
+    "difficulty": 2,
+    "duration": 15
+   },
+   {
+    "title": "L'addition posée",
+    "emoji": "➕",
+    "badge": "✏️",
+    "cours": [
+     "Pour additionner de grands nombres, on les pose en colonnes.",
+     "On aligne les unités sous les unités, les dizaines sous les dizaines.",
+     "On additionne en commençant par la droite, et on retient si besoin."
+    ],
+    "example": "24 + 18 = 42",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "24 + 13 = ?",
+      "choices": [
+       "37",
+       "36",
+       "47",
+       "27"
+      ],
+      "answer": 0,
+      "exp": "24+13 : 4+3=7, 2+1=3 donc 37."
+     },
+     {
+      "type": "qcm",
+      "q": "45 + 27 = ?",
+      "choices": [
+       "62",
+       "72",
+       "71",
+       "82"
+      ],
+      "answer": 1,
+      "exp": "45+27=72."
+     },
+     {
+      "type": "vf",
+      "q": "19 + 5 = 24",
+      "answer": true,
+      "exp": "Oui, correct."
+     },
+     {
+      "type": "text",
+      "q": "36 + 26 = ?",
+      "answer": "62",
+      "exp": "36+26=62."
+     },
+     {
+      "type": "qcm",
+      "q": "58 + 15 = ?",
+      "choices": [
+       "73",
+       "63",
+       "72",
+       "83"
+      ],
+      "answer": 0,
+      "exp": "58+15=73."
+     }
+    ],
+    "id": "maths-7-2",
+    "module": "Programme 7 ans - Mathématiques",
+    "chapter": "L'addition posée",
+    "skills": [
+     "Calcul",
+     "Logique",
+     "Resolution de probleme"
+    ],
+    "difficulty": 3,
+    "duration": 15
+   },
+   {
+    "title": "La soustraction et les problèmes",
+    "emoji": "➖",
+    "badge": "🧩",
+    "cours": [
+     "Soustraire, c'est enlever une quantité à une autre.",
+     "Dans un problème, il faut bien repérer ce qu'on cherche.",
+     "On peut s'aider d'un dessin pour mieux comprendre."
+    ],
+    "example": "Léo a 15 billes, il en donne 6. Il lui reste 15-6=9 billes.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "23 - 8 = ?",
+      "choices": [
+       "14",
+       "15",
+       "16",
+       "17"
+      ],
+      "answer": 1,
+      "exp": "23-8=15."
+     },
+     {
+      "type": "qcm",
+      "q": "Louise a 20 bonbons, elle en mange 7. Combien lui en reste-t-il ?",
+      "choices": [
+       "13",
+       "12",
+       "14",
+       "15"
+      ],
+      "answer": 0,
+      "exp": "20-7=13."
+     },
+     {
+      "type": "vf",
+      "q": "30 - 10 = 20",
+      "answer": true,
+      "exp": "Oui."
+     },
+     {
+      "type": "text",
+      "q": "45 - 20 = ?",
+      "answer": "25",
+      "exp": "45-20=25."
+     }
+    ],
+    "id": "maths-7-3",
+    "module": "Programme 7 ans - Mathématiques",
+    "chapter": "La soustraction et les problèmes",
+    "skills": [
+     "Calcul",
+     "Logique",
+     "Resolution de probleme"
+    ],
+    "difficulty": 4,
+    "duration": 15
+   },
+   {
+    "id": "maths-7-4",
+    "title": "Les doubles et les moitiés",
+    "emoji": "➕",
+    "badge": "➗",
+    "module": "Programme 7 ans - Mathématiques",
+    "chapter": "Les doubles et les moitiés",
+    "prerequisites": [
+     "maths-7-0"
+    ],
+    "skills": [
+     "Calcul",
+     "Logique"
+    ],
+    "difficulty": 2,
+    "duration": 15,
+    "objectif": "Savoir calculer le double et la moitié de petits nombres.",
+    "intro": "Connaitre ses doubles aide à calculer beaucoup plus vite !",
+    "cours": [
+     "Le double d'un nombre, c'est ce nombre additionné à lui-même (x2).",
+     "La moitié d'un nombre, c'est le partager en deux parts égales.",
+     "Le double de 4 est 8. La moitié de 8 est 4."
+    ],
+    "example": "Le double de 6 est 6+6=12. La moitié de 12 est 6, car 12 partagé en 2 parts égales donne 6 et 6.",
+    "exercises": [
+     {
+      "type": "text",
+      "q": "Quel est le double de 7 ?",
+      "answer": "14",
+      "exp": "7+7=14."
+     },
+     {
+      "type": "text",
+      "q": "Quelle est la moitié de 10 ?",
+      "answer": "5",
+      "exp": "10 partagé en 2 égale 5 et 5."
+     },
+     {
+      "type": "qcm",
+      "q": "Le double de 9 est :",
+      "choices": [
+       "16",
+       "18",
+       "19"
+      ],
+      "answer": 1,
+      "exp": "9+9=18."
+     },
+     {
+      "type": "vf",
+      "q": "La moitié de 8 est 4.",
+      "answer": true,
+      "exp": "Exact, 4+4=8."
+     },
+     {
+      "type": "text",
+      "q": "Quel est le double de 12 ?",
+      "answer": "24",
+      "exp": "12+12=24."
+     }
+    ],
+    "activity": "Avec des jetons ou des bonbons, partage un tas en deux parts égales pour trouver une moitié.",
+    "practice": "Trouve 5 objets de ta maison et calcule leur double en les comptant deux fois.",
+    "summary": "Le double, c'est multiplier par 2 ; la moitié, c'est partager en deux parts égales.",
+    "metacognition": "Comment fais-tu pour vérifier que ta moitié est juste ?"
+   },
+   {
+    "id": "maths-7-5",
+    "title": "Se repérer dans le temps : l'heure",
+    "emoji": "🕐",
+    "badge": "⏰",
+    "module": "Programme 7 ans - Mathématiques",
+    "chapter": "Lire l'heure",
+    "prerequisites": [],
+    "skills": [
+     "Logique",
+     "Reperage spatial"
+    ],
+    "difficulty": 2,
+    "duration": 15,
+    "objectif": "Savoir lire l'heure pile et l'heure et demie sur une horloge à aiguilles.",
+    "intro": "Savoir lire l'heure permet de mieux organiser sa journée !",
+    "cours": [
+     "La petite aiguille indique les heures, la grande aiguille indique les minutes.",
+     "Quand la grande aiguille est sur le 12, c'est l'heure pile (ex : 3 heures).",
+     "Quand la grande aiguille est sur le 6, c'est l'heure et demie (ex : 3 heures et demie)."
+    ],
+    "example": "Si la petite aiguille est sur 4 et la grande sur 12, il est 4 heures.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Quand la grande aiguille est sur le 12, il est :",
+      "choices": [
+       "l'heure pile",
+       "l'heure et demie",
+       "le quart"
+      ],
+      "answer": 0,
+      "exp": "C'est l'heure pile, sans minutes supplémentaires."
+     },
+     {
+      "type": "vf",
+      "q": "La petite aiguille indique les minutes.",
+      "answer": false,
+      "exp": "Non, c'est la grande aiguille qui indique les minutes."
+     },
+     {
+      "type": "qcm",
+      "q": "Si la grande aiguille est sur le 6, il est l'heure :",
+      "choices": [
+       "pile",
+       "et quart",
+       "et demie"
+      ],
+      "answer": 2,
+      "exp": "La grande aiguille sur le 6 indique la demi-heure."
+     },
+     {
+      "type": "text",
+      "q": "Si la petite aiguille est sur 8 et la grande sur 12, quelle heure est-il ? (chiffre)",
+      "answer": "8",
+      "exp": "Il est 8 heures pile."
+     },
+     {
+      "type": "vf",
+      "q": "Il peut être '5 heures et demie' quand la grande aiguille est sur le 6.",
+      "answer": true,
+      "exp": "Exact, cela correspond à 5h30."
+     }
+    ],
+    "activity": "Sur une horloge (réelle ou dessinée), place les aiguilles pour afficher 7 heures, puis 7 heures et demie.",
+    "practice": "Observe une horloge chez toi à différents moments de la journée et dis l'heure à voix haute.",
+    "summary": "La petite aiguille montre les heures, la grande montre les minutes ; sur le 12 c'est l'heure pile, sur le 6 c'est et demie.",
+    "metacognition": "À quel moment de la journée as-tu le plus besoin de savoir lire l'heure ?"
+   },
+   {
+    "id": "maths-7-6",
+    "title": "Reconnaitre les formes géométriques",
+    "emoji": "🔷",
+    "badge": "🔺",
+    "module": "Programme 7 ans - Mathématiques",
+    "chapter": "Les formes géométriques",
+    "prerequisites": [],
+    "skills": [
+     "Logique",
+     "Reperage spatial",
+     "Creativite"
+    ],
+    "difficulty": 1,
+    "duration": 15,
+    "objectif": "Reconnaitre et nommer le carré, le rectangle, le triangle et le cercle.",
+    "intro": "Les formes géométriques sont partout autour de nous !",
+    "cours": [
+     "Le carré a 4 côtés égaux et 4 angles droits.",
+     "Le rectangle a 4 côtés (2 longs, 2 courts) et 4 angles droits.",
+     "Le triangle a 3 côtés.",
+     "Le cercle n'a pas de côté, il est complètement rond."
+    ],
+    "example": "Une fenêtre carrée a 4 côtés de la même longueur ; une porte est souvent un rectangle.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Combien de côtés a un triangle ?",
+      "choices": [
+       "2",
+       "3",
+       "4"
+      ],
+      "answer": 1,
+      "exp": "Le triangle a toujours 3 côtés."
+     },
+     {
+      "type": "vf",
+      "q": "Le carré a 4 côtés de la même longueur.",
+      "answer": true,
+      "exp": "Exact, c'est ce qui distingue le carré du rectangle."
+     },
+     {
+      "type": "qcm",
+      "q": "Quelle forme n'a pas de côtés ni d'angles ?",
+      "choices": [
+       "le rectangle",
+       "le cercle",
+       "le triangle"
+      ],
+      "answer": 1,
+      "exp": "Le cercle est rond, sans côté ni angle."
+     },
+     {
+      "type": "text",
+      "q": "Combien de côtés a un rectangle ? (chiffre)",
+      "answer": "4",
+      "exp": "Le rectangle a 4 côtés, comme le carré."
+     },
+     {
+      "type": "vf",
+      "q": "Un carré est aussi un rectangle un peu spécial.",
+      "answer": true,
+      "exp": "Exact, car il a aussi 4 angles droits, avec tous les côtés égaux."
+     }
+    ],
+    "activity": "Cherche dans la pièce où tu es 3 objets ronds, 3 objets carrés ou rectangulaires, et 1 objet triangulaire.",
+    "practice": "Dessine un bonhomme ou une maison en utilisant uniquement des carrés, rectangles, triangles et cercles.",
+    "summary": "Le carré et le rectangle ont 4 côtés, le triangle en a 3, et le cercle est rond sans côté.",
+    "metacognition": "Quelle forme trouves-tu la plus facile à reconnaitre, et pourquoi ?"
+   }
+  ],
+  "9": [
+   {
+    "title": "Calcul mental",
+    "emoji": "⚡",
+    "badge": "🔟",
+    "cours": [
+     "Le calcul mental rapide aide dans la vie de tous les jours.",
+     "On peut multiplier par 10 en ajoutant un zéro.",
+     "On peut diviser par 2 en cherchant la moitié."
+    ],
+    "example": "7 x 10 = 70",
+    "procedural": "mental9",
+    "procCount": 6,
+    "id": "maths-9-0",
+    "module": "Programme 9 ans - Mathématiques",
+    "chapter": "Calcul mental",
+    "skills": [
+     "Calcul",
+     "Logique",
+     "Resolution de probleme"
+    ],
+    "difficulty": 1,
+    "duration": 15
+   },
+   {
+    "title": "La multiplication",
+    "emoji": "✖️",
+    "badge": "📐",
+    "cours": [
+     "Multiplier, c'est additionner plusieurs fois le même nombre.",
+     "4 x 3 veut dire 4 + 4 + 4 = 12.",
+     "Connaître ses tables aide à calculer plus vite."
+    ],
+    "example": "6 x 7 = 42",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "7 x 8 = ?",
+      "choices": [
+       "54",
+       "56",
+       "58",
+       "64"
+      ],
+      "answer": 1,
+      "exp": "7x8=56."
+     },
+     {
+      "type": "qcm",
+      "q": "9 x 6 = ?",
+      "choices": [
+       "52",
+       "56",
+       "54",
+       "63"
+      ],
+      "answer": 2,
+      "exp": "9x6=54."
+     },
+     {
+      "type": "vf",
+      "q": "5 x 5 = 25",
+      "answer": true,
+      "exp": "Oui, 5x5=25."
+     },
+     {
+      "type": "text",
+      "q": "12 x 3 = ?",
+      "answer": "36",
+      "exp": "12x3=36."
+     },
+     {
+      "type": "qcm",
+      "q": "8 x 8 = ?",
+      "choices": [
+       "64",
+       "72",
+       "56",
+       "60"
+      ],
+      "answer": 0,
+      "exp": "8x8=64."
+     }
+    ],
+    "id": "maths-9-1",
+    "module": "Programme 9 ans - Mathématiques",
+    "chapter": "La multiplication",
+    "skills": [
+     "Calcul",
+     "Logique",
+     "Resolution de probleme"
+    ],
+    "difficulty": 2,
+    "duration": 15
+   },
+   {
+    "title": "La division",
+    "emoji": "➗",
+    "badge": "🔑",
+    "cours": [
+     "Diviser, c'est partager en parts égales.",
+     "12 divisé par 3 veut dire : combien de fois 3 dans 12 ? Réponse 4.",
+     "La division est l'opération inverse de la multiplication."
+    ],
+    "example": "20 ÷ 4 = 5",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "18 ÷ 3 = ?",
+      "choices": [
+       "5",
+       "6",
+       "7",
+       "9"
+      ],
+      "answer": 1,
+      "exp": "18÷3=6."
+     },
+     {
+      "type": "qcm",
+      "q": "45 ÷ 5 = ?",
+      "choices": [
+       "8",
+       "9",
+       "10",
+       "7"
+      ],
+      "answer": 1,
+      "exp": "45÷5=9."
+     },
+     {
+      "type": "vf",
+      "q": "24 ÷ 6 = 4",
+      "answer": true,
+      "exp": "Oui."
+     },
+     {
+      "type": "text",
+      "q": "36 ÷ 4 = ?",
+      "answer": "9",
+      "exp": "36÷4=9."
+     }
+    ],
+    "id": "maths-9-2",
+    "module": "Programme 9 ans - Mathématiques",
+    "chapter": "La division",
+    "skills": [
+     "Calcul",
+     "Logique",
+     "Resolution de probleme"
+    ],
+    "difficulty": 3,
+    "duration": 15
+   },
+   {
+    "title": "Les fractions simples",
+    "emoji": "🍕",
+    "badge": "🍰",
+    "cours": [
+     "Une fraction représente une partie d'un tout.",
+     "1/2 veut dire une part sur deux parts égales.",
+     "1/4, c'est une part sur quatre parts égales."
+    ],
+    "example": "Une pizza coupée en 4 : chaque part = 1/4",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Quelle fraction représente la moitié ?",
+      "choices": [
+       "1/3",
+       "1/2",
+       "2/2",
+       "1/4"
+      ],
+      "answer": 1,
+      "exp": "La moitié, c'est 1/2."
+     },
+     {
+      "type": "qcm",
+      "q": "Dans 3/4, combien de parts sont prises ?",
+      "choices": [
+       "4",
+       "3",
+       "1",
+       "7"
+      ],
+      "answer": 1,
+      "exp": "Le nombre du haut (numérateur) indique 3 parts prises."
+     },
+     {
+      "type": "vf",
+      "q": "1/4 est plus petit que 1/2.",
+      "answer": true,
+      "exp": "Oui, 1/4 < 1/2."
+     },
+     {
+      "type": "text",
+      "q": "Combien de quarts font un tout ? (chiffre)",
+      "answer": "4",
+      "exp": "4 quarts = 1 tout."
+     }
+    ],
+    "id": "maths-9-3",
+    "module": "Programme 9 ans - Mathématiques",
+    "chapter": "Les fractions simples",
+    "skills": [
+     "Calcul",
+     "Logique",
+     "Resolution de probleme"
+    ],
+    "difficulty": 4,
+    "duration": 15
+   },
+   {
+    "id": "maths-9-4",
+    "title": "Les nombres décimaux",
+    "emoji": "🔢",
+    "badge": "➗",
+    "module": "Programme 9 ans - Mathématiques",
+    "chapter": "Les nombres décimaux",
+    "prerequisites": [
+     "maths-9-3"
+    ],
+    "skills": [
+     "Calcul",
+     "Logique"
+    ],
+    "difficulty": 3,
+    "duration": 16,
+    "objectif": "Comprendre ce qu'est un nombre décimal et savoir le lire.",
+    "intro": "Les nombres décimaux permettent d'être plus précis que les nombres entiers.",
+    "cours": [
+     "Un nombre décimal a une partie entière et une partie décimale, séparées par une virgule.",
+     "Exemple : dans 3,25, '3' est la partie entière et '25' la partie décimale.",
+     "On utilise les nombres décimaux pour les prix, les mesures, ou les tailles précises."
+    ],
+    "example": "3,5 se lit 'trois virgule cinq' : c'est entre 3 et 4, plus précisément au milieu.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Dans le nombre 4,75, quelle est la partie entière ?",
+      "choices": [
+       "4",
+       "75",
+       "4,75"
+      ],
+      "answer": 0,
+      "exp": "La partie avant la virgule est la partie entière."
+     },
+     {
+      "type": "vf",
+      "q": "2,5 est un nombre plus grand que 2 mais plus petit que 3.",
+      "answer": true,
+      "exp": "Exact, 2,5 est entre 2 et 3."
+     },
+     {
+      "type": "qcm",
+      "q": "Comment se lit 6,2 ?",
+      "choices": [
+       "six virgule deux",
+       "soixante-deux",
+       "six et vingt"
+      ],
+      "answer": 0,
+      "exp": "On lit la partie entière puis 'virgule' puis la partie décimale."
+     },
+     {
+      "type": "text",
+      "q": "Quelle est la partie décimale de 8,45 ?",
+      "answer": "45",
+      "exp": "C'est la partie après la virgule."
+     },
+     {
+      "type": "vf",
+      "q": "Les nombres décimaux servent notamment à indiquer des prix précis.",
+      "answer": true,
+      "exp": "Exact, comme 3,99 euros par exemple."
+     }
+    ],
+    "activity": "Trouve 3 nombres décimaux sur des étiquettes de prix ou des emballages à la maison.",
+    "practice": "Écris 5 nombres décimaux que tu observes dans ta vie quotidienne (prix, tailles, poids...).",
+    "summary": "Un nombre décimal comporte une partie entière et une partie décimale séparées par une virgule.",
+    "metacognition": "Dans quelles situations de la vie de tous les jours rencontres-tu des nombres décimaux ?"
+   },
+   {
+    "id": "maths-9-5",
+    "title": "Le périmètre des figures",
+    "emoji": "📐",
+    "badge": "🔺",
+    "module": "Programme 9 ans - Mathématiques",
+    "chapter": "Le périmètre",
+    "prerequisites": [],
+    "skills": [
+     "Calcul",
+     "Logique",
+     "Reperage spatial"
+    ],
+    "difficulty": 3,
+    "duration": 16,
+    "objectif": "Savoir calculer le périmètre d'un carré et d'un rectangle.",
+    "intro": "Le périmètre, c'est la longueur du tour complet d'une figure.",
+    "cours": [
+     "Le périmètre d'une figure est la somme des longueurs de tous ses côtés.",
+     "Pour un carré de côté c, le périmètre est c+c+c+c, soit 4 fois c.",
+     "Pour un rectangle de longueur L et largeur l, le périmètre est 2xL + 2xl."
+    ],
+    "example": "Un carré de côté 5 cm a un périmètre de 5x4=20 cm.",
+    "exercises": [
+     {
+      "type": "text",
+      "q": "Quel est le périmètre d'un carré de côté 6 cm ? (en cm, chiffre seul)",
+      "answer": "24",
+      "exp": "6x4=24 cm."
+     },
+     {
+      "type": "qcm",
+      "q": "Le périmètre, c'est :",
+      "choices": [
+       "la surface intérieure",
+       "la longueur du tour de la figure",
+       "le nombre de côtés"
+      ],
+      "answer": 1,
+      "exp": "Le périmètre mesure le tour complet de la figure."
+     },
+     {
+      "type": "text",
+      "q": "Un rectangle mesure 8 cm de longueur et 3 cm de largeur. Quel est son périmètre ? (chiffre)",
+      "answer": "22",
+      "exp": "2x8 + 2x3 = 16+6 = 22 cm."
+     },
+     {
+      "type": "vf",
+      "q": "Pour calculer le périmètre d'un carré, on peut multiplier le côté par 4.",
+      "answer": true,
+      "exp": "Exact, puisque les 4 côtés sont égaux."
+     },
+     {
+      "type": "qcm",
+      "q": "Un carré de côté 10 cm a un périmètre de :",
+      "choices": [
+       "20 cm",
+       "40 cm",
+       "100 cm"
+      ],
+      "answer": 1,
+      "exp": "10x4=40 cm."
+     }
+    ],
+    "activity": "Mesure avec une règle les côtés d'une feuille rectangulaire et calcule son périmètre.",
+    "practice": "Calcule le périmètre de ta chambre en mesurant les 4 murs avec un mètre ou en pas.",
+    "summary": "Le périmètre est la somme des longueurs des côtés : 4xcôté pour un carré, 2xL+2xl pour un rectangle.",
+    "metacognition": "Dans quelle situation réelle aurais-tu besoin de calculer un périmètre ?"
+   },
+   {
+    "id": "maths-9-6",
+    "title": "Résoudre des problèmes à plusieurs étapes",
+    "emoji": "🧩",
+    "badge": "🏆",
+    "module": "Programme 9 ans - Mathématiques",
+    "chapter": "Problèmes à étapes",
+    "prerequisites": [
+     "maths-9-1",
+     "maths-9-2"
+    ],
+    "skills": [
+     "Calcul",
+     "Resolution de probleme",
+     "Esprit critique"
+    ],
+    "difficulty": 4,
+    "duration": 18,
+    "objectif": "Savoir résoudre un problème nécessitant plusieurs calculs successifs.",
+    "intro": "Certains problèmes ont besoin de plusieurs étapes de calcul pour être résolus.",
+    "cours": [
+     "Il faut d'abord bien lire l'énoncé et repérer toutes les informations utiles.",
+     "On découpe le problème en petites étapes de calcul, une à la fois.",
+     "On vérifie à la fin que le résultat final répond bien à la question posée."
+    ],
+    "example": "Léa achète 3 paquets de 4 gâteaux et en mange 5. Étape 1 : 3x4=12 gâteaux. Étape 2 : 12-5=7 gâteaux restants.",
+    "exercises": [
+     {
+      "type": "text",
+      "q": "Tom a 5 boites de 6 crayons. Il donne 8 crayons à son ami. Combien de crayons lui reste-t-il ? (chiffre)",
+      "answer": "22",
+      "exp": "5x6=30, puis 30-8=22."
+     },
+     {
+      "type": "qcm",
+      "q": "Quelle est la première étape pour résoudre un problème à plusieurs calculs ?",
+      "choices": [
+       "Faire le dernier calcul",
+       "Repérer toutes les informations utiles",
+       "Deviner la réponse"
+      ],
+      "answer": 1,
+      "exp": "Il faut d'abord bien comprendre toutes les données du problème."
+     },
+     {
+      "type": "text",
+      "q": "Une classe de 24 élèves est divisée en 4 groupes égaux. Chaque groupe reçoit ensuite 3 ballons. Combien de ballons au total ? (chiffre)",
+      "answer": "12",
+      "exp": "24/4=6 élèves par groupe, puis 4 groupes x 3 ballons = 12 ballons."
+     },
+     {
+      "type": "vf",
+      "q": "Il faut toujours vérifier que sa réponse finale correspond bien à la question posée.",
+      "answer": true,
+      "exp": "Exact, c'est une étape essentielle pour éviter les erreurs."
+     },
+     {
+      "type": "qcm",
+      "q": "Que faire si un problème semble compliqué ?",
+      "choices": [
+       "L'abandonner",
+       "Le découper en petites étapes",
+       "Deviner un résultat"
+      ],
+      "answer": 1,
+      "exp": "Découper en étapes rend le problème plus simple à résoudre."
+     }
+    ],
+    "activity": "Invente toi-même un petit problème à deux étapes et demande à un adulte de le résoudre.",
+    "practice": "Résous un problème à étapes en écrivant chaque étape de calcul sur une feuille, l'une après l'autre.",
+    "summary": "Un problème à plusieurs étapes se résout en le découpant en petits calculs successifs, puis en vérifiant le résultat.",
+    "metacognition": "Quelle stratégie utilises-tu quand un problème te semble difficile au premier regard ?"
+   }
+  ]
+ }
+        }
