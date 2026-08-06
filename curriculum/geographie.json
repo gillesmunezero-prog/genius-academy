@@ -1,0 +1,323 @@
+{
+  "subject": "geographie",
+  "name": "Géographie",
+  "niveaux": {
+    "7": [
+      {
+        "title": "Se repérer : nord, sud, est, ouest",
+        "emoji": "🧭",
+        "badge": "🧭",
+        "cours": [
+          "Une carte s'oriente grâce à 4 points cardinaux : nord, sud, est, ouest.",
+          "Le nord est en haut de la carte, le sud en bas.",
+          "L'est est à droite, l'ouest est à gauche."
+        ],
+        "example": "Le soleil se lève à l'est et se couche à l'ouest.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Sur une carte, le nord est...",
+            "choices": [
+              "en bas",
+              "en haut",
+              "à droite"
+            ],
+            "answer": 1,
+            "exp": "Le nord est toujours en haut sur une carte classique."
+          },
+          {
+            "type": "qcm",
+            "q": "Le soleil se lève à...",
+            "choices": [
+              "l'est",
+              "l'ouest",
+              "le nord"
+            ],
+            "answer": 0,
+            "exp": "Le soleil se lève à l'est."
+          },
+          {
+            "type": "vf",
+            "q": "Le sud est en bas de la carte.",
+            "answer": true,
+            "exp": "Oui, exact."
+          },
+          {
+            "type": "text",
+            "q": "Quel point cardinal est à droite sur la carte ?",
+            "answer": "est",
+            "exp": "Est est à droite."
+          }
+        ],
+        "id": "geographie-7-0",
+        "module": "Programme 7 ans - Géographie",
+        "chapter": "Se repérer : nord, sud, est, ouest",
+        "skills": [
+          "Culture generale",
+          "Esprit critique"
+        ],
+        "difficulty": 1,
+        "duration": 15
+      },
+      {
+        "title": "Mon pays, la France",
+        "emoji": "🇫🇷",
+        "badge": "🐓",
+        "cours": [
+          "La France est un pays d'Europe. Sa capitale est Paris.",
+          "Le drapeau français est bleu, blanc, rouge.",
+          "La France a des montagnes, des fleuves et des côtes en bord de mer."
+        ],
+        "example": "Paris est la capitale de la France.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Quelle est la capitale de la France ?",
+            "choices": [
+              "Lyon",
+              "Marseille",
+              "Paris"
+            ],
+            "answer": 2,
+            "exp": "Paris est la capitale."
+          },
+          {
+            "type": "qcm",
+            "q": "Le drapeau français est...",
+            "choices": [
+              "bleu blanc rouge",
+              "vert blanc rouge",
+              "bleu blanc jaune"
+            ],
+            "answer": 0,
+            "exp": "Bleu, blanc, rouge."
+          },
+          {
+            "type": "vf",
+            "q": "La France se trouve en Europe.",
+            "answer": true,
+            "exp": "Oui, exact."
+          },
+          {
+            "type": "text",
+            "q": "Quelle est la capitale de la France ?",
+            "answer": "Paris",
+            "exp": "Paris."
+          }
+        ],
+        "id": "geographie-7-1",
+        "module": "Programme 7 ans - Géographie",
+        "chapter": "Mon pays, la France",
+        "skills": [
+          "Culture generale",
+          "Esprit critique"
+        ],
+        "difficulty": 2,
+        "duration": 15
+      },
+      {
+        "title": "Ville et campagne, les paysages",
+        "emoji": "🏘️",
+        "badge": "🌾",
+        "cours": [
+          "En ville, il y a beaucoup d'immeubles, de routes et de monde.",
+          "À la campagne, il y a des champs, des fermes et des animaux.",
+          "Chaque paysage a ses avantages : la ville pour les commerces, la campagne pour la nature."
+        ],
+        "example": "À la campagne, on voit des vaches et des champs de blé.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Où trouve-t-on des champs et des fermes ?",
+            "choices": [
+              "en ville",
+              "à la campagne"
+            ],
+            "answer": 1,
+            "exp": "Les champs et fermes sont à la campagne."
+          },
+          {
+            "type": "vf",
+            "q": "En ville, il y a beaucoup d'immeubles.",
+            "answer": true,
+            "exp": "Oui, exact."
+          },
+          {
+            "type": "text",
+            "q": "Cite un animal que l'on trouve souvent à la campagne",
+            "answer": "vache",
+            "exp": "vache, mouton, poule... vivent à la campagne."
+          }
+        ],
+        "id": "geographie-7-2",
+        "module": "Programme 7 ans - Géographie",
+        "chapter": "Ville et campagne, les paysages",
+        "skills": [
+          "Culture generale",
+          "Esprit critique"
+        ],
+        "difficulty": 3,
+        "duration": 15
+      }
+    ],
+    "9": [
+      {
+        "title": "Les continents et les océans",
+        "emoji": "🌎",
+        "badge": "🗺️",
+        "cours": [
+          "La Terre a 5 continents : Afrique, Amérique, Asie, Europe, Océanie (et l'Antarctique).",
+          "Elle a aussi 5 océans : Pacifique, Atlantique, Indien, Arctique, Austral.",
+          "Chaque continent regroupe de nombreux pays différents."
+        ],
+        "example": "La France se trouve sur le continent européen.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Combien y a-t-il de continents principaux ?",
+            "choices": [
+              "3",
+              "5",
+              "7"
+            ],
+            "answer": 1,
+            "exp": "Il y a 5 continents principaux (6 avec l'Antarctique)."
+          },
+          {
+            "type": "qcm",
+            "q": "Quel est le plus grand océan ?",
+            "choices": [
+              "Atlantique",
+              "Indien",
+              "Pacifique"
+            ],
+            "answer": 2,
+            "exp": "Le Pacifique est le plus grand océan."
+          },
+          {
+            "type": "vf",
+            "q": "L'Europe est un continent.",
+            "answer": true,
+            "exp": "Oui, exact."
+          },
+          {
+            "type": "text",
+            "q": "Sur quel continent se trouve la France ?",
+            "answer": "Europe",
+            "exp": "La France est en Europe."
+          }
+        ],
+        "id": "geographie-9-0",
+        "module": "Programme 9 ans - Géographie",
+        "chapter": "Les continents et les océans",
+        "skills": [
+          "Culture generale",
+          "Esprit critique"
+        ],
+        "difficulty": 1,
+        "duration": 15
+      },
+      {
+        "title": "Les régions et fleuves de France",
+        "emoji": "🏞️",
+        "badge": "🌊",
+        "cours": [
+          "La France est divisée en régions, comme la Bretagne ou la Provence.",
+          "Les grands fleuves de France sont la Loire, la Seine, la Garonne et le Rhône.",
+          "Un fleuve se jette dans la mer, contrairement à une rivière."
+        ],
+        "example": "La Seine traverse Paris.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Quel fleuve traverse Paris ?",
+            "choices": [
+              "la Loire",
+              "la Seine",
+              "le Rhône"
+            ],
+            "answer": 1,
+            "exp": "La Seine traverse Paris."
+          },
+          {
+            "type": "qcm",
+            "q": "Quel est le plus long fleuve de France ?",
+            "choices": [
+              "la Seine",
+              "la Garonne",
+              "la Loire"
+            ],
+            "answer": 2,
+            "exp": "La Loire est le plus long fleuve de France."
+          },
+          {
+            "type": "vf",
+            "q": "Un fleuve se jette dans la mer.",
+            "answer": true,
+            "exp": "Oui, exact."
+          },
+          {
+            "type": "text",
+            "q": "Quel fleuve traverse Paris ?",
+            "answer": "Seine",
+            "exp": "La Seine."
+          }
+        ],
+        "id": "geographie-9-1",
+        "module": "Programme 9 ans - Géographie",
+        "chapter": "Les régions et fleuves de France",
+        "skills": [
+          "Culture generale",
+          "Esprit critique"
+        ],
+        "difficulty": 2,
+        "duration": 15
+      },
+      {
+        "title": "L'Union européenne",
+        "emoji": "🇪🇺",
+        "badge": "⭐",
+        "cours": [
+          "L'Union européenne réunit plusieurs pays d'Europe qui coopèrent ensemble.",
+          "Beaucoup de pays européens utilisent la même monnaie : l'euro.",
+          "Le drapeau européen est bleu avec 12 étoiles jaunes."
+        ],
+        "example": "La France, l'Allemagne et l'Espagne font partie de l'Union européenne.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Quelle est la monnaie utilisée par de nombreux pays européens ?",
+            "choices": [
+              "le dollar",
+              "l'euro",
+              "la livre"
+            ],
+            "answer": 1,
+            "exp": "C'est l'euro."
+          },
+          {
+            "type": "vf",
+            "q": "L'Union européenne regroupe plusieurs pays.",
+            "answer": true,
+            "exp": "Oui, exact."
+          },
+          {
+            "type": "text",
+            "q": "Combien d'étoiles sur le drapeau européen ? (chiffre)",
+            "answer": "12",
+            "exp": "Il y a 12 étoiles."
+          }
+        ],
+        "id": "geographie-9-2",
+        "module": "Programme 9 ans - Géographie",
+        "chapter": "L'Union européenne",
+        "skills": [
+          "Culture generale",
+          "Esprit critique"
+        ],
+        "difficulty": 3,
+        "duration": 15
+      }
+    ]
+  }
+          }
