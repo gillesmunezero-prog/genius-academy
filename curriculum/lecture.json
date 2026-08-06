@@ -1,0 +1,340 @@
+{
+  "subject": "lecture",
+  "name": "Lecture",
+  "niveaux": {
+    "7": [
+      {
+        "title": "Le potager de Mia",
+        "emoji": "🥕",
+        "badge": "📖",
+        "cours": [
+          "Lis bien le texte suivant, puis réponds aux questions.",
+          "Mia a planté des carottes, des tomates et des radis dans son potager. Chaque matin, elle arrose ses plantes avec un petit arrosoir vert. Un jour, elle voit une coccinelle rouge posée sur une feuille de tomate. Mia est très contente, car la coccinelle protège son potager des pucerons."
+        ],
+        "example": "",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Qu'est-ce que Mia a planté ?",
+            "choices": [
+              "des fleurs",
+              "des carottes, tomates et radis",
+              "des arbres"
+            ],
+            "answer": 1,
+            "exp": "Le texte dit qu'elle a planté des carottes, tomates et radis."
+          },
+          {
+            "type": "qcm",
+            "q": "De quelle couleur est l'arrosoir de Mia ?",
+            "choices": [
+              "bleu",
+              "vert",
+              "rouge"
+            ],
+            "answer": 1,
+            "exp": "L'arrosoir est vert."
+          },
+          {
+            "type": "vf",
+            "q": "La coccinelle est bleue.",
+            "answer": false,
+            "exp": "Non, la coccinelle est rouge."
+          },
+          {
+            "type": "text",
+            "q": "Que fait la coccinelle pour le potager ?",
+            "answer": "elle le protège",
+            "exp": "La coccinelle protège le potager des pucerons."
+          }
+        ],
+        "id": "lecture-7-0",
+        "module": "Programme 7 ans - Lecture",
+        "chapter": "Le potager de Mia",
+        "skills": [
+          "Lecture",
+          "Expression orale"
+        ],
+        "difficulty": 1,
+        "duration": 15
+      },
+      {
+        "title": "Le chat curieux",
+        "emoji": "🐱",
+        "badge": "📚",
+        "cours": [
+          "Lis bien le texte suivant, puis réponds aux questions.",
+          "Félix est un chat très curieux. Il aime regarder par la fenêtre et observer les oiseaux. Un jour, une souris entre dans le jardin. Félix se cache derrière un pot de fleurs et l'observe sans bouger. Puis, il bondit doucement, mais la souris s'échappe dans un trou."
+        ],
+        "example": "",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Comment s'appelle le chat ?",
+            "choices": [
+              "Félix",
+              "Milo",
+              "Tom"
+            ],
+            "answer": 0,
+            "exp": "Le chat s'appelle Félix."
+          },
+          {
+            "type": "qcm",
+            "q": "Que regarde Félix par la fenêtre ?",
+            "choices": [
+              "des voitures",
+              "des oiseaux",
+              "des enfants"
+            ],
+            "answer": 1,
+            "exp": "Il observe les oiseaux."
+          },
+          {
+            "type": "vf",
+            "q": "La souris a été attrapée par Félix.",
+            "answer": false,
+            "exp": "Non, la souris s'échappe dans un trou."
+          },
+          {
+            "type": "text",
+            "q": "Où se cache Félix pour observer la souris ?",
+            "answer": "derrière un pot de fleurs",
+            "exp": "Il se cache derrière un pot de fleurs."
+          }
+        ],
+        "id": "lecture-7-1",
+        "module": "Programme 7 ans - Lecture",
+        "chapter": "Le chat curieux",
+        "skills": [
+          "Lecture",
+          "Expression orale"
+        ],
+        "difficulty": 2,
+        "duration": 15
+      },
+      {
+        "title": "La fête de l'école",
+        "emoji": "🎉",
+        "badge": "🎈",
+        "cours": [
+          "Lis bien le texte suivant, puis réponds aux questions.",
+          "Aujourd'hui, c'est la fête de l'école. Il y a des ballons de toutes les couleurs et de la musique. Les enfants ont préparé un spectacle de danse. Béatrice chante une chanson avec ses amis sur la scène. À la fin, tout le monde applaudit très fort."
+        ],
+        "example": "",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Quel événement a lieu aujourd'hui ?",
+            "choices": [
+              "un anniversaire",
+              "la fête de l'école",
+              "un match"
+            ],
+            "answer": 1,
+            "exp": "C'est la fête de l'école."
+          },
+          {
+            "type": "qcm",
+            "q": "Que fait Béatrice sur la scène ?",
+            "choices": [
+              "elle danse",
+              "elle chante",
+              "elle dessine"
+            ],
+            "answer": 1,
+            "exp": "Elle chante une chanson."
+          },
+          {
+            "type": "vf",
+            "q": "Personne n'applaudit à la fin.",
+            "answer": false,
+            "exp": "Non, tout le monde applaudit très fort."
+          },
+          {
+            "type": "text",
+            "q": "Que préparent les enfants ?",
+            "answer": "un spectacle de danse",
+            "exp": "Un spectacle de danse."
+          }
+        ],
+        "id": "lecture-7-2",
+        "module": "Programme 7 ans - Lecture",
+        "chapter": "La fête de l'école",
+        "skills": [
+          "Lecture",
+          "Expression orale"
+        ],
+        "difficulty": 3,
+        "duration": 15
+      }
+    ],
+    "9": [
+      {
+        "title": "La carte oubliée",
+        "emoji": "🗺️",
+        "badge": "📖",
+        "cours": [
+          "Lis bien le texte suivant, puis réponds aux questions.",
+          "Nathan et sa sœur explorent le grenier de leurs grands-parents. Dans une vieille malle, ils trouvent une carte jaunie représentant une île mystérieuse, avec une croix rouge marquée près d'une forêt. Intrigués, ils décident de demander à leur grand-père d'où vient cette carte. Il leur raconte alors qu'il l'avait dessinée lui-même, enfant, pour un jeu d'aventure avec ses amis."
+        ],
+        "example": "",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Où Nathan et sa sœur trouvent-ils la carte ?",
+            "choices": [
+              "dans le jardin",
+              "dans une malle au grenier",
+              "sous leur lit"
+            ],
+            "answer": 1,
+            "exp": "Ils la trouvent dans une vieille malle du grenier."
+          },
+          {
+            "type": "qcm",
+            "q": "Que représente la carte ?",
+            "choices": [
+              "une île mystérieuse",
+              "une ville",
+              "un zoo"
+            ],
+            "answer": 0,
+            "exp": "La carte représente une île mystérieuse."
+          },
+          {
+            "type": "vf",
+            "q": "Le grand-père a acheté la carte dans un magasin.",
+            "answer": false,
+            "exp": "Non, il l'a dessinée lui-même, enfant."
+          },
+          {
+            "type": "text",
+            "q": "Pourquoi le grand-père avait-il dessiné cette carte ?",
+            "answer": "pour un jeu d'aventure",
+            "exp": "Pour jouer à un jeu d'aventure avec ses amis."
+          }
+        ],
+        "id": "lecture-9-0",
+        "module": "Programme 9 ans - Lecture",
+        "chapter": "La carte oubliée",
+        "skills": [
+          "Lecture",
+          "Expression orale"
+        ],
+        "difficulty": 1,
+        "duration": 15
+      },
+      {
+        "title": "Le concours de robots",
+        "emoji": "🤖",
+        "badge": "🔧",
+        "cours": [
+          "Lis bien le texte suivant, puis réponds aux questions.",
+          "Chaque année, l'école organise un concours de robots construits par les élèves. Cette année, l'équipe de Louise a conçu un petit robot capable de suivre une ligne noire tracée au sol grâce à un capteur de lumière. Après plusieurs essais et quelques réglages, leur robot termine le parcours sans sortir de la piste, sous les applaudissements du public."
+        ],
+        "example": "",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Qu'organise l'école chaque année ?",
+            "choices": [
+              "un concours de robots",
+              "un concours de dessin",
+              "une chasse au trésor"
+            ],
+            "answer": 0,
+            "exp": "L'école organise un concours de robots."
+          },
+          {
+            "type": "qcm",
+            "q": "Grâce à quoi le robot suit-il la ligne noire ?",
+            "choices": [
+              "un aimant",
+              "un capteur de lumière",
+              "une télécommande"
+            ],
+            "answer": 1,
+            "exp": "Grâce à un capteur de lumière."
+          },
+          {
+            "type": "vf",
+            "q": "Le robot de l'équipe de Louise sort de la piste.",
+            "answer": false,
+            "exp": "Non, il termine le parcours sans sortir de la piste."
+          },
+          {
+            "type": "text",
+            "q": "Que doit suivre le robot au sol ?",
+            "answer": "une ligne noire",
+            "exp": "Il doit suivre une ligne noire."
+          }
+        ],
+        "id": "lecture-9-1",
+        "module": "Programme 9 ans - Lecture",
+        "chapter": "Le concours de robots",
+        "skills": [
+          "Lecture",
+          "Expression orale"
+        ],
+        "difficulty": 2,
+        "duration": 15
+      },
+      {
+        "title": "Le marché du village",
+        "emoji": "🧺",
+        "badge": "🍎",
+        "cours": [
+          "Lis bien le texte suivant, puis réponds aux questions.",
+          "Chaque samedi matin, le marché s'installe sur la place du village. On y trouve des fruits, des légumes, du fromage et du pain frais. Une odeur de pain chaud flotte dans l'air. Beaucoup d'habitants s'y retrouvent pour discuter tout en faisant leurs courses, ce qui rend l'ambiance très conviviale."
+        ],
+        "example": "",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Quel jour a lieu le marché ?",
+            "choices": [
+              "le samedi matin",
+              "le dimanche soir",
+              "le lundi"
+            ],
+            "answer": 0,
+            "exp": "Le marché a lieu le samedi matin."
+          },
+          {
+            "type": "qcm",
+            "q": "Que sent-on flotter dans l'air ?",
+            "choices": [
+              "une odeur de fleurs",
+              "une odeur de pain chaud",
+              "une odeur de peinture"
+            ],
+            "answer": 1,
+            "exp": "Une odeur de pain chaud."
+          },
+          {
+            "type": "vf",
+            "q": "Les habitants ne se parlent jamais au marché.",
+            "answer": false,
+            "exp": "Non, ils discutent tout en faisant leurs courses."
+          },
+          {
+            "type": "text",
+            "q": "Cite un aliment vendu au marché",
+            "answer": "fromage",
+            "exp": "fruits, légumes, fromage, pain sont vendus."
+          }
+        ],
+        "id": "lecture-9-2",
+        "module": "Programme 9 ans - Lecture",
+        "chapter": "Le marché du village",
+        "skills": [
+          "Lecture",
+          "Expression orale"
+        ],
+        "difficulty": 3,
+        "duration": 15
+      }
+    ]
+  }
+          }
