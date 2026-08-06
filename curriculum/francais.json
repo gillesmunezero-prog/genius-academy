@@ -1,363 +1,812 @@
 {
-  "subject": "francais",
-  "name": "Français",
-  "niveaux": {
-    "7": [
-      {
-        "title": "Le nom et le verbe",
-        "emoji": "📘",
-        "badge": "🔤",
-        "cours": [
-          "Le nom désigne une personne, un animal ou une chose : chat, table, Louise.",
-          "Le verbe indique une action ou un état : manger, courir, être.",
-          "Dans une phrase, on trouve souvent un nom et un verbe."
-        ],
-        "example": "Le chat (nom) dort (verbe).",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "Quel mot est un nom ?",
-            "choices": [
-              "manger",
-              "jolie",
-              "maison",
-              "vite"
-            ],
-            "answer": 2,
-            "exp": "Maison est un nom, une chose."
-          },
-          {
-            "type": "qcm",
-            "q": "Quel mot est un verbe ?",
-            "choices": [
-              "chien",
-              "courir",
-              "rouge",
-              "table"
-            ],
-            "answer": 1,
-            "exp": "Courir est une action, donc un verbe."
-          },
-          {
-            "type": "vf",
-            "q": "Dans \"le chien aboie\", aboie est un verbe.",
-            "answer": true,
-            "exp": "Oui, aboie est une action."
-          },
-          {
-            "type": "text",
-            "q": "Donne un nom d'animal",
-            "answer": "chien",
-            "exp": "chien, chat, oiseau... sont des noms d'animaux."
-          },
-          {
-            "type": "qcm",
-            "q": "Dans \"Louise chante\", quel est le verbe ?",
-            "choices": [
-              "Louise",
-              "chante"
-            ],
-            "answer": 1,
-            "exp": "Chante est l'action, donc le verbe."
-          }
-        ],
-        "id": "francais-7-0",
-        "module": "Programme 7 ans - Français",
-        "chapter": "Le nom et le verbe",
-        "skills": [
-          "Lecture",
-          "Grammaire",
-          "Expression orale"
-        ],
-        "difficulty": 1,
-        "duration": 15
-      },
-      {
-        "title": "Le pluriel des noms",
-        "emoji": "📚",
-        "badge": "✏️",
-        "cours": [
-          "Le pluriel indique plusieurs personnes ou choses.",
-          "En général, on ajoute un S à la fin du nom : un chat, des chats.",
-          "Certains noms se terminent déjà en s, x ou z et ne changent pas."
-        ],
-        "example": "une fleur → des fleurs",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "Quel est le pluriel de \"table\" ?",
-            "choices": [
-              "tables",
-              "tablles",
-              "tablz"
-            ],
-            "answer": 0,
-            "exp": "On ajoute un s : tables."
-          },
-          {
-            "type": "qcm",
-            "q": "Quel mot est déjà au pluriel ?",
-            "choices": [
-              "souris",
-              "chien",
-              "table"
-            ],
-            "answer": 0,
-            "exp": "Souris se termine par s, il ne change pas au pluriel."
-          },
-          {
-            "type": "vf",
-            "q": "Le pluriel de \"jeu\" est \"jeus\".",
-            "answer": false,
-            "exp": "Non, le pluriel de jeu est jeux (avec x)."
-          },
-          {
-            "type": "text",
-            "q": "Mets au pluriel : un livre ->",
-            "answer": "des livres",
-            "exp": "On ajoute un s."
-          }
-        ],
-        "id": "francais-7-1",
-        "module": "Programme 7 ans - Français",
-        "chapter": "Le pluriel des noms",
-        "skills": [
-          "Lecture",
-          "Grammaire",
-          "Expression orale"
-        ],
-        "difficulty": 2,
-        "duration": 15
-      },
-      {
-        "title": "La phrase et la ponctuation",
-        "emoji": "❓",
-        "badge": "📝",
-        "cours": [
-          "Une phrase commence par une majuscule et se termine par un point.",
-          "Le point d'interrogation (?) sert à poser une question.",
-          "Le point d'exclamation (!) exprime la surprise ou la joie."
-        ],
-        "example": "Quel âge as-tu ?",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "Quelle ponctuation pour une question ?",
-            "choices": [
-              ".",
-              "!",
-              "?"
-            ],
-            "answer": 2,
-            "exp": "Le point d'interrogation sert à poser une question."
-          },
-          {
-            "type": "vf",
-            "q": "Une phrase commence toujours par une majuscule.",
-            "answer": true,
-            "exp": "Oui, c'est la règle."
-          },
-          {
-            "type": "text",
-            "q": "Complète : Bravo, tu as gagné__ (avec la bonne ponctuation)",
-            "answer": "!",
-            "exp": "On utilise le point d'exclamation pour la joie."
-          },
-          {
-            "type": "qcm",
-            "q": "Quel mot commence bien une phrase ?",
-            "choices": [
-              "le chat dort.",
-              "Le chat dort."
-            ],
-            "answer": 1,
-            "exp": "La phrase doit commencer par une majuscule."
-          }
-        ],
-        "id": "francais-7-2",
-        "module": "Programme 7 ans - Français",
-        "chapter": "La phrase et la ponctuation",
-        "skills": [
-          "Lecture",
-          "Grammaire",
-          "Expression orale"
-        ],
-        "difficulty": 3,
-        "duration": 15
-      }
+ "subject": "francais",
+ "name": "Français",
+ "niveaux": {
+  "7": [
+   {
+    "title": "Le nom et le verbe",
+    "emoji": "📘",
+    "badge": "🔤",
+    "cours": [
+     "Le nom désigne une personne, un animal ou une chose : chat, table, Louise.",
+     "Le verbe indique une action ou un état : manger, courir, être.",
+     "Dans une phrase, on trouve souvent un nom et un verbe."
     ],
-    "9": [
-      {
-        "title": "Nature des mots",
-        "emoji": "🔎",
-        "badge": "🔤",
-        "cours": [
-          "Chaque mot a une nature : nom, verbe, adjectif, adverbe...",
-          "L'adjectif décrit un nom : une grande maison.",
-          "L'adverbe précise un verbe ou un adjectif : il court vite."
-        ],
-        "example": "Le petit chat noir dort tranquillement.",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "Dans \"une grande maison\", grande est...",
-            "choices": [
-              "un nom",
-              "un adjectif",
-              "un verbe"
-            ],
-            "answer": 1,
-            "exp": "Grande décrit maison, c'est un adjectif."
-          },
-          {
-            "type": "qcm",
-            "q": "Dans \"il court vite\", vite est...",
-            "choices": [
-              "un adverbe",
-              "un nom",
-              "un adjectif"
-            ],
-            "answer": 0,
-            "exp": "Vite précise le verbe courir, c'est un adverbe."
-          },
-          {
-            "type": "vf",
-            "q": "Un adjectif décrit un nom.",
-            "answer": true,
-            "exp": "Oui, exact."
-          },
-          {
-            "type": "text",
-            "q": "Donne un adjectif pour décrire un chat",
-            "answer": "joli",
-            "exp": "joli, mignon, noir... sont des adjectifs possibles."
-          }
-        ],
-        "id": "francais-9-0",
-        "module": "Programme 9 ans - Français",
-        "chapter": "Nature des mots",
-        "skills": [
-          "Lecture",
-          "Grammaire",
-          "Expression orale"
-        ],
-        "difficulty": 1,
-        "duration": 15
-      },
-      {
-        "title": "Conjugaison au présent",
-        "emoji": "🕰️",
-        "badge": "📗",
-        "cours": [
-          "Au présent, le verbe change selon la personne qui parle.",
-          "Pour les verbes en -er, on ajoute e, es, e, ons, ez, ent.",
-          "Exemple : je chante, tu chantes, il chante, nous chantons."
-        ],
-        "example": "Je chante, tu chantes, il/elle chante.",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "Conjugue \"chanter\" avec \"tu\"",
-            "choices": [
-              "tu chante",
-              "tu chantes",
-              "tu chantons"
-            ],
-            "answer": 1,
-            "exp": "Avec tu, on ajoute -es : tu chantes."
-          },
-          {
-            "type": "qcm",
-            "q": "Conjugue \"jouer\" avec \"nous\"",
-            "choices": [
-              "nous jouons",
-              "nous jouez",
-              "nous joue"
-            ],
-            "answer": 0,
-            "exp": "Avec nous, on ajoute -ons."
-          },
-          {
-            "type": "vf",
-            "q": "\"Ils chantent\" est correct au présent.",
-            "answer": true,
-            "exp": "Oui, avec ils/elles on ajoute -ent."
-          },
-          {
-            "type": "text",
-            "q": "Conjugue \"manger\" avec \"je\"",
-            "answer": "je mange",
-            "exp": "Avec je, on ajoute -e : je mange."
-          }
-        ],
-        "id": "francais-9-1",
-        "module": "Programme 9 ans - Français",
-        "chapter": "Conjugaison au présent",
-        "skills": [
-          "Lecture",
-          "Grammaire",
-          "Expression orale"
-        ],
-        "difficulty": 2,
-        "duration": 15
-      },
-      {
-        "title": "Les accords dans le groupe nominal",
-        "emoji": "🧩",
-        "badge": "🎯",
-        "cours": [
-          "Dans un groupe nominal, le déterminant, le nom et l'adjectif s'accordent.",
-          "Ils s'accordent en genre (masculin/féminin) et en nombre (singulier/pluriel).",
-          "Exemple : une petite fille, des petites filles."
-        ],
-        "example": "un grand chat → une grande chatte → de grands chats",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "Accorde : une ___ maison (grand)",
-            "choices": [
-              "grand",
-              "grande",
-              "grands"
-            ],
-            "answer": 1,
-            "exp": "Maison est féminin singulier donc grande."
-          },
-          {
-            "type": "qcm",
-            "q": "Accorde : des chats ___ (noir)",
-            "choices": [
-              "noir",
-              "noire",
-              "noirs"
-            ],
-            "answer": 2,
-            "exp": "Chats est masculin pluriel donc noirs."
-          },
-          {
-            "type": "vf",
-            "q": "\"des jolies fleurs\" est bien accordé.",
-            "answer": true,
-            "exp": "Oui, fleurs est féminin pluriel."
-          },
-          {
-            "type": "text",
-            "q": "Accorde : les enfants sont ___ (content)",
-            "answer": "contents",
-            "exp": "Enfants est masculin pluriel donc contents."
-          }
-        ],
-        "id": "francais-9-2",
-        "module": "Programme 9 ans - Français",
-        "chapter": "Les accords dans le groupe nominal",
-        "skills": [
-          "Lecture",
-          "Grammaire",
-          "Expression orale"
-        ],
-        "difficulty": 3,
-        "duration": 15
+    "example": "Le chat (nom) dort (verbe).",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Quel mot est un nom ?",
+      "choices": [
+       "manger",
+       "jolie",
+       "maison",
+       "vite"
+      ],
+      "answer": 2,
+      "exp": "Maison est un nom, une chose."
+     },
+     {
+      "type": "qcm",
+      "q": "Quel mot est un verbe ?",
+      "choices": [
+       "chien",
+       "courir",
+       "rouge",
+       "table"
+      ],
+      "answer": 1,
+      "exp": "Courir est une action, donc un verbe."
+     },
+     {
+      "type": "vf",
+      "q": "Dans \"le chien aboie\", aboie est un verbe.",
+      "answer": true,
+      "exp": "Oui, aboie est une action."
+     },
+     {
+      "type": "text",
+      "q": "Donne un nom d'animal",
+      "answer": "chien",
+      "exp": "chien, chat, oiseau... sont des noms d'animaux."
+     },
+     {
+      "type": "qcm",
+      "q": "Dans \"Louise chante\", quel est le verbe ?",
+      "choices": [
+       "Louise",
+       "chante"
+      ],
+      "answer": 1,
+      "exp": "Chante est l'action, donc le verbe."
+     }
+    ],
+    "id": "francais-7-0",
+    "module": "Programme 7 ans - Français",
+    "chapter": "Le nom et le verbe",
+    "skills": [
+     "Lecture",
+     "Grammaire",
+     "Expression orale"
+    ],
+    "difficulty": 1,
+    "duration": 15
+   },
+   {
+    "title": "Le pluriel des noms",
+    "emoji": "📚",
+    "badge": "✏️",
+    "cours": [
+     "Le pluriel indique plusieurs personnes ou choses.",
+     "En général, on ajoute un S à la fin du nom : un chat, des chats.",
+     "Certains noms se terminent déjà en s, x ou z et ne changent pas."
+    ],
+    "example": "une fleur → des fleurs",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Quel est le pluriel de \"table\" ?",
+      "choices": [
+       "tables",
+       "tablles",
+       "tablz"
+      ],
+      "answer": 0,
+      "exp": "On ajoute un s : tables."
+     },
+     {
+      "type": "qcm",
+      "q": "Quel mot est déjà au pluriel ?",
+      "choices": [
+       "souris",
+       "chien",
+       "table"
+      ],
+      "answer": 0,
+      "exp": "Souris se termine par s, il ne change pas au pluriel."
+     },
+     {
+      "type": "vf",
+      "q": "Le pluriel de \"jeu\" est \"jeus\".",
+      "answer": false,
+      "exp": "Non, le pluriel de jeu est jeux (avec x)."
+     },
+     {
+      "type": "text",
+      "q": "Mets au pluriel : un livre ->",
+      "answer": "des livres",
+      "exp": "On ajoute un s."
+     }
+    ],
+    "id": "francais-7-1",
+    "module": "Programme 7 ans - Français",
+    "chapter": "Le pluriel des noms",
+    "skills": [
+     "Lecture",
+     "Grammaire",
+     "Expression orale"
+    ],
+    "difficulty": 2,
+    "duration": 15
+   },
+   {
+    "title": "La phrase et la ponctuation",
+    "emoji": "❓",
+    "badge": "📝",
+    "cours": [
+     "Une phrase commence par une majuscule et se termine par un point.",
+     "Le point d'interrogation (?) sert à poser une question.",
+     "Le point d'exclamation (!) exprime la surprise ou la joie."
+    ],
+    "example": "Quel âge as-tu ?",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Quelle ponctuation pour une question ?",
+      "choices": [
+       ".",
+       "!",
+       "?"
+      ],
+      "answer": 2,
+      "exp": "Le point d'interrogation sert à poser une question."
+     },
+     {
+      "type": "vf",
+      "q": "Une phrase commence toujours par une majuscule.",
+      "answer": true,
+      "exp": "Oui, c'est la règle."
+     },
+     {
+      "type": "text",
+      "q": "Complète : Bravo, tu as gagné__ (avec la bonne ponctuation)",
+      "answer": "!",
+      "exp": "On utilise le point d'exclamation pour la joie."
+     },
+     {
+      "type": "qcm",
+      "q": "Quel mot commence bien une phrase ?",
+      "choices": [
+       "le chat dort.",
+       "Le chat dort."
+      ],
+      "answer": 1,
+      "exp": "La phrase doit commencer par une majuscule."
+     }
+    ],
+    "id": "francais-7-2",
+    "module": "Programme 7 ans - Français",
+    "chapter": "La phrase et la ponctuation",
+    "skills": [
+     "Lecture",
+     "Grammaire",
+     "Expression orale"
+    ],
+    "difficulty": 3,
+    "duration": 15
+   },
+   {
+    "id": "francais-7-3",
+    "title": "Les adjectifs qualificatifs",
+    "emoji": "📘",
+    "badge": "✏️",
+    "module": "Programme 7 ans - Français",
+    "chapter": "Les adjectifs qualificatifs",
+    "prerequisites": [
+     "francais-7-0"
+    ],
+    "skills": [
+     "Lecture",
+     "Expression orale"
+    ],
+    "difficulty": 2,
+    "duration": 15,
+    "objectif": "Savoir reconnaitre un adjectif qualificatif et l'utiliser pour décrire.",
+    "intro": "Les adjectifs rendent nos phrases beaucoup plus vivantes et précises !",
+    "cours": [
+     "Un adjectif qualificatif donne des informations sur le nom : sa couleur, sa taille, sa qualité.",
+     "Il se place généralement avant ou après le nom qu'il décrit.",
+     "Exemple : 'un grand chat noir' : 'grand' et 'noir' sont des adjectifs qui décrivent le chat."
+    ],
+    "example": "Dans 'une belle maison bleue', 'belle' et 'bleue' sont des adjectifs qui décrivent la maison.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Dans 'un petit chien blanc', quels sont les adjectifs ?",
+      "choices": [
+       "chien et blanc",
+       "petit et blanc",
+       "un et petit"
+      ],
+      "answer": 1,
+      "exp": "'Petit' et 'blanc' décrivent le chien."
+     },
+     {
+      "type": "vf",
+      "q": "Un adjectif qualificatif donne une information sur le nom.",
+      "answer": true,
+      "exp": "Exact, il précise sa forme, sa couleur, sa qualité, etc."
+     },
+     {
+      "type": "qcm",
+      "q": "Quel mot est un adjectif dans 'une jolie fleur rouge' ?",
+      "choices": [
+       "fleur",
+       "jolie",
+       "une"
+      ],
+      "answer": 1,
+      "exp": "'Jolie' décrit la fleur."
+     },
+     {
+      "type": "text",
+      "q": "Ajoute un adjectif pour décrire 'une pomme' (par exemple sa couleur).",
+      "answer": "rouge",
+      "exp": "Rouge, verte, ronde... sont de bons adjectifs pour une pomme."
+     },
+     {
+      "type": "oral",
+      "q": "Décris à voix haute ton animal préféré en utilisant au moins deux adjectifs.",
+      "keywords": [
+       "grand",
+       "petit",
+       "joli",
+       "gentil",
+       "rapide",
+       "doux",
+       "noir",
+       "blanc",
+       "marron"
+      ],
+      "exp": "Bravo, utiliser des adjectifs rend ta description plus riche !"
+     }
+    ],
+    "activity": "Choisis un objet dans la pièce et trouve 3 adjectifs pour le décrire.",
+    "practice": "Décris ton meilleur ami ou ta meilleure amie en utilisant au moins 3 adjectifs qualificatifs.",
+    "summary": "Les adjectifs qualificatifs décrivent les noms : ils précisent leur couleur, taille ou qualité.",
+    "metacognition": "Pourquoi une phrase avec des adjectifs est-elle souvent plus intéressante à lire ?"
+   },
+   {
+    "id": "francais-7-4",
+    "title": "Masculin et féminin",
+    "emoji": "📘",
+    "badge": "✏️",
+    "module": "Programme 7 ans - Français",
+    "chapter": "Le masculin et le féminin",
+    "prerequisites": [
+     "francais-7-0"
+    ],
+    "skills": [
+     "Lecture",
+     "Logique"
+    ],
+    "difficulty": 2,
+    "duration": 15,
+    "objectif": "Savoir reconnaitre et former le féminin de noms et d'adjectifs simples.",
+    "intro": "En français, les mots peuvent être masculins ou féminins : voyons comment les reconnaitre.",
+    "cours": [
+     "Un nom masculin est précédé de 'le' ou 'un' ; un nom féminin est précédé de 'la' ou 'une'.",
+     "Souvent, on forme le féminin en ajoutant un 'e' à la fin du mot : un ami -> une amie.",
+     "Certains mots changent complètement au féminin : un garçon -> une fille."
+    ],
+    "example": "'Un petit chat' devient 'une petite chatte' au féminin : on ajoute 'e' à 'petit' et à 'chat'.",
+    "exercises": [
+     {
+      "type": "text",
+      "q": "Quel est le féminin de 'un ami' ?",
+      "answer": "une amie",
+      "exp": "On ajoute un 'e' : une amie."
+     },
+     {
+      "type": "qcm",
+      "q": "Quel article accompagne un nom féminin ?",
+      "choices": [
+       "le / un",
+       "la / une",
+       "les"
+      ],
+      "answer": 1,
+      "exp": "'La' et 'une' accompagnent les noms féminins."
+     },
+     {
+      "type": "vf",
+      "q": "'Un garçon' et 'une fille' suivent la règle générale du 'e' final.",
+      "answer": false,
+      "exp": "Non, ce sont des mots différents, pas une simple règle du 'e'."
+     },
+     {
+      "type": "text",
+      "q": "Quel est le féminin de l'adjectif 'petit' ?",
+      "answer": "petite",
+      "exp": "On ajoute un 'e' : petite."
+     },
+     {
+      "type": "qcm",
+      "q": "'Une jolie maison' : quel est le genre du nom 'maison' ?",
+      "choices": [
+       "masculin",
+       "féminin"
+      ],
+      "answer": 1,
+      "exp": "'Maison' est un nom féminin."
+     }
+    ],
+    "activity": "Trouve 5 objets autour de toi et dis si leur nom est masculin ou féminin.",
+    "practice": "Écris 3 phrases avec des noms masculins, puis transforme-les au féminin.",
+    "summary": "Les noms et adjectifs peuvent être masculins ou féminins ; souvent on ajoute un 'e' pour former le féminin.",
+    "metacognition": "Quels mots te posent le plus de difficulté pour trouver leur féminin ?"
+   },
+   {
+    "id": "francais-7-5",
+    "title": "Lire à voix haute et bien articuler",
+    "emoji": "🗣️",
+    "badge": "🎤",
+    "module": "Programme 7 ans - Français",
+    "chapter": "Lecture à voix haute et articulation",
+    "prerequisites": [],
+    "skills": [
+     "Lecture",
+     "Expression orale",
+     "Prononciation"
+    ],
+    "difficulty": 2,
+    "duration": 15,
+    "objectif": "S'entrainer à lire un texte à voix haute avec une bonne articulation.",
+    "intro": "Bien lire à voix haute, c'est parler clairement pour que tout le monde comprenne.",
+    "cours": [
+     "Pour bien articuler, il faut ouvrir suffisamment la bouche et prendre son temps.",
+     "On marque une petite pause aux virgules, et une pause plus longue aux points.",
+     "Lire un peu plus lentement qu'en pensée aide à mieux se faire comprendre."
+    ],
+    "example": "La phrase 'Le petit chat noir dort sur le tapis.' se lit en marquant une pause légère avant 'dort'.",
+    "exercises": [
+     {
+      "type": "oral",
+      "q": "Lis à voix haute cette phrase en articulant bien : 'Le grand chien brun joue dans le jardin.'",
+      "keywords": [
+       "le grand chien brun joue dans le jardin"
+      ],
+      "exp": "Bravo pour ta lecture claire et posée !"
+     },
+     {
+      "type": "qcm",
+      "q": "Que faut-il faire pour bien articuler ?",
+      "choices": [
+       "Parler très vite",
+       "Ouvrir suffisamment la bouche et prendre son temps",
+       "Chuchoter"
+      ],
+      "answer": 1,
+      "exp": "Une bonne articulation demande de ne pas se presser."
+     },
+     {
+      "type": "vf",
+      "q": "On doit marquer une pause au point final d'une phrase.",
+      "answer": true,
+      "exp": "Exact, le point marque la fin d'une idée."
+     },
+     {
+      "type": "oral",
+      "q": "Récite le début de ta comptine ou poésie préférée à voix haute.",
+      "keywords": [
+       "comptine",
+       "poesie",
+       "chanson"
+      ],
+      "exp": "Très bien, la récitation aide à travailler la mémoire et l'articulation !"
+     },
+     {
+      "type": "qcm",
+      "q": "Pourquoi est-il utile de bien articuler quand on lit à voix haute ?",
+      "choices": [
+       "Pour aller plus vite",
+       "Pour que les autres comprennent bien",
+       "Pour faire plus de bruit"
+      ],
+      "answer": 1,
+      "exp": "Une bonne articulation permet d'être bien compris par les autres."
+     }
+    ],
+    "activity": "Choisis un court texte et lis-le à voix haute à un adulte, en articulant bien chaque mot.",
+    "practice": "Enregistre-toi (avec un adulte) en train de lire un petit texte, puis réécoute-toi.",
+    "summary": "Bien lire à voix haute demande d'articuler, de prendre son temps et de respecter les pauses de ponctuation.",
+    "metacognition": "Qu'est-ce qui est le plus difficile pour toi quand tu lis à voix haute ?"
+   }
+  ],
+  "9": [
+   {
+    "title": "Nature des mots",
+    "emoji": "🔎",
+    "badge": "🔤",
+    "cours": [
+     "Chaque mot a une nature : nom, verbe, adjectif, adverbe...",
+     "L'adjectif décrit un nom : une grande maison.",
+     "L'adverbe précise un verbe ou un adjectif : il court vite."
+    ],
+    "example": "Le petit chat noir dort tranquillement.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Dans \"une grande maison\", grande est...",
+      "choices": [
+       "un nom",
+       "un adjectif",
+       "un verbe"
+      ],
+      "answer": 1,
+      "exp": "Grande décrit maison, c'est un adjectif."
+     },
+     {
+      "type": "qcm",
+      "q": "Dans \"il court vite\", vite est...",
+      "choices": [
+       "un adverbe",
+       "un nom",
+       "un adjectif"
+      ],
+      "answer": 0,
+      "exp": "Vite précise le verbe courir, c'est un adverbe."
+     },
+     {
+      "type": "vf",
+      "q": "Un adjectif décrit un nom.",
+      "answer": true,
+      "exp": "Oui, exact."
+     },
+     {
+      "type": "text",
+      "q": "Donne un adjectif pour décrire un chat",
+      "answer": "joli",
+      "exp": "joli, mignon, noir... sont des adjectifs possibles."
+     }
+    ],
+    "id": "francais-9-0",
+    "module": "Programme 9 ans - Français",
+    "chapter": "Nature des mots",
+    "skills": [
+     "Lecture",
+     "Grammaire",
+     "Expression orale"
+    ],
+    "difficulty": 1,
+    "duration": 15
+   },
+   {
+    "title": "Conjugaison au présent",
+    "emoji": "🕰️",
+    "badge": "📗",
+    "cours": [
+     "Au présent, le verbe change selon la personne qui parle.",
+     "Pour les verbes en -er, on ajoute e, es, e, ons, ez, ent.",
+     "Exemple : je chante, tu chantes, il chante, nous chantons."
+    ],
+    "example": "Je chante, tu chantes, il/elle chante.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Conjugue \"chanter\" avec \"tu\"",
+      "choices": [
+       "tu chante",
+       "tu chantes",
+       "tu chantons"
+      ],
+      "answer": 1,
+      "exp": "Avec tu, on ajoute -es : tu chantes."
+     },
+     {
+      "type": "qcm",
+      "q": "Conjugue \"jouer\" avec \"nous\"",
+      "choices": [
+       "nous jouons",
+       "nous jouez",
+       "nous joue"
+      ],
+      "answer": 0,
+      "exp": "Avec nous, on ajoute -ons."
+     },
+     {
+      "type": "vf",
+      "q": "\"Ils chantent\" est correct au présent.",
+      "answer": true,
+      "exp": "Oui, avec ils/elles on ajoute -ent."
+     },
+     {
+      "type": "text",
+      "q": "Conjugue \"manger\" avec \"je\"",
+      "answer": "je mange",
+      "exp": "Avec je, on ajoute -e : je mange."
+     }
+    ],
+    "id": "francais-9-1",
+    "module": "Programme 9 ans - Français",
+    "chapter": "Conjugaison au présent",
+    "skills": [
+     "Lecture",
+     "Grammaire",
+     "Expression orale"
+    ],
+    "difficulty": 2,
+    "duration": 15
+   },
+   {
+    "title": "Les accords dans le groupe nominal",
+    "emoji": "🧩",
+    "badge": "🎯",
+    "cours": [
+     "Dans un groupe nominal, le déterminant, le nom et l'adjectif s'accordent.",
+     "Ils s'accordent en genre (masculin/féminin) et en nombre (singulier/pluriel).",
+     "Exemple : une petite fille, des petites filles."
+    ],
+    "example": "un grand chat → une grande chatte → de grands chats",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Accorde : une ___ maison (grand)",
+      "choices": [
+       "grand",
+       "grande",
+       "grands"
+      ],
+      "answer": 1,
+      "exp": "Maison est féminin singulier donc grande."
+     },
+     {
+      "type": "qcm",
+      "q": "Accorde : des chats ___ (noir)",
+      "choices": [
+       "noir",
+       "noire",
+       "noirs"
+      ],
+      "answer": 2,
+      "exp": "Chats est masculin pluriel donc noirs."
+     },
+     {
+      "type": "vf",
+      "q": "\"des jolies fleurs\" est bien accordé.",
+      "answer": true,
+      "exp": "Oui, fleurs est féminin pluriel."
+     },
+     {
+      "type": "text",
+      "q": "Accorde : les enfants sont ___ (content)",
+      "answer": "contents",
+      "exp": "Enfants est masculin pluriel donc contents."
+     }
+    ],
+    "id": "francais-9-2",
+    "module": "Programme 9 ans - Français",
+    "chapter": "Les accords dans le groupe nominal",
+    "skills": [
+     "Lecture",
+     "Grammaire",
+     "Expression orale"
+    ],
+    "difficulty": 3,
+    "duration": 15
+   },
+   {
+    "id": "francais-9-3",
+    "title": "Le futur simple",
+    "emoji": "📗",
+    "badge": "✏️",
+    "module": "Programme 9 ans - Français",
+    "chapter": "Le futur simple",
+    "prerequisites": [
+     "francais-9-1"
+    ],
+    "skills": [
+     "Lecture",
+     "Logique"
+    ],
+    "difficulty": 3,
+    "duration": 16,
+    "objectif": "Savoir conjuguer des verbes réguliers au futur simple.",
+    "intro": "Le futur simple sert à parler de ce qui va se passer plus tard.",
+    "cours": [
+     "Le futur simple exprime une action à venir : 'demain, je jouerai'.",
+     "Pour les verbes en -er, on ajoute les terminaisons -erai, -eras, -era, -erons, -erez, -eront à l'infinitif.",
+     "Exemple : jouer -> je jouerai, tu joueras, il jouera..."
+    ],
+    "example": "Demain, nous jouerons au parc : 'jouerons' est le verbe 'jouer' conjugué au futur avec 'nous'.",
+    "exercises": [
+     {
+      "type": "text",
+      "q": "Conjugue 'chanter' au futur avec 'je'.",
+      "answer": "je chanterai",
+      "exp": "je chanterai."
+     },
+     {
+      "type": "qcm",
+      "q": "Quelle terminaison correspond à 'nous' au futur simple pour les verbes en -er ?",
+      "choices": [
+       "-erons",
+       "-erez",
+       "-eront"
+      ],
+      "answer": 0,
+      "exp": "Nous jouerons : la terminaison est -erons."
+     },
+     {
+      "type": "vf",
+      "q": "Le futur simple sert à parler d'une action déjà passée.",
+      "answer": false,
+      "exp": "Non, le futur simple parle d'une action à venir."
+     },
+     {
+      "type": "text",
+      "q": "Conjugue 'manger' au futur avec 'ils'.",
+      "answer": "ils mangeront",
+      "exp": "ils mangeront."
+     },
+     {
+      "type": "qcm",
+      "q": "Dans 'tu danseras ce soir', le verbe 'danseras' est conjugué :",
+      "choices": [
+       "au présent",
+       "au futur simple",
+       "au passé"
+      ],
+      "answer": 1,
+      "exp": "'Danseras' est bien une forme du futur simple."
+     }
+    ],
+    "activity": "Écris 3 phrases sur ce que tu feras ce week-end, en utilisant le futur simple.",
+    "practice": "Raconte à un adulte 3 choses que tu feras demain, en utilisant bien le futur simple à voix haute.",
+    "summary": "Le futur simple exprime une action à venir ; pour les verbes en -er, on ajoute -erai, -eras, -era...",
+    "metacognition": "Quelle terminaison du futur simple trouves-tu la plus facile à retenir ?"
+   },
+   {
+    "id": "francais-9-4",
+    "title": "Synonymes et antonymes",
+    "emoji": "📗",
+    "badge": "✏️",
+    "module": "Programme 9 ans - Français",
+    "chapter": "Les synonymes et antonymes",
+    "prerequisites": [],
+    "skills": [
+     "Lecture",
+     "Vocabulaire",
+     "Esprit critique"
+    ],
+    "difficulty": 2,
+    "duration": 15,
+    "objectif": "Savoir reconnaitre et utiliser des synonymes et des antonymes.",
+    "intro": "Enrichir son vocabulaire permet d'exprimer plus précisément ses idées.",
+    "cours": [
+     "Un synonyme est un mot qui a presque le même sens qu'un autre mot. Exemple : content / heureux.",
+     "Un antonyme est un mot de sens contraire. Exemple : grand / petit.",
+     "Utiliser des synonymes évite de répéter toujours le même mot dans un texte."
+    ],
+    "example": "'Content' et 'joyeux' sont des synonymes ; 'content' et 'triste' sont des antonymes.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Quel mot est un synonyme de 'rapide' ?",
+      "choices": [
+       "lent",
+       "vite",
+       "grand"
+      ],
+      "answer": 1,
+      "exp": "'Vite' a un sens très proche de 'rapide'."
+     },
+     {
+      "type": "qcm",
+      "q": "Quel mot est un antonyme de 'grand' ?",
+      "choices": [
+       "petit",
+       "immense",
+       "haut"
+      ],
+      "answer": 0,
+      "exp": "'Petit' est le contraire de 'grand'."
+     },
+     {
+      "type": "text",
+      "q": "Donne un synonyme du mot 'content'.",
+      "answer": "heureux",
+      "exp": "'Heureux' ou 'joyeux' sont de bons synonymes."
+     },
+     {
+      "type": "vf",
+      "q": "Un antonyme a presque le même sens qu'un autre mot.",
+      "answer": false,
+      "exp": "Non, c'est le synonyme qui a un sens proche ; l'antonyme est le contraire."
+     },
+     {
+      "type": "text",
+      "q": "Donne un antonyme du mot 'chaud'.",
+      "answer": "froid",
+      "exp": "'Froid' est le contraire de 'chaud'."
+     }
+    ],
+    "activity": "Trouve un synonyme et un antonyme pour les mots : joli, rapide, fort.",
+    "practice": "Réécris une petite phrase en remplaçant un mot par son synonyme, sans changer le sens.",
+    "summary": "Les synonymes ont un sens proche, les antonymes ont un sens contraire : ils enrichissent le vocabulaire.",
+    "metacognition": "Pourquoi est-il utile de connaitre des synonymes quand on écrit un texte ?"
+   },
+   {
+    "id": "francais-9-5",
+    "title": "Résumer un texte à voix haute",
+    "emoji": "🗣️",
+    "badge": "🎤",
+    "module": "Programme 9 ans - Français",
+    "chapter": "Résumé oral d'un texte",
+    "prerequisites": [],
+    "skills": [
+     "Lecture",
+     "Expression orale",
+     "Memoire"
+    ],
+    "difficulty": 3,
+    "duration": 16,
+    "objectif": "Savoir résumer oralement l'idée principale d'un texte lu.",
+    "intro": "Résumer, c'est dire l'essentiel d'une histoire en peu de mots.",
+    "cours": [
+     "Un résumé doit contenir les informations les plus importantes, pas tous les détails.",
+     "On peut se poser des questions pour résumer : qui ? où ? quoi ? pourquoi ?",
+     "Un bon résumé oral est court, clair, et dans l'ordre de l'histoire."
+    ],
+    "example": "Pour résumer 'Le Petit Chaperon Rouge', on peut dire : une fillette va voir sa grand-mère et rencontre un loup dans la forêt.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Un résumé doit contenir :",
+      "choices": [
+       "tous les détails du texte",
+       "les informations les plus importantes",
+       "seulement le titre"
+      ],
+      "answer": 1,
+      "exp": "Un résumé garde l'essentiel, pas tous les détails."
+     },
+     {
+      "type": "oral",
+      "q": "Résume à voix haute en une ou deux phrases une histoire que tu as lue récemment.",
+      "keywords": [
+       "histoire",
+       "personnage",
+       "alors",
+       "ensuite",
+       "finalement"
+      ],
+      "exp": "Bravo, tu as su donner l'idée principale de l'histoire !"
+     },
+     {
+      "type": "vf",
+      "q": "Un bon résumé respecte l'ordre des événements de l'histoire.",
+      "answer": true,
+      "exp": "Exact, cela aide à bien comprendre l'histoire résumée."
+     },
+     {
+      "type": "qcm",
+      "q": "Quelles questions aident à construire un résumé ?",
+      "choices": [
+       "qui, où, quoi, pourquoi",
+       "combien ça coute",
+       "quelle couleur"
+      ],
+      "answer": 0,
+      "exp": "Ces questions aident à repérer les informations essentielles."
+     },
+     {
+      "type": "oral",
+      "q": "Explique en une phrase pourquoi tu as aimé ou pas aimé cette histoire.",
+      "keywords": [
+       "parce que",
+       "car",
+       "j'aime",
+       "je n'aime pas"
+      ],
+      "exp": "Très bien, exprimer son avis est une compétence importante !"
+     }
+    ],
+    "activity": "Lis un court texte puis résume-le en 2 phrases maximum, à voix haute, à un adulte.",
+    "practice": "Choisis un dessin animé ou un livre que tu connais bien et résume-le en 30 secondes.",
+    "summary": "Résumer, c'est donner l'essentiel d'un texte en respectant l'ordre des événements, sans entrer dans tous les détails.",
+    "metacognition": "Qu'est-ce qui est le plus difficile pour toi : lire un texte ou le résumer ensuite ?"
+   }
+  ]
+ }
       }
-    ]
-  }
-}
