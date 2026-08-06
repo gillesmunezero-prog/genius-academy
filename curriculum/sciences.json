@@ -1,0 +1,352 @@
+{
+  "subject": "sciences",
+  "name": "Sciences",
+  "niveaux": {
+    "7": [
+      {
+        "title": "Le corps humain",
+        "emoji": "🫀",
+        "badge": "🩺",
+        "cours": [
+          "Notre corps est composé d'organes qui travaillent ensemble.",
+          "Le cœur pompe le sang dans tout le corps.",
+          "Les poumons nous permettent de respirer l'air."
+        ],
+        "example": "Quand tu cours, ton cœur bat plus vite.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Quel organe pompe le sang ?",
+            "choices": [
+              "le cerveau",
+              "le cœur",
+              "l'estomac"
+            ],
+            "answer": 1,
+            "exp": "Le cœur pompe le sang."
+          },
+          {
+            "type": "qcm",
+            "q": "Avec quoi respire-t-on ?",
+            "choices": [
+              "les poumons",
+              "les os",
+              "les muscles"
+            ],
+            "answer": 0,
+            "exp": "On respire avec les poumons."
+          },
+          {
+            "type": "vf",
+            "q": "Le cœur bat plus vite quand on court.",
+            "answer": true,
+            "exp": "Oui, exact."
+          },
+          {
+            "type": "text",
+            "q": "Quel organe permet de respirer ?",
+            "answer": "poumons",
+            "exp": "Les poumons."
+          }
+        ],
+        "id": "sciences-7-0",
+        "module": "Programme 7 ans - Sciences",
+        "chapter": "Le corps humain",
+        "skills": [
+          "Esprit critique",
+          "Resolution de probleme",
+          "Curiosite"
+        ],
+        "difficulty": 1,
+        "duration": 15
+      },
+      {
+        "title": "Les animaux et leur habitat",
+        "emoji": "🐻",
+        "badge": "🌳",
+        "cours": [
+          "Chaque animal vit dans un habitat adapté à ses besoins.",
+          "L'ours polaire vit dans le froid de la banquise.",
+          "Le poisson vit dans l'eau grâce à ses branchies."
+        ],
+        "example": "Le poisson respire sous l'eau grâce à ses branchies.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Où vit l'ours polaire ?",
+            "choices": [
+              "dans le désert",
+              "sur la banquise",
+              "dans la forêt tropicale"
+            ],
+            "answer": 1,
+            "exp": "Il vit sur la banquise, dans le froid."
+          },
+          {
+            "type": "qcm",
+            "q": "Grâce à quoi le poisson respire-t-il sous l'eau ?",
+            "choices": [
+              "des poumons",
+              "des branchies",
+              "des ailes"
+            ],
+            "answer": 1,
+            "exp": "Grâce à ses branchies."
+          },
+          {
+            "type": "vf",
+            "q": "Tous les animaux vivent dans le même habitat.",
+            "answer": false,
+            "exp": "Non, chaque animal a un habitat adapté."
+          },
+          {
+            "type": "text",
+            "q": "Où vit un poisson ?",
+            "answer": "dans l'eau",
+            "exp": "Dans l'eau."
+          }
+        ],
+        "id": "sciences-7-1",
+        "module": "Programme 7 ans - Sciences",
+        "chapter": "Les animaux et leur habitat",
+        "skills": [
+          "Esprit critique",
+          "Resolution de probleme",
+          "Curiosite"
+        ],
+        "difficulty": 2,
+        "duration": 15
+      },
+      {
+        "title": "L'eau et ses états",
+        "emoji": "💧",
+        "badge": "❄️",
+        "cours": [
+          "L'eau peut exister sous 3 états : solide (glace), liquide (eau), gazeux (vapeur).",
+          "Quand il fait très froid, l'eau devient de la glace.",
+          "Quand on la chauffe fort, l'eau devient de la vapeur."
+        ],
+        "example": "Un glaçon est de l'eau à l'état solide.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Comment s'appelle l'eau à l'état solide ?",
+            "choices": [
+              "la vapeur",
+              "la glace",
+              "la pluie"
+            ],
+            "answer": 1,
+            "exp": "C'est la glace."
+          },
+          {
+            "type": "qcm",
+            "q": "Que se passe-t-il quand on chauffe très fort de l'eau ?",
+            "choices": [
+              "elle gèle",
+              "elle devient vapeur",
+              "rien"
+            ],
+            "answer": 1,
+            "exp": "Elle devient de la vapeur."
+          },
+          {
+            "type": "vf",
+            "q": "L'eau peut exister sous 3 états différents.",
+            "answer": true,
+            "exp": "Oui, solide, liquide, gazeux."
+          },
+          {
+            "type": "text",
+            "q": "Comment s'appelle l'eau à l'état gazeux ?",
+            "answer": "vapeur",
+            "exp": "La vapeur."
+          }
+        ],
+        "id": "sciences-7-2",
+        "module": "Programme 7 ans - Sciences",
+        "chapter": "L'eau et ses états",
+        "skills": [
+          "Esprit critique",
+          "Resolution de probleme",
+          "Curiosite"
+        ],
+        "difficulty": 3,
+        "duration": 15
+      }
+    ],
+    "9": [
+      {
+        "title": "Les cinq sens et le cerveau",
+        "emoji": "🧠",
+        "badge": "👀",
+        "cours": [
+          "Nous avons cinq sens : la vue, l'ouïe, l'odorat, le goût, le toucher.",
+          "Chaque sens envoie des informations au cerveau grâce aux nerfs.",
+          "Le cerveau analyse ces informations et nous permet de réagir."
+        ],
+        "example": "Quand tu touches quelque chose de chaud, ton cerveau te fait retirer la main.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Combien y a-t-il de sens principaux ?",
+            "choices": [
+              "3",
+              "5",
+              "7"
+            ],
+            "answer": 1,
+            "exp": "Il y a 5 sens."
+          },
+          {
+            "type": "qcm",
+            "q": "Quel organe analyse les informations des sens ?",
+            "choices": [
+              "le cœur",
+              "le cerveau",
+              "l'estomac"
+            ],
+            "answer": 1,
+            "exp": "Le cerveau analyse les informations."
+          },
+          {
+            "type": "vf",
+            "q": "L'odorat est un des cinq sens.",
+            "answer": true,
+            "exp": "Oui, exact."
+          },
+          {
+            "type": "text",
+            "q": "Cite un des cinq sens",
+            "answer": "la vue",
+            "exp": "vue, ouïe, odorat, goût, toucher."
+          }
+        ],
+        "id": "sciences-9-0",
+        "module": "Programme 9 ans - Sciences",
+        "chapter": "Les cinq sens et le cerveau",
+        "skills": [
+          "Esprit critique",
+          "Resolution de probleme",
+          "Curiosite"
+        ],
+        "difficulty": 1,
+        "duration": 15
+      },
+      {
+        "title": "Les plantes et la photosynthèse",
+        "emoji": "🌱",
+        "badge": "☀️",
+        "cours": [
+          "Les plantes fabriquent leur nourriture grâce à la lumière du soleil.",
+          "Ce phénomène s'appelle la photosynthèse.",
+          "Les plantes ont besoin d'eau, de lumière et de CO2 pour grandir."
+        ],
+        "example": "Une plante placée dans le noir pousse mal car elle manque de lumière.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Comment s'appelle le phénomène qui permet aux plantes de fabriquer leur nourriture ?",
+            "choices": [
+              "la respiration",
+              "la photosynthèse",
+              "la digestion"
+            ],
+            "answer": 1,
+            "exp": "C'est la photosynthèse."
+          },
+          {
+            "type": "qcm",
+            "q": "De quoi une plante a-t-elle besoin pour pousser ?",
+            "choices": [
+              "d'eau et de lumière",
+              "de sucre",
+              "de sable"
+            ],
+            "answer": 0,
+            "exp": "Elle a besoin d'eau, de lumière et de CO2."
+          },
+          {
+            "type": "vf",
+            "q": "Les plantes ont besoin de lumière pour la photosynthèse.",
+            "answer": true,
+            "exp": "Oui, exact."
+          },
+          {
+            "type": "text",
+            "q": "Quel astre donne la lumière nécessaire aux plantes ?",
+            "answer": "le soleil",
+            "exp": "Le soleil."
+          }
+        ],
+        "id": "sciences-9-1",
+        "module": "Programme 9 ans - Sciences",
+        "chapter": "Les plantes et la photosynthèse",
+        "skills": [
+          "Esprit critique",
+          "Resolution de probleme",
+          "Curiosite"
+        ],
+        "difficulty": 2,
+        "duration": 15
+      },
+      {
+        "title": "La matière : solide, liquide, gaz",
+        "emoji": "🧪",
+        "badge": "⚗️",
+        "cours": [
+          "La matière existe sous 3 états : solide, liquide, gazeux.",
+          "Un solide garde sa forme, un liquide prend la forme de son contenant.",
+          "Un gaz se répand partout et occupe tout l'espace disponible."
+        ],
+        "example": "Le bois est solide, l'eau est liquide, l'air est gazeux.",
+        "exercises": [
+          {
+            "type": "qcm",
+            "q": "Quel état garde toujours la même forme ?",
+            "choices": [
+              "solide",
+              "liquide",
+              "gazeux"
+            ],
+            "answer": 0,
+            "exp": "Le solide garde sa forme."
+          },
+          {
+            "type": "qcm",
+            "q": "Quel état prend la forme de son contenant ?",
+            "choices": [
+              "solide",
+              "liquide",
+              "gazeux"
+            ],
+            "answer": 1,
+            "exp": "Le liquide prend la forme du contenant."
+          },
+          {
+            "type": "vf",
+            "q": "L'air est un gaz.",
+            "answer": true,
+            "exp": "Oui, exact."
+          },
+          {
+            "type": "text",
+            "q": "Cite un exemple de solide",
+            "answer": "bois",
+            "exp": "bois, pierre, métal... sont des solides."
+          }
+        ],
+        "id": "sciences-9-2",
+        "module": "Programme 9 ans - Sciences",
+        "chapter": "La matière : solide, liquide, gaz",
+        "skills": [
+          "Esprit critique",
+          "Resolution de probleme",
+          "Curiosite"
+        ],
+        "difficulty": 3,
+        "duration": 15
+      }
+    ]
+  }
+          }
