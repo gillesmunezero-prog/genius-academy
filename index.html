@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head><base href="https://cdn.jsdelivr.net/gh/gillesmunezero-prog/genius-academy@main/">
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Genius Academy</title>
@@ -3533,4 +3533,790 @@ console.log('GT v5 conversations module loaded');
 })();
 </script>
 
+<<script>
+(function(){
+if (!window.GT) return;
+var GT = window.GT;
+
+/* ---------- Feuille de style Phase 5.1 ---------- */
+var p51style = document.createElement('style');
+p51style.textContent = [
+'.gt-parent-hub{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:10px;}',
+'.gt-child-card{background:#fff;border-radius:20px;padding:20px;text-align:center;box-shadow:0 4px 14px rgba(0,0,0,.08);cursor:pointer;transition:transform .15s;}',
+'.gt-child-card:hover{transform:translateY(-3px);}',
+'.gt-child-card .avatar{font-size:48px;}',
+'.gt-child-card .nm{font-size:20px;font-weight:800;margin-top:4px;}',
+'.gt-child-card .age{color:#888;font-size:13px;margin-bottom:10px;}',
+'.gt-child-card .mini-stats div{font-size:13px;color:#555;margin-top:4px;}',
+'.gt-hub-actions{margin-top:18px;text-align:center;}',
+'.gt-pboard{max-width:900px;margin:0 auto;}',
+'.gt-pcard{background:#fff;border-radius:18px;padding:16px 18px;margin-bottom:16px;box-shadow:0 2px 10px rgba(0,0,0,.06);}',
+'.gt-pcard h3{margin-top:0;}',
+'.gt-mission-row{display:flex;align-items:center;gap:10px;padding:6px 0;font-size:15px;}',
+'.gt-mission-row .st{font-size:18px;}',
+'.gt-bar-row{margin:8px 0;font-size:13px;}',
+'.gt-bar-track{background:#f0f0f0;border-radius:8px;height:10px;overflow:hidden;margin-top:3px;}',
+'.gt-bar-fill{background:linear-gradient(90deg,#ff8a00,#ffb800);height:100%;}',
+'.gt-skill-buckets{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;}',
+'.gt-skill-bucket{background:#faf9f7;border-radius:14px;padding:10px;text-align:center;}',
+'.gt-skill-bucket .n{font-size:22px;font-weight:800;}',
+'.gt-level-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px;font-size:14px;}',
+'.gt-childcard-header{display:flex;align-items:center;gap:12px;margin-bottom:14px;}',
+'.gt-childcard-header .av{font-size:40px;}',
+'.gt-pause-card{background:#eafaf0;border:2px solid #9be6b8;border-radius:20px;padding:26px;text-align:center;max-width:500px;margin:30px auto;}',
+'.gt-quickjournal select, .gt-quickjournal textarea{width:100%;padding:8px;border-radius:10px;border:1px solid #ddd;margin-top:6px;font-family:inherit;}',
+'@media print{ header,.backbar,.gtBtn,.btn,.iconbtn,.gt-child-select,.gt-hub-actions{display:none !important;} .screen{display:none !important;} .screen.active{display:block !important;} body{background:#fff !important;} }'
+].join('\n');
+document.head.appendChild(p51style);
+console.log('GT v51 styles loaded');
+})();
+</script>
+<script>
+(function(){
+if (!window.GT) return;
+var GT = window.GT;
+
+GT.APP_VERSION = '0.7';
+GT.CURRICULUM_VERSION = null;
+
+var __p51_curriculumLoad = GT.Curriculum.load;
+GT.Curriculum.load = function(){
+var p = __p51_curriculumLoad.call(GT.Curriculum);
+fetch('curriculum/version.json', {cache:'no-cache'}).then(function(r){ return r.ok ? r.json() : null; }).then(function(v){
+if (v && v.curriculumVersion) GT.CURRICULUM_VERSION = v.curriculumVersion;
+}).catch(function(){});
+return p;
+};
+
+/* ---------- Progression liee a l'identifiant stable de la lecon, pas a sa position ---------- */
+GT.reconcileProgressByIds = function(p){
+if (!p) return;
+if (!p.progressMeta) p.progressMeta = {};
+SUBJECTS.forEach(function(s){
+['7','9'].forEach(function(track){
+var lessons = getLessons(s.key, track) || [];
+if (!lessons.length) return;
+var ids = lessons.map(function(l,i){ return l.id || (s.key+':'+track+':'+i); });
+var progArr = ensureProgress(p, s.key, track, lessons.length);
+var metaSubj = p.progressMeta[s.key] = p.progressMeta[s.key] || {};
+var prevIds = metaSubj[track];
+if (prevIds && prevIds.length && (prevIds.length!==ids.length || prevIds.some(function(id,i){ return id!==ids[i]; }))){
+var completedIds = {};
+prevIds.forEach(function(id,i){ if (progArr[i]) completedIds[id]=true; });
+p.progress[s.key][track] = ids.map(function(id){ return !!completedIds[id]; });
+}
+metaSubj[track] = ids;
+});
+});
+saveData(DATA);
+};
+document.addEventListener('gt:curriculum-loaded', function(){
+try { DATA.profiles.forEach(function(p){ GT.reconcileProgressByIds(p); }); } catch(e){ console.warn('reconcile error', e); }
+});
+console.log('GT v51 curriculum version + progress reconciliation loaded');
+})();
+</script>
+<script>
+(function(){
+if (!window.GT) return;
+
+/* ---------- L'enfant ne choisit plus son niveau scolaire ---------- */
+var __p51_renderSubjectScreen = renderSubjectScreen;
+renderSubjectScreen = function(){
+__p51_renderSubjectScreen();
+var diag = document.getElementById('diagBox'); if (diag) diag.innerHTML='';
+var toggle = document.getElementById('trackToggle'); if (toggle) toggle.innerHTML='';
+};
+console.log('GT v51 selecteurs de niveau retires de l ecran enfant');
+})();
+</script>
+<script>
+(function(){
+if (!window.GT || !window.GT.Auth) return;
+var GT = window.GT;
+
+/* ---------- PIN obligatoire pour creer / supprimer un profil ---------- */
+var __p51_createProfileClick = createProfileClick;
+createProfileClick = function(){
+var nameEl = document.getElementById('newName');
+var pendingName = nameEl ? nameEl.value.trim() : '';
+if (!pendingName){ __p51_createProfileClick(); return; }
+GT.Auth.ensure().then(function(ok){ if (ok) __p51_createProfileClick(); });
+};
+
+var __p51_renderProfiles = renderProfiles;
+renderProfiles = function(){
+__p51_renderProfiles();
+var grid = document.getElementById('profilesGrid');
+if (!grid) return;
+Array.from(grid.querySelectorAll('.profile-card')).forEach(function(card, i){
+var p = DATA.profiles[i];
+var delBtn = card.querySelector('.del');
+if (!delBtn || !p) return;
+delBtn.onclick = function(e){
+e.stopPropagation();
+GT.Auth.ensure().then(function(ok){
+if (!ok) return;
+if (confirm('Supprimer definitivement le profil de '+p.name+' et toutes ses donnees ?')){
+DATA.profiles = DATA.profiles.filter(function(x){ return x.id!==p.id; });
+saveData(DATA);
+renderProfiles();
+}
+});
+};
+});
+};
+
+/* ---------- PIN obligatoire pour restaurer une sauvegarde ---------- */
+var __p51_importFromFile = GT.Backup.importFromFile;
+GT.Backup.importFromFile = function(file){
+GT.Auth.ensure().then(function(ok){ if (ok) __p51_importFromFile.call(GT.Backup, file); });
+};
+var __p51_exportAll = GT.Backup.exportAll;
+GT.Backup.exportAll = function(){
+__p51_exportAll.call(GT.Backup);
+try { localStorage.setItem('geniusAcademyLastBackup', new Date().toISOString()); } catch(e){}
+};
+
+/* ---------- Reinitialisation de progression (PIN + confirmation) ---------- */
+GT.resetProgress = function(pid){
+return GT.Auth.ensure().then(function(ok){
+if (!ok) return false;
+var p = DATA.profiles.find(function(x){ return x.id===pid; });
+if (!p) return false;
+if (!confirm('Reinitialiser toute la progression de '+p.name+' (lecons, competences, revisions) ? Cette action est irreversible.')) return false;
+p.progress = {};
+p.progressMeta = {};
+p.skillStats = {};
+p.history = [];
+p.stars = 0;
+p.badges = [];
+p.streak = 0;
+saveData(DATA);
+return true;
+});
+};
+console.log('GT v51 protections PIN chargees');
+})();
+</script>
+<script>
+(function(){
+if (!window.GT) return;
+var GT = window.GT;
+
+GT.SKILL_BUCKETS = [
+{max:0, emoji:'🌱', label:'Decouverte'},
+{max:2, emoji:'🌿', label:'En apprentissage'},
+{max:4, emoji:'🌳', label:'Acquis'},
+{max:5, emoji:'⭐', label:'Tres bien maitrise'}
+];
+GT.skillBucketFor = function(levelIndex){
+if (levelIndex<=0) return GT.SKILL_BUCKETS[0];
+if (levelIndex<=2) return GT.SKILL_BUCKETS[1];
+if (levelIndex<=4) return GT.SKILL_BUCKETS[2];
+return GT.SKILL_BUCKETS[3];
+};
+
+function bar(label, value, max){
+var pct = max>0 ? Math.max(2, Math.min(100, Math.round(100*value/max))) : 2;
+return '<div class="gt-bar-row"><span>'+label+'</span><div class="gt-bar-track"><div class="gt-bar-fill" style="width:'+pct+'%;"></div></div></div>';
+}
+
+/* ---------- Hub parent : deux cartes ---------- */
+GT.renderParentDashboard = function(){
+var body = document.getElementById('parentBody');
+if (!body) return;
+if (GT._parentView==='child' && GT._parentSelectedId && DATA.profiles.some(function(x){return x.id===GT._parentSelectedId;})){
+GT.renderParentChildDetail(GT._parentSelectedId);
+return;
+}
+if (GT._parentView==='settings'){ GT.renderParentSettings(); return; }
+GT._parentView = 'hub';
+var html = '<h2 style="text-align:center;">👪 ESPACE PARENT</h2>';
+html += '<div class="gt-parent-hub">';
+DATA.profiles.forEach(function(p){
+var r = GT.Report.weekly(p.id);
+var data = GT.Tele._forProfile(p.id);
+var since = new Date(); since.setHours(0,0,0,0);
+var todayTs = since.getTime();
+var doneToday = data.lessonEvents.filter(function(e){ return e.type==='complete' && e.ts>=todayTs; }).length;
+html += '<div class="gt-child-card" onclick="GT.openParentChild(\''+p.id+'\')">' +
+'<div class="avatar">'+p.avatar+'</div>' +
+'<div class="nm">'+p.name+'</div>' +
+'<div class="age">'+p.track+' ans</div>' +
+'<div class="mini-stats">' +
+'<div>📈 '+GT.fmtMin(r.activeMs)+' min actifs cette semaine</div>' +
+'<div>✅ '+doneToday+' mission(s) terminee(s) aujourd\'hui</div>' +
+'</div></div>';
+});
+html += '</div>';
+html += '<div class="gt-hub-actions"><button class="btn secondary" onclick="GT.openParentSettings()">⚙️ Parametres parent</button></div>';
+body.innerHTML = html;
+};
+
+GT.openParentChild = function(pid){
+GT._parentView = 'child';
+GT._parentSelectedId = pid;
+GT._p5SelectedProfileId = pid;
+GT.renderParentDashboard();
+};
+GT.backToParentHub = function(){
+GT._parentView = 'hub';
+GT.renderParentDashboard();
+};
+GT.openParentSettings = function(){
+GT._parentView = 'settings';
+GT.renderParentDashboard();
+};
+
+console.log('GT v51 hub parent charge');
+})();
+</script>
+<script>
+(function(){
+if (!window.GT) return;
+var GT = window.GT;
+
+function bar(label, value, max){
+var pct = max>0 ? Math.max(2, Math.min(100, Math.round(100*value/max))) : 2;
+return '<div class="gt-bar-row"><span>'+label+'</span><div class="gt-bar-track"><div class="gt-bar-fill" style="width:'+pct+'%;"></div></div></div>';
+}
+
+GT.computeFavorites = function(pid){
+var data = GT.Tele._forProfile(pid);
+var score = {};
+data.childFeedback.forEach(function(f){
+if (f.key==='adore') score[f.subjectKey] = (score[f.subjectKey]||0)+2;
+if (f.key==='bien') score[f.subjectKey] = (score[f.subjectKey]||0)+1;
+if (f.key==='difficile' || f.key==='moyen') score[f.subjectKey] = (score[f.subjectKey]||0)-1;
+});
+data.lessonEvents.forEach(function(e){ if (e.type==='complete' && e.isRedo) score[e.subjectKey] = (score[e.subjectKey]||0)+1.5; });
+var arr = Object.keys(score).map(function(k){ return {subjectKey:k, score:score[k]}; }).filter(function(x){ return x.score>0; });
+arr.sort(function(a,b){ return b.score-a.score; });
+return arr.slice(0,3);
+};
+
+/* ---------- Page parent d'un enfant ---------- */
+GT.renderParentChildDetail = function(pid){
+var body = document.getElementById('parentBody');
+var p = DATA.profiles.find(function(x){ return x.id===pid; });
+if (!p){ body.innerHTML = '<p class="gt-empty">Profil introuvable.</p>'; return; }
+var r = GT.Report.weekly(pid);
+var insights = GT.Insights.compute(pid);
+var data = GT.Tele._forProfile(pid);
+var todayStart = new Date(); todayStart.setHours(0,0,0,0);
+var todayTs = todayStart.getTime();
+
+var html = '<div class="gt-pboard">';
+html += '<button class="btn secondary" onclick="GT.backToParentHub()">⬅️ Espace parent</button>';
+html += '<div class="gt-childcard-header" style="margin-top:14px;"><span class="av">'+p.avatar+'</span><div><h2 style="margin:0;">'+p.name+'</h2><div style="color:#888;">'+p.track+' ans</div></div></div>';
+
+/* AUJOURD'HUI */
+html += '<div class="gt-pcard"><h3>🗓️ Aujourd\'hui</h3>';
+var dm = p.dailyMission;
+if (dm && dm.date===todayStr()){
+var doneCount = dm.items.filter(function(it){ return it.status==='done'; }).length;
+var totalCount = dm.items.filter(function(it){ return it.type!=='pause'; }).length;
+dm.items.filter(function(it){ return it.type!=='pause'; }).forEach(function(it){
+html += '<div class="gt-mission-row"><span class="st">'+(it.status==='done'?'✅':'⏳')+'</span> '+it.emoji+' '+it.label+'</div>';
+});
+html += '<p style="font-weight:700;margin-top:8px;">'+doneCount+' / '+totalCount+' missions terminees</p>';
+} else {
+html += '<p class="gt-empty">Le programme du jour se generera a la prochaine ouverture de session de '+p.name+'.</p>';
+}
+html += '</div>';
+
+/* CETTE SEMAINE */
+html += '<div class="gt-pcard"><h3>📅 Cette semaine</h3>';
+html += bar('Temps d\'apprentissage actif ('+GT.fmtMin(r.activeMs)+' min)', GT.fmtMin(r.activeMs), 300);
+html += bar('Jours travailles ('+r.sessionsCount+' / 7)', r.sessionsCount, 7);
+var weekCompletes = data.lessonEvents.filter(function(e){ return e.type==='complete' && e.ts>=Date.now()-7*86400000; });
+var weekRevisions = weekCompletes.filter(function(e){ return e.isReview; }).length;
+html += bar('Lecons terminees ('+weekCompletes.length+')', weekCompletes.length, 10);
+html += bar('Revisions faites ('+weekRevisions+')', weekRevisions, 5);
+html += bar('Activites orales ('+r.oralTotal+')', r.oralTotal, 8);
+html += '</div>';
+
+/* COMPETENCES */
+html += '<div class="gt-pcard"><h3>🌟 Competences</h3><div class="gt-skill-buckets">';
+var summary = (GT.Skills.summary(p)||[]);
+GT.SKILL_BUCKETS.forEach(function(b){
+var inBucket = summary.filter(function(s){ return GT.skillBucketFor(s.levelIndex)===b; });
+html += '<div class="gt-skill-bucket"><div class="n">'+b.emoji+'</div><div>'+inBucket.length+'</div><div style="font-size:12px;color:#777;">'+b.label+'</div></div>';
+});
+html += '</div>';
+if (!summary.length) html += '<p class="gt-empty">Pas encore assez de donnees.</p>';
+html += '</div>';
+
+/* NIVEAU PAR MATIERE */
+html += '<div class="gt-pcard"><h3>📚 Niveau actuel par matiere</h3><div class="gt-level-list">';
+SUBJECTS.forEach(function(s){
+html += '<div>'+s.emoji+' '+s.name+' : niveau '+getSubjectTrack(p,s.key)+' ans</div>';
+});
+html += '</div></div>';
+
+/* POINTS FORTS */
+html += '<div class="gt-pcard"><h3>👍 Points forts</h3>';
+var strengths = [];
+insights.easy.slice(0,2).forEach(function(d){ var s=subjectByKey(d.subjectKey); strengths.push(p.name+' maitrise bien : '+d.title+(s?' ('+s.name+')':'')+'.'); });
+if (r.oralTotal>=3) strengths.push('L\'expression orale en anglais est pratiquee regulierement.');
+if (r.sessionsCount>=4) strengths.push(p.name+' utilise Genius Academy regulierement cette semaine.');
+if (!strengths.length) strengths.push('Continuez a utiliser l\'application quelques jours de plus pour degager des tendances.');
+html += '<ul>'+strengths.slice(0,3).map(function(x){ return '<li>'+x+'</li>'; }).join('')+'</ul></div>';
+
+/* A CONSOLIDER */
+html += '<div class="gt-pcard"><h3>🎯 A consolider</h3>';
+var toFix = [];
+insights.difficult.slice(0,3).forEach(function(d){ var s=subjectByKey(d.subjectKey); toFix.push((s?s.name:d.subjectKey)+' - '+d.title+' beneficierait de quelques revisions.'); });
+if (!toFix.length) toFix.push('Rien de particulier a signaler cette semaine.');
+html += '<ul>'+toFix.slice(0,3).map(function(x){ return '<li>'+x+'</li>'; }).join('')+'</ul></div>';
+
+/* ACTIVITES FAVORITES / MOINS CHOISIES */
+html += '<div class="gt-pcard"><h3>❤️ Activites favorites</h3>';
+var favs = GT.computeFavorites(pid);
+if (!favs.length) html += '<p class="gt-empty">Pas encore assez de retours pour degager une preference.</p>';
+else html += '<ul>'+favs.map(function(f){ var s=subjectByKey(f.subjectKey); return '<li>'+(s?s.emoji+' '+s.name:f.subjectKey)+'</li>'; }).join('')+'</ul>';
+html += '</div>';
+html += '<div class="gt-pcard"><h3>👁️ Activites moins choisies</h3>';
+if (!insights.avoided.length) html += '<p class="gt-empty">Aucune matiere particulierement evitee.</p>';
+else html += '<ul>'+insights.avoided.map(function(d){ var s=subjectByKey(d.subjectKey); return '<li>'+(s?s.emoji+' '+s.name:d.subjectKey)+'</li>'; }).join('')+'</ul>';
+html += '</div>';
+
+/* JOURNAL RAPIDE */
+html += '<div class="gt-pcard gt-quickjournal"><h3>📝 Note rapide du jour</h3>';
+html += '<select id="gtQuickMood">';
+GT.Journal.MOODS.forEach(function(m){ html += '<option value="'+m.key+'">'+m.emoji+' '+m.label+'</option>'; });
+html += '</select>';
+html += '<textarea id="gtQuickNote" placeholder="Note libre (facultatif)..."></textarea>';
+html += '<button class="btn" style="margin-top:8px;" onclick="GT.submitQuickJournal(\''+pid+'\')">Enregistrer</button>';
+html += '</div>';
+
+/* LIENS */
+html += '<div class="gt-pcard"><h3>📂 Voir plus</h3>';
+html += '<button class="btn" onclick="GT._p5SelectedProfileId=\''+pid+'\';showScreen(\'weeklyreport\')">📅 Rapport de la semaine</button> ';
+html += '<button class="btn secondary" onclick="GT._p5SelectedProfileId=\''+pid+'\';showScreen(\'journal\')">📓 Journal complet</button> ';
+html += '<button class="btn secondary" onclick="showScreen(\'annuel\')">📚 Programme scolaire</button>';
+html += '</div>';
+
+html += '</div>';
+body.innerHTML = html;
+};
+
+console.log('GT v51 page parent enfant chargee');
+})();
+</script>
+<script>
+(function(){
+if (!window.GT || !window.GT.Journal) return;
+var GT = window.GT;
+
+/* ---------- Journal du parent simplifie (3 humeurs + note libre) ---------- */
+GT.Journal.MOODS = [
+{key:'tres_bonne', emoji:'🙂', label:'Tres bonne seance'},
+{key:'moyenne', emoji:'😐', label:'Seance moyenne'},
+{key:'difficile', emoji:'😕', label:'Seance difficile'}
+];
+
+GT.submitQuickJournal = function(pid){
+var moodEl = document.getElementById('gtQuickMood');
+var noteEl = document.getElementById('gtQuickNote');
+if (!moodEl) return;
+GT.Journal.add(pid, moodEl.value, noteEl ? noteEl.value : '');
+if (noteEl) noteEl.value = '';
+alert('Note enregistree, merci !');
+if (GT._parentView==='child') GT.renderParentDashboard();
+};
+
+console.log('GT v51 journal simplifie charge');
+})();
+</script>
+<script>
+(function(){
+if (!window.GT) return;
+var GT = window.GT;
+
+GT.renderParentSettings = function(){
+var body = document.getElementById('parentBody');
+if (!body) return;
+var lastBackup = null;
+try { lastBackup = localStorage.getItem('geniusAcademyLastBackup'); } catch(e){}
+var html = '<button class="btn secondary" onclick="GT.backToParentHub()">⬅️ Espace parent</button>';
+html += '<h2>⚙️ Parametres parent</h2>';
+
+html += '<div class="gt-pcard"><h3>💾 Sauvegarde</h3>';
+html += '<button class="btn" id="gtSetBackup">💾 Sauvegarder mes donnees</button> ';
+html += '<button class="btn secondary" id="gtSetRestore">♻️ Restaurer une sauvegarde</button>';
+html += '<input type="file" id="gtSetRestoreFile" accept=".json" style="display:none">';
+html += '<p style="font-size:13px;color:#666;">Derniere sauvegarde : '+(lastBackup ? new Date(lastBackup).toLocaleString('fr-FR') : 'jamais')+'</p>';
+html += '<p style="font-size:12px;color:#c97e00;">💡 Pensez a realiser une sauvegarde reguliere de vos donnees.</p>';
+html += '</div>';
+
+html += '<div class="gt-pcard"><h3>🔄 Reinitialiser une progression</h3>';
+html += '<select id="gtSetResetProfile">';
+DATA.profiles.forEach(function(p){ html += '<option value="'+p.id+'">'+p.avatar+' '+p.name+'</option>'; });
+html += '</select> <button class="btn secondary" id="gtSetResetBtn">Reinitialiser la progression</button>';
+html += '<p style="font-size:12px;color:#666;">Necessite le code parent et une confirmation. Action irreversible.</p>';
+html += '</div>';
+
+html += '<div class="gt-pcard"><h3>📚 Programme</h3>';
+html += '<button class="btn secondary" onclick="showScreen(\'annuel\')">📚 Consulter le programme scolaire</button>';
+html += '</div>';
+
+html += '<div class="gt-pcard"><h3>ℹ️ Versions</h3>';
+html += '<p>Genius Academy '+(GT.APP_VERSION||'-')+'</p>';
+html += '<p>Programme scolaire '+(GT.CURRICULUM_VERSION||'en cours de chargement...')+'</p>';
+html += '</div>';
+
+body.innerHTML = html;
+document.getElementById('gtSetBackup').onclick = function(){ GT.Backup.exportAll(); setTimeout(GT.renderParentSettings, 300); };
+document.getElementById('gtSetRestore').onclick = function(){ document.getElementById('gtSetRestoreFile').click(); };
+document.getElementById('gtSetRestoreFile').onchange = function(e){ if (e.target.files && e.target.files[0]) GT.Backup.importFromFile(e.target.files[0]); };
+document.getElementById('gtSetResetBtn').onclick = function(){
+var pid = document.getElementById('gtSetResetProfile').value;
+GT.resetProgress(pid).then(function(ok){ if (ok) alert('Progression reinitialisee.'); });
+};
+};
+
+/* ---------- Le tableau de bord parent remplace entierement l ancien affichage ---------- */
+renderParent = function(){ GT.renderParentDashboard(); };
+
+console.log('GT v51 parametres parent + renderParent remplace');
+})();
+</script>
+<script>
+(function(){
+if (!window.GT) return;
+var GT = window.GT;
+
+/* ---------- Programme scolaire : lecture seule, etats clairs ---------- */
+GT.renderAnnualProgram = function(){
+var scr = GT.ensureScreen('annuel');
+var html = '<div class="topbar"><button class="btn" onclick="showScreen(\'parent\')">⬅️ Retour</button></div>';
+html += '<h2>📚 Programme scolaire</h2>';
+html += '<p style="font-size:13px;color:#777;">Version '+(GT.CURRICULUM_VERSION||'-')+' — consultation seule, non modifiable depuis l\'application.</p>';
+DATA.profiles.forEach(function(p){
+html += '<h3>'+p.avatar+' '+p.name+'</h3>';
+SUBJECTS.forEach(function(s){
+var lvl = getSubjectTrack(p, s.key);
+var lessons = getLessons(s.key, lvl) || [];
+if (!lessons.length) return;
+var prog = (p.progress && p.progress[s.key] && p.progress[s.key][lvl]) || [];
+var due = GT.getDueReviews(p).filter(function(d){ return d.subjectKey===s.key; }).map(function(d){ return d.index; });
+html += '<div class="gt-pcard"><b>'+(s.emoji||'')+' '+s.name+'</b> (niveau '+lvl+' ans)';
+html += '<table style="width:100%;margin-top:6px;font-size:14px;"><thead><tr><th style="text-align:left;">Lecon</th><th>Module / Chapitre</th><th>Competences</th><th>Etat</th></tr></thead><tbody>';
+lessons.forEach(function(l, i){
+var done = !!prog[i];
+var isNext = !done && (i===0 || prog[i-1]);
+var toReview = due.indexOf(i)>=0;
+var etat = toReview ? '🔁 A reviser' : (done ? '✅ Acquis' : (isNext ? '🟡 En cours' : '⚪ A venir'));
+html += '<tr><td>'+(l.emoji||'')+' '+l.title+'</td><td>'+(l.chapter||l.module||'-')+'</td><td>'+((l.skills||[]).join(', ')||'-')+'</td><td>'+etat+'</td></tr>';
+});
+html += '</tbody></table></div>';
+});
+});
+scr.innerHTML = html;
+};
+
+console.log('GT v51 programme scolaire (lecture seule) charge');
+})();
+</script>
+<script>
+(function(){
+if (!window.GT) return;
+var GT = window.GT;
+
+function dayOfYear(){ var now=new Date(); var start=new Date(now.getFullYear(),0,0); return Math.floor((now-start)/86400000); };
+
+/* ---------- Programme du jour enrichi : "Ma mission d'aujourd'hui" ---------- */
+GT.DailyProgram.buildRich = function(profile){
+if (profile.dailyMission && profile.dailyMission.date===todayStr() && profile.dailyMission.items && profile.dailyMission.items.length){
+return profile.dailyMission.items;
+}
+var items = [];
+var due = GT.getDueReviews(profile) || [];
+due.slice(0,2).forEach(function(d){
+var lessons = getLessons(d.subjectKey, d.track);
+var lesson = lessons[d.index];
+var s = subjectByKey(d.subjectKey);
+if (!lesson || !s) return;
+items.push({type:'revision', subjectKey:d.subjectKey, track:d.track, index:d.index, emoji:s.emoji, label:'Revision : '+lesson.title+' ('+s.name+')', duration:10, status:'pending'});
+});
+var coreSubjects = ['maths','francais','lecture','sciences','histoire','geographie','informatique','arts','viepratique'];
+var picked = 0;
+coreSubjects.forEach(function(key){
+if (picked>=3) return;
+var s = subjectByKey(key);
+if (!s) return;
+var track = getSubjectTrack(profile, key);
+var lessons = getLessons(key, track);
+var progress = ensureProgress(profile, key, track, lessons.length);
+var idx = progress.findIndex(function(done){ return !done; });
+if (idx>=0){
+items.push({type:'lesson', subjectKey:key, track:track, index:idx, emoji:s.emoji, label:s.name+' : '+lessons[idx].title, duration:20, status:'pending'});
+picked++;
+}
+});
+/* Anglais oral quasi quotidien */
+var scenarios = (GT.Conversations && GT.Conversations.data && GT.Conversations.data.scenarios) || [];
+if (scenarios.length){
+var sc = scenarios[dayOfYear() % scenarios.length];
+items.push({type:'oral', subjectKey:'anglais', scenarioId:sc.id, emoji:'🎙️', label:'Anglais - Parle avec moi : '+sc.title, duration:15, status:'pending'});
+} else {
+items.push({type:'oral', subjectKey:'anglais', scenarioId:null, emoji:'🎙️', label:'Anglais - Parle avec moi', duration:15, status:'pending'});
+}
+/* Echecs, un jour sur deux */
+if (dayOfYear()%2===0){
+var trackE = getSubjectTrack(profile, 'echecs');
+var lessonsE = getLessons('echecs', trackE);
+var progE = ensureProgress(profile, 'echecs', trackE, lessonsE.length);
+var idxE = progE.findIndex(function(done){ return !done; });
+if (idxE>=0) items.push({type:'lesson', subjectKey:'echecs', track:trackE, index:idxE, emoji:'♟️', label:'Echecs : '+lessonsE[idxE].title, duration:15, status:'pending'});
+}
+/* Mission hors ecran */
+var undone = GT.LIFE_CHALLENGES.filter(function(c){ return !(profile.lifeChallenges && profile.lifeChallenges[c.id] && profile.lifeChallenges[c.id].done); });
+if (undone.length){
+var c = undone[dayOfYear()%undone.length];
+items.push({type:'offscreen', challengeId:c.id, emoji:c.emoji, label:'Mission hors ecran : '+c.title, duration:30, status:'pending'});
+} else {
+var pool = GT.Report.OFFSCREEN.default;
+items.push({type:'offscreen', challengeId:null, emoji:'🌳', label:'Mission hors ecran : '+pool[dayOfYear()%pool.length], duration:30, status:'pending'});
+}
+/* Pauses actives apres chaque bloc de 2 activites a l'ecran */
+var withPauses = [];
+var onScreenCount = 0;
+items.forEach(function(it){
+withPauses.push(it);
+if (it.type!=='pause' && it.type!=='offscreen'){
+onScreenCount++;
+if (onScreenCount%2===0) withPauses.push({type:'pause', emoji:'🌳', label:'Pause aventure : pose la tablette 10 minutes, bois de l\'eau, bouge un peu !', duration:10, status:'pending'});
+}
+});
+profile.dailyMission = {date: todayStr(), items: withPauses};
+saveData(DATA);
+return withPauses;
+};
+
+GT.DailyProgram.go = function(item){
+if (item.type==='lesson' || item.type==='revision'){
+openLesson(item.subjectKey, item.track, item.index);
+} else if (item.type==='oral'){
+if (item.scenarioId){ showScreen('convhub'); setTimeout(function(){ var lvl = getSubjectTrack(getCurrentProfile(),'anglais'); GT.Conversations.open(item.scenarioId, lvl); }, 50); }
+else { showScreen('convhub'); }
+} else if (item.type==='offscreen' || item.type==='pause'){
+GT._pendingDailyItem = item;
+showScreen('pause');
+}
+};
+
+GT.markDailyItemDone = function(matcher){
+var p = getCurrentProfile();
+if (!p || !p.dailyMission || p.dailyMission.date!==todayStr()) return;
+var item = p.dailyMission.items.find(matcher);
+if (item && item.status!=='done'){ item.status='done'; saveData(DATA); }
+};
+
+/* ---------- Marquer les lecons/revisions du jour terminees ---------- */
+var __p51_finishLesson2 = finishLesson;
+finishLesson = function(){
+var sk = LS.subjectKey, tr = LS.track, ix = LS.index;
+__p51_finishLesson2();
+GT.markDailyItemDone(function(it){ return (it.type==='lesson'||it.type==='revision') && it.subjectKey===sk && it.track===tr && it.index===ix; });
+};
+
+console.log('GT v51 programme du jour enrichi charge');
+})();
+</script>
+<script>
+(function(){
+if (!window.GT) return;
+var GT = window.GT;
+
+GT.renderMissionCard = function(){
+var p = getCurrentProfile();
+if (!p) return;
+var items = GT.DailyProgram.buildRich(p);
+var old = document.getElementById('gtDailyProgram');
+if (old) old.remove();
+var oldMission = document.getElementById('gtMissionCard');
+if (oldMission) oldMission.remove();
+var host = document.getElementById('subjectGrid');
+if (!host || !host.parentNode) return;
+var visibleItems = items.filter(function(it){ return it.type!=='pause'; });
+var doneCount = visibleItems.filter(function(it){ return it.status==='done'; }).length;
+var dots = visibleItems.map(function(it){ return it.status==='done' ? '●' : '○'; }).join(' ');
+var box = document.createElement('div');
+box.id = 'gtMissionCard';
+box.className = 'gt-pcard';
+var html = '<h3>🌟 Ma mission d\'aujourd\'hui</h3><div class="gt-today-list">';
+var num = 1;
+items.forEach(function(it){
+if (it.type==='pause') { html += '<div class="gt-mission-row" style="opacity:.7;"><span class="st">🌳</span> '+it.label+'</div>'; return; }
+html += '<div class="gt-mission-row"><span class="st">'+(it.status==='done'?'✅':num+'️⃣')+'</span> '+it.emoji+' '+it.label+' <span style="color:#999;font-size:12px;">('+it.duration+' min)</span></div>';
+num++;
+});
+html += '</div><p style="text-align:center;font-size:20px;letter-spacing:4px;">'+dots+'</p>';
+html += '<p style="text-align:center;font-weight:700;">'+doneCount+' / '+visibleItems.length+' missions terminees</p>';
+if (doneCount<visibleItems.length){
+html += '<div style="text-align:center;"><button class="btn" id="gtContinueBtn" style="font-size:18px;padding:14px 28px;">▶️ CONTINUER MON AVENTURE</button></div>';
+} else {
+html += '<p style="text-align:center;color:#2ecc71;font-weight:700;">Bravo, toutes les missions du jour sont terminees ! 🎉</p>';
+}
+box.innerHTML = html;
+host.parentNode.insertBefore(box, host);
+var exploreTitle = document.getElementById('gtExploreTitle');
+if (!exploreTitle){
+exploreTitle = document.createElement('h3');
+exploreTitle.id = 'gtExploreTitle';
+exploreTitle.textContent = '🔎 Explorer librement';
+host.parentNode.insertBefore(exploreTitle, host);
+}
+var btn = document.getElementById('gtContinueBtn');
+if (btn) btn.onclick = function(){
+var next = items.find(function(it){ return it.status!=='done'; });
+if (next) GT.DailyProgram.go(next);
+};
+};
+
+var __p51_renderHome = renderHome;
+renderHome = function(){
+__p51_renderHome();
+try { GT.renderMissionCard(); } catch(e){ console.warn('mission card error', e); }
+};
+
+/* ---------- Ecran pause / mission hors ecran ---------- */
+GT.renderPauseScreen = function(){
+var el = GT.ensureScreen('pause');
+var item = GT._pendingDailyItem || {label:'Pause', emoji:'🌳'};
+var isPause = item.type==='pause';
+var html = '<div class="gt-pause-card">';
+html += '<div style="font-size:60px;">'+(item.emoji||'🌳')+'</div>';
+html += '<h2>'+(isPause ? 'PAUSE AVENTURE' : 'MISSION HORS ECRAN')+'</h2>';
+html += '<p style="font-size:18px;">'+item.label+'</p>';
+if (isPause){
+html += '<ul style="text-align:left;display:inline-block;">' +
+'<li>Boire de l\'eau</li><li>Bouger un peu</li><li>Regarder dehors</li><li>Faire quelques mouvements</li><li>Marcher</li></ul>';
+} else {
+html += '<p style="color:#666;">Demande a un adulte de t\'aider si besoin, puis reviens ici.</p>';
+}
+html += '<div style="margin-top:16px;"><button class="btn" id="gtPauseDoneBtn">J\'ai termine, je continue ➡️</button></div>';
+html += '</div>';
+el.innerHTML = html;
+document.getElementById('gtPauseDoneBtn').onclick = function(){
+var p = getCurrentProfile();
+if (p && p.dailyMission && p.dailyMission.date===todayStr() && item){
+if (item.type==='offscreen' && item.challengeId){
+p.lifeChallenges = p.lifeChallenges || {};
+p.lifeChallenges[item.challengeId] = {done:true, date: todayStr()};
+}
+GT.markDailyItemDone(function(it){ return it===item || (it.type===item.type && it.label===item.label); });
+}
+GT._pendingDailyItem = null;
+showScreen('home');
+};
+};
+
+var __p51_showScreenPause = showScreen;
+showScreen = function(name){
+if (name==='pause') GT.renderPauseScreen();
+__p51_showScreenPause(name);
+};
+
+console.log('GT v51 accueil enfant (mission du jour) charge');
+})();
+</script>
+<script>
+(function(){
+if (!window.GT) return;
+var GT = window.GT;
+
+function weekRangeLabel(){
+var end = new Date(); var start = new Date(); start.setDate(end.getDate()-6);
+var fmt = function(d){ return d.toLocaleDateString('fr-FR'); };
+return fmt(start)+' au '+fmt(end);
+}
+
+/* ---------- Rapport de la semaine : fiche imprimable ---------- */
+GT.renderWeeklyReport = function(){
+var el = GT.ensureScreen('weeklyreport');
+if (!GT._p5SelectedProfileId && DATA.profiles.length) GT._p5SelectedProfileId = DATA.profiles[0].id;
+var pid = GT._p5SelectedProfileId;
+var p = DATA.profiles.find(function(x){ return x.id===pid; });
+var html = '<div class="topbar"><button class="btn" onclick="showScreen(\'parent\')">⬅️ Retour</button> <button class="btn secondary" onclick="window.print()">🖨️ Imprimer / PDF</button></div>';
+html += '<h2>📅 Rapport de la semaine</h2>';
+html += GT.childSelectorHtml(pid, 'GT.selectReportProfile');
+if (!p){ el.innerHTML = html + '<p class="gt-empty">Aucun profil.</p>'; return; }
+var r = GT.Report.weekly(p.id);
+var data = GT.Tele._forProfile(p.id);
+var since = Date.now()-7*86400000;
+var sessions = data.sessions.filter(function(s){ return s.start>=since; });
+var subjMs = {};
+sessions.forEach(function(s){ Object.keys(s.subjectMs||{}).forEach(function(k){ subjMs[k]=(subjMs[k]||0)+s.subjectMs[k]; }); });
+var insights = GT.Insights.compute(p.id);
+
+html += '<div class="gt-pcard">';
+html += '<p><b>Enfant :</b> '+p.avatar+' '+p.name+' ('+p.track+' ans)</p>';
+html += '<p><b>Semaine du</b> '+weekRangeLabel()+'</p>';
+html += '<p><b>Temps d\'apprentissage actif :</b> '+GT.fmtMin(r.activeMs)+' minutes sur '+r.sessionsCount+' session(s)</p>';
+html += '<p><b>Matieres pratiquees :</b> '+(r.subjectsPracticed.length ? r.subjectsPracticed.map(function(k){ var s=subjectByKey(k); return s?(s.emoji+' '+s.name):k; }).join(', ') : 'aucune cette semaine')+'</p>';
+html += '<p><b>Lecons terminees :</b> '+data.lessonEvents.filter(function(e){return e.type==='complete' && e.ts>=since;}).length+'</p>';
+html += '<p><b>Competences acquises :</b> '+(r.acquired.length ? r.acquired.join(', ') : 'rien de nouveau a signaler')+'</p>';
+html += '<p><b>Competences en cours :</b> '+(r.skillsWorked.filter(function(s){return r.acquired.indexOf(s)<0;}).join(', ') || 'aucune')+'</p>';
+html += '</div>';
+
+html += '<div class="gt-pcard"><h3>Detail par matiere</h3>';
+['anglais','lecture','maths','sciences','echecs'].forEach(function(key){
+var s = subjectByKey(key);
+var ms = subjMs[key]||0;
+html += '<p>'+(s?s.emoji+' '+s.name:key)+(key==='anglais'?' (oral)':'')+' : '+GT.fmtMin(ms)+' min'+(key==='anglais'?', '+r.oralTotal+' exercice(s) oraux':'')+'</p>';
+});
+html += '</div>';
+
+html += '<div class="gt-pcard"><h3>🌤️ Activites hors ecran</h3>';
+r.offscreen.forEach(function(o){ html += '<div class="gt-offscreen">'+o+'</div>'; });
+html += '</div>';
+
+html += '<div class="gt-pcard"><h3>👍 Points forts</h3><ul>';
+if (!insights.easy.length && r.oralTotal<2) html += '<li>Continuez sur ce bon rythme.</li>';
+insights.easy.slice(0,2).forEach(function(d){ var s=subjectByKey(d.subjectKey); html += '<li>Competence maitrisee : '+d.title+(s?' ('+s.name+')':'')+'.</li>'; });
+if (r.oralTotal>=2) html += '<li>L\'expression orale en anglais est pratiquee regulierement.</li>';
+html += '</ul></div>';
+
+html += '<div class="gt-pcard"><h3>🎯 Points a consolider</h3><ul>';
+if (!insights.difficult.length) html += '<li>Rien de particulier a signaler.</li>';
+insights.difficult.slice(0,3).forEach(function(d){ var s=subjectByKey(d.subjectKey); html += '<li>'+(s?s.name:d.subjectKey)+' : '+d.title+' semble difficile, une consolidation est recommandee.</li>'; });
+html += '</ul></div>';
+
+html += '<div class="gt-pcard"><h3>Recommandations pour la semaine prochaine</h3><ul>'+r.recommendations.map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul></div>';
+
+html += '<div class="gt-pcard"><h3>👪 3 activites a faire en famille</h3>';
+r.offscreen.slice(0,3).forEach(function(o){ html += '<div class="gt-offscreen">'+o+'</div>'; });
+html += '</div>';
+
+if (r.journal.length){
+html += '<div class="gt-pcard"><h3>Notes du parent</h3>';
+r.journal.forEach(function(j){
+var m = GT.Journal.MOODS.find(function(x){return x.key===j.mood;});
+html += '<div class="gt-journal-entry"><b>'+new Date(j.ts).toLocaleDateString('fr-FR')+' — '+(m?m.emoji+' '+m.label:j.mood)+'</b>'+(j.note?('<br>'+j.note):'')+'</div>';
+});
+html += '</div>';
+}
+
+el.innerHTML = html;
+};
+
+console.log('GT v51 rapport hebdomadaire (fiche imprimable) charge');
+})();
+</script>
+<script>
+(function(){
+if (!window.GT || !window.GT.Conversations) return;
+var GT = window.GT;
+var __p51_convFinish = GT.Conversations.finish;
+GT.Conversations.finish = function(){
+__p51_convFinish.call(GT.Conversations);
+GT.markDailyItemDone(function(it){ return it.type==='oral' && it.status!=='done'; });
+};
+console.log('GT v51 hook conversation terminee -> mission du jour');
+})();
+</script>
 </body></html>
