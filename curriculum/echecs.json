@@ -1,300 +1,1512 @@
 {
-  "subject": "echecs",
-  "name": "Échecs",
-  "niveaux": {
-    "7": [
-      {
-        "title": "Le plateau et les pions",
-        "emoji": "♟️",
-        "badge": "⬛",
-        "cours": [
-          "L'échiquier a 64 cases, claires et foncées, alternées.",
-          "Chaque joueur commence avec 16 pièces : 8 pions, 2 tours, 2 cavaliers, 2 fous, 1 dame, 1 roi.",
-          "Le pion avance tout droit d'une case (ou deux au premier coup), et capture en diagonale."
-        ],
-        "example": "Au premier coup, un pion peut avancer de 1 ou 2 cases.",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "Combien de cases y a-t-il sur l'échiquier ?",
-            "choices": [
-              "32",
-              "64",
-              "100"
-            ],
-            "answer": 1,
-            "exp": "Il y a 64 cases."
-          },
-          {
-            "type": "qcm",
-            "q": "Combien de pions chaque joueur a-t-il au départ ?",
-            "choices": [
-              "6",
-              "8",
-              "10"
-            ],
-            "answer": 1,
-            "exp": "Chaque joueur a 8 pions."
-          },
-          {
-            "type": "vf",
-            "q": "Le pion peut avancer de 2 cases à son premier coup.",
-            "answer": true,
-            "exp": "Oui, exact."
-          }
-        ],
-        "id": "echecs-7-0",
-        "module": "Programme 7 ans - Échecs",
-        "chapter": "Le plateau et les pions",
-        "skills": [
-          "Strategie",
-          "Logique",
-          "Concentration"
-        ],
-        "difficulty": 1,
-        "duration": 15
-      },
-      {
-        "title": "Comment se déplacent les pièces",
-        "emoji": "♞",
-        "badge": "♜",
-        "cours": [
-          "La tour se déplace en ligne droite, horizontalement ou verticalement.",
-          "Le fou se déplace en diagonale, aussi loin qu'il veut.",
-          "Le cavalier se déplace en forme de \"L\", et peut sauter par-dessus les autres pièces."
-        ],
-        "example": "Le cavalier est la seule pièce qui peut sauter par-dessus les autres.",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "Comment se déplace la tour ?",
-            "choices": [
-              "en diagonale",
-              "en ligne droite",
-              "en forme de L"
-            ],
-            "answer": 1,
-            "exp": "La tour se déplace en ligne droite."
-          },
-          {
-            "type": "qcm",
-            "q": "Quelle pièce peut sauter par-dessus les autres ?",
-            "choices": [
-              "le fou",
-              "la tour",
-              "le cavalier"
-            ],
-            "answer": 2,
-            "exp": "Le cavalier peut sauter par-dessus les autres pièces."
-          },
-          {
-            "type": "vf",
-            "q": "Le fou se déplace en diagonale.",
-            "answer": true,
-            "exp": "Oui, exact."
-          }
-        ],
-        "id": "echecs-7-1",
-        "module": "Programme 7 ans - Échecs",
-        "chapter": "Comment se déplacent les pièces",
-        "skills": [
-          "Strategie",
-          "Logique",
-          "Concentration"
-        ],
-        "difficulty": 2,
-        "duration": 15
-      },
-      {
-        "title": "Le roi est en échec !",
-        "emoji": "👑",
-        "badge": "🛡️",
-        "cours": [
-          "Le roi est \"en échec\" quand il est menacé par une pièce adverse.",
-          "On doit alors protéger le roi : le déplacer, bloquer, ou capturer la pièce qui menace.",
-          "Si le roi ne peut pas échapper à l'échec, c'est échec et mat : la partie est perdue."
-        ],
-        "example": "Si le roi est menacé et ne peut pas se sauver, c'est échec et mat.",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "Que veut dire \"le roi est en échec\" ?",
-            "choices": [
-              "il est menacé",
-              "il a gagné",
-              "il ne peut plus bouger"
-            ],
-            "answer": 0,
-            "exp": "Le roi est menacé par une pièce adverse."
-          },
-          {
-            "type": "vf",
-            "q": "Échec et mat signifie que la partie est perdue pour le roi menacé.",
-            "answer": true,
-            "exp": "Oui, exact."
-          },
-          {
-            "type": "text",
-            "q": "Comment appelle-t-on la fin de partie où le roi ne peut plus échapper ?",
-            "answer": "échec et mat",
-            "exp": "Échec et mat."
-          }
-        ],
-        "id": "echecs-7-2",
-        "module": "Programme 7 ans - Échecs",
-        "chapter": "Le roi est en échec !",
-        "skills": [
-          "Strategie",
-          "Logique",
-          "Concentration"
-        ],
-        "difficulty": 3,
-        "duration": 15
-      }
+ "subject": "echecs",
+ "name": "Échecs",
+ "niveaux": {
+  "7": [
+   {
+    "id": "echecs-7-0",
+    "title": "L'échiquier et ses cases",
+    "emoji": "♟️",
+    "badge": "🏁",
+    "module": "Programme 7 ans - Échecs",
+    "chapter": "L'échiquier et ses coordonnées",
+    "prerequisites": [],
+    "skills": [
+     "Logique",
+     "Concentration",
+     "Reperage spatial"
     ],
-    "9": [
-      {
-        "title": "Les ouvertures simples",
-        "emoji": "♟️",
-        "badge": "📖",
-        "cours": [
-          "L'ouverture, ce sont les premiers coups d'une partie d'échecs.",
-          "Il est conseillé de contrôler le centre de l'échiquier dès le début.",
-          "Il faut aussi développer ses pièces (cavaliers, fous) avant d'attaquer."
-        ],
-        "example": "Avancer le pion central (e4 ou d4) est une ouverture classique et solide.",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "Que faut-il contrôler dès le début de la partie ?",
-            "choices": [
-              "le centre de l'échiquier",
-              "les coins",
-              "rien de particulier"
-            ],
-            "answer": 0,
-            "exp": "Il faut contrôler le centre."
-          },
-          {
-            "type": "qcm",
-            "q": "Que faut-il faire avant d'attaquer ?",
-            "choices": [
-              "développer ses pièces",
-              "avancer la dame seule",
-              "rien"
-            ],
-            "answer": 0,
-            "exp": "Il faut développer ses pièces."
-          },
-          {
-            "type": "vf",
-            "q": "Il est utile de contrôler le centre de l'échiquier au début.",
-            "answer": true,
-            "exp": "Oui, exact."
-          }
-        ],
-        "id": "echecs-9-0",
-        "module": "Programme 9 ans - Échecs",
-        "chapter": "Les ouvertures simples",
-        "skills": [
-          "Strategie",
-          "Logique",
-          "Concentration"
-        ],
-        "difficulty": 1,
-        "duration": 15
-      },
-      {
-        "title": "Les tactiques de base",
-        "emoji": "🎯",
-        "badge": "⚔️",
-        "cours": [
-          "La fourchette : une pièce attaque deux pièces adverses en même temps.",
-          "Le clouage : une pièce adverse ne peut pas bouger sans exposer une pièce plus importante.",
-          "Ces tactiques permettent de gagner du matériel sur l'adversaire."
-        ],
-        "example": "Un cavalier peut faire une fourchette en attaquant la tour et le roi en même temps.",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "Qu'est-ce qu'une fourchette ?",
-            "choices": [
-              "attaquer deux pièces en même temps",
-              "protéger le roi",
-              "avancer un pion"
-            ],
-            "answer": 0,
-            "exp": "C'est attaquer deux pièces en même temps."
-          },
-          {
-            "type": "qcm",
-            "q": "Qu'est-ce que le clouage ?",
-            "choices": [
-              "une pièce ne peut pas bouger sans risque",
-              "un pion qui avance",
-              "le roque"
-            ],
-            "answer": 0,
-            "exp": "Une pièce clouée ne peut pas bouger sans exposer une pièce importante."
-          },
-          {
-            "type": "vf",
-            "q": "La fourchette permet parfois de gagner une pièce adverse.",
-            "answer": true,
-            "exp": "Oui, exact."
-          }
-        ],
-        "id": "echecs-9-1",
-        "module": "Programme 9 ans - Échecs",
-        "chapter": "Les tactiques de base",
-        "skills": [
-          "Strategie",
-          "Logique",
-          "Concentration"
-        ],
-        "difficulty": 2,
-        "duration": 15
-      },
-      {
-        "title": "Faire mat : les échecs et mats simples",
-        "emoji": "🏆",
-        "badge": "👑",
-        "cours": [
-          "Le mat du couloir se produit quand le roi est bloqué sur sa dernière rangée.",
-          "La dame et la tour sont de puissantes pièces pour donner échec et mat.",
-          "Il faut toujours vérifier que le roi adverse n'a aucune case pour s'échapper."
-        ],
-        "example": "Avec une tour, on peut acculer le roi adverse sur le bord de l'échiquier pour le mater.",
-        "exercises": [
-          {
-            "type": "qcm",
-            "q": "Quelles pièces sont très utiles pour mater ?",
-            "choices": [
-              "la dame et la tour",
-              "les pions seuls",
-              "le fou seul"
-            ],
-            "answer": 0,
-            "exp": "La dame et la tour sont très puissantes pour mater."
-          },
-          {
-            "type": "vf",
-            "q": "Avant de dire échec et mat, il faut vérifier que le roi n'a aucune case libre.",
-            "answer": true,
-            "exp": "Oui, exact."
-          }
-        ],
-        "id": "echecs-9-2",
-        "module": "Programme 9 ans - Échecs",
-        "chapter": "Faire mat : les échecs et mats simples",
-        "skills": [
-          "Strategie",
-          "Logique",
-          "Concentration"
-        ],
-        "difficulty": 3,
-        "duration": 15
-      }
-    ]
-  }
-          }
+    "difficulty": 1,
+    "duration": 12,
+    "objectif": "Savoir reconnaitre l'échiquier, ses 64 cases et nommer une case avec une lettre et un chiffre.",
+    "intro": "Avant de jouer, il faut connaitre son terrain de jeu : l'échiquier !",
+    "cours": [
+     "L'échiquier a 64 cases : 8 colonnes et 8 lignes.",
+     "Les colonnes sont nommées avec des lettres, de a à h.",
+     "Les lignes sont nommées avec des chiffres, de 1 à 8.",
+     "Chaque case a une adresse unique, par exemple 'e4', pour qu'on puisse toujours savoir où se trouve une pièce."
+    ],
+    "example": "La case tout en bas à droite (vue des Blancs) s'appelle h1. La case tout en haut à gauche s'appelle a8.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Combien de cases y a-t-il sur un échiquier ?",
+      "choices": [
+       "36",
+       "64",
+       "100"
+      ],
+      "answer": 1,
+      "exp": "L'échiquier a 8x8 = 64 cases."
+     },
+     {
+      "type": "qcm",
+      "q": "Comment sont nommées les colonnes ?",
+      "choices": [
+       "Avec des chiffres",
+       "Avec des lettres",
+       "Avec des couleurs"
+      ],
+      "answer": 1,
+      "exp": "Les colonnes vont de a à h."
+     },
+     {
+      "type": "vf",
+      "q": "Les lignes de l'échiquier sont numérotées de 1 à 8.",
+      "answer": true,
+      "exp": "Exact, de 1 (en bas pour les Blancs) à 8."
+     },
+     {
+      "type": "text",
+      "q": "Quelle lettre correspond à la première colonne, à gauche des Blancs ?",
+      "answer": "a",
+      "exp": "La première colonne s'appelle 'a'."
+     },
+     {
+      "type": "qcm",
+      "q": "Une case comme 'e4' combine :",
+      "choices": [
+       "deux lettres",
+       "une lettre et un chiffre",
+       "deux chiffres"
+      ],
+      "answer": 1,
+      "exp": "Une lettre (colonne) suivie d'un chiffre (ligne)."
+     }
+    ],
+    "activity": "Sur un échiquier réel ou dessiné, pointe du doigt les cases a1, h1, a8 et h8 (les 4 coins).",
+    "practice": "Dessine un échiquier de 8x8 cases sur une feuille et écris les lettres et chiffres autour.",
+    "summary": "L'échiquier compte 64 cases repérées par une lettre (colonne) et un chiffre (ligne).",
+    "metacognition": "Arrives-tu à retrouver une case si je te dis son nom, par exemple 'd4' ?"
+   },
+   {
+    "id": "echecs-7-1",
+    "title": "Le roi",
+    "emoji": "♔",
+    "badge": "♔",
+    "module": "Programme 7 ans - Échecs",
+    "chapter": "Le déplacement du roi",
+    "prerequisites": [
+     "echecs-7-0"
+    ],
+    "skills": [
+     "Logique",
+     "Concentration"
+    ],
+    "difficulty": 1,
+    "duration": 12,
+    "objectif": "Connaitre le déplacement du roi et comprendre pourquoi il est la pièce la plus précieuse.",
+    "intro": "Le roi est le personnage le plus important : s'il est pris, la partie est perdue !",
+    "cours": [
+     "Le roi se déplace d'une seule case, dans toutes les directions (horizontale, verticale, diagonale).",
+     "Le roi ne peut jamais se déplacer sur une case attaquée par une pièce adverse.",
+     "Il faut toujours protéger son roi."
+    ],
+    "example": "Si le roi est en e1, il peut aller en d1, d2, e2, f2 ou f1 (une case autour de lui), s'il n'y a pas de danger.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "De combien de cases le roi peut-il se déplacer à chaque coup ?",
+      "choices": [
+       "Une seule",
+       "Deux",
+       "Autant qu'il veut"
+      ],
+      "answer": 0,
+      "exp": "Le roi avance case par case."
+     },
+     {
+      "type": "qcm",
+      "q": "Dans quelles directions le roi peut-il se déplacer ?",
+      "choices": [
+       "Seulement en ligne droite",
+       "Seulement en diagonale",
+       "Dans toutes les directions"
+      ],
+      "answer": 2,
+      "exp": "Le roi va dans les 8 directions autour de lui."
+     },
+     {
+      "type": "vf",
+      "q": "Le roi peut se déplacer sur une case attaquée par l'adversaire.",
+      "answer": false,
+      "exp": "Non, ce serait interdit : le roi serait en danger."
+     },
+     {
+      "type": "qcm",
+      "q": "Pourquoi le roi est-il si important ?",
+      "choices": [
+       "Il est le plus rapide",
+       "S'il est pris, la partie est perdue",
+       "Il vaut le plus de points"
+      ],
+      "answer": 1,
+      "exp": "Perdre son roi signifie perdre la partie."
+     },
+     {
+      "type": "vf",
+      "q": "Le roi peut se déplacer de trois cases en ligne droite.",
+      "answer": false,
+      "exp": "Non, seulement une case à la fois."
+     }
+    ],
+    "activity": "Place un roi au centre de l'échiquier et montre toutes les cases où il pourrait aller.",
+    "practice": "Avec un adulte, joue à 'protéger le roi' : déplace uniquement ton roi sans jamais le mettre en danger pendant 5 coups.",
+    "summary": "Le roi avance d'une case dans toutes les directions et doit toujours être protégé.",
+    "metacognition": "Qu'est-ce qui pourrait arriver si tu oublies de protéger ton roi ?"
+   },
+   {
+    "id": "echecs-7-2",
+    "title": "La tour",
+    "emoji": "♖",
+    "badge": "♖",
+    "module": "Programme 7 ans - Échecs",
+    "chapter": "Le déplacement de la tour",
+    "prerequisites": [
+     "echecs-7-0"
+    ],
+    "skills": [
+     "Logique",
+     "Reperage spatial"
+    ],
+    "difficulty": 1,
+    "duration": 12,
+    "objectif": "Connaitre le déplacement de la tour.",
+    "intro": "La tour ressemble à un château fort, elle avance en ligne droite très loin !",
+    "cours": [
+     "La tour se déplace en ligne droite : horizontalement ou verticalement.",
+     "Elle peut avancer autant de cases qu'elle veut, tant que rien ne bloque son chemin.",
+     "La tour ne peut pas sauter par-dessus une autre pièce."
+    ],
+    "example": "Une tour en a1 peut aller jusqu'en a8 (toute la colonne) ou jusqu'en h1 (toute la ligne), si rien ne la bloque.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Comment se déplace la tour ?",
+      "choices": [
+       "En diagonale",
+       "En ligne droite (colonne ou ligne)",
+       "En forme de L"
+      ],
+      "answer": 1,
+      "exp": "La tour va tout droit, horizontalement ou verticalement."
+     },
+     {
+      "type": "vf",
+      "q": "La tour peut sauter par-dessus une autre pièce.",
+      "answer": false,
+      "exp": "Non, elle doit s'arrêter avant l'obstacle."
+     },
+     {
+      "type": "qcm",
+      "q": "Une tour en a1 peut-elle aller directement en h8 ?",
+      "choices": [
+       "Oui, toujours",
+       "Non, ce serait une diagonale",
+       "Oui si l'échiquier est vide"
+      ],
+      "answer": 1,
+      "exp": "a1 à h8 est une diagonale : la tour ne peut pas la suivre."
+     },
+     {
+      "type": "vf",
+      "q": "La tour peut avancer autant de cases qu'elle veut si rien ne la bloque.",
+      "answer": true,
+      "exp": "Exact, tant que le chemin est libre."
+     },
+     {
+      "type": "text",
+      "q": "En combien de directions différentes la tour peut-elle se déplacer (haut/bas/gauche/droite) ?",
+      "answer": "4",
+      "exp": "La tour se déplace dans 4 directions : haut, bas, gauche, droite."
+     }
+    ],
+    "activity": "Place une tour en d4 et trouve toutes les cases qu'elle peut atteindre sur un échiquier vide.",
+    "practice": "Dessine une croix sur une feuille pour représenter tous les déplacements possibles d'une tour.",
+    "summary": "La tour se déplace en ligne droite, aussi loin qu'elle veut, sans sauter par-dessus les autres pièces.",
+    "metacognition": "Peux-tu expliquer à quelqu'un comment la tour se déplace, sans regarder ton cours ?"
+   },
+   {
+    "id": "echecs-7-3",
+    "title": "Le fou",
+    "emoji": "♗",
+    "badge": "♗",
+    "module": "Programme 7 ans - Échecs",
+    "chapter": "Le déplacement du fou",
+    "prerequisites": [
+     "echecs-7-0"
+    ],
+    "skills": [
+     "Logique",
+     "Reperage spatial"
+    ],
+    "difficulty": 2,
+    "duration": 12,
+    "objectif": "Connaitre le déplacement du fou.",
+    "intro": "Le fou aime les diagonales, il glisse d'un coin à l'autre de l'échiquier !",
+    "cours": [
+     "Le fou se déplace uniquement en diagonale.",
+     "Il peut avancer autant de cases qu'il veut sur cette diagonale, si rien ne le bloque.",
+     "Un fou reste toujours sur des cases de la même couleur (soit toujours claires, soit toujours foncées)."
+    ],
+    "example": "Un fou en c1 peut aller en a3, en h6, ou en b2 par exemple, en suivant les diagonales.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Comment se déplace le fou ?",
+      "choices": [
+       "En ligne droite",
+       "En diagonale",
+       "En forme de L"
+      ],
+      "answer": 1,
+      "exp": "Le fou se déplace uniquement en diagonale."
+     },
+     {
+      "type": "vf",
+      "q": "Un fou peut changer de couleur de case pendant la partie.",
+      "answer": false,
+      "exp": "Non, un fou reste toujours sur la même couleur de cases."
+     },
+     {
+      "type": "qcm",
+      "q": "Le fou peut-il se déplacer horizontalement ?",
+      "choices": [
+       "Oui",
+       "Non",
+       "Seulement au début"
+      ],
+      "answer": 1,
+      "exp": "Le fou ne se déplace jamais horizontalement ni verticalement."
+     },
+     {
+      "type": "vf",
+      "q": "Le fou peut sauter par-dessus une pièce qui le bloque.",
+      "answer": false,
+      "exp": "Non, il doit s'arrêter avant l'obstacle."
+     },
+     {
+      "type": "qcm",
+      "q": "Combien de fous chaque joueur a-t-il au départ ?",
+      "choices": [
+       "1",
+       "2",
+       "3"
+      ],
+      "answer": 1,
+      "exp": "Chaque joueur commence avec 2 fous."
+     }
+    ],
+    "activity": "Place un fou en f1 et trace avec ton doigt toutes les diagonales qu'il pourrait suivre.",
+    "practice": "Colorie les cases claires et foncées d'un petit échiquier dessiné pour bien voir les diagonales.",
+    "summary": "Le fou se déplace uniquement en diagonale, aussi loin qu'il veut, en restant sur des cases de la même couleur.",
+    "metacognition": "Quelle différence fais-tu maintenant entre le déplacement de la tour et celui du fou ?"
+   },
+   {
+    "id": "echecs-7-4",
+    "title": "La dame",
+    "emoji": "♕",
+    "badge": "♕",
+    "module": "Programme 7 ans - Échecs",
+    "chapter": "Le déplacement de la dame",
+    "prerequisites": [
+     "echecs-7-2",
+     "echecs-7-3"
+    ],
+    "skills": [
+     "Logique",
+     "Reperage spatial"
+    ],
+    "difficulty": 2,
+    "duration": 12,
+    "objectif": "Connaitre le déplacement de la dame, la pièce la plus puissante.",
+    "intro": "La dame est la pièce la plus forte : elle combine les pouvoirs de la tour et du fou !",
+    "cours": [
+     "La dame se déplace en ligne droite (comme la tour) et en diagonale (comme le fou).",
+     "Elle peut avancer autant de cases qu'elle veut dans toutes les directions.",
+     "C'est la pièce la plus puissante du jeu, il faut bien la protéger."
+    ],
+    "example": "Une dame en d1 peut se déplacer comme une tour (colonne d, ligne 1) et comme un fou (diagonales), tout en un seul coup possible.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "La dame se déplace comme la combinaison de :",
+      "choices": [
+       "la tour et le fou",
+       "le cavalier et le roi",
+       "la tour et le cavalier"
+      ],
+      "answer": 0,
+      "exp": "La dame réunit les pouvoirs de la tour et du fou."
+     },
+     {
+      "type": "vf",
+      "q": "La dame est la pièce la plus puissante de l'échiquier.",
+      "answer": true,
+      "exp": "Exact, car elle peut aller presque partout."
+     },
+     {
+      "type": "qcm",
+      "q": "Combien de dames chaque joueur a-t-il au départ ?",
+      "choices": [
+       "1",
+       "2",
+       "4"
+      ],
+      "answer": 0,
+      "exp": "Chaque joueur commence avec une seule dame."
+     },
+     {
+      "type": "vf",
+      "q": "La dame peut se déplacer en forme de L.",
+      "answer": false,
+      "exp": "Non, c'est le cavalier qui se déplace en L."
+     },
+     {
+      "type": "qcm",
+      "q": "La dame peut-elle se déplacer horizontalement ?",
+      "choices": [
+       "Oui",
+       "Non"
+      ],
+      "answer": 0,
+      "exp": "Oui, comme une tour, elle peut aller horizontalement, verticalement et en diagonale."
+     }
+    ],
+    "activity": "Place la dame au centre de l'échiquier (d4 ou d5) et compte le nombre de cases qu'elle contrôle.",
+    "practice": "Compare sur un dessin les cases atteignables par une tour, un fou et une dame placés au même endroit.",
+    "summary": "La dame combine les déplacements de la tour et du fou : c'est la pièce la plus puissante.",
+    "metacognition": "Pourquoi penses-tu qu'il faut faire très attention avant de déplacer sa dame ?"
+   },
+   {
+    "id": "echecs-7-5",
+    "title": "Le cavalier",
+    "emoji": "♘",
+    "badge": "♘",
+    "module": "Programme 7 ans - Échecs",
+    "chapter": "Le déplacement du cavalier",
+    "prerequisites": [
+     "echecs-7-0"
+    ],
+    "skills": [
+     "Logique",
+     "Reperage spatial",
+     "Concentration"
+    ],
+    "difficulty": 2,
+    "duration": 14,
+    "objectif": "Connaitre le déplacement particulier du cavalier, en forme de L.",
+    "intro": "Le cavalier est une pièce spéciale : c'est le seul à pouvoir sauter par-dessus les autres pièces !",
+    "cours": [
+     "Le cavalier se déplace en forme de 'L' : deux cases dans une direction, puis une case perpendiculaire.",
+     "C'est la seule pièce qui peut sauter par-dessus les autres pièces.",
+     "Le cavalier change toujours de couleur de case à chaque déplacement."
+    ],
+    "example": "Un cavalier en g1 peut aller en f3, en h3 ou en e2, en suivant la forme du L.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Quelle forme fait le déplacement du cavalier ?",
+      "choices": [
+       "Un L",
+       "Une croix",
+       "Une diagonale"
+      ],
+      "answer": 0,
+      "exp": "Le cavalier se déplace en forme de L : 2 cases puis 1 case perpendiculaire."
+     },
+     {
+      "type": "vf",
+      "q": "Le cavalier peut sauter par-dessus les autres pièces.",
+      "answer": true,
+      "exp": "Exact, c'est la seule pièce qui peut le faire."
+     },
+     {
+      "type": "qcm",
+      "q": "Le cavalier change-t-il de couleur de case à chaque coup ?",
+      "choices": [
+       "Oui, toujours",
+       "Non, jamais",
+       "Seulement parfois"
+      ],
+      "answer": 0,
+      "exp": "À chaque déplacement en L, le cavalier change de couleur de case."
+     },
+     {
+      "type": "vf",
+      "q": "Le cavalier se déplace en ligne droite comme la tour.",
+      "answer": false,
+      "exp": "Non, uniquement en forme de L."
+     },
+     {
+      "type": "qcm",
+      "q": "Combien de cavaliers chaque joueur possède-t-il au départ ?",
+      "choices": [
+       "1",
+       "2",
+       "3"
+      ],
+      "answer": 1,
+      "exp": "Chaque joueur commence avec 2 cavaliers."
+     }
+    ],
+    "activity": "Place un cavalier en b1 et trouve, avec ton doigt, toutes les cases qu'il peut atteindre en un coup.",
+    "practice": "Sur une feuille quadrillée, dessine un cavalier et trace toutes ses destinations possibles en forme de L.",
+    "summary": "Le cavalier se déplace en forme de L et est la seule pièce capable de sauter par-dessus les autres.",
+    "metacognition": "Qu'est-ce qui rend le déplacement du cavalier différent de toutes les autres pièces ?"
+   },
+   {
+    "id": "echecs-7-6",
+    "title": "Le pion",
+    "emoji": "♙",
+    "badge": "♙",
+    "module": "Programme 7 ans - Échecs",
+    "chapter": "Le déplacement et la capture du pion",
+    "prerequisites": [
+     "echecs-7-0"
+    ],
+    "skills": [
+     "Logique",
+     "Reperage spatial"
+    ],
+    "difficulty": 2,
+    "duration": 14,
+    "objectif": "Connaitre le déplacement et la capture du pion.",
+    "intro": "Le pion avance tout droit, mais capture en diagonale : c'est une règle à bien retenir !",
+    "cours": [
+     "Le pion avance d'une seule case vers l'avant.",
+     "Depuis sa case de départ, il peut avancer de deux cases.",
+     "Le pion capture une pièce adverse uniquement en diagonale, jamais tout droit.",
+     "Le pion ne peut jamais reculer."
+    ],
+    "example": "Un pion blanc en e2 peut avancer en e3 ou e4 (son premier coup). Il capture une pièce en d3 ou f3, jamais en e3.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Comment le pion avance-t-il normalement ?",
+      "choices": [
+       "En diagonale",
+       "Tout droit vers l'avant",
+       "Vers l'arrière"
+      ],
+      "answer": 1,
+      "exp": "Le pion avance tout droit, une case à la fois."
+     },
+     {
+      "type": "vf",
+      "q": "Le pion peut avancer de deux cases uniquement à son premier déplacement.",
+      "answer": true,
+      "exp": "Exact, ensuite il n'avance plus que d'une case."
+     },
+     {
+      "type": "qcm",
+      "q": "Comment le pion capture-t-il une pièce adverse ?",
+      "choices": [
+       "Tout droit",
+       "En diagonale",
+       "En forme de L"
+      ],
+      "answer": 1,
+      "exp": "Le pion capture uniquement en diagonale, jamais tout droit."
+     },
+     {
+      "type": "vf",
+      "q": "Le pion peut reculer s'il est en danger.",
+      "answer": false,
+      "exp": "Non, le pion ne recule jamais."
+     },
+     {
+      "type": "text",
+      "q": "De combien de cases un pion peut-il avancer lors de son tout premier coup ? (chiffre)",
+      "answer": "2",
+      "exp": "Le pion peut avancer d'une ou deux cases à son premier coup."
+     }
+    ],
+    "activity": "Place un pion blanc en e2 et montre où il peut se déplacer et où il pourrait capturer une pièce adverse.",
+    "practice": "Dessine un pion et deux pièces adverses en diagonale devant lui : entoure celles qu'il peut capturer.",
+    "summary": "Le pion avance tout droit (1 ou 2 cases au départ) mais capture uniquement en diagonale.",
+    "metacognition": "Pourquoi le pion est-il une pièce parfois piégeante quand on débute ?"
+   },
+   {
+    "id": "echecs-7-7",
+    "title": "Le roi est en échec",
+    "emoji": "⚠️",
+    "badge": "⚠️",
+    "module": "Programme 7 ans - Échecs",
+    "chapter": "La notion d'échec",
+    "prerequisites": [
+     "echecs-7-1",
+     "echecs-7-2",
+     "echecs-7-3",
+     "echecs-7-4",
+     "echecs-7-5",
+     "echecs-7-6"
+    ],
+    "skills": [
+     "Logique",
+     "Concentration",
+     "Esprit critique"
+    ],
+    "difficulty": 3,
+    "duration": 15,
+    "objectif": "Comprendre ce qu'est un échec et savoir réagir.",
+    "intro": "Quand le roi est menacé, on dit qu'il est 'en échec' : il faut réagir tout de suite !",
+    "cours": [
+     "Le roi est 'en échec' quand une pièce adverse pourrait le capturer au coup suivant.",
+     "Quand on est en échec, on doit obligatoirement protéger son roi.",
+     "Il y a 3 façons de sortir d'un échec : déplacer le roi, bloquer l'attaque avec une autre pièce, ou capturer la pièce qui attaque.",
+     "On ne peut jamais laisser son roi en échec à la fin de son tour."
+    ],
+    "example": "Si une tour adverse voit ton roi sur la même colonne sans obstacle, ton roi est en échec : tu dois réagir.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Que signifie 'le roi est en échec' ?",
+      "choices": [
+       "Le roi a gagné",
+       "Le roi pourrait être capturé au prochain coup",
+       "Le roi ne peut plus jouer"
+      ],
+      "answer": 1,
+      "exp": "Un échec signifie une menace directe sur le roi."
+     },
+     {
+      "type": "qcm",
+      "q": "Que doit-on faire si son roi est en échec ?",
+      "choices": [
+       "Ignorer et jouer ailleurs",
+       "Protéger obligatoirement le roi",
+       "Abandonner la partie"
+      ],
+      "answer": 1,
+      "exp": "Il faut réagir immédiatement pour sortir de l'échec."
+     },
+     {
+      "type": "qcm",
+      "q": "Quelle solution NE permet PAS de sortir d'un échec ?",
+      "choices": [
+       "Déplacer le roi",
+       "Capturer la pièce qui attaque",
+       "Ignorer et avancer un pion ailleurs"
+      ],
+      "answer": 2,
+      "exp": "Il faut absolument traiter l'échec, on ne peut pas jouer ailleurs."
+     },
+     {
+      "type": "vf",
+      "q": "On peut terminer son tour en laissant son propre roi en échec.",
+      "answer": false,
+      "exp": "Non, c'est interdit par les règles."
+     },
+     {
+      "type": "text",
+      "q": "Combien y a-t-il de façons différentes de sortir d'un échec ? (chiffre)",
+      "answer": "3",
+      "exp": "Déplacer le roi, bloquer, ou capturer l'attaquant."
+     }
+    ],
+    "activity": "Place une dame adverse qui menace ton roi et trouve les différentes façons de sortir de l'échec.",
+    "practice": "Avec un adulte, mets volontairement ton roi en échec sur l'échiquier et trouve à voix haute comment réagir.",
+    "summary": "Le roi est en échec quand il est menacé ; il faut alors le protéger en déplaçant, bloquant ou capturant.",
+    "metacognition": "Quelle méthode préfères-tu pour sortir d'un échec : déplacer, bloquer ou capturer ? Pourquoi ?"
+   },
+   {
+    "id": "echecs-7-8",
+    "title": "Échec et mat",
+    "emoji": "🏆",
+    "badge": "👑",
+    "module": "Programme 7 ans - Échecs",
+    "chapter": "La notion d'échec et mat",
+    "prerequisites": [
+     "echecs-7-7"
+    ],
+    "skills": [
+     "Logique",
+     "Esprit critique",
+     "Concentration"
+    ],
+    "difficulty": 3,
+    "duration": 15,
+    "objectif": "Comprendre ce qu'est l'échec et mat, qui termine la partie.",
+    "intro": "L'échec et mat, c'est le but final du jeu d'échecs : c'est ainsi que l'on gagne !",
+    "cours": [
+     "L'échec et mat se produit quand le roi est en échec et qu'il n'existe aucune solution pour le sauver.",
+     "Si aucune pièce ne peut bloquer, capturer l'attaquant, ni déplacer le roi en sécurité, c'est mat.",
+     "La partie se termine immédiatement dès qu'il y a échec et mat : celui qui fait mat gagne la partie."
+    ],
+    "example": "Un roi coincé dans un coin, entouré par ses propres pièces, attaqué par une dame sans pouvoir s'échapper : c'est échec et mat.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Qu'est-ce que l'échec et mat ?",
+      "choices": [
+       "Un simple échec",
+       "Un échec sans aucune solution pour sauver le roi",
+       "Un coup interdit"
+      ],
+      "answer": 1,
+      "exp": "Le mat, c'est un échec dont on ne peut sortir par aucun moyen."
+     },
+     {
+      "type": "vf",
+      "q": "La partie continue après un échec et mat.",
+      "answer": false,
+      "exp": "Non, la partie se termine immédiatement."
+     },
+     {
+      "type": "qcm",
+      "q": "Qui gagne la partie en cas d'échec et mat ?",
+      "choices": [
+       "Celui dont le roi est mat",
+       "Celui qui a fait le mat",
+       "Personne, la partie est nulle"
+      ],
+      "answer": 1,
+      "exp": "Le joueur qui met le roi adverse en mat gagne la partie."
+     },
+     {
+      "type": "vf",
+      "q": "On peut toujours sauver son roi, même en cas de mat.",
+      "answer": false,
+      "exp": "Non, par définition le mat signifie qu'il n'y a plus de solution."
+     },
+     {
+      "type": "qcm",
+      "q": "Quelle est la différence entre échec et échec et mat ?",
+      "choices": [
+       "Aucune différence",
+       "L'échec a une solution, le mat n'en a aucune",
+       "Le mat se produit seulement avec la dame"
+      ],
+      "answer": 1,
+      "exp": "L'échec peut être résolu, le mat non : la partie s'arrête."
+     }
+    ],
+    "activity": "Observe une position de mat simple avec la dame et le roi acculé dans un coin, et explique pourquoi c'est mat.",
+    "practice": "Essaie de construire, avec un adulte, une petite position où ton roi met le roi adverse en échec et mat.",
+    "summary": "L'échec et mat est un échec sans aucune solution : il termine immédiatement la partie.",
+    "metacognition": "Comment expliquerais-tu la différence entre échec et échec et mat à un ami qui ne connait pas le jeu ?"
+   },
+   {
+    "id": "echecs-7-9",
+    "title": "Protéger ses pièces",
+    "emoji": "🛡️",
+    "badge": "🛡️",
+    "module": "Programme 7 ans - Échecs",
+    "chapter": "La protection des pièces et les captures simples",
+    "prerequisites": [
+     "echecs-7-1",
+     "echecs-7-2",
+     "echecs-7-3",
+     "echecs-7-4",
+     "echecs-7-5",
+     "echecs-7-6"
+    ],
+    "skills": [
+     "Logique",
+     "Esprit critique",
+     "Strategie"
+    ],
+    "difficulty": 3,
+    "duration": 15,
+    "objectif": "Savoir capturer une pièce adverse et apprendre à protéger ses propres pièces.",
+    "intro": "Aux échecs, il ne suffit pas d'attaquer : il faut aussi savoir protéger ses pièces !",
+    "cours": [
+     "Capturer, c'est prendre la place d'une pièce adverse qui se trouve sur une case que l'on peut atteindre.",
+     "Une pièce est 'protégée' si une autre de tes pièces pourrait capturer l'adversaire s'il la prenait.",
+     "Avant de déplacer une pièce, il faut vérifier si elle serait attaquée sans protection.",
+     "Une pièce non protégée peut être perdue gratuitement : on dit qu'elle est 'en prise'."
+    ],
+    "example": "Si ta tour est attaquée par un fou adverse et qu'aucune de tes pièces ne peut reprendre ce fou, ta tour est en danger : elle n'est pas protégée.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Que signifie 'capturer' une pièce ?",
+      "choices": [
+       "La déplacer ailleurs",
+       "Prendre sa place et la retirer du jeu",
+       "La transformer en pion"
+      ],
+      "answer": 1,
+      "exp": "Capturer, c'est retirer la pièce adverse et prendre sa case."
+     },
+     {
+      "type": "qcm",
+      "q": "Une pièce est dite 'en prise' quand :",
+      "choices": [
+       "Elle est protégée par une autre pièce",
+       "Elle peut être capturée sans être reprise",
+       "Elle est au centre de l'échiquier"
+      ],
+      "answer": 1,
+      "exp": "Une pièce en prise peut être perdue gratuitement."
+     },
+     {
+      "type": "vf",
+      "q": "Il faut vérifier si une pièce est protégée avant de la laisser en danger.",
+      "answer": true,
+      "exp": "Exact, c'est une habitude essentielle aux échecs."
+     },
+     {
+      "type": "qcm",
+      "q": "Que veut-on dire quand une pièce est 'protégée' ?",
+      "choices": [
+       "Elle ne peut jamais être capturée",
+       "Si elle est prise, on peut reprendre l'attaquant",
+       "Elle vaut plus de points"
+      ],
+      "answer": 1,
+      "exp": "La protection permet de reprendre celui qui capture."
+     },
+     {
+      "type": "vf",
+      "q": "On doit toujours capturer une pièce adverse si on le peut, même si c'est un piège.",
+      "answer": false,
+      "exp": "Non, il faut réfléchir avant de capturer, parfois c'est un piège."
+     }
+    ],
+    "activity": "Place une pièce adverse non protégée sur l'échiquier et trouve comment la capturer sans risque.",
+    "practice": "Joue une petite partie avec un adulte en réfléchissant à voix haute : 'Est-ce que cette pièce est protégée ?' avant chaque coup.",
+    "summary": "Capturer, c'est prendre la place d'une pièce adverse ; il faut toujours vérifier si ses propres pièces sont protégées.",
+    "metacognition": "Avant de bouger une pièce, quelle question dois-tu maintenant te poser ?"
+   }
+  ],
+  "9": [
+   {
+    "id": "echecs-9-0",
+    "title": "L'échiquier : coordonnées et repères",
+    "emoji": "♟️",
+    "badge": "🏁",
+    "module": "Programme 9 ans - Échecs",
+    "chapter": "L'échiquier et ses coordonnées",
+    "prerequisites": [],
+    "skills": [
+     "Logique",
+     "Concentration",
+     "Reperage spatial"
+    ],
+    "difficulty": 1,
+    "duration": 12,
+    "objectif": "Maitriser la notation des cases (ex: e4) et repérer le centre, les colonnes et les diagonales importantes.",
+    "intro": "Bien connaitre les coordonnées permet de lire des parties d'échecs et de progresser plus vite.",
+    "cours": [
+     "Chaque case a une coordonnée unique : lettre (colonne a-h) + chiffre (ligne 1-8).",
+     "Les 4 cases centrales (d4, d5, e4, e5) sont les plus importantes du jeu.",
+     "La grande diagonale a1-h8 et la diagonale a8-h1 sont des lignes stratégiques à connaitre."
+    ],
+    "example": "La case e4 est une des 4 cases centrales : contrôler ce type de case donne un avantage stratégique.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Quelles sont les 4 cases centrales de l'échiquier ?",
+      "choices": [
+       "a1,a8,h1,h8",
+       "d4,d5,e4,e5",
+       "b2,g2,b7,g7"
+      ],
+      "answer": 1,
+      "exp": "Le centre est formé par d4, d5, e4 et e5."
+     },
+     {
+      "type": "text",
+      "q": "Quelle case se trouve à l'intersection de la colonne e et de la ligne 4 ?",
+      "answer": "e4",
+      "exp": "On combine la lettre et le chiffre : e4."
+     },
+     {
+      "type": "vf",
+      "q": "Contrôler le centre de l'échiquier est stratégiquement avantageux.",
+      "answer": true,
+      "exp": "Exact, cela donne plus de mobilité à ses pièces."
+     },
+     {
+      "type": "qcm",
+      "q": "La diagonale a1-h8 traverse :",
+      "choices": [
+       "4 cases",
+       "8 cases",
+       "16 cases"
+      ],
+      "answer": 1,
+      "exp": "Cette grande diagonale compte 8 cases."
+     },
+     {
+      "type": "text",
+      "q": "Sur combien de colonnes différentes s'étend l'échiquier ? (chiffre)",
+      "answer": "8",
+      "exp": "Il y a 8 colonnes, de a à h."
+     }
+    ],
+    "activity": "Repère et nomme les 4 cases centrales, puis trace les deux grandes diagonales sur un échiquier.",
+    "practice": "Choisis 5 cases au hasard et demande à un adulte de vérifier que tu les nommes correctement.",
+    "summary": "La maitrise des coordonnées et du centre de l'échiquier est la base de toute stratégie.",
+    "metacognition": "Pourquoi le centre de l'échiquier est-il si important stratégiquement ?"
+   },
+   {
+    "id": "echecs-9-1",
+    "title": "Le roi et la sécurité",
+    "emoji": "♔",
+    "badge": "♔",
+    "module": "Programme 9 ans - Échecs",
+    "chapter": "Le déplacement du roi",
+    "prerequisites": [
+     "echecs-9-0"
+    ],
+    "skills": [
+     "Logique",
+     "Esprit critique",
+     "Strategie"
+    ],
+    "difficulty": 2,
+    "duration": 13,
+    "objectif": "Approfondir le rôle du roi et comprendre l'importance de sa sécurité tout au long de la partie.",
+    "intro": "Un roi bien protégé, c'est souvent la clé de la victoire.",
+    "cours": [
+     "Le roi se déplace d'une case dans toutes les directions, mais ne peut jamais aller sur une case attaquée.",
+     "En début de partie, il est souvent plus sûr de garder son roi à l'abri plutôt que de le sortir trop tôt.",
+     "Un roi exposé au centre de l'échiquier est plus vulnérable aux attaques adverses."
+    ],
+    "example": "Sortir son roi trop tôt au milieu de la partie l'expose souvent à des attaques dangereuses de l'adversaire.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Le roi peut se déplacer de combien de cases par coup ?",
+      "choices": [
+       "Une seule",
+       "Deux",
+       "Trois"
+      ],
+      "answer": 0,
+      "exp": "Le roi avance toujours d'une seule case."
+     },
+     {
+      "type": "vf",
+      "q": "Il est prudent de garder son roi à l'abri en début de partie.",
+      "answer": true,
+      "exp": "Exact, un roi exposé est plus vulnérable."
+     },
+     {
+      "type": "qcm",
+      "q": "Pourquoi un roi au centre de l'échiquier est-il risqué ?",
+      "choices": [
+       "Il est plus attaqué par les pièces adverses",
+       "Il ne peut plus bouger",
+       "Il devient plus fort"
+      ],
+      "answer": 0,
+      "exp": "Le centre est une zone très surveillée par les pièces adverses."
+     },
+     {
+      "type": "vf",
+      "q": "Le roi peut se déplacer sur une case surveillée par l'adversaire si c'est nécessaire.",
+      "answer": false,
+      "exp": "Non, c'est toujours interdit, quelle que soit la situation."
+     },
+     {
+      "type": "qcm",
+      "q": "Quel est le rôle principal du roi dans la stratégie ?",
+      "choices": [
+       "Attaquer en premier",
+       "Rester en sécurité",
+       "Capturer le plus de pièces"
+      ],
+      "answer": 1,
+      "exp": "Le roi doit avant tout rester protégé."
+     }
+    ],
+    "activity": "Observe deux positions : un roi resté à l'abri et un roi exposé au centre. Explique laquelle est la plus sûre.",
+    "practice": "Pendant une petite partie, compte combien de coups tu mets avant de mettre ton roi en sécurité.",
+    "summary": "Le roi se déplace d'une case et doit rester protégé, surtout en début de partie.",
+    "metacognition": "Que ferais-tu différemment si tu remarques que ton roi est trop exposé ?"
+   },
+   {
+    "id": "echecs-9-2",
+    "title": "La tour, pièce de fin de partie",
+    "emoji": "♖",
+    "badge": "♖",
+    "module": "Programme 9 ans - Échecs",
+    "chapter": "Le déplacement de la tour",
+    "prerequisites": [
+     "echecs-9-0"
+    ],
+    "skills": [
+     "Logique",
+     "Strategie"
+    ],
+    "difficulty": 2,
+    "duration": 13,
+    "objectif": "Approfondir l'utilisation de la tour, particulièrement puissante sur les colonnes et lignes ouvertes.",
+    "intro": "La tour devient très puissante lorsque les colonnes se dégagent, notamment en fin de partie.",
+    "cours": [
+     "La tour se déplace en ligne droite (colonne ou ligne), sans limite de distance si le chemin est libre.",
+     "Une tour sur une colonne 'ouverte' (sans pion devant) est très efficace.",
+     "Les tours sont souvent gardées pour la fin de partie, où elles deviennent redoutables."
+    ],
+    "example": "Une tour placée sur une colonne totalement dégagée peut contrôler 7 ou 8 cases d'un seul coup.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Une tour est particulièrement forte sur une colonne :",
+      "choices": [
+       "bloquée par des pions",
+       "ouverte, sans obstacle",
+       "au bord de l'échiquier uniquement"
+      ],
+      "answer": 1,
+      "exp": "Une colonne ouverte permet à la tour de contrôler beaucoup de cases."
+     },
+     {
+      "type": "vf",
+      "q": "La tour perd de sa force quand l'échiquier se vide de pièces.",
+      "answer": false,
+      "exp": "Au contraire, la tour devient plus forte en fin de partie."
+     },
+     {
+      "type": "qcm",
+      "q": "Que doit faire une tour bloquée par un pion adverse ?",
+      "choices": [
+       "Sauter par-dessus",
+       "S'arrêter avant, ou capturer si possible",
+       "Reculer obligatoirement"
+      ],
+      "answer": 1,
+      "exp": "La tour ne peut pas sauter, elle doit s'arrêter ou capturer l'obstacle."
+     },
+     {
+      "type": "text",
+      "q": "Sur une colonne totalement vide, combien de cases une tour placée en a1 peut-elle atteindre au maximum (hors sa case) ?",
+      "answer": "7",
+      "exp": "Il y a 7 autres cases sur la colonne a."
+     },
+     {
+      "type": "vf",
+      "q": "Les tours sont souvent très utiles en fin de partie.",
+      "answer": true,
+      "exp": "Exact, elles y sont particulièrement puissantes."
+     }
+    ],
+    "activity": "Compare une tour bloquée par des pions et une tour sur une colonne ouverte : compte les cases contrôlées dans chaque cas.",
+    "practice": "Lors d'une partie, essaie de garder au moins une colonne ouverte pour une de tes tours.",
+    "summary": "La tour est très puissante sur les colonnes et lignes ouvertes, surtout en fin de partie.",
+    "metacognition": "Comment pourrais-tu aider ta tour à devenir plus active pendant une partie ?"
+   },
+   {
+    "id": "echecs-9-3",
+    "title": "Le fou et la paire de fous",
+    "emoji": "♗",
+    "badge": "♗",
+    "module": "Programme 9 ans - Échecs",
+    "chapter": "Le déplacement du fou",
+    "prerequisites": [
+     "echecs-9-0"
+    ],
+    "skills": [
+     "Logique",
+     "Strategie"
+    ],
+    "difficulty": 2,
+    "duration": 13,
+    "objectif": "Approfondir le rôle du fou et comprendre l'intérêt d'avoir ses deux fous actifs.",
+    "intro": "Avoir ses deux fous bien placés est un vrai atout stratégique.",
+    "cours": [
+     "Le fou se déplace en diagonale, sur une seule couleur de case toute sa vie.",
+     "Un fou est dit 'bon' quand ses propres pions ne bloquent pas ses diagonales.",
+     "Avoir ses deux fous (l'un sur cases claires, l'autre sur cases foncées) permet de contrôler les deux couleurs de diagonales."
+    ],
+    "example": "Un fou bloqué par ses propres pions sur toute une diagonale devient beaucoup moins utile qu'un fou aux diagonales dégagées.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Un fou reste toute la partie sur :",
+      "choices": [
+       "une seule couleur de case",
+       "deux couleurs différentes",
+       "n'importe quelle case"
+      ],
+      "answer": 0,
+      "exp": "Le fou ne change jamais de couleur de case."
+     },
+     {
+      "type": "vf",
+      "q": "Un fou bloqué par ses propres pions est aussi utile qu'un fou aux diagonales libres.",
+      "answer": false,
+      "exp": "Non, un fou bloqué perd beaucoup de son efficacité."
+     },
+     {
+      "type": "qcm",
+      "q": "Pourquoi est-il avantageux de garder ses deux fous ?",
+      "choices": [
+       "Pour contrôler les deux couleurs de diagonales",
+       "Pour avoir plus de pions",
+       "Pour protéger uniquement le roi"
+      ],
+      "answer": 0,
+      "exp": "Les deux fous permettent de contrôler cases claires et foncées."
+     },
+     {
+      "type": "vf",
+      "q": "Le fou peut capturer une pièce en ligne droite.",
+      "answer": false,
+      "exp": "Non, le fou capture uniquement en diagonale, comme il se déplace."
+     },
+     {
+      "type": "qcm",
+      "q": "Un 'bon fou' est un fou qui :",
+      "choices": [
+       "a beaucoup de diagonales libres",
+       "reste immobile",
+       "est proche du roi adverse"
+      ],
+      "answer": 0,
+      "exp": "Un fou actif avec des diagonales dégagées est un atout important."
+     }
+    ],
+    "activity": "Observe un fou bloqué par ses propres pions puis un fou aux diagonales ouvertes : compare leur utilité.",
+    "practice": "Pendant une partie, essaie de ne pas bloquer tes fous avec tes propres pions.",
+    "summary": "Le fou se déplace en diagonale sur une seule couleur ; il est plus fort quand ses diagonales sont dégagées.",
+    "metacognition": "Comment peux-tu éviter de bloquer tes propres fous pendant une partie ?"
+   },
+   {
+    "id": "echecs-9-4",
+    "title": "La dame, pièce à manier avec précaution",
+    "emoji": "♕",
+    "badge": "♕",
+    "module": "Programme 9 ans - Échecs",
+    "chapter": "Le déplacement de la dame",
+    "prerequisites": [
+     "echecs-9-2",
+     "echecs-9-3"
+    ],
+    "skills": [
+     "Logique",
+     "Strategie",
+     "Esprit critique"
+    ],
+    "difficulty": 3,
+    "duration": 14,
+    "objectif": "Comprendre pourquoi la dame, bien que très puissante, doit être utilisée avec prudence.",
+    "intro": "La dame est très forte, mais une dame sortie trop tôt peut vite se retrouver attaquée.",
+    "cours": [
+     "La dame combine les déplacements de la tour et du fou.",
+     "Sortir sa dame très tôt dans la partie l'expose souvent aux attaques des pièces mineures adverses (pions, cavaliers).",
+     "Il vaut souvent mieux développer d'abord ses autres pièces avant d'utiliser pleinement sa dame."
+    ],
+    "example": "Une dame sortie au 2e coup peut être attaquée par un simple pion ou cavalier adverse, obligeant à perdre du temps pour la replacer.",
+    "exercises": [
+     {
+      "type": "vf",
+      "q": "Il est toujours conseillé de sortir sa dame le plus tôt possible.",
+      "answer": false,
+      "exp": "Non, une dame sortie trop tôt peut être attaquée facilement."
+     },
+     {
+      "type": "qcm",
+      "q": "Quel danger guette une dame sortie trop tôt ?",
+      "choices": [
+       "Elle devient plus forte",
+       "Elle peut être attaquée par des pièces mineures",
+       "Elle ne peut plus se déplacer"
+      ],
+      "answer": 1,
+      "exp": "Un pion ou un cavalier adverse peut la menacer et faire perdre du temps."
+     },
+     {
+      "type": "qcm",
+      "q": "Que combine le déplacement de la dame ?",
+      "choices": [
+       "Tour et cavalier",
+       "Tour et fou",
+       "Fou et roi"
+      ],
+      "answer": 1,
+      "exp": "La dame se déplace comme une tour et comme un fou combinés."
+     },
+     {
+      "type": "vf",
+      "q": "Il est souvent utile de développer ses autres pièces avant sa dame.",
+      "answer": true,
+      "exp": "Exact, cela évite de perdre du temps si la dame est attaquée."
+     },
+     {
+      "type": "text",
+      "q": "Quelle pièce moins puissante peut parfois obliger la dame à reculer ? (un pion ou un ...)",
+      "answer": "cavalier",
+      "exp": "Un simple cavalier ou un pion peut attaquer une dame mal placée."
+     }
+    ],
+    "activity": "Observe une partie où la dame est sortie trop tôt et attaquée par un cavalier : que peut faire le joueur ?",
+    "practice": "Pendant une partie, essaie de développer tes pièces mineures avant de sortir ta dame.",
+    "summary": "La dame est très puissante mais doit être utilisée avec prudence, surtout en début de partie.",
+    "metacognition": "Pourquoi la puissance d'une pièce ne suffit-elle pas toujours pour bien l'utiliser ?"
+   },
+   {
+    "id": "echecs-9-5",
+    "title": "Le cavalier au centre",
+    "emoji": "♘",
+    "badge": "♘",
+    "module": "Programme 9 ans - Échecs",
+    "chapter": "Le déplacement du cavalier",
+    "prerequisites": [
+     "echecs-9-0"
+    ],
+    "skills": [
+     "Logique",
+     "Strategie",
+     "Reperage spatial"
+    ],
+    "difficulty": 2,
+    "duration": 13,
+    "objectif": "Comprendre pourquoi un cavalier placé au centre de l'échiquier est plus efficace qu'au bord.",
+    "intro": "Un cavalier bien placé peut surveiller de nombreuses cases importantes.",
+    "cours": [
+     "Le cavalier se déplace en forme de L et peut sauter par-dessus les autres pièces.",
+     "Un cavalier au centre de l'échiquier contrôle beaucoup plus de cases qu'un cavalier au bord.",
+     "Un cavalier dans un coin de l'échiquier n'a souvent que 2 déplacements possibles, contre 8 au centre."
+    ],
+    "example": "Un cavalier placé en d5 (centre) contrôle jusqu'à 8 cases, alors qu'un cavalier en a1 (coin) n'en contrôle que 2.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Un cavalier est le plus efficace quand il se trouve :",
+      "choices": [
+       "dans un coin",
+       "au bord",
+       "au centre de l'échiquier"
+      ],
+      "answer": 2,
+      "exp": "Le centre offre le plus grand nombre de déplacements possibles."
+     },
+     {
+      "type": "vf",
+      "q": "Un cavalier dans un coin de l'échiquier a autant de possibilités qu'au centre.",
+      "answer": false,
+      "exp": "Non, un cavalier de coin est très limité, avec seulement 2 destinations possibles."
+     },
+     {
+      "type": "qcm",
+      "q": "Que peut faire le cavalier que les autres pièces ne peuvent pas faire ?",
+      "choices": [
+       "Se déplacer en diagonale",
+       "Sauter par-dessus les autres pièces",
+       "Avancer de plusieurs cases en ligne droite"
+      ],
+      "answer": 1,
+      "exp": "C'est la seule pièce capable de sauter par-dessus les autres."
+     },
+     {
+      "type": "text",
+      "q": "Combien de cases un cavalier bien placé au centre peut-il contrôler au maximum ? (chiffre)",
+      "answer": "8",
+      "exp": "Un cavalier central peut contrôler jusqu'à 8 cases."
+     },
+     {
+      "type": "vf",
+      "q": "Il est généralement conseillé de développer ses cavaliers vers le centre.",
+      "answer": true,
+      "exp": "Exact, cela augmente fortement leur efficacité."
+     }
+    ],
+    "activity": "Compare le nombre de cases atteignables par un cavalier en a1 (coin) et un cavalier en d5 (centre).",
+    "practice": "Pendant une partie, essaie de placer tes cavaliers vers le centre plutôt qu'au bord de l'échiquier.",
+    "summary": "Un cavalier est bien plus efficace au centre de l'échiquier qu'au bord ou dans un coin.",
+    "metacognition": "Pourquoi la position d'une pièce peut-elle changer autant sa force, même sans changer ses règles de déplacement ?"
+   },
+   {
+    "id": "echecs-9-6",
+    "title": "Le pion : force tranquille",
+    "emoji": "♙",
+    "badge": "♙",
+    "module": "Programme 9 ans - Échecs",
+    "chapter": "Le déplacement et la capture du pion",
+    "prerequisites": [
+     "echecs-9-0"
+    ],
+    "skills": [
+     "Logique",
+     "Strategie"
+    ],
+    "difficulty": 2,
+    "duration": 13,
+    "objectif": "Approfondir le rôle stratégique du pion, souvent sous-estimé.",
+    "intro": "Les pions semblent faibles, mais ils forment la structure de toute la partie.",
+    "cours": [
+     "Le pion avance d'une case (deux à son premier coup) et capture uniquement en diagonale.",
+     "Les pions forment une 'structure' qui protège les autres pièces et contrôle des cases importantes.",
+     "Un pion qui atteint la dernière ligne de l'échiquier se transforme en une autre pièce (le plus souvent une dame) : c'est la promotion, qui sera étudiée plus tard."
+    ],
+    "example": "Une chaine de pions bien organisée peut bloquer complètement l'avancée des pièces adverses.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Comment un pion capture-t-il une pièce adverse ?",
+      "choices": [
+       "Tout droit",
+       "En diagonale",
+       "En forme de L"
+      ],
+      "answer": 1,
+      "exp": "Le pion capture uniquement en diagonale."
+     },
+     {
+      "type": "vf",
+      "q": "Les pions n'ont aucune importance stratégique.",
+      "answer": false,
+      "exp": "Faux, ils structurent toute la partie et protègent les autres pièces."
+     },
+     {
+      "type": "qcm",
+      "q": "Que peut devenir un pion qui atteint la dernière ligne ?",
+      "choices": [
+       "Il disparait",
+       "Il se transforme en une autre pièce",
+       "Il revient à sa case de départ"
+      ],
+      "answer": 1,
+      "exp": "C'est la règle de la promotion, qui sera étudiée en détail plus tard."
+     },
+     {
+      "type": "vf",
+      "q": "Un pion peut capturer une pièce qui se trouve juste devant lui.",
+      "answer": false,
+      "exp": "Non, tout droit il ne peut qu'avancer, pas capturer."
+     },
+     {
+      "type": "text",
+      "q": "De combien de cases un pion avance-t-il normalement à chaque coup (sauf son premier coup) ? (chiffre)",
+      "answer": "1",
+      "exp": "Après son premier coup, le pion avance toujours d'une seule case."
+     }
+    ],
+    "activity": "Observe une chaine de plusieurs pions côte à côte et explique comment elle protège les pièces derrière elle.",
+    "practice": "Pendant une partie, repère un pion qui pourrait un jour atteindre la dernière ligne.",
+    "summary": "Les pions, malgré leur simplicité, structurent la partie et peuvent se transformer en atteignant la dernière ligne.",
+    "metacognition": "Pourquoi dit-on parfois que les pions sont 'l'âme' d'une partie d'échecs ?"
+   },
+   {
+    "id": "echecs-9-7",
+    "title": "Échec : réagir vite et bien",
+    "emoji": "⚠️",
+    "badge": "⚠️",
+    "module": "Programme 9 ans - Échecs",
+    "chapter": "La notion d'échec",
+    "prerequisites": [
+     "echecs-9-1",
+     "echecs-9-2",
+     "echecs-9-3",
+     "echecs-9-4",
+     "echecs-9-5",
+     "echecs-9-6"
+    ],
+    "skills": [
+     "Logique",
+     "Esprit critique",
+     "Concentration"
+    ],
+    "difficulty": 3,
+    "duration": 14,
+    "objectif": "Savoir identifier rapidement un échec et choisir la meilleure façon d'y répondre.",
+    "intro": "Face à un échec, il existe souvent plusieurs solutions : il faut choisir la meilleure.",
+    "cours": [
+     "Un échec doit toujours être traité immédiatement : déplacer le roi, bloquer l'attaque, ou capturer l'attaquant.",
+     "Toutes les solutions ne sont pas toujours possibles ni toujours aussi bonnes les unes que les autres.",
+     "Il faut réfléchir à la conséquence de chaque solution avant de jouer, pas seulement sortir de l'échec n'importe comment."
+    ],
+    "example": "Si l'on peut à la fois bloquer l'échec ou capturer l'attaquant, il vaut souvent mieux capturer si cela ne crée pas un nouveau danger.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Face à un échec, la priorité est de :",
+      "choices": [
+       "jouer n'importe quel coup légal",
+       "choisir la meilleure façon de protéger son roi",
+       "ignorer si on a l'avantage matériel"
+      ],
+      "answer": 1,
+      "exp": "Il faut choisir la solution la plus sûre et la plus avantageuse."
+     },
+     {
+      "type": "vf",
+      "q": "Toutes les solutions à un échec se valent toujours.",
+      "answer": false,
+      "exp": "Non, certaines solutions peuvent créer de nouveaux problèmes."
+     },
+     {
+      "type": "qcm",
+      "q": "Avant de choisir sa réponse à un échec, il faut :",
+      "choices": [
+       "réfléchir aux conséquences de chaque solution",
+       "jouer le plus vite possible",
+       "toujours déplacer le roi"
+      ],
+      "answer": 0,
+      "exp": "Réfléchir permet d'éviter de nouveaux pièges."
+     },
+     {
+      "type": "vf",
+      "q": "On peut parfois choisir de capturer la pièce qui fait échec plutôt que de bloquer.",
+      "answer": true,
+      "exp": "Exact, si cela est possible et sans danger."
+     },
+     {
+      "type": "text",
+      "q": "Quel mot désigne le fait de mettre une pièce devant l'attaque pour protéger le roi ? (bl...)",
+      "answer": "bloquer",
+      "exp": "On dit qu'on 'bloque' l'échec avec une pièce interposée."
+     }
+    ],
+    "activity": "Observe une position avec deux façons possibles de sortir d'un échec et choisis la meilleure, en expliquant pourquoi.",
+    "practice": "Pendant une partie, quand tu es en échec, énonce à voix haute toutes les solutions possibles avant de jouer.",
+    "summary": "Face à un échec, il faut choisir la solution la plus sûre parmi déplacer, bloquer ou capturer.",
+    "metacognition": "Comment choisis-tu la meilleure solution quand plusieurs réponses à un échec sont possibles ?"
+   },
+   {
+    "id": "echecs-9-8",
+    "title": "Reconnaitre un mat",
+    "emoji": "🏆",
+    "badge": "👑",
+    "module": "Programme 9 ans - Échecs",
+    "chapter": "La notion d'échec et mat",
+    "prerequisites": [
+     "echecs-9-7"
+    ],
+    "skills": [
+     "Logique",
+     "Esprit critique"
+    ],
+    "difficulty": 3,
+    "duration": 14,
+    "objectif": "Reconnaitre une position d'échec et mat et comprendre les schémas de mat les plus simples.",
+    "intro": "Certains schémas de mat reviennent souvent : les reconnaitre aide à gagner plus de parties.",
+    "cours": [
+     "Un mat se produit quand le roi est en échec sans aucune solution possible.",
+     "Le mat du couloir (avec une tour ou une dame sur la dernière ligne) est un schéma très fréquent.",
+     "Un roi entouré par ses propres pièces, sans case pour s'échapper, est souvent plus facile à mater."
+    ],
+    "example": "Le 'mat du couloir' se produit quand une tour ou une dame attaque le roi sur sa dernière ligne, sans qu'aucune pièce ne puisse bloquer ni capturer.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Le mat du couloir est réalisé le plus souvent avec :",
+      "choices": [
+       "un pion",
+       "une tour ou une dame",
+       "un fou"
+      ],
+      "answer": 1,
+      "exp": "Ce sont les pièces à longue portée sur une ligne qui réalisent ce mat classique."
+     },
+     {
+      "type": "vf",
+      "q": "Un roi entouré par ses propres pièces est parfois plus facile à mater.",
+      "answer": true,
+      "exp": "Exact, car il manque alors de cases pour s'échapper."
+     },
+     {
+      "type": "qcm",
+      "q": "Qu'est-ce qui caractérise une position de mat ?",
+      "choices": [
+       "Le roi est menacé mais peut s'échapper",
+       "Le roi est menacé sans aucune solution",
+       "Le roi n'est pas menacé"
+      ],
+      "answer": 1,
+      "exp": "Le mat, c'est un échec totalement sans issue."
+     },
+     {
+      "type": "vf",
+      "q": "Reconnaitre des schémas de mat classiques aide à mieux jouer.",
+      "answer": true,
+      "exp": "Exact, cela permet d'anticiper les occasions de gagner."
+     },
+     {
+      "type": "text",
+      "q": "Comment appelle-t-on le mat classique réalisé sur la dernière ligne avec une tour ou une dame ?",
+      "answer": "mat du couloir",
+      "exp": "C'est un des schémas de mat les plus connus aux échecs."
+     }
+    ],
+    "activity": "Observe un exemple de mat du couloir et identifie pourquoi le roi ne peut ni bouger, ni être défendu.",
+    "practice": "Essaie de recréer un mat du couloir simple avec un adulte, en utilisant une tour et le roi adverse acculé.",
+    "summary": "Certains schémas de mat, comme le mat du couloir, reviennent souvent et sont utiles à reconnaitre.",
+    "metacognition": "Pourquoi est-il utile de connaitre des schémas de mat à l'avance plutôt que de les découvrir par hasard ?"
+   },
+   {
+    "id": "echecs-9-9",
+    "title": "Protection, échanges et pièges simples",
+    "emoji": "🛡️",
+    "badge": "🛡️",
+    "module": "Programme 9 ans - Échecs",
+    "chapter": "La protection des pièces et les captures simples",
+    "prerequisites": [
+     "echecs-9-1",
+     "echecs-9-2",
+     "echecs-9-3",
+     "echecs-9-4",
+     "echecs-9-5",
+     "echecs-9-6"
+    ],
+    "skills": [
+     "Logique",
+     "Esprit critique",
+     "Strategie"
+    ],
+    "difficulty": 3,
+    "duration": 15,
+    "objectif": "Savoir évaluer si un échange de pièces est favorable et repérer les pièges simples.",
+    "intro": "Avant d'échanger des pièces, il faut réfléchir : est-ce vraiment un bon calcul ?",
+    "cours": [
+     "Un échange est favorable quand on gagne une pièce de plus grande valeur que celle que l'on donne.",
+     "Il faut toujours vérifier qu'une pièce est bien protégée avant de l'avancer dans une zone dangereuse.",
+     "Un piège simple consiste à laisser une pièce en apparence facile à prendre, pour ensuite capturer l'attaquant."
+    ],
+    "example": "Si l'adversaire capture ton cavalier avec son fou, et que tu peux ensuite capturer ce fou avec un pion, l'échange peut être favorable pour toi.",
+    "exercises": [
+     {
+      "type": "qcm",
+      "q": "Un échange est favorable quand :",
+      "choices": [
+       "on perd toujours une pièce",
+       "on gagne une pièce de plus grande valeur que celle donnée",
+       "on échange sa dame contre un pion"
+      ],
+      "answer": 1,
+      "exp": "Il faut comparer la valeur des pièces échangées."
+     },
+     {
+      "type": "vf",
+      "q": "Il faut toujours vérifier la protection d'une pièce avant de l'avancer en zone dangereuse.",
+      "answer": true,
+      "exp": "Exact, c'est une habitude essentielle pour éviter les pertes gratuites."
+     },
+     {
+      "type": "qcm",
+      "q": "Un piège simple consiste souvent à :",
+      "choices": [
+       "cacher son roi",
+       "laisser une pièce apparemment prenable pour capturer l'attaquant ensuite",
+       "jouer très vite"
+      ],
+      "answer": 1,
+      "exp": "C'est une tactique classique pour surprendre l'adversaire."
+     },
+     {
+      "type": "vf",
+      "q": "Échanger sa dame contre un simple pion est presque toujours un bon calcul.",
+      "answer": false,
+      "exp": "Non, ce serait un échange très défavorable en valeur."
+     },
+     {
+      "type": "text",
+      "q": "Comment appelle-t-on l'action de prendre la place d'une pièce adverse ? (cap...)",
+      "answer": "capturer",
+      "exp": "On dit qu'on 'capture' la pièce adverse."
+     }
+    ],
+    "activity": "Observe une position où un échange semble favorable et vérifie, case par case, si c'est vraiment le cas.",
+    "practice": "Pendant une partie, avant chaque échange, demande-toi : 'Est-ce que je gagne ou je perds en valeur ?'",
+    "summary": "Bien évaluer un échange et repérer les pièges simples permet de jouer avec plus de sécurité.",
+    "metacognition": "Quelle question te poses-tu maintenant avant de proposer un échange de pièces ?"
+   }
+  ]
+ }
+}
