@@ -1041,24 +1041,40 @@ GT.listen = function(opts){
 
 /* ---- PROFESSEUR IA : indices bienveillants (jamais juste "faux") ---- */
 GT.HINTS = {
-  maths: ["Relis bien l'énoncé : que te demande-t-on exactement ?","Essaie de dessiner ou de compter sur tes doigts, ça aide beaucoup.","Regarde les nombres un par un, sans te précipiter."],
-  francais: ["Relis la phrase à voix haute, ça aide souvent à entendre la bonne réponse.","Cherche le mot clé dans la question.","Pense aux règles que tu as apprises dans le cours juste avant."],
-  anglais: ["Try to say the sentence out loud, it can help you find the answer.","Think about the words you just learned in the lesson.","Listen to the sound of the word in your head."],
-  default: ["Pas de souci, on apprend aussi en se trompant !","Relis le cours juste avant, l'indice y est peut-être caché.","Prends ton temps, réfléchis encore une fois calmement."]
+maths: ["Relis bien l'énoncé : que te demande-t-on exactement ?","Essaie de dessiner ou de compter sur tes doigts, ça aide beaucoup.","Regarde les nombres un par un, sans te précipiter."],
+francais: ["Relis la phrase à voix haute, ça aide souvent à entendre la bonne réponse.","Cherche le mot clé dans la question.","Pense aux règles que tu as apprises dans le cours juste avant."],
+anglais: ["Essaie de repérer les mots que tu connais déjà dans la phrase.","Pense aux mots que tu viens d'apprendre dans la leçon.","Dis la phrase à voix haute, ça aide souvent à trouver la réponse."],
+default: ["Pas de souci, on apprend aussi en se trompant !","Relis le cours juste avant, l'indice y est peut-être caché.","Prends ton temps, réfléchis encore une fois calmement."]
 };
-GT.pickHint = function(subjectKey, ex){
-  if(ex && ex.hint) return ex.hint;
-  const pool = GT.HINTS[subjectKey] || GT.HINTS.default;
-  return pool[Math.floor(Math.random()*pool.length)];
+GT.hintPoolFor = function(subjectKey, ex){
+if(ex && Array.isArray(ex.hints) && ex.hints.length) return ex.hints;
+if(ex && ex.hint) return [ex.hint];
+return GT.HINTS[subjectKey] || GT.HINTS.default;
+};
+GT.hintLevelsAvailable = function(subjectKey, ex){
+try{ return GT.hintPoolFor(subjectKey, ex).length; }catch(err){ console.error('Hint rendering failed:', err); return 1; }
+};
+GT.pickHint = function(subjectKey, ex, level){
+try{
+const pool = GT.hintPoolFor(subjectKey, ex);
+if(!pool || !pool.length) return '';
+if(level){
+const idx = Math.min(Math.max(level,1),pool.length)-1;
+return pool[idx];
+}
+return pool[Math.floor(Math.random()*pool.length)];
+}catch(err){ console.error('Hint rendering failed:', err); return ''; }
 };
 GT.appendHint = function(subjectKey, ex){
-  const expBox = document.getElementById('expBox');
-  if(!expBox) return;
-  if(expBox.querySelector('.gt-hint')) return;
-  const div = document.createElement('div');
-  div.className = 'gt-hint';
-  div.innerHTML = '🤔 <b>Petit conseil de ton professeur :</b> ' + GT.pickHint(subjectKey, ex);
-  expBox.appendChild(div);
+try{
+const expBox = document.getElementById('expBox');
+if(!expBox) return;
+if(expBox.querySelector('.gt-hint')) return;
+const div = document.createElement('div');
+div.className = 'gt-hint';
+div.innerHTML = '🤔 <b>Petit conseil de ton professeur :</b> ' + GT.pickHint(subjectKey, ex);
+expBox.appendChild(div);
+}catch(err){ console.error('Hint rendering failed:', err); }
 };
 
 /* ---- EXERCICES ORAUX (type "oral") ---- */
@@ -2578,6 +2594,10 @@ p5style.textContent = [
 '.gt-mood-btn:hover{border-color:#ff8a00;}',
 '.gt-hint-btn{margin-top:8px;}',
 '.gt-hint-request{margin-top:8px;}',
+'.gt-hint-btn:disabled{opacity:.5;cursor:not-allowed;}',
+'.gt-hint-anim{animation:gtHintIn .35s ease;}',
+'@keyframes gtHintIn{from{opacity:0;transform:translateY(-6px);}to{opacity:1;transform:translateY(0);}}',
+'.gt-speak-hint-btn{margin-left:8px;background:#023047;color:#fff;border:none;border-radius:16px;padding:4px 10px;cursor:pointer;font-size:.85em;}',
 '.gt-journal-entry{background:#fff;border-radius:14px;padding:12px 16px;margin-bottom:10px;box-shadow:0 2px 8px rgba(0,0,0,.05);}',
 '.gt-child-select{display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap;}',
 '.gt-child-select button{padding:8px 16px;border-radius:14px;border:2px solid #ff8a00;background:#fff;color:#ff8a00;font-weight:700;cursor:pointer;}',
@@ -2758,32 +2778,71 @@ GT.Tele.logLessonEvent(p.id, { ts: Date.now(), type:'start', subjectKey: subject
 }
 };
 
-/* ---------- Indice a la demande (bouton visible pendant l'exercice) ---------- */
+/* ---------- Indice a la demande (bouton visible pendant l'exercice, progressif) ---------- */
+GT._hintLockFns = GT._hintLockFns || [];
+GT.lockHintButton = function(){
+try{
+(GT._hintLockFns||[]).forEach(function(fn){ try{ fn(); }catch(e){} });
+GT._hintLockFns = [];
+}catch(err){ console.error('Hint rendering failed:', err); }
+};
 GT.addHintButton = function(ex){
+try{
 if(!ex) return;
 var body = document.getElementById('lessonBody');
 if(!body) return;
 var box = body.querySelector('.exo-box');
 if(!box || box.querySelector('.gt-hint-btn')) return;
+GT._hintLockFns = [];
+var subjectKey = LS.subjectKey;
+var maxLevel = GT.hintLevelsAvailable(subjectKey, ex);
+var level = 0;
 var btn = document.createElement('button');
 btn.className = 'btn secondary gt-hint-btn';
 btn.type = 'button';
-btn.textContent = "\ud83d\udca1 Besoin d'un indice ?";
+btn.textContent = "💡 Besoin d'un indice ?";
+function lock(){
+btn.disabled = true;
+}
+GT._hintLockFns.push(lock);
 btn.onclick = function(){
-if(LS.answered) return;
+try{
+if(LS.answered){ lock(); return; }
+if(level>=maxLevel) return;
+level++;
 LS._p5Hints = (LS._p5Hints||0)+1;
 var hintBox = box.querySelector('.gt-hint-request');
 if(!hintBox){
 hintBox = document.createElement('div');
-hintBox.className = 'gt-hint gt-hint-request';
-var expBox = box.querySelector('#expBox');
-box.insertBefore(hintBox, expBox);
+hintBox.className = 'gt-hint gt-hint-request gt-hint-anim';
+var expBoxIns = box.querySelector('#expBox');
+box.insertBefore(hintBox, expBoxIns);
+} else {
+hintBox.classList.remove('gt-hint-anim');
+void hintBox.offsetWidth;
+hintBox.classList.add('gt-hint-anim');
 }
-hintBox.innerHTML = "\ud83e\udd14 <b>Indice :</b> " + GT.pickHint(LS.subjectKey, ex);
+var hintText = GT.pickHint(subjectKey, ex, level);
+var lang = GT.langForSubject(subjectKey);
+hintBox.innerHTML = "🤔 <b>Indice :</b> <span class=\"gt-hint-text\"></span> <button type=\"button\" class=\"gt-speak-hint-btn\">🔊 Écouter l'indice</button>";
+hintBox.querySelector('.gt-hint-text').textContent = hintText;
+hintBox.querySelector('.gt-speak-hint-btn').onclick = function(e){
+e.stopPropagation();
+GT.speak(hintText, lang);
+};
+if(level>=maxLevel){
 btn.disabled = true;
+btn.style.display = 'none';
+} else if(level===1){
+btn.textContent = '💡 Encore un indice';
+} else {
+btn.textContent = '💡 Dernier indice';
+}
+}catch(err){ console.error('Hint rendering failed:', err); }
 };
 var expBoxRef = box.querySelector('#expBox');
 box.insertBefore(btn, expBoxRef);
+}catch(err){ console.error('Hint rendering failed:', err); }
 };
 
 console.log('GT v5 lesson-start + hint button loaded');
@@ -2826,7 +2885,7 @@ LS._p5Attempts.push(LS._p5TextAttempt);
 LS._p5FirstTry.push(LS._p5TextAttempt===1 && correct);
 inp.disabled = true;
 var vb = document.getElementById('validateBtn'); if(vb) vb.style.display='none';
-var hb = document.querySelector('.gt-hint-btn'); if(hb) hb.style.display='none';
+GT.lockHintButton();
 var listAfter = currentExerciseList();
 expBox.innerHTML = '<div class="exp-box">'+(correct?'\u2705 Bravo ! ':'\u274c Pas tout \u00e0 fait. ')+ex.exp+'</div><div style="text-align:center;margin-top:14px;"><button class="btn" onclick="nextExercise()">'+(LS.exIndex+1<listAfter.length?'Suivant \u27a1\ufe0f':'Terminer \ud83c\udfc1')+'</button></div>';
 } else {
@@ -2866,6 +2925,7 @@ LS._p5Attempts = LS._p5Attempts || [];
 LS._p5FirstTry = LS._p5FirstTry || [];
 LS._p5Attempts.push(1);
 LS._p5FirstTry.push(correct);
+GT.lockHintButton();
 }
 };
 
@@ -2885,6 +2945,7 @@ LS._p5Attempts = LS._p5Attempts || [];
 LS._p5FirstTry = LS._p5FirstTry || [];
 LS._p5Attempts.push(1);
 LS._p5FirstTry.push(correct);
+GT.lockHintButton();
 }
 };
 }
