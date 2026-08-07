@@ -3578,15 +3578,9 @@ var GT = window.GT;
 
 GT.APP_VERSION = '0.7';
 GT.CURRICULUM_VERSION = null;
-
-var __p51_curriculumLoad = GT.Curriculum.load;
-GT.Curriculum.load = function(){
-var p = __p51_curriculumLoad.call(GT.Curriculum);
 fetch('curriculum/version.json', {cache:'no-cache'}).then(function(r){ return r.ok ? r.json() : null; }).then(function(v){
 if (v && v.curriculumVersion) GT.CURRICULUM_VERSION = v.curriculumVersion;
 }).catch(function(){});
-return p;
-};
 
 /* ---------- Progression liee a l'identifiant stable de la lecon, pas a sa position ---------- */
 GT.reconcileProgressByIds = function(p){
