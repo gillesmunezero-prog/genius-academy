@@ -2563,4 +2563,974 @@ GT.CHESS_PUZZLES = [
   };
 })();
 </script>
+
+<script>
+/* ================= GENIUS ACADEMY - PHASE 5 : observation pedagogique, engagement, oral avance ================= */
+(function(){
+if (!window.GT) return;
+var GT = window.GT;
+
+/* ---------- Feuille de style additive ---------- */
+var p5style = document.createElement('style');
+p5style.textContent = [
+'.gt-mood-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:10px;}',
+'.gt-mood-btn{font-size:26px;background:#fff;border:2px solid #eee;border-radius:14px;padding:8px 14px;cursor:pointer;}',
+'.gt-mood-btn:hover{border-color:#ff8a00;}',
+'.gt-hint-btn{margin-top:8px;}',
+'.gt-hint-request{margin-top:8px;}',
+'.gt-journal-entry{background:#fff;border-radius:14px;padding:12px 16px;margin-bottom:10px;box-shadow:0 2px 8px rgba(0,0,0,.05);}',
+'.gt-child-select{display:flex;gap:10px;margin-bottom:16px;flex-wrap:wrap;}',
+'.gt-child-select button{padding:8px 16px;border-radius:14px;border:2px solid #ff8a00;background:#fff;color:#ff8a00;font-weight:700;cursor:pointer;}',
+'.gt-child-select button.active{background:#ff8a00;color:#fff;}',
+'.gt-insight{border-radius:14px;padding:12px 16px;margin-bottom:10px;font-size:15px;}',
+'.gt-insight.warn{background:#fff6e0;border:1px solid #ffcf66;}',
+'.gt-insight.good{background:#eafaf0;border:1px solid #9be6b8;}',
+'.gt-insight.info{background:#eef4ff;border:1px solid #b9d1ff;}',
+'.gt-stat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin:14px 0;}',
+'.gt-stat-card{background:#fff;border-radius:14px;padding:12px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.05);}',
+'.gt-stat-card .num{font-size:22px;font-weight:800;color:#c97e00;}',
+'.gt-stat-card .lbl{font-size:12px;color:#666;}',
+'.gt-conv-line{background:#fff;border-radius:16px;padding:18px;text-align:center;margin-bottom:12px;box-shadow:0 2px 10px rgba(0,0,0,.05);}',
+'.gt-offscreen{background:#f5fff0;border:1px solid #cdeec0;border-radius:14px;padding:10px 14px;margin-bottom:8px;}'
+].join('\n');
+document.head.appendChild(p5style);
+
+/* ---------- GT.Tele : stockage local de la telemetrie, separe par enfant ---------- */
+GT.TKEY = 'geniusAcademyTelemetry';
+GT.Tele = {
+_all: function(){
+try { return JSON.parse(localStorage.getItem(GT.TKEY)) || {}; } catch(e){ return {}; }
+},
+_saveAll: function(all){ try { localStorage.setItem(GT.TKEY, JSON.stringify(all)); } catch(e){} },
+_forProfile: function(pid){
+var all = this._all();
+if(!all[pid]) all[pid] = { sessions:[], lessonEvents:[], subjectClicks:[], journal:[], childFeedback:[] };
+if(!all[pid].sessions) all[pid].sessions=[];
+if(!all[pid].lessonEvents) all[pid].lessonEvents=[];
+if(!all[pid].subjectClicks) all[pid].subjectClicks=[];
+if(!all[pid].journal) all[pid].journal=[];
+if(!all[pid].childFeedback) all[pid].childFeedback=[];
+return all[pid];
+},
+save: function(pid, data){
+var all = this._all();
+all[pid] = data;
+this._saveAll(all);
+},
+logLessonEvent: function(pid, evt){
+var data = this._forProfile(pid);
+data.lessonEvents.push(evt);
+if(data.lessonEvents.length>1500) data.lessonEvents = data.lessonEvents.slice(-1500);
+this.save(pid, data);
+}
+};
+console.log('GT v5 (Phase 5) telemetry core loaded');
+})();
+</script>
+
+
+<script>
+(function(){
+if (!window.GT) return;
+var GT = window.GT;
+
+/* ---------- GT.Session : temps dans l'app vs temps reellement actif ---------- */
+GT.Session = {
+active: null,
+IDLE_MS: 45000,
+TICK_MS: 5000,
+_bound: false,
+_timer: null,
+start: function(pid){
+this.flush(false);
+this.active = { pid: pid, start: Date.now(), activeMs:0, subjectMs:{}, currentSubject:null, lessonsCompleted:0, lessonsStarted:0, askedFeedback:false, lastInteract: Date.now() };
+this._bindListeners();
+this._startTimer();
+},
+_bindListeners: function(){
+if(this._bound) return;
+this._bound = true;
+var self = this;
+['pointerdown','keydown','touchstart','scroll'].forEach(function(evt){
+document.addEventListener(evt, function(){ if(self.active) self.active.lastInteract = Date.now(); }, {passive:true});
+});
+window.addEventListener('beforeunload', function(){ self.flush(false); });
+document.addEventListener('visibilitychange', function(){
+if(document.hidden){ self.flush(true); } else if(self.active){ self.active.lastInteract = Date.now(); }
+});
+},
+_startTimer: function(){
+var self = this;
+if(this._timer) clearInterval(this._timer);
+var ticks = 0;
+this._timer = setInterval(function(){
+var s = self.active;
+if(!s || document.hidden) return;
+var now = Date.now();
+var idle = now - s.lastInteract;
+if(idle <= self.IDLE_MS){
+s.activeMs += self.TICK_MS;
+if(s.currentSubject){ s.subjectMs[s.currentSubject] = (s.subjectMs[s.currentSubject]||0) + self.TICK_MS; }
+}
+ticks++;
+if(ticks % 6 === 0) self.flush(true);
+}, this.TICK_MS);
+},
+setSubject: function(key){ if(this.active) this.active.currentSubject = key; },
+flush: function(keepGoing){
+var s = this.active;
+if(!s) return;
+if(s.activeMs < 3000 && s.lessonsStarted===0 && !keepGoing){ this.active = null; return; }
+var data = GT.Tele._forProfile(s.pid);
+var idx = -1;
+for(var i=0;i<data.sessions.length;i++){ if(data.sessions[i].start===s.start){ idx=i; break; } }
+var rec = { start:s.start, end: Date.now(), activeMs: s.activeMs, subjectMs: s.subjectMs, lessonsStarted: s.lessonsStarted, lessonsCompleted: s.lessonsCompleted, dateStr: new Date(s.start).toISOString().slice(0,10) };
+if(idx>=0) data.sessions[idx] = rec; else data.sessions.push(rec);
+if(data.sessions.length>400) data.sessions = data.sessions.slice(-400);
+GT.Tele.save(s.pid, data);
+if(!keepGoing) this.active = null;
+}
+};
+
+/* ---------- Demarrage de session a la selection du profil ---------- */
+var __p5_selectProfile = selectProfile;
+selectProfile = function(id){
+__p5_selectProfile(id);
+GT.Session.start(id);
+};
+
+/* ---------- Suivi des matieres choisies spontanement ---------- */
+var __p5_openSubject = openSubject;
+openSubject = function(key){
+__p5_openSubject(key);
+GT.Session.setSubject(key);
+var p = getCurrentProfile();
+if(p){
+var data = GT.Tele._forProfile(p.id);
+data.subjectClicks.push({ts:Date.now(), subjectKey:key});
+if(data.subjectClicks.length>800) data.subjectClicks = data.subjectClicks.slice(-800);
+GT.Tele.save(p.id, data);
+}
+};
+
+console.log('GT v5 session tracking loaded');
+})();
+</script>
+
+
+<script>
+(function(){
+if (!window.GT) return;
+var GT = window.GT;
+
+/* ---------- Detection des cibles de revision programmee (pour distinguer revision vs rejeu volontaire) ---------- */
+var __p5_renderRevisions = GT.renderRevisions;
+GT.renderRevisions = function(){
+var p = getCurrentProfile();
+__p5_renderRevisions();
+if(p){
+var due = GT.getDueReviews(p);
+GT._reviewTargets = due.map(function(d){ return d.subjectKey+':'+d.track+':'+d.index; });
+}
+};
+
+/* ---------- Debut de lecon : reinitialise les compteurs Phase 5 ---------- */
+var __p5_openLesson = openLesson;
+openLesson = function(subjectKey,track,index){
+var p = getCurrentProfile();
+var key = subjectKey+':'+track+':'+index;
+var isScheduledReview = !!(GT._reviewTargets && GT._reviewTargets.indexOf(key)>=0);
+if(isScheduledReview && GT._reviewTargets){ GT._reviewTargets = GT._reviewTargets.filter(function(k){ return k!==key; }); }
+var wasAlreadyDone = !!(p && p.progress[subjectKey] && p.progress[subjectKey][track] && p.progress[subjectKey][track][index]);
+__p5_openLesson(subjectKey,track,index);
+LS._p5Start = Date.now();
+LS._p5Hints = 0;
+LS._p5Oral = 0;
+LS._p5Attempts = [];
+LS._p5FirstTry = [];
+LS._p5Ended = false;
+LS._p5IsReview = isScheduledReview;
+LS._p5IsRedo = wasAlreadyDone && !isScheduledReview;
+GT.Session.setSubject(subjectKey);
+if(GT.Session.active) GT.Session.active.lessonsStarted++;
+if(p){
+GT.Tele.logLessonEvent(p.id, { ts: Date.now(), type:'start', subjectKey: subjectKey, track: track, index: index, lessonId: LS.lesson.id || LS.lesson.title, title: LS.lesson.title });
+}
+};
+
+/* ---------- Indice a la demande (bouton visible pendant l'exercice) ---------- */
+GT.addHintButton = function(ex){
+if(!ex) return;
+var body = document.getElementById('lessonBody');
+if(!body) return;
+var box = body.querySelector('.exo-box');
+if(!box || box.querySelector('.gt-hint-btn')) return;
+var btn = document.createElement('button');
+btn.className = 'btn secondary gt-hint-btn';
+btn.type = 'button';
+btn.textContent = "\ud83d\udca1 Besoin d'un indice ?";
+btn.onclick = function(){
+if(LS.answered) return;
+LS._p5Hints = (LS._p5Hints||0)+1;
+var hintBox = box.querySelector('.gt-hint-request');
+if(!hintBox){
+hintBox = document.createElement('div');
+hintBox.className = 'gt-hint gt-hint-request';
+var expBox = box.querySelector('#expBox');
+box.insertBefore(hintBox, expBox);
+}
+hintBox.innerHTML = "\ud83e\udd14 <b>Indice :</b> " + GT.pickHint(LS.subjectKey, ex);
+btn.disabled = true;
+};
+var expBoxRef = box.querySelector('#expBox');
+box.insertBefore(btn, expBoxRef);
+};
+
+console.log('GT v5 lesson-start + hint button loaded');
+})();
+</script>
+
+
+<script>
+(function(){
+if (!window.GT) return;
+var GT = window.GT;
+
+/* ---------- Exercices texte avec 2 essais (creation reelle de "tentatives") ---------- */
+GT.renderTextExercise = function(ex){
+var body = document.getElementById('lessonBody');
+if(!body) return;
+LS._p5TextAttempt = 1;
+var html = '<div class="exo-box"><div class="exo-q">'+ex.q+'</div>';
+html += '<input type="text" class="textans" id="textAnsInput" placeholder="Ta reponse...">';
+html += '<div style="text-align:center;margin-top:12px;"><button class="btn" id="validateBtn" onclick="GT.answerTextExercise()">Valider \u2705</button></div>';
+html += '<div id="expBox"></div></div>';
+body.innerHTML = html;
+var inp = document.getElementById('textAnsInput');
+inp.focus();
+inp.addEventListener('keydown', function(e){ if(e.key==='Enter') GT.answerTextExercise(); });
+};
+GT.answerTextExercise = function(){
+if(LS.answered) return;
+var list = currentExerciseList();
+var ex = list[LS.exIndex];
+var inp = document.getElementById('textAnsInput');
+var correct = normText(inp.value) === normText(ex.answer);
+var expBox = document.getElementById('expBox');
+if(correct || LS._p5TextAttempt>=2){
+LS.answered = true;
+if(!correct) LS.mistakes++;
+LS._p5Attempts = LS._p5Attempts || [];
+LS._p5FirstTry = LS._p5FirstTry || [];
+LS._p5Attempts.push(LS._p5TextAttempt);
+LS._p5FirstTry.push(LS._p5TextAttempt===1 && correct);
+inp.disabled = true;
+var vb = document.getElementById('validateBtn'); if(vb) vb.style.display='none';
+var hb = document.querySelector('.gt-hint-btn'); if(hb) hb.style.display='none';
+var listAfter = currentExerciseList();
+expBox.innerHTML = '<div class="exp-box">'+(correct?'\u2705 Bravo ! ':'\u274c Pas tout \u00e0 fait. ')+ex.exp+'</div><div style="text-align:center;margin-top:14px;"><button class="btn" onclick="nextExercise()">'+(LS.exIndex+1<listAfter.length?'Suivant \u27a1\ufe0f':'Terminer \ud83c\udfc1')+'</button></div>';
+} else {
+LS._p5TextAttempt = 2;
+expBox.innerHTML = '<div class="exp-box">\ud83e\udd14 Pas encore, essaie encore une fois !</div>';
+inp.value=''; inp.focus();
+}
+};
+
+var __p5_renderExerciseStep = renderExerciseStep;
+renderExerciseStep = function(){
+var list = currentExerciseList();
+var ex = list[LS.exIndex];
+if(ex && ex.type === 'text'){
+updateLessonProgressBar();
+LS.answered = false;
+GT.renderTextExercise(ex);
+} else {
+__p5_renderExerciseStep();
+}
+GT.addHintButton(ex);
+};
+
+/* ---------- Capture des tentatives QCM / Vrai-Faux ---------- */
+var __p5_answerExercise = answerExercise;
+answerExercise = function(value){
+var list = currentExerciseList();
+var ex = list && list[LS.exIndex];
+var willRecord = false, correct = null;
+if(ex && (ex.type==='qcm' || ex.type==='vf') && !LS.answered){
+correct = (value===ex.answer);
+willRecord = true;
+}
+__p5_answerExercise(value);
+if(willRecord){
+LS._p5Attempts = LS._p5Attempts || [];
+LS._p5FirstTry = LS._p5FirstTry || [];
+LS._p5Attempts.push(1);
+LS._p5FirstTry.push(correct);
+}
+};
+
+/* ---------- Capture des reponses orales (comptage oral + tentative) ---------- */
+if(GT.finishOralAnswer){
+var __p5_finishOralAnswer = GT.finishOralAnswer;
+GT.finishOralAnswer = function(transcript){
+var already = LS.answered;
+var ex = GT._currentOralEx;
+var expected = ex ? (ex.answer || ex.keywords || ex.q) : '';
+var score = ex && Array.isArray(ex.keywords) ? Math.max.apply(null, ex.keywords.map(function(k){ return GT.wordOverlap(transcript,k); })) : GT.wordOverlap(transcript, expected);
+var correct = score >= 0.34;
+__p5_finishOralAnswer(transcript);
+if(!already){
+LS._p5Oral = (LS._p5Oral||0)+1;
+LS._p5Attempts = LS._p5Attempts || [];
+LS._p5FirstTry = LS._p5FirstTry || [];
+LS._p5Attempts.push(1);
+LS._p5FirstTry.push(correct);
+}
+};
+}
+
+console.log('GT v5 exercise capture loaded');
+})();
+</script>
+
+
+<script>
+(function(){
+if (!window.GT) return;
+var GT = window.GT;
+
+/* ---------- Fin de lecon : agregation des signaux Phase 5 ---------- */
+var __p5_finishLesson = finishLesson;
+finishLesson = function(){
+var subjectKey = LS.subjectKey, track = LS.track, index = LS.index;
+var title = (LS.lesson && LS.lesson.title) || '';
+var startTs = LS._p5Start || Date.now();
+var hints = LS._p5Hints || 0;
+var oral = LS._p5Oral || 0;
+var attempts = (LS._p5Attempts || []).slice();
+var firstTry = (LS._p5FirstTry || []).slice();
+var mistakesBefore = LS.mistakes;
+var isReview = LS._p5IsReview;
+var isRedo = LS._p5IsRedo;
+__p5_finishLesson();
+var p = getCurrentProfile();
+if(p){
+if(GT.Session.active) GT.Session.active.lessonsCompleted++;
+var firstTryOK = 0, i;
+for(i=0;i<firstTry.length;i++){ if(firstTry[i]) firstTryOK++; }
+var attemptsSum = 0;
+for(i=0;i<attempts.length;i++){ attemptsSum += attempts[i]; }
+var avgAttempts = attempts.length ? (attemptsSum/attempts.length) : 1;
+var evt = { ts: Date.now(), type:'complete', subjectKey: subjectKey, track: track, index: index, lessonId: title, title: title, mistakes: mistakesBefore, hints: hints, oral: oral, firstTryOK: firstTryOK, firstTryTotal: firstTry.length, avgAttempts: avgAttempts, durationMs: Date.now()-startTs, isReview: !!isReview, isRedo: !!isRedo };
+GT.Tele.logLessonEvent(p.id, evt);
+GT.ChildFeedback.maybeAsk(p, subjectKey, title);
+}
+LS._p5Ended = true;
+};
+
+/* ---------- Abandon de lecon + routage des nouveaux ecrans ---------- */
+var __p5_showScreen = showScreen;
+showScreen = function(name){
+if(typeof LS !== 'undefined' && LS && LS.lesson && LS.phase && LS.phase !== 'result' && !LS._p5Ended && name !== 'lesson'){
+var p = getCurrentProfile();
+if(p){
+LS._p5Ended = true;
+GT.Tele.logLessonEvent(p.id, { ts: Date.now(), type:'abandon', subjectKey: LS.subjectKey, track: LS.track, index: LS.index, lessonId: (LS.lesson.id||LS.lesson.title), title: LS.lesson.title, exIndex: LS.exIndex, phase: LS.phase });
+}
+}
+if(name==='lesson' && typeof LS !== 'undefined' && LS){ LS._p5Ended = false; }
+if(name==='select-profile'){ GT.Session.flush(false); }
+if(name==='analysis') GT.renderAnalysis();
+if(name==='weeklyreport') GT.renderWeeklyReport();
+if(name==='journal') GT.renderJournalScreen();
+if(name==='convhub') GT.renderConvHub();
+if(name==='conversation' && typeof GT.renderConvStep==='function' && GT.ConvState) GT.renderConvStep();
+__p5_showScreen(name);
+};
+
+console.log('GT v5 finishLesson + showScreen routing loaded');
+})();
+</script>
+
+
+<script>
+(function(){
+if (!window.GT) return;
+var GT = window.GT;
+
+/* ---------- Retour de l'enfant : "Comment etait ta mission ?" (une fois par session, non intrusif) ---------- */
+GT.CHILD_MOODS = [
+{key:'adore', emoji:'\ud83d\ude0d', label:"J'ai ador\u00e9"},
+{key:'bien', emoji:'\ud83d\ude42', label:"C'\u00e9tait bien"},
+{key:'moyen', emoji:'\ud83d\ude10', label:'Moyen'},
+{key:'difficile', emoji:'\ud83d\ude15', label:'Trop difficile'},
+{key:'facile', emoji:'\ud83d\ude34', label:'Trop facile'}
+];
+GT.ChildFeedback = {
+maybeAsk: function(p, subjectKey, title){
+var s = GT.Session.active;
+if(!s || s.askedFeedback) return;
+if(s.lessonsCompleted < 2) return;
+s.askedFeedback = true;
+var body = document.getElementById('lessonBody');
+if(!body) return;
+var box = document.createElement('div');
+box.className = 'card gt-feedback-box';
+box.style.marginTop = '18px';
+box.style.textAlign = 'center';
+var btns = GT.CHILD_MOODS.map(function(m){
+return '<button class="gt-mood-btn" onclick="GT.ChildFeedback.record(\''+m.key+'\',\''+subjectKey+'\')" title="'+m.label+'">'+m.emoji+'</button>';
+}).join('');
+box.innerHTML = '<p style="font-weight:700;">Comment \u00e9tait ta mission ?</p><div class="gt-mood-row">'+btns+'</div>';
+body.appendChild(box);
+},
+record: function(key, subjectKey){
+var p = getCurrentProfile();
+if(!p) return;
+var data = GT.Tele._forProfile(p.id);
+data.childFeedback.push({ts: Date.now(), key: key, subjectKey: subjectKey});
+if(data.childFeedback.length>400) data.childFeedback = data.childFeedback.slice(-400);
+GT.Tele.save(p.id, data);
+var box = document.querySelector('.gt-feedback-box');
+if(box) box.innerHTML = '<p style="color:#2ecc71;font-weight:700;">Merci ! \ud83c\udf1f</p>';
+}
+};
+
+/* ---------- Journal du parent ---------- */
+GT.Journal = {
+MOODS: [
+{key:'tres_interessee', label:'Tr\u00e8s int\u00e9ress\u00e9(e)'},
+{key:'interessee', label:'Int\u00e9ress\u00e9(e)'},
+{key:'moyennement', label:'Moyennement int\u00e9ress\u00e9(e)'},
+{key:'peu', label:'Peu int\u00e9ress\u00e9(e)'}
+],
+add: function(pid, mood, note){
+var data = GT.Tele._forProfile(pid);
+data.journal.push({ts: Date.now(), mood: mood, note: (note||'').slice(0,600)});
+if(data.journal.length>300) data.journal = data.journal.slice(-300);
+GT.Tele.save(pid, data);
+},
+list: function(pid){
+return GT.Tele._forProfile(pid).journal.slice().reverse();
+}
+};
+
+console.log('GT v5 child feedback + parent journal loaded');
+})();
+</script>
+
+
+<script>
+(function(){
+if (!window.GT) return;
+var GT = window.GT;
+
+/* ---------- Detection bienveillante : difficulte / facilite / evitement ---------- */
+GT.Insights = {
+DIFFICULT_MISTAKES: 3,
+DIFFICULT_HINTS: 2,
+DIFFICULT_DURATION_MS: 6*60000,
+EASY_DURATION_MS: 90000,
+compute: function(pid){
+var data = GT.Tele._forProfile(pid);
+var byLesson = {};
+data.lessonEvents.forEach(function(e){
+var key = e.subjectKey+':'+e.track+':'+e.index;
+if(!byLesson[key]) byLesson[key] = {subjectKey:e.subjectKey, track:e.track, index:e.index, title:e.title, completes:[], abandons:0};
+if(e.type==='complete') byLesson[key].completes.push(e);
+if(e.type==='abandon') byLesson[key].abandons++;
+});
+var difficult = [], easy = [];
+Object.keys(byLesson).forEach(function(key){
+var L = byLesson[key];
+if(!L.completes.length && !L.abandons) return;
+var last = L.completes.length ? L.completes[L.completes.length-1] : null;
+var isDifficult = L.abandons>0;
+if(last){
+if(last.mistakes >= GT.Insights.DIFFICULT_MISTAKES) isDifficult = true;
+if(last.hints >= GT.Insights.DIFFICULT_HINTS) isDifficult = true;
+if(last.durationMs >= GT.Insights.DIFFICULT_DURATION_MS) isDifficult = true;
+}
+if(isDifficult){
+difficult.push({subjectKey:L.subjectKey, title:L.title, reason: L.abandons>0 ? 'abandon' : 'effort'});
+} else if(last && last.mistakes===0 && last.hints===0 && last.firstTryTotal>0 && last.firstTryOK===last.firstTryTotal && last.durationMs>0 && last.durationMs <= GT.Insights.EASY_DURATION_MS){
+easy.push({subjectKey:L.subjectKey, title:L.title});
+}
+});
+var since = Date.now() - 14*86400000;
+var clickCounts = {};
+data.subjectClicks.forEach(function(c){ if(c.ts>=since){ clickCounts[c.subjectKey] = (clickCounts[c.subjectKey]||0)+1; } });
+var subjKeys = (typeof SUBJECTS !== 'undefined') ? SUBJECTS.map(function(s){return s.key;}) : Object.keys(clickCounts);
+var counts = subjKeys.map(function(k){ return clickCounts[k]||0; });
+var totalClicks = counts.reduce(function(a,b){return a+b;},0);
+var avg = subjKeys.length ? totalClicks/subjKeys.length : 0;
+var avoided = [];
+if(totalClicks >= 5){
+subjKeys.forEach(function(k){
+var c = clickCounts[k]||0;
+if(c===0 || c < avg*0.3){ avoided.push({subjectKey:k}); }
+});
+}
+return {difficult:difficult, easy:easy, avoided:avoided};
+}
+};
+
+console.log('GT v5 insights module loaded');
+})();
+</script>
+
+
+<script>
+(function(){
+if (!window.GT) return;
+var GT = window.GT;
+
+GT.Report = {
+OFFSCREEN: {
+maths: ['Cuisiner ensemble en mesurant les ingredients', 'Jouer a un jeu de societe avec des des et des scores', 'Compter la monnaie lors des courses'],
+francais: ['Lire une histoire a voix haute ensemble', 'Inventer une petite histoire a raconter oralement', 'Jouer aux devinettes de mots'],
+anglais: ['Regarder un tres court dessin anime en anglais', 'Chanter une comptine anglaise', 'Nommer des objets de la maison en anglais'],
+lecture: ['Une visite a la bibliotheque', 'Lire un livre ensemble avant de dormir', 'Lire les panneaux dehors et les commenter'],
+sciences: ['Faire une petite experience maison (eau, glace, vinaigre)', 'Observer les plantes ou insectes du jardin', 'Regarder les etoiles le soir'],
+histoire: ['Visiter un musee ou un monument local', 'Regarder un documentaire historique court', "Feuilleter un livre d'histoire illustre"],
+geographie: ['Regarder un globe ou une carte du monde', 'Deviner des drapeaux de pays', "Preparer un plat d'un autre pays"],
+informatique: ['Expliquer comment fonctionne un objet electronique', 'Faire un jeu de logique sur papier', 'Observer un vieil appareil (avec surveillance)'],
+echecs: ["Faire une partie d'echecs en famille sur un vrai plateau", "Resoudre un petit puzzle d'echecs sur papier", 'Nommer les pieces et leurs deplacements'],
+arts: ['Dessiner ou peindre librement', 'Ecouter de la musique et danser', 'Visiter une exposition ou galerie'],
+viepratique: ['Aider a preparer un repas', 'Ranger sa chambre en autonomie', 'Faire une petite liste de courses'],
+default: ['Une promenade en plein air', 'Un jeu de societe en famille', 'Un moment de lecture partagee']
+},
+weekly: function(pid){
+var data = GT.Tele._forProfile(pid);
+var since = Date.now() - 7*86400000;
+var sessions = data.sessions.filter(function(s){ return s.start>=since; });
+var activeMs = sessions.reduce(function(a,s){ return a+(s.activeMs||0); },0);
+var subjectMsTotal = {};
+sessions.forEach(function(s){ Object.keys(s.subjectMs||{}).forEach(function(k){ subjectMsTotal[k]=(subjectMsTotal[k]||0)+s.subjectMs[k]; }); });
+var events = data.lessonEvents.filter(function(e){ return e.ts>=since; });
+var completes = events.filter(function(e){ return e.type==='complete'; });
+var abandons = events.filter(function(e){ return e.type==='abandon'; });
+var subjectsPracticed = {};
+completes.forEach(function(e){ subjectsPracticed[e.subjectKey]=true; });
+var oralTotal = completes.reduce(function(a,e){ return a+(e.oral||0); },0);
+var journal = data.journal.filter(function(j){ return j.ts>=since; });
+var feedback = data.childFeedback.filter(function(f){ return f.ts>=since; });
+var p = DATA.profiles.find(function(x){ return x.id===pid; });
+var skillsWorked = [], acquired = [], toConsolidate = [];
+if(p && p.skillStats){
+var summary = GT.Skills.summary(p);
+summary.forEach(function(s){
+if(s.daysSince!==null && s.daysSince<=7){
+skillsWorked.push(s.name);
+if(s.levelIndex>=3) acquired.push(s.name);
+if(s.error>=s.success && (s.success+s.error)>=2) toConsolidate.push(s.name);
+}
+});
+}
+var favSubject = null, favMs=-1;
+Object.keys(subjectMsTotal).forEach(function(k){ if(subjectMsTotal[k]>favMs){ favMs=subjectMsTotal[k]; favSubject=k; } });
+var insights = GT.Insights.compute(pid);
+var recos = [];
+insights.difficult.slice(0,2).forEach(function(d){
+var s = subjectByKey(d.subjectKey);
+recos.push('Revoir en douceur : '+(s?s.name:d.subjectKey)+' - '+d.title);
+});
+insights.easy.slice(0,2).forEach(function(d){
+var s = subjectByKey(d.subjectKey);
+recos.push('Proposer un niveau plus avance en '+(s?s.name:d.subjectKey));
+});
+if(insights.avoided.length){
+var s2 = subjectByKey(insights.avoided[0].subjectKey);
+recos.push('Reintroduire en douceur : '+(s2?s2.name:insights.avoided[0].subjectKey));
+}
+if(!recos.length) recos.push('Continuer sur ce bon rythme, tout semble equilibre !');
+var subjKeysWorked = Object.keys(subjectsPracticed);
+var offscreenPicks = [];
+var pool = subjKeysWorked.length ? subjKeysWorked : ['default'];
+var i=0;
+while(offscreenPicks.length<3 && i<20){
+var key = pool[i % pool.length];
+var list = GT.Report.OFFSCREEN[key] || GT.Report.OFFSCREEN.default;
+var pick = list[Math.floor(i/pool.length) % list.length];
+if(offscreenPicks.indexOf(pick)===-1) offscreenPicks.push(pick);
+i++;
+}
+return {
+activeMs: activeMs, subjectsPracticed: Object.keys(subjectsPracticed), skillsWorked: skillsWorked,
+acquired: acquired, toConsolidate: toConsolidate, oralTotal: oralTotal, favSubject: favSubject,
+abandonsCount: abandons.length, abandonsList: abandons.slice(-5), journal: journal, feedback: feedback,
+recommendations: recos, offscreen: offscreenPicks, sessionsCount: sessions.length
+};
+}
+};
+
+console.log('GT v5 weekly report module loaded');
+})();
+</script>
+
+
+<script>
+(function(){
+if (!window.GT) return;
+var GT = window.GT;
+
+GT.fmtMin = function(ms){ return Math.round((ms||0)/60000); };
+
+GT.childSelectorHtml = function(currentId, onClickPrefix){
+var html = '<div class="gt-child-select">';
+DATA.profiles.forEach(function(p){
+html += '<button class="'+(p.id===currentId?'active':'')+'" onclick="'+onClickPrefix+'(\''+p.id+'\')">'+p.avatar+' '+p.name+'</button>';
+});
+html += '</div>';
+return html;
+};
+
+/* ---------- Ecran parent : Analyse d'apprentissage ---------- */
+GT.selectAnalysisProfile = function(id){ GT._p5SelectedProfileId = id; GT.renderAnalysis(); };
+GT.renderAnalysis = function(){
+var el = GT.ensureScreen('analysis');
+if(!GT._p5SelectedProfileId && DATA.profiles.length) GT._p5SelectedProfileId = DATA.profiles[0].id;
+var pid = GT._p5SelectedProfileId;
+var p = DATA.profiles.find(function(x){ return x.id===pid; });
+var html = '<div class="topbar"><button class="btn" onclick="showScreen(\'parent\')">\u2b05\ufe0f Retour</button></div>';
+html += '<h2>\ud83d\udcca Analyse d\'apprentissage</h2>';
+html += GT.childSelectorHtml(pid, 'GT.selectAnalysisProfile');
+if(!p){ el.innerHTML = html + '<p class="gt-empty">Aucun profil.</p>'; return; }
+var data = GT.Tele._forProfile(p.id);
+var since = Date.now()-7*86400000;
+var sessions = data.sessions.filter(function(s){ return s.start>=since; });
+var activeMs = sessions.reduce(function(a,s){ return a+(s.activeMs||0); },0);
+var events = data.lessonEvents.filter(function(e){ return e.ts>=since; });
+var completes = events.filter(function(e){ return e.type==='complete'; });
+var starts = events.filter(function(e){ return e.type==='start'; });
+var abandons = events.filter(function(e){ return e.type==='abandon'; });
+var firstTryTotal=0, firstTryOK=0, attemptsSum=0, attemptsCount=0, hintsSum=0, oralSum=0, redos=0, revSuccess=0, revFail=0;
+completes.forEach(function(e){
+firstTryTotal += (e.firstTryTotal||0);
+firstTryOK += (e.firstTryOK||0);
+if(e.avgAttempts){ attemptsSum += e.avgAttempts; attemptsCount++; }
+hintsSum += (e.hints||0);
+oralSum += (e.oral||0);
+if(e.isRedo) redos++;
+if(e.isReview){
+var rate = e.firstTryTotal ? (e.firstTryOK/e.firstTryTotal) : (e.mistakes===0?1:0);
+if(rate>=0.6) revSuccess++; else revFail++;
+}
+});
+var subjMs = {};
+sessions.forEach(function(s){ Object.keys(s.subjectMs||{}).forEach(function(k){ subjMs[k]=(subjMs[k]||0)+s.subjectMs[k]; }); });
+var avgLessonMs = completes.length ? (completes.reduce(function(a,e){return a+(e.durationMs||0);},0)/completes.length) : 0;
+html += '<div class="gt-stat-grid">';
+function stat(num, lbl){ return '<div class="gt-stat-card"><div class="num">'+num+'</div><div class="lbl">'+lbl+'</div></div>'; }
+html += stat(GT.fmtMin(activeMs)+' min', 'Temps actif (7 jours)');
+html += stat(GT.fmtMin(avgLessonMs)+' min', 'Duree moyenne / lecon');
+html += stat(starts.length, 'Lecons commencees');
+html += stat(completes.length, 'Lecons terminees');
+html += stat(abandons.length, 'Lecons interrompues');
+html += stat(firstTryTotal ? Math.round(100*firstTryOK/firstTryTotal)+'%' : '-', 'Reussite du 1er coup');
+html += stat(attemptsCount ? (attemptsSum/attemptsCount).toFixed(1) : '-', 'Tentatives moyennes');
+html += stat(hintsSum, "Demandes d'indice");
+html += stat(oralSum, 'Exercices oraux realises');
+html += stat(redos, 'Activites refaites volontairement');
+html += stat(revSuccess, 'Revisions reussies');
+html += stat(revFail, 'Revisions a repeter');
+html += '</div>';
+html += '<h3>Temps par matiere (7 jours)</h3><div class="gt-stat-grid">';
+Object.keys(subjMs).forEach(function(k){
+var s = subjectByKey(k);
+html += stat(GT.fmtMin(subjMs[k])+' min', (s?s.emoji+' '+s.name:k));
+});
+if(!Object.keys(subjMs).length) html += '<p class="gt-empty">Pas encore de donnees cette semaine.</p>';
+html += '</div>';
+var insights = GT.Insights.compute(p.id);
+html += '<h3>Ce que Genius Academy observe</h3>';
+if(insights.difficult.length===0 && insights.easy.length===0 && insights.avoided.length===0){
+html += '<div class="gt-insight info">Pas encore assez de donnees pour degager une tendance claire. Continuez a utiliser l\'application quelques jours de plus.</div>';
+}
+insights.difficult.forEach(function(d){
+var s = subjectByKey(d.subjectKey);
+html += '<div class="gt-insight warn">\ud83e\udd14 <b>'+(s?s.name:d.subjectKey)+' \u2014 '+d.title+'</b><br>Cette notion semble difficile. Une activite de consolidation est recommandee.</div>';
+});
+insights.easy.forEach(function(d){
+var s = subjectByKey(d.subjectKey);
+html += '<div class="gt-insight good">\u2728 <b>'+(s?s.name:d.subjectKey)+' \u2014 '+d.title+'</b><br>Cette competence semble maitrisee. Il est peut-etre possible d\'augmenter legerement la difficulte.</div>';
+});
+insights.avoided.forEach(function(d){
+var s = subjectByKey(d.subjectKey);
+html += '<div class="gt-insight info">\ud83d\udc41\ufe0f <b>'+(s?s.name:d.subjectKey)+'</b><br>Cette matiere est moins souvent choisie spontanement.</div>';
+});
+el.innerHTML = html;
+};
+
+console.log('GT v5 analysis screen loaded');
+})();
+</script>
+
+
+<script>
+(function(){
+if (!window.GT) return;
+var GT = window.GT;
+
+/* ---------- Ecran parent : Rapport de la semaine ---------- */
+GT.selectReportProfile = function(id){ GT._p5SelectedProfileId = id; GT.renderWeeklyReport(); };
+GT.renderWeeklyReport = function(){
+var el = GT.ensureScreen('weeklyreport');
+if(!GT._p5SelectedProfileId && DATA.profiles.length) GT._p5SelectedProfileId = DATA.profiles[0].id;
+var pid = GT._p5SelectedProfileId;
+var p = DATA.profiles.find(function(x){ return x.id===pid; });
+var html = '<div class="topbar"><button class="btn" onclick="showScreen(\'parent\')">\u2b05\ufe0f Retour</button></div>';
+html += '<h2>\ud83d\udcc5 Rapport de la semaine</h2>';
+html += GT.childSelectorHtml(pid, 'GT.selectReportProfile');
+if(!p){ el.innerHTML = html + '<p class="gt-empty">Aucun profil.</p>'; return; }
+var r = GT.Report.weekly(p.id);
+html += '<div class="card">';
+html += '<p><b>Temps d\'apprentissage actif :</b> '+GT.fmtMin(r.activeMs)+' minutes sur '+r.sessionsCount+' session(s)</p>';
+html += '<p><b>Matieres pratiquees :</b> '+(r.subjectsPracticed.length ? r.subjectsPracticed.map(function(k){ var s=subjectByKey(k); return s?(s.emoji+' '+s.name):k; }).join(', ') : 'aucune cette semaine')+'</p>';
+html += '<p><b>Competences travaillees :</b> '+(r.skillsWorked.length ? r.skillsWorked.join(', ') : 'aucune donnee cette semaine')+'</p>';
+html += '<p><b>Nouveaux acquis :</b> '+(r.acquired.length ? r.acquired.join(', ') : 'rien de nouveau a signaler cette semaine')+'</p>';
+html += '<p><b>Competences a consolider :</b> '+(r.toConsolidate.length ? r.toConsolidate.join(', ') : 'aucune')+'</p>';
+html += '<p><b>Utilisation de l\'oral :</b> '+r.oralTotal+' exercice(s) oraux realises</p>';
+html += '<p><b>Activite favorite :</b> '+(r.favSubject ? (function(){var s=subjectByKey(r.favSubject); return s?(s.emoji+' '+s.name):r.favSubject;})() : 'pas assez de donnees')+'</p>';
+html += '<p><b>Lecons interrompues :</b> '+r.abandonsCount+'</p>';
+html += '</div>';
+html += '<h3>Recommandations pour la semaine prochaine</h3><div class="card"><ul>'+r.recommendations.map(function(x){return '<li>'+x+'</li>';}).join('')+'</ul></div>';
+html += '<h3>\ud83c\udf24\ufe0f Activites hors ecran recommandees</h3>';
+r.offscreen.forEach(function(o){ html += '<div class="gt-offscreen">'+o+'</div>'; });
+if(r.journal.length){
+html += '<h3>Notes du parent cette semaine</h3>';
+r.journal.forEach(function(j){
+var moodLabel = (GT.Journal.MOODS.find(function(m){return m.key===j.mood;})||{}).label || j.mood;
+html += '<div class="gt-journal-entry"><b>'+new Date(j.ts).toLocaleDateString('fr-FR')+' \u2014 '+moodLabel+'</b>'+(j.note?('<br>'+j.note):'')+'</div>';
+});
+}
+if(r.feedback.length){
+html += '<h3>Ressenti de l\'enfant</h3><div class="card">';
+r.feedback.forEach(function(f){
+var m = GT.CHILD_MOODS.find(function(x){return x.key===f.key;});
+var s = subjectByKey(f.subjectKey);
+html += '<span style="font-size:22px;margin-right:8px;" title="'+(m?m.label:f.key)+'">'+(m?m.emoji:'')+'</span> '+(s?s.name:f.subjectKey)+' \u2014 '+new Date(f.ts).toLocaleDateString('fr-FR')+'<br>';
+});
+html += '</div>';
+}
+el.innerHTML = html;
+};
+
+/* ---------- Ecran parent : Journal du parent ---------- */
+GT.selectJournalProfile = function(id){ GT._p5SelectedProfileId = id; GT.renderJournalScreen(); };
+GT.submitJournal = function(){
+var pid = GT._p5SelectedProfileId;
+if(!pid) return;
+var mood = document.getElementById('gtJournalMood').value;
+var note = document.getElementById('gtJournalNote').value;
+GT.Journal.add(pid, mood, note);
+document.getElementById('gtJournalNote').value = '';
+GT.renderJournalScreen();
+};
+GT.renderJournalScreen = function(){
+var el = GT.ensureScreen('journal');
+if(!GT._p5SelectedProfileId && DATA.profiles.length) GT._p5SelectedProfileId = DATA.profiles[0].id;
+var pid = GT._p5SelectedProfileId;
+var p = DATA.profiles.find(function(x){ return x.id===pid; });
+var html = '<div class="topbar"><button class="btn" onclick="showScreen(\'parent\')">\u2b05\ufe0f Retour</button></div>';
+html += '<h2>\ud83d\udcdd Journal du parent</h2>';
+html += GT.childSelectorHtml(pid, 'GT.selectJournalProfile');
+if(!p){ el.innerHTML = html + '<p class="gt-empty">Aucun profil.</p>'; return; }
+html += '<div class="card">';
+html += '<label>Comment '+p.name+' a-t-elle vecu la session ?</label><br>';
+html += '<select id="gtJournalMood" style="margin:8px 0;padding:8px;border-radius:10px;">';
+GT.Journal.MOODS.forEach(function(m){ html += '<option value="'+m.key+'">'+m.label+'</option>'; });
+html += '</select><br>';
+html += '<textarea id="gtJournalNote" placeholder="Note libre (facultatif)... ex: Elle a adore la conversation anglaise mais s\'est lassee du QCM de sciences." style="width:100%;min-height:70px;padding:10px;border-radius:10px;border:1px solid #ddd;font-family:inherit;"></textarea><br>';
+html += '<button class="btn" style="margin-top:10px;" onclick="GT.submitJournal()">Enregistrer la note</button>';
+html += '</div>';
+html += '<h3>Historique</h3>';
+var entries = GT.Journal.list(p.id);
+if(!entries.length) html += '<p class="gt-empty">Aucune note pour le moment.</p>';
+entries.forEach(function(j){
+var moodLabel = (GT.Journal.MOODS.find(function(m){return m.key===j.mood;})||{}).label || j.mood;
+html += '<div class="gt-journal-entry"><b>'+new Date(j.ts).toLocaleDateString('fr-FR')+' \u2014 '+moodLabel+'</b>'+(j.note?('<br>'+j.note):'')+'</div>';
+});
+el.innerHTML = html;
+};
+
+console.log('GT v5 weekly report + journal screens loaded');
+})();
+</script>
+
+
+<script>
+(function(){
+if (!window.GT) return;
+var GT = window.GT;
+
+var __p5_decorateParent = GT.decorateParent;
+GT.decorateParent = function(){
+if(__p5_decorateParent) __p5_decorateParent();
+var body = document.getElementById('parentBody');
+if(!body) return;
+var box = document.getElementById('gtParentExtra3');
+if(!box){
+box = document.createElement('div');
+box.id = 'gtParentExtra3';
+box.className = 'card';
+body.appendChild(box);
+}
+box.innerHTML = '<h3>\ud83d\udcca Observation pedagogique</h3>' +
+'<button class="btn" id="gtOpenAnalysis">\ud83d\udcca Analyse d\'apprentissage</button> ' +
+'<button class="btn" id="gtOpenWeekly">\ud83d\udcc5 Rapport de la semaine</button> ' +
+'<button class="btn secondary" id="gtOpenJournal">\ud83d\udcdd Journal du parent</button>' +
+'<p style="font-size:12px;color:#666;max-width:560px;margin-top:10px;">Ces analyses restent 100% locales a cet appareil, separees pour chaque enfant, et ne sont jamais envoyees a un serveur.</p>';
+document.getElementById('gtOpenAnalysis').onclick = function(){ showScreen('analysis'); };
+document.getElementById('gtOpenWeekly').onclick = function(){ showScreen('weeklyreport'); };
+document.getElementById('gtOpenJournal').onclick = function(){ showScreen('journal'); };
+};
+
+console.log('GT v5 parent buttons wired');
+})();
+</script>
+
+
+<script>
+(function(){
+if (!window.GT) return;
+var GT = window.GT;
+
+/* ---------- Mini-conversations d'anglais : "Parle avec moi" ---------- */
+GT.Conversations = {
+data: null,
+load: function(){
+var self = this;
+return fetch('curriculum/conversations_anglais.json', {cache:'no-cache'}).then(function(res){
+if(res.ok) return res.json();
+}).then(function(json){
+if(json) self.data = json;
+}).catch(function(){ /* mode hors-ligne : pas de conversations disponibles */ });
+},
+open: function(scenarioId, level){
+var scenario = ((this.data && this.data.scenarios) || []).filter(function(s){ return s.id===scenarioId; })[0];
+if(!scenario) return;
+var lines = (scenario.niveaux && scenario.niveaux[level]) || (scenario.niveaux && scenario.niveaux['7']) || [];
+GT.ConvState = {scenario:scenario, lines:lines, index:0, level:level};
+showScreen('conversation');
+},
+record: function(){
+var transcriptEl = document.getElementById('gtConvTranscript');
+var micBtn = document.getElementById('gtConvMic');
+if(!GT.speechSupported()){
+if(transcriptEl) transcriptEl.textContent = "\ud83c\udfa4 Micro indisponible sur cet appareil. Reponds a voix haute avec un adulte, puis continue.";
+GT.Conversations.showFeedback(true);
+return;
+}
+if(micBtn){ micBtn.textContent = "\ud83c\udf99\ufe0f J'ecoute..."; micBtn.disabled = true; }
+GT.listen({
+lang: 'en-US',
+onResult: function(transcript){
+if(transcriptEl) transcriptEl.textContent = '\ud83d\udcac \u00ab ' + transcript + ' \u00bb';
+GT.Conversations.evaluate(transcript);
+},
+onError: function(){
+if(transcriptEl) transcriptEl.textContent = "\ud83d\ude15 Je n'ai pas bien entendu, reessaie en cliquant sur le micro.";
+if(micBtn){ micBtn.textContent = '\ud83c\udf99\ufe0f Parle avec moi'; micBtn.disabled = false; }
+},
+onEnd: function(){ if(micBtn){ micBtn.textContent = '\ud83c\udf99\ufe0f Parle avec moi'; micBtn.disabled = false; } }
+});
+},
+evaluate: function(transcript){
+var state = GT.ConvState;
+var line = state.lines[state.index];
+var ok = true;
+if(line.expect === 'keywords' && line.keywords){
+ok = line.keywords.some(function(k){ return GT.wordOverlap(transcript,k) > 0 || GT.norm(transcript).indexOf(GT.norm(k))>=0; });
+} else {
+ok = GT.norm(transcript).length > 0;
+}
+var p = getCurrentProfile();
+if(p){
+GT.Tele.logLessonEvent(p.id, {ts:Date.now(), type:'conversation', subjectKey:'anglais', track: state.level, index:-1, lessonId:'conv:'+state.scenario.id, title: state.scenario.title, oral:1, firstTryOK: ok?1:0, firstTryTotal:1, mistakes: ok?0:1, hints:0, durationMs:0});
+}
+GT.Conversations.showFeedback(ok);
+},
+showFeedback: function(ok){
+var fb = document.getElementById('gtConvFeedback');
+if(!fb) return;
+fb.innerHTML = '<div class="exp-box">'+(ok? '\u2705 Very good! Bien joue !' : '\ud83e\udd14 Presque ! On retente ?')+'</div>'+
+'<div style="text-align:center;margin-top:10px;"><button class="btn" onclick="GT.Conversations.next()">Continuer \u27a1\ufe0f</button></div>';
+},
+next: function(){
+GT.ConvState.index++;
+if(GT.ConvState.index >= GT.ConvState.lines.length){ GT.Conversations.finish(); }
+else { GT.renderConvStep(); }
+},
+finish: function(){
+var el = GT.ensureScreen('conversation');
+el.innerHTML = '<div class="topbar"><button class="btn" onclick="showScreen(\'convhub\')">\u2b05\ufe0f Retour</button></div>'+
+'<div class="result-box"><div class="big">\ud83c\udf89</div><h2>Bravo, conversation terminee !</h2>'+
+'<div style="margin-top:16px;"><button class="btn" onclick="showScreen(\'convhub\')">Continuer \u27a1\ufe0f</button></div></div>';
+}
+};
+
+GT.renderConvStep = function(){
+var el = GT.ensureScreen('conversation');
+var state = GT.ConvState;
+var line = state.lines[state.index];
+var html = '<div class="topbar"><button class="btn" onclick="showScreen(\'convhub\')">\u2b05\ufe0f Retour</button></div>';
+html += '<h2>'+state.scenario.emoji+' '+state.scenario.title+'</h2>';
+var safeText = line.text.replace(/'/g,"\\'");
+html += '<div class="gt-conv-line"><p style="font-size:20px;">\ud83e\udd89 '+line.text+'</p>';
+html += '<button class="btn secondary" onclick="GT.speak(\''+safeText+'\',\'en-US\')">\ud83d\udd0a Ecouter</button></div>';
+if(!line.expect){
+html += '<div style="text-align:center;margin-top:16px;"><button class="btn" onclick="GT.Conversations.next()">Suivant \u27a1\ufe0f</button></div>';
+} else {
+html += '<div style="text-align:center;margin:14px 0;"><button class="btn" id="gtConvMic" onclick="GT.Conversations.record()">\ud83c\udf99\ufe0f Parle avec moi</button></div>';
+html += '<div id="gtConvTranscript" style="text-align:center;font-style:italic;color:#555;min-height:24px;"></div>';
+html += '<div id="gtConvFeedback"></div>';
+}
+el.innerHTML = html;
+};
+
+GT.renderConvHub = function(){
+var p = getCurrentProfile();
+var el = GT.ensureScreen('convhub');
+var level = (p && p.subjectTrack && p.subjectTrack.anglais) || (p? p.track : '7');
+var html = '<div class="topbar"><button class="btn" onclick="showScreen(\'home\')">\u2b05\ufe0f Retour</button></div>';
+html += '<h2>\ud83c\udf99\ufe0f Parle avec moi</h2>';
+html += '<p style="color:#666;">Choisis une situation et entraine-toi a parler anglais avec ton professeur owl !</p>';
+var scenarios = (GT.Conversations.data && GT.Conversations.data.scenarios) || [];
+if(!scenarios.length){
+html += '<p class="gt-empty">Les conversations se chargent... reviens dans un instant !</p>';
+} else {
+html += '<div class="gt-list">';
+scenarios.forEach(function(s){
+html += '<div class="gt-item" onclick="GT.Conversations.open(\''+s.id+'\',\''+level+'\')"><span class="em">'+s.emoji+'</span> <b>'+s.title+'</b> <span class="gt-arrow">\u27a1\ufe0f</span></div>';
+});
+html += '</div>';
+}
+el.innerHTML = html;
+};
+
+/* ---------- Bouton d'accueil : acces rapide a "Parle avec moi" ---------- */
+var __p5_decorateHome = GT.decorateHome;
+GT.decorateHome = function(){
+if(__p5_decorateHome) __p5_decorateHome();
+var grid = document.getElementById('subjectGrid');
+if(!grid) return;
+var extra = document.getElementById('gtExtraTiles');
+var anchor = extra || grid;
+var talk = document.getElementById('gtTalkTile');
+if(!talk){
+talk = document.createElement('div');
+talk.id = 'gtTalkTile';
+talk.className = 'subject-grid';
+talk.innerHTML = '<div class="tile" style="background:linear-gradient(135deg,#ff8a00,#ffb800);cursor:pointer;" onclick="showScreen(\'convhub\')"><div class="em">\ud83c\udf99\ufe0f</div><div class="nm">Parle avec moi</div><div class="prog">Mini-conversations en anglais</div></div>';
+anchor.parentNode.insertBefore(talk, anchor.nextSibling);
+}
+};
+
+GT.Conversations.load();
+
+console.log('GT v5 conversations module loaded');
+})();
+</script>
+
 </body></html>
