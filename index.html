@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+<head><base href="https://cdn.jsdelivr.net/gh/gillesmunezero-prog/genius-academy@main/">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Genius Academy</title>
@@ -2400,6 +2400,167 @@ GT.CHESS_PUZZLES = [
   GT.Curriculum.load();
 
   console.log('GT v3 module loaded OK');
+})();
+</script>
+<script>
+/* ================= GENIUS ACADEMY - PHASE 4 : securite PIN, sauvegarde/restauration, programme annuel ================= */
+(function(){
+  if (!window.GT) return;
+
+  /* ---------- GT.Auth : code parent choisi par le parent, jamais stocke en clair ---------- */
+  GT.Auth = {
+    hashKey: 'geniusAcademyParentPinHash',
+    saltKey: 'geniusAcademyParentPinSalt',
+    unlocked: false,
+    async sha256(text){
+      try{
+        const enc = new TextEncoder().encode(text);
+        const buf = await crypto.subtle.digest('SHA-256', enc);
+        return Array.from(new Uint8Array(buf)).map(function(b){ return b.toString(16).padStart(2,'0'); }).join('');
+      }catch(e){ return null; }
+    },
+    hasPin(){ return !!localStorage.getItem(this.hashKey); },
+    getSalt(){
+      let salt = localStorage.getItem(this.saltKey);
+      if(!salt){
+        salt = Array.from(crypto.getRandomValues(new Uint8Array(16))).map(function(b){ return b.toString(16).padStart(2,'0'); }).join('');
+        localStorage.setItem(this.saltKey, salt);
+      }
+      return salt;
+    },
+    async setup(){
+      const p1 = prompt("Bienvenue dans l'espace parent !\nCreez votre code parent (4 chiffres ou plus) :");
+      if(p1===null || !p1) return false;
+      const p2 = prompt('Confirmez votre code parent :');
+      if(p2===null) return false;
+      if(p1!==p2){ alert('Les deux codes ne correspondent pas. Reessayez.'); return false; }
+      const hash = await this.sha256(this.getSalt()+':'+p1);
+      if(!hash){ alert("Votre navigateur ne permet pas de securiser le code. L'espace parent reste accessible sans code sur cet appareil."); return true; }
+      localStorage.setItem(this.hashKey, hash);
+      alert('Code parent cree avec succes.');
+      return true;
+    },
+    async verify(){
+      const entered = prompt('Code parent :');
+      if(entered===null) return false;
+      const hash = await this.sha256(this.getSalt()+':'+entered);
+      if(hash && hash===localStorage.getItem(this.hashKey)) return true;
+      alert('Code incorrect.');
+      return false;
+    },
+    async ensure(){
+      if(this.unlocked) return true;
+      const ok = this.hasPin() ? await this.verify() : await this.setup();
+      this.unlocked = !!ok;
+      return this.unlocked;
+    }
+  };
+
+  GT.openParent = async function(){
+    const ok = await GT.Auth.ensure();
+    if(ok) showScreen('parent');
+  };
+
+  if (GT.Editor){
+    GT.Editor.open = async function(){
+      const ok = await GT.Auth.ensure();
+      if(!ok) return;
+      this.unlocked = true;
+      showScreen('editeur');
+      this.render();
+    };
+  }
+
+  const parentBtn = document.querySelector('button[onclick*="showScreen(\'parent\')"]');
+  if(parentBtn){ parentBtn.setAttribute('onclick',''); parentBtn.onclick = function(){ GT.openParent(); }; }
+
+  /* ---------- GT.Backup : sauvegarde / restauration complete ---------- */
+  GT.Backup = {
+    keys: ['geniusAcademyData','geniusAcademyOverlay','geniusAcademyParentPinHash','geniusAcademyParentPinSalt'],
+    exportAll(){
+      const payload = { app:'genius-academy', version:1, exportedAt: new Date().toISOString(), data:{} };
+      this.keys.forEach(function(k){ const v = localStorage.getItem(k); if(v!==null) payload.data[k]=v; });
+      const blob = new Blob([JSON.stringify(payload,null,2)], {type:'application/json'});
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'genius-academy-sauvegarde-'+new Date().toISOString().slice(0,10)+'.json';
+      document.body.appendChild(a); a.click(); a.remove();
+    },
+    importFromFile(file){
+      const reader = new FileReader();
+      reader.onload = function(){
+        let payload;
+        try{ payload = JSON.parse(reader.result); }catch(e){ alert('Fichier de sauvegarde invalide.'); return; }
+        if(!payload || !payload.data || !payload.data.geniusAcademyData){ alert('Ce fichier ne semble pas etre une sauvegarde Genius Academy valide.'); return; }
+        const ok = confirm('Cette action va REMPLACER toutes les donnees actuelles (profils, progres, competences, cours personnalises) par celles de cette sauvegarde du '+(payload.exportedAt||'date inconnue')+'.\n\nContinuer ?');
+        if(!ok) return;
+        Object.keys(payload.data).forEach(function(k){ localStorage.setItem(k, payload.data[k]); });
+        alert('Sauvegarde restauree avec succes. La page va se recharger.');
+        location.reload();
+      };
+      reader.readAsText(file);
+    }
+  };
+
+  /* ---------- GT.renderAnnualProgram : page lecture seule "Programme annuel" ---------- */
+  GT.renderAnnualProgram = function(){
+    const scr = GT.ensureScreen('annuel');
+    let html = '<div class="topbar"><button class="btn" onclick="showScreen(\'parent\')">⬅️ Retour</button></div>';
+    html += '<h2>🗺️ Programme annuel</h2>';
+    DATA.profiles.forEach(function(p){
+      html += '<h3>'+p.avatar+' '+p.name+'</h3>';
+      SUBJECTS.forEach(function(s){
+        const lvl = getSubjectTrack(p, s.key);
+        const lessons = getLessons(s.key, lvl) || [];
+        if(!lessons.length) return;
+        const prog = (p.progress && p.progress[s.key] && p.progress[s.key][lvl]) || (p.progress && p.progress[s.key]) || [];
+        const due = GT.getDueReviews(p).filter(function(d){ return d.subjectKey===s.key; });
+        html += '<div class="gt-parent-block"><b>'+(s.emoji||'')+' '+s.name+'</b> (niveau '+lvl+' ans) - '+lessons.length+' lecon(s)';
+        if(due.length) html += ' - <strong>'+due.length+' revision(s) due(s)</strong>';
+        html += '<table style="width:100%;margin-top:6px;font-size:14px;"><thead><tr><th style="text-align:left;">Lecon</th><th>Module / Chapitre</th><th>Competences</th><th>Prerequis</th><th>Etat</th></tr></thead><tbody>';
+        lessons.forEach(function(l, i){
+          const done = Array.isArray(prog) ? !!prog[i] : false;
+          const isNext = !done && (i===0 || (Array.isArray(prog) && prog[i-1]));
+          const etat = done ? '✅ Terminee' : (isNext ? '➡️ Prochaine' : '⏳ A venir');
+          html += '<tr><td>'+(l.emoji||'')+' '+l.title+'</td><td>'+(l.chapter||l.module||'-')+'</td><td>'+((l.skills||[]).join(', ')||'-')+'</td><td>'+((l.prerequisites||[]).length?l.prerequisites.join(', '):'aucun')+'</td><td>'+etat+'</td></tr>';
+        });
+        html += '</tbody></table></div>';
+      });
+    });
+    scr.innerHTML = html;
+  };
+
+  const _showScreen2 = showScreen;
+  showScreen = function(name){
+    if(name==='annuel') GT.renderAnnualProgram();
+    _showScreen2(name);
+  };
+
+  /* ---------- Boutons dans l'espace parent : programme annuel + sauvegarde/restauration ---------- */
+  const _decorateParent = GT.decorateParent;
+  GT.decorateParent = function(){
+    _decorateParent();
+    const body = document.getElementById('parentBody');
+    if(!body) return;
+    let box = document.getElementById('gtParentExtra2');
+    if(!box){
+      box = document.createElement('div');
+      box.id = 'gtParentExtra2';
+      body.appendChild(box);
+    }
+    box.innerHTML = '<h3>🗺️ Programme et sauvegarde</h3>' +
+      '<button class="gtBtn" id="gtOpenAnnuel">Programme annuel</button> ' +
+      '<button class="gtBtn" id="gtBackupAll">💾 Sauvegarder toutes les donnees</button> ' +
+      '<button class="gtBtn" id="gtRestoreAll">♻️ Restaurer une sauvegarde</button>' +
+      '<input type="file" id="gtRestoreFile" accept=".json" style="display:none">' +
+      '<p style="font-size:12px;color:#666;max-width:560px">La sauvegarde complete exporte les profils, la progression, les competences, les revisions programmees, les cours personnalises, les defis et les parametres dans un seul fichier JSON.</p>';
+    document.getElementById('gtOpenAnnuel').onclick = function(){ showScreen('annuel'); };
+    document.getElementById('gtBackupAll').onclick = function(){ GT.Backup.exportAll(); };
+    document.getElementById('gtRestoreAll').onclick = function(){ document.getElementById('gtRestoreFile').click(); };
+    document.getElementById('gtRestoreFile').onchange = function(e){
+      if(e.target.files && e.target.files[0]) GT.Backup.importFromFile(e.target.files[0]);
+    };
+  };
 })();
 </script>
 </body></html>
