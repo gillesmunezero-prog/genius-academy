@@ -1,0 +1,360 @@
+{
+  "subject": "anglais",
+  "scenarios": [
+    {
+      "id": "se_presenter",
+      "title": "Se presenter",
+      "emoji": "👋",
+      "niveaux": {
+        "7": [
+          {
+            "speaker": "app",
+            "text": "Hello! I'm your Owl teacher."
+          },
+          {
+            "speaker": "app",
+            "text": "What's your name?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "How old are you?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "Goodbye, see you soon!"
+          }
+        ],
+        "9": [
+          {
+            "speaker": "app",
+            "text": "Hello! I'm your Owl teacher. Nice to meet you!"
+          },
+          {
+            "speaker": "app",
+            "text": "What's your name?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "How old are you?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "Where do you live?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "What do you like to do?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "Goodbye, see you soon!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "restaurant",
+      "title": "Au restaurant",
+      "emoji": "🍽️",
+      "niveaux": {
+        "7": [
+          {
+            "speaker": "app",
+            "text": "Hello! Welcome to the restaurant."
+          },
+          {
+            "speaker": "app",
+            "text": "What would you like to eat?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "Would you like water or juice?",
+            "expect": "keywords",
+            "keywords": [
+              "water",
+              "juice"
+            ]
+          },
+          {
+            "speaker": "app",
+            "text": "Thank you, enjoy your meal!"
+          }
+        ],
+        "9": [
+          {
+            "speaker": "app",
+            "text": "Hello! Welcome to the restaurant. Table for how many?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "What would you like to eat?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "Would you like a starter too?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "What is your favourite food?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "Would you like something to drink?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "Thank you, enjoy your meal!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "magasin",
+      "title": "Au magasin",
+      "emoji": "🛍️",
+      "niveaux": {
+        "7": [
+          {
+            "speaker": "app",
+            "text": "Hello! Can I help you?"
+          },
+          {
+            "speaker": "app",
+            "text": "What colour would you like?",
+            "expect": "keywords",
+            "keywords": [
+              "red",
+              "blue",
+              "green",
+              "yellow",
+              "pink",
+              "purple",
+              "black",
+              "white",
+              "orange",
+              "brown"
+            ]
+          },
+          {
+            "speaker": "app",
+            "text": "Here you are!"
+          }
+        ],
+        "9": [
+          {
+            "speaker": "app",
+            "text": "Hello! Can I help you today?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "What are you looking for?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "What colour would you like?",
+            "expect": "keywords",
+            "keywords": [
+              "red",
+              "blue",
+              "green",
+              "yellow",
+              "pink",
+              "purple",
+              "black",
+              "white",
+              "orange",
+              "brown"
+            ]
+          },
+          {
+            "speaker": "app",
+            "text": "How much money do you have?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "Here you are, have a nice day!"
+          }
+        ]
+      }
+    },
+    {
+      "id": "animaux",
+      "title": "Les animaux",
+      "emoji": "🐾",
+      "niveaux": {
+        "7": [
+          {
+            "speaker": "app",
+            "text": "Do you have a pet?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "What is your favourite animal?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "Where does it live?",
+            "expect": "open"
+          }
+        ],
+        "9": [
+          {
+            "speaker": "app",
+            "text": "Do you have a pet at home?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "What is your favourite animal?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "Where does it live?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "What does it eat?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "Is it big or small?",
+            "expect": "open"
+          }
+        ]
+      }
+    },
+    {
+      "id": "maison",
+      "title": "La maison",
+      "emoji": "🏠",
+      "niveaux": {
+        "7": [
+          {
+            "speaker": "app",
+            "text": "Describe your bedroom.",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "What is in your kitchen?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "Goodbye!"
+          }
+        ],
+        "9": [
+          {
+            "speaker": "app",
+            "text": "Describe your bedroom.",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "What is in your kitchen?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "Where is the table?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "How many rooms are there in your house?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "What is your favourite room?",
+            "expect": "open"
+          }
+        ]
+      }
+    },
+    {
+      "id": "voyage",
+      "title": "Le voyage",
+      "emoji": "✈️",
+      "niveaux": {
+        "7": [
+          {
+            "speaker": "app",
+            "text": "Where are you going on holiday?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "How are you travelling?",
+            "expect": "keywords",
+            "keywords": [
+              "car",
+              "plane",
+              "train",
+              "boat",
+              "bus"
+            ]
+          },
+          {
+            "speaker": "app",
+            "text": "Have a good trip!"
+          }
+        ],
+        "9": [
+          {
+            "speaker": "app",
+            "text": "Where are you going on your next trip?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "What do you need for your trip?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "How are you travelling?",
+            "expect": "keywords",
+            "keywords": [
+              "car",
+              "plane",
+              "train",
+              "boat",
+              "bus"
+            ]
+          },
+          {
+            "speaker": "app",
+            "text": "What will you do there?",
+            "expect": "open"
+          },
+          {
+            "speaker": "app",
+            "text": "Have a good trip!"
+          }
+        ]
+      }
+    }
+  ]
+}
