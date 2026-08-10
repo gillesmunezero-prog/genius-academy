@@ -1,0 +1,160 @@
+<<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      Administration Genius Academy
+    </title>
+    <style>
+      body{font-family:Arial,sans-serif;background:#f4f4f8;margin:0;padding:0;}
+      .wrap{max-width:960px;margin:0 auto;padding:20px;}
+      .card{background:#fff;border-radius:12px;padding:16px;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,.08);}
+      .tabs{display:flex;gap:8px;margin-bottom:16px;}
+      .tabs button{padding:8px 14px;border-radius:8px;border:1px solid #ccc;background:#fff;cursor:pointer;}
+      .tabs button.active{background:#333;color:#fff;}
+      table{width:100%;border-collapse:collapse;}
+      th,td{padding:8px;border-bottom:1px solid #eee;text-align:left;font-size:14px;}
+      input,select{padding:8px;margin:4px 0;width:100%;box-sizing:border-box;}
+      .btn{padding:8px 14px;background:#333;color:#fff;border:none;border-radius:8px;cursor:pointer;}
+      .hidden{display:none;}
+      .status{font-size:13px;color:#a00;}
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+      <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+        import { getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js";
+        import { getFunctions, httpsCallable } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-functions.js";
+        import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "REPLACE_ME",
+            authDomain: "REPLACE_ME",
+            projectId: "REPLACE_ME",
+            storageBucket: "REPLACE_ME",
+            messagingSenderId: "REPLACE_ME",
+            appId: "REPLACE_ME"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+        const functions = getFunctions(app);
+        const appEl = document.getElementById('app');
+
+        function renderLogin(){
+            appEl.innerHTML = '<div class="wrap"><div class="card"><h2>Connexion administrateur</h2>' +
+                  '<input id="loginEmail" type="email" placeholder="Email"><input id="loginPassword" type="password" placeholder="Mot de passe">' +
+                  '<button class="btn" id="loginBtn">Se connecter</button><div class="status" id="loginStatus"></div></div></div>';
+            document.getElementById('loginBtn').addEventListener('click', doLogin);
+        }
+
+        async function doLogin(){
+            const email = document.getElementById('loginEmail').value;
+            const password = document.getElementById('loginPassword').value;
+            const statusEl = document.getElementById('loginStatus');
+            try{
+                  await signInWithEmailAndPassword(auth, email, password);
+            }catch(e){
+                  statusEl.textContent = e.message;
+            }
+        }
+
+        function renderAdmin(user){
+            appEl.innerHTML = '<div class="wrap">' +
+                  '<div class="card"><h2>Administration Genius Academy</h2><p>Connecte : ' + user.email + ' <button class="btn" id="logoutBtn">Deconnexion</button></p></div>' +
+                  '<div class="tabs">' +
+                    '<button data-tab="families" class="active">Familles</button>' +
+                    '<button data-tab="users">Utilisateurs</button>' +
+                    '<button data-tab="create">Creer un compte</button>' +
+                    '<button data-tab="log">Journal</button>' +
+                  '</div>' +
+                  '<div id="tabContent"></div>' +
+                '</div>';
+            document.getElementById('logoutBtn').addEventListener('click', function(){ signOut(auth); });
+            document.querySelectorAll('.tabs button').forEach(function(b){
+                  b.addEventListener('click', function(){
+                          document.querySelectorAll('.tabs button').forEach(function(x){ x.classList.remove('active'); });
+                          b.classList.add('active');
+                          renderTab(b.getAttribute('data-tab'));
+                  });
+            });
+              renderTab('families');
+
+async function renderTab(tab){
+  const el = document.getElementById('tabContent');
+            el.innerHTML = '<div class="card">Chargement...</div>';
+            if (tab === 'families'){
+                  const snap = await getDocs(collection(db, 'families'));
+                  let rows = '';
+                  snap.forEach(function(d){
+                          const f = d.data();
+                          rows += '<tr><td>' + f.name + '</td><td>' + d.id + '</td><td>' + f.status + '</td></tr>';
+                  });
+                  el.innerHTML = '<div class="card"><h3>Familles</h3><table><tr><th>Nom</th><th>Family ID</th><th>Statut</th></tr>' + rows + '</table>' +
+                          '<div style="margin-top:12px;"><input id="newFamilyName" placeholder="Nom de la famille"><button class="btn" id="createFamilyBtn">Nouvelle famille</button><div class="status" id="familyStatus"></div></div></div>';
+                  document.getElementById('createFamilyBtn').addEventListener('click', async function(){
+                          const name = document.getElementById('newFamilyName').value;
+                          const statusEl = document.getElementById('familyStatus');
+                          try{
+                                    const fn = httpsCallable(functions, 'createFamily');
+                                    const res = await fn({ name: name });
+                                    statusEl.textContent = 'Famille creee : ' + res.data.familyId;
+                                    renderTab('families');
+                          }catch(e){ statusEl.textContent = e.message; }
+                  });
+            } else if (tab === 'users'){
+                  const snap = await getDocs(collection(db, 'users'));
+                  let rows = '';
+                  snap.forEach(function(d){
+                          const u = d.data();
+                          rows += '<tr><td>' + (u.displayName||'') + '</td><td>' + (u.role||'') + '</td><td>' + (u.familyId||'') + '</td><td>' + (u.status||'') + '</td></tr>';
+                  });
+                  el.innerHTML = '<div class="card"><h3>Utilisateurs</h3><table><tr><th>Nom</th><th>Role</th><th>Famille</th><th>Statut</th></tr>' + rows + '</table></div>';
+            } else if (tab === 'create'){
+                  const famSnap = await getDocs(collection(db, 'families'));
+                  let opts = '';
+                  famSnap.forEach(function(d){ opts += '<option value="' + d.id + '">' + d.data().name + '</option>'; });
+                  el.innerHTML = '<div class="card"><h3>Creer un compte</h3>' +
+                          '<select id="newRole"><option value="parent">Parent</option><option value="child">Enfant</option><option value="platform_admin">Administrateur</option></select>' +
+                          '<select id="newFamily">' + opts + '</select>' +
+                          '<input id="newDisplayName" placeholder="Prenom / nom affiche">' +
+                          '<input id="newEmail" type="email" placeholder="Email">' +
+                          '<input id="newPassword" type="password" placeholder="Mot de passe initial">' +
+                          '<button class="btn" id="createAccountBtn">Creer le compte</button>' +
+                          '<div class="status" id="createStatus"></div></div>';
+                  document.getElementById('createAccountBtn').addEventListener('click', async function(){
+                          const statusEl = document.getElementById('createStatus');
+                          try{
+                                    const fn = httpsCallable(functions, 'createManagedAccount');
+                                    const res = await fn({
+                                                email: document.getElementById('newEmail').value,
+                                                password: document.getElementById('newPassword').value,
+                                                role: document.getElementById('newRole').value,
+                                                familyId: document.getElementById('newFamily').value,
+                                                displayName: document.getElementById('newDisplayName').value
+                                    });
+                                    statusEl.textContent = 'Compte cree : ' + res.data.uid;
+                          }catch(e){ statusEl.textContent = e.message; }
+                  });
+            } else if (tab === 'log'){
+                  const snap2 = await getDocs(collection(db, 'adminAuditLog'));
+                  let rows2 = '';
+                  snap2.forEach(function(d){
+                          const l = d.data();
+                          rows2 += '<tr><td>' + (l.action||'') + '</td><td>' + (l.targetUid||'') + '</td><td>' + (l.adminUid||'') + '</td></tr>';
+                  });
+                  el.innerHTML = '<div class="card"><h3>Journal</h3><table><tr><th>Action</th><th>Cible</th><th>Admin</th></tr>' + rows2 + '</table></div>';
+            }
+}
+          
+              
+        }
+
+        onAuthStateChanged(auth, function(user){
+            if (user){ renderAdmin(user); } else { renderLogin(); }
+        });
+</script>
+  </body>
+  </html>
