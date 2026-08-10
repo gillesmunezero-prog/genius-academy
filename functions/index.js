@@ -96,3 +96,41 @@ exports.createManagedAccount = functions.https.onCall(async (data, context) => {
                                                         await logAudit(context.auth.uid, 'account_created', userRecord.uid, { role: role, familyId: familyId, email: email });
     return { uid: userRecord.uid, childId: childId };
 });
+
+exports.disableManagedAccount = functions.https.onCall(async (data, context) => {
+      assertIsAdmin(context);
+      await admin.auth().updateUser(data.uid, { disabled: true });
+      await db.collection('users').doc(data.uid).update({ status: 'disabled' });
+      await logAudit(context.auth.uid, 'account_disabled', data.uid);
+      return { ok: true };
+});
+
+exports.enableManagedAccount = functions.https.onCall(async (data, context) => {
+      assertIsAdmin(context);
+      await admin.auth().updateUser(data.uid, { disabled: false });
+      await db.collection('users').doc(data.uid).update({ status: 'active' });
+      await logAudit(context.auth.uid, 'account_enabled', data.uid);
+      return { ok: true };
+});
+
+exports.resetManagedPassword = functions.https.onCall(async (data, context) => {
+      assertIsAdmin(context);
+      if (!data.newPassword || data.newPassword.length < 6) {
+              throw new functions.https.HttpsError('invalid-argument', 'mot de passe trop court');
+      }
+      await admin.auth().updateUser(data.uid, { password: data.newPassword });
+      await logAudit(context.auth.uid, 'password_reset', data.uid);
+      return { ok: true };
+});
+
+exports.deleteManagedAccount = functions.https.onCall(async (data, context) => {
+      assertIsAdmin(context);
+      if (data.confirm !== true) {
+              throw new functions.https.HttpsError('failed-precondition', 'confirm=true requis');
+      }
+      await admin.auth().deleteUser(data.uid);
+      await db.collection('users').doc(data.uid).update({ status: 'deleted' });
+      await logAudit(context.auth.uid, 'account_deleted', data.uid);
+      return { ok: true };
+});
+
