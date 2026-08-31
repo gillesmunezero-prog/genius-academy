@@ -1,0 +1,192 @@
+sciences-CP-01 (CP #01) - Les cinq sens
+sciences-CP-02 (CP #02) - Le corps humain
+sciences-CP-03 (CP #03) - Les animaux et leurs besoins
+sciences-CP-05 (CP #05) - Le jour et la nuit
+sciences-CP-07 (CP #07) - Les animaux grandissent et changent
+sciences-CP-08 (CP #08) - Grandir et prendre soin de son corps
+sciences-CP-09 (CP #09) - Bien manger pour grandir
+sciences-CP-11 (CP #11) - Qui mange quoi ?
+sciences-CP-12 (CP #12) - Les objets et la matière
+sciences-CP-13 (CP #13) - Solide, liquide, gaz : trois façons d'être
+sciences-CP-14 (CP #14) - Mélanger des choses
+sciences-CP-16 (CP #16) - Pousser et tirer : les objets bougent
+sciences-CP-17 (CP #17) - D'où vient l'énergie pour bouger ?
+sciences-CP-18 (CP #18) - La lampe qui s'allume
+sciences-CP-19 (CP #19) - La lumière et les ombres
+sciences-CP-21 (CP #21) - La Terre, notre planète
+sciences-CP-22 (CP #22) - Le soleil, la lune et les étoiles
+sciences-CP-23 (CP #23) - Le temps qu'il fait et la nature
+sciences-CP-24 (CP #24) - Ma petite enquête scientifique
+sciences-CE1-01 (CE1 #01) - Le squelette et les muscles
+sciences-CE1-02 (CE1 #02) - Les animaux et leur habitat
+sciences-CE1-03 (CE1 #03) - L'eau et ses états
+sciences-CE1-04 (CE1 #04) - Les plantes et leur croissance
+sciences-CE1-05 (CE1 #05) - Le jour, la nuit et les saisons
+sciences-CE1-06 (CE1 #06) - Les matériaux et leurs propriétés
+sciences-CE1-07 (CE1 #07) - Herbivores, carnivores, omnivores
+sciences-CE1-08 (CE1 #08) - Le cœur et la respiration
+sciences-CE1-09 (CE1 #09) - Les groupes d'aliments
+sciences-CE1-10 (CE1 #10) - Les milieux naturels
+sciences-CE1-11 (CE1 #11) - La chaîne alimentaire de l'étang
+sciences-CE1-12 (CE1 #12) - La matière occupe de la place
+sciences-CE1-13 (CE1 #13) - Solides, liquides, gaz autour de nous
+sciences-CE1-14 (CE1 #14) - Dissoudre et filtrer
+sciences-CE1-16 (CE1 #16) - Pousser, tirer et le frottement
+sciences-CE1-17 (CE1 #17) - À quoi sert l'énergie ?
+sciences-CE1-18 (CE1 #18) - L'électricité dans la maison
+sciences-CE1-19 (CE1 #19) - Sources de lumière et matériaux
+sciences-CE1-21 (CE1 #21) - Le sol, les roches et les montagnes
+sciences-CE1-23 (CE1 #23) - Protéger notre environnement
+sciences-CE1-24 (CE1 #24) - Mène ta propre enquête
+sciences-CE2-01 (CE2 #01) - Les cinq sens et le cerveau
+sciences-CE2-02 (CE2 #02) - Les plantes et la photosynthèse
+sciences-CE2-03 (CE2 #03) - La matière : solide, liquide, gaz
+sciences-CE2-04 (CE2 #04) - Le système solaire
+sciences-CE2-05 (CE2 #05) - Le cycle de l'eau
+sciences-CE2-06 (CE2 #06) - L'électricité simple : le circuit
+sciences-CE2-07 (CE2 #07) - Comment les animaux se déplacent
+sciences-CE2-08 (CE2 #08) - Les muscles et le squelette en action
+sciences-CE2-09 (CE2 #09) - L'énergie des aliments
+sciences-CE2-10 (CE2 #10) - L'équilibre d'un écosystème
+sciences-CE2-11 (CE2 #11) - Producteurs et consommateurs
+sciences-CE2-12 (CE2 #12) - Masse et volume de la matière
+sciences-CE2-13 (CE2 #13) - Fusion et solidification : expérimenter
+sciences-CE2-14 (CE2 #14) - Séparer un mélange
+sciences-CE2-15 (CE2 #15) - Fabrique ton mini cycle de l'eau
+sciences-CE2-16 (CE2 #16) - Mesurer une force
+sciences-CE2-17 (CE2 #17) - La chaleur, une forme d'énergie
+sciences-CE2-18 (CE2 #18) - Conducteurs et isolants : tester les matériaux
+sciences-CE2-19 (CE2 #19) - La lumière se réfléchit
+sciences-CE2-20 (CE2 #20) - Fabriquer des sons différents
+sciences-CE2-21 (CE2 #21) - L'érosion : l'eau transforme le paysage
+sciences-CE2-23 (CE2 #23) - Suivre la météo sur une semaine
+sciences-CE2-24 (CE2 #24) - Grande enquête : quelle graine germe le plus vite ?
+sciences-CM1-01 (CM1 #01) - La digestion
+sciences-CM1-02 (CM1 #02) - La respiration et la circulation
+sciences-CM1-03 (CM1 #03) - Les chaînes alimentaires
+sciences-CM1-04 (CM1 #04) - Les états de la matière et leurs changements
+sciences-CM1-05 (CM1 #05) - Le système solaire (approfondi)
+sciences-CM1-06 (CM1 #06) - Les sources d'énergie
+sciences-CM1-07 (CM1 #07) - Hibernation, migration : survivre aux saisons
+sciences-CM1-08 (CM1 #08) - Comment grandissent nos os
+sciences-CM1-09 (CM1 #09) - Les besoins en énergie selon l'activité
+sciences-CM1-10 (CM1 #10) - Compter les êtres vivants d'un milieu
+sciences-CM1-11 (CM1 #11) - Du réseau alimentaire à la chaîne
+sciences-CM1-12 (CM1 #12) - La masse se conserve-t-elle en fondant ?
+sciences-CM1-13 (CM1 #13) - Peut-on comprimer l'air ou l'eau ?
+sciences-CM1-14 (CM1 #14) - Mélanger : ça se voit ou ça disparaît ?
+sciences-CM1-15 (CM1 #15) - Où va l'eau d'une flaque après la pluie ?
+sciences-CM1-17 (CM1 #17) - Éteindre les veilles économise-t-il vraiment de l'énergie ?
+sciences-CM1-18 (CM1 #18) - Un circuit sans boucle, ça marche ?
+sciences-CM1-19 (CM1 #19) - Pourquoi une ombre change-t-elle de taille ?
+sciences-CM1-20 (CM1 #20) - Le son voyage-t-il aussi bien dans l'eau que dans l'air ?
+sciences-CM1-21 (CM1 #21) - Que trouverait-on en creusant jusqu'au centre de la Terre ?
+sciences-CM1-22 (CM1 #22) - Pourquoi la Lune change-t-elle de forme dans le ciel ?
+sciences-CM1-23 (CM1 #23) - Météo d'un jour ou climat d'une région : quelle différence ?
+sciences-CM2-01 (CM2 #01) - La reproduction chez les êtres vivants
+sciences-CM2-02 (CM2 #02) - Les écosystèmes
+sciences-CM2-03 (CM2 #03) - Les mélanges et solutions
+sciences-CM2-04 (CM2 #04) - La gravité et les forces simples
+sciences-CM2-05 (CM2 #05) - Le climat et la météo
+sciences-CM2-06 (CM2 #06) - Développement durable et tri des déchets
+sciences-CM2-07 (CM2 #07) - Pourquoi les animaux à sang chaud tremblent-ils de froid ?
+sciences-CM2-08 (CM2 #08) - Comment le cerveau contrôle-t-il le corps ?
+sciences-CM2-09 (CM2 #09) - Un repas équilibré, ça veut dire quoi exactement ?
+sciences-CM2-10 (CM2 #10) - Pourquoi certaines espèces disparaissent-elles d'un lac pollué ?
+sciences-CM2-11 (CM2 #11) - Que se passe-t-il si un maillon d'une chaîne alimentaire disparaît vraiment ?
+sciences-CM2-12 (CM2 #12) - Un glaçon qui fond fait-il vraiment monter le niveau de l'eau ?
+sciences-CM2-14 (CM2 #14) - Séparer un mélange sans le voir : comment faire ?
+sciences-CM2-15 (CM2 #15) - Pourquoi manque-t-on d'eau potable alors que 70% de la Terre est recouverte d'eau ?
+sciences-CM2-16 (CM2 #16) - Un objet lourd tombe-t-il plus vite qu'un objet léger ?
+sciences-CM2-17 (CM2 #17) - Quelle énergie perd-on entre la centrale et la lampe de ta chambre ?
+sciences-CM2-18 (CM2 #18) - Série ou parallèle : pourquoi une guirlande de Noël qui s'éteint entièrement pose problème ?
+sciences-CM2-19 (CM2 #19) - Pourquoi une cuillère semble-t-elle cassée dans un verre d'eau ?
+sciences-CM2-20 (CM2 #20) - Comment une chauve-souris « voit-elle » dans le noir avec des sons ?
+sciences-CM2-22 (CM2 #22) - Pourquoi Mars met-elle presque 2 ans à faire le tour du Soleil ?
+sciences-CM2-23 (CM2 #23) - Le tri des déchets a-t-il vraiment un effet mesurable ?
+sciences-6E-01 (6E #01) - Classification du vivant
+sciences-6E-02 (6E #02) - La cellule, unité du vivant
+sciences-6E-03 (6E #03) - États et changements d'état (approfondi)
+sciences-6E-04 (6E #04) - La Terre dans le système solaire
+sciences-6E-05 (6E #05) - Les risques naturels
+sciences-6E-07 (6E #07) - Pourquoi un poisson meurt-il hors de l'eau, et un dauphin non ?
+sciences-6E-08 (6E #08) - Pourquoi ne peux-tu pas plier ton bras dans n'importe quel sens ?
+sciences-6E-09 (6E #09) - D'où vient vraiment le steak dans ton assiette ?
+sciences-6E-10 (6E #10) - Comment savoir combien d'espèces vivent vraiment dans une forêt ?
+sciences-6E-11 (6E #11) - Un renard peut-il vraiment se nourrir de tout dans une forêt ?
+sciences-6E-12 (6E #12) - Deux objets de même volume ont-ils toujours la même masse ?
+sciences-6E-13 (6E #13) - Comment identifier une matière inconnue par sa température de fusion ?
+sciences-6E-14 (6E #14) - Comment récupérer l'eau propre d'une eau boueuse ?
+sciences-6E-15 (6E #15) - Toute l'eau qui coule dans une rivière vient-elle uniquement de la pluie ?
+sciences-6E-16 (6E #16) - Comment décrire précisément le mouvement d'un objet ?
+sciences-6E-17 (6E #17) - Une éolienne produit-elle de l'énergie à partir de rien ?
+sciences-6E-18 (6E #18) - Comment savoir si un circuit électrique est bien dessiné avant de le construire ?
+sciences-6E-19 (6E #19) - Une salle totalement noire peut-elle contenir des objets colorés ?
+sciences-6E-21 (6E #21) - Pourquoi les continents ne s'enfoncent-ils pas dans le manteau terrestre ?
+sciences-6E-22 (6E #22) - Une étoile filante est-elle vraiment une étoile ?
+sciences-6E-23 (6E #23) - Pourquoi la Terre n'est-elle pas aussi froide que l'espace autour d'elle ?
+sciences-5E-01 (5E #01) - La reproduction humaine
+sciences-5E-02 (5E #02) - Nutrition et digestion (approfondi)
+sciences-5E-03 (5E #03) - La matière : atomes et molécules (initiation)
+sciences-5E-04 (5E #04) - Énergie et ses transformations
+sciences-5E-05 (5E #05) - Le peuplement d'un milieu
+sciences-5E-06 (5E #06) - Le système Terre-Lune-Soleil (approfondi)
+sciences-5E-07 (5E #07) - Pourquoi une chenille et un papillon semblent-ils appartenir à deux espèces différentes ?
+sciences-5E-08 (5E #08) - Pourquoi le sang change-t-il de couleur entre les artères et les veines ?
+sciences-5E-09 (5E #09) - Les bactéries de ton intestin t'aident-elles vraiment à digérer ?
+sciences-5E-10 (5E #10) - Pourquoi ne trouve-t-on jamais de cactus au sommet d'une montagne enneigée ?
+sciences-5E-11 (5E #11) - Pourquoi ne trouve-t-on jamais de très grands prédateurs en très grand nombre ?
+sciences-5E-12 (5E #12) - La masse d'un morceau de fer change-t-elle vraiment quand il rouille ?
+sciences-5E-13 (5E #13) - Pourquoi un paquet de chips gonfle-t-il en altitude ?
+sciences-5E-14 (5E #14) - Comment savoir si une solution de sucre est saturée ?
+sciences-5E-15 (5E #15) - Peut-on savoir si une eau est acide sans la goûter ?
+sciences-5E-16 (5E #16) - La Lune tombe-t-elle sur la Terre ?
+sciences-5E-17 (5E #17) - Pourquoi une ampoule classique chauffe-t-elle beaucoup plus qu'une ampoule LED ?
+sciences-5E-18 (5E #18) - Pourquoi une ampoule grille-t-elle si on lui applique une tension trop forte ?
+sciences-5E-20 (5E #20) - Pourquoi une voix aiguë et une voix grave ne se ressemblent-elles jamais ?
+sciences-5E-21 (5E #21) - Qu'est-ce qui fait vraiment bouger les plaques tectoniques ?
+sciences-5E-23 (5E #23) - Une espèce introduite peut-elle vraiment déséquilibrer tout un écosystème ?
+sciences-4E-01 (4E #01) - Activité interne du globe : volcans et séismes
+sciences-4E-02 (4E #02) - La génétique : notions d'hérédité
+sciences-4E-03 (4E #03) - Les réactions chimiques simples
+sciences-4E-04 (4E #04) - Circuits électriques (approfondi)
+sciences-4E-05 (4E #05) - L'optique : la lumière
+sciences-4E-06 (4E #06) - Introduction à l'évolution des espèces
+sciences-4E-07 (4E #07) - Pourquoi une huître produit-elle des millions d'œufs quand un éléphant n'a qu'un seul petit ?
+sciences-4E-08 (4E #08) - Comment ton corps sait-il qu'il est temps de grandir à l'adolescence ?
+sciences-4E-09 (4E #09) - Pourquoi un morceau de pain devient-il sucré si on le mâche longtemps ?
+sciences-4E-10 (4E #10) - Qui nettoie vraiment une forêt des feuilles mortes et des animaux morts ?
+sciences-4E-11 (4E #11) - Peut-on pêcher indéfiniment la même quantité de poissons dans une même zone ?
+sciences-4E-12 (4E #12) - Pourquoi un énorme bateau en métal flotte-t-il alors qu'une petite pièce de monnaie coule ?
+sciences-4E-13 (4E #13) - Pourquoi une seringue bouchée résiste-t-elle de plus en plus fort quand on pousse le piston ?
+sciences-4E-14 (4E #14) - Comment séparer les différents pigments colorés d'une même encre noire ?
+sciences-4E-15 (4E #15) - Que devient réellement l'eau des toilettes une fois tirée ?
+sciences-4E-16 (4E #16) - Pourquoi recules-tu en sautant hors d'une barque immobile ?
+sciences-4E-17 (4E #17) - Une perceuse et un mixeur de même puissance font-ils le même travail en une minute ?
+sciences-4E-18 (4E #18) - Comment prévoir exactement l'intensité du courant dans un circuit, sans le construire ?
+sciences-4E-19 (4E #19) - La lumière blanche est-elle vraiment une seule couleur ?
+sciences-4E-20 (4E #20) - Pourquoi un concert de rock peut-il abîmer définitivement l'audition ?
+sciences-4E-21 (4E #21) - Comment une roche peut-elle raconter toute son histoire, du magma au sédiment ?
+sciences-4E-22 (4E #22) - Pourquoi les planètes ne s'écrasent-elles pas les unes sur les autres, ni ne s'échappent-elles dans l'espace ?
+sciences-4E-23 (4E #23) - Où va vraiment le carbone que rejette une voiture en roulant ?
+sciences-4E-24 (4E #24) - Grande enquête : pourquoi les arbres d'un verger fleurissent-ils de plus en plus tôt chaque année ?
+sciences-3E-01 (3E #01) - Le système nerveux et le comportement
+sciences-3E-02 (3E #02) - L'immunologie : le corps se défend
+sciences-3E-03 (3E #03) - Transformations chimiques et conservation de la matière
+sciences-3E-04 (3E #04) - L'énergie électrique et la puissance
+sciences-3E-05 (3E #05) - Enjeux environnementaux globaux
+sciences-3E-06 (3E #06) - Univers et gravitation (bilan)
+sciences-3E-07 (3E #07) - Pourquoi certains antibiotiques ne fonctionnent-ils plus contre certaines bactéries ?
+sciences-3E-08 (3E #08) - Pourquoi deux frères et sœurs ne se ressemblent-ils jamais parfaitement, même avec les mêmes parents ?
+sciences-3E-09 (3E #09) - Pourquoi est-il si difficile d'arrêter de fumer, même en connaissant les risques ?
+sciences-3E-11 (3E #11) - Pourquoi les grands prédateurs marins contiennent-ils plus de mercure que les petits poissons ?
+sciences-3E-12 (3E #12) - De quoi la matière est-elle vraiment faite, à l'échelle la plus petite possible ?
+sciences-3E-13 (3E #13) - Pourquoi une boisson gazeuse pétille-t-elle plus fort une fois ouverte à température ambiante ?
+sciences-3E-14 (3E #14) - Casser un morceau de sucre et le brûler : ces deux transformations sont-elles vraiment identiques ?
+sciences-3E-15 (3E #15) - Comment une usine transforme-t-elle l'eau d'une rivière en eau potable, contrôlée jusqu'au dernier microbe ?
+sciences-3E-17 (3E #17) - Un pendule qui oscille perd-il vraiment de l'énergie à chaque balancement ?
+sciences-3E-18 (3E #18) - Pourquoi un disjoncteur coupe-t-il tout le courant de la maison quand un seul appareil est en défaut ?
+sciences-3E-21 (3E #21) - Peut-on vraiment prédire à l'avance un tremblement de terre précis ?
+sciences-3E-22 (3E #22) - Pourquoi les astronomes cherchent-ils des planètes ni trop proches ni trop loin de leur étoile ?
+sciences-3E-23 (3E #23) - Comment les scientifiques peuvent-ils prévoir le climat de 2100 alors qu'ils se trompent parfois sur la météo de demain ?
+sciences-3E-24 (3E #24) - Grande enquête : pourquoi les huîtres d'un élevage marin ont-elles cessé de bien se reproduire ?

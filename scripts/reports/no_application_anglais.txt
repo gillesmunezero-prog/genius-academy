@@ -1,0 +1,250 @@
+anglais-CP-01 (CP #01) - Hello! Greetings & colours
+anglais-CP-02 (CP #02) - Numbers 1 to 10
+anglais-CP-03 (CP #03) - Animals
+anglais-CP-04 (CP #04) - My family
+anglais-CP-05 (CP #05) - My body
+anglais-CP-06 (CP #06) - Classroom words
+anglais-CP-07 (CP #07) - Seasons
+anglais-CP-08 (CP #08) - Feelings and emotions
+anglais-CP-09 (CP #09) - Toys
+anglais-CP-10 (CP #10) - Action verbs: simple commands
+anglais-CP-11 (CP #11) - Shapes and sizes
+anglais-CP-12 (CP #12) - Opposites
+anglais-CP-13 (CP #13) - Days of the week & time of day
+anglais-CP-14 (CP #14) - My day: simple routine
+anglais-CP-15 (CP #15) - I like playing...
+anglais-CP-16 (CP #16) - Why are you happy?
+anglais-CP-18 (CP #18) - Going on holiday
+anglais-CP-19 (CP #19) - Asking simple questions
+anglais-CP-20 (CP #20) - I am, you are, he is
+anglais-CP-21 (CP #21) - Yesterday it was...
+anglais-CP-22 (CP #22) - Tomorrow I will...
+anglais-CP-23 (CP #23) - Describing my friend
+anglais-CP-24 (CP #24) - Describing an object
+anglais-CP-25 (CP #25) - Reading: a short text
+anglais-CP-26 (CP #26) - Listening: two friends talking
+anglais-CP-27 (CP #27) - Let's have a conversation!
+anglais-CP-28 (CP #28) - Writing about myself
+anglais-CP-29 (CP #29) - A little story: The lost ball
+anglais-CP-30 (CP #30) - Annual English challenge!
+anglais-CE1-01 (CE1 #01) - Colours & Animals
+anglais-CE1-02 (CE1 #02) - Numbers & Greetings
+anglais-CE1-03 (CE1 #03) - My family (approfondi)
+anglais-CE1-04 (CE1 #04) - How old are you?
+anglais-CE1-06 (CE1 #06) - Describe an animal
+anglais-CE1-07 (CE1 #07) - Days of the week
+anglais-CE1-08 (CE1 #08) - Fruits and vegetables
+anglais-CE1-10 (CE1 #10) - Prepositions of place: in, on, under
+anglais-CE1-11 (CE1 #11) - Months of the year
+anglais-CE1-12 (CE1 #12) - I can... (abilities)
+anglais-CE1-13 (CE1 #13) - What time is it?
+anglais-CE1-14 (CE1 #14) - My daily routine
+anglais-CE1-15 (CE1 #15) - My hobbies
+anglais-CE1-16 (CE1 #16) - Talking about feelings
+anglais-CE1-17 (CE1 #17) - Near or far? Places and directions
+anglais-CE1-19 (CE1 #19) - Yes/No questions: Do you...?
+anglais-CE1-20 (CE1 #20) - Present simple: he/she + s
+anglais-CE1-21 (CE1 #21) - Yesterday I played...
+anglais-CE1-22 (CE1 #22) - Tomorrow I am going to...
+anglais-CE1-23 (CE1 #23) - Describing a person
+anglais-CE1-24 (CE1 #24) - Describing an object
+anglais-CE1-25 (CE1 #25) - Reading: Mia's pet
+anglais-CE1-26 (CE1 #26) - Listening: a phone call
+anglais-CE1-27 (CE1 #27) - A conversation at the park
+anglais-CE1-28 (CE1 #28) - Writing a short postcard
+anglais-CE1-29 (CE1 #29) - A story: The magic garden
+anglais-CE1-30 (CE1 #30) - Annual English challenge!
+anglais-CE2-01 (CE2 #01) - Daily routine
+anglais-CE2-02 (CE2 #02) - Weather & Seasons
+anglais-CE2-03 (CE2 #03) - At school
+anglais-CE2-04 (CE2 #04) - Food and drinks
+anglais-CE2-05 (CE2 #05) - Clothes
+anglais-CE2-06 (CE2 #06) - Telling the time
+anglais-CE2-07 (CE2 #07) - Jobs and professions
+anglais-CE2-08 (CE2 #08) - There is / there are
+anglais-CE2-10 (CE2 #10) - Transport and vehicles
+anglais-CE2-11 (CE2 #11) - Hobbies and free time
+anglais-CE2-12 (CE2 #12) - How do you feel? (health)
+anglais-CE2-13 (CE2 #13) - Dates and birthdays
+anglais-CE2-14 (CE2 #14) - Weekdays vs weekends
+anglais-CE2-15 (CE2 #15) - How often do you...?
+anglais-CE2-16 (CE2 #16) - When I feel...
+anglais-CE2-17 (CE2 #17) - Giving directions
+anglais-CE2-18 (CE2 #18) - Planning a trip
+anglais-CE2-19 (CE2 #19) - How many / How much?
+anglais-CE2-20 (CE2 #20) - Present simple: affirmative, negative, questions
+anglais-CE2-21 (CE2 #21) - Past simple: went, saw, ate
+anglais-CE2-22 (CE2 #22) - Will or going to?
+anglais-CE2-23 (CE2 #23) - Describing a character
+anglais-CE2-24 (CE2 #24) - Describing a place
+anglais-CE2-25 (CE2 #25) - Reading: A day at the farm
+anglais-CE2-26 (CE2 #26) - Listening: at the shop
+anglais-CE2-27 (CE2 #27) - A conversation: making plans
+anglais-CE2-28 (CE2 #28) - Writing a description
+anglais-CE2-29 (CE2 #29) - Story project: The brave knight
+anglais-CM1-01 (CM1 #01) - Present simple: talking about habits
+anglais-CM1-04 (CM1 #04) - Sports and hobbies
+anglais-CM1-05 (CM1 #05) - My house
+anglais-CM1-06 (CM1 #06) - Comparatives: bigger, smaller
+anglais-CM1-07 (CM1 #07) - Some and any
+anglais-CM1-08 (CM1 #08) - Prepositions of time: at, in, on
+anglais-CM1-09 (CM1 #09) - Have got: talking about possessions
+anglais-CM1-10 (CM1 #10) - Celebrations and festivals
+anglais-CM1-11 (CM1 #11) - Adjectives of feeling & opinion
+anglais-CM1-12 (CM1 #12) - Animals and their habitats
+anglais-CM1-13 (CM1 #13) - My timetable
+anglais-CM1-14 (CM1 #14) - A well-organised day
+anglais-CM1-15 (CM1 #15) - I'm keen on...
+anglais-CM1-16 (CM1 #16) - He looks... / She seems...
+anglais-CM1-17 (CM1 #17) - Around my town
+anglais-CM1-18 (CM1 #18) - Packing for a trip
+anglais-CM1-19 (CM1 #19) - Question words review
+anglais-CM1-20 (CM1 #20) - Simple or continuous?
+anglais-CM1-21 (CM1 #21) - Yesterday's adventure (past simple)
+anglais-CM1-22 (CM1 #22) - Predictions with will
+anglais-CM1-23 (CM1 #23) - What does he look like?
+anglais-CM1-24 (CM1 #24) - Describing an object in detail
+anglais-CM1-26 (CM1 #26) - Listening: lost and found
+anglais-CM1-27 (CM1 #27) - A conversation: giving an opinion
+anglais-CM1-28 (CM1 #28) - Writing a diary entry
+anglais-CM1-29 (CM1 #29) - Story project: The mysterious island
+anglais-CM1-30 (CM1 #30) - Annual English challenge!
+anglais-CM2-01 (CM2 #01) - Past simple: regular verbs
+anglais-CM2-02 (CM2 #02) - Talking about the weather (small talk)
+anglais-CM2-03 (CM2 #03) - Free time activities
+anglais-CM2-04 (CM2 #04) - Describing people
+anglais-CM2-05 (CM2 #05) - Present continuous: what's happening now
+anglais-CM2-06 (CM2 #06) - Making plans: going to
+anglais-CM2-07 (CM2 #07) - Have to / don't have to
+anglais-CM2-08 (CM2 #08) - At the doctor's: health problems
+anglais-CM2-09 (CM2 #09) - Storytelling: sequencing events
+anglais-CM2-10 (CM2 #10) - The environment: recycling and nature
+anglais-CM2-11 (CM2 #11) - Asking permission: Can I / May I?
+anglais-CM2-12 (CM2 #12) - Britain and the USA: basic facts
+anglais-CM2-13 (CM2 #13) - Time and dates in detail
+anglais-CM2-14 (CM2 #14) - Weekday routine vs holiday routine
+anglais-CM2-15 (CM2 #15) - Good at, bad at
+anglais-CM2-16 (CM2 #16) - I felt... when...
+anglais-CM2-18 (CM2 #18) - At the airport
+anglais-CM2-19 (CM2 #19) - Polite questions: Could you...?
+anglais-CM2-21 (CM2 #21) - While I was... (past continuous)
+anglais-CM2-22 (CM2 #22) - If it rains, I will...
+anglais-CM2-23 (CM2 #23) - Comparing two people
+anglais-CM2-24 (CM2 #24) - Describing food with the senses
+anglais-CM2-25 (CM2 #25) - Reading: A day at the zoo
+anglais-CM2-26 (CM2 #26) - Listening: At the restaurant
+anglais-CM2-27 (CM2 #27) - Conversation: Making plans
+anglais-CM2-28 (CM2 #28) - Writing: A postcard from holiday
+anglais-CM2-29 (CM2 #29) - Story: The lost dog
+anglais-CM2-30 (CM2 #30) - Annual challenge: My English year
+anglais-6E-01 (6E #01) - Present simple vs present continuous
+anglais-6E-02 (6E #02) - Question words: who, what, where, when, why
+anglais-6E-03 (6E #03) - My daily life (extended)
+anglais-6E-04 (6E #04) - Directions in town
+anglais-6E-05 (6E #05) - Shopping
+anglais-6E-06 (6E #06) - Irregular past simple verbs
+anglais-6E-07 (6E #07) - Much, many, a lot of
+anglais-6E-08 (6E #08) - Possessive case: 's and s'
+anglais-6E-09 (6E #09) - Adjective order
+anglais-6E-10 (6E #10) - School life in Britain
+anglais-6E-11 (6E #11) - Adverbs of manner
+anglais-6E-12 (6E #12) - My favourite technology
+anglais-6E-13 (6E #13) - Days, months and telling the time
+anglais-6E-14 (6E #14) - My daily routine
+anglais-6E-15 (6E #15) - Hobbies and free time
+anglais-6E-16 (6E #16) - Talking about emotions
+anglais-6E-17 (6E #17) - In town: asking for directions
+anglais-6E-19 (6E #19) - Asking questions correctly
+anglais-6E-20 (6E #20) - Countries and nationalities
+anglais-6E-21 (6E #21) - Talking about the past (past simple)
+anglais-6E-22 (6E #22) - Talking about the future: will vs going to
+anglais-6E-23 (6E #23) - Describing a person's appearance and character
+anglais-6E-24 (6E #24) - Describing an object
+anglais-6E-25 (6E #25) - Reading: My new school
+anglais-6E-26 (6E #26) - Listening: A phone call about the weekend
+anglais-6E-28 (6E #28) - Writing: An email to a pen friend
+anglais-6E-29 (6E #29) - Story: The strange noise
+anglais-6E-30 (6E #30) - Annual challenge: My first year of English at college
+anglais-5E-01 (5E #01) - Past simple review + irregular verbs
+anglais-5E-02 (5E #02) - The future: will
+anglais-5E-03 (5E #03) - Comparative and superlative
+anglais-5E-04 (5E #04) - Countries and nationalities
+anglais-5E-05 (5E #05) - Modal verbs: can, must, should
+anglais-5E-06 (5E #06) - Describing a town or city
+anglais-5E-07 (5E #07) - Past continuous
+anglais-5E-08 (5E #08) - Question tags
+anglais-5E-09 (5E #09) - Making suggestions
+anglais-5E-10 (5E #10) - Adverbs of frequency review
+anglais-5E-12 (5E #12) - Endangered animals and the environment
+anglais-5E-13 (5E #13) - Time expressions and duration
+anglais-5E-14 (5E #14) - Daily routine and habits with 'used to'
+anglais-5E-15 (5E #15) - Hobbies: likes, dislikes and interests
+anglais-5E-16 (5E #16) - Expressing feelings and empathy
+anglais-5E-17 (5E #17) - Getting around town: transport and advice
+anglais-5E-18 (5E #18) - Preparing a trip: advice and necessity
+anglais-5E-20 (5E #20) - Introducing the present perfect
+anglais-5E-21 (5E #21) - Past simple and past continuous together
+anglais-5E-22 (5E #22) - Future forms: will, going to and present continuous
+anglais-5E-23 (5E #23) - Describing personality in depth
+anglais-5E-24 (5E #24) - Describing objects: function and comparison
+anglais-5E-26 (5E #26) - Listening: A radio weather forecast
+anglais-5E-28 (5E #28) - Writing: A short opinion paragraph
+anglais-5E-29 (5E #29) - Story: The mysterious letter
+anglais-5E-30 (5E #30) - Annual challenge: My English progress
+anglais-4E-01 (4E #01) - Present perfect: introduction
+anglais-4E-02 (4E #02) - Conditional: if clauses type 1
+anglais-4E-03 (4E #03) - The passive voice: introduction
+anglais-4E-05 (4E #05) - Common phrasal verbs
+anglais-4E-06 (4E #06) - Writing a short email
+anglais-4E-07 (4E #07) - Used to: past habits
+anglais-4E-08 (4E #08) - Gerund or infinitive?
+anglais-4E-09 (4E #09) - Indefinite pronouns
+anglais-4E-10 (4E #10) - Modals of deduction
+anglais-4E-11 (4E #11) - Expressing purpose
+anglais-4E-12 (4E #12) - Media and technology vocabulary
+anglais-4E-13 (4E #13) - Time clauses: as soon as, by the time
+anglais-4E-14 (4E #14) - Describing routines with relative clauses
+anglais-4E-15 (4E #15) - Hobbies and reported speech
+anglais-4E-16 (4E #16) - Idioms and expressions for emotions
+anglais-4E-17 (4E #17) - Town and city: the passive voice
+anglais-4E-18 (4E #18) - Travel planning with conditionals
+anglais-4E-19 (4E #19) - Question tags
+anglais-4E-20 (4E #20) - Present tenses review: simple, continuous, perfect
+anglais-4E-21 (4E #21) - Past simple vs present perfect: fine differences
+anglais-4E-22 (4E #22) - Future perfect and future continuous
+anglais-4E-24 (4E #24) - Describing objects: nuanced comparisons
+anglais-4E-25 (4E #25) - Reading: The power of social media
+anglais-4E-27 (4E #27) - Conversation: Making a complaint politely
+anglais-4E-28 (4E #28) - Writing: A balanced opinion essay
+anglais-4E-29 (4E #29) - Story: The job interview
+anglais-4E-30 (4E #30) - Annual challenge: Advanced English skills
+anglais-3E-01 (3E #01) - Present perfect vs past simple
+anglais-3E-02 (3E #02) - Second conditional: imaginary situations
+anglais-3E-03 (3E #03) - Relative clauses: who, which, that
+anglais-3E-04 (3E #04) - Expressing opinions
+anglais-3E-05 (3E #05) - Debating a simple topic
+anglais-3E-06 (3E #06) - Oral exam preparation: describing a picture
+anglais-3E-07 (3E #07) - Third conditional: regrets about the past
+anglais-3E-08 (3E #08) - Wish + past simple: regrets and hypotheses
+anglais-3E-09 (3E #09) - Reported speech: questions and commands
+anglais-3E-10 (3E #10) - Environmental issues vocabulary
+anglais-3E-11 (3E #11) - Media and digital technology: pros and cons
+anglais-3E-12 (3E #12) - Giving a structured oral presentation
+anglais-3E-13 (3E #13) - Narrative time expressions: the moment, no sooner
+anglais-3E-14 (3E #14) - Routines: phrasal verbs and habitual past
+anglais-3E-15 (3E #15) - Hobbies: gerund vs infinitive nuances
+anglais-3E-16 (3E #16) - Emotions: nuanced idioms and mixed conditionals
+anglais-3E-17 (3E #17) - Urban change: passive with modals
+anglais-3E-18 (3E #18) - Travel: reported questions and regrets
+anglais-3E-19 (3E #19) - Embedded and rhetorical questions
+anglais-3E-20 (3E #20) - Present tense: subtle uses and generic statements
+anglais-3E-21 (3E #21) - Past perfect for narrative sequencing
+anglais-3E-22 (3E #22) - Future in the past and predictions with modals
+anglais-3E-23 (3E #23) - Describing character: hedging and reported opinions
+anglais-3E-24 (3E #24) - Describing things: superlatives with nuance
+anglais-3E-25 (3E #25) - Reading: The gig economy and young workers
+anglais-3E-26 (3E #26) - Listening: A university open day talk
+anglais-3E-27 (3E #27) - Conversation: A debate about school rules
+anglais-3E-28 (3E #28) - Writing: A formal letter of complaint
+anglais-3E-29 (3E #29) - Story: A decision that changed everything
+anglais-3E-30 (3E #30) - Annual challenge: Ready for high school English

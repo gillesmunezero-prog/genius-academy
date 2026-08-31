@@ -1,0 +1,132 @@
+geo-CP-01 (CP #01) - Se repérer dans l'espace proche
+geo-CP-02 (CP #02) - Ma maison, mon quartier
+geo-CP-03 (CP #03) - Le plan de la classe et de l'école
+geo-CP-04 (CP #04) - La ville et la campagne
+geo-CP-05 (CP #05) - Les paysages : montagne, mer, forêt
+geo-CP-06 (CP #06) - Se repérer sur un plan simple
+geographie-CP-07 (CP #07) - Plat, en pente, en colline
+geographie-CP-08 (CP #08) - L'eau autour de moi
+geographie-CP-09 (CP #09) - Il fait chaud, il fait froid
+geographie-CP-10 (CP #10) - Mon pays, la France
+geographie-CP-11 (CP #11) - Beaucoup de gens habitent ensemble
+geographie-CP-12 (CP #12) - Petite ville, grande ville
+geographie-CP-13 (CP #13) - La vie à la campagne
+geographie-CP-14 (CP #14) - D'où viennent les choses que j'utilise
+geographie-CP-15 (CP #15) - Se déplacer et transporter des choses
+geographie-CP-16 (CP #16) - Prendre soin de la nature
+geographie-CP-17 (CP #17) - Des objets qui viennent de loin
+geographie-CP-18 (CP #18) - Mon quartier, en entier
+geo-CE1-01 (CE1 #01) - Se repérer : nord, sud, est, ouest
+geo-CE1-03 (CE1 #03) - Ville et campagne, les paysages
+geo-CE1-04 (CE1 #04) - Lire une carte simple
+geo-CE1-05 (CE1 #05) - Découvrir les continents
+geo-CE1-06 (CE1 #06) - Le climat et les saisons près de chez moi
+geographie-CE1-07 (CE1 #07) - Les reliefs de France
+geographie-CE1-08 (CE1 #08) - Les rivières de ma région
+geographie-CE1-10 (CE1 #10) - La France et ses pays voisins
+geographie-CE1-11 (CE1 #11) - Où habitent les Français
+geographie-CE1-12 (CE1 #12) - Les grandes villes de France
+geographie-CE1-13 (CE1 #13) - La campagne et ses activités
+geographie-CE1-14 (CE1 #14) - Les ressources naturelles autour de nous
+geographie-CE1-15 (CE1 #15) - Voyager et échanger des marchandises
+geographie-CE1-16 (CE1 #16) - Protéger l'environnement autour de moi
+geographie-CE1-17 (CE1 #17) - Des produits venus d'autres pays
+geographie-CE1-18 (CE1 #18) - Ma région : une étude complète
+geo-CE2-01 (CE2 #01) - Les continents et les océans
+geo-CE2-03 (CE2 #03) - Lire une carte avec sa légende
+geo-CE2-04 (CE2 #04) - Les paysages du monde
+geo-CE2-05 (CE2 #05) - La ville où j'habite : services et équipements
+geo-CE2-06 (CE2 #06) - L'Union européenne : introduction
+geographie-CE2-07 (CE2 #07) - Les reliefs de la France
+geographie-CE2-08 (CE2 #08) - Les fleuves de France
+geographie-CE2-10 (CE2 #10) - La France et l'Europe : pays et territoires
+geographie-CE2-11 (CE2 #11) - La population de la France
+geographie-CE2-13 (CE2 #13) - Les campagnes françaises et leurs cultures
+geographie-CE2-14 (CE2 #14) - Les ressources naturelles de France
+geographie-CE2-15 (CE2 #15) - Les transports en France
+geographie-CE2-17 (CE2 #17) - Des objets qui viennent de loin
+geographie-CE2-18 (CE2 #18) - Étudier une région française : la Bretagne
+geo-CM1-01 (CM1 #01) - Le relief de la France
+geo-CM1-02 (CM1 #02) - Le climat de la France
+geo-CM1-03 (CM1 #03) - Les grandes villes françaises
+geo-CM1-04 (CM1 #04) - L'agriculture en France
+geo-CM1-05 (CM1 #05) - Se déplacer en France
+geo-CM1-06 (CM1 #06) - Habiter en ville ou à la campagne aujourd'hui
+geographie-CM1-07 (CM1 #07) - Les grands reliefs du monde
+geographie-CM1-08 (CM1 #08) - Les grands fleuves du monde
+geographie-CM1-10 (CM1 #10) - Qu'est-ce qu'un pays ?
+geographie-CM1-12 (CM1 #12) - Les grandes villes du monde
+geographie-CM1-13 (CM1 #13) - L'agriculture dans le monde
+geographie-CM1-14 (CM1 #14) - Les ressources naturelles de la France
+geographie-CM1-15 (CM1 #15) - Les échanges commerciaux dans le monde
+geographie-CM1-16 (CM1 #16) - Protéger l'environnement de la planète
+geographie-CM1-17 (CM1 #17) - Des produits fabriqués partout dans le monde
+geographie-CM1-18 (CM1 #18) - Étudier un territoire : la région Provence-Alpes-Côte d'Azur
+geo-CM2-01 (CM2 #01) - L'Union européenne (approfondi)
+geo-CM2-02 (CM2 #02) - Les pays d'Europe
+geo-CM2-04 (CM2 #04) - La population mondiale et sa répartition
+geo-CM2-05 (CM2 #05) - Les ressources naturelles
+geo-CM2-06 (CM2 #06) - Le monde et ses continents : bilan
+geographie-CM2-07 (CM2 #07) - Les grands ensembles de relief mondiaux
+geographie-CM2-08 (CM2 #08) - Les grands fleuves et leur aménagement
+geographie-CM2-09 (CM2 #09) - Types de pays : développés et en développement
+geographie-CM2-10 (CM2 #10) - Les grandes métropoles mondiales
+geographie-CM2-11 (CM2 #11) - Les migrations dans le monde
+geographie-CM2-12 (CM2 #12) - Villes et villages : la vie rurale mondiale
+geographie-CM2-13 (CM2 #13) - Les grands types d'agriculture mondiale
+geographie-CM2-14 (CM2 #14) - Les ressources naturelles dans le monde
+geographie-CM2-15 (CM2 #15) - Le commerce mondial et ses grandes routes
+geographie-CM2-16 (CM2 #16) - Le changement climatique, un défi mondial
+geographie-CM2-17 (CM2 #17) - La mondialisation en action
+geo-6E-01 (6E #01) - Habiter une métropole
+geo-6E-02 (6E #02) - Habiter un espace de faible densité
+geo-6E-04 (6E #04) - Le monde habité : répartition de la population
+geo-6E-05 (6E #05) - Lire et construire une carte
+geo-6E-06 (6E #06) - Les risques et l'environnement
+geographie-6E-07 (6E #07) - Reliefs et risques naturels
+geographie-6E-08 (6E #08) - L'eau, une ressource à gérer
+geographie-6E-09 (6E #09) - Les zones climatiques et la biodiversité
+geographie-6E-10 (6E #10) - Frontières et diversité des États
+geographie-6E-12 (6E #12) - L'organisation de l'espace urbain
+geographie-6E-13 (6E #13) - Les campagnes, espaces agricoles et ruraux
+geographie-6E-14 (6E #14) - Les ressources naturelles
+geographie-6E-16 (6E #16) - Protéger l'environnement
+geographie-6E-17 (6E #17) - La mondialisation, un monde en réseau
+geo-5E-01 (5E #01) - La croissance démographique et ses effets
+geo-5E-02 (5E #02) - Répartir la richesse : inégalités mondiales
+geo-5E-03 (5E #03) - Gérer les ressources en eau
+geo-5E-04 (5E #04) - Prévenir les risques climatiques
+geo-5E-05 (5E #05) - Le changement global et ses effets
+geo-5E-06 (5E #06) - Adapter les territoires aux changements
+geographie-5E-09 (5E #09) - Climats et zones bioclimatiques
+geographie-5E-10 (5E #10) - États, territoires et organisations internationales
+geographie-5E-11 (5E #11) - Répartition et dynamiques de la population mondiale
+geographie-5E-12 (5E #12) - Les villes et l'urbanisation mondiale
+geographie-5E-13 (5E #13) - Les espaces ruraux et l'agriculture mondiale
+geographie-5E-16 (5E #16) - Environnement, biodiversité et développement durable
+geographie-5E-17 (5E #17) - La mondialisation et ses acteurs
+geographie-5E-18 (5E #18) - Analyser un territoire : la métropole de Lyon
+geo-4E-01 (4E #01) - L'urbanisation dans le monde
+geo-4E-02 (4E #02) - Les espaces de faible densité dans le monde
+geo-4E-03 (4E #03) - Les mobilités humaines : migrations et tourisme
+geo-4E-04 (4E #04) - La mondialisation : flux et acteurs
+geo-4E-05 (4E #05) - Les espaces maritimes, une ressource convoitée
+geo-4E-06 (4E #06) - Les territoires productifs français
+geographie-4E-09 (4E #09) - Climats, risques climatiques et adaptation des territoires
+geographie-4E-10 (4E #10) - Puissances, États et rapports de force mondiaux
+geographie-4E-11 (4E #11) - Mobilités et migrations dans le monde
+geographie-4E-12 (4E #12) - Villes mondiales et métropolisation
+geographie-4E-16 (4E #16) - Environnement mondial : biodiversité et pollutions
+geographie-4E-17 (4E #17) - La mondialisation en débat : intégration et fractures
+geographie-4E-18 (4E #18) - Analyser un territoire : la façade maritime du Nord de l'Europe
+geo-3E-01 (3E #01) - La France dans l'Union européenne
+geo-3E-02 (3E #02) - Les territoires français dans le monde (outre-mer)
+geo-3E-03 (3E #03) - Aménager les territoires : transports et énergies
+geo-3E-04 (3E #04) - Les espaces productifs français (approfondi)
+geo-3E-06 (3E #06) - Le monde habité : enjeux du 21e siècle
+geographie-3E-09 (3E #09) - Le changement climatique, un défi pour les territoires français
+geographie-3E-10 (3E #10) - La France, un État au cœur de l'Union européenne et du monde
+geographie-3E-12 (3E #12) - Les métropoles françaises, entre attractivité et fractures
+geographie-3E-13 (3E #13) - Les espaces productifs agricoles français face aux mutations
+geographie-3E-15 (3E #15) - Transports, mobilités et aménagement durable des territoires
+geographie-3E-16 (3E #16) - Environnement et développement durable : les territoires français en transition

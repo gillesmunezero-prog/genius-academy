@@ -1,0 +1,79 @@
+vie-CP-02 (CP #02) - Le sommeil et mon corps
+vie-CP-03 (CP #03) - Se laver et être propre
+vie-CP-04 (CP #04) - Les bonnes manières
+vie-CP-05 (CP #05) - Se sentir en sécurité
+vie-CP-06 (CP #06) - Reconnaître ses émotions
+viepratique-CP-07 (CP #07) - Une journée bien rythmée
+viepratique-CP-08 (CP #08) - Quand quelque chose ne marche pas
+viepratique-CP-09 (CP #09) - Choisir entre deux choses
+viepratique-CP-10 (CP #10) - Ma tirelire : garder ou dépenser
+viepratique-CP-12 (CP #12) - Essayer tout seul avant de demander
+vie-CE1-01 (CE1 #01) - Organiser son temps
+vie-CE1-02 (CE1 #02) - Apprendre par cœur efficacement
+vie-CE1-03 (CE1 #03) - Comment marche mon cerveau
+vie-CE1-05 (CE1 #05) - Pourquoi dormir aide à apprendre
+vie-CE1-06 (CE1 #06) - Être un bon camarade
+viepratique-CE1-07 (CE1 #07) - S'organiser : un endroit pour chaque chose
+viepratique-CE1-09 (CE1 #09) - Faire un choix et l'assumer
+viepratique-CE1-10 (CE1 #10) - Mon argent de poche : dépenser ou épargner
+viepratique-CE1-11 (CE1 #11) - Vrai, faux, ou je ne sais pas encore
+viepratique-CE1-12 (CE1 #12) - Travailler seul, sans être dérangé
+vie-CE2-02 (CE2 #02) - Prendre soin de son corps : bien manger
+vie-CE2-03 (CE2 #03) - Gérer ses émotions (approfondi)
+vie-CE2-04 (CE2 #04) - Résoudre un petit conflit
+vie-CE2-05 (CE2 #05) - Le budget de poche
+vie-CE2-06 (CE2 #06) - Les gestes qui sauvent
+viepratique-CE2-07 (CE2 #07) - Se concentrer sur son travail
+viepratique-CE2-09 (CE2 #09) - Résoudre un problème en plusieurs étapes
+viepratique-CE2-10 (CE2 #10) - Prendre une décision réfléchie
+viepratique-CE2-12 (CE2 #12) - Faire un exposé tout seul
+vie-CM1-01 (CM1 #01) - Planifier son travail scolaire
+vie-CM1-03 (CM1 #03) - Prendre de bonnes notes
+vie-CM1-04 (CM1 #04) - Résoudre un problème étape par étape
+vie-CM1-05 (CM1 #05) - Consommer intelligemment : besoin ou envie ?
+vie-CM1-06 (CM1 #06) - Respecter l'environnement au quotidien
+viepratique-CM1-07 (CM1 #07) - La révision espacée, étape par étape
+viepratique-CM1-11 (CM1 #11) - Distinguer un fait d'une opinion
+viepratique-CM1-12 (CM1 #12) - Apprendre une leçon en autonomie
+vie-CM2-01 (CM2 #01) - Méthode de travail pour un contrôle
+vie-CM2-02 (CM2 #02) - Gérer son stress
+vie-CM2-03 (CM2 #03) - Communiquer clairement
+vie-CM2-04 (CM2 #04) - Comprendre la publicité
+viepratique-CM2-07 (CM2 #07) - Retrouver sa concentration après une distraction
+viepratique-CM2-08 (CM2 #08) - Prendre des notes pendant un exposé oral
+viepratique-CM2-09 (CM2 #09) - Planifier une semaine chargée
+viepratique-CM2-10 (CM2 #10) - Trouver plusieurs solutions à un problème
+viepratique-CM2-11 (CM2 #11) - Décider en pesant le pour et le contre
+viepratique-CM2-12 (CM2 #12) - Chercher une information par soi-même
+vie-6E-01 (6E #01) - S'organiser au collège
+vie-6E-03 (6E #03) - Gérer son temps d'écran
+vie-6E-05 (6E #05) - Premiers secours (approfondi)
+vie-6E-06 (6E #06) - Construire des relations saines
+viepratique-6E-08 (6E #08) - Analyser un problème avant d'agir
+viepratique-6E-09 (6E #09) - Décider seul face à une nouvelle situation
+viepratique-6E-11 (6E #11) - Repérer une information douteuse
+viepratique-6E-12 (6E #12) - S'organiser seul pour un devoir maison
+vie-5E-02 (5E #02) - Gérer le stress des évaluations
+vie-5E-04 (5E #04) - Consommation responsable (approfondi)
+vie-5E-05 (5E #05) - Sécurité routière
+vie-5E-06 (5E #06) - Communication non-violente
+viepratique-5E-07 (5E #07) - La concentration profonde : entrer dans le travail
+viepratique-5E-10 (5E #10) - Décider face à la pression du groupe
+viepratique-5E-11 (5E #11) - Reconnaître un biais de raisonnement simple
+viepratique-5E-12 (5E #12) - Construire sa propre méthode de travail
+vie-4E-01 (4E #01) - Gérer son temps efficacement
+vie-4E-05 (4E #05) - Prévention des addictions
+vie-4E-06 (4E #06) - S'engager : bénévolat et citoyenneté
+viepratique-4E-08 (4E #08) - Résoudre un problème complexe : méthode en 4 étapes
+viepratique-4E-11 (4E #11) - Esprit critique face aux réseaux sociaux
+viepratique-4E-12 (4E #12) - Apprendre seul : mener un mini-projet en autonomie
+vie-3E-01 (3E #01) - Préparer son orientation post-3e
+vie-3E-02 (3E #02) - Gestion du stress pour les examens
+vie-3E-04 (3E #04) - Éducation financière avancée
+vie-3E-05 (3E #05) - Esprit critique face aux médias
+vie-3E-06 (3E #06) - Bilan : compétences pour l'autonomie
+viepratique-3E-08 (3E #08) - Résoudre un problème complexe : la méthode complète
+viepratique-3E-09 (3E #09) - Décider de son orientation : peser les critères
+viepratique-3E-10 (3E #10) - Construire un vrai budget avec épargne
+viepratique-3E-11 (3E #11) - Désinformation et manipulation sur les réseaux
+viepratique-3E-12 (3E #12) - Méthode de révision autonome pour le brevet

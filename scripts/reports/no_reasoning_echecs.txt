@@ -1,0 +1,88 @@
+echecs-CP-01 (CP #01) - L'échiquier et ses cases
+echecs-CP-02 (CP #02) - Le pion
+echecs-CP-03 (CP #03) - La tour
+echecs-CP-04 (CP #04) - Le fou
+echecs-CP-05 (CP #05) - Le cavalier
+echecs-CP-06 (CP #06) - Le roi
+echecs-CP-07 (CP #07) - Le roque, un coup spécial
+echecs-CP-08 (CP #08) - Combien valent les pièces ?
+echecs-CP-09 (CP #09) - Protéger une pièce
+echecs-CP-10 (CP #10) - Faire un échange
+echecs-CP-11 (CP #11) - La fourchette du cavalier
+echecs-CP-13 (CP #13) - L'enfilade
+echecs-CP-14 (CP #14) - Attaquer deux choses à la fois
+echecs-CP-15 (CP #15) - Un premier mat facile
+echecs-CP-17 (CP #17) - Avoir un petit plan
+echecs-CP-18 (CP #18) - Regarder toute la position
+echecs-CE1-02 (CE1 #02) - Mettre le roi en échec
+echecs-CE1-03 (CE1 #03) - Échec et mat
+echecs-CE1-04 (CE1 #04) - Protéger ses pièces
+echecs-CE1-05 (CE1 #05) - Le roque : mettre son roi en sécurité
+echecs-CE1-06 (CE1 #06) - Jouer une petite partie guidée
+echecs-CE1-07 (CE1 #07) - Le roque, petit et grand
+echecs-CE1-08 (CE1 #08) - La valeur des pièces en pratique
+echecs-CE1-09 (CE1 #09) - Bien protéger ses pièces
+echecs-CE1-10 (CE1 #10) - Les échanges avantageux
+echecs-CE1-11 (CE1 #11) - Repérer les fourchettes
+echecs-CE1-12 (CE1 #12) - Le clouage relatif et absolu
+echecs-CE1-15 (CE1 #15) - Le mat de l'escalier
+echecs-CE1-16 (CE1 #16) - Le roi et le pion contre le roi
+echecs-CE1-17 (CE1 #17) - Construire un plan de partie
+echecs-CE1-18 (CE1 #18) - Analyser une petite position pas à pas
+echecs-CE2-01 (CE2 #01) - La valeur des pièces
+echecs-CE2-02 (CE2 #02) - Les échanges simples
+echecs-CE2-04 (CE2 #04) - Développer ses pièces (ouverture)
+echecs-CE2-05 (CE2 #05) - Mats en 1 coup
+echecs-CE2-06 (CE2 #06) - Éviter les pièges classiques
+echecs-CE2-07 (CE2 #07) - Choisir son roque selon la position
+echecs-CE2-08 (CE2 #08) - Les pièces mineures et majeures
+echecs-CE2-09 (CE2 #09) - Défendre efficacement une pièce menacée
+echecs-CE2-10 (CE2 #10) - Calculer une série d'échanges
+echecs-CE2-13 (CE2 #13) - L'enfilade
+echecs-CE2-14 (CE2 #14) - L'attaque double
+echecs-CE2-18 (CE2 #18) - Analyser une position complète
+echecs-CM1-01 (CM1 #01) - La tactique de la fourchette
+echecs-CM1-02 (CM1 #02) - Le clouage
+echecs-CM1-04 (CM1 #04) - Mat en 2 coups
+echecs-CM1-05 (CM1 #05) - Les finales de pions simples
+echecs-CM1-06 (CM1 #06) - Les principes d'ouverture
+echecs-CM1-08 (CM1 #08) - La valeur des pièces selon la position
+echecs-CM1-10 (CM1 #10) - Simplifier la position quand on est en avance
+echecs-CM1-12 (CM1 #12) - Clouage relatif et clouage absolu
+echecs-CM1-13 (CM1 #13) - L'enfilade sur la dame
+echecs-CM2-01 (CM2 #01) - Le sacrifice
+echecs-CM2-02 (CM2 #02) - La colonne ouverte
+echecs-CM2-03 (CM2 #03) - Finale tour et roi contre roi
+echecs-CM2-04 (CM2 #04) - L'échec perpétuel et le pat
+echecs-CM2-05 (CM2 #05) - La notation échiquéenne
+echecs-CM2-06 (CM2 #06) - Analyser une petite partie
+echecs-CM2-12 (CM2 #12) - Casser un clouage gênant
+echecs-CM2-13 (CM2 #13) - Combiner clouage et enfilade
+echecs-CM2-14 (CM2 #14) - Attaque double et découverte
+echecs-CM2-16 (CM2 #16) - La finale de tours
+echecs-CM2-17 (CM2 #17) - Construire un plan sur plusieurs phases
+echecs-6E-01 (6E #01) - Les structures de pions
+echecs-6E-02 (6E #02) - La paire de fous
+echecs-6E-03 (6E #03) - Stratégie : faiblesses et forces
+echecs-6E-04 (6E #04) - Combinaisons à 3 coups
+echecs-6E-06 (6E #06) - Gérer le temps en partie rapide
+echecs-6E-08 (6E #08) - Évaluer un déséquilibre matériel complexe
+echecs-6E-15 (6E #15) - Le mat de l'arabe et autres mats de cavalier
+echecs-6E-17 (6E #17) - Attaquer une majorité de pions
+echecs-5E-01 (5E #01) - Ouvertures classiques : notions
+echecs-5E-02 (5E #02) - Le milieu de jeu : élaborer un plan
+echecs-5E-03 (5E #03) - Sacrifices positionnels
+echecs-5E-08 (5E #08) - Compensation dynamique pour un sacrifice de matériel
+echecs-5E-12 (5E #12) - Clouage sur la grande diagonale
+echecs-4E-01 (4E #01) - Théorie d'ouverture approfondie
+echecs-4E-04 (4E #04) - La défense active
+echecs-4E-05 (4E #05) - Finales de pièces mineures
+echecs-4E-06 (4E #06) - Préparer une compétition
+echecs-4E-07 (4E #07) - Roque tardif et roi au centre calculé
+echecs-4E-18 (4E #18) - Analyser une position à évaluation incertaine
+echecs-3E-01 (3E #01) - Étudier des parties de grands maîtres
+echecs-3E-03 (3E #03) - La stratégie à long terme
+echecs-3E-05 (3E #05) - Éthique et fair-play aux échecs
+echecs-3E-06 (3E #06) - Bilan : construire son propre style de jeu
+echecs-3E-14 (3E #14) - Attaque double stratégique sur deux faiblesses éloignées
+echecs-3E-18 (3E #18) - Analyse complète d'une position de haut niveau

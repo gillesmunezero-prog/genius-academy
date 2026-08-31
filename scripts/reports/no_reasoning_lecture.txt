@@ -1,0 +1,133 @@
+lecture-CP-01 (CP #01) - Le petit chat perdu
+lecture-CP-02 (CP #02) - La graine magique
+lecture-CP-03 (CP #03) - Le pique-nique de Léo
+lecture-CP-04 (CP #04) - L'anniversaire de Zoé
+lecture-CP-06 (CP #06) - Mon ami le nuage
+lecture-CP-08 (CP #08) - Le facteur du village
+lecture-CP-09 (CP #09) - La lettre à mamie
+lecture-CP-11 (CP #11) - Une journée à la ferme
+lecture-CP-13 (CP #13) - Le loup qui avait peur du noir
+lecture-CP-14 (CP #14) - Comment naissent les papillons
+lecture-CP-15 (CP #15) - Le marchand de glaces
+lecture-CP-16 (CP #16) - Mon journal : le premier jour d'école
+lecture-CP-17 (CP #17) - Le petit boulanger
+lecture-CP-19 (CP #19) - Le bonhomme de neige qui voulait voyager
+lecture-CP-21 (CP #21) - Une lettre du père Noël
+lecture-CP-24 (CP #24) - Le poème des couleurs
+lecture-CP-25 (CP #25) - Marie Curie, petite fille curieuse
+lecture-CP-28 (CP #28) - Le journal de Noé, jour de neige
+lecture-CP-30 (CP #30) - Le secret du grenier
+lecture-CE1-03 (CE1 #03) - La fête de l'école
+lecture-CE1-06 (CE1 #06) - Le marché aux couleurs
+lecture-CE1-08 (CE1 #08) - Comment se forme un arc-en-ciel
+lecture-CE1-09 (CE1 #09) - Le métier de vétérinaire
+lecture-CE1-10 (CE1 #10) - Lettre d'un correspondant anglais
+lecture-CE1-11 (CE1 #11) - Le journal de Camille : mon premier match de foot
+lecture-CE1-12 (CE1 #12) - Les fourmis, une société organisée
+lecture-CE1-13 (CE1 #13) - Le vieux pêcheur et la mer
+lecture-CE1-16 (CE1 #16) - Louis Pasteur, l'enfant curieux
+lecture-CE1-17 (CE1 #17) - Dialogue chez le médecin
+lecture-CE1-18 (CE1 #18) - Le trésor du capitaine Rouge
+lecture-CE1-19 (CE1 #19) - Comment vivent les manchots
+lecture-CE1-21 (CE1 #21) - Lettre au futur moi
+lecture-CE1-22 (CE1 #22) - Le boulanger de nuit
+lecture-CE1-24 (CE1 #24) - Le journal de bord d'un astronaute
+lecture-CE1-25 (CE1 #25) - La légende du petit dragon peureux
+lecture-CE1-26 (CE1 #26) - Comment fonctionne un aimant
+lecture-CE1-28 (CE1 #28) - Le tri des déchets à l'école
+lecture-CE1-29 (CE1 #29) - Les abeilles et les fleurs
+lecture-CE1-30 (CE1 #30) - Le mystère du cartable disparu
+lecture-CE2-02 (CE2 #02) - Le concours de robots
+lecture-CE2-03 (CE2 #03) - Le marché du village (approfondi)
+lecture-CE2-04 (CE2 #04) - Le mystère de la bibliothèque
+lecture-CE2-05 (CE2 #05) - L'interview imaginaire
+lecture-CE2-06 (CE2 #06) - Le journal d'un jeune explorateur
+lecture-CE2-07 (CE2 #07) - Les volcans, géants endormis
+lecture-CE2-08 (CE2 #08) - Le métier de photographe animalier
+lecture-CE2-09 (CE2 #09) - Léonard de Vinci, l'enfant qui observait tout
+lecture-CE2-11 (CE2 #11) - Le journal d'une apprentie pâtissière
+lecture-CE2-13 (CE2 #13) - Recyclage record dans notre école
+lecture-CE2-15 (CE2 #15) - Le vieux violon
+lecture-CE2-16 (CE2 #16) - Dialogue entre un robot et un enfant
+lecture-CE2-21 (CE2 #21) - Deux championnes, deux chemins
+lecture-CE2-22 (CE2 #22) - Deux recettes de crêpes, deux styles
+lecture-CE2-23 (CE2 #23) - Le tableau des sorties scolaires
+lecture-CE2-24 (CE2 #24) - Le graphique des ventes de glaces
+lecture-CE2-25 (CE2 #25) - L'affiche du cirque et le texte du journal
+lecture-CE2-28 (CE2 #28) - La visite au zoo
+lecture-CE2-29 (CE2 #29) - Trois avis sur le même livre
+lecture-CM1-01 (CM1 #01) - Une journée avec un pompier
+lecture-CM1-03 (CM1 #03) - Comment fonctionne une ruche
+lecture-CM1-04 (CM1 #04) - La course contre la montre
+lecture-CM1-05 (CM1 #05) - Le message dans la bouteille
+lecture-CM1-07 (CM1 #07) - Le concours de dessin
+lecture-CM1-08 (CM1 #08) - Journal d'un têtard devenu grenouille
+lecture-CM1-09 (CM1 #09) - Les dauphins, champions de la mer
+lecture-CM1-11 (CM1 #11) - Le squelette, la charpente de notre corps
+lecture-CM1-12 (CM1 #12) - Le chat qui n'aimait pas l'eau
+lecture-CM1-15 (CM1 #15) - La panne d'électricité
+lecture-CM1-18 (CM1 #18) - L'orage approche
+lecture-CM1-19 (CM1 #19) - Marie Curie, une vie dédiée à la science
+lecture-CM1-20 (CM1 #20) - Comment bien recycler à la maison
+lecture-CM1-21 (CM1 #21) - Faut-il interdire les écrans le soir ?
+lecture-CM1-26 (CM1 #26) - Deux champions, deux parcours : Amir et Léna
+lecture-CM1-28 (CM1 #28) - La recette de la galette des rois
+lecture-CM1-29 (CM1 #29) - Les abeilles disparaissent : pourquoi s'inquiéter ?
+lecture-CM2-01 (CM2 #01) - Faut-il des devoirs à la maison ?
+lecture-CM2-02 (CM2 #02) - Le dernier arbre de la forêt
+lecture-CM2-03 (CM2 #03) - Les océans en danger
+lecture-CM2-05 (CM2 #05) - Interview d'une astronaute
+lecture-CM2-06 (CM2 #06) - Le choix de Léa
+lecture-CM2-07 (CM2 #07) - Un collégien invente une appli solidaire
+lecture-CM2-08 (CM2 #08) - Le cerveau humain, une machine fascinante
+lecture-CM2-09 (CM2 #09) - Les récifs coralliens, des forêts sous la mer
+lecture-CM2-10 (CM2 #10) - Nelson Mandela, le combat pour l'égalité
+lecture-CM2-11 (CM2 #11) - Le carnet oublié
+lecture-CM2-12 (CM2 #12) - La photo de classe qui manque
+lecture-CM2-14 (CM2 #14) - Le vase cassé
+lecture-CM2-15 (CM2 #15) - Lettre à mon père parti travailler loin
+lecture-CM2-16 (CM2 #16) - Le choix de Malik
+lecture-CM2-17 (CM2 #17) - La cabane dans les bois
+lecture-CM2-21 (CM2 #21) - Deux capitaines, deux visions du jeu
+lecture-CM2-23 (CM2 #23) - Le tableau des consommations d'eau
+lecture-6E-01 (6E #01) - La ruse du renard (conte)
+lecture-6E-04 (6E #04) - Récit d'aventure : l'expédition
+lecture-6E-05 (6E #05) - Un poème et sa structure
+lecture-6E-06 (6E #06) - Un dialogue de théâtre
+lecture-6E-07 (6E #07) - Le message effacé
+lecture-6E-09 (6E #09) - Pourquoi les séismes se produisent-ils ?
+lecture-6E-10 (6E #10) - La grève des transports
+lecture-6E-11 (6E #11) - Journal d'un premier jour de sixième
+lecture-6E-13 (6E #13) - L'orage approche
+lecture-6E-15 (6E #15) - Reformuler un règlement scolaire
+lecture-6E-22 (6E #22) - Deux légendes autour d'un même lac
+lecture-6E-23 (6E #23) - Le tableau des menus de la cantine
+lecture-6E-24 (6E #24) - Le graphique des populations d'abeilles
+lecture-6E-28 (6E #28) - Le compte-rendu de la sortie au planétarium
+lecture-5E-01 (5E #01) - Le sport à l'école : argumentation
+lecture-5E-03 (5E #03) - Article de presse : découverte archéologique
+lecture-5E-04 (5E #04) - Extrait de roman classique adapté
+lecture-5E-15 (5E #15) - Lettre d'un émigrant (correspondance historique)
+lecture-4E-01 (4E #01) - Les réseaux sociaux : argumentation complexe
+lecture-4E-02 (4E #02) - Témoignage : la Première Guerre mondiale
+lecture-4E-03 (4E #03) - Poème engagé
+lecture-4E-06 (4E #06) - Texte satirique
+lecture-4E-07 (4E #07) - La valise sous le lit (nouvelle)
+lecture-4E-11 (4E #11) - Le départ (récit sur l'exil)
+lecture-4E-14 (4E #14) - L'expérience de Milgram, résumée pour un journal scolaire
+lecture-4E-15 (4E #15) - Reformuler un extrait de contrat de location
+lecture-4E-16 (4E #16) - Le débat sur l'uniforme scolaire
+lecture-4E-23 (4E #23) - Le tableau des résultats du dépistage
+lecture-4E-24 (4E #24) - Le graphique du réchauffement régional
+lecture-3E-02 (3E #02) - Récit autobiographique
+lecture-3E-03 (3E #03) - Analyse critique d'un article de presse
+lecture-3E-04 (3E #04) - Poème sur l'engagement
+lecture-3E-05 (3E #05) - Extrait de roman contemporain
+lecture-3E-06 (3E #06) - Discours engagé (extrait)
+lecture-3E-07 (3E #07) - La clé qui n'ouvrait rien
+lecture-3E-13 (3E #13) - Le dernier appel
+lecture-3E-14 (3E #14) - Résumer un article sur l'intelligence artificielle générative
+lecture-3E-15 (3E #15) - Reformuler un extrait de la Déclaration des droits de l'enfant
+lecture-3E-16 (3E #16) - Faut-il abaisser l'âge du droit de vote à 16 ans ?
+lecture-3E-23 (3E #23) - Le tableau des inégalités de revenus
+lecture-3E-24 (3E #24) - Le graphique de l'évolution démographique mondiale

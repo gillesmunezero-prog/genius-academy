@@ -1,0 +1,232 @@
+lecture-CP-02 (CP #02) - La graine magique
+lecture-CP-03 (CP #03) - Le pique-nique de Léo
+lecture-CP-05 (CP #05) - Le jour de pluie
+lecture-CP-07 (CP #07) - Le hérisson dans le jardin
+lecture-CP-08 (CP #08) - Le facteur du village
+lecture-CP-09 (CP #09) - La lettre à mamie
+lecture-CP-10 (CP #10) - Le petit poisson rouge
+lecture-CP-11 (CP #11) - Une journée à la ferme
+lecture-CP-12 (CP #12) - Le poème du vent
+lecture-CP-13 (CP #13) - Le loup qui avait peur du noir
+lecture-CP-14 (CP #14) - Comment naissent les papillons
+lecture-CP-15 (CP #15) - Le marchand de glaces
+lecture-CP-16 (CP #16) - Mon journal : le premier jour d'école
+lecture-CP-18 (CP #18) - La tortue et l'escargot
+lecture-CP-20 (CP #20) - Les dauphins, champions de la mer
+lecture-CP-21 (CP #21) - Une lettre du père Noël
+lecture-CP-22 (CP #22) - Le vélo cassé de Sami
+lecture-CP-23 (CP #23) - Comment pousse une plante
+lecture-CP-24 (CP #24) - Le poème des couleurs
+lecture-CP-25 (CP #25) - Marie Curie, petite fille curieuse
+lecture-CP-26 (CP #26) - Le chien pompier
+lecture-CP-27 (CP #27) - La récré sous la pluie
+lecture-CP-28 (CP #28) - Le journal de Noé, jour de neige
+lecture-CP-30 (CP #30) - Le secret du grenier
+lecture-CE1-02 (CE1 #02) - Le chat curieux
+lecture-CE1-03 (CE1 #03) - La fête de l'école
+lecture-CE1-04 (CE1 #04) - Le petit robot perdu
+lecture-CE1-05 (CE1 #05) - La poésie des quatre saisons
+lecture-CE1-07 (CE1 #07) - Le renard et les poules
+lecture-CE1-08 (CE1 #08) - Comment se forme un arc-en-ciel
+lecture-CE1-09 (CE1 #09) - Le métier de vétérinaire
+lecture-CE1-10 (CE1 #10) - Lettre d'un correspondant anglais
+lecture-CE1-11 (CE1 #11) - Le journal de Camille : mon premier match de foot
+lecture-CE1-12 (CE1 #12) - Les fourmis, une société organisée
+lecture-CE1-13 (CE1 #13) - Le vieux pêcheur et la mer
+lecture-CE1-14 (CE1 #14) - Une nouvelle piscine pour la ville
+lecture-CE1-15 (CE1 #15) - Le poème de l'automne qui arrive
+lecture-CE1-16 (CE1 #16) - Louis Pasteur, l'enfant curieux
+lecture-CE1-17 (CE1 #17) - Dialogue chez le médecin
+lecture-CE1-18 (CE1 #18) - Le trésor du capitaine Rouge
+lecture-CE1-19 (CE1 #19) - Comment vivent les manchots
+lecture-CE1-20 (CE1 #20) - La dispute des deux amis
+lecture-CE1-21 (CE1 #21) - Lettre au futur moi
+lecture-CE1-23 (CE1 #23) - Le poème de la mer
+lecture-CE1-24 (CE1 #24) - Le journal de bord d'un astronaute
+lecture-CE1-25 (CE1 #25) - La légende du petit dragon peureux
+lecture-CE1-26 (CE1 #26) - Comment fonctionne un aimant
+lecture-CE1-29 (CE1 #29) - Les abeilles et les fleurs
+lecture-CE1-30 (CE1 #30) - Le mystère du cartable disparu
+lecture-CE2-01 (CE2 #01) - La carte oubliée
+lecture-CE2-03 (CE2 #03) - Le marché du village (approfondi)
+lecture-CE2-04 (CE2 #04) - Le mystère de la bibliothèque
+lecture-CE2-05 (CE2 #05) - L'interview imaginaire
+lecture-CE2-06 (CE2 #06) - Le journal d'un jeune explorateur
+lecture-CE2-07 (CE2 #07) - Les volcans, géants endormis
+lecture-CE2-08 (CE2 #08) - Le métier de photographe animalier
+lecture-CE2-09 (CE2 #09) - Léonard de Vinci, l'enfant qui observait tout
+lecture-CE2-10 (CE2 #10) - Lettre ouverte au maire pour un skatepark
+lecture-CE2-11 (CE2 #11) - Le journal d'une apprentie pâtissière
+lecture-CE2-12 (CE2 #12) - Deux frères, deux caractères
+lecture-CE2-14 (CE2 #14) - Comment respirent les poissons
+lecture-CE2-15 (CE2 #15) - Le vieux violon
+lecture-CE2-16 (CE2 #16) - Dialogue entre un robot et un enfant
+lecture-CE2-18 (CE2 #18) - La légende de la montagne qui pleure
+lecture-CE2-20 (CE2 #20) - Pourquoi les chauves-souris dorment la tête en bas
+lecture-CE2-21 (CE2 #21) - Deux championnes, deux chemins
+lecture-CE2-23 (CE2 #23) - Le tableau des sorties scolaires
+lecture-CE2-24 (CE2 #24) - Le graphique des ventes de glaces
+lecture-CE2-25 (CE2 #25) - L'affiche du cirque et le texte du journal
+lecture-CE2-26 (CE2 #26) - Le témoignage qui ne colle pas
+lecture-CE2-27 (CE2 #27) - Vrai remède ou fausse rumeur ?
+lecture-CE2-29 (CE2 #29) - Trois avis sur le même livre
+lecture-CE2-30 (CE2 #30) - Épreuve finale : le concours de la meilleure cabane
+lecture-CM1-01 (CM1 #01) - Une journée avec un pompier
+lecture-CM1-02 (CM1 #02) - Le secret de la vieille maison
+lecture-CM1-03 (CM1 #03) - Comment fonctionne une ruche
+lecture-CM1-04 (CM1 #04) - La course contre la montre
+lecture-CM1-05 (CM1 #05) - Le message dans la bouteille
+lecture-CM1-06 (CM1 #06) - Vivre sur la banquise
+lecture-CM1-07 (CM1 #07) - Le concours de dessin
+lecture-CM1-08 (CM1 #08) - Journal d'un têtard devenu grenouille
+lecture-CM1-09 (CM1 #09) - Les dauphins, champions de la mer
+lecture-CM1-11 (CM1 #11) - Le squelette, la charpente de notre corps
+lecture-CM1-13 (CM1 #13) - La disparition du goûter
+lecture-CM1-14 (CM1 #14) - Pourquoi le ciel devient-il rouge au coucher du soleil ?
+lecture-CM1-16 (CM1 #16) - Lettre à ma meilleure amie qui déménage
+lecture-CM1-17 (CM1 #17) - Le vélo de Théo
+lecture-CM1-18 (CM1 #18) - L'orage approche
+lecture-CM1-19 (CM1 #19) - Marie Curie, une vie dédiée à la science
+lecture-CM1-20 (CM1 #20) - Comment bien recycler à la maison
+lecture-CM1-21 (CM1 #21) - Faut-il interdire les écrans le soir ?
+lecture-CM1-22 (CM1 #22) - Le témoignage de Nora après la course de relais
+lecture-CM1-25 (CM1 #25) - Louis Braille, l'inventeur de l'alphabet pour aveugles
+lecture-CM1-26 (CM1 #26) - Deux champions, deux parcours : Amir et Léna
+lecture-CM1-27 (CM1 #27) - La pluie racontée de deux façons
+lecture-CM1-29 (CM1 #29) - Les abeilles disparaissent : pourquoi s'inquiéter ?
+lecture-CM1-30 (CM1 #30) - Le jour où j'ai eu peur pour rien
+lecture-CM2-01 (CM2 #01) - Faut-il des devoirs à la maison ?
+lecture-CM2-03 (CM2 #03) - Les océans en danger
+lecture-CM2-04 (CM2 #04) - La lettre perdue
+lecture-CM2-05 (CM2 #05) - Interview d'une astronaute
+lecture-CM2-06 (CM2 #06) - Le choix de Léa
+lecture-CM2-07 (CM2 #07) - Un collégien invente une appli solidaire
+lecture-CM2-08 (CM2 #08) - Le cerveau humain, une machine fascinante
+lecture-CM2-09 (CM2 #09) - Les récifs coralliens, des forêts sous la mer
+lecture-CM2-10 (CM2 #10) - Nelson Mandela, le combat pour l'égalité
+lecture-CM2-11 (CM2 #11) - Le carnet oublié
+lecture-CM2-12 (CM2 #12) - La photo de classe qui manque
+lecture-CM2-13 (CM2 #13) - Pourquoi les glaciers fondent-ils si vite ?
+lecture-CM2-14 (CM2 #14) - Le vase cassé
+lecture-CM2-15 (CM2 #15) - Lettre à mon père parti travailler loin
+lecture-CM2-16 (CM2 #16) - Le choix de Malik
+lecture-CM2-17 (CM2 #17) - La cabane dans les bois
+lecture-CM2-18 (CM2 #18) - Thomas Edison, l'inventeur inlassable
+lecture-CM2-19 (CM2 #19) - L'accusation contre le jardinier
+lecture-CM2-20 (CM2 #20) - Pourquoi le miel ne périme jamais
+lecture-CM2-21 (CM2 #21) - Deux capitaines, deux visions du jeu
+lecture-CM2-22 (CM2 #22) - Deux versions d'un même événement historique
+lecture-CM2-24 (CM2 #24) - Le graphique de la fréquentation du musée
+lecture-CM2-25 (CM2 #25) - La caricature et l'article sur la pollution
+lecture-CM2-26 (CM2 #26) - L'alibi qui ne tient pas
+lecture-CM2-28 (CM2 #28) - Le compte-rendu du conseil des délégués
+lecture-CM2-29 (CM2 #29) - Trois sources sur le même incident
+lecture-CM2-30 (CM2 #30) - Épreuve finale : l'énigme du potager communal
+lecture-6E-01 (6E #01) - La ruse du renard (conte)
+lecture-6E-02 (6E #02) - Le lièvre et la tortue (analyse d'une fable)
+lecture-6E-03 (6E #03) - Article scientifique simplifié : les volcans
+lecture-6E-04 (6E #04) - Récit d'aventure : l'expédition
+lecture-6E-05 (6E #05) - Un poème et sa structure
+lecture-6E-06 (6E #06) - Un dialogue de théâtre
+lecture-6E-07 (6E #07) - Le message effacé
+lecture-6E-08 (6E #08) - L'héritage de l'oncle Marcel
+lecture-6E-09 (6E #09) - Pourquoi les séismes se produisent-ils ?
+lecture-6E-12 (6E #12) - La décision de Maëlys
+lecture-6E-13 (6E #13) - L'orage approche
+lecture-6E-14 (6E #14) - L'expédition en Antarctique
+lecture-6E-15 (6E #15) - Reformuler un règlement scolaire
+lecture-6E-16 (6E #16) - Faut-il interdire les écrans avant 15 ans ?
+lecture-6E-17 (6E #17) - Le nouveau projet d'aménagement
+lecture-6E-18 (6E #18) - La fable du corbeau et du miroir
+lecture-6E-19 (6E #19) - Le vélo disparu du local
+lecture-6E-20 (6E #20) - Pourquoi les flamants roses sont-ils roses ?
+lecture-6E-21 (6E #21) - Deux exploratrices, deux tempéraments
+lecture-6E-22 (6E #22) - Deux légendes autour d'un même lac
+lecture-6E-24 (6E #24) - Le graphique des populations d'abeilles
+lecture-6E-25 (6E #25) - L'affiche de prévention et le rapport d'accidents
+lecture-6E-26 (6E #26) - Le rapport de stage qui ne colle pas
+lecture-6E-27 (6E #27) - La rumeur du serpent échappé
+lecture-6E-28 (6E #28) - Le compte-rendu de la sortie au planétarium
+lecture-6E-29 (6E #29) - Trois documents sur un même monument
+lecture-5E-01 (5E #01) - Le sport à l'école : argumentation
+lecture-5E-02 (5E #02) - La porte mystérieuse (récit fantastique)
+lecture-5E-03 (5E #03) - Article de presse : découverte archéologique
+lecture-5E-04 (5E #04) - Extrait de roman classique adapté
+lecture-5E-05 (5E #05) - Le changement climatique expliqué
+lecture-5E-06 (5E #06) - Nouvelle à chute
+lecture-5E-07 (5E #07) - Le cahier oublié (nouvelle)
+lecture-5E-08 (5E #08) - Un village sans électricité (article de presse)
+lecture-5E-10 (5E #10) - La fonte des glaciers alpins (article environnement)
+lecture-5E-11 (5E #11) - Le dernier jour à la ferme (récit)
+lecture-5E-12 (5E #12) - Le vol du pain (extrait de roman)
+lecture-5E-13 (5E #13) - L'orage approche (nouvelle à suspense)
+lecture-5E-14 (5E #14) - Marie Curie, une vie pour la science (biographie)
+lecture-5E-15 (5E #15) - Lettre d'un émigrant (correspondance historique)
+lecture-5E-16 (5E #16) - Faut-il interdire les téléphones au collège ? (tribune)
+lecture-5E-17 (5E #17) - Critique d'un film d'animation (critique de film)
+lecture-5E-18 (5E #18) - La fable du lièvre connecté (texte satirique)
+lecture-5E-19 (5E #19) - Le sommeil des adolescents (article scientifique)
+lecture-5E-20 (5E #20) - Le concours de robotique (extrait de roman)
+lecture-5E-21 (5E #21) - Les deux frères (comparaison de personnages)
+lecture-5E-22 (5E #22) - La mer, entre poésie et alerte (comparaison de deux textes)
+lecture-5E-24 (5E #24) - Une espèce protégée en danger (texte et graphique)
+lecture-5E-25 (5E #25) - L'affiche du recyclage (texte et image)
+lecture-5E-26 (5E #26) - L'accident sur la départementale (témoignages contradictoires)
+lecture-5E-27 (5E #27) - Une rumeur sur les réseaux (fiabilité de l'information)
+lecture-5E-29 (5E #29) - L'inondation de Riverdale (deux documents)
+lecture-5E-30 (5E #30) - Réchauffement climatique dans les Alpes (épreuve finale, deux documents)
+lecture-4E-01 (4E #01) - Les réseaux sociaux : argumentation complexe
+lecture-4E-02 (4E #02) - Témoignage : la Première Guerre mondiale
+lecture-4E-03 (4E #03) - Poème engagé
+lecture-4E-04 (4E #04) - Article scientifique : l'exploration spatiale
+lecture-4E-05 (4E #05) - Extrait de théâtre classique
+lecture-4E-06 (4E #06) - Texte satirique
+lecture-4E-07 (4E #07) - La valise sous le lit (nouvelle)
+lecture-4E-08 (4E #08) - Une usine ferme ses portes (article de presse)
+lecture-4E-09 (4E #09) - Pourquoi les coraux blanchissent (texte scientifique)
+lecture-4E-10 (4E #10) - Les conséquences de la sécheresse sur l'agriculture (article)
+lecture-4E-11 (4E #11) - Le départ (récit sur l'exil)
+lecture-4E-12 (4E #12) - Le choix d'Antoine (dilemme moral)
+lecture-4E-13 (4E #13) - La dernière page manquante
+lecture-4E-14 (4E #14) - L'expérience de Milgram, résumée pour un journal scolaire
+lecture-4E-15 (4E #15) - Reformuler un extrait de contrat de location
+lecture-4E-17 (4E #17) - Le même chantier, quatre points de vue
+lecture-4E-18 (4E #18) - La parabole du semeur et du sol
+lecture-4E-19 (4E #19) - L'alibi du délégué de classe
+lecture-4E-20 (4E #20) - Pourquoi dort-on ? Justifier avec le texte
+lecture-4E-21 (4E #21) - Deux frères face à l'échec
+lecture-4E-22 (4E #22) - Deux discours sur un même naufrage
+lecture-4E-23 (4E #23) - Le tableau des résultats du dépistage
+lecture-4E-24 (4E #24) - Le graphique du réchauffement régional
+lecture-4E-25 (4E #25) - La photographie de presse et la légende contestée
+lecture-4E-26 (4E #26) - Le rapport d'expertise qui se dément lui-même
+lecture-4E-27 (4E #27) - L'étude qui n'en était pas une
+lecture-4E-29 (4E #29) - Trois sources sur la disparition d'une espèce locale
+lecture-3E-01 (3E #01) - L'IA : opportunité ou danger ?
+lecture-3E-02 (3E #02) - Récit autobiographique
+lecture-3E-03 (3E #03) - Analyse critique d'un article de presse
+lecture-3E-04 (3E #04) - Poème sur l'engagement
+lecture-3E-05 (3E #05) - Extrait de roman contemporain
+lecture-3E-06 (3E #06) - Discours engagé (extrait)
+lecture-3E-07 (3E #07) - La clé qui n'ouvrait rien
+lecture-3E-08 (3E #08) - Les trois carnets de bord
+lecture-3E-09 (3E #09) - Pourquoi les résistances bactériennes se propagent-elles ?
+lecture-3E-11 (3E #11) - Lettre non envoyée à un ami perdu de vue
+lecture-3E-12 (3E #12) - Le silence de Youssef
+lecture-3E-13 (3E #13) - Le dernier appel
+lecture-3E-14 (3E #14) - Résumer un article sur l'intelligence artificielle générative
+lecture-3E-15 (3E #15) - Reformuler un extrait de la Déclaration des droits de l'enfant
+lecture-3E-16 (3E #16) - Faut-il abaisser l'âge du droit de vote à 16 ans ?
+lecture-3E-17 (3E #17) - La fermeture de la dernière boulangerie du village
+lecture-3E-18 (3E #18) - La parabole des deux bâtisseurs
+lecture-3E-19 (3E #19) - L'affaire du tableau disparu
+lecture-3E-20 (3E #20) - Pourquoi le paradoxe de Simpson trompe-t-il notre jugement ?
+lecture-3E-21 (3E #21) - Deux lanceurs d'alerte, deux destins
+lecture-3E-22 (3E #22) - Deux mémoires sur un même conflit colonial
+lecture-3E-23 (3E #23) - Le tableau des inégalités de revenus
+lecture-3E-24 (3E #24) - Le graphique de l'évolution démographique mondiale
+lecture-3E-25 (3E #25) - La photographie de famine et sa légende contestée
+lecture-3E-26 (3E #26) - Le témoignage expert qui se contredit sous pression
+lecture-3E-27 (3E #27) - L'étude virale sur les ondes et le cerveau
+lecture-3E-28 (3E #28) - Le rapport d'expédition scientifique en Amazonie
+lecture-3E-30 (3E #30) - Épreuve finale : le dossier du glacier disparu
