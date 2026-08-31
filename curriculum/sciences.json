@@ -3823,7 +3823,8 @@
         "module": "Corps humain et santé",
         "chapter": "L'énergie des aliments",
         "skills": [
-          "corps_humain"
+          "corps_humain",
+          "energie_sources"
         ],
         "difficulty": 2,
         "duration": 20,
@@ -4306,7 +4307,8 @@
         "module": "La matière",
         "chapter": "Mesurer une force",
         "skills": [
-          "forces_mouvement"
+          "forces_mouvement",
+          "demarche_scientifique"
         ],
         "difficulty": 2,
         "duration": 20,
@@ -4858,7 +4860,8 @@
         "module": "Le vivant",
         "chapter": "Grande enquête : quelle graine germe le plus vite ?",
         "skills": [
-          "plantes_croissance"
+          "plantes_croissance",
+          "demarche_scientifique"
         ],
         "difficulty": 2,
         "duration": 20,
@@ -5889,7 +5892,8 @@
         "module": "Terre et Univers",
         "chapter": "Où va l'eau d'une flaque après la pluie ?",
         "skills": [
-          "climat_meteo"
+          "climat_meteo",
+          "cycle_eau"
         ],
         "difficulty": 2,
         "duration": 20,
@@ -6510,7 +6514,8 @@
         "module": "Le vivant",
         "chapter": "Grande enquête : pourquoi les plantes du jardin poussent-elles mal cette année ?",
         "skills": [
-          "plantes_croissance"
+          "plantes_croissance",
+          "demarche_scientifique"
         ],
         "difficulty": 2,
         "duration": 20,
@@ -6785,7 +6790,8 @@
         "module": "La matière",
         "chapter": "La gravité et les forces simples",
         "skills": [
-          "forces_mouvement"
+          "forces_mouvement",
+          "terre_univers"
         ],
         "difficulty": 2,
         "duration": 20,
@@ -6989,7 +6995,8 @@
         "module": "Corps humain et santé",
         "chapter": "Pourquoi les animaux à sang chaud tremblent-ils de froid ?",
         "skills": [
-          "corps_humain"
+          "corps_humain",
+          "animaux_habitat"
         ],
         "difficulty": 3,
         "duration": 20,
@@ -7541,7 +7548,8 @@
         "module": "Écosystèmes et environnement",
         "chapter": "Pourquoi manque-t-on d'eau potable alors que 70% de la Terre est recouverte d'eau ?",
         "skills": [
-          "environnement_biodiversite"
+          "environnement_biodiversite",
+          "terre_univers"
         ],
         "difficulty": 3,
         "duration": 20,
@@ -9055,7 +9063,8 @@
         "module": "La matière",
         "chapter": "Comment identifier une matière inconnue par sa température de fusion ?",
         "skills": [
-          "etats_matiere"
+          "etats_matiere",
+          "demarche_scientifique"
         ],
         "difficulty": 4,
         "duration": 25,
@@ -9400,7 +9409,8 @@
         "module": "Énergie, lumière et son",
         "chapter": "Comment savoir si un circuit électrique est bien dessiné avant de le construire ?",
         "skills": [
-          "electricite_circuit"
+          "electricite_circuit",
+          "demarche_scientifique"
         ],
         "difficulty": 4,
         "duration": 25,
@@ -10569,7 +10579,8 @@
         "module": "Le vivant",
         "chapter": "Pourquoi ne trouve-t-on jamais de très grands prédateurs en très grand nombre ?",
         "skills": [
-          "animaux_habitat"
+          "animaux_habitat",
+          "lumiere_optique"
         ],
         "difficulty": 4,
         "duration": 25,
@@ -10781,7 +10792,8 @@
         "module": "La matière",
         "chapter": "Comment savoir si une solution de sucre est saturée ?",
         "skills": [
-          "etats_matiere"
+          "etats_matiere",
+          "demarche_scientifique"
         ],
         "difficulty": 4,
         "duration": 25,
@@ -11333,7 +11345,8 @@
         "module": "Terre et Univers",
         "chapter": "Le Soleil le plus proche après le nôtre : comment mesure-t-on une distance aussi énorme ?",
         "skills": [
-          "terre_univers"
+          "terre_univers",
+          "geologie"
         ],
         "difficulty": 4,
         "duration": 25,
@@ -11471,7 +11484,8 @@
         "module": "Le vivant",
         "chapter": "Grande enquête : pourquoi les abeilles d'un rucher disparaissent-elles massivement sans laisser de corps ?",
         "skills": [
-          "animaux_habitat"
+          "animaux_habitat",
+          "demarche_scientifique"
         ],
         "difficulty": 4,
         "duration": 25,
@@ -12921,7 +12935,8 @@
         "module": "Énergie, lumière et son",
         "chapter": "Comment une roche peut-elle raconter toute son histoire, du magma au sédiment ?",
         "skills": [
-          "son_acoustique"
+          "son_acoustique",
+          "geologie"
         ],
         "difficulty": 4,
         "duration": 30,
@@ -14297,7 +14312,8 @@
         "module": "Énergie, lumière et son",
         "chapter": "Un pendule qui oscille perd-il vraiment de l'énergie à chaque balancement ?",
         "skills": [
-          "energie_sources"
+          "energie_sources",
+          "forces_mouvement"
         ],
         "difficulty": 5,
         "duration": 30,
@@ -14642,7 +14658,8 @@
         "module": "Terre et Univers",
         "chapter": "Pourquoi les astronomes cherchent-ils des planètes ni trop proches ni trop loin de leur étoile ?",
         "skills": [
-          "terre_univers"
+          "terre_univers",
+          "geologie"
         ],
         "difficulty": 5,
         "duration": 30,
@@ -14780,7 +14797,8 @@
         "module": "Le vivant",
         "chapter": "Grande enquête : pourquoi les huîtres d'un élevage marin ont-elles cessé de bien se reproduire ?",
         "skills": [
-          "animaux_habitat"
+          "animaux_habitat",
+          "demarche_scientifique"
         ],
         "difficulty": 5,
         "duration": 30,

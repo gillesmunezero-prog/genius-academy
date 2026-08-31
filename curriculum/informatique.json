@@ -1714,7 +1714,8 @@
         "chapter": "Ma vie privée sur internet",
         "skills": [
           "vie_privee",
-          "identite_numerique"
+          "identite_numerique",
+          "internet_reseaux"
         ],
         "difficulty": 2,
         "duration": 15,
@@ -2395,7 +2396,8 @@
         "module": "Données et intelligence artificielle",
         "chapter": "Mon projet : programmer un robot",
         "skills": [
-          "intelligence_artificielle"
+          "intelligence_artificielle",
+          "projet_programmation"
         ],
         "difficulty": 2,
         "duration": 15,
@@ -2601,7 +2603,8 @@
         "module": "Programmation et algorithmique",
         "chapter": "Séquences et boucles (approfondi)",
         "skills": [
-          "boucles"
+          "boucles",
+          "projet_programmation"
         ],
         "difficulty": 1,
         "duration": 20,
@@ -2737,7 +2740,8 @@
         "module": "Données et intelligence artificielle",
         "chapter": "Rechercher une information fiable",
         "skills": [
-          "desinformation"
+          "desinformation",
+          "algorithmes"
         ],
         "difficulty": 1,
         "duration": 20,
@@ -3554,7 +3558,8 @@
         "module": "Données et intelligence artificielle",
         "chapter": "L'intelligence artificielle : entraînement et erreurs",
         "skills": [
-          "intelligence_artificielle"
+          "intelligence_artificielle",
+          "debogage"
         ],
         "difficulty": 2,
         "duration": 20,
@@ -3760,7 +3765,8 @@
         "module": "Programmation et algorithmique",
         "chapter": "Les variables en programmation",
         "skills": [
-          "variables"
+          "variables",
+          "projet_programmation"
         ],
         "difficulty": 1,
         "duration": 20,
@@ -3828,7 +3834,8 @@
         "module": "Programmation et algorithmique",
         "chapter": "Boucles et conditions combinées",
         "skills": [
-          "boucles"
+          "boucles",
+          "conditions"
         ],
         "difficulty": 1,
         "duration": 20,
@@ -4170,7 +4177,8 @@
         "chapter": "Vie privée et réseaux sociaux",
         "skills": [
           "vie_privee",
-          "identite_numerique"
+          "identite_numerique",
+          "internet_reseaux"
         ],
         "difficulty": 2,
         "duration": 20,
@@ -4989,7 +4997,8 @@
         "module": "Programmation et algorithmique",
         "chapter": "Les fonctions en programmation",
         "skills": [
-          "fonctions"
+          "fonctions",
+          "projet_programmation"
         ],
         "difficulty": 2,
         "duration": 20,
@@ -5125,7 +5134,8 @@
         "module": "Données et intelligence artificielle",
         "chapter": "Le stockage de données",
         "skills": [
-          "donnees"
+          "donnees",
+          "decouverte_materiel"
         ],
         "difficulty": 2,
         "duration": 20,
@@ -5397,7 +5407,9 @@
         "module": "Données et intelligence artificielle",
         "chapter": "Vie privée : données personnelles en ligne",
         "skills": [
-          "donnees"
+          "donnees",
+          "vie_privee",
+          "identite_numerique"
         ],
         "difficulty": 3,
         "duration": 20,
@@ -5738,7 +5750,8 @@
         "module": "Programmation et algorithmique",
         "chapter": "Les boucles : répéter des instructions",
         "skills": [
-          "boucles"
+          "boucles",
+          "projet_programmation"
         ],
         "difficulty": 3,
         "duration": 25,
@@ -5963,7 +5976,8 @@
         "module": "Données et intelligence artificielle",
         "chapter": "Les données : ce que traite un ordinateur",
         "skills": [
-          "donnees"
+          "donnees",
+          "decouverte_materiel"
         ],
         "difficulty": 3,
         "duration": 25,
@@ -6113,7 +6127,8 @@
         "module": "Programmation et algorithmique",
         "chapter": "Projet final : créer mon petit algorithme",
         "skills": [
-          "algorithmes"
+          "algorithmes",
+          "projet_programmation"
         ],
         "difficulty": 4,
         "duration": 30,
@@ -6829,7 +6844,8 @@
         "module": "Programmation et algorithmique",
         "chapter": "Algorithmes : premiers pas avec Scratch",
         "skills": [
-          "algorithmes"
+          "algorithmes",
+          "projet_programmation"
         ],
         "difficulty": 4,
         "duration": 25,
@@ -6981,7 +6997,8 @@
         "module": "Programmation et algorithmique",
         "chapter": "Les conditions : le bloc SI en programmation",
         "skills": [
-          "conditions"
+          "conditions",
+          "projet_programmation"
         ],
         "difficulty": 4,
         "duration": 25,
@@ -7057,7 +7074,8 @@
         "module": "Programmation et algorithmique",
         "chapter": "Les boucles en Python : for et while",
         "skills": [
-          "boucles"
+          "boucles",
+          "projet_programmation"
         ],
         "difficulty": 4,
         "duration": 25,
@@ -7133,7 +7151,8 @@
         "module": "Programmation et algorithmique",
         "chapter": "Les variables en Python : types et opérations",
         "skills": [
-          "variables"
+          "variables",
+          "projet_programmation"
         ],
         "difficulty": 4,
         "duration": 25,
@@ -7285,7 +7304,8 @@
         "module": "Données et intelligence artificielle",
         "chapter": "Les listes : organiser des données",
         "skills": [
-          "donnees"
+          "donnees",
+          "structures_donnees"
         ],
         "difficulty": 4,
         "duration": 25,
@@ -7515,7 +7535,8 @@
         "module": "Données et intelligence artificielle",
         "chapter": "Variables et types de données",
         "skills": [
-          "donnees"
+          "donnees",
+          "variables"
         ],
         "difficulty": 3,
         "duration": 25,
@@ -7651,7 +7672,8 @@
         "module": "Données et intelligence artificielle",
         "chapter": "Les listes : structures de données simples",
         "skills": [
-          "donnees"
+          "donnees",
+          "structures_donnees"
         ],
         "difficulty": 3,
         "duration": 25,
@@ -7787,7 +7809,8 @@
         "module": "Internet, sécurité et vie privée",
         "chapter": "Réseaux sociaux : algorithmes et bulles de filtres",
         "skills": [
-          "internet_reseaux"
+          "internet_reseaux",
+          "algorithmes"
         ],
         "difficulty": 3,
         "duration": 25,
@@ -8078,7 +8101,8 @@
         "chapter": "Cybersécurité : logiciels malveillants et attaques",
         "skills": [
           "cybersecurite",
-          "mots_de_passe"
+          "mots_de_passe",
+          "decouverte_materiel"
         ],
         "difficulty": 4,
         "duration": 30,
@@ -8154,7 +8178,8 @@
         "module": "Programmation et algorithmique",
         "chapter": "Algorithmes : les fonctions pour organiser son code",
         "skills": [
-          "fonctions"
+          "fonctions",
+          "algorithmes"
         ],
         "difficulty": 4,
         "duration": 30,
@@ -8230,7 +8255,8 @@
         "module": "Programmation et algorithmique",
         "chapter": "Séquences et enchaînement de fonctions",
         "skills": [
-          "fonctions"
+          "fonctions",
+          "projet_programmation"
         ],
         "difficulty": 4,
         "duration": 30,
@@ -8382,7 +8408,8 @@
         "module": "Programmation et algorithmique",
         "chapter": "Boucles imbriquées et parcours de listes",
         "skills": [
-          "boucles"
+          "boucles",
+          "structures_donnees"
         ],
         "difficulty": 4,
         "duration": 30,
@@ -8610,7 +8637,8 @@
         "module": "Données et intelligence artificielle",
         "chapter": "Données : tri et recherche efficace",
         "skills": [
-          "donnees"
+          "donnees",
+          "algorithmes"
         ],
         "difficulty": 4,
         "duration": 30,
@@ -8686,7 +8714,8 @@
         "module": "Données et intelligence artificielle",
         "chapter": "IA : réseaux de neurones et données d'entraînement",
         "skills": [
-          "intelligence_artificielle"
+          "intelligence_artificielle",
+          "donnees"
         ],
         "difficulty": 4,
         "duration": 30,
@@ -8762,7 +8791,9 @@
         "module": "Données et intelligence artificielle",
         "chapter": "Projet final : un programme avec fonctions et données",
         "skills": [
-          "donnees"
+          "donnees",
+          "fonctions",
+          "projet_programmation"
         ],
         "difficulty": 5,
         "duration": 35,
@@ -9180,7 +9211,8 @@
         "module": "Données et intelligence artificielle",
         "chapter": "Éthique du numérique : données personnelles",
         "skills": [
-          "donnees"
+          "donnees",
+          "citoyennete_numerique"
         ],
         "difficulty": 3,
         "duration": 30,
@@ -9478,7 +9510,8 @@
         "module": "Programmation et algorithmique",
         "chapter": "Algorithmes : récursivité, une fonction qui s'appelle elle-même",
         "skills": [
-          "fonctions"
+          "fonctions",
+          "algorithmes"
         ],
         "difficulty": 4,
         "duration": 30,
@@ -9554,7 +9587,8 @@
         "module": "Programmation et algorithmique",
         "chapter": "Programmation orientée objet : classes et objets",
         "skills": [
-          "programmation_orientee_objet"
+          "programmation_orientee_objet",
+          "projet_programmation"
         ],
         "difficulty": 4,
         "duration": 30,
@@ -9630,7 +9664,8 @@
         "module": "Données et intelligence artificielle",
         "chapter": "Conditions complexes : validation de données",
         "skills": [
-          "donnees"
+          "donnees",
+          "conditions"
         ],
         "difficulty": 5,
         "duration": 35,
@@ -10086,7 +10121,9 @@
         "module": "Données et intelligence artificielle",
         "chapter": "Projet final : application avec classes et données",
         "skills": [
-          "donnees"
+          "donnees",
+          "programmation_orientee_objet",
+          "projet_programmation"
         ],
         "difficulty": 5,
         "duration": 35,
@@ -10232,7 +10269,8 @@
         "module": "Programmation et algorithmique",
         "chapter": "Introduction à la programmation orientée objet",
         "skills": [
-          "programmation_orientee_objet"
+          "programmation_orientee_objet",
+          "projet_programmation"
         ],
         "difficulty": 4,
         "duration": 30,
@@ -10572,7 +10610,8 @@
         "module": "Données et intelligence artificielle",
         "chapter": "Désinformation : enjeux de société et régulation",
         "skills": [
-          "desinformation"
+          "desinformation",
+          "citoyennete_numerique"
         ],
         "difficulty": 5,
         "duration": 30,
@@ -10649,7 +10688,8 @@
         "chapter": "Vie privée : réglementation et responsabilité numérique",
         "skills": [
           "vie_privee",
-          "identite_numerique"
+          "identite_numerique",
+          "citoyennete_numerique"
         ],
         "difficulty": 5,
         "duration": 30,
@@ -10878,7 +10918,8 @@
         "module": "Données et intelligence artificielle",
         "chapter": "Structures de données : piles et files",
         "skills": [
-          "donnees"
+          "donnees",
+          "structures_donnees"
         ],
         "difficulty": 5,
         "duration": 30,
@@ -11106,7 +11147,9 @@
         "module": "Données et intelligence artificielle",
         "chapter": "Variables et structures de données avancées",
         "skills": [
-          "donnees"
+          "donnees",
+          "variables",
+          "structures_donnees"
         ],
         "difficulty": 5,
         "duration": 30,

@@ -417,7 +417,8 @@
         "module": "Règles et plateau",
         "chapter": "Le roque, un coup spécial",
         "skills": [
-          "roque"
+          "roque",
+          "plateau_notation"
         ],
         "difficulty": 1,
         "duration": 10,
@@ -1305,7 +1306,8 @@
         "module": "Les pièces",
         "chapter": "Mettre le roi en échec",
         "skills": [
-          "deplacement_pieces"
+          "deplacement_pieces",
+          "plateau_notation"
         ],
         "difficulty": 1,
         "duration": 15,
@@ -2054,7 +2056,8 @@
         "module": "Tactiques",
         "chapter": "L'enfilade, la fourchette à l'envers",
         "skills": [
-          "fourchette"
+          "fourchette",
+          "enfilade"
         ],
         "difficulty": 2,
         "duration": 15,
@@ -3147,7 +3150,8 @@
         "module": "Tactiques",
         "chapter": "La fourchette au milieu de partie",
         "skills": [
-          "fourchette"
+          "fourchette",
+          "milieu_de_jeu"
         ],
         "difficulty": 2,
         "duration": 20,
@@ -4589,7 +4593,8 @@
         "module": "Tactiques",
         "chapter": "L'enfilade sur la dame",
         "skills": [
-          "enfilade"
+          "enfilade",
+          "deplacement_pieces"
         ],
         "difficulty": 2,
         "duration": 20,
@@ -4804,7 +4809,8 @@
         "module": "Finales",
         "chapter": "Le roi actif en finale",
         "skills": [
-          "finale_pieces"
+          "finale_pieces",
+          "deplacement_pieces"
         ],
         "difficulty": 2,
         "duration": 20,
@@ -5628,7 +5634,8 @@
         "module": "Stratégie et ouverture",
         "chapter": "Les échanges favorables en milieu de partie",
         "skills": [
-          "echanges"
+          "echanges",
+          "milieu_de_jeu"
         ],
         "difficulty": 3,
         "duration": 20,
@@ -5835,7 +5842,8 @@
         "module": "Tactiques",
         "chapter": "Combiner clouage et enfilade",
         "skills": [
-          "clouage"
+          "clouage",
+          "enfilade"
         ],
         "difficulty": 3,
         "duration": 20,
@@ -6662,7 +6670,9 @@
         "module": "Règles et plateau",
         "chapter": "Roque et structure de pions dans les ouvertures modernes",
         "skills": [
-          "roque"
+          "roque",
+          "structure_pions",
+          "ouverture_principes"
         ],
         "difficulty": 4,
         "duration": 25,
@@ -6945,7 +6955,8 @@
         "module": "Tactiques",
         "chapter": "Fourchette dans une position de milieu de partie chargée",
         "skills": [
-          "fourchette"
+          "fourchette",
+          "milieu_de_jeu"
         ],
         "difficulty": 4,
         "duration": 25,
@@ -7083,7 +7094,8 @@
         "module": "Tactiques",
         "chapter": "L'enfilade dans une finale de tours",
         "skills": [
-          "enfilade"
+          "enfilade",
+          "finale_pieces"
         ],
         "difficulty": 4,
         "duration": 25,
@@ -7569,7 +7581,9 @@
         "module": "Stratégie et ouverture",
         "chapter": "Le milieu de jeu : élaborer un plan",
         "skills": [
-          "milieu_de_jeu"
+          "milieu_de_jeu",
+          "plan_de_partie",
+          "strategie_long_terme"
         ],
         "difficulty": 3,
         "duration": 25,
@@ -8116,7 +8130,8 @@
         "module": "Finales",
         "chapter": "Échanges menant à une finale théorique",
         "skills": [
-          "finale_pieces"
+          "finale_pieces",
+          "echanges"
         ],
         "difficulty": 4,
         "duration": 25,
@@ -8185,7 +8200,8 @@
         "module": "Tactiques",
         "chapter": "Fourchette née d'un sacrifice positionnel",
         "skills": [
-          "fourchette"
+          "fourchette",
+          "sacrifice"
         ],
         "difficulty": 4,
         "duration": 25,
@@ -8323,7 +8339,8 @@
         "module": "Tactiques",
         "chapter": "Enfilade préparée par un sacrifice d'attraction",
         "skills": [
-          "enfilade"
+          "enfilade",
+          "sacrifice"
         ],
         "difficulty": 4,
         "duration": 25,
@@ -8599,7 +8616,9 @@
         "module": "Stratégie et ouverture",
         "chapter": "Le plan de la minorité de pions",
         "skills": [
-          "structure_pions"
+          "structure_pions",
+          "plan_de_partie",
+          "strategie_long_terme"
         ],
         "difficulty": 4,
         "duration": 25,
@@ -8808,7 +8827,9 @@
         "module": "Stratégie et ouverture",
         "chapter": "Stratégie des pions passés",
         "skills": [
-          "structure_pions"
+          "structure_pions",
+          "plan_de_partie",
+          "strategie_long_terme"
         ],
         "difficulty": 3,
         "duration": 30,
@@ -9286,7 +9307,8 @@
         "module": "Tactiques",
         "chapter": "Défense par contre-sacrifice",
         "skills": [
-          "sacrifice"
+          "sacrifice",
+          "defense"
         ],
         "difficulty": 4,
         "duration": 30,
@@ -9355,7 +9377,8 @@
         "module": "Stratégie et ouverture",
         "chapter": "Échanges dans les positions à structures de pions asymétriques",
         "skills": [
-          "structure_pions"
+          "structure_pions",
+          "echanges"
         ],
         "difficulty": 4,
         "duration": 30,
@@ -9424,7 +9447,9 @@
         "module": "Tactiques",
         "chapter": "Fourchette dans une combinaison à plusieurs sacrifices",
         "skills": [
-          "fourchette"
+          "fourchette",
+          "sacrifice",
+          "combinaison_mat"
         ],
         "difficulty": 4,
         "duration": 30,
@@ -9562,7 +9587,8 @@
         "module": "Tactiques",
         "chapter": "Enfilade cachée derrière une combinaison de dégagement",
         "skills": [
-          "enfilade"
+          "enfilade",
+          "combinaison_mat"
         ],
         "difficulty": 4,
         "duration": 30,
@@ -10595,7 +10621,8 @@
         "module": "Règles et plateau",
         "chapter": "Échanges dans les positions à roque opposé",
         "skills": [
-          "roque"
+          "roque",
+          "echanges"
         ],
         "difficulty": 5,
         "duration": 30,
@@ -10733,7 +10760,8 @@
         "module": "Tactiques",
         "chapter": "Clouage dans les finales complexes",
         "skills": [
-          "clouage"
+          "clouage",
+          "finale_pieces"
         ],
         "difficulty": 5,
         "duration": 35,
@@ -10802,7 +10830,8 @@
         "module": "Tactiques",
         "chapter": "Enfilade comme thème récurrent d'une finale technique",
         "skills": [
-          "enfilade"
+          "enfilade",
+          "finale_pieces"
         ],
         "difficulty": 5,
         "duration": 30,
@@ -10941,7 +10970,8 @@
         "chapter": "Combinaisons de mat avec plusieurs sacrifices consécutifs",
         "skills": [
           "echec_et_mat",
-          "combinaison_mat"
+          "combinaison_mat",
+          "sacrifice"
         ],
         "difficulty": 5,
         "duration": 30,

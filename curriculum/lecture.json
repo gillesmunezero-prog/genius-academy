@@ -1922,7 +1922,8 @@
         "module": "Presse, débat et argumentation",
         "chapter": "L'article du journal de l'école : la kermesse",
         "skills": [
-          "texte_documentaire"
+          "texte_documentaire",
+          "structure_recit"
         ],
         "difficulty": 1,
         "duration": 10,
@@ -14318,7 +14319,8 @@
         "chapter": "La fable du lièvre connecté (texte satirique)",
         "skills": [
           "fable_conte",
-          "structure_recit"
+          "structure_recit",
+          "texte_argumentatif"
         ],
         "difficulty": 4,
         "duration": 30,
@@ -14639,7 +14641,9 @@
         "module": "Poésie",
         "chapter": "La mer, entre poésie et alerte (comparaison de deux textes)",
         "skills": [
-          "lecture_poetique"
+          "lecture_poetique",
+          "comparaison_documents",
+          "esprit_critique_lecture"
         ],
         "difficulty": 4,
         "duration": 30,
@@ -15501,7 +15505,8 @@
         "module": "Poésie",
         "chapter": "Poème engagé",
         "skills": [
-          "lecture_poetique"
+          "lecture_poetique",
+          "texte_argumentatif"
         ],
         "difficulty": 3,
         "duration": 30,
@@ -17099,7 +17104,8 @@
         "chapter": "La photographie de presse et la légende contestée",
         "skills": [
           "fable_conte",
-          "structure_recit"
+          "structure_recit",
+          "comparaison_documents"
         ],
         "difficulty": 4,
         "duration": 30,
@@ -19187,7 +19193,8 @@
         "chapter": "La photographie de famine et sa légende contestée",
         "skills": [
           "fable_conte",
-          "structure_recit"
+          "structure_recit",
+          "comparaison_documents"
         ],
         "difficulty": 5,
         "duration": 30,
@@ -19533,7 +19540,8 @@
         "module": "Comparaison de documents et esprit critique",
         "chapter": "Épreuve finale : le dossier du glacier disparu",
         "skills": [
-          "comparaison_documents"
+          "comparaison_documents",
+          "structure_recit"
         ],
         "difficulty": 5,
         "duration": 35,

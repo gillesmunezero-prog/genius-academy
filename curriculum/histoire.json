@@ -3009,7 +3009,8 @@
         "module": "Moyen Âge",
         "chapter": "Le monde médiéval ailleurs : Islam, Chine, Afrique",
         "skills": [
-          "monde_medieval_ailleurs"
+          "monde_medieval_ailleurs",
+          "moyen_age_societe"
         ],
         "difficulty": 2,
         "duration": 20,
@@ -4311,7 +4312,8 @@
         "module": "Moyen Âge",
         "chapter": "Le monde médiéval ailleurs : Byzance et le monde musulman",
         "skills": [
-          "monde_medieval_ailleurs"
+          "monde_medieval_ailleurs",
+          "moyen_age_societe"
         ],
         "difficulty": 2,
         "duration": 20,
@@ -4449,7 +4451,8 @@
         "module": "Moyen Âge",
         "chapter": "La Chine médiévale : inventions et échanges",
         "skills": [
-          "monde_medieval_ailleurs"
+          "monde_medieval_ailleurs",
+          "moyen_age_societe"
         ],
         "difficulty": 2,
         "duration": 20,
@@ -4865,7 +4868,9 @@
         "module": "Moyen Âge",
         "chapter": "Grand défi chronologique : du Moyen Âge à Louis XIV",
         "skills": [
-          "moyen_age_societe"
+          "moyen_age_societe",
+          "monarchie_absolue",
+          "reperage_temporel"
         ],
         "difficulty": 3,
         "duration": 25,
@@ -5907,7 +5912,8 @@
         "chapter": "La décolonisation et l'indépendance des peuples",
         "skills": [
           "revolution_industrielle",
-          "colonisation"
+          "colonisation",
+          "decolonisation"
         ],
         "difficulty": 3,
         "duration": 20,
@@ -5977,7 +5983,8 @@
         "chapter": "La Ve République et la construction européenne",
         "skills": [
           "guerre_froide",
-          "construction_europeenne"
+          "construction_europeenne",
+          "republique_france"
         ],
         "difficulty": 3,
         "duration": 20,
@@ -7399,7 +7406,8 @@
         "module": "Préhistoire et Antiquité",
         "chapter": "Grand défi chronologique : de la Préhistoire à la fin de l'Antiquité",
         "skills": [
-          "prehistoire"
+          "prehistoire",
+          "reperage_temporel"
         ],
         "difficulty": 5,
         "duration": 30,
@@ -8032,7 +8040,8 @@
         "module": "Moyen Âge",
         "chapter": "La Chine médiévale et ses échanges",
         "skills": [
-          "monde_medieval_ailleurs"
+          "monde_medieval_ailleurs",
+          "moyen_age_societe"
         ],
         "difficulty": 4,
         "duration": 25,
@@ -8682,7 +8691,8 @@
         "module": "Moyen Âge",
         "chapter": "Grand défi chronologique : le Moyen Âge du Ve au XVe siècle",
         "skills": [
-          "moyen_age_societe"
+          "moyen_age_societe",
+          "reperage_temporel"
         ],
         "difficulty": 5,
         "duration": 35,
@@ -9973,7 +9983,8 @@
         "chapter": "Grand défi chronologique : de la Renaissance à la Belle Époque",
         "skills": [
           "renaissance",
-          "grandes_decouvertes"
+          "grandes_decouvertes",
+          "reperage_temporel"
         ],
         "difficulty": 5,
         "duration": 35,
@@ -10328,7 +10339,8 @@
         "chapter": "La décolonisation",
         "skills": [
           "revolution_industrielle",
-          "colonisation"
+          "colonisation",
+          "decolonisation"
         ],
         "difficulty": 4,
         "duration": 30,

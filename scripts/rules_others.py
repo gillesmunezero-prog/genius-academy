@@ -63,7 +63,7 @@ RULES_ARTS = [
     (rx(r"\bnote(s)?\b|portee|partition|solfege|duree(s)?"), "Musique : théorie et pratique", ["notes_solfege"]),
     (rx(r"chant|voix|chanter"), "Musique : théorie et pratique", ["chant_voix"]),
     (rx(r"instrument|orchestre|orchestration|clavier|cordes|percussion|luthier"), "Musique : théorie et pratique", ["instruments"]),
-    (rx(r"compos(er|ition)|melodie|harmonie|leitmotiv|theme et variation|improvisation|transpos"), "Musique : théorie et pratique", ["composition_musicale"]),
+    (rx(r"\bcomposer\b|composition musicale|melodie|harmonie|leitmotiv|theme et variation|improvisation|transpos|mesures composees"), "Musique : théorie et pratique", ["composition_musicale"]),
     (rx(r"musique(s)? actuelle|electronique|rock|musique du monde|musique et societe|musique sacree|metiers de la musique"), "Écoute et histoire de l'art", ["ecoute_musicale"]),
     (rx(r"couleur"), "Arts visuels", ["couleurs"]),
     (rx(r"perspective|cadrage|composition|ligne et texture|regle des tiers|nombre d'or|symetrie et equilibre|lignes de force"), "Arts visuels", ["formes_composition"]),

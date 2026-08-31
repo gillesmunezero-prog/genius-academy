@@ -9776,7 +9776,8 @@
         "module": "Expression écrite",
         "chapter": "Describing food with the senses",
         "skills": [
-          "describing"
+          "describing",
+          "vocabulaire_quotidien"
         ],
         "difficulty": 3,
         "duration": 20,
@@ -10263,7 +10264,8 @@
         "module": "Grammaire",
         "chapter": "Present simple vs present continuous",
         "skills": [
-          "present_continuous"
+          "present_continuous",
+          "present_simple"
         ],
         "difficulty": 3,
         "duration": 25,
@@ -12654,7 +12656,8 @@
         "module": "Expression écrite",
         "chapter": "Describing a town or city",
         "skills": [
-          "describing"
+          "describing",
+          "vocabulaire_quotidien"
         ],
         "difficulty": 3,
         "duration": 25,
@@ -13062,7 +13065,8 @@
         "module": "Vocabulaire",
         "chapter": "Endangered animals and the environment",
         "skills": [
-          "environment_technology"
+          "environment_technology",
+          "vocabulaire_quotidien"
         ],
         "difficulty": 4,
         "duration": 25,
@@ -13682,7 +13686,8 @@
         "module": "Grammaire",
         "chapter": "Past simple and past continuous together",
         "skills": [
-          "past_continuous"
+          "past_continuous",
+          "past_simple"
         ],
         "difficulty": 4,
         "duration": 25,
@@ -13751,7 +13756,8 @@
         "module": "Grammaire",
         "chapter": "Future forms: will, going to and present continuous",
         "skills": [
-          "future_forms"
+          "future_forms",
+          "present_continuous"
         ],
         "difficulty": 4,
         "duration": 25,
@@ -14026,7 +14032,8 @@
         "module": "Compréhension (lecture/écoute)",
         "chapter": "Listening: A radio weather forecast",
         "skills": [
-          "listening_comprehension"
+          "listening_comprehension",
+          "vocabulaire_quotidien"
         ],
         "difficulty": 4,
         "duration": 25,
@@ -15250,7 +15257,8 @@
         "module": "Grammaire",
         "chapter": "Describing routines with relative clauses",
         "skills": [
-          "relative_clauses"
+          "relative_clauses",
+          "describing"
         ],
         "difficulty": 4,
         "duration": 30,
@@ -15319,7 +15327,8 @@
         "module": "Grammaire",
         "chapter": "Hobbies and reported speech",
         "skills": [
-          "reported_speech"
+          "reported_speech",
+          "vocabulaire_quotidien"
         ],
         "difficulty": 4,
         "duration": 30,
@@ -15457,7 +15466,8 @@
         "module": "Grammaire",
         "chapter": "Town and city: the passive voice",
         "skills": [
-          "passive_voice"
+          "passive_voice",
+          "vocabulaire_quotidien"
         ],
         "difficulty": 4,
         "duration": 30,
@@ -15733,7 +15743,8 @@
         "module": "Grammaire",
         "chapter": "Past simple vs present perfect: fine differences",
         "skills": [
-          "present_perfect"
+          "present_perfect",
+          "past_simple"
         ],
         "difficulty": 4,
         "duration": 30,
@@ -16417,7 +16428,8 @@
         "module": "Grammaire",
         "chapter": "Present perfect vs past simple",
         "skills": [
-          "present_perfect"
+          "present_perfect",
+          "past_simple"
         ],
         "difficulty": 4,
         "duration": 30,
@@ -16757,7 +16769,8 @@
         "module": "Expression écrite",
         "chapter": "Oral exam preparation: describing a picture",
         "skills": [
-          "describing"
+          "describing",
+          "speaking_interaction"
         ],
         "difficulty": 4,
         "duration": 30,
@@ -17371,7 +17384,8 @@
         "module": "Grammaire",
         "chapter": "Hobbies: gerund vs infinitive nuances",
         "skills": [
-          "gerund_infinitive"
+          "gerund_infinitive",
+          "vocabulaire_quotidien"
         ],
         "difficulty": 5,
         "duration": 30,
@@ -17440,7 +17454,8 @@
         "module": "Grammaire",
         "chapter": "Emotions: nuanced idioms and mixed conditionals",
         "skills": [
-          "conditionals"
+          "conditionals",
+          "vocabulaire_quotidien"
         ],
         "difficulty": 5,
         "duration": 30,
@@ -17509,7 +17524,8 @@
         "module": "Grammaire",
         "chapter": "Urban change: passive with modals",
         "skills": [
-          "passive_voice"
+          "passive_voice",
+          "modal_verbs"
         ],
         "difficulty": 5,
         "duration": 30,
@@ -17854,7 +17870,8 @@
         "module": "Grammaire",
         "chapter": "Future in the past and predictions with modals",
         "skills": [
-          "future_forms"
+          "future_forms",
+          "modal_verbs"
         ],
         "difficulty": 5,
         "duration": 30,
@@ -17923,7 +17940,8 @@
         "module": "Grammaire",
         "chapter": "Describing character: hedging and reported opinions",
         "skills": [
-          "reported_speech"
+          "reported_speech",
+          "describing"
         ],
         "difficulty": 5,
         "duration": 30,
@@ -17992,7 +18010,8 @@
         "module": "Grammaire",
         "chapter": "Describing things: superlatives with nuance",
         "skills": [
-          "comparatives_superlatives"
+          "comparatives_superlatives",
+          "describing"
         ],
         "difficulty": 5,
         "duration": 30,

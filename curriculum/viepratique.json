@@ -7159,7 +7159,8 @@
         "module": "Organisation et méthode de travail",
         "chapter": "Décider de son orientation : peser les critères",
         "skills": [
-          "prise_de_decision"
+          "prise_de_decision",
+          "orientation_projet"
         ],
         "difficulty": 5,
         "duration": 30,

@@ -414,10 +414,11 @@
         "title": "Organiser son dessin : la composition",
         "emoji": "🖼️",
         "badge": "📐",
-        "module": "Musique : théorie et pratique",
+        "module": "Arts visuels",
         "chapter": "Organiser son dessin : la composition",
         "skills": [
-          "composition_musicale"
+          "formes_composition",
+          "expression_creative"
         ],
         "difficulty": 1,
         "duration": 10,
@@ -694,7 +695,8 @@
         "module": "Musique : théorie et pratique",
         "chapter": "Créer un petit rythme",
         "skills": [
-          "rythme_pulsation"
+          "rythme_pulsation",
+          "expression_creative"
         ],
         "difficulty": 1,
         "duration": 10,
@@ -832,7 +834,8 @@
         "module": "Musique : théorie et pratique",
         "chapter": "Chanter une mélodie",
         "skills": [
-          "chant_voix"
+          "chant_voix",
+          "composition_musicale"
         ],
         "difficulty": 1,
         "duration": 10,
@@ -1177,7 +1180,8 @@
         "module": "Projet créatif",
         "chapter": "Mon projet final : dessin et musique",
         "skills": [
-          "projet_artistique"
+          "projet_artistique",
+          "expression_creative"
         ],
         "difficulty": 2,
         "duration": 15,
@@ -1654,10 +1658,10 @@
         "title": "La composition : premier plan et arrière-plan",
         "emoji": "🖼️",
         "badge": "📐",
-        "module": "Musique : théorie et pratique",
+        "module": "Arts visuels",
         "chapter": "La composition : premier plan et arrière-plan",
         "skills": [
-          "composition_musicale"
+          "formes_composition"
         ],
         "difficulty": 2,
         "duration": 15,
@@ -2906,10 +2910,10 @@
         "title": "La règle des tiers en composition",
         "emoji": "🖼️",
         "badge": "📐",
-        "module": "Musique : théorie et pratique",
+        "module": "Arts visuels",
         "chapter": "La règle des tiers en composition",
         "skills": [
-          "composition_musicale"
+          "formes_composition"
         ],
         "difficulty": 2,
         "duration": 20,
@@ -3462,7 +3466,8 @@
         "module": "Musique : théorie et pratique",
         "chapter": "La voix comme instrument : les voix humaines",
         "skills": [
-          "chant_voix"
+          "chant_voix",
+          "instruments"
         ],
         "difficulty": 2,
         "duration": 20,
@@ -3752,7 +3757,8 @@
         "module": "Arts visuels",
         "chapter": "La perspective et le dessin (approfondi)",
         "skills": [
-          "formes_composition"
+          "formes_composition",
+          "expression_creative"
         ],
         "difficulty": 1,
         "duration": 20,
@@ -3956,7 +3962,8 @@
         "module": "Musique : théorie et pratique",
         "chapter": "Composer un petit rythme",
         "skills": [
-          "rythme_pulsation"
+          "rythme_pulsation",
+          "composition_musicale"
         ],
         "difficulty": 1,
         "duration": 20,
@@ -4158,10 +4165,10 @@
         "title": "Les lignes de force et le mouvement dans une composition",
         "emoji": "➰",
         "badge": "📐",
-        "module": "Musique : théorie et pratique",
+        "module": "Arts visuels",
         "chapter": "Les lignes de force et le mouvement dans une composition",
         "skills": [
-          "composition_musicale"
+          "formes_composition"
         ],
         "difficulty": 2,
         "duration": 20,
@@ -4507,7 +4514,8 @@
         "module": "Musique : théorie et pratique",
         "chapter": "L'octave : les notes qui se répètent",
         "skills": [
-          "gammes_harmonie"
+          "gammes_harmonie",
+          "notes_solfege"
         ],
         "difficulty": 2,
         "duration": 20,
@@ -4714,7 +4722,8 @@
         "module": "Musique : théorie et pratique",
         "chapter": "Les instruments électroniques",
         "skills": [
-          "instruments"
+          "instruments",
+          "ecoute_musicale"
         ],
         "difficulty": 2,
         "duration": 20,
@@ -5409,10 +5418,10 @@
         "title": "Cadrage et échelle dans une composition",
         "emoji": "🖼️",
         "badge": "📐",
-        "module": "Musique : théorie et pratique",
+        "module": "Arts visuels",
         "chapter": "Cadrage et échelle dans une composition",
         "skills": [
-          "composition_musicale"
+          "formes_composition"
         ],
         "difficulty": 3,
         "duration": 20,
@@ -5551,7 +5560,8 @@
         "module": "Arts visuels",
         "chapter": "Créer un portrait expressif",
         "skills": [
-          "techniques_picturales"
+          "techniques_picturales",
+          "expression_creative"
         ],
         "difficulty": 3,
         "duration": 20,
@@ -5827,7 +5837,8 @@
         "module": "Musique : théorie et pratique",
         "chapter": "Les intervalles : la distance entre deux notes",
         "skills": [
-          "gammes_harmonie"
+          "gammes_harmonie",
+          "notes_solfege"
         ],
         "difficulty": 3,
         "duration": 20,
@@ -6184,7 +6195,8 @@
         "module": "Projet créatif",
         "chapter": "Mon projet final : portrait et thème musical",
         "skills": [
-          "projet_artistique"
+          "projet_artistique",
+          "techniques_picturales"
         ],
         "difficulty": 4,
         "duration": 25,
@@ -6660,10 +6672,10 @@
         "title": "La symétrie et l'équilibre dans la composition",
         "emoji": "⚖️",
         "badge": "🖼️",
-        "module": "Musique : théorie et pratique",
+        "module": "Arts visuels",
         "chapter": "La symétrie et l'équilibre dans la composition",
         "skills": [
-          "composition_musicale"
+          "formes_composition"
         ],
         "difficulty": 4,
         "duration": 25,
@@ -7435,7 +7447,8 @@
         "module": "Projet créatif",
         "chapter": "Mon projet final : mise en abyme et thème musical transposé",
         "skills": [
-          "projet_artistique"
+          "projet_artistique",
+          "composition_musicale"
         ],
         "difficulty": 5,
         "duration": 30,
@@ -8191,7 +8204,8 @@
         "module": "Musique : théorie et pratique",
         "chapter": "Les mesures composées : 6/8 et au-delà",
         "skills": [
-          "rythme_pulsation"
+          "rythme_pulsation",
+          "composition_musicale"
         ],
         "difficulty": 4,
         "duration": 25,
@@ -8893,7 +8907,8 @@
         "module": "Musique : théorie et pratique",
         "chapter": "La composition musicale simple",
         "skills": [
-          "composition_musicale"
+          "composition_musicale",
+          "formes_composition"
         ],
         "difficulty": 3,
         "duration": 30,
@@ -9029,7 +9044,8 @@
         "module": "Arts visuels",
         "chapter": "Photographie : cadrage et lumière",
         "skills": [
-          "formes_composition"
+          "formes_composition",
+          "techniques_picturales"
         ],
         "difficulty": 3,
         "duration": 30,
@@ -9304,7 +9320,8 @@
         "module": "Arts visuels",
         "chapter": "Créer une œuvre en clair-obscur",
         "skills": [
-          "techniques_picturales"
+          "techniques_picturales",
+          "expression_creative"
         ],
         "difficulty": 4,
         "duration": 30,
@@ -9937,7 +9954,8 @@
         "module": "Projet créatif",
         "chapter": "Mon projet final : clair-obscur et musique à programme",
         "skills": [
-          "projet_artistique"
+          "projet_artistique",
+          "techniques_picturales"
         ],
         "difficulty": 5,
         "duration": 35,
@@ -10008,7 +10026,8 @@
         "module": "Écoute et histoire de l'art",
         "chapter": "L'art contemporain",
         "skills": [
-          "histoire_art"
+          "histoire_art",
+          "rythme_pulsation"
         ],
         "difficulty": 4,
         "duration": 30,
@@ -10212,7 +10231,8 @@
         "module": "Écoute et histoire de l'art",
         "chapter": "Préparer l'épreuve d'histoire des arts",
         "skills": [
-          "histoire_art"
+          "histoire_art",
+          "projet_artistique"
         ],
         "difficulty": 4,
         "duration": 30,
@@ -10416,7 +10436,8 @@
         "module": "Musique : théorie et pratique",
         "chapter": "Le nombre d'or : une proportion harmonieuse",
         "skills": [
-          "composition_musicale"
+          "composition_musicale",
+          "formes_composition"
         ],
         "difficulty": 5,
         "duration": 30,
@@ -10552,10 +10573,11 @@
         "title": "Créer une composition dynamique de groupe",
         "emoji": "🎨",
         "badge": "🕺",
-        "module": "Musique : théorie et pratique",
+        "module": "Arts visuels",
         "chapter": "Créer une composition dynamique de groupe",
         "skills": [
-          "composition_musicale"
+          "formes_composition",
+          "expression_creative"
         ],
         "difficulty": 5,
         "duration": 30,
@@ -11188,7 +11210,8 @@
         "module": "Projet créatif",
         "chapter": "Mon projet final : composition de fin de collège",
         "skills": [
-          "projet_artistique"
+          "projet_artistique",
+          "formes_composition"
         ],
         "difficulty": 5,
         "duration": 35,
