@@ -1,0 +1,46 @@
+francais-CP-02 (CP #02) - Dire oui ou dire non dans une phrase
+francais-CP-03 (CP #03) - Raconter, demander, s'exclamer
+francais-CP-05 (CP #05) - Le petit mot devant le nom
+francais-CP-08 (CP #08) - Il, elle, ils : les mots qui remplacent
+francais-CP-10 (CP #10) - Le petit paquet de mots autour du nom
+francais-CP-11 (CP #11) - Le nom et l'adjectif vont ensemble
+francais-CP-12 (CP #12) - Le verbe change avec celui qui fait l'action
+francais-CP-14 (CP #14) - Le ou la : masculin et féminin
+francais-CP-16 (CP #16) - Ce qui se passera demain
+francais-CP-18 (CP #18) - Hier, j'ai fait quelque chose
+francais-CP-21 (CP #21) - Bien écrire les mots que je connais
+francais-CP-26 (CP #26) - Deviner un mot grâce à la phrase
+francais-CP-28 (CP #28) - Les signes à la fin des phrases
+francais-CP-36 (CP #36) - J'écris ma phrase tout seul
+francais-CE1-03 (CE1 #03) - Les types de phrases
+francais-CE1-08 (CE1 #08) - Les pronoms personnels
+francais-CE1-10 (CE1 #10) - Le groupe nominal
+francais-CE1-11 (CE1 #11) - L'accord dans le groupe nominal
+francais-CE1-16 (CE1 #16) - Le futur simple
+francais-CE1-23 (CE1 #23) - Les préfixes et les suffixes
+francais-CE1-26 (CE1 #26) - Comprendre un mot grâce au contexte
+francais-CE1-27 (CE1 #27) - Utiliser le dictionnaire
+francais-CE1-31 (CE1 #31) - Écrire un récit
+francais-CE1-36 (CE1 #36) - Production écrite finale
+francais-CE2-13 (CE2 #13) - Le singulier et le pluriel
+francais-CE2-14 (CE2 #14) - Le masculin et le féminin
+francais-CE2-17 (CE2 #17) - L'imparfait de l'indicatif
+francais-CE2-20 (CE2 #20) - Les homophones grammaticaux (a/à, et/est, on/ont, son/sont)
+francais-CE2-21 (CE2 #21) - L'orthographe lexicale
+francais-CE2-22 (CE2 #22) - Les familles de mots
+francais-CE2-23 (CE2 #23) - Les préfixes et les suffixes
+francais-CE2-26 (CE2 #26) - Le vocabulaire en contexte
+francais-CE2-27 (CE2 #27) - Utiliser un dictionnaire
+francais-CE2-30 (CE2 #30) - Écrire une description
+francais-CE2-32 (CE2 #32) - Résumer un texte
+francais-CE2-34 (CE2 #34) - Argumenter et défendre une idée
+francais-CM2-26 (CM2 #26) - Le vocabulaire en contexte : les mots à plusieurs sens
+francais-CM2-27 (CM2 #27) - Utiliser un dictionnaire : article, abréviations et étymologie
+francais-CM2-28 (CM2 #28) - Ponctuer le discours rapporté
+francais-6E-02 (6E #02) - La phrase affirmative et la phrase négative
+francais-6E-11 (6E #11) - L'accord dans le groupe nominal : nom et adjectif
+francais-6E-15 (6E #15) - Le présent de l'indicatif : bilan des trois groupes
+francais-6E-16 (6E #16) - Le futur simple : bilan et valeurs
+francais-6E-23 (6E #23) - Préfixes et suffixes : la formation des mots
+francais-4E-28 (4E #28) - La ponctuation expressive et les incises
+francais-4E-34 (4E #34) - Argumenter : thèse, concession et dialectique

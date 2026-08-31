@@ -1,0 +1,129 @@
+maths-CP-02 (CP #02) - Comparer et ranger les nombres
+maths-CP-03 (CP #03) - Dizaines et unités : la valeur de position
+maths-CP-04 (CP #04) - Décomposer les nombres et les amis de 10
+maths-CP-05 (CP #05) - La droite numérique
+maths-CP-07 (CP #07) - Le calcul mental au CP
+maths-CP-08 (CP #08) - L'addition jusqu'à 20
+maths-CP-10 (CP #10) - Découvrir la multiplication : les groupes égaux
+maths-CP-11 (CP #11) - Découvrir la division : partager en parts égales
+maths-CP-15 (CP #15) - Comprendre les fractions : la moitié
+maths-CP-16 (CP #16) - Comparer les parts : moitié ou quart ?
+maths-CP-18 (CP #18) - Partager en deux : moitiés et doubles
+maths-CP-19 (CP #19) - Les nombres avec une virgule : les prix
+maths-CP-20 (CP #20) - Calculer avec les euros et les demi-euros
+maths-CP-21 (CP #21) - Autant pour chacun : la proportionnalité
+maths-CP-22 (CP #22) - Partager équitablement, c'est être juste
+maths-CP-24 (CP #24) - Les masses : lourd ou léger ?
+maths-CP-25 (CP #25) - Les contenances : combien ça contient ?
+maths-CP-26 (CP #26) - La monnaie : pièces et billets
+maths-CP-27 (CP #27) - Lire l'heure et les moments de la journée
+maths-CP-28 (CP #28) - Changer d'unité : dizaines, semaines, euros
+maths-CP-31 (CP #31) - Le tour des figures : le périmètre
+maths-CP-32 (CP #32) - Compter les carreaux : la surface
+maths-CP-35 (CP #35) - Lire des données : tableaux et pictogrammes
+maths-CE1-02 (CE1 #02) - Comparer et ranger les nombres jusqu'à 1000
+maths-CE1-03 (CE1 #03) - Centaines, dizaines et unités
+maths-CE1-04 (CE1 #04) - Décomposer les nombres
+maths-CE1-05 (CE1 #05) - La droite numérique jusqu'à 1000
+maths-CE1-07 (CE1 #07) - Calcul mental : compléments et doubles
+maths-CE1-10 (CE1 #10) - La multiplication : sens et premières tables
+maths-CE1-15 (CE1 #15) - Comprendre les fractions
+maths-CE1-16 (CE1 #16) - Comparer des fractions
+maths-CE1-17 (CE1 #17) - Fractions équivalentes
+maths-CE1-19 (CE1 #19) - Découvrir les nombres décimaux avec l'argent
+maths-CE1-22 (CE1 #22) - Sur cent : les premiers pourcentages
+maths-CE1-23 (CE1 #23) - Mesurer des longueurs : cm et m
+maths-CE1-24 (CE1 #24) - Les masses : grammes et kilogrammes
+maths-CE1-25 (CE1 #25) - Les contenances : le litre
+maths-CE1-26 (CE1 #26) - La monnaie et les problèmes d'argent
+maths-CE1-27 (CE1 #27) - Lire l'heure et calculer des durées
+maths-CE1-28 (CE1 #28) - Les conversions d'unités
+maths-CE1-31 (CE1 #31) - Le périmètre : le tour d'une figure
+maths-CE1-32 (CE1 #32) - Les aires : compter les carreaux
+maths-CE1-33 (CE1 #33) - Quadrillage, symétrie et solides
+maths-CE1-35 (CE1 #35) - Lire des données : tableaux et graphiques
+maths-CE2-01 (CE2 #01) - Lire et écrire les nombres jusqu'à 10 000
+maths-CE2-02 (CE2 #02) - Comparer, ranger et encadrer
+maths-CE2-03 (CE2 #03) - Milliers, centaines, dizaines et unités
+maths-CE2-04 (CE2 #04) - Décomposer les nombres
+maths-CE2-05 (CE2 #05) - La droite numérique et les repères
+maths-CE2-08 (CE2 #08) - L'addition posée de grands nombres
+maths-CE2-10 (CE2 #10) - La multiplication : sens et calcul posé
+maths-CE2-13 (CE2 #13) - Des astuces pour calculer plus vite
+maths-CE2-14 (CE2 #14) - Vérifier un résultat
+maths-CE2-15 (CE2 #15) - Découvrir les fractions
+maths-CE2-16 (CE2 #16) - Comparer des fractions simples
+maths-CE2-17 (CE2 #17) - Des fractions qui se ressemblent
+maths-CE2-18 (CE2 #18) - Additionner des fractions simples
+maths-CE2-19 (CE2 #19) - Les nombres décimaux et la virgule
+maths-CE2-20 (CE2 #20) - Additionner et soustraire des décimaux
+maths-CE2-24 (CE2 #24) - Mesurer des masses
+maths-CE2-25 (CE2 #25) - Mesurer des contenances
+maths-CE2-26 (CE2 #26) - La monnaie : euros et centimes
+maths-CE2-28 (CE2 #28) - Convertir les unités de mesure
+maths-CE2-29 (CE2 #29) - Reconnaître les figures géométriques
+maths-CE2-30 (CE2 #30) - Reconnaître les angles
+maths-CE2-31 (CE2 #31) - Calculer un périmètre
+maths-CE2-32 (CE2 #32) - Découvrir les aires
+maths-CE2-33 (CE2 #33) - Symétrie et solides
+maths-CE2-35 (CE2 #35) - Lire des tableaux et résoudre des énigmes
+maths-CM2-29 (CM2 #29) - Classer les quadrilatères et polygones
+maths-6E-01 (6E #01) - Lire et écrire les nombres relatifs et décimaux
+maths-6E-04 (6E #04) - Décomposer les nombres : multiples et diviseurs
+maths-6E-05 (6E #05) - La droite graduée
+maths-6E-08 (6E #08) - L'addition des nombres relatifs
+maths-6E-09 (6E #09) - La soustraction des nombres relatifs
+maths-6E-10 (6E #10) - La multiplication des nombres relatifs
+maths-6E-11 (6E #11) - La division des nombres relatifs
+maths-6E-12 (6E #12) - Priorités opératoires et automatismes
+maths-6E-15 (6E #15) - Comprendre les fractions
+maths-6E-17 (6E #17) - Fractions équivalentes
+maths-6E-18 (6E #18) - Calculer avec les fractions
+maths-6E-19 (6E #19) - Les nombres décimaux
+maths-6E-20 (6E #20) - Calculer avec les nombres décimaux
+maths-6E-21 (6E #21) - La proportionnalité
+maths-6E-22 (6E #22) - Les pourcentages
+maths-6E-23 (6E #23) - Les longueurs
+maths-6E-24 (6E #24) - Les masses
+maths-6E-25 (6E #25) - Contenances et volumes
+maths-6E-26 (6E #26) - Monnaie et budget
+maths-6E-27 (6E #27) - Heure, durées et vitesses
+maths-6E-28 (6E #28) - Conversions d'unités
+maths-6E-29 (6E #29) - Figures géométriques et constructions
+maths-6E-30 (6E #30) - Les angles
+maths-6E-31 (6E #31) - Les périmètres
+maths-6E-32 (6E #32) - Aires et volumes
+maths-6E-33 (6E #33) - Symétrie, coordonnées et solides
+maths-6E-34 (6E #34) - Problèmes et introduction au calcul littéral
+maths-6E-35 (6E #35) - Statistiques et données
+maths-6E-36 (6E #36) - Grand défi annuel : organiser une fête de fin d'année
+maths-3E-01 (3E #01) - Puissances, racines carrées et notation scientifique
+maths-3E-03 (3E #03) - L'écriture scientifique en pratique
+maths-3E-04 (3E #04) - Décomposition en facteurs premiers et PGCD
+maths-3E-05 (3E #05) - Droite graduée et repérage dans le plan
+maths-3E-06 (3E #06) - Estimation et ordre de grandeur avec les puissances
+maths-3E-07 (3E #07) - Calcul mental et automatismes de 3e
+maths-3E-08 (3E #08) - Addition et réduction d'expressions littérales
+maths-3E-10 (3E #10) - Multiplication : identités remarquables et puissances
+maths-3E-11 (3E #11) - Division, quotients et écritures fractionnaires
+maths-3E-12 (3E #12) - Priorités opératoires avec puissances et racines
+maths-3E-13 (3E #13) - Factoriser pour calculer astucieusement
+maths-3E-14 (3E #14) - Vérifier un résultat et tester une solution
+maths-3E-15 (3E #15) - Fractions, rapports et proportions
+maths-3E-17 (3E #17) - Fractions équivalentes et quatrième proportionnelle
+maths-3E-18 (3E #18) - Multiplier et diviser des fractions
+maths-3E-19 (3E #19) - Décimaux, arrondis et valeurs approchées
+maths-3E-20 (3E #20) - Calculer avec les décimaux et les puissances de 10
+maths-3E-21 (3E #21) - Proportionnalité et fonctions affines
+maths-3E-22 (3E #22) - Pourcentages : évolutions et coefficients multiplicateurs
+maths-3E-23 (3E #23) - Longueurs et théorème de Pythagore
+maths-3E-24 (3E #24) - Masses et grandeurs quotients
+maths-3E-25 (3E #25) - Contenances, débits et volumes composés
+maths-3E-26 (3E #26) - Monnaie, intérêts et budget
+maths-3E-28 (3E #28) - Conversions et unités composées
+maths-3E-30 (3E #30) - Trigonométrie dans le triangle rectangle
+maths-3E-31 (3E #31) - Périmètres, cercles et arcs
+maths-3E-32 (3E #32) - Aires et volumes : pyramides, cônes et agrandissements
+maths-3E-33 (3E #33) - Vecteurs, translations et homothéties
+maths-3E-34 (3E #34) - Équations, systèmes et fonctions
+maths-3E-35 (3E #35) - Statistiques et probabilités
