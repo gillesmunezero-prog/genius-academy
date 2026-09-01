@@ -13,15 +13,9 @@
 <link rel="apple-touch-icon" href="https://genius-academy-fbb8d.web.app/icon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com/">
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
-<!-- TODO (sync claude/sync-production-app) : la copie de production fournie est un enregistrement
-     "page web complete" du navigateur ; les 3 balises <script> ci-dessous pointaient vers des fichiers
-     locaux telecharges par le navigateur (ex: "./Genius Academy_files/firebase-app-compat.js.telechargement"),
-     introuvables dans ce depot et donc retires. Il faut les remplacer par les vraies URL/versions du
-     SDK Firebase compat utilisees en production (ex: https://www.gstatic.com/firebasejs/<version>/firebase-app-compat.js
-     et les equivalents auth/firestore) : version non verifiee, a fournir avant deploiement. -->
-<script src="MISSING-firebase-app-compat.js"></script>
-<script src="MISSING-firebase-auth-compat.js"></script>
-<script src="MISSING-firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore-compat.js"></script>
 <style>
 :root{
 --bg:#fef6e9;--card:#ffffff;--ink:#2d2a4a;--ink2:#6b6890;--gold:#ffb400;
