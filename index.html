@@ -3210,7 +3210,7 @@ GT.CHESS_PUZZLES = [
     };
   }
 
-  const parentBtn = document.querySelector('button[onclick*="showScreen(\'parent\')"]');
+  const parentBtn = document.getElementById('btnParentSpace');
   if(parentBtn){ parentBtn.setAttribute('onclick',''); parentBtn.onclick = function(){ GT.openParent(); }; }
 
   /* ---------- GT.Backup : sauvegarde / restauration complete ---------- */
