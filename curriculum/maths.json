@@ -2705,6 +2705,165 @@
             ],
             "answer": 1,
             "exp": "15, c'est 1 dizaine et 5 unités : il reste donc 5 paquets de 10 (pas 4) et 5 objets seuls, donc 55, pas 4015. On n'écrit jamais plus de 9 dans une case avant de refaire un paquet."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un marchand a 4 paquets de 100 gommes, 2 paquets de 10 et 6 gommes seules. Combien de gommes a-t-il en tout ?",
+            "answer": "426",
+            "exp": "4 centaines (400) + 2 dizaines (20) + 6 unités (6) = 426."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "316, c'est :",
+            "choices": [
+              "3 dizaines, 1 centaine, 6 unités",
+              "3 centaines, 1 dizaine, 6 unités",
+              "3 unités, 1 dizaine, 6 centaines",
+              "3 centaines, 6 dizaines, 1 unité"
+            ],
+            "answer": 1,
+            "exp": "316 = 3 centaines + 1 dizaine + 6 unités."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Au marché, Hugo compte des œufs : 5 caisses de 100, 0 paquet de 10, et 14 œufs isolés. Que doit-il corriger avant de donner le total ?",
+            "choices": [
+              "Rien, le total est 5014",
+              "14, ce n'est pas rangé : il cache encore 1 dizaine et 4 unités, il faut refaire un paquet de 10",
+              "Il faut recompter les caisses de 100",
+              "Il faut jeter les 14 œufs"
+            ],
+            "answer": 1,
+            "exp": "14 contient 1 dizaine cachée (10) et 4 unités. Il faut toujours finir le rangement : 5 centaines + 1 dizaine + 4 unités = 514."
+          },
+          {
+            "type": "text",
+            "kind": "application",
+            "q": "Une bibliothécaire range des livres par piles de 10. Elle a 8 piles complètes et 7 livres isolés. Combien de livres en tout ?",
+            "answer": "87",
+            "exp": "8 dizaines (80) + 7 unités (7) = 87 livres."
+          },
+          {
+            "type": "vf",
+            "kind": "reasoning",
+            "q": "Pour compter rapidement une grande quantité d'objets, il vaut mieux les regrouper par paquets de 10 plutôt que de compter un par un.",
+            "answer": true,
+            "exp": "Regrouper par paquets de 10 (puis de 100) permet de compter plus vite et sans erreur."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi forme-t-on un paquet de 100 seulement quand on a exactement 10 paquets de 10 ?",
+            "choices": [
+              "Parce que c'est plus joli",
+              "Parce que notre système de numération fonctionne par groupes de 10 : 10 dizaines font toujours 1 centaine",
+              "Parce que 100 est un nombre rond",
+              "Il n'y a pas de raison particulière"
+            ],
+            "answer": 1,
+            "exp": "Notre système est en base 10 : dix dizaines font toujours une centaine, ni plus ni moins."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Léo dit : « J'ai rangé 23 jetons en paquets de 10, donc j'ai 23 paquets ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Il confond le nombre de jetons (23) avec le nombre de paquets : avec 23 jetons, on fait 2 paquets de 10 et il reste 3 jetons seuls",
+              "23 jetons ne peuvent pas être rangés",
+              "Il fallait faire des paquets de 100"
+            ],
+            "answer": 1,
+            "exp": "23 jetons = 2 dizaines (20) + 3 unités, donc 2 paquets de 10, pas 23 !"
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Une collection contient le même nombre de centaines, de dizaines et d'unités : 4 de chaque. Quel est ce nombre ?",
+            "choices": [
+              "404",
+              "440",
+              "444",
+              "44"
+            ],
+            "answer": 2,
+            "exp": "4 centaines + 4 dizaines + 4 unités = 400+40+4 = 444."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien d'unités y a-t-il dans 7 dizaines ?",
+            "answer": "70",
+            "exp": "7 dizaines = 7×10 = 70 unités."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un épicier a 612 pommes à ranger en cagettes de 100. Combien de cagettes pleines, et combien de pommes resteront hors cagette ?",
+            "choices": [
+              "6 cagettes pleines, 12 pommes restantes",
+              "6 cagettes pleines, 1 pomme restante",
+              "61 cagettes pleines, 2 pommes restantes",
+              "12 cagettes pleines, 6 pommes restantes"
+            ],
+            "answer": 0,
+            "exp": "612 = 6 centaines (6 cagettes) + 1 dizaine + 2 unités, donc 12 pommes hors cagette pleine."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Dans le nombre 509, il y a 0 dizaine.",
+            "answer": true,
+            "exp": "509 = 5 centaines, 0 dizaine, 9 unités."
+          },
+          {
+            "type": "text",
+            "kind": "application",
+            "q": "Une fourmilière compte 3 groupes de 100 fourmis, 9 groupes de 10, et aucune fourmi isolée. Combien en tout ?",
+            "answer": "390",
+            "exp": "3 centaines (300) + 9 dizaines (90) + 0 = 390."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Combien de paquets de 10 peut-on faire avec 95 billes, et combien en restera-t-il ?",
+            "choices": [
+              "9 paquets, 5 billes restantes",
+              "95 paquets, 0 bille restante",
+              "5 paquets, 9 billes restantes",
+              "9 paquets, 0 bille restante"
+            ],
+            "answer": 0,
+            "exp": "95 = 9 dizaines (9 paquets de 10) + 5 unités restantes."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Enzo range 230 timbres et affirme : « J'ai 23 centaines ». Quelle est l'erreur ?",
+            "choices": [
+              "Il a raison",
+              "Il confond dizaines et centaines : 230 = 2 centaines et 3 dizaines, pas 23 centaines",
+              "230 n'a pas de centaines",
+              "Il fallait dire 230 dizaines"
+            ],
+            "answer": 1,
+            "exp": "230 = 2 centaines (200) + 3 dizaines (30). 23 centaines feraient 2300."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Je suis un nombre à 3 chiffres. Mon chiffre des centaines est le double de mon chiffre des unités, qui vaut 3. Mon chiffre des dizaines est 0. Qui suis-je ?",
+            "choices": [
+              "603",
+              "630",
+              "306",
+              "360"
+            ],
+            "answer": 0,
+            "exp": "Unités = 3, centaines = 2×3 = 6, dizaines = 0 → 603."
           }
         ]
       },
@@ -2781,6 +2940,165 @@
             ],
             "answer": 1,
             "exp": "Cinq cents, c'est 5 centaines : le chiffre 5 doit être dans la maison des centaines, pas des dizaines. Il manque le 0 des dizaines : le bon nombre est 502."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Dans le nombre 582, quelle est la valeur du chiffre des centaines ?",
+            "answer": "500",
+            "exp": "Le chiffre 5 est en position des centaines, sa valeur est 500."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quelle est la valeur du chiffre 7 dans le nombre 274 ?",
+            "choices": [
+              "7",
+              "70",
+              "700",
+              "17"
+            ],
+            "answer": 1,
+            "exp": "Le 7 est en position des dizaines : sa valeur est 70."
+          },
+          {
+            "type": "text",
+            "kind": "application",
+            "q": "Léo a 2 centaines, 5 dizaines et 0 unité de perles. Quel nombre a-t-il construit ?",
+            "answer": "250",
+            "exp": "2 centaines (200) + 5 dizaines (50) + 0 = 250."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un livre coûte 3 centaines, 0 dizaine et 9 unités de centimes. Quel est ce prix en centimes ?",
+            "choices": [
+              "39",
+              "390",
+              "309",
+              "300"
+            ],
+            "answer": 2,
+            "exp": "3 centaines (300) + 0 dizaine + 9 unités = 309."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi écrit-on un 0 pour le chiffre des dizaines dans 309, plutôt que de ne rien écrire ?",
+            "choices": [
+              "Pour faire joli",
+              "Pour garder la place : sans le 0, on ne saurait pas que le 9 est au rang des unités et pas des dizaines",
+              "Le 0 ne sert à rien",
+              "Parce que c'est obligatoire sans raison"
+            ],
+            "answer": 1,
+            "exp": "Chaque position compte, même vide : le 0 garde la place des dizaines, sinon 09 et 90 seraient confondus."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève écrit le nombre « trois cent sept » comme ceci : 37. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Il a oublié le 0 des dizaines : 'trois cent sept' = 3 centaines, 0 dizaine, 7 unités, donc 307",
+              "37 est déjà correct",
+              "Il fallait écrire 370"
+            ],
+            "answer": 1,
+            "exp": "« Trois cent sept » n'a pas de dizaine : 3 centaines + 0 dizaine + 7 unités = 307, pas 37."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Dans 450, le chiffre des unités est 0.",
+            "answer": true,
+            "exp": "450 = 4 centaines, 5 dizaines, 0 unité. Le chiffre des unités est bien 0."
+          },
+          {
+            "type": "text",
+            "kind": "application",
+            "q": "Quelle est la valeur du chiffre 6 dans le nombre 603 ?",
+            "answer": "600",
+            "exp": "Le 6 est en position des centaines : sa valeur est 600."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Deux nombres ont le même chiffre des centaines (4) et des unités (1), mais des dizaines différentes (2 et 7). Lequel est le plus grand ?",
+            "choices": [
+              "Celui avec 2 dizaines : 421",
+              "Celui avec 7 dizaines : 471",
+              "Ils sont égaux",
+              "Impossible à savoir"
+            ],
+            "answer": 1,
+            "exp": "421 et 471 ont les mêmes centaines et unités ; 471 a plus de dizaines (70>20), donc 471 > 421."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Combien de centaines, dizaines, unités dans 999 ?",
+            "choices": [
+              "9 centaines, 9 dizaines, 9 unités",
+              "9 centaines, 0 dizaine, 9 unités",
+              "99 centaines, 9 unités",
+              "9 dizaines, 9 centaines, 9 unités"
+            ],
+            "answer": 0,
+            "exp": "999 = 9 centaines (900) + 9 dizaines (90) + 9 unités (9)."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "J'ai 0 centaine, 8 dizaines et 4 unités. Quel nombre suis-je ?",
+            "answer": "84",
+            "exp": "0 centaine + 8 dizaines (80) + 4 unités (4) = 84."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un nombre a 3 chiffres identiques : le chiffre 7 partout. Quel est ce nombre ?",
+            "choices": [
+              "77",
+              "707",
+              "770",
+              "777"
+            ],
+            "answer": 3,
+            "exp": "3 fois le chiffre 7 : 7 centaines + 7 dizaines + 7 unités = 777."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Nina dit : « Dans 802, il n'y a pas de dizaine car je ne vois pas de dizaine écrite ». Quelle est son erreur ?",
+            "choices": [
+              "Elle a raison",
+              "Elle confond 'rien à ce rang' avec 'rang absent' : il y a bien un rang des dizaines dans 802, sa valeur est juste 0",
+              "802 n'a pas 3 chiffres",
+              "Il fallait écrire 82"
+            ],
+            "answer": 1,
+            "exp": "802 a bien 3 rangs (centaines, dizaines, unités) ; le chiffre des dizaines vaut 0, mais le rang existe."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Quel nombre a 6 centaines, et dont la somme des 3 chiffres vaut 9, avec 0 dizaine ?",
+            "choices": [
+              "603",
+              "630",
+              "609",
+              "690"
+            ],
+            "answer": 0,
+            "exp": "6 centaines + 0 dizaine + 3 unités = 603, et 6+0+3=9."
+          },
+          {
+            "type": "vf",
+            "kind": "reasoning",
+            "q": "Le chiffre des unités d'un nombre indique toujours combien d'objets isolés (non regroupés) il contient.",
+            "answer": true,
+            "exp": "Le chiffre des unités compte ce qui reste après avoir fait tous les paquets de 10 et de 100 possibles."
           }
         ]
       },
@@ -2863,6 +3181,171 @@
             ],
             "answer": 1,
             "exp": "419 est bien plus grand que 362, mais Inès a eu de la chance : il fallait comparer les centaines en premier (4 > 3). Avec d'autres nombres, regarder les unités en premier donnerait une mauvaise réponse."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quel signe faut-il entre 674 et 647 ?",
+            "choices": [
+              ">",
+              "<",
+              "=",
+              "Aucun des trois"
+            ],
+            "answer": 0,
+            "exp": "674 > 647 car au rang des dizaines, 7 dizaines (70) > 4 dizaines (40)."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Range dans l'ordre décroissant : 512, 521, 215.",
+            "choices": [
+              "521, 512, 215",
+              "215, 512, 521",
+              "512, 521, 215",
+              "521, 215, 512"
+            ],
+            "answer": 0,
+            "exp": "521 > 512 > 215 : on compare d'abord les centaines (5>2), puis les dizaines entre 521 et 512 (2>1)."
+          },
+          {
+            "type": "text",
+            "kind": "application",
+            "q": "Trois fermes ont récolté des œufs : A a 412, B a 421, C a 398. Quelle ferme en a le moins ?",
+            "answer": "C",
+            "exp": "398 a seulement 3 centaines, les deux autres en ont 4 : 398 est le plus petit."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Quatre classes récoltent des bouteilles : 356, 365, 346, 354. Classe-les de la plus petite à la plus grande.",
+            "choices": [
+              "346, 354, 356, 365",
+              "346, 356, 354, 365",
+              "365, 356, 354, 346",
+              "354, 346, 356, 365"
+            ],
+            "answer": 0,
+            "exp": "Toutes ont 3 centaines ; on compare les dizaines (4<5<5<6) puis les unités pour départager 354 et 356."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pour comparer 723 et 719, pourquoi n'est-il pas utile de regarder le chiffre des unités en premier ?",
+            "choices": [
+              "Il faut toujours commencer par les unités",
+              "Parce que les centaines et les dizaines pèsent plus lourd : ici les dizaines (2 contre 1) suffisent déjà à trancher, peu importe les unités",
+              "Les unités sont toujours égales",
+              "Ce n'est jamais utile de regarder les dizaines"
+            ],
+            "answer": 1,
+            "exp": "723 a 2 dizaines, 719 en a 1 : cet écart suffit à conclure 723>719, sans même regarder les unités."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Léa compare 605 et 650 et dit : « Ils ont les mêmes chiffres, donc ils sont égaux ». Quelle est son erreur ?",
+            "choices": [
+              "Elle a raison",
+              "Elle oublie que la position des chiffres change leur valeur : 650 a 5 dizaines (50) alors que 605 n'en a aucune (0), donc 650 > 605",
+              "605 et 650 sont bien égaux",
+              "Il faut comparer les lettres, pas les chiffres"
+            ],
+            "answer": 1,
+            "exp": "Mêmes chiffres, ordre différent : 605 = 6c+0d+5u, 650 = 6c+5d+0u. 650 a bien plus de dizaines, donc 650>605."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "421 est plus grand que 412.",
+            "answer": true,
+            "exp": "421 et 412 ont les mêmes centaines (4) ; 421 a 2 dizaines contre 1 pour 412, donc 421>412."
+          },
+          {
+            "type": "text",
+            "kind": "application",
+            "q": "Range du plus petit au plus grand : 290, 209, 902. Écris juste le plus petit.",
+            "answer": "209",
+            "exp": "209 a 2 centaines et 0 dizaine, c'est le plus petit des trois (290 a 9 dizaines, 902 a 9 centaines)."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Quel est le plus grand nombre que l'on peut former avec les chiffres 3, 8 et 1, utilisés une seule fois chacun ?",
+            "choices": [
+              "318",
+              "831",
+              "813",
+              "138"
+            ],
+            "answer": 1,
+            "exp": "Pour le plus grand nombre, on place le plus grand chiffre en centaines (8), puis 3, puis 1 : 831."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans une course, Sam arrive avec le temps 245 secondes, Zoé avec 254 secondes. Qui a été la plus rapide ?",
+            "choices": [
+              "Sam",
+              "Zoé",
+              "Ils sont ex-aequo",
+              "Impossible de savoir"
+            ],
+            "answer": 0,
+            "exp": "245 < 254 (4 dizaines contre 5) : Sam a mis moins de temps, donc elle est plus rapide."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pour ranger 3 nombres à 3 chiffres du plus petit au plus grand, quelle est la première chose à regarder ?",
+            "choices": [
+              "Le chiffre des unités",
+              "Le chiffre des centaines",
+              "La couleur du nombre",
+              "Le nombre de lettres du nombre en toutes lettres"
+            ],
+            "answer": 1,
+            "exp": "On compare toujours d'abord le rang le plus élevé (les centaines), qui a le plus de poids."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Si deux nombres ont des centaines différentes, il est inutile de regarder les dizaines et les unités pour savoir lequel est le plus grand.",
+            "answer": true,
+            "exp": "Dès que les centaines diffèrent, elles suffisent à déterminer le plus grand, quels que soient les autres chiffres."
+          },
+          {
+            "type": "text",
+            "kind": "challenge",
+            "q": "Quel est le plus petit nombre à 3 chiffres que l'on peut écrire (sans répéter de chiffre, sans commencer par 0) ?",
+            "answer": "102",
+            "exp": "Le plus petit chiffre non nul (1) en centaines, puis le plus petit chiffre restant (0) en dizaines, puis 2 : 102."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un marchand compare ses ventes : lundi 480€, mardi 408€, mercredi 840€. Range-les du jour le moins vendeur au plus vendeur.",
+            "choices": [
+              "mardi, lundi, mercredi",
+              "lundi, mardi, mercredi",
+              "mercredi, lundi, mardi",
+              "mardi, mercredi, lundi"
+            ],
+            "answer": 0,
+            "exp": "408 < 480 < 840 : mardi, puis lundi, puis mercredi."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Clara dit : « 299 est plus petit que 301 car 2 est plus petit que 3 ». Sa méthode est-elle toujours fiable ?",
+            "choices": [
+              "Oui, toujours, car on regarde bien le rang des centaines en premier",
+              "Non, il faudrait plutôt regarder les unités d'abord",
+              "Non, le nombre de chiffres compte plus que les chiffres eux-mêmes",
+              "On ne peut jamais comparer 299 et 301"
+            ],
+            "answer": 0,
+            "exp": "Sa méthode est la bonne : comparer le rang le plus élevé (ici les centaines, 2 contre 3) en premier est toujours fiable."
           }
         ]
       },
@@ -2951,6 +3434,177 @@
             ],
             "answer": 1,
             "exp": "199, c'est un de moins que 200 : il se place juste avant le repère 200, tout près de lui, et très loin du repère 100 (99 pas plus loin)."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Sur une droite graduée de 10 en 10, entre quels deux repères se trouve le nombre 647 ?",
+            "choices": [
+              "640 et 650",
+              "600 et 700",
+              "645 et 648",
+              "650 et 660"
+            ],
+            "answer": 0,
+            "exp": "647 est juste après 640 et juste avant 650, les deux graduations de 10 en 10 qui l'entourent."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Sur une droite numérique, plus un nombre est à droite, plus il est :",
+            "choices": [
+              "Petit",
+              "Grand",
+              "Pair",
+              "Rond"
+            ],
+            "answer": 1,
+            "exp": "Sur une droite numérique, les nombres augmentent de gauche à droite."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une tour de 1000 m est graduée tous les 100 m. Un alpiniste est entre le 5e et le 6e repère. Entre quelles altitudes se trouve-t-il ?",
+            "choices": [
+              "Entre 400 et 500 m",
+              "Entre 500 et 600 m",
+              "Entre 600 et 700 m",
+              "Entre 50 et 60 m"
+            ],
+            "answer": 1,
+            "exp": "Le 5e repère est à 500 m, le 6e à 600 m : l'alpiniste est entre les deux."
+          },
+          {
+            "type": "text",
+            "kind": "application",
+            "q": "Sur une droite graduée de 100 en 100 de 0 à 1000, quel repère se trouve juste avant 800 ?",
+            "answer": "700",
+            "exp": "Les repères sont 0, 100, 200... 700 est le repère juste avant 800."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi deux nombres comme 305 et 350 peuvent-ils être très éloignés sur une droite numérique même s'ils utilisent les mêmes chiffres ?",
+            "choices": [
+              "Ils ne sont jamais éloignés",
+              "Parce que la position des chiffres change leur valeur : 350 a 5 dizaines (50) alors que 305 n'en a aucune, l'écart réel est de 45",
+              "Parce que 3 et 5 sont des chiffres différents",
+              "Il n'y a pas d'explication"
+            ],
+            "answer": 1,
+            "exp": "350-305=45 : la différence de position des chiffres change beaucoup la valeur et donc l'écart réel sur la droite."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Tom place le nombre 299 juste avant le repère 200 sur une droite graduée de 100 en 100. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "299 est très proche de 300, pas de 200 : il doit le placer juste avant le repère 300",
+              "299 doit être placé après 400",
+              "Il n'y a pas d'erreur possible sur une droite"
+            ],
+            "answer": 1,
+            "exp": "299 est à seulement 1 de 300, donc tout près du repère 300, pas du repère 200."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Sur une droite numérique, deux nombres qui se suivent (comme 56 et 57) sont toujours côte à côte.",
+            "answer": true,
+            "exp": "Deux nombres consécutifs occupent toujours des positions voisines sur une droite numérique."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Entre 0 et 1000, combien de graduations de 100 en 100 y a-t-il en tout (en comptant 0 et 1000) ?",
+            "choices": [
+              "9",
+              "10",
+              "11",
+              "100"
+            ],
+            "answer": 2,
+            "exp": "0, 100, 200... jusqu'à 1000 : cela fait 11 graduations."
+          },
+          {
+            "type": "text",
+            "kind": "application",
+            "q": "Sur une droite graduée de 10 en 10, quel est le repère juste après 480 ?",
+            "answer": "490",
+            "exp": "Après 480, de 10 en 10, vient 490."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une piste de course graduée de 0 à 500 m a un repère tous les 50 m. Un coureur est au 7e repère après le départ. À quelle distance est-il ?",
+            "choices": [
+              "350 m",
+              "300 m",
+              "400 m",
+              "50 m"
+            ],
+            "answer": 0,
+            "exp": "7 repères de 50 m : 7×50 = 350 m."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi utilise-t-on souvent une droite numérique graduée régulièrement (toujours le même écart) plutôt qu'avec des écarts qui changent ?",
+            "choices": [
+              "Pour que ce soit plus joli",
+              "Pour pouvoir comparer facilement les distances entre les nombres : un écart toujours identique représente toujours la même quantité",
+              "Parce que c'est obligatoire sans raison",
+              "Les écarts changent toujours sur une droite numérique"
+            ],
+            "answer": 1,
+            "exp": "Une graduation régulière permet de lire d'un coup d'œil des écarts égaux entre les nombres, ce qui aide à comparer."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Léna dit : « 450 est pile au milieu entre 0 et 1000 ». A-t-elle raison ?",
+            "choices": [
+              "Oui, car 450 est à égale distance de 0 et de 1000",
+              "Non, le milieu entre 0 et 1000 est 500, pas 450",
+              "Non, le milieu entre 0 et 1000 est 450",
+              "Il n'y a pas de milieu entre 0 et 1000"
+            ],
+            "answer": 1,
+            "exp": "Le milieu entre 0 et 1000 est 500 (1000÷2=500). 450 est donc un peu avant le milieu."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Je suis un nombre situé exactement à mi-chemin entre 200 et 400 sur une droite numérique. Qui suis-je ?",
+            "choices": [
+              "250",
+              "300",
+              "350",
+              "280"
+            ],
+            "answer": 1,
+            "exp": "Le milieu entre 200 et 400 est (200+400)÷2 = 300."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Sur une droite numérique de 0 à 1000, le nombre 999 est tout près du repère 1000.",
+            "answer": true,
+            "exp": "999 est à seulement 1 de 1000, donc tout près de ce repère."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Deux villes sont représentées par les nombres 320 km et 328 km sur un axe de distance. Laquelle est la plus proche du point 0 ?",
+            "choices": [
+              "Celle à 320 km",
+              "Celle à 328 km",
+              "Elles sont à égale distance",
+              "Impossible à savoir"
+            ],
+            "answer": 0,
+            "exp": "320 < 328, donc la ville à 320 km est plus proche du point de départ (0)."
           }
         ]
       },
@@ -3027,6 +3681,165 @@
             ],
             "answer": 1,
             "exp": "5 personnes devant elle + elle-même = 6e place. Elle a confondu « nombre de personnes devant » et « son propre rang » : il faut toujours ajouter 1 pour soi-même."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Écris en lettres le nombre ordinal correspondant à 11.",
+            "answer": "onzième",
+            "exp": "11e se dit « onzième »."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Comment dit-on « 3 » en nombre ordinal ?",
+            "choices": [
+              "Troisième",
+              "Trois",
+              "Troisièmement",
+              "Tiers"
+            ],
+            "answer": 0,
+            "exp": "Le nombre ordinal de 3 est « troisième »."
+          },
+          {
+            "type": "text",
+            "kind": "application",
+            "q": "Dans une course de 30 coureurs, Maya a 19 coureurs devant elle à l'arrivée. À quelle place arrive-t-elle (écris le nombre ordinal en lettres) ?",
+            "answer": "vingtième",
+            "exp": "19 personnes devant elle + elle-même = elle arrive 20e, qui se dit « vingtième »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans un immeuble, l'appartement de Nael est au-dessus de 6 étages et en dessous du 8e étage. À quel étage habite-t-il ?",
+            "choices": [
+              "5e",
+              "6e",
+              "7e",
+              "8e"
+            ],
+            "answer": 2,
+            "exp": "Entre le 6e et le 8e étage, il n'y a que le 7e étage."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Dans la suite répétitive rouge-bleu-vert-rouge-bleu-vert..., quelle est la couleur de la 10e position ?",
+            "choices": [
+              "Rouge",
+              "Bleu",
+              "Vert",
+              "Impossible à savoir"
+            ],
+            "answer": 0,
+            "exp": "Le motif de 3 couleurs se répète : les positions 1, 4, 7, 10 (un écart de 3 à chaque fois) correspondent toujours à la 1re couleur du motif, donc rouge."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Mia dit : « Il y a 8 personnes devant moi dans la file, donc je suis 8e ». Quelle est son erreur ?",
+            "choices": [
+              "Elle a raison",
+              "S'il y a 8 personnes devant elle, elle est 9e (les 8 devant + elle-même), pas 8e",
+              "Elle est en réalité 7e",
+              "On ne peut pas savoir sans compter aussi derrière elle"
+            ],
+            "answer": 1,
+            "exp": "8 personnes devant + Mia elle-même = elle occupe la 9e place."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Si je suis 1er, cela signifie que personne n'est devant moi.",
+            "answer": true,
+            "exp": "Être premier signifie qu'il n'y a personne devant soi dans le classement ou la file."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Quel est l'ordinal de 20, écrit en lettres ?",
+            "answer": "vingtième",
+            "exp": "20e se dit « vingtième »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans un classement de 15 participants, Zoé est 15e. Que peut-on en déduire ?",
+            "choices": [
+              "Elle est arrivée première",
+              "Elle est arrivée dernière, car 15e est la dernière place possible sur 15 participants",
+              "Elle n'a pas participé",
+              "Elle est arrivée au milieu"
+            ],
+            "answer": 1,
+            "exp": "Avec 15 participants, la 15e place est forcément la dernière."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, dans un escalier, le mot « 1er étage » désigne-t-il souvent l'étage juste après le rez-de-chaussée, et non le rez-de-chaussée lui-même ?",
+            "choices": [
+              "Parce que le rez-de-chaussée n'est pas compté comme un étage dans ce système : le 1er étage est le premier niveau situé AU-DESSUS du rez-de-chaussée",
+              "Parce que c'est une erreur de langage",
+              "Parce que le rez-de-chaussée est toujours le 2e étage",
+              "Il n'y a pas de règle"
+            ],
+            "answer": 0,
+            "exp": "Par convention en France, le rez-de-chaussée est le niveau 0, et le 1er étage est le niveau juste au-dessus."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans une rangée de 12 sièges numérotés de 1er à 12e, quel est le siège juste avant le 12e ?",
+            "choices": [
+              "10e",
+              "11e",
+              "13e",
+              "1er"
+            ],
+            "answer": 1,
+            "exp": "Juste avant le 12e siège se trouve le 11e."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Comment dit-on « 100 » en nombre ordinal, écrit en lettres ?",
+            "answer": "centième",
+            "exp": "100e se dit « centième »."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans un jeu de cartes, 4 joueurs jouent chacun leur tour. Après 2 tours complets, combien de fois le 1er joueur a-t-il joué ?",
+            "choices": [
+              "1 fois",
+              "2 fois",
+              "4 fois",
+              "8 fois"
+            ],
+            "answer": 1,
+            "exp": "À chaque tour complet, chaque joueur joue une fois : après 2 tours, le 1er joueur a joué 2 fois."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "« Deuxième » et « second » désignent tous les deux la position juste après la première.",
+            "answer": true,
+            "exp": "Ce sont deux mots différents pour désigner la même position ordinale : celle qui suit immédiatement la première."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Timéo arrive 5e sur 22 coureurs. Combien de coureurs sont arrivés avant lui ?",
+            "choices": [
+              "4",
+              "5",
+              "6",
+              "17"
+            ],
+            "answer": 0,
+            "exp": "S'il est 5e, 4 coureurs sont arrivés avant lui (les places 1re à 4e)."
           }
         ]
       },
@@ -3112,6 +3925,171 @@
             ],
             "answer": 1,
             "exp": "Il y a 6 façons de ranger 3 chiffres différents : 123, 132, 213, 231, 312, 321. C'est un bon exercice pour s'entraîner à être méthodique et à n'en oublier aucun !"
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un sac contient 2 paquets de 100, 0 paquet de 10 et 5 objets seuls. Quel est ce nombre ?",
+            "answer": "205",
+            "exp": "2 centaines (200) + 0 dizaine + 5 unités = 205."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Lequel de ces nombres est le plus proche de 700 ?",
+            "choices": [
+              "680",
+              "750",
+              "600",
+              "695"
+            ],
+            "answer": 3,
+            "exp": "695 est à seulement 5 de 700, c'est le plus proche des quatre."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans un jeu de piste de 0 à 1000, l'équipe verte est à la case 512 et l'équipe jaune à la case 521. Laquelle est la plus avancée ?",
+            "choices": [
+              "L'équipe verte",
+              "L'équipe jaune",
+              "Elles sont ex-aequo",
+              "Impossible à savoir"
+            ],
+            "answer": 1,
+            "exp": "521 > 512 (2 dizaines contre 1), l'équipe jaune est donc un peu plus avancée."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Avec les chiffres 6, 1 et 8, comment trouver le plus grand nombre possible à trois chiffres ?",
+            "choices": [
+              "On place le plus grand chiffre (8) en centaines, puis 6, puis 1 : 861",
+              "On les écrit dans l'ordre où ils sont donnés : 618",
+              "On place le plus petit chiffre en centaines : 168",
+              "L'ordre n'a pas d'importance"
+            ],
+            "answer": 0,
+            "exp": "Pour le plus grand nombre, on met le chiffre le plus grand au rang le plus élevé (centaines), puis on continue en ordre décroissant."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Combien de nombres à trois chiffres différents peux-tu former avec 4, 5 et 6, en utilisant chaque chiffre une seule fois par nombre ?",
+            "choices": [
+              "3",
+              "6",
+              "9",
+              "12"
+            ],
+            "answer": 1,
+            "exp": "Il y a 3 choix pour les centaines, puis 2 pour les dizaines, puis 1 pour les unités : 3×2×1=6 nombres possibles."
+          },
+          {
+            "type": "text",
+            "kind": "application",
+            "q": "Range du plus petit au plus grand : 580, 508, 850. Écris juste le plus petit.",
+            "answer": "508",
+            "exp": "508 a le moins de dizaines à centaines égales, c'est le plus petit des trois."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Noah compare 630 et 603 et dit qu'ils sont égaux car ils contiennent les mêmes chiffres. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Il oublie que la position change la valeur : 630 a 3 dizaines (30) alors que 603 n'en a aucune, donc 630 > 603",
+              "630 et 603 sont bien égaux",
+              "Il faut comparer uniquement les unités"
+            ],
+            "answer": 1,
+            "exp": "630 = 6c+3d+0u, 603 = 6c+0d+3u. 630 a plus de dizaines, donc 630>603, ils ne sont pas égaux."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Sur une droite numérique graduée de 100 en 100, le nombre 450 se situe entre les repères 400 et 500.",
+            "answer": true,
+            "exp": "450 est bien entre les repères 400 et 500, plus précisément au milieu."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans une classe de 24 élèves rangés par ordre alphabétique, Zoé est la dernière. Quelle est sa place ordinale ?",
+            "choices": [
+              "23e",
+              "24e",
+              "25e",
+              "1re"
+            ],
+            "answer": 1,
+            "exp": "Avec 24 élèves, la dernière place est la 24e."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, pour comparer deux grands nombres, est-il inutile de les compter un par un depuis zéro ?",
+            "choices": [
+              "Il faut toujours compter depuis zéro",
+              "Parce qu'on peut comparer directement les chiffres rang par rang (centaines, puis dizaines, puis unités), ce qui est bien plus rapide et tout aussi fiable",
+              "Parce que les grands nombres ne peuvent pas être comparés",
+              "Il n'y a pas de méthode plus rapide"
+            ],
+            "answer": 1,
+            "exp": "Comparer rang par rang (en commençant par le plus élevé) donne le résultat directement, sans recompter tout depuis zéro."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un nombre a 0 centaine, 9 dizaines et 9 unités. Quel est ce nombre ?",
+            "answer": "99",
+            "exp": "0 centaine + 9 dizaines (90) + 9 unités (9) = 99."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Quel est le plus petit nombre à 3 chiffres (sans répétition, sans commencer par 0) que l'on peut écrire avec 7, 2 et 9 ?",
+            "choices": [
+              "279",
+              "297",
+              "729",
+              "792"
+            ],
+            "answer": 0,
+            "exp": "Le plus petit chiffre non nul en centaines (2), puis le plus petit restant (7), puis 9 : 279."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Un sportif est 3e sur 50 participants à une course. Combien de participants sont arrivés après lui ?",
+            "choices": [
+              "2",
+              "3",
+              "47",
+              "50"
+            ],
+            "answer": 2,
+            "exp": "S'il est 3e sur 50, il y a 50-3=47 participants arrivés après lui."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Pour ranger des nombres à 3 chiffres du plus petit au plus grand, on compare toujours d'abord le chiffre des centaines.",
+            "answer": true,
+            "exp": "Le chiffre des centaines a le plus de poids ; on le compare toujours en premier."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Léo a 3 dizaines et 15 unités. Quel nombre a-t-il réellement, une fois tout bien rangé ?",
+            "choices": [
+              "315",
+              "45",
+              "30",
+              "300"
+            ],
+            "answer": 1,
+            "exp": "15 unités, ce n'est pas rangé : cela cache 1 dizaine de plus (10) et 5 unités. 3 dizaines + 1 dizaine = 4 dizaines, + 5 unités = 45."
           }
         ]
       },
@@ -3194,6 +4172,171 @@
             ],
             "answer": 1,
             "exp": "Une fraction exige des parts de même taille. Comme sa part est plus grande que les autres, aucune des parts n'est réellement « un cinquième » du gâteau."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Une pizza est coupée en 8 parts égales. Comment s'écrit une part ?",
+            "choices": [
+              "8/1",
+              "1/8",
+              "8/8",
+              "1/1"
+            ],
+            "answer": 1,
+            "exp": "1 part sur 8 parts égales s'écrit 1/8."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Une barre de chocolat est coupée en 6 carrés égaux, Lina en mange 2. Quel est le numérateur de la fraction qu'elle a mangée ?",
+            "answer": "2",
+            "exp": "Le numérateur compte le nombre de parts prises : Lina en a mangé 2, donc le numérateur est 2."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une pâte à crêpes est partagée également entre 4 enfants. Quelle fraction reçoit chaque enfant ?",
+            "choices": [
+              "1/4",
+              "4/1",
+              "1/1",
+              "4/4"
+            ],
+            "answer": 0,
+            "exp": "Partagée en 4 parts égales, chaque enfant reçoit 1/4."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Un ruban est coupé en 3 morceaux de longueurs très différentes. Peut-on dire que chaque morceau mesure 1/3 du ruban ?",
+            "choices": [
+              "Oui, car il y a 3 morceaux",
+              "Non, car une fraction suppose des parts de même taille, ce qui n'est pas le cas ici",
+              "Oui, toujours, quel que soit le découpage",
+              "Seulement si les morceaux sont de la même couleur"
+            ],
+            "answer": 1,
+            "exp": "Une fraction comme 1/3 n'a de sens que si les parts sont égales en taille."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Zoé partage 6 bonbons entre 2 amis (3 chacun) et dit : « Chacun a 1/2 des bonbons ». A-t-elle raison ?",
+            "choices": [
+              "Oui, car les parts sont égales : chacun a bien la moitié du tout",
+              "Non, il faudrait dire 3/6",
+              "Non, on ne peut jamais utiliser 1/2 pour des bonbons",
+              "Oui, mais seulement s'il y a 2 bonbons au départ"
+            ],
+            "answer": 0,
+            "exp": "2 parts égales = chacun a 1/2 du total, peu importe le nombre exact d'objets dans chaque part."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Pour qu'une fraction ait un sens, les parts doivent être de taille égale.",
+            "answer": true,
+            "exp": "Une fraction suppose toujours un partage en parts strictement égales."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un gâteau rectangulaire est coupé en 2 parts égales, puis chaque moitié est encore coupée en 2. Combien de parts égales obtient-on en tout ?",
+            "choices": [
+              "2",
+              "3",
+              "4",
+              "8"
+            ],
+            "answer": 2,
+            "exp": "2 moitiés, chacune coupée en 2, donnent 2×2=4 parts égales (des quarts)."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Une tablette de chocolat de 10 carrés est partagée en 10 parts égales. Combien de carrés représente 1 part ?",
+            "answer": "1",
+            "exp": "10 carrés partagés en 10 parts égales : chaque part contient 1 carré."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un pichet d'eau est partagé en 3 verres de tailles égales. Un enfant boit 1 verre. Quelle fraction du pichet a-t-il bue ?",
+            "choices": [
+              "1/3",
+              "3/1",
+              "1/1",
+              "3/3"
+            ],
+            "answer": 0,
+            "exp": "1 verre sur 3 parts égales = 1/3 du pichet."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi 4/4 d'un gâteau représente-t-il le gâteau tout entier ?",
+            "choices": [
+              "Parce que 4 est un grand nombre",
+              "Parce que lorsque le numérateur est égal au dénominateur, on a repris toutes les parts, donc le tout",
+              "Ce n'est pas vrai, 4/4 est toujours moins que le tout",
+              "Parce que 4/4 = 1 par hasard"
+            ],
+            "answer": 1,
+            "exp": "Quand numérateur = dénominateur, on a exactement autant de parts prises que de parts totales : c'est le tout entier."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Hugo dit : « J'ai coupé ma pomme en 2, j'ai donc 2 moitiés qui font chacune 1/2 ». Que peut-on vérifier avant d'être sûr qu'il a raison ?",
+            "choices": [
+              "Rien, c'est toujours vrai dès qu'on coupe en 2",
+              "Il faut vérifier que les 2 morceaux sont bien de la même taille",
+              "Il faut vérifier la couleur de la pomme",
+              "Il faut recompter les pépins"
+            ],
+            "answer": 1,
+            "exp": "1/2 ne s'applique que si les 2 parts sont réellement égales ; une coupe inégale ne donne pas deux « moitiés »."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Une plaque de 12 chocolats est partagée en 12 parts égales. Combien de chocolats contient chaque part ?",
+            "answer": "1",
+            "exp": "12 chocolats en 12 parts égales : chaque part contient 1 chocolat."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans une classe de 20 élèves partagée en 4 groupes égaux, quelle fraction de la classe représente chaque groupe ?",
+            "choices": [
+              "1/4",
+              "4/1",
+              "1/20",
+              "20/4"
+            ],
+            "answer": 0,
+            "exp": "4 groupes égaux : chaque groupe représente 1/4 de la classe, peu importe qu'il y ait 20 élèves en tout."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un jardin est divisé en 5 parcelles égales. Combien de parcelles forment la moitié du jardin, en nombre entier de parcelles ?",
+            "choices": [
+              "2 ou 3 parcelles, mais pas exactement la moitié (5 n'est pas divisible par 2)",
+              "2,5 parcelles exactement",
+              "5 parcelles",
+              "1 parcelle"
+            ],
+            "answer": 0,
+            "exp": "5 ne se divise pas exactement par 2 : on ne peut pas former exactement la moitié avec un nombre entier de ces 5 parcelles égales."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "3/3 d'une pizza représente la pizza entière.",
+            "answer": true,
+            "exp": "Quand le numérateur égale le dénominateur, toutes les parts sont prises : c'est le tout."
           }
         ]
       },
@@ -3282,6 +4425,177 @@
             ],
             "answer": 1,
             "exp": "Son raisonnement sur « l'ordre d'écriture » n'a aucun sens en maths. Avec le même dénominateur, on compare seulement la valeur du numérateur : 2 > 1 donc 2/4 > 1/4."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Lequel est le plus grand : 4/9 ou 7/9 ?",
+            "choices": [
+              "4/9",
+              "7/9",
+              "Ils sont égaux",
+              "Impossible à savoir"
+            ],
+            "answer": 1,
+            "exp": "Même dénominateur (9) : on compare les numérateurs, 7>4, donc 7/9>4/9."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Range dans l'ordre décroissant : 3/8, 7/8, 1/8.",
+            "choices": [
+              "7/8, 3/8, 1/8",
+              "1/8, 3/8, 7/8",
+              "3/8, 7/8, 1/8",
+              "7/8, 1/8, 3/8"
+            ],
+            "answer": 0,
+            "exp": "Même dénominateur : on range les numérateurs du plus grand au plus petit : 7>3>1."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Deux coureurs sont sur une piste coupée en 12 portions égales. L'un a parcouru 5/12, l'autre 9/12. Qui a parcouru le plus de chemin ?",
+            "choices": [
+              "Le premier (5/12)",
+              "Le second (9/12)",
+              "Ils ont parcouru la même distance",
+              "Impossible à savoir"
+            ],
+            "answer": 1,
+            "exp": "Même dénominateur (12) : 9>5, donc 9/12>5/12, le second a parcouru plus de chemin."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un réservoir divisé en 10 parts égales contient 6/10 d'eau le matin et 8/10 le soir. L'eau a-t-elle augmenté ou diminué ?",
+            "choices": [
+              "Augmenté, car 8/10 > 6/10",
+              "Diminué, car 8 est après 6",
+              "Elle est restée la même",
+              "Impossible à savoir"
+            ],
+            "answer": 0,
+            "exp": "Même dénominateur : 8>6, donc 8/10>6/10, le niveau d'eau a augmenté."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, quand deux fractions ont le même dénominateur, suffit-il de comparer les numérateurs ?",
+            "choices": [
+              "Parce que c'est une règle sans explication",
+              "Parce que les parts sont de la même taille dans les deux fractions : seul le nombre de parts prises (numérateur) change, donc plus il y a de parts prises, plus la fraction est grande",
+              "Parce que les dénominateurs ne comptent jamais",
+              "Ce n'est vrai que pour certains dénominateurs"
+            ],
+            "answer": 1,
+            "exp": "Même dénominateur = parts de même taille : seule la quantité de parts prises (le numérateur) détermine laquelle est la plus grande."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Léo dit : « 6/10 est plus petit que 4/10 car 6 est un chiffre impair ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Il invente une règle sans rapport : il faut comparer directement les numérateurs à dénominateur égal, 6>4 donc 6/10>4/10",
+              "6/10 n'existe pas",
+              "4/10 est toujours plus grand"
+            ],
+            "answer": 1,
+            "exp": "La parité n'a rien à voir : à dénominateur égal, on compare juste les numérateurs. 6>4, donc 6/10>4/10."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "3/5 est plus grand que 1/5.",
+            "answer": true,
+            "exp": "Même dénominateur (5) : 3>1, donc 3/5>1/5."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Parmi 2/6, 5/6 et 3/6, quelle fraction est la plus petite ? (réponds par la fraction)",
+            "answer": "2/6",
+            "exp": "Même dénominateur : le plus petit numérateur (2) donne la plus petite fraction."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un gâteau coupé en 8 parts égales : Nina en a mangé 3/8, son frère 5/8. Qui a le plus mangé, et de combien de parts de plus ?",
+            "choices": [
+              "Le frère, de 2 parts de plus",
+              "Nina, de 2 parts de plus",
+              "Ils ont mangé pareil",
+              "Le frère, de 8 parts de plus"
+            ],
+            "answer": 0,
+            "exp": "5/8 > 3/8 (5>3) : le frère a mangé 2 parts de plus (5-3=2)."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Quelle est la plus grande fraction possible avec un dénominateur de 7 (numérateur inférieur ou égal à 7) ?",
+            "choices": [
+              "1/7",
+              "6/7",
+              "7/7",
+              "0/7"
+            ],
+            "answer": 2,
+            "exp": "Avec dénominateur 7, le plus grand numérateur possible est 7, donc 7/7 (le tout entier) est la plus grande."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi 0/4 est-il la plus petite fraction possible avec un dénominateur de 4 ?",
+            "choices": [
+              "Parce que 0 est négatif",
+              "Parce que prendre 0 part, c'est ne rien prendre du tout : on ne peut pas prendre moins que rien",
+              "Ce n'est pas vrai, 0/4 n'existe pas",
+              "Parce que 4 est pair"
+            ],
+            "answer": 1,
+            "exp": "0 part prise signifie qu'on n'a rien pris : c'est la plus petite quantité possible, inférieure à toute fraction avec un numérateur positif."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Deux bouteilles identiques, graduées en 6 parts égales, contiennent 2/6 et 2/6 de jus. Que peut-on dire ?",
+            "choices": [
+              "Elles contiennent la même quantité de jus",
+              "L'une contient plus que l'autre",
+              "On ne peut pas comparer deux fractions identiques",
+              "Il manque des informations"
+            ],
+            "answer": 0,
+            "exp": "Deux fractions identiques (même numérateur et même dénominateur) représentent toujours la même quantité."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Range du plus petit au plus grand : 7/10, 2/10, 5/10. Écris juste la plus petite fraction.",
+            "answer": "2/10",
+            "exp": "Même dénominateur : le plus petit numérateur (2) donne la plus petite fraction."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Avec un même dénominateur, plus le numérateur est petit, plus la fraction est petite.",
+            "answer": true,
+            "exp": "À dénominateur égal, le numérateur seul détermine la taille de la fraction : plus il est petit, plus la fraction est petite."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Deux élèves ont colorié 5/9 et 5/9 de deux figures identiques. Que peut-on en conclure ?",
+            "choices": [
+              "Ils ont colorié la même quantité",
+              "L'un a colorié plus que l'autre",
+              "On ne peut pas comparer deux fractions identiques",
+              "Il manque des informations pour comparer"
+            ],
+            "answer": 0,
+            "exp": "Deux fractions strictement identiques (même numérateur, même dénominateur) représentent toujours la même quantité."
           }
         ]
       },
@@ -3370,6 +4684,177 @@
             ],
             "answer": 1,
             "exp": "Avec un numérateur de 1, c'est l'inverse : plus le dénominateur (7) est grand par rapport à l'autre (4), plus la part est petite. La bonne réponse est donc 1/7 < 1/4, pas l'inverse."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Lequel est le plus grand : 1/4 ou 1/9 ?",
+            "choices": [
+              "1/4",
+              "1/9",
+              "Ils sont égaux",
+              "Impossible à savoir"
+            ],
+            "answer": 0,
+            "exp": "Plus le dénominateur est petit, plus les parts sont grandes : 1/4 (parts en 4) est plus grand que 1/9 (parts en 9)."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Range du plus grand au plus petit : 1/3, 1/6, 1/12.",
+            "choices": [
+              "1/3, 1/6, 1/12",
+              "1/12, 1/6, 1/3",
+              "1/6, 1/3, 1/12",
+              "1/3, 1/12, 1/6"
+            ],
+            "answer": 0,
+            "exp": "Plus le dénominateur est petit, plus la part est grande : 3<6<12, donc 1/3>1/6>1/12."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Deux gâteaux identiques : l'un est coupé en 4 parts égales, l'autre en 8. Un invité reçoit 1 part de chaque gâteau. Lequel a reçu le plus grand morceau ?",
+            "choices": [
+              "Celui du gâteau coupé en 4 (1/4)",
+              "Celui du gâteau coupé en 8 (1/8)",
+              "Les deux morceaux sont identiques",
+              "Impossible à savoir sans peser"
+            ],
+            "answer": 0,
+            "exp": "Moins il y a de parts (4 plutôt que 8), plus chaque part est grande : 1/4 > 1/8."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi 1/2 est-il plus grand que 1/100, même si 100 est un bien plus grand nombre que 2 ?",
+            "choices": [
+              "Ce n'est pas vrai, 1/100 est plus grand",
+              "Parce que plus on partage un même tout en de nombreuses parts, plus chaque part devient petite : partager en 100 donne des parts minuscules comparées à un partage en 2",
+              "Parce que 2 est pair et 100 est pair aussi, donc ils devraient être égaux",
+              "Il n'y a pas d'explication logique"
+            ],
+            "answer": 1,
+            "exp": "Partager en plus de parts (100) donne des parts plus petites que partager en moins de parts (2) : 1/2 est donc bien plus grand que 1/100."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Léa dit : « 1/9 est plus grand que 1/3 car 9 est plus grand que 3 ». Quelle est son erreur ?",
+            "choices": [
+              "Elle a raison",
+              "Elle inverse la logique : pour les fractions de numérateur 1, plus le dénominateur est grand, plus la part est PETITE, donc 1/9 < 1/3",
+              "1/9 et 1/3 sont égaux",
+              "1/3 n'existe pas"
+            ],
+            "answer": 1,
+            "exp": "Avec un numérateur 1, un dénominateur plus grand signifie un partage en plus de morceaux, donc des parts plus petites : 1/9<1/3."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "1/5 est plus petit que 1/2.",
+            "answer": true,
+            "exp": "Partager en 5 donne des parts plus petites que partager en 2 seulement : 1/5<1/2."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Entre 1/4 et 1/6, quelle fraction est la plus grande ? (réponds par la fraction)",
+            "answer": "1/4",
+            "exp": "Moins de parts (4) donnent des parts plus grandes que plus de parts (6) : 1/4 > 1/6."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un gâteau partagé en 2 parts égales et un même gâteau partagé en 20 parts égales : dans quel cas chaque part est-elle la plus petite ?",
+            "choices": [
+              "Partagé en 2 parts",
+              "Partagé en 20 parts",
+              "Les parts sont identiques dans les deux cas",
+              "Impossible à savoir"
+            ],
+            "answer": 1,
+            "exp": "Plus on multiplie le nombre de parts égales dans un même tout, plus chaque part devient petite : 1/20 < 1/2."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Si je dois choisir entre 1/8 d'un gâteau ou 1/3 du même gâteau, laquelle de ces fractions représente la plus grosse part pour moi ?",
+            "choices": [
+              "1/8",
+              "1/3",
+              "Les deux sont identiques",
+              "Cela dépend de la couleur du gâteau"
+            ],
+            "answer": 1,
+            "exp": "1/3 vient d'un partage en moins de morceaux (3 plutôt que 8), donc chaque part est plus grande : je préfère 1/3."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Zoé affirme : « 1/1 est la plus grande fraction de numérateur 1 possible ». A-t-elle raison ?",
+            "choices": [
+              "Oui, car 1/1 représente le tout entier, on ne peut pas faire plus grand avec un numérateur 1",
+              "Non, 1/10 est plus grand",
+              "Non, il n'existe pas de plus grande fraction",
+              "1/1 n'est pas une fraction valide"
+            ],
+            "answer": 0,
+            "exp": "1/1 signifie « 1 part sur 1 », c'est-à-dire le tout entier : aucune fraction de numérateur 1 ne peut dépasser le tout."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Range du plus petit au plus grand : 1/10, 1/4, 1/7. Écris juste la plus petite.",
+            "answer": "1/10",
+            "exp": "Le plus grand dénominateur (10) donne la plus petite part parmi des fractions de numérateur 1."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pourquoi deux amis qui partagent une pizza seraient-ils mieux servis en la coupant en 4 plutôt qu'en 16, s'ils ne prennent qu'1 part chacun ?",
+            "choices": [
+              "Parce que 1/4 est une part plus grande que 1/16",
+              "Parce que 16 est un nombre pair",
+              "Parce que cela ne change rien à la quantité reçue",
+              "Parce qu'il est plus facile de couper en 16"
+            ],
+            "answer": 0,
+            "exp": "1/4 (partage en 4) donne une part bien plus grande que 1/16 (partage en 16), pour la même pizza."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Pour des fractions de numérateur 1, plus le dénominateur est grand, plus la fraction est petite.",
+            "answer": true,
+            "exp": "C'est la règle clé : avec numérateur 1, un grand dénominateur signifie un partage en beaucoup de petites parts."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un gâteau est partagé une fois en 3 parts égales, et un gâteau identique une seconde fois en 9 parts égales. Combien de parts du second gâteau faut-il réunir pour obtenir l'équivalent d'1 part du premier ?",
+            "choices": [
+              "2 parts",
+              "3 parts",
+              "9 parts",
+              "1 part"
+            ],
+            "answer": 1,
+            "exp": "9 est 3 fois plus que 3 : il faut réunir 3 parts du second gâteau (1/9 chacune) pour égaler 1 part du premier (1/3)."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Entre 1/6 et 1/60, laquelle de ces deux parts choisirais-tu si tu veux le plus gros morceau d'un même gâteau ?",
+            "choices": [
+              "1/6",
+              "1/60",
+              "Les deux sont identiques",
+              "Cela dépend du gâteau"
+            ],
+            "answer": 0,
+            "exp": "1/6 vient d'un partage en bien moins de morceaux que 1/60 : c'est donc la part la plus grosse."
           }
         ]
       },
@@ -3458,6 +4943,177 @@
             ],
             "answer": 1,
             "exp": "1+1=2 est juste pour le numérateur, mais le dénominateur doit rester 4 (la taille des parts ne change pas) : la réponse correcte est 2/4 (et non 2/8, où il a additionné les deux dénominateurs par erreur)."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Combien fait 3/8 + 4/8 ?",
+            "choices": [
+              "7/8",
+              "7/16",
+              "1/8",
+              "12/8"
+            ],
+            "answer": 0,
+            "exp": "Même dénominateur : on additionne les numérateurs, 3+4=7, donc 7/8."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Combien fait 9/10 − 4/10 ?",
+            "choices": [
+              "5/10",
+              "13/10",
+              "5/20",
+              "4/10"
+            ],
+            "answer": 0,
+            "exp": "Même dénominateur : on soustrait les numérateurs, 9-4=5, donc 5/10."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un seau gradué en 8 parts égales contient 3/8 d'eau. On y ajoute 2/8 de plus. Quelle fraction du seau est maintenant remplie ?",
+            "choices": [
+              "5/8",
+              "5/16",
+              "1/8",
+              "6/8"
+            ],
+            "answer": 0,
+            "exp": "3/8 + 2/8 = 5/8, on ajoute simplement les numérateurs."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une barre de chocolat coupée en 12 carrés contient 10/12 de chocolat restant. On en mange encore 3/12. Quelle fraction reste-t-il (attention à l'erreur possible) ?",
+            "choices": [
+              "7/12",
+              "13/12",
+              "7/24",
+              "10/12"
+            ],
+            "answer": 0,
+            "exp": "10/12 − 3/12 = 7/12, car on ne peut pas enlever plus que ce qu'il y a : 7/12 reste."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, pour additionner 2/5 et 1/5, additionne-t-on seulement les numérateurs (2+1) sans toucher au dénominateur ?",
+            "choices": [
+              "Parce que c'est une règle à apprendre sans comprendre",
+              "Parce que les parts sont de la même taille (cinquièmes) dans les deux fractions : on compte juste combien de ces parts identiques on a en tout",
+              "Parce que le dénominateur change toujours de son côté",
+              "Parce que 5 est un nombre impair"
+            ],
+            "answer": 1,
+            "exp": "Le dénominateur indique la taille des parts (ici des cinquièmes) ; comme les parts sont de même taille, on additionne juste leur nombre (les numérateurs)."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève calcule : 2/6 + 3/6 = 5/12. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Il additionne aussi les dénominateurs alors qu'ils doivent rester identiques : la bonne réponse est 5/6, pas 5/12",
+              "2/6+3/6 ne peut pas se calculer",
+              "Il fallait soustraire au lieu d'additionner"
+            ],
+            "answer": 1,
+            "exp": "Avec le même dénominateur, seuls les numérateurs s'additionnent (2+3=5) ; le dénominateur reste 6 : résultat 5/6."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "4/9 + 2/9 = 6/9.",
+            "answer": true,
+            "exp": "Même dénominateur : on additionne les numérateurs, 4+2=6, le dénominateur reste 9."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combine 5/7 + 2/7. Donne le résultat sous forme de fraction.",
+            "answer": "7/7",
+            "exp": "5+2=7, le dénominateur reste 7 : résultat 7/7 (le tout entier)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une citerne divisée en 20 parts égales contient 15/20 d'eau. On en utilise 6/20 pour arroser le jardin. Combien reste-t-il ?",
+            "choices": [
+              "9/20",
+              "21/20",
+              "9/40",
+              "6/20"
+            ],
+            "answer": 0,
+            "exp": "15/20 − 6/20 = 9/20."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi ne peut-on pas calculer directement 3/4 + 1/2 de la même façon que 3/8 + 1/8 ?",
+            "choices": [
+              "On peut toujours faire pareil",
+              "Parce que 3/4 et 1/2 n'ont pas le même dénominateur : les parts n'ont pas la même taille, donc on ne peut pas juste additionner les numérateurs sans transformation préalable",
+              "Parce que 1/2 n'est pas une vraie fraction",
+              "Parce que l'addition de fractions est toujours impossible"
+            ],
+            "answer": 1,
+            "exp": "Additionner directement les numérateurs ne marche que si les parts ont la même taille (même dénominateur) ; sinon il faut d'abord les rendre comparables (notion vue plus tard)."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Léo calcule 8/9 − 3/9 et obtient 5/0. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Le dénominateur ne change jamais dans une soustraction de fractions de même dénominateur : la bonne réponse est 5/9, pas 5/0",
+              "Il fallait additionner au lieu de soustraire",
+              "8/9 n'existe pas"
+            ],
+            "answer": 1,
+            "exp": "Le dénominateur reste toujours 9 ; seuls les numérateurs se soustraient : 8-3=5, donc 5/9."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule 6/11 − 6/11. Donne le résultat sous forme de fraction.",
+            "answer": "0/11",
+            "exp": "6-6=0, le dénominateur reste 11 : résultat 0/11 (il ne reste rien)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un gâteau coupé en 10 parts : Léa en mange 2/10, puis encore 3/10. Quelle fraction du gâteau a-t-elle mangée en tout ?",
+            "choices": [
+              "5/10",
+              "6/10",
+              "5/20",
+              "2/10"
+            ],
+            "answer": 0,
+            "exp": "2/10 + 3/10 = 5/10, on additionne les parts mangées."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Peut-on calculer 2/5 + 4/5 et obtenir une fraction supérieure à 1 (le tout entier) ?",
+            "choices": [
+              "Non, jamais",
+              "Oui : 2/5+4/5=6/5, ce qui dépasse le tout (comme si on avait plus d'un gâteau)",
+              "Oui, mais seulement avec des dénominateurs pairs",
+              "Non, car 5 est trop petit"
+            ],
+            "answer": 1,
+            "exp": "2+4=6, donc 6/5 : le numérateur dépasse le dénominateur, ce qui représente plus qu'un tout entier (possible si on parle de plusieurs gâteaux)."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Dans une addition ou une soustraction de fractions de même dénominateur, seul le numérateur change.",
+            "answer": true,
+            "exp": "Le dénominateur (la taille des parts) reste fixe ; seul le nombre de parts (numérateur) change."
           }
         ]
       },
@@ -3534,6 +5190,159 @@
             ],
             "answer": 1,
             "exp": "8+6=14 : on écrit 4 et on retient 1 dizaine. Aux dizaines : 5+2+1(retenue)=8. Le résultat correct est 84, pas 714 (qui vient d'avoir simplement collé « 14 » sans gérer la retenue)."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule en colonnes : 247 + 185",
+            "answer": "432",
+            "exp": "Unités : 7+5=12, j'écris 2 je retiens 1. Dizaines : 4+8+1=13, j'écris 3 je retiens 1. Centaines : 2+1+1=4. Résultat : 432."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans 6 + 7 = 13, combien d'unités reste-t-il après avoir posé la retenue ?",
+            "choices": [
+              "1",
+              "3",
+              "13",
+              "0"
+            ],
+            "answer": 1,
+            "exp": "13 = 1 dizaine (retenue) + 3 unités : on écrit 3 et on retient 1."
+          },
+          {
+            "type": "text",
+            "kind": "application",
+            "q": "Un magasin vend 364 jouets en décembre et 278 en janvier. Combien de jouets vendus en tout ?",
+            "answer": "642",
+            "exp": "364+278 : unités 4+8=12 (écris 2, retiens 1), dizaines 6+7+1=14 (écris 4, retiens 1), centaines 3+2+1=6. Résultat 642."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un stade compte 519 spectateurs en tribune A et 346 en tribune B. Combien en tout ?",
+            "choices": [
+              "865",
+              "855",
+              "765",
+              "965"
+            ],
+            "answer": 0,
+            "exp": "519+346 : unités 9+6=15, dizaines 1+4+1=6, centaines 5+3=8. Résultat 865."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, lors d'une addition posée, écrit-on toujours un seul chiffre par colonne, même si la somme dépasse 9 ?",
+            "choices": [
+              "Parce que c'est plus joli",
+              "Parce que chaque colonne ne peut contenir qu'un seul chiffre (0 à 9) : le surplus devient une retenue qui part dans la colonne suivante",
+              "Parce que les retenues n'existent pas vraiment",
+              "Parce qu'il est interdit d'écrire 2 chiffres"
+            ],
+            "answer": 1,
+            "exp": "Chaque position (unités, dizaines...) n'accepte qu'un seul chiffre ; tout ce qui dépasse 9 forme une nouvelle dizaine qui se reporte dans la colonne suivante."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève calcule 67 + 48 et trouve 1015. Quelle est son erreur la plus probable ?",
+            "choices": [
+              "Il a oublié d'écrire la retenue correctement et a collé les deux résultats partiels au lieu de les combiner : 67+48=115, pas 1015",
+              "Il a bien calculé",
+              "Il fallait soustraire",
+              "67+48 ne se calcule pas en colonnes"
+            ],
+            "answer": 0,
+            "exp": "67+48 = 115 (unités 7+8=15, dizaines 6+4+1=11) ; 1015 montre une confusion dans la pose du calcul."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Dans une addition posée, on commence toujours par la colonne des unités, à droite.",
+            "answer": true,
+            "exp": "On additionne toujours de droite à gauche, en commençant par les unités, pour gérer correctement les retenues."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule : 509 + 296",
+            "answer": "805",
+            "exp": "Unités 9+6=15 (écris 5, retiens 1), dizaines 0+9+1=10 (écris 0, retiens 1), centaines 5+2+1=8. Résultat 805."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une ferme a 173 poules et 158 canards. Combien d'animaux en tout ?",
+            "choices": [
+              "331",
+              "321",
+              "341",
+              "231"
+            ],
+            "answer": 0,
+            "exp": "173+158 : unités 3+8=11, dizaines 7+5+1=13, centaines 1+1+1=3. Résultat 331."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi une retenue se place-t-elle toujours dans la colonne immédiatement à gauche, jamais à droite ?",
+            "choices": [
+              "Parce que la colonne à gauche représente le rang supérieur (10 fois plus grand) : une retenue de 1 dizaine va logiquement dans la colonne des dizaines, pas celle des unités",
+              "Par habitude, sans raison précise",
+              "Parce que c'est plus simple à écrire",
+              "Les retenues peuvent aller n'importe où"
+            ],
+            "answer": 0,
+            "exp": "Une retenue de 10 unités vaut 1 dizaine : elle doit logiquement rejoindre la colonne des dizaines, le rang immédiatement supérieur."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève calcule 85 + 37 et oublie complètement la retenue, trouvant 112 au lieu de 122. Où est passée l'erreur ?",
+            "choices": [
+              "Il a bien calculé",
+              "Aux unités, 5+7=12, il a dû écrire 2 et retenir 1 mais n'a pas ajouté cette retenue aux dizaines (8+3=11, +1 de retenue=12)",
+              "Il fallait soustraire",
+              "85+37 ne peut pas se calculer"
+            ],
+            "answer": 1,
+            "exp": "5+7=12 → écrire 2, retenir 1. Dizaines : 8+3=11, +1 (retenue oubliée) = 12. Sans la retenue, on perd 10 dans le résultat final."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule : 378 + 378",
+            "answer": "756",
+            "exp": "Unités 8+8=16 (écris 6, retiens 1), dizaines 7+7+1=15 (écris 5, retiens 1), centaines 3+3+1=7. Résultat 756."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un commerçant additionne ses ventes de deux jours : 999 + 1. Que doit-il se passer dans le calcul ?",
+            "choices": [
+              "Une seule retenue, aux unités seulement",
+              "Une chaîne de retenues qui traverse toutes les colonnes : unités, dizaines, centaines, jusqu'à créer un nouveau chiffre des milliers : résultat 1000",
+              "Aucune retenue n'est nécessaire",
+              "Le calcul est impossible"
+            ],
+            "answer": 1,
+            "exp": "999+1 : chaque colonne atteint 10, provoquant une retenue en chaîne jusqu'à créer un nouveau rang : 1000."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Dans une addition posée, le nombre de chiffres du résultat peut être supérieur au nombre de chiffres des deux nombres additionnés.",
+            "answer": true,
+            "exp": "Par exemple 999+1=1000 : le résultat a un chiffre de plus que les nombres additionnés, à cause des retenues en chaîne."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule : 455 + 347",
+            "answer": "802",
+            "exp": "Unités 5+7=12 (écris 2, retiens 1), dizaines 5+4+1=10 (écris 0, retiens 1), centaines 4+3+1=8. Résultat 802."
           }
         ]
       },
@@ -3610,6 +5419,159 @@
             ],
             "answer": 1,
             "exp": "Inverser l'ordre de la soustraction aux unités pour « éviter le problème » change complètement le résultat final. Il faut vraiment casser une dizaine (2 devient 12, puis 12 − 7 = 5), pas inverser les chiffres."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule en colonnes : 753 − 429",
+            "answer": "324",
+            "exp": "Unités 3−9 impossible, on emprunte : 13−9=4. Dizaines : 4(après emprunt)−2=2. Centaines : 7−4=3. Résultat 324."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pour calculer 452 − 168, que doit-on faire à la colonne des unités (2 − 8) ?",
+            "choices": [
+              "2−8=−6, donc on écrit −6",
+              "On emprunte une dizaine au nombre du dessus : 12−8=4",
+              "On inverse : 8−2=6",
+              "C'est impossible à calculer"
+            ],
+            "answer": 1,
+            "exp": "Comme 2<8, on emprunte 1 dizaine (qui devient 10 unités) : 12−8=4."
+          },
+          {
+            "type": "text",
+            "kind": "application",
+            "q": "Une boulangerie a 320 pains le matin. Elle en vend 185 dans la journée. Combien en reste-t-il ?",
+            "answer": "135",
+            "exp": "320−185 : unités 0−5 impossible, on emprunte, 10−5=5 ; dizaines 1(après emprunt)−8 impossible, on emprunte, 11−8=3 ; centaines 2−1=1. Résultat 135."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un parking a 600 places, 275 sont occupées. Combien de places restent libres ?",
+            "choices": [
+              "325",
+              "425",
+              "335",
+              "225"
+            ],
+            "answer": 0,
+            "exp": "600−275 : avec des emprunts en chaîne (0 et 0 ne suffisent pas), le résultat est 325."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, quand on emprunte une dizaine pour les unités, la colonne des dizaines perd-elle 1, même si on n'a encore rien soustrait à cette colonne ?",
+            "choices": [
+              "C'est une erreur, elle ne devrait rien perdre",
+              "Parce que la dizaine empruntée vient forcément de la colonne des dizaines : ce qu'on gagne aux unités (10), on le perd ailleurs (1 dizaine en moins)",
+              "Par habitude, sans logique particulière",
+              "Parce que les dizaines sont toujours impaires"
+            ],
+            "answer": 1,
+            "exp": "On ne crée pas de quantité : la dizaine « empruntée » pour les unités est réellement retirée du nombre de dizaines disponibles."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour calculer 83 − 46, un élève écrit directement 6 − 3 = 3 aux unités, en inversant l'ordre pour éviter l'emprunt. Que penser de cette méthode ?",
+            "choices": [
+              "C'est une bonne astuce, toujours valable",
+              "C'est une erreur : l'ordre compte dans une soustraction (83−46 n'est pas pareil que 46−83), il faut vraiment emprunter plutôt qu'inverser",
+              "Cela ne change jamais le résultat",
+              "Il fallait additionner au lieu de soustraire"
+            ],
+            "answer": 1,
+            "exp": "Inverser l'ordre d'une soustraction change le résultat (83−46 ≠ 46−83) : il faut emprunter correctement, pas inverser les chiffres."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Dans une soustraction posée, on soustrait toujours le nombre du dessous à celui du dessus.",
+            "answer": true,
+            "exp": "Le premier nombre (en haut) est celui dont on soustrait le second (en bas), colonne par colonne."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule : 500 − 246",
+            "answer": "254",
+            "exp": "Avec des emprunts en chaîne à travers les colonnes de zéros : résultat 254."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une salle de spectacle a 284 places, 97 sont vides. Combien de places sont occupées ?",
+            "choices": [
+              "187",
+              "197",
+              "177",
+              "207"
+            ],
+            "answer": 0,
+            "exp": "284−97 : avec emprunt, résultat 187."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi une soustraction comme 500 − 1 nécessite-t-elle des emprunts en chaîne à travers plusieurs colonnes ?",
+            "choices": [
+              "Parce que 500 n'a que des zéros après le 5, donc il faut emprunter de colonne en colonne jusqu'à trouver un chiffre non nul à « casser »",
+              "Il n'y a besoin d'aucun emprunt",
+              "Parce que 1 est un nombre trop petit",
+              "Parce que 500 est un nombre pair"
+            ],
+            "answer": 0,
+            "exp": "Avec des zéros aux dizaines et unités, on doit emprunter à la centaine, qui se transforme en dizaines, qui se transforment à leur tour en unités : une chaîne d'emprunts."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève calcule 304 − 128 et obtient 224. Que penses-tu de ce résultat ?",
+            "choices": [
+              "Il est correct",
+              "Il est faux : la bonne réponse est 176 ; l'élève a probablement oublié de gérer l'emprunt sur le zéro des dizaines",
+              "Il manque juste une retenue en plus",
+              "304−128 ne peut pas se calculer"
+            ],
+            "answer": 1,
+            "exp": "304−128=176 (en empruntant correctement à travers le 0 des dizaines). 224 montre une erreur de gestion des emprunts."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule : 421 − 421",
+            "answer": "0",
+            "exp": "Un nombre moins lui-même donne toujours 0."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Peut-on calculer 157 − 289 avec seulement des nombres entiers positifs au CE1 ?",
+            "choices": [
+              "Oui, cela donne un résultat positif",
+              "Non, car 289 est plus grand que 157 : le résultat serait négatif, ce qui dépasse ce qu'on étudie pour l'instant",
+              "Oui, cela donne toujours 0",
+              "Oui, cela donne 132"
+            ],
+            "answer": 1,
+            "exp": "On ne peut soustraire un plus grand nombre d'un plus petit sans obtenir un résultat négatif, notion vue plus tard."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Avant de poser une soustraction, il est utile de vérifier que le premier nombre est bien plus grand (ou égal) que le second.",
+            "answer": true,
+            "exp": "Au CE1, on soustrait toujours un nombre plus petit (ou égal) d'un nombre plus grand, pour rester dans les nombres positifs."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule : 630 − 215",
+            "answer": "415",
+            "exp": "Unités 0−5 impossible, on emprunte, 10−5=5 ; dizaines 2(après emprunt)−1=1 ; centaines 6−2=4. Résultat 415."
           }
         ]
       },
@@ -3686,6 +5648,171 @@
             ],
             "answer": 1,
             "exp": "Grâce à la commutativité de la multiplication (6 × 2 = 2 × 6), les deux additions répétées donnent le même résultat juste : 12. Les deux élèves ont raison, chacun à sa façon."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Écris sous forme d'addition répétée : 4 × 3",
+            "answer": "4+4+4",
+            "exp": "4 × 3 signifie 4 répété 3 fois : 4+4+4."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Combien font 5 × 6 ?",
+            "choices": [
+              "30",
+              "11",
+              "25",
+              "35"
+            ],
+            "answer": 0,
+            "exp": "5 × 6 = 5 répété 6 fois = 30, ou 6 répété 5 fois : 30."
+          },
+          {
+            "type": "text",
+            "kind": "application",
+            "q": "Un parking a 6 rangées de 4 voitures. Combien de voitures en tout ?",
+            "answer": "24",
+            "exp": "6 rangées de 4 voitures : 6 × 4 = 24."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une étagère a 3 niveaux avec 8 livres sur chaque niveau. Combien de livres en tout ?",
+            "choices": [
+              "24",
+              "11",
+              "32",
+              "18"
+            ],
+            "answer": 0,
+            "exp": "3 × 8 = 24 livres au total."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Comment peut-on vérifier, sans calculer, que 4 × 7 donne le même résultat que 7 × 4 ?",
+            "choices": [
+              "On ne peut pas le vérifier sans calculer",
+              "En dessinant un quadrillage de 4 lignes et 7 colonnes : on peut le regarder en lignes (4 fois 7) ou en colonnes (7 fois 4), le nombre total de cases ne change pas",
+              "Ce n'est pas vrai, les deux calculs sont différents",
+              "En comptant uniquement les lignes"
+            ],
+            "answer": 1,
+            "exp": "Un quadrillage de 4×7 cases donne le même nombre total de cases, qu'on les compte par lignes ou par colonnes : la multiplication est commutative."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour calculer 5 × 3, un élève écrit 5+3=8. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Il confond addition et multiplication : 5 × 3 signifie 5 répété 3 fois (5+5+5=15), pas 5+3",
+              "5×3 ne peut pas se calculer",
+              "Il fallait écrire 3+3+3+3+3=15, ce qui est faux aussi"
+            ],
+            "answer": 1,
+            "exp": "5 × 3 signifie additionner 5 trois fois : 5+5+5=15, ce qui est très différent de 5+3=8."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "3 × 6 et 6 × 3 donnent le même résultat.",
+            "answer": true,
+            "exp": "La multiplication est commutative : l'ordre des deux nombres ne change pas le résultat (18 dans les deux cas)."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Comment écrit-on 7+7+7+7 sous forme de multiplication ?",
+            "choices": [
+              "7 × 4",
+              "4 + 7",
+              "7 × 7",
+              "4 × 4"
+            ],
+            "answer": 0,
+            "exp": "7 répété 4 fois s'écrit 7 × 4."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une boîte à œufs a 2 rangées de 6 œufs. Combien d'œufs dans la boîte ?",
+            "choices": [
+              "12",
+              "8",
+              "14",
+              "16"
+            ],
+            "answer": 0,
+            "exp": "2 × 6 = 12 œufs."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi multiplier par 1 ne change-t-il jamais un nombre (exemple : 9 × 1 = 9) ?",
+            "choices": [
+              "Parce que c'est une règle sans explication",
+              "Parce que multiplier par 1, c'est prendre le nombre une seule fois : il reste donc identique",
+              "Parce que 1 est un nombre spécial sans raison",
+              "Ce n'est pas toujours vrai"
+            ],
+            "answer": 1,
+            "exp": "× 1 signifie « une seule fois » : le nombre reste donc inchangé, quel qu'il soit."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève calcule 6 × 0 et trouve 6. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Multiplier par 0 signifie prendre le nombre zéro fois, donc rien du tout : le résultat est toujours 0, pas 6",
+              "6×0 ne peut pas se calculer",
+              "Il fallait dire 60"
+            ],
+            "answer": 1,
+            "exp": "× 0 signifie « zéro fois », donc on ne prend rien : le résultat d'une multiplication par 0 est toujours 0."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien font 9 × 2 ?",
+            "answer": "18",
+            "exp": "9 × 2 = 9+9 = 18."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un jardin a 4 rangées de carottes, avec le même nombre de carottes dans chaque rangée, et 32 carottes en tout. Combien de carottes par rangée ?",
+            "choices": [
+              "8",
+              "28",
+              "36",
+              "4"
+            ],
+            "answer": 0,
+            "exp": "4 rangées égales donnant 32 au total : 32 ÷ 4 = 8 carottes par rangée (on cherche le nombre qui, multiplié par 4, donne 32)."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "La multiplication permet de calculer rapidement une addition de plusieurs nombres identiques.",
+            "answer": true,
+            "exp": "C'est exactement ce que fait la multiplication : remplacer une longue addition répétée par un seul calcul plus rapide."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une salle de classe a 5 rangées de 6 tables. Combien de tables en tout ?",
+            "choices": [
+              "30",
+              "11",
+              "36",
+              "25"
+            ],
+            "answer": 0,
+            "exp": "5 × 6 = 30 tables."
           }
         ]
       },
@@ -3768,6 +5895,171 @@
             ],
             "answer": 1,
             "exp": "La parité ne dépend que du dernier chiffre. Ici c'est 2, qui est pair : 342 est donc un nombre pair, quels que soient les autres chiffres."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "416 est-il pair ou impair ?",
+            "choices": [
+              "Pair",
+              "Impair",
+              "Ni l'un ni l'autre",
+              "Impossible à savoir"
+            ],
+            "answer": 0,
+            "exp": "416 se termine par 6, un chiffre pair : 416 est pair."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Quel est le dernier chiffre d'un nombre impair : donne un exemple possible parmi 1, 3, 5, 7, 9 (un seul chiffre).",
+            "answer": "1",
+            "exp": "Un nombre impair se termine toujours par 1, 3, 5, 7 ou 9 ; 1 est une réponse possible."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "35 élèves veulent former des binômes (groupes de 2). Est-ce possible sans laisser personne de côté ?",
+            "choices": [
+              "Oui, car 35 est pair",
+              "Non, car 35 est impair : il restera toujours 1 élève seul",
+              "Oui, cela marche toujours",
+              "Impossible à savoir sans compter"
+            ],
+            "answer": 1,
+            "exp": "35 est impair (se termine par 5) : en groupes de 2, il restera toujours 1 élève seul."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un éleveur a 48 moutons et veut les répartir en deux enclos de même taille. Est-ce possible ?",
+            "choices": [
+              "Oui, car 48 est pair, on peut le partager en 2 parts égales (24 et 24)",
+              "Non, car 48 est impair",
+              "Oui, mais les enclos auront des tailles différentes",
+              "Impossible à savoir"
+            ],
+            "answer": 0,
+            "exp": "48 est pair (se termine par 8) : il se partage exactement en 2 parts égales de 24."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi suffit-il de regarder le dernier chiffre d'un nombre pour savoir s'il est pair, sans s'occuper des autres chiffres ?",
+            "choices": [
+              "Ce n'est pas vrai, il faut regarder tous les chiffres",
+              "Parce que tous les paquets de 10 (centaines, dizaines) se partagent toujours exactement en 2 : seul ce qui reste après (les unités) peut empêcher le partage parfait en 2",
+              "Par pure convention, sans logique",
+              "Parce que les autres chiffres ne comptent jamais"
+            ],
+            "answer": 1,
+            "exp": "Toute dizaine (et centaine, etc.) se divise exactement en 2 : seul le chiffre des unités peut laisser un reste et donc déterminer la parité."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève dit : « 530 est impair car il y a un 3 dedans, et 3 est impair ». Que penser de cette affirmation ?",
+            "choices": [
+              "Il a raison",
+              "Il se trompe : seul le DERNIER chiffre (les unités) détermine la parité ; 530 se termine par 0, qui est pair, donc 530 est pair",
+              "530 n'a pas de parité",
+              "Il fallait regarder le premier chiffre"
+            ],
+            "answer": 1,
+            "exp": "Seul le chiffre des unités compte pour la parité. 530 se termine par 0 (pair), donc 530 est pair, peu importe les autres chiffres."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "0 est un nombre pair.",
+            "answer": true,
+            "exp": "0 se termine par 0, qui fait partie des chiffres pairs (0, 2, 4, 6, 8) : 0 est donc pair."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de chiffres pairs existe-t-il parmi 0,1,2,...,9 ? (donne juste le nombre)",
+            "answer": "5",
+            "exp": "Les chiffres pairs sont 0, 2, 4, 6, 8 : cela fait 5 chiffres pairs."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un videur de boîte laisse entrer les gens par groupes de 2 uniquement. 57 personnes attendent. Que va-t-il se passer ?",
+            "choices": [
+              "Tout le monde entre sans problème",
+              "1 personne restera dehors, car 57 est impair",
+              "Il faudra renvoyer tout le monde",
+              "Cela n'a aucun rapport avec la parité"
+            ],
+            "answer": 1,
+            "exp": "57 est impair : en faisant entrer les gens 2 par 2, il restera forcément 1 personne seule à la fin."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la somme de deux nombres pairs est-elle toujours un nombre pair (exemple : 4+6=10) ?",
+            "choices": [
+              "Ce n'est pas toujours vrai",
+              "Parce que chaque nombre pair peut se partager parfaitement en 2 : en additionnant deux quantités qui se partagent chacune en 2, le total se partage aussi parfaitement en 2",
+              "Par pur hasard à chaque fois",
+              "Parce que l'addition rend toujours pair"
+            ],
+            "answer": 1,
+            "exp": "Deux quantités chacune divisibles par 2, additionnées, donnent une quantité encore divisible par 2 : la somme reste pair."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Léo additionne 23 (impair) et 15 (impair) et se demande si le résultat sera pair ou impair. Que peut-on prédire sans calculer ?",
+            "choices": [
+              "Le résultat sera pair, car la somme de deux nombres impairs est toujours paire",
+              "Le résultat sera impair, comme les deux nombres de départ",
+              "Impossible à prédire sans calculer",
+              "Le résultat sera toujours 0"
+            ],
+            "answer": 0,
+            "exp": "La somme de deux nombres impairs est toujours paire (23+15=38, qui est pair) : chaque « reste de 1 » des deux nombres impairs s'additionne pour former une nouvelle dizaine complète."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "250 est-il pair ou impair ? Réponds par un seul mot.",
+            "answer": "pair",
+            "exp": "250 se termine par 0, qui est pair."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Un nombre se termine par 7. Peut-il être pair ?",
+            "choices": [
+              "Oui, parfois",
+              "Non, jamais : 7 n'est pas un chiffre pair",
+              "Oui, toujours",
+              "Cela dépend des autres chiffres"
+            ],
+            "answer": 1,
+            "exp": "7 ne fait pas partie des chiffres pairs (0,2,4,6,8) : un nombre se terminant par 7 est toujours impair."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "La parité (pair ou impair) d'un nombre ne dépend que de son chiffre des unités.",
+            "answer": true,
+            "exp": "Seul le dernier chiffre (les unités) détermine si un nombre est pair ou impair."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "101 est-il pair ou impair ?",
+            "choices": [
+              "Pair",
+              "Impair",
+              "Ni l'un ni l'autre",
+              "Impossible à savoir"
+            ],
+            "answer": 1,
+            "exp": "101 se termine par 1, qui est impair : 101 est impair."
           }
         ]
       },
