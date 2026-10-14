@@ -2753,6 +2753,189 @@
             ],
             "answer": 1,
             "exp": "Relire des textes, même déjà connus, entraîne le cerveau à reconnaître les mots de plus en plus vite : cette automatisation profite ensuite à la lecture de n'importe quel nouveau texte."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Déchiffrer un mot, c'est :",
+            "choices": [
+              "Le dessiner",
+              "Reconnaître les lettres et les sons pour retrouver le mot entier",
+              "Le deviner sans le lire",
+              "L'effacer"
+            ],
+            "answer": 1,
+            "exp": "Déchiffrer, c'est associer les lettres à leurs sons pour reconstituer le mot."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un lecteur qui a automatisé le déchiffrage n'a plus besoin de réfléchir lettre par lettre pour lire un mot connu.",
+            "answer": true,
+            "exp": "Automatiser signifie que la reconnaissance des mots devient rapide et presque sans effort conscient."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi lire un livre plusieurs fois aide-t-il à lire de plus en plus vite ?",
+            "choices": [
+              "Cela n'aide jamais à lire plus vite",
+              "Parce que les mots deviennent de plus en plus familiers, ce qui accélère leur reconnaissance à chaque relecture",
+              "Parce que le texte change à chaque lecture",
+              "Parce qu'il faut toujours lire un livre une seule fois"
+            ],
+            "answer": 1,
+            "exp": "La répétition rend les mots familiers, ce qui accélère leur reconnaissance automatique."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un enfant doit lire rapidement une pancarte « Attention, sol glissant ! ». Pourquoi est-ce important qu'il lise vite ?",
+            "choices": [
+              "Pour impressionner ses amis",
+              "Pour comprendre le danger à temps et faire attention immédiatement",
+              "Parce que lire lentement est interdit",
+              "Cela n'a aucune importance"
+            ],
+            "answer": 1,
+            "exp": "Une lecture rapide permet de comprendre une information importante (un danger) sans perdre de temps."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève bute sur presque chaque mot d'un texte simple qu'il connaît déjà. Que peut-on lui conseiller ?",
+            "choices": [
+              "De ne plus jamais lire ce texte",
+              "De s'entraîner à relire ce texte plusieurs fois pour automatiser la reconnaissance de ses mots",
+              "D'apprendre le texte par cœur sans le lire",
+              "Rien, c'est normal de buter sur un texte connu"
+            ],
+            "answer": 1,
+            "exp": "Même un texte connu nécessite de l'entraînement pour automatiser sa lecture ; relire régulièrement aide à fluidifier."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un enfant qui lit très lentement comprend-il souvent moins bien l'histoire qu'il lit ?",
+            "choices": [
+              "Lire lentement aide toujours à mieux comprendre",
+              "Parce que son attention est entièrement prise par le déchiffrage de chaque mot, il lui en reste moins pour comprendre le sens global de la phrase",
+              "Parce que les histoires lentes n'ont pas de sens",
+              "Ce n'est jamais le cas"
+            ],
+            "answer": 1,
+            "exp": "Déchiffrer lentement occupe toute l'attention, laissant peu de ressources mentales pour la compréhension globale du texte."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Quel est le principal avantage d'automatiser la lecture des mots fréquents (« le », « et », « dans »...) ?",
+            "choices": [
+              "Aucun avantage particulier",
+              "Cela libère de l'attention pour se concentrer sur le sens du texte plutôt que sur le déchiffrage de chaque mot",
+              "Cela rend la lecture plus lente",
+              "Cela empêche de comprendre le texte"
+            ],
+            "answer": 1,
+            "exp": "Reconnaître instantanément les mots très fréquents libère de l'attention pour la compréhension du texte."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Il est normal de devoir s'entraîner régulièrement pour lire de plus en plus vite et avec moins d'effort.",
+            "answer": true,
+            "exp": "La fluidité de lecture s'acquiert progressivement par la pratique régulière."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour progresser en lecture rapide, quelle habitude est la plus utile ?",
+            "choices": [
+              "Lire un texte une seule fois puis l'oublier",
+              "Lire régulièrement, même des textes déjà lus, pour renforcer l'automatisation",
+              "Éviter de lire pour ne pas se fatiguer",
+              "Lire uniquement des textes très difficiles"
+            ],
+            "answer": 1,
+            "exp": "La pratique régulière, y compris de textes déjà lus, renforce l'automatisation de la lecture."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Un élève lit un mot nouveau lettre par lettre, lentement, puis le relit en entier d'un coup plus vite. Que montre cette observation ?",
+            "choices": [
+              "Il n'a rien appris",
+              "Son cerveau vient de mémoriser ce mot, ce qui le rendra plus rapide à reconnaître la prochaine fois",
+              "Il a fait une erreur",
+              "Le mot a changé entre les deux lectures"
+            ],
+            "answer": 1,
+            "exp": "Déchiffrer un mot puis le reconnaître aussitôt plus vite montre le début de sa mémorisation, un pas vers l'automatisation."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi certains mots très courts comme « et », « le », « un » sont-ils parmi les premiers mots qu'un enfant reconnaît automatiquement ?",
+            "choices": [
+              "Parce qu'ils sont les plus beaux mots",
+              "Parce qu'ils reviennent extrêmement souvent dans les textes, ce qui les rend très familiers à force de les rencontrer",
+              "Parce qu'ils n'ont aucun sens",
+              "Parce qu'ils sont interdits dans les autres langues"
+            ],
+            "answer": 1,
+            "exp": "La fréquence très élevée de ces petits mots dans les textes accélère leur mémorisation et leur reconnaissance automatique."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève dit : « je n'ai pas besoin de m'entraîner à lire, je sais déjà lire ». Que peut-on lui répondre ?",
+            "choices": [
+              "Il a totalement raison, l'entraînement ne sert à rien une fois qu'on sait lire",
+              "Savoir déchiffrer n'est qu'une première étape : devenir un lecteur rapide et fluide demande un entraînement régulier, même après avoir appris les bases",
+              "Il vaut mieux arrêter de lire pour se reposer",
+              "La lecture ne s'améliore jamais avec la pratique"
+            ],
+            "answer": 1,
+            "exp": "Savoir déchiffrer les lettres n'est qu'une première étape ; la fluidité et la vitesse de lecture continuent de s'améliorer avec la pratique régulière."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Qu'est-ce qui aide le plus un enfant à lire un mot difficile qu'il n'a jamais vu ?",
+            "choices": [
+              "Deviner au hasard sans réfléchir",
+              "Déchiffrer patiemment chaque syllabe en s'appuyant sur les sons des lettres",
+              "Fermer le livre et abandonner",
+              "Dessiner le mot au lieu de le lire"
+            ],
+            "answer": 1,
+            "exp": "Déchiffrer syllabe par syllabe, en s'appuyant sur les correspondances lettres-sons, reste la méthode fiable pour un mot nouveau."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Comparé à un enfant qui bute sur chaque mot, un enfant qui lit couramment peut consacrer son attention à quoi, en plus du déchiffrage ?",
+            "choices": [
+              "À rien de plus",
+              "Au sens de l'histoire, aux émotions des personnages, à l'intonation",
+              "Uniquement à compter les lettres",
+              "À dessiner pendant qu'il lit"
+            ],
+            "answer": 1,
+            "exp": "Une fois le déchiffrage automatisé, l'attention se libère pour le sens, les émotions et l'intonation du texte."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un enfant lit un mot comme « chat » instantanément, sans effort, car il l'a lu des centaines de fois. Que peut-on en conclure ?",
+            "choices": [
+              "Il a de la chance, rien de plus",
+              "Ce mot fait désormais partie de ses mots automatisés, reconnus d'un coup d'œil sans déchiffrage lettre par lettre",
+              "Il ne sait pas vraiment lire ce mot",
+              "Ce mot va redevenir difficile la prochaine fois"
+            ],
+            "answer": 1,
+            "exp": "La répétition fréquente transforme un mot déchiffré laborieusement en un mot reconnu instantanément, sans effort conscient."
           }
         ]
       },
@@ -2841,6 +3024,195 @@
             ],
             "answer": 1,
             "exp": "Les pauses aux points permettent à l'auditoire de séparer mentalement les différentes idées du texte : sans elles, tout se mélange et devient confus à l'écoute, même si chaque mot est bien prononcé."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Que doit faire ta voix sur un mot écrit en MAJUSCULES ou en gras dans un dialogue ?",
+            "choices": [
+              "Rien de particulier",
+              "L'accentuer, car cela signale souvent une insistance ou une émotion forte",
+              "La murmurer très bas",
+              "S'arrêter complètement"
+            ],
+            "answer": 1,
+            "exp": "Les majuscules ou le gras signalent souvent qu'il faut insister sur ce mot en le lisant."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans une phrase qui se termine par un point d'exclamation, comment doit sonner ta voix ?",
+            "choices": [
+              "Plate et monotone",
+              "Avec de l'énergie, pour exprimer la surprise, la joie ou une émotion forte",
+              "Très lente et triste",
+              "Comme une question"
+            ],
+            "answer": 1,
+            "exp": "Le point d'exclamation signale une émotion forte : la voix doit porter cette énergie."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour lire un dialogue où une petite souris chuchote un secret, quel ton choisirais-tu ?",
+            "choices": [
+              "Très fort et criant",
+              "Doux et bas, presque un murmure",
+              "Comme un robot",
+              "Avec une voix d'ogre terrifiant"
+            ],
+            "answer": 1,
+            "exp": "Un personnage qui chuchote un secret appelle un ton doux et bas, cohérent avec la situation."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un texte contient plusieurs personnages qui parlent chacun leur tour. Pourquoi est-il utile de changer légèrement de voix pour chacun ?",
+            "choices": [
+              "Ce n'est jamais utile",
+              "Pour aider l'auditeur à distinguer facilement qui parle à chaque réplique, rendant l'histoire plus claire et vivante",
+              "Parce que c'est obligatoire dans tous les livres",
+              "Parce que les personnages changent de voix dans le texte écrit lui-même"
+            ],
+            "answer": 1,
+            "exp": "Varier la voix selon les personnages aide l'auditeur à suivre qui parle, rendant la lecture plus claire et expressive."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi lire un texte silencieusement une première fois avant de le lire à voix haute aide-t-il à mieux le lire ensuite ?",
+            "choices": [
+              "Ce n'est jamais utile de lire deux fois",
+              "Cela permet de repérer les mots difficiles et de comprendre le sens avant de devoir aussi gérer l'intonation et la voix en même temps",
+              "Lire silencieusement est interdit avant une lecture à voix haute",
+              "Cela ralentit toujours la lecture à voix haute"
+            ],
+            "answer": 1,
+            "exp": "Une première lecture silencieuse permet d'anticiper les difficultés, pour se concentrer ensuite sur l'expression à voix haute."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève lit un dialogue de colère avec une voix toujours calme et douce. Quel est le problème ?",
+            "choices": [
+              "Il n'y a aucun problème, la voix doit toujours rester douce",
+              "Sa voix ne correspond pas à l'émotion du texte (la colère), ce qui rend le dialogue moins vivant et moins compréhensible pour l'auditeur",
+              "Il fallait lire encore plus doucement",
+              "Un dialogue ne doit jamais être lu avec émotion"
+            ],
+            "answer": 1,
+            "exp": "Le ton de voix doit correspondre à l'émotion exprimée par le texte ; une voix toujours douce ne rend pas bien un passage de colère."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Une pause après une virgule est généralement plus courte qu'une pause après un point.",
+            "answer": true,
+            "exp": "La virgule marque une petite respiration dans la phrase, moins longue que la pause complète du point."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi marque-t-on une pause plus longue à la fin d'un paragraphe qu'à la fin d'une simple phrase ?",
+            "choices": [
+              "On ne fait jamais de pause plus longue",
+              "Parce qu'un paragraphe termine généralement une idée complète, ce qui mérite une respiration plus marquée avant de passer à l'idée suivante",
+              "Parce que les paragraphes sont toujours plus courts que les phrases",
+              "Il n'y a aucune différence entre les deux"
+            ],
+            "answer": 1,
+            "exp": "La fin d'un paragraphe marque souvent la fin d'une idée complète, ce qui justifie une pause plus longue qu'entre deux phrases d'un même paragraphe."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Lire un texte « de manière expressive » signifie :",
+            "choices": [
+              "Lire très vite sans s'arrêter",
+              "Lire en adaptant sa voix (ton, rythme, pauses) au sens et aux émotions du texte",
+              "Lire tout bas sans qu'on entende rien",
+              "Lire chaque mot de la même façon, sans variation"
+            ],
+            "answer": 1,
+            "exp": "La lecture expressive adapte la voix au contenu du texte pour le rendre vivant."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un acteur de théâtre s'entraîne beaucoup avant de lire un texte en public. Pourquoi cet entraînement est-il utile, même pour un lecteur de classe ?",
+            "choices": [
+              "Ce n'est utile que pour les acteurs professionnels",
+              "Parce que s'entraîner permet de repérer à l'avance le ton à adopter et les pauses à faire, pour une lecture plus fluide et expressive devant un public",
+              "L'entraînement n'améliore jamais une lecture",
+              "Un élève n'a jamais besoin de s'entraîner à lire"
+            ],
+            "answer": 1,
+            "exp": "S'entraîner avant une lecture à voix haute, comme le fait un acteur, permet d'anticiper le ton et les pauses pour une lecture plus réussie."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève lit très vite un texte entier sans aucune pause, même aux points. Quel est le problème principal ?",
+            "choices": [
+              "Aucun problème, lire vite est toujours préférable",
+              "L'auditeur risque de perdre le fil car les phrases s'enchaînent sans respiration, rendant le texte difficile à suivre",
+              "Il fallait lire encore plus vite",
+              "Les points n'ont aucune utilité à l'oral"
+            ],
+            "answer": 1,
+            "exp": "Sans pauses aux points, les phrases s'enchaînent sans respiration, ce qui rend le texte confus et difficile à suivre pour l'auditeur."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans un texte, une phrase entre guillemets (« ... ») indique généralement :",
+            "choices": [
+              "Une parole prononcée par un personnage",
+              "Une erreur dans le texte",
+              "Un titre de chapitre",
+              "Un nombre important"
+            ],
+            "answer": 0,
+            "exp": "Les guillemets signalent souvent une parole rapportée, les mots exacts prononcés par un personnage."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi varier le volume de sa voix (fort/doux) en lisant un texte aide-t-il à capter l'attention de ceux qui écoutent ?",
+            "choices": [
+              "Varier le volume n'a aucun effet sur l'attention",
+              "Parce qu'une voix qui varie crée du rythme et de la surprise, ce qui maintient l'intérêt, alors qu'une voix toujours identique peut devenir monotone et endormir l'attention",
+              "Parce qu'il faut toujours crier pour être écouté",
+              "Parce que parler doucement endort toujours les auditeurs"
+            ],
+            "answer": 1,
+            "exp": "La variation de volume crée du rythme et de l'intérêt, évitant la monotonie d'une voix qui ne change jamais."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour lire le dialogue d'un petit chaton apeuré, quelle intonation choisir ?",
+            "choices": [
+              "Une voix grave et assurée",
+              "Une voix fine, un peu tremblante, qui montre la peur",
+              "Une voix très forte et joyeuse",
+              "Une voix robotique sans émotion"
+            ],
+            "answer": 1,
+            "exp": "La voix doit correspondre à l'émotion du personnage : la peur appelle une voix fine et tremblante."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un lecteur doit-il parfois ralentir sa lecture à voix haute sur un mot important, même s'il sait le lire très vite ?",
+            "choices": [
+              "Il ne faut jamais ralentir, toujours lire à la même vitesse",
+              "Pour laisser le temps à l'auditeur de bien saisir ce mot important, en lui donnant plus de poids dans la phrase",
+              "Ralentir est toujours une erreur de lecture",
+              "Les mots importants doivent être lus plus vite que les autres"
+            ],
+            "answer": 1,
+            "exp": "Ralentir sur un mot clé met en valeur son importance et laisse le temps à l'auditeur de bien le saisir."
           }
         ]
       },
@@ -2929,6 +3301,195 @@
             ],
             "answer": 1,
             "exp": "Une bonne inférence doit rester appuyée sur des indices réels du texte. Ici, le texte décrit un comportement de chasse naturel, mais ne dit rien sur la « méchanceté » du chat : c'est un jugement ajouté par le lecteur, pas une vraie inférence."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Une information « implicite », c'est une information qui est :",
+            "choices": [
+              "Écrite clairement dans le texte",
+              "Pas écrite directement, mais qu'on peut deviner grâce aux indices du texte",
+              "Toujours fausse",
+              "Dessinée dans une image"
+            ],
+            "answer": 1,
+            "exp": "L'implicite n'est pas écrit directement : il faut le deviner à partir des indices donnés."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Marc tremblait de froid, les mains dans les poches. » Que peut-on deviner sans que ce soit écrit directement ?",
+            "choices": [
+              "Qu'il fait très froid",
+              "Qu'il est content",
+              "Qu'il a faim",
+              "Qu'il dort"
+            ],
+            "answer": 0,
+            "exp": "Le fait de trembler de froid est un indice implicite indiquant qu'il fait très froid."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Le bébé pleurait depuis des heures, et le biberon était resté intact sur la table. » Que peut-on deviner ?",
+            "choices": [
+              "Le bébé a probablement faim",
+              "Le bébé est très heureux",
+              "Le biberon est cassé",
+              "Rien ne peut être deviné"
+            ],
+            "answer": 0,
+            "exp": "Les pleurs prolongés et le biberon intact suggèrent implicitement que le bébé a faim."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi dit-on qu'un bon lecteur doit parfois « lire entre les lignes » ?",
+            "choices": [
+              "Parce qu'il doit lire très vite",
+              "Parce que certaines informations ne sont pas écrites directement : il faut les déduire à partir des indices donnés dans le texte",
+              "Parce que les lignes du texte sont mal imprimées",
+              "Cette expression n'a aucun sens"
+            ],
+            "answer": 1,
+            "exp": "« Lire entre les lignes » signifie deviner les informations implicites à partir des indices du texte."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "En lisant « Léa range soigneusement ses affaires et vérifie son cartable trois fois », un élève conclut : « Léa est une élève stressée ». Que penser de cette conclusion ?",
+            "choices": [
+              "C'est la seule conclusion possible",
+              "C'est une interprétation possible mais pas certaine : Léa pourrait aussi être simplement organisée et appliquée, sans être stressée",
+              "C'est forcément faux",
+              "Le texte le dit directement"
+            ],
+            "answer": 1,
+            "exp": "Le texte ne donne pas cette information de façon certaine : plusieurs interprétations sont possibles à partir des mêmes indices."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Une information explicite est écrite directement dans le texte, sans besoin de la deviner.",
+            "answer": true,
+            "exp": "C'est la définition de l'explicite : une information clairement donnée par le texte."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Les feuilles jaunes et rouges tombaient des arbres, et l'air était plus frais. » À quelle saison ce texte fait-il probablement référence ?",
+            "choices": [
+              "Le printemps",
+              "L'été",
+              "L'automne",
+              "L'hiver"
+            ],
+            "answer": 2,
+            "exp": "Les feuilles qui tombent et l'air plus frais sont des indices implicites de l'automne."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi les auteurs choisissent-ils parfois de ne pas tout dire directement et de laisser deviner certaines choses au lecteur ?",
+            "choices": [
+              "Par erreur, ils oublient de tout écrire",
+              "Pour rendre la lecture plus active et intéressante, en laissant le lecteur réfléchir et faire des déductions",
+              "Parce qu'il est interdit d'écrire certaines informations",
+              "Les auteurs ne font jamais ce choix volontairement"
+            ],
+            "answer": 1,
+            "exp": "Laisser deviner certaines informations rend la lecture plus active et stimulante pour le lecteur."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« La salle était plongée dans le noir complet, et on entendait juste le tic-tac d'une horloge. » Que peut-on deviner sur l'ambiance de cette scène ?",
+            "choices": [
+              "Une ambiance joyeuse et bruyante",
+              "Une ambiance calme, silencieuse, peut-être un peu inquiétante",
+              "Une ambiance ensoleillée",
+              "Il n'y a aucune ambiance particulière"
+            ],
+            "answer": 1,
+            "exp": "L'obscurité totale et le silence seulement troublé par un tic-tac créent une ambiance calme et potentiellement inquiétante."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève lit « Léo sourit en ouvrant son cadeau » et conclut directement « le cadeau lui plaît beaucoup ». Est-ce une information explicite ou implicite ?",
+            "choices": [
+              "Explicite, car le mot « plaît » est écrit",
+              "Implicite, car le mot « plaît » n'est pas écrit : on le déduit du sourire de Léo",
+              "Ni l'une ni l'autre",
+              "Les deux à la fois de façon identique"
+            ],
+            "answer": 1,
+            "exp": "Le texte ne dit pas « cela lui plaît » directement ; cette information est déduite du sourire, donc implicite."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Quelle question peut aider à chercher une information implicite dans un texte ?",
+            "choices": [
+              "Quelle est la couleur de la couverture du livre ?",
+              "Qu'est-ce que ce détail du texte suggère, même s'il n'est pas écrit directement ?",
+              "Combien de pages a le livre ?",
+              "Qui a écrit ce livre ?"
+            ],
+            "answer": 1,
+            "exp": "Se demander ce qu'un détail suggère, au-delà de ce qui est écrit, aide à trouver les informations implicites."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Le chien aboyait et tirait sur sa laisse en direction du parc. » Que peut-on deviner sur l'envie du chien ?",
+            "choices": [
+              "Il veut dormir",
+              "Il a envie d'aller au parc",
+              "Il a peur du parc",
+              "Il n'a aucune envie particulière"
+            ],
+            "answer": 1,
+            "exp": "Aboyer et tirer vers le parc suggère implicitement que le chien a très envie d'y aller."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi deux lecteurs peuvent-ils parfois deviner des informations implicites légèrement différentes à partir d'un même texte ?",
+            "choices": [
+              "C'est toujours une erreur de l'un des deux lecteurs",
+              "Parce que l'implicite laisse une marge d'interprétation : chacun peut faire des déductions légèrement différentes à partir des mêmes indices",
+              "Le texte change selon le lecteur",
+              "Il n'existe jamais d'information implicite dans un texte"
+            ],
+            "answer": 1,
+            "exp": "L'implicite n'étant pas écrit directement, il laisse une marge d'interprétation personnelle, ce qui peut amener des déductions légèrement différentes."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Sacha a mis trois pulls avant de sortir. » Que peut-on en déduire sur le temps qu'il fait ?",
+            "choices": [
+              "Il fait très chaud",
+              "Il fait probablement très froid",
+              "Il pleut à coup sûr",
+              "On ne peut rien en déduire"
+            ],
+            "answer": 1,
+            "exp": "Mettre plusieurs pulls avant de sortir suggère implicitement qu'il fait froid."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève refuse de deviner la moindre information implicite, disant qu'il ne veut lire « que ce qui est écrit vraiment ». Quel est le risque de cette attitude ?",
+            "choices": [
+              "Aucun risque, c'est la meilleure méthode de lecture",
+              "Il risque de manquer une grande partie du sens réel du texte, car beaucoup d'histoires comptent sur l'implicite pour être pleinement comprises",
+              "Lire uniquement l'explicite donne toujours une compréhension complète",
+              "Les textes n'ont jamais d'implicite de toute façon"
+            ],
+            "answer": 1,
+            "exp": "Ignorer systématiquement l'implicite fait manquer une part importante du sens des textes, qui comptent souvent sur les déductions du lecteur."
           }
         ]
       },
@@ -3017,6 +3578,195 @@
             ],
             "answer": 1,
             "exp": "Quand une phrase est ambiguë (deux personnes possibles pour un même pronom), il faut chercher des indices dans le contexte plus large (les phrases suivantes) pour résoudre l'ambiguïté, plutôt que de choisir au hasard."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "« Zoé cherche son livre. Elle le trouve enfin sous le lit. » À qui renvoie « elle » ?",
+            "choices": [
+              "Au livre",
+              "À Zoé",
+              "Au lit",
+              "À personne en particulier"
+            ],
+            "answer": 1,
+            "exp": "« Elle » remplace « Zoé », un prénom féminin singulier."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "« Zoé cherche son livre. Elle le trouve enfin sous le lit. » À quoi renvoie « le » ?",
+            "choices": [
+              "À Zoé",
+              "Au lit",
+              "Au livre",
+              "À rien de précis"
+            ],
+            "answer": 2,
+            "exp": "« Le » remplace « livre », un nom masculin singulier."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Les pompiers arrivent vite. Ils éteignent le feu avec leur lance. » Que remplace « ils » ?",
+            "choices": [
+              "Le feu",
+              "La lance",
+              "Les pompiers",
+              "Rien de précis"
+            ],
+            "answer": 2,
+            "exp": "« Ils » remplace « les pompiers », un groupe masculin pluriel."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Ma sœur et moi adorons le chocolat. Nous en mangeons souvent. » Que remplace « nous » ?",
+            "choices": [
+              "Uniquement ma sœur",
+              "Uniquement moi",
+              "Ma sœur et moi ensemble",
+              "Le chocolat"
+            ],
+            "answer": 2,
+            "exp": "« Nous » remplace l'ensemble formé par « ma sœur et moi »."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un texte qui répète sans arrêt le même nom (« Léo... Léo... Léo ») est-il souvent moins agréable à lire qu'un texte utilisant des pronoms ?",
+            "choices": [
+              "Ce n'est jamais moins agréable",
+              "Parce que la répétition du même mot devient lourde et monotone, alors que les pronoms varient le texte tout en restant clairs",
+              "Parce que les pronoms sont interdits en français",
+              "Parce qu'il est impossible de comprendre un texte avec des répétitions"
+            ],
+            "answer": 1,
+            "exp": "Les pronoms permettent d'éviter la répétition lourde du même nom, rendant le texte plus fluide à lire."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "« La maîtresse parle aux élèves. Elle leur explique un exercice. » Un élève pense que « leur » renvoie à la maîtresse. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "« Leur » renvoie aux élèves (à qui on explique), pas à la maîtresse (qui explique, déjà remplacée par « elle »)",
+              "« Leur » ne remplace jamais rien",
+              "La phrase n'a pas de sens"
+            ],
+            "answer": 1,
+            "exp": "« Elle » renvoie à la maîtresse (celle qui parle), et « leur » renvoie aux élèves (ceux à qui on parle) : il faut bien distinguer les deux pronoms."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un pronom remplace un nom pour éviter de le répéter plusieurs fois dans un texte.",
+            "answer": true,
+            "exp": "C'est la fonction principale d'un pronom : remplacer un nom déjà mentionné."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Les enfants jouent avec leurs jouets. Ils les rangent ensuite. » Que remplace « les » dans « ils les rangent » ?",
+            "choices": [
+              "Les enfants",
+              "Les jouets",
+              "Rien de précis",
+              "Le mot « jouets » lui-même en entier, répété"
+            ],
+            "answer": 1,
+            "exp": "« Les » (complément) remplace « leurs jouets », déjà mentionnés dans la phrase précédente."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi faut-il parfois relire la phrase précédente pour comprendre à quoi renvoie un pronom ?",
+            "choices": [
+              "Ce n'est jamais nécessaire, le pronom se comprend toujours seul",
+              "Parce qu'un pronom ne porte pas de sens par lui-même : il faut savoir quel nom il remplace, souvent mentionné juste avant",
+              "Parce que les pronoms changent de sens à chaque phrase sans raison",
+              "Parce que les pronoms sont toujours au début du texte"
+            ],
+            "answer": 1,
+            "exp": "Un pronom seul (« il », « elle », « ils »...) ne donne pas d'information sur son référent : il faut revenir au nom qu'il remplace, généralement dans une phrase précédente."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "« Paul et Léa partent en vacances. Ils emmènent leur chien. » Si on remplaçait « Paul et Léa » par « Paul et moi », quel pronom faudrait-il utiliser à la place de « ils » ?",
+            "choices": [
+              "Ils",
+              "Elles",
+              "Nous",
+              "Vous"
+            ],
+            "answer": 2,
+            "exp": "« Paul et moi » inclut la personne qui parle : le bon pronom est « nous »."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "« Le chat et la chienne dorment. Ils sont fatigués. » Un élève s'étonne qu'on utilise « ils » alors qu'il y a une femelle (la chienne) dans le groupe. Que lui expliquer ?",
+            "choices": [
+              "C'est une erreur, il fallait écrire « elles »",
+              "Quand un groupe mélange du masculin et du féminin, le pronom pluriel utilisé est généralement le masculin « ils », même s'il y a des éléments féminins",
+              "« Ils » ne peut jamais désigner un groupe mixte",
+              "Il fallait écrire « iels »"
+            ],
+            "answer": 1,
+            "exp": "En français, un groupe mixte (masculin + féminin) se représente généralement par le pronom masculin pluriel « ils »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Tom donne son ballon à sa sœur. Elle le lance très haut. » Combien de pronoms contient la deuxième phrase ?",
+            "choices": [
+              "1",
+              "2",
+              "3",
+              "0"
+            ],
+            "answer": 1,
+            "exp": "« Elle » et « le » sont deux pronoms dans cette phrase."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un auteur pourrait-il volontairement répéter un nom au lieu d'utiliser un pronom, à un moment précis d'une histoire ?",
+            "choices": [
+              "Il n'y a jamais de raison valable pour cela",
+              "Pour éviter une confusion possible si plusieurs personnages pourraient être désignés par le même pronom, ou pour insister sur ce personnage",
+              "Parce que les pronoms sont interdits dans certains textes",
+              "Parce que répéter un nom est toujours une erreur"
+            ],
+            "answer": 1,
+            "exp": "Répéter un nom peut lever une ambiguïté (quand plusieurs personnages pourraient correspondre au même pronom) ou créer un effet d'insistance."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "« Le renard observe la poule. Il attend le bon moment. » et « La poule observe le renard. Elle a peur. » : pourquoi le pronom change-t-il entre les deux phrases ?",
+            "choices": [
+              "C'est une erreur dans le texte",
+              "Parce que le sujet de la phrase change : dans la première, c'est le renard (masculin) qui observe ; dans la seconde, c'est la poule (féminin)",
+              "Les pronoms changent sans raison précise",
+              "Il faudrait toujours utiliser le même pronom"
+            ],
+            "answer": 1,
+            "exp": "Le pronom s'accorde avec le nom qu'il remplace : il change donc logiquement selon que c'est le renard ou la poule qui est le sujet."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Mon frère adore les gâteaux. Il en mange souvent. » Que remplace « en » ?",
+            "choices": [
+              "Mon frère",
+              "Les gâteaux",
+              "Rien de précis",
+              "Le mot « souvent »"
+            ],
+            "answer": 1,
+            "exp": "« En » remplace ici « des gâteaux », évitant de répéter ce mot."
           }
         ]
       },
@@ -3105,6 +3855,195 @@
             ],
             "answer": 1,
             "exp": "Ce n'est pas le sujet (un animal) qui détermine le type de texte, mais la façon dont il est traité : un renard peut être un vrai personnage d'histoire (narratif, comme dans les fables) ou le sujet d'informations factuelles (documentaire)."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Un texte qui dit « Voici comment fabriquer un cerf-volant : d'abord, pliez le papier... » est probablement :",
+            "choices": [
+              "Un conte",
+              "Un texte qui informe / explique (une notice)",
+              "Une poésie",
+              "Une lettre"
+            ],
+            "answer": 1,
+            "exp": "Les étapes données signalent un texte qui informe et explique une procédure."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Un texte qui raconte les aventures d'un lapin qui parle est probablement :",
+            "choices": [
+              "Un texte documentaire",
+              "Un texte qui raconte (un récit, souvent fictif)",
+              "Une recette de cuisine",
+              "Un mode d'emploi"
+            ],
+            "answer": 1,
+            "exp": "Un lapin qui parle signale une fiction, un texte qui raconte une histoire imaginaire."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Tu veux savoir combien pèse un éléphant adulte. Quel type de texte cherches-tu ?",
+            "choices": [
+              "Un conte de fées",
+              "Un texte documentaire qui informe sur les animaux",
+              "Une poésie",
+              "Une histoire inventée"
+            ],
+            "answer": 1,
+            "exp": "Une information factuelle précise (le poids d'un éléphant) se trouve dans un texte documentaire."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un livre de recettes de cuisine est plutôt :",
+            "choices": [
+              "Un texte qui raconte une histoire",
+              "Un texte qui informe, avec des étapes à suivre",
+              "Une poésie",
+              "Un conte de fées"
+            ],
+            "answer": 1,
+            "exp": "Une recette donne des informations et des étapes précises : c'est un texte qui informe."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il utile de reconnaître si un texte raconte ou informe avant de le lire en détail ?",
+            "choices": [
+              "Ce n'est jamais utile",
+              "Parce que cela aide à savoir quoi en attendre : des informations précises à retenir pour un texte qui informe, une histoire à suivre pour un texte qui raconte",
+              "Parce que tous les textes se lisent exactement de la même façon",
+              "Parce que les deux types de texte sont interdits de mélanger leurs mots"
+            ],
+            "answer": 1,
+            "exp": "Savoir si un texte informe ou raconte oriente la façon de le lire : chercher des faits précis, ou suivre une intrigue."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève affirme qu'un texte qui parle d'un dragon est forcément un conte, « car les dragons n'existent pas ». Que penser de cette affirmation ?",
+            "choices": [
+              "Elle est toujours vraie",
+              "Un texte documentaire pourrait parler des dragons dans les légendes et leur histoire culturelle : ce n'est pas le sujet seul qui détermine le type de texte, mais la façon dont il est traité",
+              "Les dragons ne peuvent jamais apparaître dans un texte documentaire",
+              "Un conte ne peut jamais parler d'un sujet réel"
+            ],
+            "answer": 1,
+            "exp": "Le sujet seul ne suffit pas à déterminer le type de texte : un documentaire peut parler des dragons en tant que légendes, tout comme un conte peut inclure des éléments réels."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un texte qui informe donne des faits réels et vérifiables, alors qu'un texte qui raconte peut être entièrement inventé.",
+            "answer": true,
+            "exp": "C'est la distinction de base entre texte informatif (factuel) et texte narratif (qui peut être fictif)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une notice de montage de meuble est un exemple de :",
+            "choices": [
+              "Texte qui raconte",
+              "Texte qui informe, avec des instructions à suivre",
+              "Poésie",
+              "Conte merveilleux"
+            ],
+            "answer": 1,
+            "exp": "Une notice donne des instructions précises : c'est un texte informatif."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi certains livres documentaires utilisent-ils des photos et des schémas, alors que les contes utilisent surtout des illustrations imaginatives ?",
+            "choices": [
+              "C'est un hasard sans raison",
+              "Parce que les documentaires cherchent à montrer la réalité précisément (photos, schémas réels), alors que les contes peuvent illustrer librement un monde imaginaire",
+              "Les contes n'ont jamais d'illustrations",
+              "Les documentaires n'ont jamais d'images"
+            ],
+            "answer": 1,
+            "exp": "Les documentaires visent l'exactitude (photos, schémas réalistes) tandis que les contes peuvent illustrer un monde inventé librement."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève lit un article sur les volcans et dit : « c'est sûrement inventé, les volcans qui crachent de la lave, c'est trop impressionnant pour être vrai ! » Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, les volcans n'existent pas",
+              "Il confond son impression (c'est impressionnant) avec la réalité : les volcans et leur activité sont des faits réels, documentés scientifiquement",
+              "Les articles ne parlent jamais de choses vraies",
+              "Un texte documentaire ne peut jamais être impressionnant"
+            ],
+            "answer": 1,
+            "exp": "Le caractère impressionnant d'un phénomène ne le rend pas fictif : les volcans sont un fait scientifique réel, documenté dans des textes informatifs."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un texte qui informe sur les requins devrait contenir plutôt :",
+            "choices": [
+              "Des dialogues entre requins qui parlent",
+              "Des informations vérifiées sur leur alimentation, leur taille, leur habitat",
+              "Une histoire inventée de requin héroïque",
+              "Des rimes et des vers poétiques"
+            ],
+            "answer": 1,
+            "exp": "Un texte informatif sur les requins contient des faits vérifiés (alimentation, taille, habitat), pas une histoire inventée."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Comment peut-on distinguer rapidement, en lisant seulement le début d'un texte, s'il s'agit probablement d'un conte ou d'un documentaire ?",
+            "choices": [
+              "C'est impossible à deviner avant la fin",
+              "En repérant des indices comme « il était une fois » (conte) ou des faits précis et un vocabulaire scientifique (documentaire)",
+              "Il faut toujours lire le texte en entier pour savoir",
+              "Tous les textes commencent exactement pareil"
+            ],
+            "answer": 1,
+            "exp": "Certaines formules (« il était une fois ») ou certains styles (vocabulaire scientifique, faits précis) donnent des indices dès le début du texte."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un livre raconte la vie quotidienne (réelle) d'un enfant du 19e siècle, avec des faits historiques vérifiés mais mis en scène comme une histoire. Est-ce purement un conte ou peut-il mélanger les deux genres ?",
+            "choices": [
+              "C'est obligatoirement un pur conte inventé",
+              "Il peut mélanger les deux : une mise en forme narrative (comme une histoire) autour de faits réels et documentés",
+              "C'est obligatoirement un documentaire sans aucune mise en scène",
+              "Un texte ne peut jamais mélanger ces deux aspects"
+            ],
+            "answer": 1,
+            "exp": "Certains textes mélangent les deux : une forme narrative agréable à lire, construite autour de faits réels et vérifiés."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour un exposé sur les dinosaures, quel type de texte est le plus approprié à consulter en premier ?",
+            "choices": [
+              "Un conte de fées sur un dragon",
+              "Un texte documentaire sur les dinosaures",
+              "Une poésie sur les nuages",
+              "Une recette de cuisine"
+            ],
+            "answer": 1,
+            "exp": "Pour des informations fiables sur un sujet réel, un texte documentaire est l'outil approprié."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un poème qui joue avec les sonorités des mots et les rimes est plutôt classé comme :",
+            "choices": [
+              "Un texte documentaire",
+              "Un texte poétique",
+              "Une notice de montage",
+              "Un article scientifique"
+            ],
+            "answer": 1,
+            "exp": "La poésie se distingue par son jeu sur les sonorités et les rimes, différent des textes qui informent ou racontent de façon classique."
           }
         ]
       },
@@ -3193,6 +4132,195 @@
             ],
             "answer": 1,
             "exp": "S'arrêter systématiquement à chaque mot inconnu casse le fil de la lecture et de la compréhension globale. Utiliser le contexte permet de continuer sans tout bloquer, en gardant la vérification au dictionnaire pour plus tard si nécessaire."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Le « contexte » d'un mot inconnu, ce sont :",
+            "choices": [
+              "Les lettres qui composent ce mot",
+              "Les mots et phrases qui l'entourent, qui donnent des indices sur son sens",
+              "La couleur du livre",
+              "Le nombre de pages du livre"
+            ],
+            "answer": 1,
+            "exp": "Le contexte désigne tout ce qui entoure un mot et qui peut aider à deviner son sens."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "« Le funambule avançait avec précaution sur son fil, loin au-dessus du sol. » Sans connaître « funambule », que peut-on deviner ?",
+            "choices": [
+              "C'est un animal",
+              "C'est une personne qui marche en équilibre sur un fil, en hauteur",
+              "C'est un objet",
+              "C'est une couleur"
+            ],
+            "answer": 1,
+            "exp": "Le contexte (avancer sur un fil, en hauteur) permet de deviner qu'un funambule est une personne qui marche en équilibre sur un fil."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Le vieux mur était lézardé, prêt à s'effondrer au moindre coup de vent. » Que peut-on deviner sur le mot « lézardé » ?",
+            "choices": [
+              "Qu'il est couvert de lézards vivants",
+              "Qu'il est fissuré, fragile, abîmé",
+              "Qu'il est tout neuf et solide",
+              "Qu'il est de couleur verte"
+            ],
+            "answer": 1,
+            "exp": "Le contexte (prêt à s'effondrer) suggère que « lézardé » signifie fissuré, abîmé."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Elle farfouillait dans son sac, cherchant désespérément ses clés perdues au fond. » Que peut-on deviner sur « farfouiller » ?",
+            "choices": [
+              "Chanter joyeusement",
+              "Chercher en remuant, en fouillant un peu partout",
+              "Dormir profondément",
+              "Courir très vite"
+            ],
+            "answer": 1,
+            "exp": "Le contexte (chercher des clés au fond d'un sac) indique que farfouiller signifie chercher en remuant les objets."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi deviner le sens d'un mot grâce au contexte ne remplace-t-il pas complètement l'utilisation d'un dictionnaire ?",
+            "choices": [
+              "Le contexte donne toujours un sens parfaitement exact",
+              "Parce que le contexte donne souvent une idée approximative du sens, utile pour continuer sa lecture, mais le dictionnaire donne une définition précise et complète si on en a vraiment besoin",
+              "Un dictionnaire ne sert jamais à rien",
+              "Le contexte et le dictionnaire donnent toujours exactement la même information"
+            ],
+            "answer": 1,
+            "exp": "Le contexte donne une estimation rapide et utile, mais le dictionnaire reste nécessaire pour une définition précise et complète."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Face à un mot inconnu, un élève s'arrête complètement de lire et refuse de continuer sans dictionnaire sous la main. Que lui conseiller ?",
+            "choices": [
+              "C'est la bonne méthode, il faut toujours s'arrêter",
+              "Essayer d'abord de deviner le sens grâce au contexte pour continuer sa lecture sans interruption, et vérifier au dictionnaire plus tard si besoin",
+              "Il ne faut jamais chercher à comprendre les mots inconnus",
+              "Il faut abandonner complètement la lecture de ce texte"
+            ],
+            "answer": 1,
+            "exp": "Deviner via le contexte permet de poursuivre sa lecture fluide sans interruption constante ; le dictionnaire reste une vérification possible après."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Le contexte d'un mot inconnu peut donner des indices sur son sens sans qu'on ait besoin d'un dictionnaire immédiatement.",
+            "answer": true,
+            "exp": "C'est justement l'utilité du contexte : estimer un sens probable sans interrompre sa lecture."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Le chevalier brandissait fièrement son épée étincelante. » Que peut-on deviner sur « brandir » ?",
+            "choices": [
+              "Cacher quelque chose",
+              "Tenir et lever quelque chose fièrement, de façon visible",
+              "Jeter quelque chose au loin",
+              "Manger quelque chose"
+            ],
+            "answer": 1,
+            "exp": "Le contexte (tenir une épée fièrement, de façon visible) indique que brandir signifie lever et montrer quelque chose."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi deux mots inconnus différents peuvent-ils parfois être deviné avec la même méthode (le contexte), même s'ils n'ont rien en commun entre eux ?",
+            "choices": [
+              "Ce n'est jamais possible",
+              "Parce que la méthode consiste à observer les indices autour du mot, peu importe le mot lui-même : c'est une démarche générale applicable à n'importe quel mot inconnu",
+              "Parce que tous les mots inconnus ont le même sens",
+              "Parce que le contexte change le sens d'un mot connu uniquement"
+            ],
+            "answer": 1,
+            "exp": "La méthode du contexte est une démarche générale (observer les indices environnants) qui s'applique à n'importe quel mot inconnu, quel que soit son sens réel."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Le ciel était d'un bleu limpide, sans le moindre nuage. » Que peut-on deviner sur « limpide » ?",
+            "choices": [
+              "Sombre et menaçant",
+              "Clair, pur, transparent",
+              "Orageux",
+              "Rouge"
+            ],
+            "answer": 1,
+            "exp": "Le contexte (sans le moindre nuage) suggère que limpide signifie clair et pur."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Un élève devine un sens à peu près correct d'un mot grâce au contexte, mais pas exactement précis. Est-ce grave pour continuer sa lecture ?",
+            "choices": [
+              "Oui, c'est une catastrophe qui empêche toute compréhension",
+              "Non, une idée approximative suffit généralement pour continuer à suivre le sens général du texte",
+              "Oui, il faut toujours un sens parfaitement exact pour chaque mot",
+              "Non, car le sens exact n'a jamais d'importance, même pour un contrôle"
+            ],
+            "answer": 1,
+            "exp": "Une compréhension approximative via le contexte suffit généralement à poursuivre la lecture et saisir le sens global."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Le marchand, radin, refusait de baisser ses prix même d'un centime. » Que peut-on deviner sur « radin » ?",
+            "choices": [
+              "Généreux",
+              "Avare, qui n'aime pas dépenser ou donner",
+              "Très riche sans rapport avec l'argent dépensé",
+              "Souriant"
+            ],
+            "answer": 1,
+            "exp": "Le contexte (refuser de baisser les prix même d'un centime) indique que radin signifie avare."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi certains indices de contexte sont-ils plus utiles que d'autres pour deviner le sens d'un mot (par exemple une action précise plutôt qu'un simple adjectif vague) ?",
+            "choices": [
+              "Tous les indices se valent toujours exactement",
+              "Parce qu'une action ou une situation précise donne souvent plus d'informations concrètes sur le sens d'un mot qu'une description vague",
+              "Les adjectifs sont toujours plus utiles que les actions",
+              "Il n'existe aucune différence entre les types d'indices"
+            ],
+            "answer": 1,
+            "exp": "Des indices concrets (une action précise, une situation détaillée) donnent généralement plus d'informations exploitables qu'une description vague."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Face à un mot technique inconnu dans un texte scientifique, quelle est la meilleure première stratégie ?",
+            "choices": [
+              "Abandonner immédiatement la lecture",
+              "Essayer de deviner le sens grâce aux phrases autour du mot, avant de chercher une définition si nécessaire",
+              "Remplacer le mot par n'importe quel autre mot au hasard",
+              "Ignorer complètement le reste du texte"
+            ],
+            "answer": 1,
+            "exp": "Essayer d'abord le contexte reste une stratégie efficace avant de recourir à une recherche de définition."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Le bruit assourdissant du moteur empêchait toute conversation. » Que peut-on deviner sur « assourdissant » ?",
+            "choices": [
+              "Très silencieux",
+              "Extrêmement fort, au point de gêner",
+              "Agréable à entendre",
+              "Rapide"
+            ],
+            "answer": 1,
+            "exp": "Le contexte (empêcher toute conversation) suggère qu'assourdissant signifie extrêmement fort."
           }
         ]
       },
@@ -3281,6 +4409,189 @@
             ],
             "answer": 1,
             "exp": "L'épaisseur d'un livre n'a aucun lien avec le plaisir qu'on peut y trouver : un livre court peut être passionnant, un livre épais peut ne pas du tout plaire. Mieux vaut juger sur le contenu (résumé, début) que sur la taille."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Être un bon lecteur, c'est seulement savoir déchiffrer les mots correctement ?",
+            "choices": [
+              "Oui, uniquement cela",
+              "Non, c'est aussi comprendre, s'intéresser aux histoires, et avoir envie de lire",
+              "Oui, et rien d'autre ne compte",
+              "Non, cela ne demande aucune compétence particulière"
+            ],
+            "answer": 1,
+            "exp": "Être un bon lecteur combine déchiffrage, compréhension, et plaisir de lire."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pour choisir un livre qui te plaira, que peux-tu faire avant de l'emprunter ?",
+            "choices": [
+              "Choisir au hasard sans regarder",
+              "Lire le résumé au dos et regarder la couverture pour voir si le sujet t'intéresse",
+              "Choisir uniquement le livre le plus fin",
+              "Fermer les yeux et pointer un livre"
+            ],
+            "answer": 1,
+            "exp": "Lire le résumé et observer la couverture donne un aperçu du sujet et aide à faire un choix éclairé."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un ami te dit qu'il a adoré un livre sur les pirates. Que peux-tu faire si tu es toi-même curieux ?",
+            "choices": [
+              "Ignorer complètement sa recommandation",
+              "Lui demander plus de détails ou emprunter le même livre pour le découvrir",
+              "Te moquer de son choix",
+              "Lire un livre totalement différent sans réfléchir"
+            ],
+            "answer": 1,
+            "exp": "Échanger sur les lectures aimées peut t'aider à découvrir de nouveaux livres qui t'intéressent."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi n'est-ce pas grave que deux enfants n'aiment pas du tout les mêmes genres de livres ?",
+            "choices": [
+              "C'est grave, il faut toujours aimer les mêmes livres que les autres",
+              "Chacun a des goûts différents, et c'est normal : l'important est de trouver des livres qui plaisent personnellement à soi-même",
+              "Un des deux enfants a forcément tort",
+              "Il n'existe qu'un seul bon goût de lecture possible"
+            ],
+            "answer": 1,
+            "exp": "Les goûts de lecture varient d'une personne à l'autre, et c'est tout à fait normal."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève choisit toujours le livre le plus épais de la bibliothèque, pensant que « c'est le meilleur signe d'un bon livre ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, plus un livre est épais, meilleur il est",
+              "L'épaisseur d'un livre ne garantit pas qu'il va lui plaire : il vaut mieux choisir selon le sujet qui l'intéresse vraiment, peu importe la taille",
+              "Un livre fin est toujours meilleur qu'un livre épais",
+              "Il n'existe aucun critère pour choisir un livre"
+            ],
+            "answer": 1,
+            "exp": "La qualité ou l'intérêt d'un livre pour soi ne dépend pas de son épaisseur, mais plutôt du sujet et du style qui correspondent à ses goûts."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Partager ses lectures avec d'autres personnes peut aider à découvrir de nouveaux livres intéressants.",
+            "answer": true,
+            "exp": "Échanger sur ses lectures permet souvent de découvrir des livres qu'on n'aurait pas choisis seul."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi relire un livre qu'on a déjà beaucoup aimé peut-il être une bonne idée ?",
+            "choices": [
+              "Ce n'est jamais une bonne idée de relire un livre",
+              "Parce qu'on peut redécouvrir des détails manqués la première fois, et retrouver le plaisir de l'histoire",
+              "Relire est interdit une fois le livre terminé",
+              "Un livre ne peut être lu qu'une seule fois dans sa vie"
+            ],
+            "answer": 1,
+            "exp": "Relire un livre permet souvent de remarquer de nouveaux détails et de retrouver le plaisir de l'histoire."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un enfant n'aime pas du tout les romans d'aventure mais adore les bandes dessinées humoristiques. Que peut-on lui conseiller ?",
+            "choices": [
+              "De forcer à lire des romans d'aventure qu'il n'aime pas",
+              "De continuer à explorer les bandes dessinées humoristiques qui lui plaisent, tout en restant ouvert à essayer d'autres genres de temps en temps",
+              "D'arrêter complètement de lire",
+              "De ne jamais essayer un autre genre de sa vie"
+            ],
+            "answer": 1,
+            "exp": "Suivre ses goûts (ici les BD humoristiques) tout en restant ouvert à d'autres genres est une bonne approche pour développer le plaisir de lire."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la bibliothèque ou le CDI de l'école sont-ils des endroits utiles pour un lecteur curieux ?",
+            "choices": [
+              "Ils ne servent à rien pour un lecteur",
+              "Ils offrent un grand choix de livres variés, permettant de découvrir de nouveaux genres et sujets sans avoir à les acheter",
+              "Ils ne contiennent que des livres ennuyeux",
+              "Il est interdit d'emprunter des livres dans ces lieux"
+            ],
+            "answer": 1,
+            "exp": "Une bibliothèque ou un CDI offre un vaste choix de livres variés, idéal pour explorer de nouveaux genres sans contrainte d'achat."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève dit : « je n'aime pas lire, je n'ai jamais trouvé de livre qui me plaise ». Que peut-on lui suggérer en premier ?",
+            "choices": [
+              "Qu'il abandonne définitivement l'idée de lire un jour",
+              "D'essayer différents genres (BD, romans courts, documentaires sur un sujet qu'il aime) pour trouver ce qui lui convient vraiment",
+              "Qu'il lise uniquement des livres très longs et difficiles",
+              "Qu'il ne lira jamais, c'est une fatalité"
+            ],
+            "answer": 1,
+            "exp": "Explorer différents genres aide souvent à trouver un type de lecture qui convient vraiment, même pour quelqu'un qui pense ne pas aimer lire."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Partager un avis sur un livre qu'on vient de lire, c'est utile pour :",
+            "choices": [
+              "Ne rien apporter du tout aux autres",
+              "Aider les autres à décider s'ils veulent le lire aussi, et échanger sur ce qu'on a ressenti",
+              "Empêcher les autres de le lire",
+              "Gâcher la surprise de l'histoire obligatoirement"
+            ],
+            "answer": 1,
+            "exp": "Partager un avis permet d'orienter les autres dans leurs choix et de créer un échange autour d'une lecture commune."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi certains enfants qui n'aimaient pas lire au début finissent par devenir de grands lecteurs plus tard ?",
+            "choices": [
+              "C'est toujours impossible, les goûts ne changent jamais",
+              "Parce qu'ils ont souvent fini par trouver un livre ou un genre qui correspondait enfin à leurs goûts, ce qui a déclenché leur intérêt pour la lecture",
+              "Parce qu'on les a forcés à lire des livres qu'ils n'aimaient pas",
+              "Cela n'arrive jamais en réalité"
+            ],
+            "answer": 1,
+            "exp": "Trouver enfin un livre ou un genre qui correspond vraiment à ses goûts peut déclencher un véritable intérêt pour la lecture, même chez quelqu'un qui n'aimait pas ça au départ."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il utile de varier les types de livres lus (romans, BD, documentaires, poésie) au cours d'une année ?",
+            "choices": [
+              "Ce n'est jamais utile de varier",
+              "Pour découvrir différents styles, enrichir son vocabulaire et ses connaissances, et trouver encore mieux ce qu'on aime",
+              "Parce qu'il est interdit de lire deux fois le même genre",
+              "Parce que varier rend la lecture plus difficile sans aucun bénéfice"
+            ],
+            "answer": 1,
+            "exp": "Varier les genres enrichit le vocabulaire, les connaissances et aide à mieux cerner ses goûts personnels."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un enfant hésite entre deux livres à la bibliothèque. Que peut-il faire pour choisir plus facilement ?",
+            "choices": [
+              "Prendre les deux au hasard sans réfléchir",
+              "Lire le début des deux premières pages de chacun pour voir lequel donne le plus envie de continuer",
+              "Choisir celui avec la couverture la plus colorée uniquement",
+              "Ne prendre aucun livre"
+            ],
+            "answer": 1,
+            "exp": "Lire les premières pages donne un aperçu du style et de l'histoire, aidant à faire un choix plus éclairé."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Il est possible d'aimer plusieurs genres de livres très différents à la fois.",
+            "answer": true,
+            "exp": "Un lecteur peut très bien apprécier des romans, des BD et des documentaires en même temps, sans contradiction."
           }
         ]
       },
@@ -3372,6 +4683,195 @@
             ],
             "answer": 1,
             "exp": "Retourner au texte pour relire le passage concerné permet de retrouver des indices précis, bien plus fiables qu'une réponse devinée au hasard."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pour bien suivre une histoire, à quoi faut-il faire particulièrement attention ?",
+            "choices": [
+              "Uniquement au nombre de pages",
+              "Aux personnages, aux lieux, et à l'enchaînement des événements",
+              "Uniquement à la couleur de la couverture",
+              "À rien de spécial"
+            ],
+            "answer": 1,
+            "exp": "Suivre une histoire demande de repérer les personnages, les lieux, et comment les événements s'enchaînent."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Une information « implicite » est une information :",
+            "choices": [
+              "Écrite directement dans le texte",
+              "Qu'on devine à partir des indices du texte, sans qu'elle soit écrite directement",
+              "Toujours fausse",
+              "Dessinée en couleur"
+            ],
+            "answer": 1,
+            "exp": "L'implicite se déduit des indices du texte, sans être écrit directement."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Tu lis un texte qui explique, étape par étape, comment planter une graine. Quel type de texte est-ce, et comment le reconnaît-on ?",
+            "choices": [
+              "Un conte, reconnu par « il était une fois »",
+              "Un texte qui informe (une notice), reconnu par les étapes et le vocabulaire précis",
+              "Une poésie, reconnue par les rimes",
+              "Une lettre, reconnue par la signature"
+            ],
+            "answer": 1,
+            "exp": "Les étapes précises à suivre signalent un texte informatif, de type notice."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un bon lecteur se pose-t-il des questions AVANT même de commencer à répondre à des exercices sur un texte ?",
+            "choices": [
+              "Ce n'est jamais utile de se poser des questions avant",
+              "Pour s'assurer d'avoir bien compris le texte dans son ensemble, avant de se concentrer sur les détails demandés par les questions",
+              "Parce qu'il faut toujours deviner les réponses au hasard",
+              "Parce que les questions n'ont aucun rapport avec le texte"
+            ],
+            "answer": 1,
+            "exp": "Vérifier sa compréhension globale avant de répondre aux questions précises évite de répondre à côté ou de mal comprendre le contexte."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Face à une question difficile sur un texte, quelle est la meilleure stratégie plutôt que de répondre au hasard ?",
+            "choices": [
+              "Répondre n'importe quoi rapidement",
+              "Relire le passage du texte concerné par la question pour y chercher la réponse ou des indices",
+              "Abandonner immédiatement la question",
+              "Changer complètement de texte"
+            ],
+            "answer": 0,
+            "exp": "Relire le passage concerné permet de retrouver des indices précis plutôt que de deviner au hasard."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève répond à une question sur un texte sans l'avoir relu, juste de mémoire, et se trompe. Que lui conseiller pour la prochaine fois ?",
+            "choices": [
+              "De continuer à répondre uniquement de mémoire",
+              "De relire le passage concerné du texte avant de répondre, pour vérifier précisément l'information",
+              "De ne plus jamais répondre à des questions sur un texte",
+              "De deviner encore plus vite la prochaine fois"
+            ],
+            "answer": 1,
+            "exp": "Relire le passage concerné permet de vérifier précisément l'information avant de répondre, réduisant le risque d'erreur."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Comprendre un texte demande à la fois de repérer les informations explicites et de deviner les informations implicites.",
+            "answer": true,
+            "exp": "Une compréhension complète combine la lecture de ce qui est écrit directement et la déduction de ce qui est sous-entendu."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Dans un texte qui raconte une histoire, pourquoi est-il important de repérer les changements de lieu ou de moment (« le lendemain », « plus tard au village »)?",
+            "choices": [
+              "Ce n'est jamais important",
+              "Parce que ces changements structurent l'histoire et aident à comprendre son déroulement dans le temps et l'espace",
+              "Parce qu'il faut toujours ignorer ces indications",
+              "Ces indications n'ont jamais de sens particulier"
+            ],
+            "answer": 1,
+            "exp": "Repérer les changements de lieu et de temps aide à suivre la structure et la progression de l'histoire."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un texte mélange un passage qui raconte une histoire et un passage qui donne des informations scientifiques sur un animal. Que peut-on en dire ?",
+            "choices": [
+              "C'est toujours une erreur de mélanger les deux",
+              "Un même texte peut parfois combiner plusieurs types d'écriture (récit et information), ce qui demande au lecteur de bien distinguer les deux",
+              "Un texte ne peut jamais avoir plus d'un seul type",
+              "Cela rend le texte totalement incompréhensible"
+            ],
+            "answer": 1,
+            "exp": "Un texte peut combiner plusieurs types d'écriture ; un bon lecteur doit savoir distinguer les passages narratifs des passages informatifs."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour résumer une histoire qu'on vient de lire, que faut-il inclure en priorité ?",
+            "choices": [
+              "Tous les détails sans exception, même les plus petits",
+              "Les informations essentielles : qui, où, quoi, et comment cela se termine",
+              "Uniquement la couleur de la couverture du livre",
+              "Rien du tout, un résumé ne sert à rien"
+            ],
+            "answer": 1,
+            "exp": "Un bon résumé retient l'essentiel (personnages, lieu, événements principaux, fin) sans s'encombrer de tous les petits détails."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi vérifier sa compréhension d'un texte avant de passer au suivant est-il une bonne habitude ?",
+            "choices": [
+              "Ce n'est jamais utile de vérifier",
+              "Parce que cela évite d'accumuler des incompréhensions qui rendraient la suite encore plus difficile à comprendre",
+              "Parce qu'il faut toujours lire très vite sans jamais vérifier",
+              "Vérifier sa compréhension est interdit en lecture"
+            ],
+            "answer": 1,
+            "exp": "Vérifier sa compréhension évite d'accumuler des incompréhensions qui compliqueraient la suite de la lecture."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Dans un texte, tu repères une information qui semble contredire ce que tu avais compris plus tôt. Que dois-tu faire ?",
+            "choices": [
+              "Ignorer complètement cette nouvelle information",
+              "Relire le passage pour vérifier si tu avais mal compris quelque chose plus tôt, ou si le texte apporte un nouvel élément",
+              "Abandonner la lecture du texte",
+              "Décider au hasard laquelle des deux informations est correcte"
+            ],
+            "answer": 1,
+            "exp": "Une apparente contradiction mérite une relecture attentive pour clarifier sa compréhension du texte."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour bien comprendre un texte difficile, laquelle de ces stratégies est la plus utile ?",
+            "choices": [
+              "Le lire une seule fois très vite sans réfléchir",
+              "Le relire si nécessaire, se poser des questions sur le sens, et chercher les indices utiles",
+              "Sauter directement aux dernières lignes",
+              "Ne jamais relire un texte, même difficile"
+            ],
+            "answer": 1,
+            "exp": "Relire, se questionner et chercher des indices sont des stratégies efficaces pour comprendre un texte difficile."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Quel est le signe qu'un lecteur a vraiment bien compris une histoire ?",
+            "choices": [
+              "Il peut lire le texte très vite, sans en retenir le sens",
+              "Il peut raconter l'histoire dans ses propres mots, avec les informations essentielles, et répondre à des questions sur les détails et les déductions à faire",
+              "Il connaît juste le titre du livre",
+              "Il a lu le plus de pages possible en un minimum de temps"
+            ],
+            "answer": 1,
+            "exp": "Pouvoir reformuler l'histoire et répondre aux questions (explicites et implicites) montre une véritable compréhension."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi comparer ses réponses avec celles d'un camarade après avoir lu le même texte peut-il être utile ?",
+            "choices": [
+              "Cela ne sert jamais à rien",
+              "Cela permet de repérer d'éventuelles incompréhensions ou d'enrichir sa propre compréhension grâce au point de vue de l'autre",
+              "Il faut toujours avoir exactement les mêmes réponses, sinon l'un des deux a forcément tout faux",
+              "Comparer ses réponses est interdit entre élèves"
+            ],
+            "answer": 1,
+            "exp": "Comparer ses réponses permet souvent de repérer une incompréhension ou de voir le texte sous un angle différent."
           }
         ]
       },
