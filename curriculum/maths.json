@@ -18826,6 +18826,171 @@
             ],
             "answer": 1,
             "exp": "Avant d'additionner des longueurs données dans des unités différentes, il faut impérativement les convertir dans la même unité : ici, 2 m + 0,45 m = 2,45 m, bien différent du calcul erroné 2+45=47 qui mélange des unités incompatibles."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de centimètres y a-t-il dans 3 mètres ?",
+            "answer": "300",
+            "exp": "1 m = 100 cm, donc 3 m = 300 cm."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quelle unité utiliserais-tu pour mesurer la distance entre deux villes ?",
+            "choices": [
+              "Le millimètre",
+              "Le centimètre",
+              "Le mètre",
+              "Le kilomètre"
+            ],
+            "answer": 3,
+            "exp": "Pour une très grande distance, le kilomètre est l'unité la plus adaptée."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un couloir mesure 480 cm de long. Combien cela fait-il de mètres ?",
+            "choices": [
+              "4,8 m",
+              "48 m",
+              "480 m",
+              "0,48 m"
+            ],
+            "answer": 0,
+            "exp": "480 cm = 4,8 m (480÷100)."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi toutes les unités de longueur (mm, cm, m, km) sont-elles liées entre elles par des multiples de 10 ?",
+            "choices": [
+              "Ce n'est jamais le cas",
+              "Parce que le système métrique est construit sur la base 10, comme notre système de numération : chaque unité est 10, 100 ou 1000 fois plus grande que la précédente",
+              "Les unités de longueur n'ont aucun lien entre elles",
+              "Seul le kilomètre est lié aux autres unités"
+            ],
+            "answer": 1,
+            "exp": "Le système métrique est construit sur la base 10 : chaque unité supérieure est un multiple de 10 de la précédente (10 mm=1cm, 100cm=1m, 1000m=1km)."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève veut additionner 3 m et 50 cm, et calcule directement 3 + 50 = 53. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Il doit convertir 50 cm en mètres (0,5 m) avant d'additionner : 3 + 0,5 = 3,5 m, pas 53 qui mélange des unités différentes",
+              "3 m et 50 cm ne peuvent jamais s'additionner",
+              "Il fallait convertir les mètres en centimètres, ce qui donnerait 350 cm, un résultat différent mais toujours valide"
+            ],
+            "answer": 1,
+            "exp": "Mélanger directement les nombres sans convertir dans la même unité donne un résultat incohérent ; il faut d'abord convertir 50 cm en 0,5 m, puis additionner."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "1 kilomètre représente la même longueur que 1000 mètres.",
+            "answer": true,
+            "exp": "Par définition, 1 km = 1000 m."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de millimètres y a-t-il dans 1 centimètre ?",
+            "answer": "10",
+            "exp": "1 cm = 10 mm."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un randonneur parcourt 4500 m. Combien cela fait-il de kilomètres ?",
+            "choices": [
+              "4,5 km",
+              "45 km",
+              "450 km",
+              "0,45 km"
+            ],
+            "answer": 0,
+            "exp": "4500 m = 4,5 km (4500÷1000)."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi utilise-t-on le millimètre plutôt que le centimètre pour mesurer l'épaisseur d'une pièce de monnaie ?",
+            "choices": [
+              "Ce n'est jamais justifié",
+              "Parce que l'épaisseur d'une pièce est très petite, et le millimètre (plus petite unité) donne une mesure plus précise et plus lisible qu'un chiffre en centimètres avec beaucoup de décimales",
+              "Le centimètre est toujours plus précis que le millimètre",
+              "Il est interdit d'utiliser le millimètre pour les petits objets"
+            ],
+            "answer": 1,
+            "exp": "Pour de très petites mesures, le millimètre donne un nombre entier plus lisible, évitant les décimales compliquées qu'on aurait en centimètres."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève affirme qu'un terrain de football mesure environ 1 mm de longueur. Que penser de cette affirmation ?",
+            "choices": [
+              "C'est exact, les terrains sont très petits",
+              "C'est absurde : un terrain de football mesure une centaine de mètres, pas 1 millimètre qui est une longueur minuscule, invisible à l'œil nu",
+              "1 mm est une bonne estimation pour tout terrain",
+              "Il faut mesurer les terrains en kilogrammes"
+            ],
+            "answer": 1,
+            "exp": "Un terrain de football mesure environ 100 m, une longueur immense comparée à 1 mm qui est quasiment invisible."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de mètres y a-t-il dans 2 kilomètres ?",
+            "answer": "2000",
+            "exp": "2 km = 2000 m."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Une piste d'athlétisme mesure 400 m. Combien de tours faut-il faire pour parcourir 2 km ?",
+            "choices": [
+              "5 tours",
+              "4 tours",
+              "2 tours",
+              "10 tours"
+            ],
+            "answer": 0,
+            "exp": "2 km = 2000 m ; 2000÷400=5 tours."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, pour comparer deux longueurs exprimées dans des unités différentes (comme 150 cm et 2 m), faut-il d'abord les convertir dans la même unité ?",
+            "choices": [
+              "Ce n'est jamais nécessaire de convertir",
+              "Parce que comparer directement les nombres sans tenir compte de l'unité donnerait une comparaison fausse (150 semble plus grand que 2, mais 150 cm = 1,5 m, plus petit que 2 m)",
+              "150 est toujours plus grand que 2, quelle que soit l'unité",
+              "Les unités n'ont jamais d'importance dans une comparaison"
+            ],
+            "answer": 1,
+            "exp": "Sans conversion, comparer les nombres seuls (150 vs 2) donnerait un résultat faux : il faut ramener à la même unité (150 cm = 1,5 m < 2 m)."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de mètres y a-t-il dans 7500 millimètres ?",
+            "answer": "7",
+            "exp": "7500 mm = 7,5 m, soit 7 mètres complets et 500 mm restants (ici on garde la partie entière demandée)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une règle de 30 cm mesure combien de millimètres ?",
+            "choices": [
+              "300 mm",
+              "30 mm",
+              "3000 mm",
+              "3 mm"
+            ],
+            "answer": 0,
+            "exp": "30 cm = 300 mm (1 cm = 10 mm)."
           }
         ]
       },
@@ -18908,6 +19073,171 @@
             ],
             "answer": 1,
             "exp": "150 tonnes est une masse absurde pour une pomme (bien plus qu'un immeuble entier) : l'élève a confondu grammes et tonnes, deux unités extrêmement éloignées l'une de l'autre. Une pomme pèse plutôt environ 150 grammes."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de grammes y a-t-il dans 3 kilogrammes ?",
+            "answer": "3000",
+            "exp": "1 kg = 1000 g, donc 3 kg = 3000 g."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quelle unité utiliserais-tu pour la masse d'une fourmi ?",
+            "choices": [
+              "La tonne",
+              "Le kilogramme",
+              "Le gramme",
+              "Le litre"
+            ],
+            "answer": 2,
+            "exp": "Pour une masse très petite comme une fourmi, le gramme est l'unité adaptée."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un bidon contient 5 L d'eau. Combien cela fait-il de centilitres ?",
+            "choices": [
+              "500 cl",
+              "50 cl",
+              "5000 cl",
+              "0,5 cl"
+            ],
+            "answer": 0,
+            "exp": "5 L = 500 cl (1 L = 100 cl)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un camion transporte 8 tonnes de marchandises. Combien cela fait-il de kilogrammes ?",
+            "choices": [
+              "8000 kg",
+              "800 kg",
+              "80000 kg",
+              "8 kg"
+            ],
+            "answer": 0,
+            "exp": "8 tonnes = 8000 kg (1 tonne = 1000 kg)."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi utilise-t-on la tonne plutôt que le kilogramme pour exprimer la masse d'un bateau ?",
+            "choices": [
+              "Ce n'est jamais justifié",
+              "Parce que la masse d'un bateau est extrêmement grande, et la tonne (1000 kg) donne un nombre plus simple et lisible qu'un très grand nombre en kilogrammes",
+              "Le kilogramme est toujours plus pratique pour tout objet",
+              "Il est interdit d'utiliser la tonne"
+            ],
+            "answer": 1,
+            "exp": "Pour des masses très grandes, la tonne donne un nombre plus simple et lisible qu'un très grand nombre exprimé en kilogrammes."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève affirme qu'un œuf pèse environ 3 kilogrammes. Que penser de cette estimation ?",
+            "choices": [
+              "C'est exact",
+              "C'est très exagéré : un œuf pèse environ 60 grammes, bien loin de 3 kilogrammes qui est le poids d'un gros melon",
+              "3 kg est une bonne estimation pour tout aliment",
+              "Il faut mesurer les œufs en kilomètres"
+            ],
+            "answer": 1,
+            "exp": "Un œuf pèse environ 60 g, bien loin des 3 kg (3000 g) qui correspondent plutôt à un gros melon ou un petit chat."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "1 litre représente la même contenance que 100 centilitres.",
+            "answer": true,
+            "exp": "Par définition, 1 L = 100 cl."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de litres y a-t-il dans 3000 millilitres ?",
+            "answer": "3",
+            "exp": "3000 ml = 3 L (1 L = 1000 ml)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une citerne contient 2,5 tonnes d'eau. Combien cela représente-t-il en kilogrammes ?",
+            "choices": [
+              "2500 kg",
+              "250 kg",
+              "25000 kg",
+              "2,5 kg"
+            ],
+            "answer": 0,
+            "exp": "2,5 tonnes = 2500 kg."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, pour comparer 1,5 kg et 1400 g, faut-il convertir dans la même unité avant de conclure ?",
+            "choices": [
+              "Ce n'est jamais nécessaire de convertir",
+              "Parce que comparer 1,5 et 1400 directement (sans unité commune) n'a pas de sens : il faut ramener à la même unité, ici 1,5 kg = 1500 g, qui est plus que 1400 g",
+              "1,5 est toujours plus petit que 1400 sans qu'il faille convertir",
+              "Les unités n'ont jamais d'importance pour comparer des masses"
+            ],
+            "answer": 1,
+            "exp": "Sans unité commune, comparer les nombres seuls n'a pas de sens : il faut convertir (1,5 kg = 1500 g) avant de comparer avec 1400 g."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de centilitres y a-t-il dans 1 litre et demi (1,5 L) ?",
+            "answer": "150",
+            "exp": "1,5 L = 150 cl (1 L = 100 cl)."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un sac de ciment pèse 25 kg. Combien de sacs sont nécessaires pour atteindre 1 tonne (1000 kg) ?",
+            "choices": [
+              "40",
+              "25",
+              "100",
+              "4"
+            ],
+            "answer": 0,
+            "exp": "1000÷25=40 sacs."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la tonne, le kilogramme et le gramme forment-ils une échelle cohérente, chacun 1000 fois plus grand que le précédent ?",
+            "choices": [
+              "Ce n'est pas le cas, les rapports sont différents",
+              "Parce que le système métrique organise ses unités de masse en puissances de 1000 à partir du gramme, ce qui facilite les conversions",
+              "Les unités de masse n'ont aucun rapport entre elles",
+              "Seul le kilogramme est lié aux autres unités de masse"
+            ],
+            "answer": 1,
+            "exp": "Le système métrique organise les unités de masse (g, kg, tonne) en puissances de 1000, offrant une structure cohérente et facile à convertir."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de grammes y a-t-il dans un demi-kilogramme (0,5 kg) ?",
+            "answer": "500",
+            "exp": "0,5 kg = 500 g."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Une piscine contient 3 m³ d'eau équivalant à 3000 L. Combien cela fait-il de litres pour 1 m³ ?",
+            "choices": [
+              "1000 L",
+              "100 L",
+              "3000 L",
+              "10 L"
+            ],
+            "answer": 0,
+            "exp": "3000÷3=1000 L pour 1 m³."
           }
         ]
       },
@@ -18984,6 +19314,171 @@
             ],
             "answer": 1,
             "exp": "Multiplier les deux dimensions d'un rectangle donne son AIRE (la surface qu'il occupe), pas son périmètre (la longueur de son contour) : ce sont deux grandeurs différentes, avec des calculs différents, qu'il ne faut pas confondre."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule le périmètre d'un carré de 9 cm de côté.",
+            "answer": "36",
+            "exp": "4×9=36 cm (4 côtés égaux)."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule le périmètre d'un rectangle de 8 cm de longueur et 5 cm de largeur.",
+            "answer": "26",
+            "exp": "(8+5)×2=26 cm."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un éleveur veut entourer un enclos rectangulaire de 15 m sur 9 m avec une clôture. Quelle longueur de clôture lui faut-il ?",
+            "choices": [
+              "48 m",
+              "24 m",
+              "135 m",
+              "42 m"
+            ],
+            "answer": 0,
+            "exp": "(15+9)×2=48 m."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un terrain carré a un périmètre de 40 m. Quelle est la longueur d'un côté ?",
+            "choices": [
+              "10 m",
+              "20 m",
+              "40 m",
+              "4 m"
+            ],
+            "answer": 0,
+            "exp": "40÷4=10 m par côté (un carré a 4 côtés égaux)."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la formule (longueur + largeur) × 2 fonctionne-t-elle pour calculer le périmètre d'un rectangle ?",
+            "choices": [
+              "Elle ne fonctionne que par coïncidence",
+              "Parce qu'un rectangle a deux longueurs égales et deux largeurs égales : additionner une longueur et une largeur, puis doubler, donne le tour complet de la figure",
+              "Un rectangle n'a pas de périmètre",
+              "Cette formule ne fonctionne que pour les carrés"
+            ],
+            "answer": 1,
+            "exp": "Un rectangle a 2 côtés de longueur L et 2 côtés de largeur l : le périmètre total est 2×L + 2×l = (L+l)×2."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour un rectangle de 11 cm sur 6 cm, un élève calcule le périmètre comme 11 × 6 = 66 cm. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, 66 cm est le bon périmètre",
+              "Il calcule l'aire (en multipliant), pas le périmètre : le périmètre se calcule en additionnant les côtés, soit (11+6)×2=34 cm",
+              "66 cm est toujours juste pour n'importe quelle figure",
+              "Il fallait soustraire 6 de 11"
+            ],
+            "answer": 1,
+            "exp": "Multiplier longueur et largeur donne l'AIRE, pas le périmètre : le périmètre se calcule par (11+6)×2=34 cm."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Le périmètre d'une figure est la longueur totale de son contour.",
+            "answer": true,
+            "exp": "C'est la définition même du périmètre : faire le tour complet de la figure."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule le périmètre d'un triangle dont les trois côtés mesurent 5 cm, 7 cm et 9 cm.",
+            "answer": "21",
+            "exp": "5+7+9=21 cm (on additionne tous les côtés)."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un jardin rectangulaire mesure 20 m de longueur. Son périmètre est de 56 m. Quelle est sa largeur ?",
+            "choices": [
+              "8 m",
+              "18 m",
+              "28 m",
+              "36 m"
+            ],
+            "answer": 0,
+            "exp": "56÷2=28 (L+l), puis 28−20=8 m de largeur."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, pour un triangle, calcule-t-on le périmètre en additionnant simplement les trois côtés, sans formule de multiplication ?",
+            "choices": [
+              "Il existe toujours une formule de multiplication pour un triangle",
+              "Parce qu'un triangle n'a pas de côtés nécessairement égaux deux à deux comme un rectangle : il faut donc connaître et additionner chaque côté individuellement",
+              "Un triangle n'a pas de périmètre",
+              "Un triangle a toujours exactement le même périmètre qu'un carré de même taille"
+            ],
+            "answer": 1,
+            "exp": "Sans régularité garantie entre les côtés d'un triangle, il faut les additionner individuellement plutôt que d'utiliser une formule basée sur une symétrie."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un losange a 4 côtés égaux de 7 cm chacun. Quel est son périmètre ?",
+            "choices": [
+              "28 cm",
+              "14 cm",
+              "49 cm",
+              "21 cm"
+            ],
+            "answer": 0,
+            "exp": "4×7=28 cm (4 côtés égaux comme pour un carré)."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule le périmètre d'un carré de 12 cm de côté.",
+            "answer": "48",
+            "exp": "4×12=48 cm."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un terrain rectangulaire a une longueur de 30 m et une largeur de 18 m. On veut doubler toutes ses dimensions. Quel sera le nouveau périmètre ?",
+            "choices": [
+              "192 m",
+              "96 m",
+              "48 m",
+              "144 m"
+            ],
+            "answer": 0,
+            "exp": "Nouvelles dimensions : 60m et 36m ; périmètre = (60+36)×2=192 m (le double du périmètre initial, 96m)."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi doubler les deux dimensions d'un rectangle double-t-il exactement son périmètre ?",
+            "choices": [
+              "Cela ne change jamais le périmètre",
+              "Parce que le périmètre est une somme de longueurs (2L+2l) : doubler L et l double chaque terme de cette somme, donc double le résultat total",
+              "Doubler les dimensions multiplie toujours le périmètre par 4",
+              "Il n'existe aucun lien entre les dimensions et le périmètre"
+            ],
+            "answer": 1,
+            "exp": "Le périmètre étant une somme de longueurs (2L+2l), doubler chaque dimension double chaque terme et donc le résultat total."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un hexagone régulier a 6 côtés égaux de 5 cm chacun. Quel est son périmètre ?",
+            "choices": [
+              "30 cm",
+              "25 cm",
+              "11 cm",
+              "36 cm"
+            ],
+            "answer": 0,
+            "exp": "6×5=30 cm."
           }
         ]
       },
@@ -19072,6 +19567,183 @@
             ],
             "answer": 1,
             "exp": "L'unité donnée dans la réponse est un indice précieux : une aire s'exprime toujours en unité carrée (cm², m²...), jamais en simple unité de longueur (cm, m). Une réponse en « cm » tout seul pour une aire signale immédiatement une confusion avec le périmètre."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans quelle unité mesure-t-on généralement une petite aire, comme celle d'une feuille de papier ?",
+            "choices": [
+              "Le mètre",
+              "Le centimètre carré (cm²)",
+              "Le kilogramme",
+              "Le litre"
+            ],
+            "answer": 1,
+            "exp": "Une petite surface se mesure en centimètres carrés (cm²)."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quelle est la différence principale entre le périmètre et l'aire d'une figure ?",
+            "choices": [
+              "Il n'y a aucune différence, ce sont les mêmes mesures",
+              "Le périmètre mesure le contour (une longueur), l'aire mesure la surface intérieure (en unités carrées)",
+              "Le périmètre mesure la surface, l'aire mesure le contour",
+              "L'aire ne peut jamais se calculer pour un rectangle"
+            ],
+            "answer": 1,
+            "exp": "Le périmètre est une longueur (le tour), l'aire est une surface (l'intérieur), mesurée en unités carrées."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une figure dessinée sur un quadrillage contient 18 carreaux entiers de 1 cm² chacun. Quelle est son aire ?",
+            "choices": [
+              "18 cm²",
+              "18 cm",
+              "9 cm²",
+              "36 cm²"
+            ],
+            "answer": 0,
+            "exp": "18 carreaux de 1 cm² chacun = 18 cm² au total."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un rectangle mesure 7 cm de longueur et 4 cm de largeur. Quelle est son aire ?",
+            "choices": [
+              "28 cm²",
+              "22 cm²",
+              "11 cm²",
+              "28 cm"
+            ],
+            "answer": 0,
+            "exp": "7×4=28 cm² (aire = longueur × largeur)."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi l'aire se mesure-t-elle en unités « carrées » (cm², m²), alors que le périmètre se mesure en unités simples (cm, m) ?",
+            "choices": [
+              "Ce n'est jamais le cas, l'aire se mesure aussi en unités simples",
+              "Parce que l'aire représente une surface, qui se mesure en comptant combien de petits carrés (de 1 unité de côté) la recouvrent, d'où l'unité « carrée »",
+              "Les unités carrées n'ont aucun rapport avec les surfaces",
+              "Le périmètre se mesure aussi toujours en unités carrées"
+            ],
+            "answer": 1,
+            "exp": "L'aire compte combien de petits carrés unitaires recouvrent une surface, ce qui justifie naturellement l'unité « carrée » (cm², m²)."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève confond périmètre et aire, et répond « 40 cm² » pour le périmètre d'un rectangle qu'il vient de calculer (en multipliant longueur et largeur). Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, le périmètre peut s'exprimer en cm²",
+              "Il a calculé l'aire (en multipliant), pas le périmètre : le périmètre s'exprime en cm (unité simple), pas en cm² (unité carrée réservée à l'aire)",
+              "Le périmètre et l'aire sont toujours identiques pour un rectangle",
+              "40 cm² est toujours la bonne réponse pour un périmètre"
+            ],
+            "answer": 1,
+            "exp": "Multiplier longueur et largeur donne l'aire (en unités carrées) ; le périmètre, une longueur, s'exprime en unités simples (cm), pas carrées."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "L'aire d'un rectangle se calcule en multipliant sa longueur par sa largeur.",
+            "answer": true,
+            "exp": "C'est la formule de base pour calculer l'aire d'un rectangle."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un carré a un côté de 6 cm. Quelle est son aire ?",
+            "choices": [
+              "36 cm²",
+              "24 cm²",
+              "12 cm²",
+              "6 cm²"
+            ],
+            "answer": 0,
+            "exp": "6×6=36 cm² (aire d'un carré = côté × côté)."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi deux rectangles de même périmètre peuvent-ils avoir des aires très différentes ?",
+            "choices": [
+              "Ce n'est jamais possible, même périmètre signifie toujours même aire",
+              "Parce que le périmètre dépend seulement de la somme des côtés, alors que l'aire dépend de leur produit : des combinaisons différentes de longueur et largeur peuvent donner le même périmètre mais des aires différentes",
+              "L'aire dépend uniquement du périmètre, rien d'autre",
+              "Deux rectangles ont toujours la même aire quelle que soit leur forme"
+            ],
+            "answer": 1,
+            "exp": "Le périmètre dépend d'une somme de dimensions, l'aire d'un produit : des rectangles de dimensions différentes (mais de même somme) peuvent avoir le même périmètre mais des aires très différentes."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un jardin rectangulaire de 10 m sur 10 m (un carré) a quelle aire ?",
+            "choices": [
+              "100 m²",
+              "40 m²",
+              "20 m²",
+              "10 m²"
+            ],
+            "answer": 0,
+            "exp": "10×10=100 m²."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule l'aire d'un rectangle de 9 cm sur 3 cm.",
+            "answer": "27",
+            "exp": "9×3=27 cm²."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Une pièce rectangulaire mesure 5 m sur 4 m. Combien de dalles carrées de 1 m² sont nécessaires pour la recouvrir entièrement ?",
+            "choices": [
+              "20",
+              "18",
+              "9",
+              "40"
+            ],
+            "answer": 0,
+            "exp": "5×4=20 m², donc 20 dalles de 1 m² chacune."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi, pour calculer l'aire d'une figure complexe (non rectangulaire), peut-on parfois la découper en plusieurs rectangles plus simples ?",
+            "choices": [
+              "Ce n'est jamais possible de découper une figure complexe",
+              "Parce que l'aire totale d'une figure est égale à la somme des aires de ses parties : décomposer en rectangles simples permet de calculer chaque aire facilement, puis de les additionner",
+              "Découper une figure change toujours son aire totale",
+              "Une figure complexe n'a jamais d'aire calculable"
+            ],
+            "answer": 1,
+            "exp": "L'aire totale d'une figure est la somme des aires de ses parties : découper en rectangles simples permet un calcul facile, puis une addition pour obtenir l'aire totale."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un terrain carré a une aire de 64 m². Quelle est la longueur d'un côté ?",
+            "choices": [
+              "8 m",
+              "16 m",
+              "32 m",
+              "4 m"
+            ],
+            "answer": 0,
+            "exp": "8×8=64, donc le côté mesure 8 m."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "L'aire d'une figure se mesure toujours en unités carrées, comme cm² ou m².",
+            "answer": true,
+            "exp": "C'est la convention pour exprimer une surface, contrairement au périmètre qui se mesure en unités simples."
           }
         ]
       },
