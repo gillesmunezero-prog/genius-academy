@@ -15627,6 +15627,189 @@
             ],
             "answer": 1,
             "exp": "Le nombre de chiffres après la virgule n'indique pas la taille du nombre : il faut comparer la valeur réelle position par position. Aux dixièmes, 6,9 a 9 alors que 6,12 n'a que 1 : 6,9 est donc bien plus grand, malgré son écriture plus courte."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Lequel est le plus grand : 5,3 ou 5,29 ?",
+            "choices": [
+              "5,3",
+              "5,29",
+              "Ils sont égaux",
+              "Impossible à savoir"
+            ],
+            "answer": 0,
+            "exp": "5,3 = 5,30, qui a plus de centièmes (30) que 5,29 : 5,3 est plus grand."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Entre quels deux nombres entiers consécutifs se trouve 6,15 ?",
+            "choices": [
+              "5 et 6",
+              "6 et 7",
+              "15 et 16",
+              "0 et 1"
+            ],
+            "answer": 1,
+            "exp": "6,15 est juste après 6 et avant 7 : il est encadré par ces deux entiers consécutifs."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Deux coureurs réalisent 12,45 secondes et 12,4 secondes au 100m. Lequel a été le plus rapide (temps le plus petit) ?",
+            "choices": [
+              "Celui en 12,45 s",
+              "Celui en 12,4 s",
+              "Ils sont ex æquo",
+              "Impossible à savoir"
+            ],
+            "answer": 1,
+            "exp": "12,4 = 12,40, qui est inférieur à 12,45 (0 centième contre 5) : ce coureur a été plus rapide."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Range du plus petit au plus grand : 3,05 ; 3,5 ; 3,15.",
+            "choices": [
+              "3,05 ; 3,15 ; 3,5",
+              "3,5 ; 3,15 ; 3,05",
+              "3,15 ; 3,05 ; 3,5",
+              "3,05 ; 3,5 ; 3,15"
+            ],
+            "answer": 0,
+            "exp": "En ramenant tout à 2 chiffres après la virgule : 3,05 < 3,15 < 3,50."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-ce une erreur de comparer 4,8 et 4,65 en se disant « 65 est plus grand que 8, donc 4,65 est plus grand » ?",
+            "choices": [
+              "Ce n'est pas une erreur, 4,65 est bien plus grand",
+              "Parce qu'il faut comparer les dixièmes avant les centièmes : 4,8 a 8 dixièmes (80 centièmes), largement plus que les 65 centièmes de 4,65",
+              "Il faut toujours comparer uniquement les derniers chiffres",
+              "4,8 et 4,65 sont toujours égaux"
+            ],
+            "answer": 1,
+            "exp": "Il faut comparer rang par rang en partant des dixièmes : 4,8 (8 dixièmes = 80 centièmes) est plus grand que 4,65 (65 centièmes), malgré ce que suggère la comparaison brute de 8 et 65."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève affirme que 7,9 est plus petit que 7,15, « car 15 est un nombre à deux chiffres, donc plus grand que 9 ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Il compare les chiffres après la virgule comme des nombres entiers séparés, sans tenir compte de leur position : 7,9 = 7,90, qui a bien plus de centièmes que 7,15",
+              "7,15 est toujours plus grand que n'importe quel autre nombre",
+              "Il fallait comparer uniquement les parties entières"
+            ],
+            "answer": 1,
+            "exp": "7,9 équivaut à 7,90 (90 centièmes), largement supérieur à 7,15 (15 centièmes) : il faut ramener au même nombre de décimales avant de comparer."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Pour comparer deux nombres décimaux, il faut d'abord comparer leur partie entière, puis les dixièmes, puis les centièmes si besoin.",
+            "answer": true,
+            "exp": "C'est la méthode fiable : comparer rang par rang, du plus significatif (partie entière) au moins significatif."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Entre quels deux dixièmes consécutifs se trouve 5,37 ?",
+            "choices": [
+              "5,3 et 5,4",
+              "5,2 et 5,3",
+              "5,37 et 5,38",
+              "5 et 6"
+            ],
+            "answer": 0,
+            "exp": "5,37 est entre 5,3 et 5,4, les deux dixièmes qui l'encadrent."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi écrire 6,5 comme 6,50 (en ajoutant un zéro) peut-il aider à comparer ce nombre avec 6,42 ?",
+            "choices": [
+              "Cela ne change jamais rien à la comparaison",
+              "Parce que les deux nombres ont alors le même nombre de chiffres après la virgule, ce qui rend la comparaison directe des centièmes plus simple et plus claire",
+              "Ajouter un zéro change toujours la valeur du nombre",
+              "Il est interdit d'ajouter un zéro après la virgule"
+            ],
+            "answer": 1,
+            "exp": "Avoir le même nombre de décimales (ici 2) simplifie la comparaison directe des centièmes, sans changer la valeur réelle du nombre."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Range dans l'ordre décroissant : 9,02 ; 9,2 ; 9,09.",
+            "choices": [
+              "9,2 ; 9,09 ; 9,02",
+              "9,02 ; 9,09 ; 9,2",
+              "9,09 ; 9,2 ; 9,02",
+              "9,2 ; 9,02 ; 9,09"
+            ],
+            "answer": 0,
+            "exp": "En comparant les centièmes (20, 9, 2) : 9,2 > 9,09 > 9,02."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un thermomètre affiche 18,6°C le matin et 18,45°C le midi. La température a-t-elle augmenté ou diminué ?",
+            "choices": [
+              "Augmenté",
+              "Diminué",
+              "Elle est restée identique",
+              "Impossible à savoir"
+            ],
+            "answer": 1,
+            "exp": "18,6 (60 centièmes) > 18,45 (45 centièmes) : la température a diminué entre le matin et midi."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Entre quel nombre entier et quel autre se trouve 11,99 ? Donne le plus petit des deux.",
+            "answer": "11",
+            "exp": "11,99 est juste entre 11 et 12 : le plus petit encadrant est 11."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, pour encadrer un nombre décimal entre deux entiers consécutifs, suffit-il de regarder sa partie entière ?",
+            "choices": [
+              "Ce n'est jamais suffisant",
+              "Parce que la partie entière indique directement l'entier immédiatement inférieur, et l'entier suivant est automatiquement l'encadrant supérieur",
+              "Il faut toujours regarder les décimales en premier",
+              "Un nombre décimal ne peut jamais être encadré"
+            ],
+            "answer": 1,
+            "exp": "La partie entière d'un nombre décimal donne directement l'entier inférieur de l'encadrement ; l'entier suivant est automatiquement le supérieur."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un sac de pommes pèse 2,08 kg, un autre pèse 2,8 kg. Lequel est le plus léger ?",
+            "choices": [
+              "Le sac de 2,08 kg",
+              "Le sac de 2,8 kg",
+              "Ils pèsent pareil",
+              "Impossible à savoir"
+            ],
+            "answer": 0,
+            "exp": "2,08 (8 centièmes) est bien inférieur à 2,8 = 2,80 (80 centièmes) : le sac de 2,08 kg est plus léger."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Range dans l'ordre croissant : 7,1 ; 7,01 ; 7,11.",
+            "choices": [
+              "7,01 ; 7,1 ; 7,11",
+              "7,1 ; 7,01 ; 7,11",
+              "7,11 ; 7,1 ; 7,01",
+              "7,01 ; 7,11 ; 7,1"
+            ],
+            "answer": 0,
+            "exp": "En centièmes : 7,01 (01) < 7,1 (10) < 7,11 (11)."
           }
         ]
       },
@@ -15703,6 +15886,171 @@
             ],
             "answer": 1,
             "exp": "La règle d'arrondi dépend de la valeur précise du chiffre des dixièmes (inférieur ou supérieur/égal à 5), pas simplement du fait qu'il y ait ou non un chiffre après la virgule. Avec un 4, il faut arrondir vers le bas, à 6."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Arrondis 7,3 à l'unité la plus proche.",
+            "answer": "7",
+            "exp": "7,3 est plus proche de 7 que de 8 (0,3 < 0,5) : on arrondit à 7."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Arrondis 4,8 à l'unité la plus proche.",
+            "answer": "5",
+            "exp": "4,8 est plus proche de 5 que de 4 (0,8 > 0,5) : on arrondit à 5."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un article coûte 24,50 €. Pour une estimation rapide du prix de 3 articles identiques, à quel prix arrondis-tu chaque article ?",
+            "choices": [
+              "24 €",
+              "25 €",
+              "20 €",
+              "30 €"
+            ],
+            "answer": 1,
+            "exp": "24,50 € est à mi-chemin, mais on arrondit généralement au-dessus à partir de ,5 : 25 €."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour estimer rapidement le coût total de 4 objets à 9,20 € chacun, à combien arrondis-tu le prix unitaire ?",
+            "choices": [
+              "9 €",
+              "10 €",
+              "9,5 €",
+              "8 €"
+            ],
+            "answer": 0,
+            "exp": "9,20 est plus proche de 9 (0,2<0,5) que de 10 : on arrondit à 9 €."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi suffit-il de regarder uniquement le chiffre des dixièmes pour savoir dans quel sens arrondir à l'unité la plus proche ?",
+            "choices": [
+              "Ce n'est jamais suffisant, il faut regarder tous les chiffres",
+              "Parce que le chiffre des dixièmes indique directement si on est plus proche de l'unité inférieure (dixième 0 à 4) ou supérieure (dixième 5 à 9)",
+              "Il faut toujours regarder les centièmes en priorité",
+              "Le chiffre des dixièmes n'a aucun rapport avec l'arrondi"
+            ],
+            "answer": 1,
+            "exp": "Le chiffre des dixièmes (0-4 ou 5-9) suffit à déterminer de quel côté (inférieur ou supérieur) le nombre est le plus proche."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève arrondit 3,2 à 4 car « il y a un chiffre après la virgule, donc on monte toujours ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, on monte toujours",
+              "La règle dépend de la VALEUR du chiffre des dixièmes (0-4 arrondit en dessous, 5-9 arrondit au-dessus), pas de sa simple présence : 3,2 est proche de 3, pas de 4",
+              "3,2 doit s'arrondir à 3,5",
+              "Il fallait arrondir à 2"
+            ],
+            "answer": 1,
+            "exp": "La règle d'arrondi dépend de la valeur du chiffre des dixièmes : 2 (inférieur à 5) signifie qu'on arrondit en dessous, à 3, pas à 4."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Pour arrondir un nombre décimal à l'unité, si le chiffre des dixièmes est 5 ou plus, on arrondit à l'unité supérieure.",
+            "answer": true,
+            "exp": "C'est la règle standard de l'arrondi : 5 et plus fait monter à l'unité suivante."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Arrondis 9,5 à l'unité la plus proche.",
+            "answer": "10",
+            "exp": "Avec un dixième de 5, on arrondit à l'unité supérieure : 10."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pour arrondir rapidement une estimation de budget avec plusieurs prix décimaux, pourquoi est-il utile d'arrondir chaque prix avant d'additionner ?",
+            "choices": [
+              "Ce n'est jamais utile",
+              "Parce que cela simplifie beaucoup le calcul mental, en acceptant une légère approximation pour obtenir rapidement un ordre de grandeur du total",
+              "Arrondir change toujours complètement le résultat final",
+              "Il faut toujours calculer avec les prix exacts, jamais arrondis"
+            ],
+            "answer": 1,
+            "exp": "Arrondir simplifie le calcul mental pour obtenir rapidement un ordre de grandeur, utile pour une estimation rapide sans calcul exact."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Combien vaut approximativement 11,8 + 7,3 si on arrondit chaque nombre à l'unité avant d'additionner ?",
+            "choices": [
+              "12 + 7 = 19",
+              "11 + 7 = 18",
+              "12 + 8 = 20",
+              "11 + 8 = 19"
+            ],
+            "answer": 0,
+            "exp": "11,8 s'arrondit à 12, et 7,3 s'arrondit à 7 : 12+7=19, une estimation proche du résultat exact (19,1)."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève arrondit 14,49 à 15, pensant que « 4 dixièmes et quelques centièmes, c'est presque 5 ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, 14,49 s'arrondit bien à 15",
+              "L'arrondi à l'unité se décide uniquement sur le chiffre des DIXIÈMES (ici 4, qui est inférieur à 5) : 14,49 s'arrondit à 14, pas 15, même si les centièmes s'en approchent",
+              "14,49 est toujours égal à 15",
+              "Il fallait arrondir à 14,5"
+            ],
+            "answer": 1,
+            "exp": "Seul le chiffre des dixièmes compte pour l'arrondi à l'unité : 4 (dixièmes) signale d'arrondir en dessous, à 14, peu importe les centièmes suivants."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Arrondis 20,1 à l'unité la plus proche.",
+            "answer": "20",
+            "exp": "20,1 est très proche de 20 (dixième 1, inférieur à 5) : on arrondit à 20."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi l'arrondi est-il une opération utile dans la vie quotidienne, même s'il donne un résultat moins précis que le calcul exact ?",
+            "choices": [
+              "Ce n'est jamais utile d'arrondir",
+              "Parce qu'il permet une estimation rapide et suffisante pour de nombreuses situations (vérifier qu'on a assez d'argent, estimer un temps de trajet), sans besoin d'une précision extrême",
+              "L'arrondi est toujours plus précis que le calcul exact",
+              "Il est interdit d'utiliser l'arrondi en dehors de l'école"
+            ],
+            "answer": 1,
+            "exp": "L'arrondi offre une estimation rapide suffisante pour de nombreuses situations pratiques, sans nécessiter la précision d'un calcul exact."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un objet pèse 6,5 kg exactement. Vers quelle unité s'arrondit-il ?",
+            "choices": [
+              "6 kg",
+              "7 kg",
+              "6,5 kg reste inchangé",
+              "0 kg"
+            ],
+            "answer": 1,
+            "exp": "Avec un dixième de 5 exactement, on arrondit à l'unité supérieure : 7 kg."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi, pour un prix de 15,49 €, dire « environ 15 € » est-il une estimation plus juste que « environ 16 € » ?",
+            "choices": [
+              "« 16 € » est toujours la meilleure estimation",
+              "Parce que 15,49 € est plus proche de 15 (dixième 4, inférieur à 5) que de 16 : l'arrondi correct suit la règle du chiffre des dixièmes",
+              "15,49 € est exactement à mi-chemin entre 15 et 16",
+              "Il n'existe aucune règle pour ce genre d'estimation"
+            ],
+            "answer": 1,
+            "exp": "15,49 a un chiffre des dixièmes de 4 (inférieur à 5), donc il est plus proche de 15 que de 16 : c'est la bonne estimation arrondie."
           }
         ]
       },
@@ -15791,6 +16139,189 @@
             ],
             "answer": 1,
             "exp": "Avant toute addition de mesures, il faut s'assurer qu'elles sont dans la même unité : ici, convertir 30 cm en 0,3 m permet de calculer correctement 1,5 + 0,3 = 1,8 m, un résultat bien différent du calcul erroné 31,5."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Comment écrire 4 mètres et 30 centimètres en mètres avec une virgule ?",
+            "choices": [
+              "4,3 m",
+              "4,03 m",
+              "4,30 m et 4,3 m sont deux façons justes d'écrire la même chose",
+              "40,3 m"
+            ],
+            "answer": 2,
+            "exp": "30 cm = 0,30 m = 0,3 m : 4 m 30 cm s'écrit 4,3 m (ou 4,30 m, équivalent)."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Comment écrire 1 kilogramme et 250 grammes en kilogrammes avec une virgule ?",
+            "choices": [
+              "1,250 kg (ou 1,25 kg)",
+              "1,025 kg",
+              "12,5 kg",
+              "1,025 g"
+            ],
+            "answer": 0,
+            "exp": "250 g = 0,250 kg : 1 kg 250 g = 1,250 kg (ou 1,25 kg)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un cycliste a parcouru 3,6 km le matin et 2,9 km l'après-midi. Quelle distance totale a-t-il parcourue ?",
+            "choices": [
+              "6,5 km",
+              "6,15 km",
+              "5,5 km",
+              "6,15 m"
+            ],
+            "answer": 0,
+            "exp": "3,6 + 2,9 = 6,5 km."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un commerçant a vendu 2,750 kg de pommes et 1,5 kg de poires. Quel poids total a-t-il vendu ?",
+            "choices": [
+              "4,25 kg",
+              "4,250 kg et 4,25 kg sont deux écritures justes de la même quantité",
+              "3,25 kg",
+              "4,205 kg"
+            ],
+            "answer": 1,
+            "exp": "2,750 + 1,5 = 4,250 kg, qui peut aussi s'écrire 4,25 kg (équivalent)."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi faut-il impérativement convertir toutes les mesures dans la même unité avant de les additionner ?",
+            "choices": [
+              "Ce n'est jamais nécessaire",
+              "Parce qu'additionner des nombres exprimés dans des unités différentes (mètres et centimètres par exemple) sans convertir donnerait un résultat faux et dénué de sens",
+              "Les unités n'ont aucune importance dans un calcul",
+              "Il est toujours interdit de convertir des unités"
+            ],
+            "answer": 1,
+            "exp": "Additionner des nombres dans des unités différentes sans convertir mélangerait des échelles différentes, donnant un résultat incorrect."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève veut additionner 2,5 m et 40 cm, et calcule directement 2,5 + 40 = 42,5, sans convertir. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Il doit convertir 40 cm en mètres (0,4 m) avant d'additionner : 2,5 + 0,4 = 2,9 m, pas 42,5",
+              "2,5 m et 40 cm ne peuvent jamais s'additionner",
+              "Il fallait convertir les mètres en centimètres à la place, ce qui donnerait le même type d'erreur si mal fait"
+            ],
+            "answer": 1,
+            "exp": "40 cm doit être converti en 0,4 m avant d'additionner avec 2,5 m, donnant 2,9 m, pas un mélange incohérent de 42,5."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Avant d'additionner des mesures exprimées dans des unités différentes, il faut toujours les convertir dans une même unité.",
+            "answer": true,
+            "exp": "C'est une règle essentielle pour obtenir un résultat correct lors de l'addition de mesures."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Comment écrire 5 mètres et 8 centimètres en mètres avec une virgule ?",
+            "choices": [
+              "5,8 m",
+              "5,08 m",
+              "5,008 m",
+              "50,8 m"
+            ],
+            "answer": 1,
+            "exp": "8 cm = 0,08 m : 5 m 8 cm = 5,08 m (attention au zéro de positionnement)."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un élève pourrait-il se tromper en écrivant « 5 m et 8 cm » comme 5,8 m plutôt que 5,08 m ?",
+            "choices": [
+              "Ce n'est jamais une erreur possible",
+              "Parce qu'il pourrait placer directement le 8 après la virgule sans réaliser que 8 cm (8 centièmes de mètre) nécessite un zéro de positionnement avant lui, puisque 8 cm n'est pas 8 dixièmes de mètre",
+              "5,8 m et 5,08 m représentent toujours exactement la même longueur",
+              "Les centimètres ne peuvent jamais s'écrire en mètres"
+            ],
+            "answer": 1,
+            "exp": "8 cm représente 8 centièmes de mètre (0,08 m), pas 8 dixièmes : il faut un zéro de positionnement, sinon on obtient une valeur 10 fois trop grande."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un randonneur parcourt 4,250 km. Combien de mètres cela représente-t-il ?",
+            "choices": [
+              "4250 m",
+              "425 m",
+              "42500 m",
+              "4,25 m"
+            ],
+            "answer": 0,
+            "exp": "4,250 km = 4250 m (1 km = 1000 m)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un sac pèse 0,750 kg. Combien de grammes cela représente-t-il ?",
+            "choices": [
+              "750 g",
+              "75 g",
+              "7500 g",
+              "0,75 g"
+            ],
+            "answer": 0,
+            "exp": "0,750 kg = 750 g (1 kg = 1000 g)."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi 2,5 m et 2,50 m représentent-ils exactement la même longueur, malgré un chiffre supplémentaire dans la deuxième écriture ?",
+            "choices": [
+              "Ce ne sont pas les mêmes longueurs",
+              "Parce qu'ajouter un zéro à la fin de la partie décimale (après le dernier chiffre significatif) ne change jamais la valeur du nombre",
+              "2,50 m est toujours plus long que 2,5 m",
+              "Il est interdit d'écrire un zéro supplémentaire après la virgule"
+            ],
+            "answer": 1,
+            "exp": "Un zéro final ajouté à la partie décimale ne change pas la valeur : 2,5 et 2,50 représentent la même longueur exacte."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Une bouteille contient 1,250 L de jus. On en boit 0,5 L. Combien reste-t-il ?",
+            "choices": [
+              "0,750 L",
+              "0,8 L",
+              "1,75 L",
+              "0,75 L et 0,750 L sont tous les deux justes"
+            ],
+            "answer": 3,
+            "exp": "1,250 − 0,5 = 0,750 L, qui peut aussi s'écrire 0,75 L (équivalent)."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de centimètres y a-t-il dans 2,45 m ?",
+            "answer": "245",
+            "exp": "2,45 m = 245 cm (1 m = 100 cm)."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un coureur a parcouru 5,2 km en 3 tours. Est-il plus simple de travailler en kilomètres ou de tout convertir en mètres pour additionner avec une autre distance en mètres ?",
+            "choices": [
+              "Toujours en kilomètres, jamais en mètres",
+              "Cela dépend des mesures à combiner : il faut choisir l'unité commune la plus pratique, mètres ou kilomètres selon le contexte",
+              "Toujours en mètres, jamais en kilomètres",
+              "L'unité n'a aucune importance, peu importe ce qu'on additionne"
+            ],
+            "answer": 1,
+            "exp": "Le choix de l'unité commune dépend du contexte et des mesures à combiner : il faut choisir celle qui facilite le calcul."
           }
         ]
       },
@@ -15873,6 +16404,171 @@
             ],
             "answer": 1,
             "exp": "Ajouter un zéro à la fin d'un nombre décimal ne change pas sa valeur (6,40 = 6,4) : pour multiplier par 10, il faut vraiment décaler la virgule d'une position vers la droite, ce qui donne 64, pas 6,40."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien font 23 × 10 ?",
+            "answer": "230",
+            "exp": "23×10=230 : on ajoute un zéro."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Combien font 670 ÷ 10 ?",
+            "choices": [
+              "67",
+              "6,7",
+              "6700",
+              "670"
+            ],
+            "answer": 0,
+            "exp": "670÷10=67, car diviser par 10 décale la virgule d'une position vers la gauche."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un paquet de 1000 feuilles pèse 4500 g. Combien pèse une seule feuille (en grammes) ?",
+            "choices": [
+              "4,5",
+              "45",
+              "450",
+              "0,45"
+            ],
+            "answer": 0,
+            "exp": "4500÷1000=4,5 g par feuille."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un objet coûte 2,30 € à l'unité. Combien coûtent 100 objets identiques ?",
+            "choices": [
+              "230 €",
+              "23 €",
+              "2300 €",
+              "20,3 €"
+            ],
+            "answer": 0,
+            "exp": "2,30×100=230 € : multiplier par 100 décale la virgule de deux positions."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi multiplier par 10 revient-il simplement à décaler la virgule d'une position, plutôt qu'à faire un calcul long ?",
+            "choices": [
+              "Ce n'est jamais une méthode valable",
+              "Parce que multiplier par 10 dans notre système décimal revient exactement à faire « monter » chaque chiffre d'un rang, ce qui se voit en déplaçant la virgule d'une position vers la droite",
+              "Décaler la virgule change toujours le résultat de façon imprévisible",
+              "Multiplier par 10 ne change jamais un nombre décimal"
+            ],
+            "answer": 1,
+            "exp": "Dans le système décimal, multiplier par 10 fait monter chaque chiffre d'un rang, ce qui se traduit visuellement par un décalage de la virgule d'une position vers la droite."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève calcule 7,4 × 10 et trouve 7,40 en ajoutant juste un zéro à la fin sans bouger la virgule. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, 7,40 est le bon résultat",
+              "Multiplier par 10 déplace la virgule d'une position vers la droite : 7,4×10=74, pas 7,40 qui vaut la même chose que 7,4 (ajouter un zéro final ne change rien)",
+              "7,4×10 ne peut pas se calculer ainsi",
+              "Il fallait diviser au lieu de multiplier"
+            ],
+            "answer": 1,
+            "exp": "Multiplier par 10 déplace la virgule vers la droite : 7,4×10=74. Ajouter juste un zéro final (7,40) ne change pas la valeur, ce n'est pas l'effet recherché."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Multiplier un nombre décimal par 100 revient à décaler la virgule de deux positions vers la droite.",
+            "answer": true,
+            "exp": "100 = 10×10 : deux décalages successifs d'une position, soit un décalage total de deux positions."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien font 8,5 × 100 ?",
+            "answer": "850",
+            "exp": "8,5×100=850 : la virgule se décale de deux positions vers la droite."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Combien font 92 ÷ 1000 ?",
+            "choices": [
+              "0,092",
+              "9,2",
+              "0,92",
+              "920"
+            ],
+            "answer": 0,
+            "exp": "92÷1000=0,092 : la virgule se décale de trois positions vers la gauche."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi diviser par 100 revient-il à décaler la virgule de deux positions vers la gauche, à l'inverse de la multiplication ?",
+            "choices": [
+              "Ce n'est jamais l'inverse de la multiplication",
+              "Parce que diviser est l'opération inverse de multiplier : si multiplier par 100 décale vers la droite, diviser par 100 doit décaler dans le sens opposé, vers la gauche",
+              "Diviser par 100 décale toujours vers la droite aussi",
+              "Il n'existe aucune règle pour la division par 100"
+            ],
+            "answer": 1,
+            "exp": "Division et multiplication sont des opérations inverses : le décalage de virgule se fait dans des sens opposés pour ces deux opérations."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève calcule 3,2 ÷ 10 et trouve 32 en déplaçant la virgule du mauvais côté. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Diviser par 10 déplace la virgule vers la GAUCHE (0,32), pas vers la droite : il a confondu le sens du décalage avec celui de la multiplication",
+              "3,2÷10 ne peut pas se calculer",
+              "Il fallait multiplier au lieu de diviser"
+            ],
+            "answer": 1,
+            "exp": "Diviser par 10 décale la virgule vers la gauche (0,32), à l'inverse de la multiplication qui décale vers la droite : l'élève a confondu les deux sens."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien font 540 ÷ 10 ?",
+            "answer": "54",
+            "exp": "540÷10=54."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un objet pèse 1250 g. Combien pèse-t-il en kilogrammes (÷1000) ?",
+            "choices": [
+              "1,25",
+              "12,5",
+              "125",
+              "0,125"
+            ],
+            "answer": 0,
+            "exp": "1250÷1000=1,25 kg."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il utile de connaître cette astuce du décalage de virgule, plutôt que de toujours poser une multiplication ou division classique par 10, 100 ou 1000 ?",
+            "choices": [
+              "Ce n'est jamais plus utile que de poser l'opération",
+              "Parce que cette astuce permet un calcul mental quasi instantané, bien plus rapide qu'une opération posée, pour ces multiplications et divisions très fréquentes",
+              "Poser l'opération donne toujours un résultat plus précis",
+              "Cette astuce ne fonctionne que pour certains nombres"
+            ],
+            "answer": 1,
+            "exp": "Cette astuce permet un calcul mental instantané pour des opérations très fréquentes (×10, ×100, ×1000), bien plus rapide qu'une opération posée."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien font 1,6 × 1000 ?",
+            "answer": "1600",
+            "exp": "1,6×1000=1600 : la virgule se décale de trois positions vers la droite."
           }
         ]
       },
