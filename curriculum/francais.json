@@ -9061,6 +9061,195 @@
             ],
             "answer": 1,
             "exp": "Ce n'est pas le fait de parler d'une action qui détermine le type de phrase, mais ce que fait la phrase (informer, questionner, ou ordonner). « Le chat court » informe sur ce qui se passe : c'est une phrase déclarative, même si elle décrit une action."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "« Le ciel est bleu. » est une phrase de quel type ?",
+            "choices": [
+              "Déclarative",
+              "Interrogative",
+              "Impérative",
+              "Il n'y a pas de type"
+            ],
+            "answer": 0,
+            "exp": "Cette phrase donne une information, sans question ni ordre : c'est une phrase déclarative."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quelle ponctuation termine généralement une phrase déclarative ?",
+            "choices": [
+              "Un point d'exclamation",
+              "Un point d'interrogation",
+              "Un point final simple",
+              "Des points de suspension uniquement"
+            ],
+            "answer": 2,
+            "exp": "Une phrase déclarative se termine généralement par un simple point."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Transforme la phrase déclarative « Elle range sa chambre. » en phrase impérative.",
+            "choices": [
+              "Elle range sa chambre ?",
+              "Range ta chambre !",
+              "Elle ne range pas sa chambre.",
+              "Est-ce qu'elle range sa chambre ?"
+            ],
+            "answer": 1,
+            "exp": "La phrase impérative donne un ordre, sans sujet écrit : « Range ta chambre ! »"
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Transforme « Tu fermes la fenêtre. » en phrase interrogative.",
+            "choices": [
+              "Ferme la fenêtre !",
+              "Tu ne fermes pas la fenêtre.",
+              "Fermes-tu la fenêtre ?",
+              "Tu fermes la fenêtre !"
+            ],
+            "answer": 2,
+            "exp": "La phrase interrogative pose une question, avec un point d'interrogation : « Fermes-tu la fenêtre ? »"
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi une phrase impérative comme « Range ta chambre ! » n'a-t-elle pas besoin d'un sujet écrit, contrairement à une phrase déclarative ?",
+            "choices": [
+              "Ce n'est pas vrai, elle a toujours besoin d'un sujet écrit",
+              "Parce que dans un ordre, on s'adresse directement à la personne présente (« tu » sous-entendu), donc le sujet n'a pas besoin d'être répété",
+              "Les phrases impératives n'ont jamais de verbe",
+              "Il est interdit d'écrire un sujet dans une phrase impérative"
+            ],
+            "answer": 1,
+            "exp": "Dans une phrase impérative, le sujet (« tu », « vous »...) est sous-entendu car on s'adresse directement à la personne présente."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense que toutes les phrases qui parlent d'une action sont forcément des phrases impératives. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Une phrase déclarative peut aussi décrire une action (« Il court. »), sans donner d'ordre : ce qui définit l'impérative, c'est qu'elle donne un ordre, pas le simple fait de parler d'une action",
+              "Il n'existe pas de phrases parlant d'actions",
+              "Toutes les phrases sont impératives par définition"
+            ],
+            "answer": 1,
+            "exp": "Une phrase déclarative peut aussi décrire une action, sans donner un ordre : c'est la présence d'un ordre qui définit l'impérative."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Une phrase interrogative se termine toujours par un point d'interrogation.",
+            "answer": true,
+            "exp": "C'est la marque caractéristique d'une phrase interrogative : le point d'interrogation final."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Viens ici tout de suite ! » est une phrase de quel type ?",
+            "choices": [
+              "Déclarative",
+              "Interrogative",
+              "Impérative",
+              "Aucune de ces réponses"
+            ],
+            "answer": 2,
+            "exp": "Cette phrase donne un ordre direct : c'est une phrase impérative."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi certaines phrases interrogatives changent-elles l'ordre des mots par rapport à une phrase déclarative (« Tu viens » devient « Viens-tu ? ») ?",
+            "choices": [
+              "Il n'existe jamais de changement d'ordre",
+              "Parce que l'inversion du sujet et du verbe est une des façons de marquer qu'une phrase est une question à l'écrit comme à l'oral",
+              "Changer l'ordre des mots est toujours une erreur",
+              "L'ordre des mots n'a aucun rapport avec le type de phrase"
+            ],
+            "answer": 1,
+            "exp": "L'inversion du sujet et du verbe est une marque grammaticale classique de la phrase interrogative."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un élève écrit « Il fait beau » avec un point d'interrogation à la fin, pensant que ça pose une question. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, c'est bien une question",
+              "Sans inversion du sujet et du verbe ni marque interrogative, cette phrase reste une affirmation ; le simple point d'interrogation seul, sans la bonne structure, peut créer une confusion, mais la phrase « Il fait beau ? » peut à l'oral être une question si l'intonation monte",
+              "Un point d'interrogation ne change jamais le sens",
+              "Il faut toujours utiliser un point final, jamais d'interrogation"
+            ],
+            "answer": 1,
+            "exp": "À l'écrit, « Il fait beau ? » peut effectivement fonctionner comme une question grâce au simple point d'interrogation, notamment pour une question qui reprend une affirmation avec une intonation montante à l'oral."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quel est le rôle principal d'une phrase déclarative ?",
+            "choices": [
+              "Poser une question",
+              "Donner un ordre",
+              "Donner une information ou exprimer une idée",
+              "Exprimer une forte émotion uniquement"
+            ],
+            "answer": 2,
+            "exp": "La phrase déclarative sert à donner une information ou exprimer une idée, sans question ni ordre."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Est-ce que tu as faim ? » est une phrase de quel type ?",
+            "choices": [
+              "Déclarative",
+              "Interrogative",
+              "Impérative",
+              "Aucun type particulier"
+            ],
+            "answer": 1,
+            "exp": "« Est-ce que » introduit une question : c'est une phrase interrogative."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il utile de savoir reconnaître les différents types de phrases en lisant un texte ?",
+            "choices": [
+              "Ce n'est jamais utile",
+              "Parce que cela aide à comprendre l'intention de l'auteur (informer, questionner, ordonner) et à adapter sa lecture (intonation, ton) en conséquence",
+              "Les types de phrases n'ont aucun rapport avec la lecture",
+              "Il n'existe qu'un seul type de phrase en réalité"
+            ],
+            "answer": 1,
+            "exp": "Reconnaître le type de phrase aide à comprendre l'intention de l'auteur et à adapter son intonation lors de la lecture."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "« Ne cours pas dans les couloirs ! » est une phrase de quel type ?",
+            "choices": [
+              "Déclarative",
+              "Interrogative",
+              "Impérative",
+              "Exclamative uniquement"
+            ],
+            "answer": 2,
+            "exp": "Cette phrase donne un ordre (négatif) : c'est une phrase impérative."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Tu viendras demain. » et « Viendras-tu demain ? » décrivent-ils le même type de phrase ?",
+            "choices": [
+              "Oui, exactement le même type",
+              "Non : la première est déclarative, la seconde interrogative (elle pose une question)",
+              "Les deux sont impératives",
+              "Les deux sont exclamatives"
+            ],
+            "answer": 1,
+            "exp": "La première phrase affirme (déclarative), la seconde interroge (interrogative) : ce sont deux types différents."
           }
         ]
       },
@@ -9149,6 +9338,189 @@
             ],
             "answer": 1,
             "exp": "La négation standard à l'écrit s'écrit toujours en deux parties : « ne... pas ». Oublier le « ne » (même s'il est parfois omis à l'oral familier) est une erreur à l'écrit."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quelle est la forme négative de « Elle aime les bonbons » ?",
+            "choices": [
+              "Elle n'aime pas les bonbons",
+              "Elle aime pas les bonbons",
+              "Aime-t-elle les bonbons ?",
+              "Elle adore les bonbons"
+            ],
+            "answer": 0,
+            "exp": "La négation complète s'écrit avec « ne... pas » : « Elle n'aime pas les bonbons »."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quelle phrase est à la forme exclamative ?",
+            "choices": [
+              "Il fait beau.",
+              "Quelle belle journée !",
+              "Fait-il beau ?",
+              "Range ta chambre."
+            ],
+            "answer": 1,
+            "exp": "Le point d'exclamation et l'expression d'une émotion forte signalent une phrase exclamative."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Transforme « Il mange des légumes » à la forme négative.",
+            "choices": [
+              "Il mange pas des légumes",
+              "Il ne mange pas de légumes",
+              "Mange-t-il des légumes ?",
+              "Il ne mange de légumes"
+            ],
+            "answer": 1,
+            "exp": "La négation complète utilise « ne... pas », et « des » devient souvent « de » après une négation."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Transforme « C'est amusant » en phrase exclamative exprimant une forte surprise.",
+            "choices": [
+              "C'est amusant.",
+              "Comme c'est amusant !",
+              "Est-ce amusant ?",
+              "Ce n'est pas amusant."
+            ],
+            "answer": 1,
+            "exp": "L'ajout de « Comme » et du point d'exclamation transforme la phrase en exclamative, exprimant une émotion forte."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il important d'écrire les deux parties de la négation (« ne » et « pas »), même si à l'oral on en oublie parfois une ?",
+            "choices": [
+              "Ce n'est jamais important à l'écrit",
+              "Parce que l'écrit suit des règles plus strictes que l'oral, et la négation complète (« ne... pas ») est la forme correcte attendue en français écrit",
+              "L'oral et l'écrit suivent toujours exactement les mêmes règles",
+              "Il est interdit d'utiliser « ne » à l'écrit"
+            ],
+            "answer": 1,
+            "exp": "L'écrit suit des règles plus strictes que l'oral courant : la négation complète « ne... pas » est la forme correcte attendue."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève écrit : « Il mange pas de légumes » sans le « ne ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, c'est la bonne orthographe",
+              "Il a oublié la première partie de la négation : à l'écrit, il faut écrire « ne... pas » en entier, soit « Il ne mange pas de légumes »",
+              "« Pas » seul suffit toujours à l'écrit",
+              "Il fallait écrire « ne mange pas de légumes » sans sujet"
+            ],
+            "answer": 1,
+            "exp": "La négation complète à l'écrit nécessite les deux parties : « ne » et « pas », soit « il ne mange pas »."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "La négation complète à l'écrit s'écrit généralement avec « ne » et « pas » ensemble.",
+            "answer": true,
+            "exp": "C'est la forme standard de la négation en français écrit : « ne... pas »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Quel magnifique arc-en-ciel ! » est une phrase de quel type ?",
+            "choices": [
+              "Déclarative",
+              "Négative",
+              "Exclamative",
+              "Interrogative"
+            ],
+            "answer": 2,
+            "exp": "Le point d'exclamation et l'admiration exprimée signalent une phrase exclamative."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi une phrase peut-elle être à la fois négative ET exclamative en même temps (par exemple « Ne pars pas comme ça ! ») ?",
+            "choices": [
+              "C'est impossible, une phrase n'a toujours qu'un seul type à la fois",
+              "Parce que la négation (forme) et l'exclamation (type) ne sont pas incompatibles : une phrase peut combiner plusieurs caractéristiques grammaticales à la fois",
+              "Une phrase négative ne peut jamais être exclamative",
+              "Il faut toujours choisir entre négation et exclamation"
+            ],
+            "answer": 1,
+            "exp": "La forme négative et le type exclamatif peuvent se combiner dans une même phrase, car ils ne s'opposent pas grammaticalement."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève transforme « Elle a peur » en « Elle a pas peur » à l'oral, et l'écrit ainsi dans son texte. Quel est le problème ?",
+            "choices": [
+              "Aucun problème, c'est la bonne orthographe écrite",
+              "À l'écrit, il faut compléter la négation avec « ne » : « Elle n'a pas peur », même si « ne » est parfois omis à l'oral familier",
+              "« Pas » seul est toujours correct, à l'oral comme à l'écrit",
+              "Il fallait dire « Elle a très peur »"
+            ],
+            "answer": 1,
+            "exp": "Même si « ne » est parfois omis à l'oral familier, l'écrit standard exige la négation complète : « Elle n'a pas peur »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Quelle phrase exprime une négation complète correcte ?",
+            "choices": [
+              "Je veux pas de dessert",
+              "Je ne veux pas de dessert",
+              "Je veux de dessert pas",
+              "Pas je veux de dessert"
+            ],
+            "answer": 1,
+            "exp": "« Je ne veux pas de dessert » utilise correctement les deux parties de la négation."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi les phrases exclamatives sont-elles souvent utilisées pour exprimer une émotion forte comme la surprise, la joie ou la colère ?",
+            "choices": [
+              "Elles n'expriment jamais d'émotion particulière",
+              "Parce que leur structure (souvent avec « quel », « comme », et le point d'exclamation) est spécialement conçue pour marquer une intensité émotionnelle",
+              "Les phrases exclamatives sont toujours tristes",
+              "Il est interdit d'exprimer des émotions par écrit"
+            ],
+            "answer": 1,
+            "exp": "La structure des phrases exclamatives (mots comme « quel », « comme », point d'exclamation) est conçue pour marquer une intensité émotionnelle."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Transforme « Tu as de la chance » en phrase exclamative.",
+            "choices": [
+              "Tu as de la chance ?",
+              "Comme tu as de la chance !",
+              "Tu n'as pas de chance.",
+              "As-tu de la chance ?"
+            ],
+            "answer": 1,
+            "exp": "L'ajout de « Comme » et du point d'exclamation transforme la phrase en exclamative."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Je ne sais pas » contient combien de mots de négation ?",
+            "choices": [
+              "Un seul",
+              "Deux : « ne » et « pas »",
+              "Trois",
+              "Aucun"
+            ],
+            "answer": 1,
+            "exp": "La négation complète utilise deux mots : « ne » et « pas »."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Une phrase exclamative exprime une émotion forte et se termine par un point d'exclamation.",
+            "answer": true,
+            "exp": "C'est la définition même de la phrase exclamative : exprimer une émotion intense."
           }
         ]
       },
@@ -9237,6 +9609,195 @@
             ],
             "answer": 1,
             "exp": "« Dans le jardin » répond à la question « où ? », pas à « qu'est-ce qui pousse ? » : c'est un complément de lieu, pas le sujet. Le vrai sujet, qui fait l'action de pousser, est « les fleurs »."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans « La pluie tombe », quel est le verbe ?",
+            "choices": [
+              "La",
+              "Pluie",
+              "Tombe",
+              "Il n'y a pas de verbe"
+            ],
+            "answer": 2,
+            "exp": "« Tombe » est le verbe conjugué : il exprime l'action de la phrase."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans « Les enfants jouent dans la cour », quel est le sujet ?",
+            "choices": [
+              "Les enfants",
+              "Dans la cour",
+              "Jouent",
+              "Cour"
+            ],
+            "answer": 0,
+            "exp": "« Les enfants » fait l'action de jouer : c'est le sujet de la phrase."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Trouve le sujet dans : « Le petit chien noir aboie fort. »",
+            "choices": [
+              "Fort",
+              "Aboie",
+              "Le petit chien noir",
+              "Noir"
+            ],
+            "answer": 2,
+            "exp": "« Le petit chien noir » est le groupe qui fait l'action d'aboyer : c'est le sujet, même s'il contient plusieurs mots."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Trouve le verbe dans : « Dans la forêt, les loups hurlent à la lune. »",
+            "choices": [
+              "Dans",
+              "Loups",
+              "Hurlent",
+              "Lune"
+            ],
+            "answer": 2,
+            "exp": "« Hurlent » est le verbe conjugué, qui exprime l'action réalisée par les loups."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la question « qui est-ce qui + verbe ? » permet-elle de retrouver le sujet d'une phrase de façon fiable ?",
+            "choices": [
+              "Elle ne fonctionne jamais vraiment",
+              "Parce qu'elle cible directement celui qui fait l'action du verbe, peu importe où il se trouve placé dans la phrase",
+              "Le sujet se trouve toujours au début de la phrase sans exception",
+              "Cette question ne sert à rien pour trouver le sujet"
+            ],
+            "answer": 1,
+            "exp": "Cette question cible le rôle même du sujet (celui qui fait l'action), ce qui fonctionne quelle que soit sa position dans la phrase."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour trouver le sujet de « Dans le jardin, les fleurs poussent », un élève répond « dans le jardin ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "« Dans le jardin » répond à la question « où ? », pas « qui est-ce qui pousse ? » : le vrai sujet est « les fleurs »",
+              "« Les fleurs » n'est jamais le sujet possible",
+              "Il n'y a pas de sujet dans cette phrase"
+            ],
+            "answer": 1,
+            "exp": "Le sujet répond à « qui est-ce qui + verbe ? » (ici « les fleurs »), pas à la question « où ? » qui désigne un complément de lieu."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Le verbe conjugué est l'élément de la phrase qui exprime l'action ou l'état.",
+            "answer": true,
+            "exp": "C'est la fonction principale du verbe dans une phrase : exprimer une action ou un état."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « Soudain, le ciel s'obscurcit », quel est le sujet ?",
+            "choices": [
+              "Soudain",
+              "Le ciel",
+              "S'obscurcit",
+              "Il n'y a pas de sujet"
+            ],
+            "answer": 1,
+            "exp": "« Le ciel » fait l'action de s'obscurcir : c'est le sujet, malgré la présence de « soudain » avant."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi certains mots comme « soudain » ou « hier » ne sont-ils jamais le sujet d'une phrase, malgré leur position parfois en tête de phrase ?",
+            "choices": [
+              "Ils sont toujours le sujet quand ils sont en tête de phrase",
+              "Parce qu'ils répondent à des questions de temps (« quand ? ») et non à « qui est-ce qui + verbe ? », qui seule détermine le sujet",
+              "Le sujet est toujours le premier mot de la phrase sans exception",
+              "Ces mots n'ont jamais de sens dans une phrase"
+            ],
+            "answer": 1,
+            "exp": "Ces mots de temps répondent à « quand ? », pas à « qui est-ce qui + verbe ? » : ils ne peuvent donc pas être le sujet, même en tête de phrase."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève, face à « Court le lièvre à travers la plaine », répond que le sujet est « court » car c'est le premier mot. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, le sujet est toujours le premier mot",
+              "Il confond position et fonction : « court » est le verbe ; en posant « qui est-ce qui court ? », on trouve le vrai sujet « le lièvre », même s'il est placé après le verbe",
+              "« Court » est toujours le sujet dans toutes les phrases",
+              "Cette phrase n'a ni sujet ni verbe"
+            ],
+            "answer": 1,
+            "exp": "La position dans la phrase ne détermine pas le sujet ; il faut poser la question « qui est-ce qui + verbe ? » pour le trouver, même si le sujet est après le verbe (sujet inversé)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « Les abeilles butinent les fleurs du jardin », quel est le verbe ?",
+            "choices": [
+              "Les abeilles",
+              "Butinent",
+              "Les fleurs",
+              "Du jardin"
+            ],
+            "answer": 1,
+            "exp": "« Butinent » est le verbe conjugué, exprimant l'action des abeilles."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il utile de trouver d'abord le verbe avant de chercher le sujet d'une phrase ?",
+            "choices": [
+              "Ce n'est jamais utile de procéder dans cet ordre",
+              "Parce que le sujet se trouve précisément en posant la question « qui est-ce qui + VERBE ? » : il faut donc connaître le verbe avant de pouvoir poser correctement cette question",
+              "Le sujet se trouve toujours avant même de connaître le verbe",
+              "Il n'existe aucun ordre logique pour cette recherche"
+            ],
+            "answer": 1,
+            "exp": "La question pour trouver le sujet nécessite de connaître le verbe (« qui est-ce qui + verbe ? ») : il est donc logique de chercher le verbe en premier."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans « Le vent souffle fort ce soir », quel groupe de mots répond à « qui est-ce qui souffle ? » ?",
+            "choices": [
+              "Fort",
+              "Ce soir",
+              "Le vent",
+              "Souffle"
+            ],
+            "answer": 2,
+            "exp": "« Le vent » répond à la question « qui est-ce qui souffle ? » : c'est le sujet."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans une phrase, peut-il y avoir plusieurs verbes conjugués différents ?",
+            "choices": [
+              "Non, jamais plus d'un verbe par phrase",
+              "Oui, par exemple dans une phrase avec plusieurs actions reliées (« Il mange et il boit »)",
+              "Oui, mais seulement dans des phrases très courtes",
+              "Non, un verbe conjugué est toujours interdit dans une phrase complexe"
+            ],
+            "answer": 1,
+            "exp": "Une phrase peut contenir plusieurs verbes conjugués, notamment quand plusieurs actions sont reliées entre elles."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « Le petit garçon rit aux éclats », quel est le sujet ?",
+            "choices": [
+              "Aux éclats",
+              "Rit",
+              "Le petit garçon",
+              "Petit"
+            ],
+            "answer": 2,
+            "exp": "« Le petit garçon » répond à « qui est-ce qui rit ? » : c'est le sujet, même composé de plusieurs mots."
           }
         ]
       },
@@ -9325,6 +9886,189 @@
             ],
             "answer": 1,
             "exp": "Le sujet n'est pas limité à un seul mot : c'est tout le groupe qui répond à la question « qui est-ce qui + verbe ? ». Ici, « le petit chat noir » dans son ensemble est le sujet, pas seulement le nom « chat »."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans « Il mange une pomme », quel type de sujet est « il » ?",
+            "choices": [
+              "Un nom propre",
+              "Un pronom",
+              "Un groupe nominal complexe",
+              "Un adjectif"
+            ],
+            "answer": 1,
+            "exp": "« Il » est un pronom qui remplace un nom déjà mentionné ou connu."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans « Léa et son frère jouent dans le jardin », le sujet est :",
+            "choices": [
+              "Léa seule",
+              "Son frère seul",
+              "Le jardin",
+              "Léa et son frère ensemble"
+            ],
+            "answer": 3,
+            "exp": "Le sujet complet est « Léa et son frère », un groupe formé de deux éléments reliés par « et »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « Les enfants de la classe voisine chantent », pourquoi le verbe est-il au pluriel (chantent) ?",
+            "choices": [
+              "Par hasard, sans raison",
+              "Parce que le sujet « les enfants de la classe voisine » est pluriel (plusieurs enfants)",
+              "Parce que « classe » est au singulier",
+              "Parce que le verbe est toujours au pluriel"
+            ],
+            "answer": 1,
+            "exp": "Le sujet « les enfants » étant pluriel, le verbe s'accorde logiquement au pluriel."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « Max », sujet d'une phrase, quel type de sujet est-ce ?",
+            "choices": [
+              "Un pronom",
+              "Un nom propre",
+              "Un groupe nominal avec adjectif",
+              "Une phrase entière"
+            ],
+            "answer": 1,
+            "exp": "« Max » est un nom propre, qui peut fonctionner comme sujet d'une phrase."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il utile de savoir qu'un sujet peut prendre plusieurs formes différentes (nom seul, pronom, groupe nominal complexe) ?",
+            "choices": [
+              "Ce n'est jamais utile de le savoir",
+              "Parce que cela aide à reconnaître le sujet même quand il ne se présente pas sous sa forme la plus simple, et à bien l'identifier dans des phrases variées",
+              "Un sujet n'a toujours qu'une seule forme possible",
+              "Le sujet n'a jamais vraiment de forme précise"
+            ],
+            "answer": 1,
+            "exp": "Connaître la diversité des formes possibles du sujet aide à le reconnaître dans des phrases variées, pas seulement sous sa forme la plus simple."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense que le sujet d'une phrase est toujours composé d'un seul mot. Face à « Le vieux chat du voisin dort », quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Le sujet peut être un groupe de plusieurs mots (« le vieux chat du voisin »), pas uniquement un seul mot isolé",
+              "« Le vieux chat du voisin » ne peut jamais être un sujet",
+              "Cette phrase n'a pas de sujet"
+            ],
+            "answer": 1,
+            "exp": "Un sujet peut être un groupe nominal entier composé de plusieurs mots, pas nécessairement un seul mot isolé."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un pronom comme « il », « elle » ou « ils » peut fonctionner comme sujet d'une phrase.",
+            "answer": true,
+            "exp": "Les pronoms personnels peuvent très bien occuper la fonction de sujet dans une phrase."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans « Nager est agréable », quel est le sujet ?",
+            "choices": [
+              "Agréable",
+              "Est",
+              "Nager",
+              "Il n'y a pas de sujet"
+            ],
+            "answer": 2,
+            "exp": "« Nager » (un verbe à l'infinitif utilisé comme un nom) peut lui-même être le sujet d'une phrase."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un groupe nominal sujet peut-il contenir un adjectif, un complément du nom, et pourtant rester UN SEUL sujet (comme « le grand chat noir du voisin ») ?",
+            "choices": [
+              "Ce n'est jamais le cas, chaque mot est un sujet séparé",
+              "Parce que tous ces mots s'organisent ensemble autour d'un seul nom noyau (« chat »), formant un seul groupe qui occupe ensemble la fonction de sujet",
+              "Un groupe nominal ne peut jamais être sujet",
+              "Il faut toujours séparer les mots du sujet en plusieurs sujets différents"
+            ],
+            "answer": 1,
+            "exp": "Tous les mots du groupe s'organisent autour d'un seul nom noyau, formant ensemble un seul sujet, même si le groupe contient plusieurs mots."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans « Toi et moi irons au cinéma », le sujet « toi et moi » correspond à quel pronom équivalent ?",
+            "choices": [
+              "Il",
+              "Elle",
+              "Nous",
+              "Ils"
+            ],
+            "answer": 2,
+            "exp": "« Toi et moi » équivaut au pronom « nous », incluant la personne qui parle et celle à qui elle s'adresse."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « Chanter me détend », quel est le sujet du verbe « détend » ?",
+            "choices": [
+              "Me",
+              "Détend",
+              "Chanter",
+              "Il n'y a pas de sujet"
+            ],
+            "answer": 2,
+            "exp": "« Chanter » (verbe à l'infinitif utilisé comme un nom) est ici le sujet du verbe « détend »."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, dans « Le chat et le chien jouent ensemble », le verbe est-il au pluriel même si chaque animal est au singulier pris séparément ?",
+            "choices": [
+              "C'est une erreur, le verbe devrait être au singulier",
+              "Parce que les deux sujets singuliers reliés par « et » forment ensemble un sujet pluriel (deux animaux agissent ensemble)",
+              "Le chat et le chien ne peuvent jamais être sujets ensemble",
+              "Le verbe est toujours au singulier par défaut"
+            ],
+            "answer": 1,
+            "exp": "Deux sujets singuliers reliés par « et » forment un sujet pluriel, ce qui explique l'accord du verbe au pluriel."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans « Cela me plaît beaucoup », quel type de sujet est « cela » ?",
+            "choices": [
+              "Un nom propre",
+              "Un pronom démonstratif",
+              "Un adjectif",
+              "Un verbe"
+            ],
+            "answer": 1,
+            "exp": "« Cela » est un pronom démonstratif, qui peut fonctionner comme sujet."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « Les trois petits cochons construisent leur maison », quel type de sujet est « les trois petits cochons » ?",
+            "choices": [
+              "Un pronom seul",
+              "Un nom propre seul",
+              "Un groupe nominal avec déterminant, nombre et adjectif",
+              "Un verbe"
+            ],
+            "answer": 2,
+            "exp": "Ce sujet est un groupe nominal riche, combinant déterminant, nombre et adjectif autour du nom « cochons »."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un sujet peut être formé d'un seul mot (pronom, nom propre) ou d'un groupe de plusieurs mots.",
+            "answer": true,
+            "exp": "Les deux formes sont possibles : un sujet simple (un mot) ou un sujet composé de plusieurs mots (groupe nominal)."
           }
         ]
       },
@@ -9413,6 +10157,189 @@
             ],
             "answer": 1,
             "exp": "Les noms propres, dont les noms de villes, s'écrivent toujours avec une majuscule initiale, peu importe leur position dans la phrase : « Paris » doit donc toujours garder sa majuscule."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Lequel de ces mots est un nom commun ?",
+            "choices": [
+              "Paris",
+              "Table",
+              "Léa",
+              "France"
+            ],
+            "answer": 1,
+            "exp": "« Table » désigne une chose générale, sans majuscule nécessaire : c'est un nom commun."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quel déterminant pourrait accompagner le nom commun « voiture » ?",
+            "choices": [
+              "La",
+              "Léa",
+              "Paris",
+              "Minou"
+            ],
+            "answer": 0,
+            "exp": "« La » est un déterminant qui peut précéder le nom commun « voiture » (« la voiture »)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans la phrase « Mon chien Rex aboie fort », lequel est un nom propre ?",
+            "choices": [
+              "Chien",
+              "Rex",
+              "Fort",
+              "Mon"
+            ],
+            "answer": 1,
+            "exp": "« Rex » est le nom propre de l'animal, avec une majuscule, contrairement à « chien » qui est un nom commun."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « La maîtresse s'appelle Madame Dupont », lequel est un nom propre ?",
+            "choices": [
+              "Maîtresse",
+              "Madame Dupont",
+              "S'appelle",
+              "La"
+            ],
+            "answer": 1,
+            "exp": "« Madame Dupont » est le nom propre de la personne, avec majuscule."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un nom propre s'écrit-il toujours avec une majuscule, même au milieu d'une phrase ?",
+            "choices": [
+              "Ce n'est jamais le cas pour un nom propre",
+              "Parce que la majuscule signale qu'il s'agit d'un nom désignant un être ou un lieu unique et particulier, contrairement au nom commun qui désigne une catégorie générale",
+              "La majuscule n'a aucun rapport avec les noms propres",
+              "Tous les noms s'écrivent toujours avec une majuscule"
+            ],
+            "answer": 1,
+            "exp": "La majuscule signale le caractère unique et particulier d'un nom propre, contrairement au nom commun qui désigne une catégorie générale."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève écrit « j'habite à paris » sans majuscule à « paris ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, pas besoin de majuscule",
+              "« Paris » est un nom propre (nom de ville) et doit toujours s'écrire avec une majuscule : « Paris »",
+              "« Paris » n'est pas un nom propre",
+              "Il fallait écrire tout le mot en majuscules"
+            ],
+            "answer": 1,
+            "exp": "« Paris », nom de ville, est un nom propre qui doit toujours commencer par une majuscule."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un nom propre désigne un être ou un lieu unique, et s'écrit toujours avec une majuscule.",
+            "answer": true,
+            "exp": "C'est la caractéristique essentielle d'un nom propre : désigner quelque chose d'unique, marqué par une majuscule."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Lequel de ces mots est un déterminant ?",
+            "choices": [
+              "Chat",
+              "Le",
+              "Dort",
+              "Noir"
+            ],
+            "answer": 1,
+            "exp": "« Le » est un déterminant, qui accompagne toujours un nom (« le chat »)."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un nom commun a-t-il généralement besoin d'un déterminant pour former un groupe nominal complet (« le chat » plutôt que juste « chat ») ?",
+            "choices": [
+              "Un nom commun n'a jamais besoin de déterminant",
+              "Parce qu'en français, le nom commun seul, sans déterminant, sonne souvent incomplet ou a un sens différent (par exemple dans une liste) : le déterminant précise de quoi on parle",
+              "Le déterminant est toujours facultatif et inutile",
+              "Seuls les noms propres ont besoin de déterminants"
+            ],
+            "answer": 1,
+            "exp": "En français, le nom commun a généralement besoin d'un déterminant pour former une expression complète et naturelle."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève écrit « Mon Chien s'appelle Rex » avec une majuscule à « Chien ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, « chien » doit avoir une majuscule",
+              "« Chien » est un nom commun (il désigne une catégorie générale d'animaux) et ne doit pas avoir de majuscule, contrairement à « Rex » qui est le nom propre de cet animal précis",
+              "« Chien » est en fait un nom propre",
+              "Les deux mots devraient être en minuscules"
+            ],
+            "answer": 1,
+            "exp": "« Chien » est un nom commun désignant une catégorie générale, sans majuscule ; seul « Rex », le nom propre de cet animal précis, prend une majuscule."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Lequel de ces groupes est correctement formé avec un déterminant et un nom commun ?",
+            "choices": [
+              "Une maison",
+              "Maison une",
+              "Léa maison",
+              "La Léa"
+            ],
+            "answer": 0,
+            "exp": "« Une maison » associe correctement un déterminant (« une ») et un nom commun (« maison »)."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi les noms de pays, de villes et de personnes sont-ils tous des noms propres, malgré leurs catégories très différentes ?",
+            "choices": [
+              "Ils n'ont en fait rien en commun",
+              "Parce qu'ils désignent tous un élément unique et particulier (ce pays précis, cette ville précise, cette personne précise), ce qui est la définition même d'un nom propre",
+              "Seuls les noms de personnes sont de vrais noms propres",
+              "Les noms de pays ne sont jamais des noms propres"
+            ],
+            "answer": 1,
+            "exp": "Tous ces noms désignent un élément unique et particulier, ce qui correspond exactement à la définition d'un nom propre, malgré leurs catégories variées."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans « Le Soleil brille », l'élève écrit « Soleil » avec une majuscule en pensant qu'il s'agit toujours d'un nom propre. Est-ce juste ?",
+            "choices": [
+              "Oui, « soleil » est toujours un nom propre",
+              "Non, dans l'usage courant, « soleil » est un nom commun (sans majuscule) ; la majuscule n'est utilisée que dans certains contextes scientifiques précis",
+              "Oui, tous les mots astronomiques sont des noms propres",
+              "Non, « soleil » ne devrait jamais être écrit du tout"
+            ],
+            "answer": 1,
+            "exp": "Dans l'usage courant, « soleil » est un nom commun ; la majuscule n'est réservée qu'à des contextes scientifiques spécifiques (le Soleil, notre étoile, en astronomie)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Quel déterminant conviendrait pour accompagner le nom commun pluriel « enfants » ?",
+            "choices": [
+              "Le",
+              "La",
+              "Les",
+              "Un"
+            ],
+            "answer": 2,
+            "exp": "« Les » est un déterminant pluriel adapté à « enfants », lui-même au pluriel."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Les noms de jours de la semaine (lundi, mardi...) s'écrivent avec une minuscule en français, contrairement aux noms propres.",
+            "answer": true,
+            "exp": "Contrairement à l'anglais, les jours de la semaine en français ne prennent pas de majuscule, car ce sont des noms communs."
           }
         ]
       },
@@ -9501,6 +10428,195 @@
             ],
             "answer": 1,
             "exp": "C'est le nom noyau qui détermine le genre et le nombre de tout le groupe : « chat » étant masculin, le déterminant doit être « le », pas « la ». Tout le groupe (déterminant et adjectifs) doit s'accorder avec le nom noyau, jamais l'inverse."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans le groupe nominal « la petite souris grise », quel est le nom noyau ?",
+            "choices": [
+              "La",
+              "Petite",
+              "Souris",
+              "Grise"
+            ],
+            "answer": 2,
+            "exp": "« Souris » est le nom principal autour duquel s'organisent le déterminant et les adjectifs."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quel adjectif pourrait compléter le groupe nominal « un ... chapeau » (au masculin) ?",
+            "choices": [
+              "Belle",
+              "Grande",
+              "Joli",
+              "Jolie"
+            ],
+            "answer": 2,
+            "exp": "« Joli » est un adjectif masculin qui s'accorde avec « chapeau » (nom masculin)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « les grands arbres verts », si on enlève « grands » et « verts », quel est le groupe minimal qui garde du sens ?",
+            "choices": [
+              "Les",
+              "Les arbres",
+              "Grands verts",
+              "Arbres verts"
+            ],
+            "answer": 1,
+            "exp": "« Les arbres » reste un groupe nominal complet avec déterminant et nom noyau, même sans les adjectifs."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « une jolie petite maison bleue », combien de mots précisent (adjectifs) le nom noyau « maison » ?",
+            "choices": [
+              "1",
+              "2",
+              "3",
+              "0"
+            ],
+            "answer": 2,
+            "exp": "« Jolie », « petite » et « bleue » sont trois adjectifs qui précisent le nom « maison »."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi appelle-t-on « noyau » le nom principal d'un groupe nominal ?",
+            "choices": [
+              "Ce terme n'a aucune signification particulière",
+              "Parce que, comme le noyau d'un fruit, c'est l'élément central autour duquel s'organisent tous les autres mots du groupe (déterminant, adjectifs)",
+              "Le noyau est toujours le premier mot du groupe",
+              "Il n'existe pas de noyau dans un groupe nominal"
+            ],
+            "answer": 1,
+            "exp": "Comme le noyau d'un fruit est au centre, le nom noyau est l'élément central du groupe nominal, autour duquel s'organisent les autres mots."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève accorde l'adjectif d'après le déterminant plutôt que d'après le nom noyau, et écrit « la chien noir » en pensant que « la » impose le féminin partout. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Le déterminant doit lui-même s'accorder avec le nom (« chien » est masculin, donc « le chien »), ce n'est pas le déterminant qui impose le genre, mais le nom noyau",
+              "« Chien » est en fait féminin",
+              "Il n'y a pas d'erreur dans cette phrase"
+            ],
+            "answer": 1,
+            "exp": "C'est le genre du nom noyau qui déterminant l'accord de tout le groupe (déterminant et adjectifs), pas l'inverse."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Dans un groupe nominal, le déterminant et les adjectifs s'accordent avec le nom noyau.",
+            "answer": true,
+            "exp": "Le nom noyau impose son genre et son nombre à tous les autres mots du groupe nominal."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « ces beaux papillons colorés », quel est le nom noyau ?",
+            "choices": [
+              "Ces",
+              "Beaux",
+              "Papillons",
+              "Colorés"
+            ],
+            "answer": 2,
+            "exp": "« Papillons » est le nom principal du groupe, autour duquel s'organisent déterminant et adjectifs."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un groupe nominal peut-il fonctionner même sans adjectif (« le chat »), mais pas sans nom noyau ?",
+            "choices": [
+              "Un groupe nominal peut parfaitement fonctionner sans nom noyau",
+              "Parce que l'adjectif n'est qu'un ajout facultatif pour préciser, alors que le nom noyau est l'élément essentiel qui donne son sens de base au groupe",
+              "L'adjectif est toujours plus important que le nom noyau",
+              "Un groupe nominal n'a jamais besoin de nom"
+            ],
+            "answer": 1,
+            "exp": "L'adjectif est un ajout facultatif, tandis que le nom noyau est l'élément essentiel sans lequel le groupe nominal perdrait son sens."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans « la très grande tour », quel mot précise l'adjectif « grande » lui-même ?",
+            "choices": [
+              "La",
+              "Tour",
+              "Très",
+              "Aucun mot ne le précise"
+            ],
+            "answer": 2,
+            "exp": "« Très » est un adverbe qui intensifie l'adjectif « grande », renforçant son sens."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « un vieux pull en laine », quel est le nom noyau ?",
+            "choices": [
+              "Vieux",
+              "Pull",
+              "En laine",
+              "Un"
+            ],
+            "answer": 1,
+            "exp": "« Pull » est le nom principal autour duquel s'organisent le déterminant, l'adjectif et le complément du nom."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi un groupe nominal comme « le grand chat noir du voisin » reste-t-il UN SEUL groupe, malgré sa longueur ?",
+            "choices": [
+              "Ce n'est pas vrai, chaque mot forme son propre groupe séparé",
+              "Parce que tous les mots s'organisent autour d'un seul nom noyau (« chat »), formant ensemble une seule unité de sens",
+              "Un groupe nominal ne peut jamais être long",
+              "Il faut toujours séparer chaque adjectif en groupe distinct"
+            ],
+            "answer": 1,
+            "exp": "Malgré sa longueur, ce groupe reste unifié autour d'un seul nom noyau (« chat »), ce qui en fait un seul groupe nominal cohérent."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « mes nouvelles chaussures de sport », quel est le nom noyau ?",
+            "choices": [
+              "Mes",
+              "Nouvelles",
+              "Chaussures",
+              "De sport"
+            ],
+            "answer": 2,
+            "exp": "« Chaussures » est le nom principal du groupe nominal."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans « cette drôle de petite histoire », quel est le nom noyau ?",
+            "choices": [
+              "Cette",
+              "Drôle",
+              "Histoire",
+              "Petite"
+            ],
+            "answer": 2,
+            "exp": "« Histoire » est le nom principal du groupe, malgré la présence de plusieurs mots qui le précèdent."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un groupe nominal peut-il contenir plus d'un adjectif en même temps ?",
+            "choices": [
+              "Non, jamais plus d'un adjectif",
+              "Oui, plusieurs adjectifs peuvent préciser le même nom noyau (« un grand chat noir »)",
+              "Oui, mais seulement deux maximum",
+              "Non, les adjectifs sont toujours interdits ensemble"
+            ],
+            "answer": 1,
+            "exp": "Un groupe nominal peut contenir plusieurs adjectifs qui précisent ensemble le même nom noyau."
           }
         ]
       },
@@ -9589,6 +10705,189 @@
             ],
             "answer": 1,
             "exp": "L'adjectif épithète doit toujours s'accorder en genre et en nombre avec le nom qu'il précise : « fille » étant féminin, l'adjectif doit aussi être au féminin, « joyeuse »."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans « une histoire passionnante », quel mot est l'adjectif épithète ?",
+            "choices": [
+              "Une",
+              "Histoire",
+              "Passionnante",
+              "Il n'y en a pas"
+            ],
+            "answer": 2,
+            "exp": "« Passionnante » précise le nom « histoire » : c'est l'adjectif épithète."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Accorde l'adjectif : « un ... livre » (intéressant, au masculin singulier)",
+            "choices": [
+              "intéressante",
+              "intéressants",
+              "intéressant",
+              "intéressantes"
+            ],
+            "answer": 2,
+            "exp": "« Livre » est masculin singulier : l'adjectif reste « intéressant » sans marque supplémentaire."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Combien d'adjectifs épithètes précisent le nom dans « la grande maison blanche et moderne » ?",
+            "choices": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "answer": 2,
+            "exp": "« Grande », « blanche » et « moderne » sont trois adjectifs qui précisent « maison »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Accorde l'adjectif : « des fleurs ... » (magnifique, au féminin pluriel)",
+            "choices": [
+              "magnifique",
+              "magnifiques",
+              "magnifiqueuse",
+              "magnifiqueuses"
+            ],
+            "answer": 1,
+            "exp": "« Fleurs » est féminin pluriel : l'adjectif prend un -s, donnant « magnifiques »."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi peut-on toujours supprimer un adjectif épithète sans rendre la phrase grammaticalement incorrecte, même si le sens change un peu ?",
+            "choices": [
+              "Ce n'est pas vrai, supprimer un adjectif rend toujours la phrase fausse",
+              "Parce que l'adjectif épithète est un ajout facultatif qui précise le nom, mais n'est pas indispensable à la structure grammaticale de base de la phrase",
+              "Un adjectif épithète est toujours obligatoire",
+              "Supprimer un adjectif change toujours le sujet de la phrase"
+            ],
+            "answer": 1,
+            "exp": "L'adjectif épithète est une précision facultative : la supprimer ne casse pas la structure grammaticale de base, même si le sens devient moins précis."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève écrit « une fille joyeux » en oubliant d'accorder l'adjectif. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, « joyeux » reste identique au féminin",
+              "« Fille » est féminin, donc l'adjectif doit s'accorder au féminin : « joyeuse », pas « joyeux » qui est la forme masculine",
+              "« Fille » est en fait masculin",
+              "Il n'existe pas de forme féminine pour « joyeux »"
+            ],
+            "answer": 1,
+            "exp": "L'adjectif doit s'accorder en genre avec le nom qu'il qualifie : « fille » (féminin) demande « joyeuse », pas « joyeux »."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un adjectif épithète s'accorde en genre et en nombre avec le nom qu'il qualifie.",
+            "answer": true,
+            "exp": "C'est la règle fondamentale de l'accord de l'adjectif épithète avec son nom."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « un petit garçon courageux », où se place l'adjectif épithète « petit » par rapport au nom ?",
+            "choices": [
+              "Toujours après le nom",
+              "Avant le nom",
+              "Cela n'a pas d'importance, la place ne change jamais rien",
+              "Au milieu du nom"
+            ],
+            "answer": 1,
+            "exp": "« Petit » se place avant le nom « garçon », comme c'est souvent le cas pour certains adjectifs courts et courants."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi certains adjectifs comme « courageux » se placent-ils plutôt après le nom, alors que d'autres comme « petit » se placent avant ?",
+            "choices": [
+              "Il n'existe aucune règle, c'est totalement aléatoire",
+              "Parce que l'usage du français a établi des habitudes différentes selon le type d'adjectif, même si ce n'est pas une règle absolue et sans exception",
+              "Tous les adjectifs se placent toujours avant le nom",
+              "Tous les adjectifs se placent toujours après le nom"
+            ],
+            "answer": 1,
+            "exp": "L'usage du français établit des tendances (pas des règles absolues) sur la position de certains types d'adjectifs par rapport au nom."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Accorde l'adjectif : « des chats ... » (noir, au masculin pluriel)",
+            "choices": [
+              "noir",
+              "noirs",
+              "noire",
+              "noires"
+            ],
+            "answer": 1,
+            "exp": "« Chats » est masculin pluriel : l'adjectif prend un -s, donnant « noirs »."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans « un énorme et terrifiant dragon », combien d'adjectifs épithètes précisent « dragon » ?",
+            "choices": [
+              "1",
+              "2",
+              "3",
+              "0"
+            ],
+            "answer": 1,
+            "exp": "« Énorme » et « terrifiant » sont deux adjectifs qui précisent « dragon »."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève écrit « les chiens blanc » en oubliant d'accorder l'adjectif au pluriel. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, « blanc » reste identique au pluriel",
+              "« Chiens » est pluriel, donc l'adjectif doit aussi prendre la marque du pluriel : « blancs », pas « blanc »",
+              "« Chiens » est en fait singulier",
+              "Il n'existe pas de forme plurielle pour « blanc »"
+            ],
+            "answer": 1,
+            "exp": "L'adjectif doit s'accorder en nombre avec le nom : « chiens » (pluriel) demande « blancs », avec un -s."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans « une pomme rouge et juteuse », pourquoi les deux adjectifs sont-ils au féminin singulier ?",
+            "choices": [
+              "Par hasard, sans raison",
+              "Parce qu'ils s'accordent tous les deux avec le nom « pomme », qui est féminin singulier",
+              "Les adjectifs ne s'accordent jamais entre eux",
+              "« Rouge » et « juteuse » ont toujours cette forme, quel que soit le nom"
+            ],
+            "answer": 1,
+            "exp": "Les deux adjectifs s'accordent avec le nom noyau « pomme » (féminin singulier), ce qui explique leurs terminaisons."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Accorde l'adjectif : « une ... fille » (gentil, au féminin singulier)",
+            "choices": [
+              "gentil",
+              "gentille",
+              "gentils",
+              "gentilles"
+            ],
+            "answer": 1,
+            "exp": "« Fille » est féminin singulier : l'adjectif « gentil » devient « gentille » au féminin."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un adjectif épithète peut se placer avant ou après le nom qu'il qualifie, selon l'adjectif.",
+            "answer": true,
+            "exp": "Certains adjectifs se placent habituellement avant le nom, d'autres après, selon l'usage de la langue."
           }
         ]
       },
