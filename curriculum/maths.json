@@ -20880,6 +20880,177 @@
             ],
             "answer": 1,
             "exp": "Une pyramide à base carrée est composée de sa base (un carré, qui compte comme une face) ET de ses faces latérales triangulaires (4 dans ce cas) : le total est donc 5 faces, pas seulement les 4 faces triangulaires visibles autour."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de sommets a un cube ?",
+            "answer": "8",
+            "exp": "Un cube a 8 sommets."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Comment s'appelle le segment où deux faces d'un solide se rejoignent ?",
+            "choices": [
+              "Un sommet",
+              "Une arête",
+              "Une face",
+              "Un angle"
+            ],
+            "answer": 1,
+            "exp": "Une arête est le segment où deux faces d'un solide se rencontrent."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une tente de camping a la forme d'un prisme triangulaire. Que peux-tu dire de ses deux faces triangulaires ?",
+            "choices": [
+              "Elles sont identiques et parallèles entre elles",
+              "Elles sont toujours différentes",
+              "Il n'y a qu'une seule face triangulaire",
+              "Les faces triangulaires n'existent pas dans ce solide"
+            ],
+            "answer": 0,
+            "exp": "Dans un prisme, les deux faces aux extrémités (ici triangulaires) sont identiques et parallèles."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il utile d'utiliser un vocabulaire précis (face, arête, sommet) pour décrire un solide, plutôt que des mots vagues comme « coin » ou « bord » ?",
+            "choices": [
+              "Ce n'est jamais utile d'être précis",
+              "Parce que chaque mot technique désigne un élément précis et sans ambiguïté du solide, ce qui évite toute confusion lors d'une description ou d'une explication",
+              "Les mots vagues sont toujours plus clairs",
+              "Un solide n'a jamais besoin d'être décrit précisément"
+            ],
+            "answer": 1,
+            "exp": "Le vocabulaire technique (face, arête, sommet) désigne des éléments précis sans ambiguïté, contrairement à des mots vagues qui peuvent être mal interprétés."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève affirme qu'une pyramide à base carrée a 4 faces en tout. Que lui manque-t-il dans son décompte ?",
+            "choices": [
+              "Rien, 4 faces est le bon compte",
+              "Il a oublié la face de la base (le carré) : la pyramide a 4 faces triangulaires PLUS la base carrée, soit 5 faces en tout",
+              "4 faces est toujours trop, il faut en compter moins",
+              "Une pyramide n'a jamais de base"
+            ],
+            "answer": 1,
+            "exp": "Une pyramide à base carrée a 4 faces triangulaires latérales plus 1 face carrée à la base, soit 5 faces en tout."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un cube a 6 faces, toutes carrées et identiques.",
+            "answer": true,
+            "exp": "C'est la définition même du cube : 6 faces carrées de même taille."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien d'arêtes a un cube ?",
+            "answer": "12",
+            "exp": "Un cube a 12 arêtes."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un ballon de football a-t-il des faces planes, comme un cube ?",
+            "choices": [
+              "Oui, il a 6 faces planes",
+              "Non, c'est une sphère, sans face plane ni arête ni sommet",
+              "Oui, il a 4 faces planes",
+              "Non, il a seulement 2 faces"
+            ],
+            "answer": 1,
+            "exp": "Une sphère (comme un ballon) n'a ni face plane, ni arête, ni sommet : sa surface est entièrement courbe."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un cube et un pavé droit (parallélépipède rectangle) ont-ils tous les deux 6 faces, 12 arêtes et 8 sommets, malgré leurs formes différentes ?",
+            "choices": [
+              "Ce n'est jamais le cas, ils ont des nombres différents",
+              "Parce qu'un cube est un cas particulier de pavé droit (avec toutes ses faces carrées identiques) : ils partagent donc la même structure générale (6 faces, 12 arêtes, 8 sommets)",
+              "Le cube et le pavé droit n'ont aucun rapport entre eux",
+              "Un pavé droit a toujours plus de faces qu'un cube"
+            ],
+            "answer": 1,
+            "exp": "Un cube est un pavé droit particulier (avec des faces carrées identiques) : ils partagent donc la même structure de base (6 faces, 12 arêtes, 8 sommets)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un dé à jouer a la forme d'un :",
+            "choices": [
+              "Cube",
+              "Pyramide",
+              "Cylindre",
+              "Sphère"
+            ],
+            "answer": 0,
+            "exp": "Un dé classique a la forme d'un cube, avec 6 faces carrées."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de faces a une pyramide à base triangulaire (en comptant la base) ?",
+            "answer": "4",
+            "exp": "3 faces triangulaires latérales + 1 face triangulaire de base = 4 faces."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi une boîte de conserve cylindrique n'a-t-elle pas d'arêtes comme un cube ?",
+            "choices": [
+              "Elle a en fait les mêmes arêtes qu'un cube",
+              "Parce qu'un cylindre a des faces courbes (la surface latérale) et deux faces planes circulaires, sans les segments droits (arêtes) caractéristiques des solides à faces planes comme le cube",
+              "Un cylindre a toujours plus d'arêtes qu'un cube",
+              "Il est impossible qu'un solide n'ait pas d'arête"
+            ],
+            "answer": 1,
+            "exp": "Un cylindre a une surface latérale courbe, sans les segments droits (arêtes) que l'on trouve entre les faces planes d'un solide comme le cube."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un solide a 5 faces : 4 triangles et 1 carré. De quel solide s'agit-il probablement ?",
+            "choices": [
+              "Un cube",
+              "Une pyramide à base carrée",
+              "Un cylindre",
+              "Une sphère"
+            ],
+            "answer": 1,
+            "exp": "4 faces triangulaires et 1 base carrée correspondent exactement à une pyramide à base carrée."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi compter précisément les faces, arêtes et sommets d'un solide aide-t-il à l'identifier parmi plusieurs solides possibles ?",
+            "choices": [
+              "Ce n'est jamais utile pour identifier un solide",
+              "Parce que chaque type de solide a une combinaison caractéristique de faces, arêtes et sommets, qui permet de le distinguer des autres",
+              "Tous les solides ont toujours le même nombre de faces, arêtes et sommets",
+              "Il est impossible de distinguer deux solides différents"
+            ],
+            "answer": 1,
+            "exp": "Chaque type de solide a une combinaison caractéristique (nombre de faces, arêtes, sommets) qui permet de l'identifier et de le distinguer des autres."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un pavé droit a-t-il toujours exactement 6 faces, comme un cube ?",
+            "choices": [
+              "Non, il en a toujours plus",
+              "Oui, 6 faces rectangulaires (dont certaines peuvent être carrées)",
+              "Non, il n'a que 4 faces",
+              "Oui, mais seulement 3 faces visibles à la fois"
+            ],
+            "answer": 1,
+            "exp": "Un pavé droit, comme le cube, a toujours exactement 6 faces (rectangulaires, parfois carrées)."
           }
         ]
       },
@@ -20968,6 +21139,183 @@
             ],
             "answer": 1,
             "exp": "Le nombre correct de carrés (6) est nécessaire mais ne garantit pas, à lui seul, que l'assemblage se referme correctement en cube : il faut aussi vérifier, par le pliage réel ou mental, que la disposition particulière des carrés fonctionne vraiment."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Combien de carrés identiques faut-il au minimum pour former le patron d'un cube ?",
+            "choices": [
+              "4",
+              "5",
+              "6",
+              "8"
+            ],
+            "answer": 2,
+            "exp": "Un cube a 6 faces carrées : son patron nécessite exactement 6 carrés."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Comment peut-on vérifier le plus sûrement qu'un assemblage de 6 carrés forme un vrai patron de cube ?",
+            "choices": [
+              "En comptant simplement qu'il y a 6 carrés",
+              "En pliant mentalement (ou réellement) l'assemblage pour voir s'il forme bien un cube fermé sans superposition ni trou",
+              "En mesurant la couleur des carrés",
+              "Il est impossible de vérifier un patron"
+            ],
+            "answer": 1,
+            "exp": "Le pliage mental ou réel reste la méthode la plus sûre pour vérifier qu'un assemblage de carrés forme bien un cube fermé, sans erreur."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un assemblage contient 6 carrés mais, en essayant de le plier mentalement, deux faces se chevauchent au même endroit, laissant un côté du cube ouvert. Est-ce un patron valide ?",
+            "choices": [
+              "Oui, 6 carrés garantissent toujours un patron valide",
+              "Non, un vrai patron doit se plier pour former un cube fermé, sans superposition ni trou : cet assemblage n'est donc pas un patron valide",
+              "Oui, un cube peut avoir un côté ouvert",
+              "Non, mais seulement si les carrés sont de couleurs différentes"
+            ],
+            "answer": 1,
+            "exp": "Avoir exactement 6 carrés ne suffit pas : il faut aussi que leur disposition permette un pliage sans superposition ni trou pour former un cube fermé."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi avoir exactement 6 carrés ne suffit-il pas pour garantir qu'un assemblage forme un vrai patron de cube ?",
+            "choices": [
+              "6 carrés suffisent toujours, peu importe leur disposition",
+              "Parce que la DISPOSITION des carrés compte aussi : certains arrangements de 6 carrés ne permettent pas un pliage correct (superposition ou trou), même avec le bon nombre de carrés",
+              "Le nombre de carrés n'a jamais d'importance",
+              "Un patron de cube peut avoir n'importe quel nombre de carrés"
+            ],
+            "answer": 1,
+            "exp": "Le nombre de carrés (6) est nécessaire mais pas suffisant : leur disposition doit aussi permettre un pliage correct, sans superposition ni trou."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève aligne 6 carrés en une seule longue bande (comme un train de wagons) et pense que ça forme forcément un patron de cube. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, cet alignement forme toujours un cube",
+              "Un simple alignement en bande ne se plie pas correctement pour former un cube fermé : il faut une disposition en croix ou en escalier, par exemple, qui permette un repliage cohérent",
+              "6 carrés alignés ne peuvent jamais former quoi que ce soit",
+              "Il fallait utiliser 12 carrés au lieu de 6"
+            ],
+            "answer": 1,
+            "exp": "Une simple bande de 6 carrés alignés ne se replie pas correctement en cube fermé ; il faut une disposition qui permette un repliage cohérent (en croix, en escalier, etc.)."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un patron de cube doit, une fois plié, former un cube fermé sans aucune superposition ni aucun trou.",
+            "answer": true,
+            "exp": "C'est la condition essentielle pour qu'un assemblage de carrés soit un vrai patron de cube."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans un patron de cube valide, combien de faces se retrouvent-elles opposées l'une à l'autre une fois le cube plié ?",
+            "choices": [
+              "0",
+              "2",
+              "3 paires de faces opposées",
+              "6"
+            ],
+            "answer": 2,
+            "exp": "Un cube a 6 faces organisées en 3 paires de faces opposées (dessus/dessous, devant/derrière, gauche/droite)."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi existe-t-il plusieurs dispositions différentes de 6 carrés qui forment toutes un patron valide de cube (pas une seule forme unique) ?",
+            "choices": [
+              "Il n'existe en fait qu'une seule disposition possible",
+              "Parce qu'un cube peut être « déplié » de plusieurs façons différentes selon la face par laquelle on commence à le déplier, donnant plusieurs patrons valides différents",
+              "Toutes les dispositions de 6 carrés forment toujours un cube valide",
+              "Un cube ne peut jamais être représenté par un patron"
+            ],
+            "answer": 1,
+            "exp": "Un cube peut être déplié de différentes manières selon la face de départ, ce qui donne plusieurs dispositions valides différentes de patron."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour vérifier un patron sans le plier réellement, quelle stratégie mentale peut-on utiliser ?",
+            "choices": [
+              "Deviner au hasard si ça marchera",
+              "Imaginer le pliage étape par étape, en repérant quelle face vient se placer en face de quelle autre",
+              "Compter uniquement le nombre de côtés du dessin",
+              "Il est impossible de vérifier sans plier réellement"
+            ],
+            "answer": 1,
+            "exp": "Imaginer le pliage étape par étape, en suivant mentalement où chaque face se positionnerait, permet de vérifier la validité sans plier réellement."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un patron de cube a 7 carrés au lieu de 6. Est-ce un problème ?",
+            "choices": [
+              "Non, ce n'est jamais un problème",
+              "Oui, un cube a exactement 6 faces : un patron avec 7 carrés contient forcément une face en trop, qui ne peut pas faire partie d'un vrai patron de cube",
+              "Non, un cube peut avoir 7 faces dans certains cas",
+              "Oui, mais seulement si les carrés sont mal alignés"
+            ],
+            "answer": 1,
+            "exp": "Un cube a exactement 6 faces : un patron avec 7 carrés a forcément une face en trop, ce qui rend l'assemblage invalide comme patron de cube."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de faces carrées identiques compose un patron de cube ?",
+            "answer": "6",
+            "exp": "Un patron de cube est toujours composé de 6 carrés identiques."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi un patron de pavé droit (pas un cube) nécessite-t-il généralement 3 paires de rectangles de tailles différentes, plutôt que 6 carrés identiques ?",
+            "choices": [
+              "Un pavé droit utilise toujours des carrés identiques comme le cube",
+              "Parce qu'un pavé droit a 3 dimensions différentes (longueur, largeur, hauteur), ce qui donne 3 paires de faces rectangulaires de tailles différentes, contrairement au cube où toutes les dimensions sont égales",
+              "Un pavé droit n'a jamais besoin de patron",
+              "Toutes les faces d'un pavé droit sont toujours identiques"
+            ],
+            "answer": 1,
+            "exp": "Un pavé droit a 3 dimensions différentes, créant 3 paires de faces rectangulaires de tailles distinctes, contrairement au cube où toutes les faces sont des carrés identiques."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un patron de cube bien construit, une fois découpé et plié, doit permettre d'obtenir un solide :",
+            "choices": [
+              "Avec des trous visibles entre certaines faces",
+              "Fermé de tous les côtés, sans trou ni superposition",
+              "Ouvert sur un côté volontairement",
+              "Avec seulement 4 faces visibles"
+            ],
+            "answer": 1,
+            "exp": "Un patron de cube correctement construit forme, une fois plié, un solide complètement fermé."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la vérification par pliage réel (avec une vraie feuille découpée) est-elle la méthode la plus fiable, même après une vérification mentale ?",
+            "choices": [
+              "Elle n'est jamais plus fiable que l'imagination seule",
+              "Parce qu'elle élimine tout risque d'erreur d'imagination : le pliage réel montre concrètement si le cube se forme correctement ou non, sans place pour le doute",
+              "Le pliage réel donne toujours un résultat différent de l'imagination",
+              "Il est impossible de plier réellement un patron en papier"
+            ],
+            "answer": 1,
+            "exp": "Le pliage réel élimine toute incertitude liée à l'imagination : il montre concrètement et sans ambiguïté si le patron forme bien un cube valide."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un patron de cube contient combien de carrés en trop si on en compte 9 au total ?",
+            "answer": "3",
+            "exp": "9−6=3 carrés en trop par rapport aux 6 nécessaires pour un cube."
           }
         ]
       },
@@ -21056,6 +21404,189 @@
             ],
             "answer": 1,
             "exp": "Confondre les deux axes mène à une mauvaise lecture complète du diagramme : il faut toujours vérifier précisément ce que représente chaque axe avant d'interpréter les données, ici le temps en horizontal et la température en vertical."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Sur un diagramme avec une courbe qui descend, que peut-on dire de la grandeur représentée ?",
+            "choices": [
+              "Elle augmente",
+              "Elle diminue",
+              "Elle reste constante",
+              "Impossible à savoir"
+            ],
+            "answer": 1,
+            "exp": "Une courbe qui descend indique que la grandeur représentée diminue."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Sur un diagramme en courbe de croissance d'une plante, que représente généralement l'axe vertical ?",
+            "choices": [
+              "Le temps",
+              "La taille de la plante",
+              "La couleur de la plante",
+              "Le nom du jardinier"
+            ],
+            "answer": 1,
+            "exp": "L'axe vertical représente la grandeur mesurée, ici la taille de la plante."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Sur un diagramme montrant la température sur une semaine, la courbe monte fortement le jour 4. Que peut-on en déduire ?",
+            "choices": [
+              "La température a fortement baissé ce jour-là",
+              "La température a fortement augmenté ce jour-là",
+              "La température est restée identique",
+              "Il n'y a pas eu de température ce jour-là"
+            ],
+            "answer": 1,
+            "exp": "Une forte montée de la courbe indique une forte augmentation de la température ce jour-là."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il important de bien identifier ce que représentent les deux axes d'un diagramme AVANT de chercher à l'interpréter ?",
+            "choices": [
+              "Ce n'est jamais nécessaire d'identifier les axes avant",
+              "Parce que sans connaître ce que mesure chaque axe, il est impossible d'interpréter correctement les variations de la courbe (ce qui monte, ce qui descend, et pourquoi)",
+              "Les axes n'ont jamais d'importance pour lire un diagramme",
+              "Un diagramme n'a besoin que d'un seul axe"
+            ],
+            "answer": 1,
+            "exp": "Connaître ce que représente chaque axe est indispensable pour interpréter correctement les variations de la courbe (ce qui monte ou descend, et dans quelle grandeur)."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève, face à un diagramme montrant la vitesse d'une voiture, affirme que l'axe horizontal représente la vitesse. Or il représente le temps. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, l'axe horizontal représente toujours la vitesse",
+              "Il a confondu les deux axes sans les vérifier : il faut toujours lire les légendes de chaque axe avant d'interpréter un diagramme, pas supposer ce qu'ils représentent",
+              "L'axe horizontal ne représente jamais le temps",
+              "Un diagramme ne peut jamais représenter la vitesse"
+            ],
+            "answer": 1,
+            "exp": "Il faut toujours vérifier les légendes de chaque axe avant d'interpréter un diagramme, plutôt que de supposer ce qu'ils représentent sans vérification."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Sur un diagramme en courbe, une ligne horizontale (plate) indique que la grandeur représentée reste constante.",
+            "answer": true,
+            "exp": "Une courbe plate, sans montée ni descente, signale une valeur stable dans le temps."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Sur un diagramme montrant les ventes d'un magasin sur 5 mois, la courbe est parfaitement plate du mois 2 au mois 4. Que peut-on en déduire ?",
+            "choices": [
+              "Les ventes ont fortement augmenté entre ces mois",
+              "Les ventes sont restées stables, identiques entre ces mois",
+              "Les ventes ont fortement chuté",
+              "Il n'y a pas eu de ventes ces mois-là"
+            ],
+            "answer": 1,
+            "exp": "Une courbe plate indique que la valeur (les ventes) est restée stable, sans changement notable."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un tableau de données et un diagramme en courbe peuvent-ils représenter exactement les mêmes informations, mais de façons différentes ?",
+            "choices": [
+              "Ils ne peuvent jamais représenter les mêmes informations",
+              "Parce qu'un tableau donne les valeurs précises sous forme de nombres, tandis qu'un diagramme en donne une représentation visuelle qui facilite la perception rapide des tendances (hausse, baisse, stabilité)",
+              "Un tableau est toujours plus précis qu'un diagramme dans tous les cas",
+              "Un diagramme ne peut jamais remplacer un tableau"
+            ],
+            "answer": 1,
+            "exp": "Le tableau donne des valeurs exactes, le diagramme en donne une représentation visuelle facilitant la perception rapide des tendances : les deux peuvent représenter les mêmes données sous des formes différentes."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour construire un diagramme en courbe à partir d'un tableau de données, quelle est la première étape ?",
+            "choices": [
+              "Dessiner directement la courbe sans réfléchir aux axes",
+              "Définir et graduer les deux axes (ce qu'ils représentent et leur échelle) avant de placer les points",
+              "Colorier le fond du diagramme",
+              "Deviner la forme de la courbe sans utiliser les données"
+            ],
+            "answer": 1,
+            "exp": "Définir et graduer les axes est une étape préalable indispensable avant de pouvoir placer correctement les points de données."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève construit un diagramme mais oublie de graduer régulièrement son axe vertical (les espacements entre 0, 10, 20 ne sont pas identiques). Quel problème cela pose-t-il ?",
+            "choices": [
+              "Aucun problème, la graduation irrégulière n'a pas d'importance",
+              "La lecture du diagramme devient faussée : des hauteurs qui semblent visuellement différentes peuvent en réalité représenter un écart de valeur incorrect",
+              "Un diagramme n'a jamais besoin d'être gradué",
+              "La graduation irrégulière rend toujours le diagramme plus précis"
+            ],
+            "answer": 1,
+            "exp": "Une graduation irrégulière fausse la lecture visuelle : les écarts visuels ne correspondraient plus fidèlement aux écarts réels de valeurs."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Sur un diagramme, la courbe des ventes passe de 50 à 80 entre janvier et février. Quelle est l'augmentation ?",
+            "answer": "30",
+            "exp": "80−50=30, l'augmentation des ventes entre les deux mois."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi un diagramme en courbe est-il particulièrement adapté pour représenter une évolution dans le temps (comme une température sur une semaine), plutôt qu'un diagramme en barres ?",
+            "choices": [
+              "Un diagramme en barres est toujours plus adapté",
+              "Parce que la courbe continue montre naturellement la progression et les tendances (montée, descente) entre les points mesurés, ce qui convient bien à une évolution continue dans le temps",
+              "Les deux types de diagrammes sont toujours équivalents",
+              "Un diagramme en courbe ne peut jamais représenter le temps"
+            ],
+            "answer": 1,
+            "exp": "La courbe continue illustre naturellement la progression entre les points mesurés, ce qui convient bien à une évolution continue comme une température dans le temps."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Sur un diagramme montrant la population d'une ville sur 10 ans, la courbe monte puis redescend légèrement. Que peut-on en conclure sur l'évolution globale ?",
+            "choices": [
+              "La population a continuellement augmenté sans exception",
+              "La population a d'abord augmenté, puis légèrement diminué vers la fin de la période",
+              "La population n'a jamais changé",
+              "Impossible de tirer une conclusion d'un diagramme"
+            ],
+            "answer": 1,
+            "exp": "La forme de la courbe (montée puis légère baisse) indique directement l'évolution de la population sur la période étudiée."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, avant de répondre à une question précise sur un diagramme, est-il utile de d'abord parcourir l'ensemble de la courbe du début à la fin ?",
+            "choices": [
+              "Ce n'est jamais utile de parcourir toute la courbe avant",
+              "Pour avoir une vue d'ensemble de la tendance générale avant de se concentrer sur un détail précis, ce qui aide à mieux situer et interpréter ce détail dans son contexte",
+              "Il faut toujours répondre directement sans regarder l'ensemble du diagramme",
+              "Parcourir toute la courbe change les données du diagramme"
+            ],
+            "answer": 1,
+            "exp": "Avoir une vue d'ensemble de la tendance générale aide à mieux situer et interpréter un détail précis dans son contexte global."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Sur un diagramme en courbe des ventes mensuelles, si la courbe oscille (monte puis descend plusieurs fois), que peut-on dire des ventes ?",
+            "choices": [
+              "Elles sont parfaitement stables",
+              "Elles varient, alternant hausses et baisses selon les mois",
+              "Elles augmentent sans arrêt",
+              "Elles sont nulles tout le temps"
+            ],
+            "answer": 1,
+            "exp": "Une courbe qui oscille montre des ventes qui varient, avec des hausses et des baisses successives selon les mois."
           }
         ]
       },
@@ -21138,6 +21669,177 @@
             ],
             "answer": 1,
             "exp": "La question demandait explicitement le total de DEUX quantités (bananes et pommes) : oublier l'une des deux dans le calcul final donne une réponse incomplète qui ne répond pas vraiment à ce qui était demandé."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Sur un diagramme, la barre « vélo » atteint 35 et la barre « trottinette » atteint 52. Combien de trottinettes de plus que de vélos ?",
+            "answer": "17",
+            "exp": "52−35=17 trottinettes de plus."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour répondre à une question précise à partir d'un graphique contenant beaucoup de données, que dois-tu faire en premier ?",
+            "choices": [
+              "Lire toutes les données au hasard",
+              "Identifier précisément quelles données du graphique sont nécessaires pour répondre à la question posée",
+              "Ignorer complètement le graphique",
+              "Deviner la réponse sans regarder le graphique"
+            ],
+            "answer": 1,
+            "exp": "Identifier précisément les données nécessaires évite de se perdre dans toutes les informations du graphique."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un diagramme montre les ventes de 3 semaines : semaine 1 : 150, semaine 2 : 180, semaine 3 : 220. Quelle est la vente totale sur les 3 semaines ?",
+            "choices": [
+              "550",
+              "400",
+              "220",
+              "370"
+            ],
+            "answer": 0,
+            "exp": "150+180+220=550."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi lire un graphique n'est-il souvent que la PREMIÈRE étape pour résoudre un problème, et non la réponse finale elle-même ?",
+            "choices": [
+              "Lire le graphique donne toujours directement la réponse finale",
+              "Parce qu'il faut souvent ensuite effectuer un calcul (addition, soustraction, comparaison) à partir des valeurs lues pour obtenir la réponse complète à la question posée",
+              "Un graphique ne contient jamais d'information utile",
+              "Il est toujours interdit de calculer à partir d'un graphique"
+            ],
+            "answer": 1,
+            "exp": "La lecture du graphique donne les données brutes ; il faut ensuite souvent un calcul supplémentaire pour obtenir la réponse complète à la question."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour répondre à « combien de pommes et d'oranges vendues en tout », un élève ne lit et n'utilise que la valeur des pommes, en oubliant les oranges. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, seules les pommes comptent",
+              "Il a mal identifié les données nécessaires : la question demande le total des DEUX fruits, il doit donc lire et additionner les deux valeurs, pas seulement une",
+              "Il fallait soustraire les deux valeurs",
+              "La question ne demande que la valeur des pommes"
+            ],
+            "answer": 1,
+            "exp": "La question demande le total de deux catégories : il faut lire ET additionner les deux valeurs, pas se contenter d'une seule."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Pour résoudre un problème à partir d'un graphique, il faut souvent d'abord lire les valeurs nécessaires, puis effectuer un calcul avec elles.",
+            "answer": true,
+            "exp": "C'est la démarche typique : lecture des données pertinentes, puis calcul pour répondre à la question posée."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un diagramme montre les températures de 4 jours : 12°, 15°, 18°, 14°. Quelle est la température moyenne (indice : additionner puis diviser par 4) ?",
+            "choices": [
+              "14,75°, soit environ 15°",
+              "12°",
+              "18°",
+              "59°"
+            ],
+            "answer": 0,
+            "exp": "(12+15+18+14)÷4=59÷4=14,75°, environ 15°."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour comparer deux séries de données sur un même graphique (par exemple ventes de deux magasins), quelle est l'information la plus utile à chercher ?",
+            "choices": [
+              "La couleur des courbes uniquement",
+              "Les écarts entre les deux courbes à différents moments, pour voir laquelle est supérieure et de combien",
+              "Le nombre total de points sur le graphique",
+              "Le titre du graphique uniquement"
+            ],
+            "answer": 1,
+            "exp": "Comparer les écarts entre les deux courbes à différents moments permet de voir laquelle est supérieure et l'ampleur de la différence."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un graphique montre les ventes de janvier (300) et février (250). Un élève calcule l'augmentation comme 300-250=50, en disant « les ventes ont augmenté de 50 en février ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Les ventes ont en réalité DIMINUÉ de janvier à février (300 à 250), pas augmenté : il fallait dire qu'elles ont baissé de 50, pas augmenté",
+              "300-250 est le mauvais calcul à faire",
+              "Il fallait additionner les deux valeurs"
+            ],
+            "answer": 1,
+            "exp": "Les ventes passent de 300 à 250 : c'est une diminution de 50, pas une augmentation, même si le calcul numérique (50) est correct."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un diagramme montre 4 catégories de dépenses : loyer 500, nourriture 300, transport 100, loisirs 150. Quelle est la dépense totale ?",
+            "answer": "1050",
+            "exp": "500+300+100+150=1050."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, pour un problème demandant « quelle catégorie a la plus petite valeur », faut-il comparer TOUTES les valeurs du graphique, pas seulement les deux premières ?",
+            "choices": [
+              "Comparer seulement deux valeurs suffit toujours",
+              "Parce qu'une valeur encore plus petite pourrait se trouver parmi les catégories non encore examinées : il faut vérifier l'ensemble pour être sûr d'avoir trouvé le minimum réel",
+              "Il n'est jamais nécessaire de comparer toutes les valeurs",
+              "La première valeur est toujours la plus petite"
+            ],
+            "answer": 1,
+            "exp": "Pour être certain d'avoir trouvé la valeur minimale réelle, il faut comparer l'ensemble des catégories, pas seulement quelques-unes."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un diagramme montre les scores de 5 élèves à un jeu : 12, 18, 9, 22, 15. Quel est l'écart entre le meilleur et le moins bon score ?",
+            "choices": [
+              "13",
+              "22",
+              "9",
+              "31"
+            ],
+            "answer": 0,
+            "exp": "22−9=13, l'écart entre le meilleur (22) et le moins bon score (9)."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi vérifier son calcul final en le recomparant avec les données brutes du graphique est-il une bonne habitude après avoir résolu un problème ?",
+            "choices": [
+              "Ce n'est jamais utile de vérifier après avoir terminé",
+              "Parce que cela permet de s'assurer qu'aucune donnée n'a été mal lue ou oubliée pendant le calcul, garantissant la validité de la réponse finale",
+              "Vérifier change toujours le résultat final",
+              "Il est interdit de revérifier un calcul déjà terminé"
+            ],
+            "answer": 1,
+            "exp": "Revérifier permet de s'assurer qu'aucune donnée n'a été mal lue ou oubliée, garantissant la fiabilité de la réponse finale."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un diagramme montre 3 catégories : A=40, B=65, C=55. Quelle est la différence entre la plus grande et la plus petite valeur ?",
+            "answer": "25",
+            "exp": "65−40=25."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un diagramme montre les points marqués par 4 équipes : 15, 22, 18, 25. Quelle équipe a marqué le plus de points ?",
+            "choices": [
+              "L'équipe à 15 points",
+              "L'équipe à 22 points",
+              "L'équipe à 18 points",
+              "L'équipe à 25 points"
+            ],
+            "answer": 3,
+            "exp": "25 est la valeur la plus élevée parmi les quatre."
           }
         ]
       },
