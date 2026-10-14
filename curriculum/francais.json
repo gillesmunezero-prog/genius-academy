@@ -20615,6 +20615,177 @@
             ],
             "answer": 1,
             "exp": "Appartenir à une même famille de mots exige un lien de SENS réel, pas seulement une ressemblance de lettres à l'écrit : « chantier » et « chant » n'ont aucun rapport sémantique, malgré leur apparence proche."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans un mot construit, quelle partie porte généralement le sens principal, central ?",
+            "choices": [
+              "Le préfixe uniquement",
+              "Le radical",
+              "Le suffixe uniquement",
+              "Aucune partie ne porte de sens particulier"
+            ],
+            "answer": 1,
+            "exp": "Le radical est la partie centrale du mot qui porte le sens principal, autour de laquelle préfixes et suffixes viennent se greffer."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Que signifie généralement le préfixe « in- », « im- » ou « il- » devant un mot ?",
+            "choices": [
+              "Une idée de répétition de l'action",
+              "Un sens négatif, « qui n'est pas »",
+              "Toujours une idée de grandeur",
+              "Rien de particulier, ces préfixes n'ont aucun sens"
+            ],
+            "answer": 1,
+            "exp": "Ces préfixes expriment généralement une négation : invisible (qui n'est pas visible), impossible, illisible."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Le suffixe « -eur » ou « -euse » sert souvent à désigner :",
+            "choices": [
+              "Un lieu géographique précis",
+              "Un métier ou une personne qui fait l'action exprimée par le radical",
+              "Une couleur particulière",
+              "Une quantité précise"
+            ],
+            "answer": 1,
+            "exp": "Le suffixe « -eur/-euse » désigne souvent une personne qui exerce une action : danseur, chanteuse, nageur."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Tu rencontres le mot « prévoir ». En reconnaissant le préfixe « pré- » (avant), que peux-tu deviner sur le sens de ce mot ?",
+            "choices": [
+              "Qu'il signifie « voir après coup »",
+              "Qu'il signifie « voir ou envisager quelque chose avant qu'il n'arrive »",
+              "Qu'il n'a aucun rapport avec le fait de voir",
+              "Qu'il signifie « ne jamais voir »"
+            ],
+            "answer": 1,
+            "exp": "Le préfixe « pré- » (avant) appliqué au radical « voir » donne l'idée de voir ou d'envisager quelque chose avant qu'il n'arrive."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Tu rencontres le mot « illisible ». En décomposant « il- » (sens négatif) et « lisible », que peux-tu deviner ?",
+            "choices": [
+              "Que ça veut dire « très facile à lire »",
+              "Que ça veut dire « qui ne peut pas être lu »",
+              "Que ça n'a aucun rapport avec la lecture",
+              "Que ça veut dire « à lire plusieurs fois »"
+            ],
+            "answer": 1,
+            "exp": "Le préfixe négatif « il- » appliqué à « lisible » donne le sens « qui ne peut pas être lu »."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi reconnaître des préfixes et suffixes fréquents aide-t-il à deviner le sens de mots que tu n'as jamais rencontrés auparavant ?",
+            "choices": [
+              "Ce n'est jamais utile pour deviner un sens nouveau",
+              "Parce que ces petits éléments de construction portent souvent un sens régulier et répété dans de nombreux mots différents : les reconnaître permet d'appliquer cette régularité à un mot nouveau",
+              "Parce que tous les mots ont exactement le même sens, quel que soit leur préfixe",
+              "Parce que les préfixes changent systématiquement un mot en son contraire exact, sans exception"
+            ],
+            "answer": 1,
+            "exp": "Les préfixes et suffixes ont un sens régulier qui se retrouve dans de nombreux mots, ce qui permet de l'appliquer à des mots nouveaux."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense que « chantier » et « chant » appartiennent à la même famille de mots, juste parce qu'ils commencent par les mêmes lettres. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, la ressemblance des lettres suffit toujours à prouver un lien de famille",
+              "Il confond ressemblance à l'écrit et lien de sens réel : « chantier » (lieu de travaux) n'a aucun rapport de sens avec « chant » (la musique), malgré leur ressemblance orthographique",
+              "Chantier et chant sont en réalité exactement le même mot",
+              "Il faut toujours se fier uniquement aux lettres pour regrouper des mots en famille"
+            ],
+            "answer": 1,
+            "exp": "Une ressemblance orthographique ne garantit pas un lien de sens réel entre deux mots : il faut vérifier le sens, pas seulement les lettres."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un mot composé assemble deux mots déjà existants, comme « porte-manteau ».",
+            "answer": true,
+            "exp": "C'est la définition même d'un mot composé, par opposition au mot dérivé qui ajoute un préfixe ou un suffixe à un radical."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Tous les mots qui commencent par les mêmes lettres appartiennent automatiquement à la même famille de sens.",
+            "answer": false,
+            "exp": "La ressemblance orthographique ne garantit pas un lien de sens : « chantier » et « chant » n'ont par exemple aucun rapport de sens malgré leur ressemblance écrite."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "La partie centrale d'un mot qui porte le sens principal s'appelle le : (un mot)",
+            "answer": "radical",
+            "exp": "Le radical est le terme technique désignant la partie centrale d'un mot qui porte son sens principal."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève rencontre le mot « construction » et sait que le suffixe « -tion » transforme souvent un verbe en nom. En reliant ce mot au verbe « construire », que peut-il en déduire sur son sens ?",
+            "choices": [
+              "Rien du tout, les deux mots n'ont aucun rapport",
+              "Que « construction » désigne l'action ou le résultat de construire, grâce au lien entre le verbe et son suffixe nominal",
+              "Que « construction » signifie exactement l'inverse de « construire »",
+              "Que le suffixe « -tion » n'a jamais aucun lien avec le sens d'un verbe"
+            ],
+            "answer": 1,
+            "exp": "Reconnaître le lien entre un verbe et son dérivé en « -tion » permet de comprendre que le nom désigne l'action ou le résultat du verbe."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la connaissance des préfixes et suffixes est-elle particulièrement utile en lecture, face à un mot totalement inconnu dans un texte ?",
+            "choices": [
+              "Elle n'est jamais utile en lecture, seulement en dictée",
+              "Parce qu'elle permet de décomposer un mot inconnu en éléments reconnaissables (préfixe, radical, suffixe) pour en déduire un sens probable, sans avoir besoin d'un dictionnaire à chaque fois",
+              "Un mot inconnu ne peut jamais être compris, même avec la connaissance des préfixes et suffixes",
+              "Seul le dictionnaire peut révéler le sens d'un mot inconnu, jamais sa décomposition"
+            ],
+            "answer": 1,
+            "exp": "Décomposer un mot inconnu en préfixe/radical/suffixe permet souvent de déduire son sens probable sans consulter systématiquement un dictionnaire."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense que le mot « intouchable » ne peut pas se décomposer, car il ne connaît pas ce mot précis. Quelle stratégie pourrait-il utiliser pour en deviner le sens ?",
+            "choices": [
+              "Abandonner immédiatement, sans essayer aucune stratégie de décomposition",
+              "Repérer le préfixe « in- » (sens négatif) et le radical « touch- » (toucher), pour déduire que « intouchable » signifie « qui ne peut pas être touché »",
+              "Inventer un sens complètement différent du sens réel du mot",
+              "Chercher uniquement dans le dictionnaire, sans jamais essayer de décomposer le mot soi-même"
+            ],
+            "answer": 1,
+            "exp": "Décomposer « intouchable » en préfixe négatif et radical « touch- » permet de déduire logiquement son sens, même sans le connaître au préalable."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans les mots « danseur », « lisible » et « construction », quels suffixes reconnais-tu respectivement ?",
+            "choices": [
+              "-eur (métier/personne), -ible (capacité), -tion (nom dérivé d'un verbe)",
+              "Les trois mots ont exactement le même suffixe",
+              "Aucun de ces mots ne contient de suffixe identifiable",
+              "Ces trois mots sont tous des mots simples sans construction particulière"
+            ],
+            "answer": 0,
+            "exp": "Chaque suffixe a un rôle distinct : « -eur » pour un métier ou une personne, « -ible » pour une capacité, « -tion » pour transformer un verbe en nom."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un mot dérivé se forme en ajoutant un préfixe ou un suffixe à un radical.",
+            "answer": true,
+            "exp": "C'est la définition du mot dérivé, par opposition au mot simple (qui ne se décompose pas) et au mot composé (assemblage de deux mots existants)."
           }
         ]
       },
@@ -20703,6 +20874,183 @@
             ],
             "answer": 1,
             "exp": "« Truc » est un mot familier et imprécis, inadapté à un contexte formel qui demande normalement un vocabulaire plus précis et un registre courant à soutenu, surtout pour désigner un objet scientifique avec exactitude."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Lequel de ces mots appartient clairement au registre familier ?",
+            "choices": [
+              "Se restaurer",
+              "Manger",
+              "Bouffer",
+              "Déjeuner"
+            ],
+            "answer": 2,
+            "exp": "« Bouffer » est un mot du registre familier pour exprimer l'idée de manger."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans quelle situation utiliserais-tu plutôt un registre soutenu ?",
+            "choices": [
+              "Une discussion informelle avec des copains dans la cour de récréation",
+              "Un exposé formel devant toute la classe ou un texte officiel",
+              "Un message rapide envoyé à un ami proche",
+              "Le registre soutenu ne sert jamais dans aucune situation"
+            ],
+            "answer": 1,
+            "exp": "Le registre soutenu convient aux situations formelles, comme un exposé devant la classe ou un texte officiel."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Tu écris un texte formel pour un exposé et tu veux exprimer l'idée que quelque chose est « bien ». Quel mot choisirais-tu plutôt ?",
+            "choices": [
+              "Génial (registre familier)",
+              "Satisfaisant ou excellent (registre courant à soutenu)",
+              "Cool (registre familier)",
+              "Trop bien (registre familier)"
+            ],
+            "answer": 1,
+            "exp": "Pour un contexte formel, un mot de registre courant ou soutenu comme « satisfaisant » ou « excellent » est plus approprié que des mots familiers."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève raconte une sortie scolaire à un ami proche en disant « c'était hyper sympa », puis doit présenter cette même sortie dans un compte-rendu officiel pour l'école. Quel registre devrait-il utiliser dans le compte-rendu ?",
+            "choices": [
+              "Exactement le même registre familier que pour son ami",
+              "Un registre courant ou soutenu, plus adapté à un document officiel qu'un registre familier",
+              "Un registre encore plus familier que celui utilisé avec son ami",
+              "Le registre n'a aucune importance dans un compte-rendu officiel"
+            ],
+            "answer": 1,
+            "exp": "Un document officiel demande un registre courant ou soutenu, différent du registre familier utilisé dans une conversation entre amis."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour exprimer l'idée d'être fatigué dans un contexte formel, lequel de ces mots serait le plus approprié ?",
+            "choices": [
+              "Crevé (registre familier)",
+              "Épuisé ou fatigué (registre courant à soutenu)",
+              "Naze (registre très familier)",
+              "Mort de fatigue (expression familière)"
+            ],
+            "answer": 1,
+            "exp": "« Épuisé » ou « fatigué » sont des choix appropriés en registre courant ou soutenu pour un contexte formel, contrairement aux formulations familières."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il important de choisir un synonyme en tenant compte à la fois du sens ET du registre de langue, pas seulement du sens ?",
+            "choices": [
+              "Le registre de langue n'a jamais d'importance, seul le sens compte vraiment",
+              "Parce qu'un mot de sens proche mais de registre inadapté à la situation peut sembler déplacé ou maladroit, même si le sens général reste correct",
+              "Parce que tous les synonymes ont toujours exactement le même registre de langue",
+              "Parce que le sens n'a jamais d'importance, seul le registre de langue compte"
+            ],
+            "answer": 1,
+            "exp": "Un mot de sens correct mais de registre mal adapté à la situation peut sembler déplacé, même si l'idée générale reste juste."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève utilise le mot « truc » dans un exposé formel pour désigner un objet scientifique précis. Quel est le problème ?",
+            "choices": [
+              "Aucun problème, « truc » est parfaitement adapté à un exposé formel",
+              "« Truc » est un mot très familier et vague, peu adapté à un contexte formel comme un exposé : il vaudrait mieux utiliser un mot précis et de registre courant ou soutenu",
+              "Il fallait utiliser encore plus de mots familiers dans cet exposé",
+              "Les exposés formels n'ont jamais besoin de vocabulaire précis"
+            ],
+            "answer": 1,
+            "exp": "« Truc » est un mot vague et familier, inadapté à la précision attendue dans un contexte formel comme un exposé scientifique."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un même mot peut avoir des synonymes de registres différents : « content » (courant), « ravi » (soutenu), « hyper content » (familier).",
+            "answer": true,
+            "exp": "C'est exactement l'exemple donné dans la leçon pour illustrer la variation de registre autour d'une même idée."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Il faut toujours utiliser le registre le plus familier possible, quelle que soit la situation de communication.",
+            "answer": false,
+            "exp": "Au contraire, le choix du registre doit s'adapter à la situation : formelle (soutenu/courant) ou détendue (familier)."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Le niveau de langue utilisé entre amis dans une situation détendue s'appelle le registre : (un mot)",
+            "answer": "familier",
+            "exp": "Le registre familier est celui qui s'utilise dans des situations détendues, entre amis par exemple."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève, avant d'écrire un mot dans un texte officiel, se demande : « Ce mot est-il adapté au niveau de langue attendu ici, ou est-il trop familier ? » Que fait-il concrètement ?",
+            "choices": [
+              "Il perd son temps, cette question n'a jamais aucune utilité",
+              "Il applique exactement la démarche recommandée pour choisir un synonyme adapté à la fois au sens et au registre de la situation",
+              "Il invente un nouveau mot qui n'existe pas en français",
+              "Cette question ne concerne que l'orthographe, jamais le choix du registre"
+            ],
+            "answer": 1,
+            "exp": "Se demander si un mot est adapté au registre de la situation est exactement la démarche de choix lexical recommandée par la leçon."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la notion de registre de langue est-elle particulièrement utile à l'écrit comme à l'oral, et pas seulement dans un seul de ces deux domaines ?",
+            "choices": [
+              "Le registre de langue ne concerne en réalité que l'oral, jamais l'écrit",
+              "Parce que le choix d'un mot adapté à la situation (formelle ou détendue) s'applique aussi bien à un texte écrit qu'à une prise de parole orale",
+              "Le registre de langue ne concerne en réalité que l'écrit, jamais l'oral",
+              "Il n'existe aucune différence de registre entre l'écrit et l'oral, quel que soit le contexte"
+            ],
+            "answer": 1,
+            "exp": "Le choix du registre adapté à la situation s'applique aussi bien à l'écrit qu'à l'oral : les deux domaines demandent cette adaptation."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense qu'un mot « soutenu » est toujours meilleur qu'un mot « familier », quelle que soit la situation. Que penser de cette idée ?",
+            "choices": [
+              "Il a raison, le registre soutenu est toujours préférable, en toutes circonstances",
+              "Son idée est fausse : le bon registre dépend de la situation ; un mot soutenu peut sembler déplacé dans une conversation détendue entre amis, tout comme un mot familier serait déplacé dans un contexte formel",
+              "Le registre familier est toujours meilleur que le registre soutenu, sans exception",
+              "Il n'existe aucune différence réelle entre les registres de langue"
+            ],
+            "answer": 1,
+            "exp": "Aucun registre n'est « toujours meilleur » : le choix dépend de l'adéquation entre le registre et la situation de communication."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans une même conversation, un élève commence en registre soutenu avec un adulte inconnu, puis bascule sans transition en registre très familier avec le même adulte quelques phrases plus tard. Quel problème cela pose-t-il ?",
+            "choices": [
+              "Aucun problème, varier son registre sans raison est toujours une bonne pratique",
+              "Ce changement brusque et non justifié de registre peut sembler incohérent ou peu respectueux dans une situation qui reste formelle tout au long de l'échange",
+              "Il fallait au contraire changer encore plus souvent de registre pendant la conversation",
+              "Le registre de langue ne doit jamais rester cohérent au cours d'une même conversation"
+            ],
+            "answer": 1,
+            "exp": "Un changement de registre non justifié dans une situation qui reste formelle peut sembler incohérent ou inapproprié envers l'interlocuteur."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pour exprimer l'idée d'être « content », lequel de ces mots correspond au registre soutenu ?",
+            "choices": [
+              "Hyper content",
+              "Content",
+              "Ravi",
+              "Trop bien"
+            ],
+            "answer": 2,
+            "exp": "« Ravi » est le synonyme de registre soutenu, « content » étant courant et « hyper content »/« trop bien » étant familiers."
           }
         ]
       },
@@ -20791,6 +21139,177 @@
             ],
             "answer": 1,
             "exp": "« Avoir une faim de loup » est une expression imagée signifiant avoir très faim, sans aucun rapport avec une transformation réelle : comprendre une expression au sens figuré comme si elle était littérale mène à un contresens absurde."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Que signifie l'expression « avoir le cafard » ?",
+            "choices": [
+              "Avoir vraiment un insecte sur soi",
+              "Être triste, avoir le moral bas",
+              "Être très joyeux et enthousiaste",
+              "Avoir faim"
+            ],
+            "answer": 1,
+            "exp": "« Avoir le cafard » est une expression au sens figuré signifiant être triste, avoir le moral bas."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "« Il dévore son livre » utilise le verbe « dévorer » au sens :",
+            "choices": [
+              "Propre : il mange réellement les pages du livre",
+              "Figuré : il lit le livre avec une grande avidité, sans vraiment le manger",
+              "Il n'y a aucun sens particulier à cette phrase",
+              "Les deux sens en même temps, de façon totalement littérale"
+            ],
+            "answer": 1,
+            "exp": "« Dévorer » employé pour la lecture est un sens figuré exprimant une lecture passionnée et rapide, sans manger réellement le livre."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Quelqu'un dit : « Cette nouvelle m'a cassé le cœur. » Que comprends-tu grâce au sens figuré ?",
+            "choices": [
+              "Que son cœur est physiquement cassé et nécessite une opération",
+              "Que cette nouvelle l'a rendu très triste",
+              "Qu'il n'a aucune réaction émotionnelle face à cette nouvelle",
+              "Qu'il est très content de cette nouvelle"
+            ],
+            "answer": 1,
+            "exp": "« Casser le cœur » au sens figuré exprime une grande tristesse provoquée par une nouvelle, sans qu'aucun organe ne soit réellement cassé."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un texte décrit un personnage qui « a un chat dans la gorge » juste avant de prendre la parole en public. Que comprends-tu de cette expression au sens figuré ?",
+            "choices": [
+              "Qu'un vrai chat se trouve physiquement dans sa gorge",
+              "Qu'il a du mal à parler, par exemple à cause de l'émotion ou d'un léger enrouement",
+              "Qu'il adore les chats et en parle souvent",
+              "Que cette expression n'a aucun sens compréhensible"
+            ],
+            "answer": 1,
+            "exp": "« Avoir un chat dans la gorge » signifie avoir du mal à parler, sans qu'aucun animal ne soit réellement présent."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi les auteurs utilisent-ils des expressions au sens figuré plutôt que de toujours décrire les choses littéralement ?",
+            "choices": [
+              "Parce que le sens figuré est toujours totalement incompréhensible pour le lecteur",
+              "Parce que les expressions figurées créent des images fortes et évocatrices, qui rendent un texte plus vivant et expressif qu'une simple description littérale",
+              "Parce que le sens propre n'existe pas vraiment dans la langue française",
+              "Parce qu'il est obligatoire d'utiliser uniquement le sens figuré dans tous les textes, sans exception"
+            ],
+            "answer": 1,
+            "exp": "Le sens figuré crée des images fortes qui rendent un texte plus vivant et expressif qu'une description purement littérale."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève, en entendant « j'ai une faim de loup », s'inquiète en pensant que son camarade se transforme réellement en loup. Quelle est son erreur ?",
+            "choices": [
+              "Il a bien compris la situation, il faut vraiment s'inquiéter dans ce cas",
+              "Il a pris une expression au sens figuré (avoir très faim, comme un loup affamé) pour une réalité au sens propre : il faut repérer qu'il s'agit d'une image, pas d'un fait réel",
+              "Les loups n'ont en réalité jamais faim, donc l'expression est fausse",
+              "Cette expression n'existe pas du tout en langue française"
+            ],
+            "answer": 1,
+            "exp": "Confondre une expression figurée avec un fait réel au sens propre est l'erreur classique à éviter face à ce type d'expressions."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Le sens figuré consiste à utiliser un mot ou une expression de façon imagée, différente de son sens habituel et concret.",
+            "answer": true,
+            "exp": "C'est exactement la définition du sens figuré, par opposition au sens propre qui est le sens habituel et concret d'un mot."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Le contexte dans lequel une expression figurée est employée ne donne jamais aucun indice sur son vrai sens.",
+            "answer": false,
+            "exp": "Au contraire, la leçon explique que le contexte donne souvent des indices utiles pour comprendre une expression figurée inconnue."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Le sens habituel et concret d'un mot, par opposition au sens imagé, s'appelle le sens : (un mot)",
+            "answer": "propre",
+            "exp": "Le sens propre désigne le sens habituel et concret d'un mot, par opposition au sens figuré qui est imagé."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève lit l'expression « être dans la lune » pour la première fois, sans la connaître. En observant qu'elle est employée pour un personnage qui ne répond pas, perdu dans ses pensées, que peut-il déduire du contexte ?",
+            "choices": [
+              "Rien du tout, le contexte ne donne jamais aucun indice utile",
+              "Que l'expression signifie probablement être distrait, absorbé dans ses pensées, sans rapport avec un vrai voyage sur la lune",
+              "Que le personnage est réellement allé sur la lune",
+              "Que cette expression est incompréhensible sans dictionnaire, même avec le contexte"
+            ],
+            "answer": 1,
+            "exp": "Le contexte (un personnage distrait, absorbé) donne un indice fort sur le sens figuré de l'expression « être dans la lune »."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il important de ne jamais prendre une expression au sens figuré de façon littérale, même quand l'image semble étrange ou extrême ?",
+            "choices": [
+              "Ce n'est jamais important, il faut toujours tout prendre au sens littéral, même les expressions figurées",
+              "Parce qu'une interprétation littérale d'une expression figurée (comme se transformer en loup ou avoir un vrai chat dans la gorge) mènerait à une incompréhension absurde du message réel voulu par le locuteur",
+              "Les expressions figurées n'existent en réalité jamais dans la langue française courante",
+              "Le sens figuré et le sens littéral sont toujours exactement identiques, sans aucune différence"
+            ],
+            "answer": 1,
+            "exp": "Une lecture littérale d'une expression figurée mène à une incompréhension absurde, alors que le sens figuré correspond à l'intention réelle du locuteur."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense qu'une expression comme « casser les pieds » signifie forcément blesser physiquement les pieds de quelqu'un. Que penser de cette idée ?",
+            "choices": [
+              "Il a raison, cette expression signifie toujours une blessure physique réelle aux pieds",
+              "Son idée est fausse : « casser les pieds » est une expression figurée qui signifie ennuyer quelqu'un, sans aucune blessure physique réelle",
+              "Cette expression n'existe pas du tout en français",
+              "Il est impossible de savoir ce que signifie cette expression, même avec le contexte"
+            ],
+            "answer": 1,
+            "exp": "« Casser les pieds » au sens figuré signifie ennuyer quelqu'un, sans aucun rapport avec une blessure physique réelle."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans un texte, un personnage est décrit comme ayant « le cœur sur la main ». Quelle qualité cette expression figurée évoque-t-elle probablement chez ce personnage ?",
+            "choices": [
+              "Un problème médical grave concernant le cœur",
+              "Une grande générosité, le fait de donner facilement aux autres",
+              "Une maladresse physique particulière",
+              "Une peur extrême et permanente"
+            ],
+            "answer": 1,
+            "exp": "« Avoir le cœur sur la main » est une expression figurée qui évoque la générosité d'une personne."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Le sens figuré permet de créer des images fortes qui rendent un texte plus vivant qu'une description purement littérale.",
+            "answer": true,
+            "exp": "C'est exactement l'intérêt du sens figuré décrit dans cette leçon : créer des images évocatrices et vivantes."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un élève lit « cette blague est tombée à l'eau » et comprend, grâce au contexte (une blague qui n'a fait rire personne), que l'expression signifie « a échoué ». Que fait-il concrètement ?",
+            "choices": [
+              "Il invente un sens qui n'a aucun rapport avec le contexte",
+              "Il utilise le contexte pour déduire le sens figuré d'une expression qu'il ne connaissait peut-être pas par cœur",
+              "Il prend l'expression au sens propre, en imaginant une vraie blague tombée dans l'eau",
+              "Cette démarche est totalement inutile pour comprendre une expression figurée"
+            ],
+            "answer": 1,
+            "exp": "Utiliser le contexte pour déduire le sens figuré d'une expression inconnue est exactement la stratégie recommandée par la leçon."
           }
         ]
       },
@@ -20879,6 +21398,177 @@
             ],
             "answer": 1,
             "exp": "La stratégie de la famille de mots repose sur de vrais mots existants de la langue française, pas sur des inventions personnelles : un mot qui n'existe pas ne peut servir de preuve fiable pour confirmer une orthographe."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Comment peut-on deviner que « long » se termine par un « g » muet ?",
+            "choices": [
+              "C'est impossible à deviner, il faut toujours l'apprendre par cœur sans aucune aide",
+              "En pensant au mot de la même famille « longue », où le son devient audible",
+              "En devinant complètement au hasard, sans aucune méthode",
+              "En comptant simplement le nombre de lettres du mot"
+            ],
+            "answer": 1,
+            "exp": "Penser au féminin « longue », où le son « g » s'entend, confirme la présence de cette lettre dans « long »."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pourquoi « national » s'écrit-il avec un seul « n » après « natio- » ?",
+            "choices": [
+              "Sans aucune raison particulière, c'est uniquement à apprendre par cœur",
+              "Par cohérence avec le mot de la même famille « nation », qui a aussi un seul « n » à cet endroit",
+              "Parce que tous les mots terminés en « -al » ont toujours un seul « n »",
+              "Parce que « national » n'a en réalité aucun rapport avec « nation »"
+            ],
+            "answer": 1,
+            "exp": "La cohérence orthographique avec le mot de la même famille « nation » explique l'orthographe de « national »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Tu hésites sur l'orthographe de « profond ». À quel mot de la même famille peux-tu penser pour t'aider ?",
+            "choices": [
+              "Profession",
+              "Profonde ou profondeur",
+              "Professeur",
+              "Problème"
+            ],
+            "answer": 1,
+            "exp": "« Profonde » ou « profondeur » appartiennent à la même famille que « profond » et aident à confirmer son orthographe."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Tu hésites sur l'orthographe du mot « grand », en particulier sur sa lettre finale. À quel mot de la même famille peux-tu penser pour confirmer cette lettre ?",
+            "choices": [
+              "Grandeur ou grande, où le son de la lettre finale devient plus audible",
+              "Grange, qui n'a aucun rapport de sens avec « grand »",
+              "Grain, qui n'a aucun rapport de sens avec « grand »",
+              "Il est impossible de vérifier cette lettre par une famille de mots"
+            ],
+            "answer": 0,
+            "exp": "« Grande » ou « grandeur » appartiennent à la famille de « grand » et confirment, par leur prononciation, la lettre finale muette."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la stratégie de penser à un mot de la même famille est-elle plus efficace que de mémoriser chaque mot isolément, lettre par lettre ?",
+            "choices": [
+              "Ce n'est jamais plus efficace, il faut toujours tout mémoriser isolément sans aucune stratégie",
+              "Parce qu'elle s'appuie sur une logique de construction des mots (les familles) qui se retrouve dans de nombreux cas, plutôt que de devoir retenir arbitrairement chaque mot séparément",
+              "Parce que les familles de mots n'ont en réalité aucun rapport avec l'orthographe",
+              "Parce que mémoriser chaque mot isolément est toujours plus rapide que d'utiliser les familles"
+            ],
+            "answer": 1,
+            "exp": "S'appuyer sur la logique des familles de mots est plus efficace qu'une mémorisation isolée et arbitraire de chaque mot."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève cherche à deviner l'orthographe de « amour » en pensant au mot inventé « amourer », qui n'existe pas en français. Quel est le problème avec sa méthode ?",
+            "choices": [
+              "Aucun problème, inventer des mots est toujours une bonne stratégie orthographique",
+              "La stratégie ne fonctionne que si le mot de la même famille existe VRAIMENT dans la langue française : inventer un mot qui n'existe pas ne peut pas servir d'appui fiable",
+              "Il faut toujours inventer des mots pour deviner l'orthographe d'un mot inconnu",
+              "« Amourer » est effectivement un mot très utile et correct en français"
+            ],
+            "answer": 1,
+            "exp": "La stratégie des familles de mots ne fonctionne qu'avec des mots réellement existants dans la langue, pas avec des mots inventés."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "La stratégie de penser à un mot de la même famille peut aider à mémoriser l'orthographe d'une lettre muette finale.",
+            "answer": true,
+            "exp": "C'est exactement le principe de cette stratégie, illustré par l'exemple de « long » et « longue »."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Inventer un mot qui n'existe pas dans la langue française peut servir d'appui fiable pour deviner une orthographe.",
+            "answer": false,
+            "exp": "Au contraire, la stratégie ne fonctionne que si le mot de la même famille existe réellement dans la langue française."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "L'étude de la construction des mots (radical, préfixe, suffixe) s'appelle la : (un mot)",
+            "answer": "morphologie",
+            "exp": "La morphologie désigne l'étude de la construction des mots, utile pour mémoriser certaines orthographes."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève, face au mot « honneur », se souvient qu'il appartient à la même famille que « honorer », ce qui l'aide à se rappeler qu'il contient deux « n ». Que fait-il concrètement ?",
+            "choices": [
+              "Il perd son temps, cette méthode n'a jamais aucune utilité réelle",
+              "Il applique exactement la stratégie de mémorisation par la famille de mots recommandée par la leçon",
+              "Il invente un lien qui n'existe pas du tout entre ces deux mots",
+              "Cette stratégie ne concerne que les lettres muettes finales, jamais les lettres doubles"
+            ],
+            "answer": 1,
+            "exp": "S'appuyer sur un mot réel de la même famille (« honorer ») pour mémoriser une difficulté orthographique (« honneur ») est exactement la stratégie recommandée."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi cette stratégie de la famille de mots fonctionne-t-elle aussi bien pour des lettres muettes finales que pour des lettres doubles complexes ?",
+            "choices": [
+              "Elle ne fonctionne en réalité jamais pour les lettres doubles, uniquement pour les lettres muettes finales",
+              "Parce que dans les deux cas, le principe reste le même : chercher un mot réel de la même famille qui confirme, par le sens ou le son, la présence de cette lettre ou de ce groupe de lettres",
+              "Cette stratégie ne fonctionne en réalité jamais, quel que soit le type de difficulté orthographique",
+              "Les lettres doubles et les lettres muettes finales n'ont jamais aucun point commun"
+            ],
+            "answer": 1,
+            "exp": "Le principe reste identique dans les deux cas : s'appuyer sur un mot réel de la même famille pour confirmer une difficulté orthographique."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense que toutes les familles de mots sont toujours évidentes à deviner uniquement en regardant l'orthographe des mots. Quelle limite cette idée a-t-elle, d'après cette leçon ?",
+            "choices": [
+              "Aucune limite, il suffit toujours de regarder l'orthographe pour deviner une famille de mots",
+              "Elle néglige que le véritable critère d'une famille de mots est le lien de SENS entre les mots, pas uniquement leur ressemblance orthographique, qui peut parfois être trompeuse",
+              "Il est impossible qu'un mot appartienne à une famille de mots sans ressemblance orthographique visible",
+              "Le sens des mots n'a jamais aucune importance pour déterminer une famille de mots"
+            ],
+            "answer": 1,
+            "exp": "Le critère réel d'une famille de mots est le lien de sens, et non la simple ressemblance orthographique, qui peut parfois tromper."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un élève hésite entre écrire « tard » ou « tar » pour le mot désignant un moment de la journée. En pensant au mot « tardif », qui contient clairement un « d », que peut-il en conclure ?",
+            "choices": [
+              "Rien du tout, « tardif » n'a aucun rapport avec cette hésitation orthographique",
+              "Que « tard » s'écrit bien avec un « d » final, confirmé par le mot de la même famille « tardif »",
+              "Qu'il faut écrire « tar » sans « d », car « tardif » n'a aucun rapport de sens",
+              "Que cette stratégie ne peut jamais s'appliquer à des mots comme « tard »"
+            ],
+            "answer": 1,
+            "exp": "« Tardif », mot de la même famille, confirme clairement la présence du « d » final dans « tard »."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Un élève hésite sur l'orthographe de « petit », en particulier sur sa lettre finale. À quel mot de la même famille peut-il penser pour confirmer cette lettre ?",
+            "choices": [
+              "Petite ou petitesse, où le son devient audible",
+              "Pétale, qui n'a aucun rapport de sens avec « petit »",
+              "Péage, qui n'a aucun rapport de sens avec « petit »",
+              "Il est impossible de vérifier cette lettre par une famille de mots"
+            ],
+            "answer": 0,
+            "exp": "« Petite » ou « petitesse » appartiennent à la famille de « petit » et confirment, par leur prononciation, la lettre finale muette."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Penser à un mot de la même famille qui n'existe pas réellement en français peut tout de même aider à mémoriser une orthographe.",
+            "answer": false,
+            "exp": "Au contraire, la stratégie ne fonctionne que si le mot de la même famille existe vraiment dans la langue française."
           }
         ]
       },
@@ -20967,6 +21657,177 @@
             ],
             "answer": 1,
             "exp": "« Voler la vedette » est une expression au sens figuré qui ne correspond pas au sens de « commettre un vol » : il fallait chercher dans le dictionnaire le sens plus adapté à ce contexte précis, en lien avec l'expression figurée."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans quel ordre les mots sont-ils rangés dans un dictionnaire ?",
+            "choices": [
+              "Par ordre de longueur, du plus court au plus long",
+              "Par ordre alphabétique",
+              "Au hasard, sans aucun ordre particulier",
+              "Par ordre de difficulté, du plus facile au plus difficile"
+            ],
+            "answer": 1,
+            "exp": "Les mots d'un dictionnaire sont rangés par ordre alphabétique, ce qui permet de les retrouver rapidement."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Qu'est-ce qu'un mot « polysémique » ?",
+            "choices": [
+              "Un mot qui n'a absolument aucun sens",
+              "Un mot qui a plusieurs sens différents possibles",
+              "Un mot particulièrement très long",
+              "Un mot qui n'existe que dans un dictionnaire et jamais à l'oral"
+            ],
+            "answer": 1,
+            "exp": "Un mot polysémique possède plusieurs sens différents, qu'il faut distinguer selon le contexte."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Le mot « voler » a plusieurs sens au dictionnaire. Dans la phrase « l'oiseau vole dans le ciel », quel sens dois-tu choisir ?",
+            "choices": [
+              "Celui qui correspond à « se déplacer dans les airs »",
+              "Celui qui correspond à « prendre quelque chose sans permission »",
+              "Le premier sens de la liste, peu importe le contexte de la phrase",
+              "N'importe quel sens, cela n'a pas d'importance pour comprendre la phrase"
+            ],
+            "answer": 0,
+            "exp": "Le contexte (un oiseau, le ciel) indique clairement qu'il s'agit du sens « se déplacer dans les airs », pas du sens « dérober »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Tu lis « il a volé la vedette à son collègue » et tu consultes le dictionnaire, qui liste plusieurs sens pour « voler ». Lequel correspond le mieux à ce contexte ?",
+            "choices": [
+              "« Prendre quelque chose sans permission, comme un vol »",
+              "« Attirer l'attention au détriment de quelqu'un d'autre »",
+              "« Se déplacer dans les airs comme un oiseau »",
+              "Aucun des sens listés ne correspond jamais à cette phrase"
+            ],
+            "answer": 1,
+            "exp": "Le contexte (« la vedette », « à son collègue ») correspond au sens figuré « attirer l'attention au détriment de quelqu'un d'autre »."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il important de choisir le bon sens parmi ceux listés dans le dictionnaire, en fonction du contexte, plutôt que de prendre systématiquement le premier sens proposé ?",
+            "choices": [
+              "Le premier sens est toujours le bon choix, peu importe le contexte de la phrase",
+              "Parce qu'un mot polysémique a plusieurs significations différentes, et seul le contexte de la phrase permet de déterminer laquelle est réellement utilisée dans ce cas précis",
+              "Parce que les dictionnaires rangent toujours les sens de façon totalement aléatoire",
+              "Parce qu'il ne faut jamais utiliser le dictionnaire pour un mot polysémique, quelle que soit la situation"
+            ],
+            "answer": 1,
+            "exp": "Le contexte précis de la phrase est le seul moyen fiable de déterminer quel sens d'un mot polysémique est réellement utilisé."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève lit « il a volé la vedette à son collègue » et choisit directement le sens « prendre quelque chose sans permission, comme un voleur » du dictionnaire, ce qui ne correspond pas bien au contexte. Quelle est son erreur ?",
+            "choices": [
+              "Il a parfaitement choisi le bon sens pour cette phrase",
+              "Il a choisi un sens qui ne correspond pas vraiment à cette expression figurée : « voler la vedette » signifie attirer l'attention au détriment de quelqu'un d'autre, pas commettre un vol au sens propre",
+              "Le dictionnaire ne contient jamais le bon sens pour aucune phrase",
+              "Il fallait choisir un tout autre mot que « voler » dans cette phrase"
+            ],
+            "answer": 1,
+            "exp": "Choisir le premier sens sans tenir compte du contexte mène à une mauvaise interprétation d'une expression au sens figuré."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un article de dictionnaire peut contenir la nature du mot, sa prononciation, et plusieurs sens numérotés s'il est polysémique.",
+            "answer": true,
+            "exp": "C'est exactement le contenu typique d'un article de dictionnaire décrit dans cette leçon."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Il faut toujours consulter systématiquement le dictionnaire pour chaque mot rencontré dans une lecture, sans exception.",
+            "answer": false,
+            "exp": "La leçon précise au contraire que le dictionnaire sert surtout à vérifier une hypothèse déjà construite par le contexte, pas à une consultation systématique de chaque mot."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un mot qui possède plusieurs sens différents est dit : (un mot)",
+            "answer": "polysemique",
+            "exp": "La polysémie désigne cette capacité d'un mot à avoir plusieurs sens différents possibles selon le contexte."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève, en lisant un texte, formule d'abord une hypothèse sur le sens d'un mot grâce au contexte, puis vérifie cette hypothèse dans le dictionnaire. Que fait-il concrètement ?",
+            "choices": [
+              "Il perd son temps, cette démarche n'a jamais aucune utilité particulière",
+              "Il applique exactement la démarche recommandée par la leçon : utiliser le dictionnaire pour vérifier une hypothèse déjà construite par le contexte",
+              "Il invente un sens qui n'a aucun rapport avec le dictionnaire",
+              "Cette démarche ne concerne que les mots inconnus, jamais les mots déjà connus"
+            ],
+            "answer": 1,
+            "exp": "Vérifier une hypothèse de sens déjà construite par le contexte est exactement l'usage du dictionnaire recommandé par la leçon."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi le classement alphabétique d'un dictionnaire devient-il particulièrement utile quand plusieurs mots commencent par les mêmes premières lettres ?",
+            "choices": [
+              "Le classement alphabétique n'a jamais aucune utilité particulière dans ce cas",
+              "Parce qu'il faut alors comparer les lettres suivantes, une par une, pour déterminer l'ordre exact entre ces mots proches et les localiser précisément",
+              "Il est impossible de classer des mots qui commencent par les mêmes lettres",
+              "Seul le premier mot qui commence par ces lettres a besoin d'être cherché, les autres n'existent jamais"
+            ],
+            "answer": 1,
+            "exp": "Quand plusieurs mots partagent les premières lettres, il faut comparer les lettres suivantes pour déterminer leur ordre exact et les localiser."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense qu'un dictionnaire ne sert qu'à vérifier l'orthographe d'un mot, jamais à comprendre son sens exact selon le contexte. Que penser de cette idée ?",
+            "choices": [
+              "Il a raison, un dictionnaire ne sert en réalité jamais à comprendre le sens d'un mot",
+              "Son idée est incomplète : le dictionnaire sert aussi à vérifier le sens exact d'un mot, en particulier pour choisir, parmi plusieurs sens possibles, celui qui correspond au contexte de lecture",
+              "L'orthographe n'a en réalité jamais d'importance dans un dictionnaire",
+              "Un dictionnaire ne contient jamais aucune information sur le sens des mots"
+            ],
+            "answer": 1,
+            "exp": "Le dictionnaire sert aussi, et peut-être surtout, à vérifier le sens exact d'un mot selon le contexte, pas seulement son orthographe."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans un dictionnaire, le mot « feuille » a plusieurs sens listés : partie d'une plante, morceau de papier, partie d'un instrument. Dans la phrase « il écrit sur une feuille blanche », quel sens choisir et pourquoi ?",
+            "choices": [
+              "Le sens « partie d'une plante », car c'est toujours le premier sens listé",
+              "Le sens « morceau de papier », car le contexte (écrire, blanche) correspond clairement à cette signification",
+              "N'importe quel sens, le contexte n'a jamais d'importance pour ce choix",
+              "Aucun des sens listés ne peut correspondre à cette phrase précise"
+            ],
+            "answer": 1,
+            "exp": "Le contexte (« écrit », « blanche ») indique clairement qu'il s'agit du sens « morceau de papier », parmi les sens possibles de « feuille »."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi la nature d'un mot (nom, verbe, adjectif) indiquée dans un article de dictionnaire est-elle une information utile, en plus de son sens ?",
+            "choices": [
+              "Cette information n'a jamais aucune utilité particulière pour le lecteur",
+              "Parce qu'elle aide à comprendre comment le mot peut être utilisé dans une phrase (accordé, conjugué...), en complément de son ou ses sens",
+              "Seul le sens d'un mot compte, jamais sa nature grammaticale",
+              "La nature d'un mot est toujours identique à son sens exact"
+            ],
+            "answer": 1,
+            "exp": "Connaître la nature grammaticale d'un mot aide à comprendre son fonctionnement dans une phrase, en complément de son sens."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Devenir autonome avec le dictionnaire signifie aussi savoir vérifier une hypothèse de sens déjà construite grâce au contexte de lecture.",
+            "answer": true,
+            "exp": "C'est exactement l'usage avancé du dictionnaire visé au CM1, au-delà d'une simple consultation systématique."
           }
         ]
       },
