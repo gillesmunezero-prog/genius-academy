@@ -6875,6 +6875,189 @@
             ],
             "answer": 1,
             "exp": "Avoir entendu des sons ne garantit pas d'avoir compris et retenu le message : il faut l'effort actif de concentration et de mémorisation pour que l'écoute soit vraiment utile."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Écouter activement, c'est :",
+            "choices": [
+              "Simplement laisser les sons arriver à ses oreilles sans y penser",
+              "Se concentrer volontairement sur ce qui est dit pour vraiment le comprendre",
+              "Fermer les yeux pour mieux dormir",
+              "Parler en même temps que l'autre personne"
+            ],
+            "answer": 1,
+            "exp": "Écouter activement demande un effort volontaire de concentration et de compréhension, contrairement au simple fait d'entendre."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pendant qu'on écoute une consigne orale en plusieurs étapes, que peut-on faire pour mieux la retenir ?",
+            "choices": [
+              "Ne rien faire de particulier",
+              "Répéter mentalement chaque étape, ou les compter sur ses doigts",
+              "Parler à son voisin en même temps",
+              "Regarder ailleurs pour se détendre"
+            ],
+            "answer": 1,
+            "exp": "Répéter mentalement ou compter les étapes aide à mémoriser une consigne orale complexe."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "La maîtresse donne une consigne en 3 étapes. Que devrais-tu faire en priorité pendant que tu l'écoutes ?",
+            "choices": [
+              "Discuter avec ton voisin en même temps",
+              "Te concentrer sur chaque étape et éviter de te laisser distraire",
+              "Commencer immédiatement sans attendre la fin de la consigne",
+              "Penser à autre chose de plus intéressant"
+            ],
+            "answer": 1,
+            "exp": "Se concentrer sur chaque étape sans se laisser distraire est essentiel pour bien suivre une consigne en plusieurs parties."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un camarade t'explique un jeu à voix basse dans une pièce bruyante. Que peux-tu faire pour mieux l'écouter ?",
+            "choices": [
+              "Ne rien faire, tant pis si tu ne comprends pas",
+              "Te rapprocher de lui ou lui demander de parler un peu plus fort",
+              "Faire semblant d'avoir compris",
+              "Partir sans rien dire"
+            ],
+            "answer": 1,
+            "exp": "Se rapprocher ou demander de parler plus fort aide à surmonter les obstacles à une bonne écoute dans un environnement bruyant."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi demander une répétition ou une clarification quand on n'a pas bien compris est-il un signe de bon auditeur, et non une honte ?",
+            "choices": [
+              "C'est toujours une honte de ne pas avoir compris du premier coup",
+              "Parce que cela montre qu'on cherche vraiment à comprendre complètement le message, plutôt que de faire semblant ou de rester dans le flou",
+              "Demander une répétition est toujours interdit",
+              "Un bon auditeur ne devrait jamais avoir besoin de demander quoi que ce soit"
+            ],
+            "answer": 1,
+            "exp": "Demander une clarification montre un vrai souci de comprendre complètement, plutôt que de rester dans l'incompréhension par gêne."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève affirme avoir « écouté » la consigne car il a entendu la maîtresse parler, mais il ne sait plus du tout ce qu'il doit faire. Quel est le problème ?",
+            "choices": [
+              "Il n'y a aucun problème, entendre suffit toujours",
+              "Il a seulement entendu les sons sans vraiment se concentrer sur le sens : écouter activement demande plus qu'un simple entendre passif",
+              "Il a parfaitement écouté activement",
+              "La maîtresse n'a pas donné de consigne claire"
+            ],
+            "answer": 1,
+            "exp": "Entendre des sons sans en retenir le sens n'est pas une écoute active ; comprendre demande un effort de concentration supplémentaire."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Écouter activement demande un effort de concentration, contrairement au simple fait d'entendre des sons.",
+            "answer": true,
+            "exp": "L'écoute active implique un engagement volontaire pour comprendre, au-delà de la simple perception des sons."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi regarder la personne qui parle peut-il aider à mieux l'écouter ?",
+            "choices": [
+              "Cela n'aide jamais à mieux écouter",
+              "Parce que cela aide à se concentrer sur elle et à percevoir aussi des indices non verbaux (gestes, expressions) qui complètent le message",
+              "Regarder quelqu'un empêche toujours de bien écouter",
+              "Il est interdit de regarder la personne qui parle"
+            ],
+            "answer": 1,
+            "exp": "Regarder la personne qui parle aide à se concentrer sur elle et à percevoir des indices non verbaux qui enrichissent la compréhension du message."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un enfant écoute une histoire racontée à l'oral et, à la fin, ne se souvient d'aucun détail. Que lui conseiller pour la prochaine fois ?",
+            "choices": [
+              "De ne plus jamais écouter d'histoires",
+              "De se concentrer activement sur les personnages et les événements pendant qu'il écoute, plutôt que de laisser son attention vagabonder",
+              "D'écouter encore moins attentivement",
+              "De parler en même temps que le narrateur"
+            ],
+            "answer": 1,
+            "exp": "Se concentrer activement sur les éléments importants (personnages, événements) pendant l'écoute aide à mieux les retenir."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il utile de reformuler dans sa tête ce qu'on vient d'entendre, juste après l'avoir écouté ?",
+            "choices": [
+              "Ce n'est jamais utile de reformuler",
+              "Parce que cela permet de vérifier si on a bien compris le message, et de mieux le mémoriser",
+              "Reformuler change toujours le sens du message original",
+              "Il est interdit de reformuler ce qu'on entend"
+            ],
+            "answer": 1,
+            "exp": "Reformuler mentalement un message aide à vérifier sa propre compréhension et à mieux le mémoriser."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans une classe bruyante, pourquoi est-il plus difficile de bien écouter une consigne ?",
+            "choices": [
+              "Le bruit n'a jamais d'effet sur l'écoute",
+              "Parce que le bruit ambiant peut distraire l'attention et rendre plus difficile la concentration sur les paroles importantes",
+              "Le bruit aide toujours à mieux se concentrer",
+              "Il est impossible d'écouter dans une classe, bruyante ou pas"
+            ],
+            "answer": 1,
+            "exp": "Un environnement bruyant peut distraire l'attention et rendre la concentration sur le message plus difficile."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi prendre quelques notes rapides (même juste des mots-clés) pendant qu'on écoute une longue explication peut-il aider ?",
+            "choices": [
+              "Prendre des notes n'aide jamais à rien",
+              "Parce que cela aide à retenir les informations importantes sans devoir tout mémoriser de tête",
+              "Il est interdit de prendre des notes en écoutant",
+              "Prendre des notes empêche toujours d'écouter correctement"
+            ],
+            "answer": 1,
+            "exp": "Noter les mots-clés pendant l'écoute aide à retenir les informations importantes sans surcharger la mémoire."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève coupe systématiquement la parole dès qu'il pense avoir compris, avant la fin de la consigne. Quel risque prend-il ?",
+            "choices": [
+              "Aucun risque, il est toujours plus rapide ainsi",
+              "Il risque de manquer la fin de la consigne, qui pourrait contenir une information importante changeant ce qu'il faut vraiment faire",
+              "Couper la parole aide toujours à mieux comprendre",
+              "Ce comportement est toujours la meilleure stratégie"
+            ],
+            "answer": 1,
+            "exp": "Couper la parole avant la fin risque de faire manquer des informations importantes données à la fin de la consigne."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi l'écoute active est-elle une compétence utile non seulement à l'école, mais aussi dans la vie de tous les jours ?",
+            "choices": [
+              "Elle n'est utile qu'à l'école, jamais ailleurs",
+              "Parce que bien comprendre les autres (parents, amis, adultes) demande la même attention et concentration que celle développée à l'école",
+              "L'écoute active ne sert à rien dans la vraie vie",
+              "Il n'existe aucun lien entre l'école et la vie quotidienne"
+            ],
+            "answer": 1,
+            "exp": "La capacité à bien écouter et comprendre les autres est utile dans toutes les situations de la vie, pas seulement à l'école."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Hocher la tête ou dire « oui » pendant qu'on écoute quelqu'un peut montrer qu'on suit activement ce qu'il dit.",
+            "answer": true,
+            "exp": "Ces petits signaux montrent à la personne qui parle qu'elle est bien écoutée, encourageant la communication."
           }
         ]
       },
@@ -6963,6 +7146,195 @@
             ],
             "answer": 1,
             "exp": "Organiser son récit dans un ordre logique, avec des connecteurs clairs, aide l'auditoire à suivre facilement le fil de l'histoire, plutôt que de se perdre dans un désordre d'événements."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pourquoi est-il important d'utiliser des mots précis plutôt que des mots vagues en parlant ?",
+            "choices": [
+              "Les mots vagues sont toujours préférables",
+              "Parce que des mots précis aident l'auditeur à comprendre exactement ce qu'on veut dire, sans ambiguïté",
+              "Peu importe les mots utilisés, le sens reste toujours clair",
+              "Les mots précis rendent toujours la phrase plus compliquée inutilement"
+            ],
+            "answer": 1,
+            "exp": "Des mots précis évitent l'ambiguïté et permettent à l'auditeur de comprendre exactement le message voulu."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Avant de raconter une histoire que personne ne connaît encore, que devrais-tu donner en premier ?",
+            "choices": [
+              "Directement la fin de l'histoire",
+              "Des informations de base (qui, où, quand) pour que l'auditoire comprenne le contexte",
+              "Rien, il suffit de commencer n'importe où",
+              "Uniquement des détails sans importance"
+            ],
+            "answer": 1,
+            "exp": "Donner le contexte de base (qui, où, quand) permet à l'auditoire de suivre l'histoire dès le début."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Tu expliques à un camarade comment jouer à un jeu qu'il ne connaît pas. Que dois-tu particulièrement surveiller ?",
+            "choices": [
+              "Parler le plus vite possible",
+              "Utiliser un vocabulaire clair et expliquer les règles dans un ordre logique",
+              "Ne donner aucune règle, il devinera",
+              "Parler très bas pour que ce soit un secret"
+            ],
+            "answer": 1,
+            "exp": "Un vocabulaire clair et un ordre logique aident ton camarade à bien comprendre les règles du jeu."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Tu racontes à ta classe ce que tu as fait pendant les vacances. Pourquoi faut-il adapter ton discours à ton auditoire (tes camarades) ?",
+            "choices": [
+              "Il n'est jamais nécessaire d'adapter son discours",
+              "Parce que tes camarades n'ont pas vécu ce que tu as vécu : il faut leur donner assez de détails pour qu'ils comprennent la situation",
+              "Il faut toujours parler de la même façon à tout le monde",
+              "Adapter son discours est interdit à l'école"
+            ],
+            "answer": 1,
+            "exp": "Adapter son discours à ce que l'auditoire sait déjà (ou ne sait pas) permet d'être mieux compris."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi faut-il penser à ce que connaît déjà son auditoire avant de raconter quelque chose à l'oral ?",
+            "choices": [
+              "Ce n'est jamais nécessaire d'y penser",
+              "Parce que cela permet de savoir quelles informations donner (celles qu'ils ne connaissent pas déjà) pour être bien compris sans se répéter inutilement",
+              "L'auditoire connaît toujours déjà tout ce qu'on va dire",
+              "Il faut toujours tout réexpliquer depuis le tout début, même ce qui est déjà connu"
+            ],
+            "answer": 1,
+            "exp": "Connaître ce que sait déjà son auditoire permet de cibler les informations réellement nécessaires à donner."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève raconte une histoire en mélangeant les événements dans le désordre, sans prévenir, et son public a du mal à suivre. Que lui conseiller ?",
+            "choices": [
+              "De continuer ainsi, le désordre rend l'histoire plus intéressante",
+              "De raconter les événements dans l'ordre chronologique, ou de prévenir clairement s'il change l'ordre (« avant cela... »)",
+              "De ne plus jamais raconter d'histoire",
+              "De parler encore plus vite pour couvrir la confusion"
+            ],
+            "answer": 1,
+            "exp": "Raconter dans l'ordre chronologique (ou signaler clairement un changement d'ordre) aide le public à suivre l'histoire."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Utiliser des mots précis plutôt que vagues aide l'auditeur à mieux comprendre un message oral.",
+            "answer": true,
+            "exp": "La précision du vocabulaire réduit les ambiguïtés et facilite la compréhension."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pour présenter un exposé devant la classe, pourquoi est-il utile de préparer un plan avant de parler ?",
+            "choices": [
+              "Un plan n'est jamais utile pour un exposé oral",
+              "Parce qu'il aide à organiser ses idées dans un ordre logique et à ne rien oublier d'important pendant la présentation",
+              "Il faut toujours improviser complètement sans aucune préparation",
+              "Un plan rend toujours l'exposé plus confus"
+            ],
+            "answer": 1,
+            "exp": "Préparer un plan aide à structurer ses idées et à ne rien oublier d'important pendant un exposé oral."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pourquoi varier le ton de sa voix pendant une présentation orale peut-elle aider à capter l'attention ?",
+            "choices": [
+              "Varier le ton n'a jamais d'effet sur l'attention",
+              "Parce qu'une voix qui varie rend la présentation plus vivante et évite la monotonie qui pourrait endormir l'attention du public",
+              "Il faut toujours parler avec un ton complètement identique du début à la fin",
+              "Varier le ton rend toujours la présentation incompréhensible"
+            ],
+            "answer": 1,
+            "exp": "Varier le ton rend une présentation plus vivante et aide à maintenir l'attention du public, contrairement à un ton monotone."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève présente un exposé en lisant son texte sans jamais lever les yeux vers le public. Quel conseil lui donner ?",
+            "choices": [
+              "De continuer ainsi, c'est la meilleure méthode",
+              "De regarder parfois son public pour créer du lien, plutôt que de garder les yeux constamment fixés sur sa feuille",
+              "De parler encore plus vite en lisant",
+              "De ne plus jamais faire d'exposé oral"
+            ],
+            "answer": 1,
+            "exp": "Regarder parfois son public crée du lien et rend la présentation plus engageante qu'une lecture continue sans lever les yeux."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il utile de s'entraîner à voix haute avant une présentation orale importante, plutôt que de simplement relire son texte silencieusement ?",
+            "choices": [
+              "S'entraîner à voix haute n'apporte rien de plus",
+              "Parce que parler à voix haute permet de repérer les phrases difficiles à dire et de mieux gérer son rythme et sa respiration le jour J",
+              "Il est interdit de s'entraîner avant une présentation",
+              "Relire silencieusement suffit toujours parfaitement"
+            ],
+            "answer": 1,
+            "exp": "S'entraîner à voix haute permet de repérer les difficultés de prononciation et de rythme avant la présentation réelle."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour expliquer un trajet à quelqu'un qui ne connaît pas le quartier, quelle information est la plus utile à donner ?",
+            "choices": [
+              "La couleur de ta maison uniquement",
+              "Des repères clairs (rues, bâtiments connus) et les directions à suivre dans l'ordre",
+              "Rien, il trouvera tout seul",
+              "Uniquement la distance en kilomètres sans autre précision"
+            ],
+            "answer": 1,
+            "exp": "Des repères clairs et un ordre logique des directions aident la personne à suivre le trajet sans se perdre."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi deux personnes qui racontent exactement le même événement peuvent-elles le faire de façon différente, sans que l'une soit forcément meilleure que l'autre ?",
+            "choices": [
+              "Il existe toujours une seule bonne façon de raconter un événement",
+              "Parce que chacun peut choisir d'insister sur des détails différents ou d'organiser son récit différemment, tout en restant clair et compréhensible",
+              "Raconter un événement de façon différente est toujours une erreur",
+              "Les deux récits seront forcément identiques mot pour mot"
+            ],
+            "answer": 1,
+            "exp": "Il existe plusieurs façons valables de raconter un même événement, selon les détails choisis et l'organisation du récit, tant que cela reste clair."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève parle très vite et sans aucune pause pendant un exposé oral. Quel est le risque pour son public ?",
+            "choices": [
+              "Aucun risque, parler vite est toujours préférable",
+              "Le public risque de perdre le fil et de ne pas tout comprendre, par manque de temps pour assimiler les informations",
+              "Parler vite aide toujours à mieux comprendre",
+              "Il n'y a jamais de problème à parler très vite à l'oral"
+            ],
+            "answer": 1,
+            "exp": "Parler sans pause et trop vite peut empêcher le public d'assimiler les informations, nuisant à la compréhension globale."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour raconter une recette de cuisine à l'oral, quel ordre de présentation est le plus logique ?",
+            "choices": [
+              "Dans le désordre, au hasard",
+              "Les ingrédients, puis les étapes dans l'ordre chronologique",
+              "Uniquement le nom du plat, sans détail",
+              "La fin du plat avant les ingrédients"
+            ],
+            "answer": 1,
+            "exp": "Présenter d'abord les ingrédients puis les étapes dans l'ordre chronologique aide l'auditeur à suivre et reproduire la recette."
           }
         ]
       },
@@ -7051,6 +7423,189 @@
             ],
             "answer": 1,
             "exp": "Adapter son registre de langue à la situation (plus soigné en classe pour un débat, plus familier entre amis dans la cour) fait partie des compétences à l'oral : ce n'est pas toujours le même registre qui convient partout."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quelle est la règle la plus importante pour bien participer à un échange ?",
+            "choices": [
+              "Parler le plus fort possible pour être entendu",
+              "Écouter les autres et attendre son tour pour parler",
+              "Ne jamais laisser parler les autres",
+              "Répéter plusieurs fois la même chose"
+            ],
+            "answer": 1,
+            "exp": "Écouter les autres et respecter son tour de parole sont essentiels pour un échange respectueux."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Si tu n'es pas d'accord avec ce que dit un camarade, que devrais-tu faire ?",
+            "choices": [
+              "Lui couper immédiatement la parole en criant",
+              "Attendre qu'il termine, puis exprimer poliment ton point de vue différent",
+              "L'ignorer complètement sans rien dire",
+              "Te moquer de lui devant tout le monde"
+            ],
+            "answer": 1,
+            "exp": "Attendre son tour et exprimer poliment son désaccord permet un échange respectueux même en cas de désaccord."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pendant un débat de classe, tu veux réagir à ce qu'un camarade vient de dire. Que peux-tu dire pour bien t'y prendre ?",
+            "choices": [
+              "« Tais-toi, tu as tout faux ! »",
+              "« Je comprends ton point de vue, mais je pense plutôt que... »",
+              "Rien, il ne faut jamais réagir aux autres",
+              "Crier plus fort que lui"
+            ],
+            "answer": 1,
+            "exp": "Reconnaître le point de vue de l'autre avant d'exprimer le sien poliment favorise un échange constructif."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans un débat, un camarade donne un argument que tu trouves faible. Comment réagir de façon constructive ?",
+            "choices": [
+              "Te moquer ouvertement de son argument",
+              "Expliquer poliment pourquoi tu penses différemment, avec tes propres arguments",
+              "Ignorer complètement ce qu'il a dit sans réagir",
+              "Crier qu'il a tort sans explication"
+            ],
+            "answer": 1,
+            "exp": "Expliquer poliment son propre point de vue avec des arguments est plus constructif que la moquerie ou le silence."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi couper la parole à quelqu'un est-il problématique, même si on a une idée importante à ajouter ?",
+            "choices": [
+              "Ce n'est jamais problématique si l'idée est importante",
+              "Parce que cela empêche l'autre personne de terminer sa pensée et peut sembler irrespectueux, même avec de bonnes intentions",
+              "Couper la parole est toujours la meilleure solution",
+              "Il est interdit d'avoir des idées importantes pendant un échange"
+            ],
+            "answer": 1,
+            "exp": "Couper la parole empêche l'autre de terminer sa pensée, ce qui peut être perçu comme irrespectueux malgré de bonnes intentions."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pendant un débat, un élève parle de la même façon qu'il parlerait dans la cour de récréation, avec des mots très familiers. Quel est le problème ?",
+            "choices": [
+              "Il n'y a aucun problème, il faut toujours parler pareil partout",
+              "Le registre de langue utilisé en classe lors d'un débat devrait être plus soutenu que celui de la récréation, pour rester adapté à la situation",
+              "Il faut toujours parler de façon très familière en classe",
+              "Le registre de langue n'a aucune importance en français"
+            ],
+            "answer": 1,
+            "exp": "Le registre de langue doit s'adapter à la situation : un débat en classe demande un langage plus soutenu que celui de la récréation."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Respecter le tour de parole des autres est une règle essentielle pour bien participer à un échange.",
+            "answer": true,
+            "exp": "Attendre son tour permet à chacun de s'exprimer et favorise un échange respectueux."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il utile de lever la main avant de parler pendant un débat de classe organisé ?",
+            "choices": [
+              "Lever la main n'a aucune utilité",
+              "Parce que cela permet à l'enseignant ou à l'animateur du débat de distribuer la parole équitablement entre tous les participants",
+              "Il faut toujours parler sans jamais lever la main",
+              "Lever la main empêche toujours de participer au débat"
+            ],
+            "answer": 1,
+            "exp": "Lever la main permet une distribution équitable de la parole, évitant que certains parlent sans arrêt au détriment des autres."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève reste silencieux pendant tout un débat, sans jamais donner son avis, même quand on le lui demande directement. Que peut-on lui suggérer ?",
+            "choices": [
+              "De continuer à rester silencieux pour toujours",
+              "D'essayer d'exprimer au moins une courte opinion, même simple, pour participer à l'échange",
+              "De quitter définitivement la classe",
+              "De parler uniquement en chuchotant à son voisin"
+            ],
+            "answer": 1,
+            "exp": "Participer, même avec une opinion courte et simple, permet de s'engager dans l'échange plutôt que de rester totalement silencieux."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi accepter qu'un camarade ait un avis différent du sien, sans se fâcher, est-il important dans un débat ?",
+            "choices": [
+              "Il faut toujours se fâcher en cas de désaccord",
+              "Parce qu'un débat sert justement à confronter des points de vue différents de façon respectueuse, sans que cela devienne un conflit",
+              "Un débat n'accepte jamais les avis différents",
+              "Il est interdit d'avoir un avis différent des autres"
+            ],
+            "answer": 1,
+            "exp": "Un débat sert à confronter des idées différentes de façon respectueuse ; se fâcher en cas de désaccord va à l'encontre de son objectif."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pendant un échange, un élève répète plusieurs fois la même idée sans laisser les autres s'exprimer. Quel est le problème ?",
+            "choices": [
+              "Aucun problème, répéter son idée est toujours utile",
+              "Cela empêche les autres participants de s'exprimer et de partager leurs propres idées, ce qui nuit à la qualité de l'échange",
+              "Il faut toujours répéter son idée le plus possible",
+              "Répéter son idée aide toujours à convaincre les autres"
+            ],
+            "answer": 1,
+            "exp": "Monopoliser la parole en répétant la même idée empêche les autres de participer, ce qui nuit à la richesse de l'échange."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour bien participer à un échange en petit groupe, quelle attitude est la plus utile ?",
+            "choices": [
+              "Parler tout le temps sans jamais écouter les autres",
+              "Écouter attentivement, attendre son tour, et proposer des idées constructives",
+              "Ne jamais rien dire du tout",
+              "Critiquer systématiquement toutes les idées des autres"
+            ],
+            "answer": 1,
+            "exp": "Écouter, respecter son tour et proposer des idées constructives favorisent un échange de groupe productif."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi est-il parfois utile de reformuler ce qu'un camarade vient de dire avant de donner son propre avis dans un débat ?",
+            "choices": [
+              "Reformuler n'apporte jamais rien à l'échange",
+              "Parce que cela montre qu'on a bien écouté et compris son point de vue avant d'y répondre, ce qui rend l'échange plus respectueux et clair",
+              "Il faut toujours ignorer ce que dit le camarade précédent",
+              "Reformuler est interdit pendant un débat"
+            ],
+            "answer": 1,
+            "exp": "Reformuler montre qu'on a bien compris l'autre avant de répondre, rendant l'échange plus respectueux et constructif."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Dans un échange, pourquoi l'usage d'un ton calme est-il généralement plus efficace qu'un ton agressif pour convaincre les autres ?",
+            "choices": [
+              "Un ton agressif convainc toujours mieux",
+              "Parce qu'un ton calme favorise l'écoute et la réflexion, alors qu'un ton agressif peut braquer les autres et bloquer tout dialogue constructif",
+              "Le ton utilisé n'a jamais d'effet sur la discussion",
+              "Il faut toujours crier pour être entendu dans un débat"
+            ],
+            "answer": 1,
+            "exp": "Un ton calme favorise l'écoute et la réflexion, tandis qu'un ton agressif risque de braquer les interlocuteurs et de bloquer le dialogue."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Dans un débat, il est possible de ne pas être d'accord avec quelqu'un tout en restant poli et respectueux.",
+            "answer": true,
+            "exp": "Le désaccord et le respect ne s'opposent pas : on peut exprimer une opinion différente sans être impoli."
           }
         ]
       },
