@@ -16645,6 +16645,171 @@
             ],
             "answer": 1,
             "exp": "La distributivité demande de calculer TOUTES les parties de la décomposition puis de les additionner : oublier une partie (ici 9 × 4 = 36) donne un résultat incomplet et faux. Le bon résultat est 180 + 36 = 216."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule de tête : 58 + 29",
+            "answer": "87",
+            "exp": "58+30=88, puis 88-1=87."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule de tête 23 × 7 en décomposant 23 = 20 + 3 : combien fait 20 × 7 ?",
+            "answer": "140",
+            "exp": "20×7=140."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un commerçant calcule rapidement 8 × 29 pour 8 produits à 29 centimes. Quelle décomposition l'aide le plus ?",
+            "choices": [
+              "8 × 29 = 8 × (30−1) = 8×30 − 8",
+              "8 × 29 = 8 + 29",
+              "8 × 29 = 8 − 29",
+              "8 × 29 = 29 − 8"
+            ],
+            "answer": 0,
+            "exp": "Décomposer 29 en 30−1 permet un calcul mental rapide : 8×30=240, puis 240−8=232."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour calculer 6 × 48 par distributivité, quelle décomposition est la plus pratique ?",
+            "choices": [
+              "48 = 50 − 2, donc 6×48 = 6×50 − 6×2",
+              "48 = 4 + 8",
+              "48 = 48 + 0",
+              "48 = 24 × 2, sans rapport avec la distributivité"
+            ],
+            "answer": 0,
+            "exp": "48=50−2 est proche d'un nombre rond : 6×50=300, 6×2=12, donc 6×48=300−12=288."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la distributivité (décomposer un facteur en dizaines + unités avant de multiplier) fonctionne-t-elle pour n'importe quel nombre à multiplier ?",
+            "choices": [
+              "Elle ne fonctionne que pour certains nombres précis",
+              "Parce que multiplier une somme par un nombre revient à multiplier chaque partie de la somme séparément puis à additionner les résultats, une propriété toujours vraie en mathématiques",
+              "La distributivité change le résultat final selon le nombre",
+              "Cette propriété n'existe que pour l'addition, jamais la multiplication"
+            ],
+            "answer": 1,
+            "exp": "La distributivité de la multiplication sur l'addition est une propriété mathématique universelle : (a+b)×c = a×c + b×c, toujours vraie."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour calculer 7 × 34 par distributivité, un élève décompose 34 = 30 + 4, calcule 7×30=210, mais oublie d'ajouter 7×4. Quel résultat obtient-il, et est-ce juste ?",
+            "choices": [
+              "210, ce qui est faux : il manque 7×4=28, le bon résultat est 238",
+              "210, ce qui est juste",
+              "238, ce qui est faux",
+              "Impossible de savoir sans refaire le calcul"
+            ],
+            "answer": 0,
+            "exp": "En oubliant d'ajouter 7×4=28 à 210, l'élève obtient 210 au lieu du résultat correct 238 (210+28)."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "La distributivité permet de décomposer un nombre en dizaines et unités pour simplifier un calcul de multiplication mentale.",
+            "answer": true,
+            "exp": "C'est exactement le principe de cette technique de calcul mental : décomposer pour simplifier."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule de tête : 35 × 10 − 35 × 1 (cela donne 35 × 9)",
+            "answer": "315",
+            "exp": "35×9 = 35×10 − 35 = 350−35=315."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pour calculer 12 × 99 rapidement, quelle décomposition est la plus efficace ?",
+            "choices": [
+              "12 × 99 = 12×100 − 12",
+              "12 × 99 = 12 + 99",
+              "12 × 99 = 99 − 12",
+              "12 × 99 = 12×9 + 12×9"
+            ],
+            "answer": 0,
+            "exp": "99=100−1 est proche d'un nombre rond très pratique : 12×100=1200, puis 1200−12=1188."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi approcher un facteur d'un nombre rond (comme 99≈100 ou 29≈30) simplifie-t-il souvent un calcul mental de multiplication ?",
+            "choices": [
+              "Cela ne simplifie jamais rien",
+              "Parce que multiplier par un nombre rond (10, 100, 1000...) est un calcul mental quasi instantané, et il suffit ensuite d'ajuster le résultat avec une petite correction",
+              "Les nombres ronds ne facilitent jamais les calculs",
+              "Il faut toujours éviter d'utiliser des nombres ronds"
+            ],
+            "answer": 1,
+            "exp": "Multiplier par un nombre rond est un calcul immédiat ; ajuster ensuite avec une petite correction (addition ou soustraction) reste simple et rapide."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule de tête : 6 × 19 en utilisant 6×20−6",
+            "answer": "114",
+            "exp": "6×20=120, puis 120−6=114."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève calcule 5 × 98 en faisant 5×100−5×2, mais écrit le résultat final comme 500−2=498 au lieu de 500−10. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, 498 est juste",
+              "Il a oublié de multiplier 5×2=10 avant de soustraire, pas seulement 2 : 500−10=490 est le bon résultat",
+              "5×98 ne peut pas se calculer ainsi",
+              "Il fallait écrire 500+10"
+            ],
+            "answer": 1,
+            "exp": "5×2=10, pas 2 : il faut soustraire 10 de 500, donnant 490, pas 498 (soustraire 2 directement sans multiplier par 5 d'abord est l'erreur)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour calculer 15 × 12, quelle décomposition utilise la distributivité ?",
+            "choices": [
+              "15 × 12 = 15×10 + 15×2",
+              "15 × 12 = 15 + 12",
+              "15 × 12 = 15 − 12",
+              "15 × 12 = 12 ÷ 15"
+            ],
+            "answer": 0,
+            "exp": "12=10+2 : 15×10=150, 15×2=30, donc 15×12=150+30=180."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il utile de maîtriser plusieurs stratégies de calcul mental (compléter à la dizaine, distributivité, nombres ronds) plutôt qu'une seule méthode fixe ?",
+            "choices": [
+              "Une seule méthode suffit toujours, peu importe le calcul",
+              "Parce que selon les nombres en jeu, certaines stratégies sont plus rapides ou plus naturelles que d'autres : avoir plusieurs outils permet de choisir le plus efficace à chaque fois",
+              "Il est interdit d'utiliser plusieurs stratégies différentes",
+              "Toutes les stratégies de calcul mental donnent toujours le même temps de calcul"
+            ],
+            "answer": 1,
+            "exp": "Différentes stratégies sont plus efficaces selon les nombres en jeu : disposer de plusieurs outils permet de choisir la méthode la plus rapide à chaque situation."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pour calculer 25 × 11 rapidement, quelle décomposition est pratique ?",
+            "choices": [
+              "25 × 11 = 25×10 + 25",
+              "25 × 11 = 25 + 11",
+              "25 × 11 = 11 − 25",
+              "25 × 11 = 25 ÷ 11"
+            ],
+            "answer": 0,
+            "exp": "11=10+1 : 25×10=250, +25=275."
           }
         ]
       },
@@ -16733,6 +16898,183 @@
             ],
             "answer": 1,
             "exp": "Aligner par la droite sans tenir compte de la virgule mélange des colonnes qui ne représentent pas la même chose (par exemple un chiffre des dixièmes avec un chiffre des centièmes) : il faut absolument aligner les virgules, pas les derniers chiffres, pour que chaque colonne additionne bien des quantités de même nature."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pour poser une soustraction de nombres décimaux, quelle est la règle la plus importante à respecter ?",
+            "choices": [
+              "Aligner les chiffres par la droite, sans réfléchir aux virgules",
+              "Aligner les virgules les unes sous les autres",
+              "Écrire les deux nombres sur la même ligne",
+              "Il n'y a aucune règle particulière"
+            ],
+            "answer": 1,
+            "exp": "Aligner les virgules garantit que les chiffres de même rang (dixièmes sous dixièmes, etc.) sont bien alignés."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Calcule : 9,4 − 3,15",
+            "choices": [
+              "6,25",
+              "6,35",
+              "6,45",
+              "6,15"
+            ],
+            "answer": 0,
+            "exp": "9,4 = 9,40 ; 9,40−3,15=6,25."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un réservoir contient 8,5 L d'eau, on en retire 2,75 L. Combien reste-t-il ?",
+            "choices": [
+              "5,75 L",
+              "5,25 L",
+              "6,75 L",
+              "5,85 L"
+            ],
+            "answer": 0,
+            "exp": "8,5=8,50 ; 8,50−2,75=5,75 L."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un sac de farine pèse 1,250 kg, un sac de sucre pèse 0,8 kg. Quel est le poids total ?",
+            "choices": [
+              "2,050 kg",
+              "2,05 kg et 2,050 kg sont deux écritures justes de la même quantité",
+              "2,150 kg",
+              "2,5 kg"
+            ],
+            "answer": 1,
+            "exp": "1,250+0,8(=0,800)=2,050 kg, qui peut aussi s'écrire 2,05 kg (équivalent)."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi ajouter un zéro « invisible » à un nombre décimal (par exemple transformer 6,3 en 6,30) ne change-t-il pas sa valeur, mais facilite le calcul posé ?",
+            "choices": [
+              "Cela change toujours la valeur du nombre",
+              "Parce qu'un zéro final après la virgule ne modifie pas la quantité représentée, mais permet d'aligner le même nombre de chiffres pour poser l'opération plus facilement",
+              "Il est interdit d'ajouter un zéro après la virgule",
+              "Ajouter un zéro rend toujours le calcul plus difficile"
+            ],
+            "answer": 1,
+            "exp": "Un zéro final ne change pas la valeur du nombre, mais permet d'avoir le même nombre de décimales pour les deux nombres, facilitant l'alignement en colonnes."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pose l'addition de 15,6 et 2,45 en alignant les chiffres par la droite (sans aligner les virgules), comme pour des nombres entiers. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, c'est la bonne méthode",
+              "Il doit aligner les VIRGULES, pas les derniers chiffres : sans cela, il additionnerait des dixièmes avec des centièmes, ce qui donnerait un résultat faux",
+              "15,6 et 2,45 ne peuvent jamais s'additionner",
+              "Il fallait aligner par la gauche"
+            ],
+            "answer": 1,
+            "exp": "Pour des nombres décimaux, il faut aligner les virgules (pas les derniers chiffres), afin d'additionner correctement unités avec unités, dixièmes avec dixièmes, etc."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Pour poser une addition ou une soustraction de nombres décimaux, il faut toujours aligner les virgules les unes sous les autres.",
+            "answer": true,
+            "exp": "C'est la règle essentielle pour que chaque colonne corresponde au bon rang (unités, dixièmes, centièmes)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Calcule : 12,08 + 3,9",
+            "choices": [
+              "15,98",
+              "15,08",
+              "16,08",
+              "12,98"
+            ],
+            "answer": 0,
+            "exp": "12,08 + 3,90 = 15,98."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi le résultat d'une addition de deux nombres décimaux peut-il avoir plus de chiffres après la virgule que les nombres de départ (par exemple 0,5 + 0,25 = 0,75, qui a 2 décimales comme le plus précis des deux) ?",
+            "choices": [
+              "Le résultat a toujours le même nombre de décimales que le premier nombre",
+              "Parce que le résultat garde la précision la plus fine parmi les deux nombres additionnés (ici les centièmes de 0,25), même si l'autre nombre (0,5) n'avait que des dixièmes",
+              "Le nombre de décimales du résultat est toujours aléatoire",
+              "Il est impossible d'additionner des nombres avec un nombre différent de décimales"
+            ],
+            "answer": 1,
+            "exp": "Le résultat conserve la précision la plus fine des deux nombres (ici centièmes), car 0,5 équivaut à 0,50, ce qui permet l'addition précise avec 0,25."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève soustrait 5,2 − 1,75 et trouve 3,55 en oubliant d'emprunter correctement. Le bon résultat est-il 3,45 ?",
+            "choices": [
+              "Oui, 3,45 est le bon résultat (5,20−1,75=3,45)",
+              "Non, 3,55 est juste",
+              "Non, le bon résultat est 4,45",
+              "Non, le bon résultat est 3,55 aussi mais pour une autre raison"
+            ],
+            "answer": 0,
+            "exp": "5,2=5,20 ; 5,20−1,75=3,45 (avec emprunt sur les dixièmes puis les unités) : 3,45 est le bon résultat, pas 3,55."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule : 7,5 + 2,5",
+            "answer": "10",
+            "exp": "7,5+2,5=10, un nombre entier malgré l'addition de deux décimaux."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un épicier pèse 0,450 kg de fromage et 0,3 kg de jambon. Quel est le poids total ?",
+            "choices": [
+              "0,750 kg",
+              "0,48 kg",
+              "0,75 kg et 0,750 kg sont deux écritures justes",
+              "1,05 kg"
+            ],
+            "answer": 2,
+            "exp": "0,450+0,300=0,750 kg, qui peut aussi s'écrire 0,75 kg (équivalent)."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, pour une soustraction décimale posée, faut-il parfois ajouter des zéros au nombre qui a moins de décimales avant de poser l'opération ?",
+            "choices": [
+              "Ce n'est jamais nécessaire",
+              "Parce que cela permet d'avoir le même nombre de chiffres après la virgule pour les deux nombres, rendant l'alignement en colonnes plus clair et évitant les erreurs",
+              "Ajouter des zéros change toujours le résultat final",
+              "Il est interdit d'ajouter des zéros à un nombre décimal"
+            ],
+            "answer": 1,
+            "exp": "Ajouter des zéros égalise le nombre de décimales entre les deux nombres, facilitant l'alignement en colonnes sans changer leur valeur réelle."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule : 15,6 − 15,6",
+            "answer": "0",
+            "exp": "Un nombre moins lui-même donne toujours 0, même pour des décimaux."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un randonneur a parcouru 12,350 km et doit encore faire 5,8 km. Quelle distance totale son trajet représente-t-il ?",
+            "choices": [
+              "18,15 km",
+              "18,150 km et 18,15 km sont deux écritures justes",
+              "17,150 km",
+              "18,350 km"
+            ],
+            "answer": 1,
+            "exp": "12,350+5,800=18,150 km, qui peut aussi s'écrire 18,15 km."
           }
         ]
       },
@@ -16809,6 +17151,165 @@
             ],
             "answer": 1,
             "exp": "Le chiffre des dizaines (1) du nombre 12 représente en réalité 10 : il fallait calculer 34 × 10 = 340 (décalé d'une colonne), pas 34 × 1 = 34 sans décalage. L'addition correcte est donc 68 + 340 = 408, pas 102."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule : 47 × 6",
+            "answer": "282",
+            "exp": "47×6 : unités 7×6=42, dizaines 4×6=24, puis +4 de retenue=28. Résultat 282."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pour poser 36 × 24, pourquoi décale-t-on d'une colonne vers la gauche la ligne correspondant au chiffre des dizaines (2) ?",
+            "choices": [
+              "Par pur hasard, sans raison",
+              "Parce que ce chiffre représente en réalité 2 dizaines (20), donc le résultat de cette multiplication partielle doit être 10 fois plus grand, ce que le décalage représente",
+              "Le décalage n'a aucune importance pour le résultat",
+              "Il faut toujours décaler vers la droite, jamais la gauche"
+            ],
+            "answer": 1,
+            "exp": "Le chiffre des dizaines (2) représente en réalité 20 : le décalage d'une colonne multiplie ce résultat partiel par 10, ce qui est correct."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un parking a 24 rangées de 15 places. Combien de places en tout ?",
+            "answer": "360",
+            "exp": "24×15=360 places."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour calculer 27 × 13, un élève calcule 27×3=81, puis 27×1=27, et additionne directement 81+27=108. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, 108 est juste",
+              "Il a oublié de décaler le deuxième résultat partiel (27×1 représente en réalité 27×10=270, pas 27) : le bon calcul est 81+270=351",
+              "27×13 ne peut pas se calculer ainsi",
+              "Il fallait soustraire au lieu d'additionner"
+            ],
+            "answer": 1,
+            "exp": "27×1 représente en fait 27×10 (le chiffre 1 étant en position des dizaines) : il fallait décaler pour obtenir 270, pas garder 27. Le bon total est 81+270=351."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la multiplication posée décompose-t-elle le calcul en plusieurs lignes plutôt que de tout calculer d'un coup ?",
+            "choices": [
+              "Ce n'est jamais plus simple de décomposer",
+              "Parce que multiplier par chaque chiffre du deuxième facteur séparément (unités puis dizaines...) donne des calculs plus simples, qu'on additionne ensuite pour obtenir le résultat final",
+              "Décomposer rend toujours le calcul plus compliqué",
+              "Il n'existe qu'une seule ligne possible dans une multiplication posée"
+            ],
+            "answer": 1,
+            "exp": "Décomposer en plusieurs lignes (une par chiffre du second facteur) simplifie chaque calcul partiel, la somme donnant le résultat final."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Dans une multiplication posée à deux chiffres, le deuxième résultat partiel (correspondant aux dizaines) doit être décalé d'une colonne vers la gauche.",
+            "answer": true,
+            "exp": "Ce décalage représente le fait que ce chiffre est en réalité une dizaine, donc 10 fois plus grand qu'une unité simple."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule : 58 × 7",
+            "answer": "406",
+            "exp": "58×7 : 8×7=56 (écris 6, retiens 5), 5×7=35+5=40. Résultat 406."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un verger a 42 rangées de 18 arbres. Combien d'arbres au total ?",
+            "choices": [
+              "756",
+              "720",
+              "738",
+              "760"
+            ],
+            "answer": 0,
+            "exp": "42×18=756."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi vérifier son résultat de multiplication posée par une estimation rapide (par exemple arrondir les deux nombres) est-il une bonne habitude ?",
+            "choices": [
+              "Ce n'est jamais utile de vérifier",
+              "Parce que cela permet de repérer rapidement une erreur grossière (comme un décalage de colonne oublié), en comparant le résultat exact à l'estimation approximative",
+              "Une estimation donne toujours le résultat exact",
+              "Il est interdit d'estimer avant de calculer"
+            ],
+            "answer": 1,
+            "exp": "Une estimation rapide permet de repérer une erreur grossière en comparant le résultat obtenu à un ordre de grandeur attendu."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour 63 × 29, une estimation rapide (63≈60, 29≈30) donnerait environ quelle valeur ?",
+            "choices": [
+              "1800",
+              "1700",
+              "1900",
+              "2000"
+            ],
+            "answer": 0,
+            "exp": "60×30=1800, une estimation proche du résultat exact (63×29=1827)."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève calcule 19 × 15 et obtient 185 au lieu de 285. Une estimation rapide (20×15=300) aurait-elle pu l'alerter ?",
+            "choices": [
+              "Non, l'estimation ne sert jamais à vérifier",
+              "Oui : 185 est très loin de l'estimation 300, ce qui aurait dû alerter l'élève sur une erreur de calcul",
+              "Oui, mais seulement si l'estimation donne exactement le bon résultat",
+              "Non, car 19×15 ne peut jamais être estimé"
+            ],
+            "answer": 1,
+            "exp": "300 (estimation) est très loin de 185 (résultat obtenu), un écart qui aurait dû alerter sur une erreur dans le calcul posé."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule : 25 × 9",
+            "answer": "225",
+            "exp": "25×9=225."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans une multiplication à trois chiffres (comme 234 × 5), combien de lignes de calcul partiel y a-t-il si le second facteur n'a qu'un seul chiffre ?",
+            "choices": [
+              "3",
+              "1",
+              "5",
+              "234"
+            ],
+            "answer": 1,
+            "exp": "Avec un second facteur à un seul chiffre, il n'y a qu'une seule ligne de calcul partiel."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, dans une multiplication posée à deux chiffres, obtient-on toujours DEUX lignes de résultats partiels avant l'addition finale ?",
+            "choices": [
+              "Ce n'est jamais le cas, il n'y a toujours qu'une ligne",
+              "Parce que le second facteur a deux chiffres (unités et dizaines), et chacun génère sa propre ligne de calcul partiel, décalée selon sa position",
+              "Le nombre de lignes dépend uniquement du premier facteur",
+              "Il faut toujours exactement trois lignes, quel que soit le calcul"
+            ],
+            "answer": 1,
+            "exp": "Le nombre de lignes de calcul partiel correspond au nombre de chiffres du second facteur, chaque chiffre générant sa propre ligne décalée selon sa position."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule : 16 × 8",
+            "answer": "128",
+            "exp": "16×8=128."
           }
         ]
       },
@@ -16885,6 +17386,165 @@
             ],
             "answer": 1,
             "exp": "Un reste (11) plus grand que le diviseur (6) est le signe certain d'une erreur : il restait encore un groupe complet de 6 à soustraire (11 − 6 = 5), ce qui aurait dû augmenter le quotient à 8 avec un reste de 5, qui lui est bien inférieur au diviseur."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule le quotient de 57 ÷ 8 (donne juste le quotient, pas le reste).",
+            "answer": "7",
+            "exp": "8×7=56, le plus proche de 57 sans dépasser : quotient 7."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Dans la division 45 ÷ 6, quel est le reste ?",
+            "answer": "3",
+            "exp": "6×7=42, 45-42=3 : le reste est 3."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "156 billes sont réparties équitablement dans des sachets de 9 billes. Combien de sachets complets peut-on remplir ?",
+            "choices": [
+              "17",
+              "18",
+              "16",
+              "15"
+            ],
+            "answer": 0,
+            "exp": "156÷9=17 reste 3 : 17 sachets complets."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "213 élèves doivent être répartis en groupes de 15 maximum. Combien de groupes complets de 15 peut-on former ?",
+            "choices": [
+              "14",
+              "15",
+              "13",
+              "16"
+            ],
+            "answer": 0,
+            "exp": "213÷15=14 reste 3 : 14 groupes complets."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi le reste d'une division euclidienne doit-il toujours être strictement plus petit que le diviseur ?",
+            "choices": [
+              "Ce n'est jamais obligatoire",
+              "Parce que si le reste était égal ou supérieur au diviseur, cela signifierait qu'on pourrait encore former au moins un groupe complet supplémentaire, donc le quotient ne serait pas encore maximal",
+              "Le reste peut être n'importe quelle valeur sans restriction",
+              "Le reste est toujours égal au diviseur"
+            ],
+            "answer": 1,
+            "exp": "Si le reste était ≥ au diviseur, on pourrait encore former un groupe complet de plus : le quotient ne serait donc pas maximal, ce qui contredit la division euclidienne."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève calcule 61 ÷ 7 et trouve un quotient de 8 avec un reste de 5. Que peut-on dire de ce résultat, rien qu'en vérifiant le reste ?",
+            "choices": [
+              "Le résultat est juste, car 5 < 7",
+              "Le résultat est juste : 8×7=56, et 61−56=5, qui est bien inférieur à 7",
+              "Le résultat est faux, le reste doit toujours être 0",
+              "Impossible de vérifier sans refaire tout le calcul"
+            ],
+            "answer": 1,
+            "exp": "8×7=56, 61-56=5, et 5<7 (diviseur) : le résultat est cohérent avec les règles de la division euclidienne."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Dans une division euclidienne, le quotient multiplié par le diviseur, plus le reste, redonne toujours le nombre de départ (dividende).",
+            "answer": true,
+            "exp": "C'est la relation fondamentale de la division euclidienne : dividende = quotient × diviseur + reste."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule le quotient de 83 ÷ 9 (donne juste le quotient).",
+            "answer": "9",
+            "exp": "9×9=81, le plus proche de 83 sans dépasser : quotient 9."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "328 cahiers sont rangés dans des cartons de 25. Combien de cartons complets sont nécessaires, et combien de cahiers restent hors carton ?",
+            "choices": [
+              "13 cartons complets, 3 cahiers restants",
+              "13 cartons complets, 25 cahiers restants",
+              "12 cartons complets, 28 cahiers restants",
+              "14 cartons complets, 0 cahier restant"
+            ],
+            "answer": 0,
+            "exp": "328÷25=13 reste 3 : 13 cartons complets, 3 cahiers hors carton."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, pour vérifier le résultat d'une division posée, est-il utile de calculer quotient × diviseur + reste et de comparer au dividende de départ ?",
+            "choices": [
+              "Cette vérification ne sert jamais à rien",
+              "Parce que cette formule doit toujours redonner exactement le nombre de départ ; si ce n'est pas le cas, cela révèle une erreur dans le calcul de la division",
+              "Cette formule ne fonctionne que pour certaines divisions particulières",
+              "Il est impossible de vérifier une division de cette façon"
+            ],
+            "answer": 1,
+            "exp": "La relation dividende = quotient×diviseur+reste doit toujours être vérifiée ; un écart révèle une erreur dans le calcul de la division."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève calcule 94 ÷ 8 et trouve quotient 11, reste 6. En vérifiant (11×8+6), obtient-il bien 94 ?",
+            "choices": [
+              "Oui : 11×8=88, +6=94, le résultat est confirmé juste",
+              "Non, 11×8+6=100, donc le résultat est faux",
+              "Non, 11×8+6=90, donc le résultat est faux",
+              "Impossible de vérifier"
+            ],
+            "answer": 0,
+            "exp": "11×8=88, 88+6=94 : la vérification confirme que le résultat est juste."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule le quotient de 100 ÷ 11 (donne juste le quotient).",
+            "answer": "9",
+            "exp": "11×9=99, le plus proche de 100 sans dépasser : quotient 9."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "487 oranges sont réparties équitablement dans des cageots de 20. Combien de cageots complets, et combien d'oranges restantes ?",
+            "choices": [
+              "24 cageots complets, 7 oranges restantes",
+              "24 cageots complets, 20 oranges restantes",
+              "23 cageots complets, 27 oranges restantes",
+              "25 cageots complets, 0 orange restante"
+            ],
+            "answer": 0,
+            "exp": "487÷20=24 reste 7 : 24 cageots complets, 7 oranges restantes."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, dans un problème de répartition, le reste d'une division représente-t-il souvent « ce qui ne peut pas être réparti équitablement en groupes complets » ?",
+            "choices": [
+              "Le reste n'a jamais ce sens dans un problème",
+              "Parce que le quotient donne le nombre de groupes complets formés, et le reste représente précisément les éléments restants qui ne suffisent pas à former un groupe complet supplémentaire",
+              "Le reste représente toujours le nombre total d'éléments",
+              "Il n'existe aucun lien entre le reste et le contexte du problème"
+            ],
+            "answer": 1,
+            "exp": "Le quotient donne les groupes complets, et le reste représente les éléments qui ne suffisent pas à en former un de plus : c'est le sens concret du reste dans un problème de répartition."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Dans la division 72 ÷ 8, quel est le reste ?",
+            "answer": "0",
+            "exp": "8×9=72 exactement : le reste est 0, la division est exacte."
           }
         ]
       },
