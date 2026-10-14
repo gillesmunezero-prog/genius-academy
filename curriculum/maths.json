@@ -8155,6 +8155,165 @@
             ],
             "answer": 1,
             "exp": "2 centimètres est beaucoup trop petit pour une porte (ça correspondrait à peine à la largeur d'un doigt) : il fallait penser en mètres, une porte mesurant environ 2 mètres de haut."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de centimètres y a-t-il dans 6 mètres ?",
+            "answer": "600",
+            "exp": "1 m = 100 cm, donc 6 m = 600 cm."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quelle unité choisirais-tu pour mesurer la longueur d'une piscine ?",
+            "choices": [
+              "Le centimètre",
+              "Le mètre",
+              "Le gramme",
+              "L'heure"
+            ],
+            "answer": 1,
+            "exp": "Pour une grande longueur comme une piscine, le mètre est l'unité adaptée."
+          },
+          {
+            "type": "text",
+            "kind": "application",
+            "q": "Un trottoir mesure 725 cm. Combien de mètres complets cela fait-il (sans les centimètres en trop) ?",
+            "answer": "7",
+            "exp": "725 cm = 7 m et 25 cm restants."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une table mesure environ :",
+            "choices": [
+              "15 cm",
+              "1,5 m",
+              "15 m",
+              "150 m"
+            ],
+            "answer": 1,
+            "exp": "Une table fait environ 1,5 m de longueur, une taille raisonnable pour un meuble."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi utilise-t-on le mètre plutôt que le centimètre pour mesurer la longueur d'un terrain de football ?",
+            "choices": [
+              "Parce que le centimètre est interdit pour les terrains",
+              "Parce qu'avec le centimètre, le nombre serait énorme et peu pratique à lire ou écrire (plusieurs milliers), alors que le mètre donne un nombre plus simple et lisible",
+              "Parce que le mètre est toujours la seule unité valable",
+              "Parce que les terrains de football n'ont pas de longueur précise"
+            ],
+            "answer": 1,
+            "exp": "Mesurer en centimètres donnerait un nombre à 4 chiffres ou plus, peu pratique ; le mètre donne un nombre plus simple pour les grandes distances."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève affirme que la longueur de son crayon est d'environ 2 mètres. Que penser de cette affirmation ?",
+            "choices": [
+              "C'est exact, les crayons mesurent 2 mètres",
+              "C'est absurde : 2 mètres est une taille d'adulte allongé, bien trop grand pour un crayon qui mesure plutôt une quinzaine de centimètres",
+              "2 mètres est une bonne estimation pour un petit crayon",
+              "Il faut mesurer en kilogrammes, pas en mètres"
+            ],
+            "answer": 1,
+            "exp": "Un crayon mesure environ 15 cm, pas 2 mètres (qui est une très grande longueur, proche de la taille d'un adulte)."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "1 mètre représente la même longueur que 100 centimètres.",
+            "answer": true,
+            "exp": "Par définition, 1 m = 100 cm : ce sont deux façons d'exprimer la même longueur."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Une rue mesure 4 mètres de large. Combien de centimètres cela représente-t-il ?",
+            "answer": "400",
+            "exp": "4 m = 400 cm."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pour mesurer l'épaisseur d'une feuille de papier, quelle unité serait la plus adaptée (parmi celles connues au CE1) ?",
+            "choices": [
+              "Le mètre",
+              "Le kilomètre",
+              "Le centimètre, même si ce n'est pas encore très précis pour une si petite épaisseur",
+              "Le kilogramme"
+            ],
+            "answer": 2,
+            "exp": "Parmi les unités de longueur vues au CE1, le centimètre est la plus petite et donc la plus adaptée pour une petite épaisseur."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un couloir mesure 2 mètres et 40 centimètres. Combien de centimètres cela fait-il en tout ?",
+            "answer": "240",
+            "exp": "2 m = 200 cm, + 40 cm = 240 cm."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une girafe mesure environ 5 mètres. Combien de centimètres cela représente-t-il ?",
+            "choices": [
+              "50 cm",
+              "500 cm",
+              "5 cm",
+              "5000 cm"
+            ],
+            "answer": 1,
+            "exp": "5 m = 500 cm."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi deux objets peuvent-ils avoir la même longueur en centimètres mais sembler différents si l'un est mesuré en mètres et l'autre en centimètres sans réfléchir ?",
+            "choices": [
+              "Ce n'est jamais possible",
+              "Parce qu'un nombre seul sans son unité ne veut rien dire : 150 (cm) et 150 (m) représentent des longueurs extrêmement différentes malgré le même chiffre",
+              "Parce que les unités n'ont aucune importance",
+              "Parce que mètre et centimètre représentent toujours la même chose"
+            ],
+            "answer": 1,
+            "exp": "Le nombre seul ne suffit pas : 150 cm (1,5 m) et 150 m sont des longueurs très différentes. L'unité est indispensable pour comprendre une mesure."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève compare 3 m et 250 cm et dit que 250 cm est plus grand car 250>3. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Il compare des nombres sans convertir dans la même unité : 3 m = 300 cm, qui est plus grand que 250 cm",
+              "3m et 250cm sont égaux",
+              "Il fallait comparer en kilogrammes"
+            ],
+            "answer": 1,
+            "exp": "Avant de comparer deux longueurs, il faut les convertir dans la même unité : 3 m = 300 cm > 250 cm."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de mètres font 900 centimètres ?",
+            "answer": "9",
+            "exp": "900 cm ÷ 100 = 9 m."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une règle d'écolier mesure environ :",
+            "choices": [
+              "2 cm",
+              "20 cm",
+              "2 m",
+              "20 m"
+            ],
+            "answer": 1,
+            "exp": "Une règle d'écolier mesure environ 20 cm, une taille pratique pour le cartable."
           }
         ]
       },
@@ -8237,6 +8396,165 @@
             ],
             "answer": 1,
             "exp": "150 kilogrammes est une masse énorme (bien plus qu'un adulte). L'élève a confondu grammes et kilogrammes : la bonne estimation est environ 150 grammes pour une pomme."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quelle unité utiliserais-tu pour peser un éléphant ?",
+            "choices": [
+              "Le gramme",
+              "Le kilogramme",
+              "Le centimètre",
+              "La minute"
+            ],
+            "answer": 1,
+            "exp": "Pour un objet très lourd comme un éléphant, le kilogramme (voire la tonne) est adapté."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de grammes font 5 kilogrammes ?",
+            "answer": "5000",
+            "exp": "1 kg = 1000 g, donc 5 kg = 5000 g."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un sac de farine pèse-t-il plutôt 1 gramme ou 1 kilogramme ?",
+            "choices": [
+              "1 gramme",
+              "1 kilogramme",
+              "Les deux sont équivalents",
+              "Impossible à savoir"
+            ],
+            "answer": 1,
+            "exp": "Un sac de farine est bien plus lourd qu'1 gramme (le poids d'une petite plume) : 1 kg est réaliste."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une bille pèse-t-elle plutôt 5 grammes ou 5 kilogrammes ?",
+            "choices": [
+              "5 grammes",
+              "5 kilogrammes",
+              "Les deux sont possibles",
+              "Aucune des deux unités ne convient"
+            ],
+            "answer": 0,
+            "exp": "Une petite bille est légère, quelques grammes seulement ; 5 kg serait bien trop lourd pour une bille."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Une grosse valise semble lourde à porter, mais une plume semble légère même si elle paraît grande dans l'air. Pourquoi la taille (le volume) ne suffit-elle pas à deviner le poids ?",
+            "choices": [
+              "La taille suffit toujours à deviner le poids",
+              "Parce que le poids dépend de la matière dont est fait l'objet (dense ou légère), pas seulement de sa taille apparente : une plume est grande mais faite d'une matière très légère",
+              "Parce que les plumes n'ont pas de poids",
+              "Parce que les valises sont toujours plus lourdes que les plumes par définition"
+            ],
+            "answer": 1,
+            "exp": "Le poids dépend de la matière (dense ou légère), pas seulement du volume apparent : un gros objet léger peut peser moins qu'un petit objet dense."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève affirme qu'un œuf pèse 2 kilogrammes. Que penser de cette affirmation ?",
+            "choices": [
+              "C'est exact",
+              "C'est peu réaliste : un œuf pèse plutôt une soixantaine de grammes, bien moins que 2 kilogrammes (qui est le poids d'un gros melon)",
+              "2 kilogrammes est une bonne estimation pour tout aliment",
+              "Il fallait dire 2 grammes, ce qui serait aussi faux dans l'autre sens"
+            ],
+            "answer": 1,
+            "exp": "Un œuf pèse environ 60 g, bien loin des 2 kg (2000 g) qui correspondent plutôt au poids d'un gros melon."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "1 kilogramme représente la même masse que 1000 grammes.",
+            "answer": true,
+            "exp": "Par définition, 1 kg = 1000 g."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un melon pèse 3 kilogrammes. Combien de grammes cela fait-il ?",
+            "answer": "3000",
+            "exp": "3 kg = 3000 g."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour peser une lettre à poster, quelle unité est la plus adaptée ?",
+            "choices": [
+              "Le kilogramme",
+              "Le gramme",
+              "Le mètre",
+              "L'heure"
+            ],
+            "answer": 1,
+            "exp": "Une lettre est très légère : le gramme est l'unité adaptée pour ce genre de petit poids."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de kilogrammes font 7000 grammes ?",
+            "answer": "7",
+            "exp": "7000 g ÷ 1000 = 7 kg."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, pour comparer le poids de deux objets, est-il important de les peser dans la même unité ?",
+            "choices": [
+              "Ce n'est jamais nécessaire",
+              "Parce que comparer des nombres exprimés dans des unités différentes (grammes et kilogrammes) sans convertir donnerait une comparaison fausse",
+              "Parce que le gramme est toujours plus lourd que le kilogramme",
+              "Parce qu'il est interdit d'utiliser deux unités différentes"
+            ],
+            "answer": 1,
+            "exp": "Comme pour les longueurs, il faut convertir dans la même unité avant de comparer deux poids, sinon la comparaison est trompeuse."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève compare 2 kg et 1500 g et dit que 1500 g est plus lourd car 1500>2. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Il ne convertit pas dans la même unité : 2 kg = 2000 g, qui est plus lourd que 1500 g",
+              "2 kg et 1500 g sont égaux",
+              "Il fallait comparer en centimètres"
+            ],
+            "answer": 1,
+            "exp": "2 kg = 2000 g, ce qui est plus que 1500 g : il faut convertir avant de comparer."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un sac pèse 2 kilogrammes et 500 grammes. Combien de grammes cela représente-t-il en tout ?",
+            "answer": "2500",
+            "exp": "2 kg = 2000 g, + 500 g = 2500 g."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un livre pèse-t-il plutôt 300 grammes ou 300 kilogrammes ?",
+            "choices": [
+              "300 grammes",
+              "300 kilogrammes",
+              "Les deux sont réalistes",
+              "Aucune des deux"
+            ],
+            "answer": 0,
+            "exp": "Un livre pèse typiquement quelques centaines de grammes ; 300 kg serait énorme, le poids de plusieurs adultes."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de grammes font 1 kilogramme et 200 grammes en tout ?",
+            "answer": "1200",
+            "exp": "1 kg = 1000 g, + 200 g = 1200 g."
           }
         ]
       },
@@ -8313,6 +8631,153 @@
             ],
             "answer": 1,
             "exp": "Le nombre de pièces ne dit rien sur la richesse : il faut calculer la valeur totale. 3 pièces de 2 € = 6 €, alors que 20 pièces de 10 centimes ne font que 2 € : le copain avec moins de pièces est en réalité plus riche."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de centimes vaut une pièce de 2 euros ?",
+            "answer": "200",
+            "exp": "2 euros = 200 centimes."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien vaut en euros un total de 3 pièces de 1 euro et 2 pièces de 2 euros ?",
+            "answer": "7",
+            "exp": "3×1=3, 2×2=4, 3+4=7 euros."
+          },
+          {
+            "type": "text",
+            "kind": "application",
+            "q": "Un enfant a 1 pièce de 10 euros et 4 pièces de 1 euro. Combien a-t-il en tout (en euros) ?",
+            "answer": "14",
+            "exp": "10+4×1=14 euros."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Combien de pièces de 2 euros faut-il pour obtenir 10 euros ?",
+            "choices": [
+              "5",
+              "10",
+              "2",
+              "20"
+            ],
+            "answer": 0,
+            "exp": "5×2=10 euros."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi avoir beaucoup de petites pièces ne veut-il pas forcément dire avoir plus d'argent qu'avec peu de grosses pièces ?",
+            "choices": [
+              "C'est toujours le cas, plus de pièces = plus d'argent",
+              "Parce que la valeur totale dépend de la valeur de chaque pièce, pas seulement du nombre de pièces : 3 pièces de 2€ (6€) valent moins que 1 billet de 10€",
+              "Les pièces n'ont jamais de valeur différente",
+              "Parce que seules les pièces comptent, jamais les billets"
+            ],
+            "answer": 1,
+            "exp": "C'est la VALEUR totale qui compte, pas le nombre d'objets : peu de grosses pièces peuvent valoir plus que beaucoup de petites."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un enfant dit qu'il a plus d'argent que son ami car il a 15 pièces alors que son ami n'en a que 2. Que penser de cette affirmation ?",
+            "choices": [
+              "Elle est forcément vraie",
+              "Elle n'est pas forcément vraie : il faut connaître la VALEUR de chaque pièce pour savoir qui a le plus d'argent, pas juste le nombre de pièces",
+              "Avoir plus de pièces veut toujours dire avoir plus d'argent",
+              "15 pièces valent toujours plus que 2 pièces quelles qu'elles soient"
+            ],
+            "answer": 1,
+            "exp": "Le nombre de pièces ne dit rien sur la valeur totale sans connaître la valeur de chaque pièce (2 pièces de 10€ valent plus que 15 pièces de 1 centime)."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "1 euro vaut 100 centimes.",
+            "answer": true,
+            "exp": "Par définition, 1 euro = 100 centimes."
+          },
+          {
+            "type": "text",
+            "kind": "application",
+            "q": "Combien vaut en euros un total de 6 pièces de 2 euros ?",
+            "answer": "12",
+            "exp": "6×2=12 euros."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Quelle somme peut-on faire avec exactement 2 pièces de 5 euros et 1 pièce de 1 euro ?",
+            "choices": [
+              "11 euros",
+              "10 euros",
+              "6 euros",
+              "15 euros"
+            ],
+            "answer": 0,
+            "exp": "2×5+1=11 euros."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de pièces de 1 euro faut-il pour obtenir 8 euros ?",
+            "answer": "8",
+            "exp": "8×1=8 : il faut 8 pièces de 1 euro."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, pour compter une somme d'argent, est-il plus rapide de regrouper les pièces de même valeur avant de les additionner ?",
+            "choices": [
+              "Ce n'est jamais plus rapide",
+              "Parce qu'on peut alors multiplier la valeur d'une pièce par le nombre de pièces identiques, plutôt que d'additionner un par un chaque pièce",
+              "Parce que les pièces doivent toujours être rangées par couleur",
+              "Il n'existe pas de méthode plus rapide"
+            ],
+            "answer": 1,
+            "exp": "Regrouper les pièces identiques permet d'utiliser une multiplication rapide (valeur × nombre) plutôt que d'additionner chaque pièce une par une."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un enfant compte 3 pièces de 2 euros comme « 3+2=5 euros ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Il additionne le nombre de pièces (3) et la valeur d'une pièce (2) au lieu de multiplier : 3 pièces de 2€ valent 3×2=6€, pas 5€",
+              "3 pièces de 2 euros valent toujours 5 euros",
+              "Il fallait soustraire 2 de 3"
+            ],
+            "answer": 1,
+            "exp": "3 pièces de 2€ valent 3×2=6€ (une multiplication), pas 3+2=5€ (une addition incorrecte de deux grandeurs différentes)."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un enfant a 2 pièces de 5 euros. Combien a-t-il en tout ?",
+            "answer": "10",
+            "exp": "2×5=10 euros."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Combien de pièces de 2 euros faut-il pour obtenir 14 euros ?",
+            "choices": [
+              "7",
+              "14",
+              "28",
+              "2"
+            ],
+            "answer": 0,
+            "exp": "7×2=14 : il faut 7 pièces de 2 euros."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien vaut en euros un total de 4 pièces de 1 euro et 3 pièces de 2 euros ?",
+            "answer": "10",
+            "exp": "4×1=4, 3×2=6, 4+6=10 euros."
           }
         ]
       },
@@ -8401,6 +8866,195 @@
             ],
             "answer": 1,
             "exp": "8 centimes est une toute petite somme : il faut écrire 3,08 € avec le zéro, sinon 3,8 € se lirait comme 3 euros et 80 centimes, une somme dix fois plus grande que prévu."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Comment s'écrit « 3 euros et 20 centimes » avec une virgule ?",
+            "choices": [
+              "3,2 €",
+              "3,20 €",
+              "32,0 €",
+              "0,32 €"
+            ],
+            "answer": 1,
+            "exp": "3 euros et 20 centimes s'écrit 3,20 € (deux chiffres après la virgule pour les centimes)."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Combien font 1,50 € + 2,30 € ?",
+            "choices": [
+              "3,80 €",
+              "3,50 €",
+              "4,80 €",
+              "3,70 €"
+            ],
+            "answer": 0,
+            "exp": "1,50+2,30 : on additionne les euros (1+2=3) et les centimes (50+30=80), soit 3,80 €."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Léo achète un yaourt à 0,80 € et un pain à 1,10 €. Combien dépense-t-il en tout ?",
+            "choices": [
+              "1,90 €",
+              "1,80 €",
+              "2,00 €",
+              "1,10 €"
+            ],
+            "answer": 0,
+            "exp": "0,80+1,10=1,90 €."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une gomme coûte 0,60 € et un crayon coûte 0,90 €. Combien d'argent faut-il pour acheter les deux ?",
+            "choices": [
+              "1,50 €",
+              "1,40 €",
+              "1,60 €",
+              "0,30 €"
+            ],
+            "answer": 0,
+            "exp": "0,60+0,90=1,50 €."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi « 1 euro et 5 centimes » (1,05 €) n'est-il pas la même somme que « 1 euro et 50 centimes » (1,50 €) ?",
+            "choices": [
+              "Ce sont bien les mêmes sommes",
+              "Parce que les chiffres après la virgule indiquent une position précise (dizaines et unités de centimes) : 05 signifie 5 centimes seulement, alors que 50 signifie 50 centimes, dix fois plus",
+              "Parce que la virgule n'a aucune importance",
+              "Parce que 1,05 est toujours plus grand que 1,50"
+            ],
+            "answer": 1,
+            "exp": "Les deux chiffres après la virgule ont chacun leur valeur (dizaines et unités de centimes) : 05 (5 centimes) est bien plus petit que 50 (50 centimes)."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour écrire « 2 euros et 7 centimes », un élève écrit 2,7 €. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "2,7 € se lirait comme 2 euros et 70 centimes ; pour 7 centimes seulement, il fallait écrire 2,07 € avec un zéro",
+              "2,7 € est une somme impossible",
+              "Il fallait écrire 27 €"
+            ],
+            "answer": 1,
+            "exp": "Sans le zéro, 2,7 € représente 70 centimes, pas 7 : il fallait écrire 2,07 € pour bien marquer que ce sont seulement 7 centimes."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "3,05 € est une somme plus petite que 3,50 €.",
+            "answer": true,
+            "exp": "3,05 € = 3 euros et 5 centimes, bien moins que 3,50 € = 3 euros et 50 centimes."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Combien font 4,20 € − 1,10 € ?",
+            "choices": [
+              "3,10 €",
+              "3,20 €",
+              "5,30 €",
+              "3,00 €"
+            ],
+            "answer": 0,
+            "exp": "4,20−1,10 : euros 4−1=3, centimes 20−10=10, soit 3,10 €."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Nina a 5,00 € et achète un magazine à 2,40 €. Combien de monnaie lui reste-t-il ?",
+            "choices": [
+              "2,60 €",
+              "2,40 €",
+              "3,60 €",
+              "2,50 €"
+            ],
+            "answer": 0,
+            "exp": "5,00−2,40=2,60 €."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un paquet de bonbons coûte 1,35 € et un paquet de chewing-gums coûte 0,95 €. Lequel coûte le plus cher ?",
+            "choices": [
+              "Les bonbons",
+              "Les chewing-gums",
+              "Ils coûtent pareil",
+              "Impossible à savoir"
+            ],
+            "answer": 0,
+            "exp": "1,35 € > 0,95 € : les bonbons coûtent plus cher."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, pour comparer 2,45 € et 2,9 €, ne faut-il pas se contenter de comparer les chiffres après la virgule comme des nombres entiers séparés ?",
+            "choices": [
+              "Il faut toujours comparer ainsi",
+              "Parce qu'il faut comparer la valeur totale en centimes équivalente : 2,9 € = 2,90 €, qui a 90 centimes, bien plus que les 45 centimes de 2,45 €, même si 9 semble plus petit que 45 à première vue",
+              "Les deux sommes sont toujours égales",
+              "On ne peut jamais comparer deux sommes en euros"
+            ],
+            "answer": 1,
+            "exp": "2,9 € s'écrit en fait 2,90 € (90 centimes), ce qui est supérieur à 2,45 € (45 centimes), même si le chiffre 9 paraît plus petit que 45 isolément."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève compare 1,8 € et 1,45 € et dit que 1,45 € est plus grand car 45>8. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Il compare 8 et 45 sans remarquer que 1,8 € = 1,80 € (80 centimes), ce qui est bien plus que 1,45 € (45 centimes)",
+              "1,8 € et 1,45 € sont égaux",
+              "Il fallait comparer les euros uniquement"
+            ],
+            "answer": 1,
+            "exp": "1,8 € s'écrit 1,80 € (80 centimes), supérieur à 1,45 € (45 centimes) : il faut toujours ramener à deux chiffres après la virgule avant de comparer."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Hugo a 10,00 € et achète 2 objets à 3,50 € chacun. Combien lui reste-t-il ?",
+            "choices": [
+              "3,00 €",
+              "6,50 €",
+              "7,00 €",
+              "4,00 €"
+            ],
+            "answer": 0,
+            "exp": "2×3,50=7,00 €, puis 10,00−7,00=3,00 €."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Combien font 0,99 € + 0,01 € ?",
+            "choices": [
+              "1,00 €",
+              "0,100 €",
+              "1,99 €",
+              "0,91 €"
+            ],
+            "answer": 0,
+            "exp": "0,99+0,01=1,00 € (un euro pile)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Comment s'écrit « 0 euro et 5 centimes » avec une virgule ?",
+            "choices": [
+              "0,5 €",
+              "0,05 €",
+              "5,0 €",
+              "0,50 €"
+            ],
+            "answer": 1,
+            "exp": "5 centimes seulement (pas 50) s'écrit 0,05 € avec un zéro après la virgule."
           }
         ]
       },
@@ -8477,6 +9131,159 @@
             ],
             "answer": 1,
             "exp": "On ne peut pas juste soustraire les minutes quand on change d'heure : il faut découper le trajet en deux morceaux (jusqu'à l'heure pile, puis après) et additionner. La bonne réponse est 35 minutes, pas 25."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Combien de secondes y a-t-il dans une minute ?",
+            "choices": [
+              "10",
+              "60",
+              "100",
+              "30"
+            ],
+            "answer": 1,
+            "exp": "1 minute = 60 secondes."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de minutes séparent 10h00 et 10h35 ?",
+            "answer": "35",
+            "exp": "De 10h00 à 10h35, il s'écoule 35 minutes."
+          },
+          {
+            "type": "text",
+            "kind": "application",
+            "q": "Un match commence à 16h00 et dure 45 minutes. À quelle heure se termine-t-il (donne juste l'heure, sans minutes si rond, sinon heure+minutes collées comme 1645) ?",
+            "answer": "1645",
+            "exp": "16h00 + 45 minutes = 16h45."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un cours commence à 8h50 et dure 30 minutes. À quelle heure se termine-t-il ?",
+            "choices": [
+              "9h20",
+              "9h10",
+              "8h80",
+              "9h00"
+            ],
+            "answer": 0,
+            "exp": "8h50+30min : 50+30=80 min = 1h20, donc 8h+1h20=9h20."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi faut-il faire attention en calculant une durée qui traverse une heure pile (comme de 8h50 à 9h10), par rapport à un calcul habituel en base 10 ?",
+            "choices": [
+              "Il n'y a aucune précaution particulière à prendre",
+              "Parce que le temps ne fonctionne pas en base 10 : après 59 minutes, on passe directement à l'heure suivante (0 minute), pas à 60, 70 ou 100 minutes",
+              "Parce que les heures n'existent pas vraiment",
+              "Parce qu'il faut toujours éviter de calculer des durées autour de l'heure pile"
+            ],
+            "answer": 1,
+            "exp": "Le temps se compte en base 60 pour les minutes : après 59 minutes vient l'heure suivante (0 min), pas 60, 70, 80... comme pour les nombres habituels."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour calculer la durée entre 10h15 et 10h50, un élève fait « 50 − 15 = 35 minutes ». Que penser de ce calcul ?",
+            "choices": [
+              "Il est faux, il fallait additionner",
+              "Il est juste, car les deux horaires sont dans la même heure (10h), donc on peut simplement soustraire les minutes : 50−15=35 minutes",
+              "Il fallait multiplier 50 par 15",
+              "On ne peut jamais soustraire des minutes directement"
+            ],
+            "answer": 1,
+            "exp": "Quand les deux horaires sont dans la même heure, soustraire directement les minutes (50−15=35) donne la bonne durée."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Il y a 60 minutes dans une heure.",
+            "answer": true,
+            "exp": "Par définition, 1 heure = 60 minutes."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de minutes séparent 14h20 et 14h55 ?",
+            "answer": "35",
+            "exp": "De 14h20 à 14h55, il s'écoule 35 minutes."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une récréation commence à 10h05 et se termine à 10h20. Combien de temps a-t-elle duré ?",
+            "choices": [
+              "15 minutes",
+              "25 minutes",
+              "5 minutes",
+              "20 minutes"
+            ],
+            "answer": 0,
+            "exp": "10h20-10h05=15 minutes."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un trajet en bus commence à 9h00 et dure 25 minutes. À quelle heure arrive le bus (format heure+minutes collées, comme 925) ?",
+            "answer": "925",
+            "exp": "9h00+25 minutes = 9h25."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, pour calculer une durée qui traverse minuit ou une heure pile avec des minutes qui dépassent 59, faut-il « transformer » les minutes en heure supplémentaire ?",
+            "choices": [
+              "Il ne faut jamais faire cette transformation",
+              "Parce qu'une fois qu'on atteint ou dépasse 60 minutes, cela forme une heure complète de plus : il faut la compter comme une heure, pas comme des minutes en trop",
+              "Parce que 60 minutes n'existent pas",
+              "Parce qu'il faut toujours arrondir au quart d'heure"
+            ],
+            "answer": 1,
+            "exp": "60 minutes forment exactement 1 heure : tout ce qui atteint ou dépasse 60 minutes doit être « converti » en heure(s) supplémentaire(s)."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un film commence à 20h45 et dure 30 minutes. Un élève calcule 45+30=75 et répond « 20h75 ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, le film finit à 20h75",
+              "20h75 n'existe pas : 75 minutes = 1h15, donc le film finit à 21h15, pas 20h75",
+              "Il fallait dire 20h30",
+              "Le calcul est impossible à faire"
+            ],
+            "answer": 1,
+            "exp": "75 minutes dépassent 60 : cela fait 1 heure (60 min) + 15 min, donc 20h + 1h15 = 21h15, pas « 20h75 » qui n'a pas de sens."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de minutes dure un film qui commence à 18h00 et se termine à 18h40 ?",
+            "answer": "40",
+            "exp": "18h40-18h00=40 minutes."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un cours de 50 minutes commence à 13h20. À quelle heure se termine-t-il ?",
+            "choices": [
+              "14h10",
+              "13h70",
+              "14h20",
+              "13h50"
+            ],
+            "answer": 0,
+            "exp": "13h20+50min : 20+50=70 min = 1h10, donc 13h+1h10=14h10."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de minutes séparent 11h10 et 11h45 ?",
+            "answer": "35",
+            "exp": "De 11h10 à 11h45, il s'écoule 35 minutes."
           }
         ]
       },
@@ -8547,6 +9354,159 @@
             ],
             "answer": 1,
             "exp": "« Un quart de 60 », ça veut dire 60 ÷ 4 = 15, pas 60 ÷ 15. L'élève a mélangé le nombre de parts (4) avec la durée elle-même, ce qui donne un résultat totalement faux."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de quarts d'heure y a-t-il dans une heure entière ?",
+            "answer": "4",
+            "exp": "1 heure = 60 minutes = 4 quarts d'heure (de 15 minutes chacun)."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Une activité dure une heure et demie. Combien de minutes cela fait-il ?",
+            "answer": "90",
+            "exp": "1h30 = 60+30 = 90 minutes."
+          },
+          {
+            "type": "text",
+            "kind": "application",
+            "q": "Un trajet dure deux quarts d'heure. Combien de minutes cela fait-il ?",
+            "answer": "30",
+            "exp": "2 quarts d'heure = 2×15 = 30 minutes (une demi-heure)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une réunion dure trois quarts d'heure. Combien de minutes cela représente-t-il ?",
+            "choices": [
+              "45 minutes",
+              "30 minutes",
+              "60 minutes",
+              "15 minutes"
+            ],
+            "answer": 0,
+            "exp": "3×15=45 minutes."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi une demi-heure dure-t-elle exactement deux fois plus qu'un quart d'heure ?",
+            "choices": [
+              "Ce n'est pas vrai, elles durent pareil",
+              "Parce qu'une heure se divise en 4 quarts égaux (15 min chacun) ; une demi-heure correspond à 2 de ces quarts, donc 2×15=30 minutes, le double d'un seul quart",
+              "Parce que « demi » et « quart » sont juste des synonymes",
+              "Parce que 30 est un hasard sans rapport avec 15"
+            ],
+            "answer": 1,
+            "exp": "Une heure (60 min) se divise en 4 quarts de 15 min ; la moitié de l'heure (30 min) correspond donc à 2 de ces quarts, soit le double d'un seul quart."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève dit : « un quart d'heure, c'est 4 fois plus court qu'une heure, donc ça dure 60÷4=15 minutes ». Que penser de ce raisonnement ?",
+            "choices": [
+              "Il est faux, un quart d'heure dure 4 minutes",
+              "Son raisonnement et son calcul sont corrects : 60÷4=15 minutes est bien la durée d'un quart d'heure",
+              "Il fallait multiplier 60 par 4",
+              "Un quart d'heure dure toujours 1 heure"
+            ],
+            "answer": 1,
+            "exp": "60÷4=15 : diviser l'heure en 4 parts égales donne bien 15 minutes par quart d'heure, le raisonnement est juste."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Trois quarts d'heure représentent 45 minutes.",
+            "answer": true,
+            "exp": "3×15=45 minutes."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Une pause dure 15 minutes. Comment appelle-t-on cette durée en un mot (lié à l'heure) ?",
+            "answer": "quart",
+            "exp": "15 minutes correspond à un quart d'heure (60÷4=15)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Combien de minutes dure une heure et un quart ?",
+            "choices": [
+              "75 minutes",
+              "60 minutes",
+              "45 minutes",
+              "90 minutes"
+            ],
+            "answer": 0,
+            "exp": "1h15 = 60+15=75 minutes."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de minutes dure une heure moins le quart (3 quarts d'heure) ?",
+            "answer": "45",
+            "exp": "Une heure moins un quart = 3 quarts restants = 45 minutes."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi dit-on parfois « il est une heure moins le quart » plutôt que de donner directement les minutes ?",
+            "choices": [
+              "Cela n'a aucun sens particulier",
+              "Parce que c'est une façon courante de dire qu'il manque un quart d'heure (15 min) pour atteindre l'heure pile suivante, une habitude de langage pratique",
+              "Parce que les minutes n'existent pas dans ce cas",
+              "Parce qu'il est interdit de dire les minutes directement"
+            ],
+            "answer": 1,
+            "exp": "C'est une expression courante pour indiquer qu'il reste 15 minutes (un quart d'heure) avant l'heure pile suivante, pratique à l'oral."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève dit que « midi moins le quart » signifie 12h15. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "« Moins le quart » signifie qu'il MANQUE un quart d'heure pour atteindre midi, donc c'est 11h45, pas 12h15 qui serait « midi et quart »",
+              "Midi moins le quart n'existe pas",
+              "Il fallait dire 12h45"
+            ],
+            "answer": 1,
+            "exp": "« Moins le quart » signifie 15 minutes avant l'heure annoncée : midi moins le quart = 11h45, alors que midi ET quart = 12h15."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Une activité commence à 14h et dure trois quarts d'heure. À quelle heure se termine-t-elle ?",
+            "choices": [
+              "14h45",
+              "14h30",
+              "15h00",
+              "14h15"
+            ],
+            "answer": 0,
+            "exp": "3 quarts d'heure = 45 minutes ; 14h+45min=14h45."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un quart d'heure et une demi-heure mis ensemble font combien de minutes ?",
+            "choices": [
+              "45 minutes",
+              "30 minutes",
+              "60 minutes",
+              "15 minutes"
+            ],
+            "answer": 0,
+            "exp": "15+30=45 minutes."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de quarts d'heure y a-t-il dans une demi-heure ?",
+            "answer": "2",
+            "exp": "30÷15=2 quarts d'heure dans une demi-heure."
           }
         ]
       },
@@ -8635,6 +9595,177 @@
             ],
             "answer": 1,
             "exp": "Avoir 4 côtés égaux ne suffit pas pour être un carré : il faut aussi vérifier que les 4 angles sont droits. Une forme à 4 côtés égaux mais sans angle droit est un losange, pas un carré."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de côtés a un rectangle ?",
+            "answer": "4",
+            "exp": "Un rectangle a toujours 4 côtés."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quelle forme a tous ses côtés égaux et 4 angles droits ?",
+            "choices": [
+              "Le rectangle",
+              "Le carré",
+              "Le triangle",
+              "Le cercle"
+            ],
+            "answer": 1,
+            "exp": "Le carré a 4 côtés égaux et 4 angles droits : c'est sa définition."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une roue de vélo a la forme d'un :",
+            "choices": [
+              "Carré",
+              "Triangle",
+              "Cercle",
+              "Rectangle"
+            ],
+            "answer": 2,
+            "exp": "Une roue est ronde : c'est un cercle."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un panneau « cédez le passage » a 3 côtés et 3 sommets. Quelle forme est-ce ?",
+            "choices": [
+              "Un carré",
+              "Un triangle",
+              "Un cercle",
+              "Un rectangle"
+            ],
+            "answer": 1,
+            "exp": "3 côtés et 3 sommets : c'est un triangle."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un carré peut-il aussi être appelé rectangle, mais pas l'inverse ?",
+            "choices": [
+              "Ce n'est pas vrai, ce sont deux formes totalement différentes",
+              "Parce qu'un carré respecte déjà toutes les règles d'un rectangle (4 côtés, 4 angles droits) en plus d'avoir ses côtés égaux ; un rectangle quelconque, lui, n'a pas forcément des côtés tous égaux",
+              "Parce que carré et rectangle sont juste deux noms pour la même forme",
+              "Parce qu'un rectangle a toujours plus de côtés qu'un carré"
+            ],
+            "answer": 1,
+            "exp": "Un carré est un rectangle « spécial » (avec en plus tous les côtés égaux) : il remplit donc toutes les conditions du rectangle, mais tout rectangle n'est pas forcément un carré."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève voit une forme à 4 côtés égaux et affirme : « c'est sûrement un carré ». Pourquoi doit-il vérifier autre chose avant d'être sûr ?",
+            "choices": [
+              "Il n'y a rien d'autre à vérifier, 4 côtés égaux suffisent",
+              "Il doit aussi vérifier que les 4 angles sont droits : une forme à 4 côtés égaux mais sans angles droits est un losange, pas un carré",
+              "Un carré n'a jamais 4 côtés égaux",
+              "Il doit vérifier la couleur de la forme"
+            ],
+            "answer": 1,
+            "exp": "4 côtés égaux ne suffisent pas : il faut aussi vérifier que les angles sont droits (sinon c'est un losange, une forme différente)."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un carré est toujours un rectangle, mais un rectangle n'est pas toujours un carré.",
+            "answer": true,
+            "exp": "Le carré respecte toutes les propriétés du rectangle, en plus d'avoir des côtés tous égaux."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de sommets a un carré ?",
+            "answer": "4",
+            "exp": "Un carré a 4 sommets, un à chaque coin."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une pizza entière, avant d'être coupée, a la forme d'un :",
+            "choices": [
+              "Carré",
+              "Cercle",
+              "Triangle",
+              "Rectangle"
+            ],
+            "answer": 1,
+            "exp": "Une pizza entière est ronde : c'est un cercle."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de côtés a un triangle ?",
+            "answer": "3",
+            "exp": "Un triangle a toujours 3 côtés."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi le cercle n'a-t-il ni côté ni sommet, contrairement aux autres formes vues (carré, rectangle, triangle) ?",
+            "choices": [
+              "Le cercle a en fait 4 côtés comme le carré",
+              "Parce que le cercle est tracé d'un seul mouvement courbe, sans aucune ligne droite ni angle, alors que les autres formes sont faites de segments droits qui se rencontrent en sommets",
+              "Parce que le cercle est trop petit pour avoir des côtés",
+              "Il n'y a pas de différence réelle entre le cercle et les autres formes"
+            ],
+            "answer": 1,
+            "exp": "Le cercle est une ligne courbe continue, sans segment droit ni coin : c'est ce qui le distingue des formes à côtés (carré, rectangle, triangle)."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève dit qu'un triangle a toujours 3 côtés ET 3 angles droits. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Un triangle a toujours 3 côtés, mais pas forcément des angles droits : il existe des triangles sans aucun angle droit",
+              "Un triangle n'a jamais d'angle droit",
+              "Un triangle a 4 côtés, pas 3"
+            ],
+            "answer": 1,
+            "exp": "Le nombre de côtés (3) est toujours vrai pour un triangle, mais la présence d'angles droits ne l'est pas : certains triangles n'en ont aucun."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Une forme a 4 côtés mais seulement 2 sont parallèles et de longueurs différentes des 2 autres. Est-ce un carré, un rectangle, ou autre chose ?",
+            "choices": [
+              "Un carré",
+              "Un rectangle",
+              "Ni un carré ni un rectangle (une autre forme à 4 côtés)",
+              "Un triangle"
+            ],
+            "answer": 2,
+            "exp": "Ni un carré (côtés tous égaux) ni un rectangle classique (côtés opposés égaux deux à deux) : c'est une autre forme à 4 côtés."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Combien de sommets a un triangle ?",
+            "choices": [
+              "2",
+              "3",
+              "4",
+              "0"
+            ],
+            "answer": 1,
+            "exp": "Un triangle a 3 sommets, un à chaque angle."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une pièce de 1 euro a la forme d'un :",
+            "choices": [
+              "Carré",
+              "Triangle",
+              "Cercle",
+              "Rectangle"
+            ],
+            "answer": 2,
+            "exp": "Une pièce de monnaie est ronde : c'est un cercle."
           }
         ]
       },
@@ -8723,6 +9854,189 @@
             ],
             "answer": 1,
             "exp": "Un angle droit a une ouverture précise, ni trop fermée (angle aigu) ni trop ouverte (angle obtus, proche d'un angle plat). Un angle presque à plat est un angle obtus, pas un angle droit."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Un angle droit mesure :",
+            "choices": [
+              "Un quart de tour complet",
+              "Un demi-tour complet",
+              "Un tour complet",
+              "Un huitième de tour"
+            ],
+            "answer": 0,
+            "exp": "Un angle droit correspond exactement à un quart de tour."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Lequel de ces angles est un angle droit ?",
+            "choices": [
+              "Un angle très ouvert, presque plat",
+              "Un angle qui forme un coin bien net comme le coin d'une feuille de papier",
+              "Un angle extrêmement fermé, presque fermé comme une pince",
+              "Aucun de ces angles n'est jamais droit"
+            ],
+            "answer": 1,
+            "exp": "L'angle droit a l'ouverture exacte du coin d'une feuille de papier rectangulaire."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève veut vérifier si le coin d'une table est un angle droit, sans équerre. Que peut-il utiliser ?",
+            "choices": [
+              "Une règle seule, posée n'importe comment",
+              "Le coin d'une feuille de papier, en le superposant exactement sur le coin à vérifier",
+              "Un crayon de couleur",
+              "Il est impossible de vérifier sans équerre"
+            ],
+            "answer": 1,
+            "exp": "Le coin d'une feuille de papier étant un angle droit, on peut le superposer sur un autre coin pour vérifier qu'il l'est aussi."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans la salle de classe, lequel de ces éléments présente typiquement un angle droit ?",
+            "choices": [
+              "Le coin du tableau rectangulaire",
+              "Les aiguilles d'une horloge à 10h10",
+              "Un arc de cercle dessiné au tableau",
+              "Aucun des objets de la classe n'a d'angle droit"
+            ],
+            "answer": 0,
+            "exp": "Le coin d'un tableau rectangulaire forme un angle droit, comme tout coin de forme rectangulaire."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi le coin d'une feuille de papier est-il un bon « gabarit » universel pour reconnaître un angle droit ?",
+            "choices": [
+              "Parce que toutes les feuilles ont obligatoirement un coin arrondi",
+              "Parce qu'une feuille de papier standard a des coins qui forment exactement des angles droits, on peut donc la superposer sur n'importe quel autre angle pour comparer",
+              "Parce que le papier est toujours de la même couleur",
+              "Parce que les feuilles de papier n'ont jamais de coin"
+            ],
+            "answer": 1,
+            "exp": "Les coins d'une feuille rectangulaire sont par construction des angles droits : ils servent de référence fiable pour comparer n'importe quel autre angle."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève dit : « cet angle est très fermé, presque pointu, donc c'est sûrement un angle droit ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Un angle très fermé (pointu) est un angle AIGU, plus petit qu'un angle droit, pas un angle droit lui-même",
+              "Un angle droit est toujours très fermé",
+              "Il n'existe pas d'angle plus fermé qu'un angle droit"
+            ],
+            "answer": 1,
+            "exp": "Un angle très fermé (pointu) est un angle aigu, c'est-à-dire plus petit qu'un angle droit, pas un angle droit."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "L'équerre est l'outil spécialement conçu pour vérifier ou tracer un angle droit.",
+            "answer": true,
+            "exp": "L'équerre a justement un coin en angle droit, prévu pour cet usage précis."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une porte ouverte à 90° (un quart de tour) forme, avec le mur, un angle :",
+            "choices": [
+              "Aigu (plus fermé que droit)",
+              "Droit",
+              "Obtus (plus ouvert que droit)",
+              "Il n'y a pas d'angle dans ce cas"
+            ],
+            "answer": 1,
+            "exp": "90° correspond exactement à un angle droit, un quart de tour."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Un angle plus ouvert qu'un angle droit (plus grand qu'un quart de tour) s'appelle un angle :",
+            "choices": [
+              "Aigu",
+              "Droit",
+              "Obtus",
+              "Plat"
+            ],
+            "answer": 2,
+            "exp": "Un angle plus ouvert qu'un angle droit est appelé un angle obtus."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi dit-on qu'un angle droit est une sorte de « référence » entre les angles aigus et les angles obtus ?",
+            "choices": [
+              "Il n'a aucun rapport avec les autres angles",
+              "Parce qu'il marque exactement la limite : tout angle plus fermé que lui est aigu, tout angle plus ouvert que lui est obtus",
+              "Parce que l'angle droit est toujours le plus grand de tous les angles",
+              "Parce que l'angle droit n'existe pas vraiment"
+            ],
+            "answer": 1,
+            "exp": "L'angle droit sert de point de repère : au-dessous, l'angle est aigu ; au-dessus, il est obtus."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour vérifier qu'un angle est droit avec une équerre, un élève place l'équerre n'importe comment, sans faire coïncider le sommet et un côté de l'angle. Que risque-t-il ?",
+            "choices": [
+              "Rien, l'équerre fonctionne toujours peu importe comment on la place",
+              "De se tromper dans sa vérification, car l'équerre doit être alignée précisément sur le sommet et un côté de l'angle pour une comparaison fiable",
+              "L'équerre ne peut jamais servir à vérifier un angle",
+              "Il doit utiliser un compas à la place"
+            ],
+            "answer": 1,
+            "exp": "Une équerre mal positionnée (non alignée sur le sommet et un côté) ne permet pas une comparaison fiable de l'angle."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un carré a combien d'angles droits ?",
+            "choices": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "answer": 3,
+            "exp": "Un carré a 4 angles, tous droits."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un triangle peut-il avoir un angle droit ?",
+            "choices": [
+              "Jamais",
+              "Oui, certains triangles ont un angle droit (on les appelle triangles rectangles)",
+              "Toujours, tous les triangles ont un angle droit",
+              "Seulement les triangles équilatéraux"
+            ],
+            "answer": 1,
+            "exp": "Un triangle avec un angle droit existe et porte un nom spécial : le triangle rectangle."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Un losange a 4 côtés égaux mais ses angles ne sont pas droits. Peut-on l'appeler un carré ?",
+            "choices": [
+              "Oui, toujours",
+              "Non, car un carré exige en plus des angles droits, que le losange n'a pas forcément",
+              "Oui, mais seulement s'il est petit",
+              "Un losange n'a jamais 4 côtés égaux"
+            ],
+            "answer": 1,
+            "exp": "Avoir 4 côtés égaux ne suffit pas pour être un carré : il faut aussi des angles droits, que le losange n'a pas forcément."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Tous les angles droits ont exactement la même ouverture, peu importe la taille de la figure.",
+            "answer": true,
+            "exp": "Un angle droit est toujours un quart de tour, que la figure soit grande ou petite : son ouverture ne change jamais."
           }
         ]
       },
@@ -8811,6 +10125,189 @@
             ],
             "answer": 1,
             "exp": "Mesurer des longueurs égales ne garantit pas des angles droits : sans équerre pour vérifier les angles, la figure peut avoir la bonne longueur de côtés mais des angles penchés, et ne plus être un vrai carré."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quel outil utilise-t-on pour tracer une ligne bien droite ?",
+            "choices": [
+              "Le compas",
+              "La règle",
+              "Une gomme",
+              "Un ciseau"
+            ],
+            "answer": 1,
+            "exp": "La règle sert à tracer des lignes droites précises."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pour tracer un angle droit précis, quel outil est le plus adapté ?",
+            "choices": [
+              "La règle seule",
+              "Le compas seul",
+              "L'équerre",
+              "Une gomme"
+            ],
+            "answer": 2,
+            "exp": "L'équerre est spécialement conçue pour tracer ou vérifier des angles droits."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour tracer un cercle de rayon 4 cm, que doit-on régler sur le compas avant de tracer ?",
+            "choices": [
+              "L'écartement des deux pointes à exactement 4 cm",
+              "La couleur du crayon",
+              "La longueur de la règle",
+              "Rien, le compas est toujours réglé pareil"
+            ],
+            "answer": 0,
+            "exp": "Le rayon du cercle correspond à l'écartement entre la pointe fixe et la mine du compas : il faut le régler précisément à 4 cm."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour tracer un carré de 5 cm de côté avec la règle et l'équerre, quelle est la première chose à faire ?",
+            "choices": [
+              "Tracer directement les 4 côtés sans réfléchir à l'ordre",
+              "Tracer un premier segment de 5 cm avec la règle, puis utiliser l'équerre pour tracer les angles droits aux extrémités",
+              "Utiliser uniquement le compas",
+              "Mesurer uniquement les diagonales"
+            ],
+            "answer": 1,
+            "exp": "On commence par un côté de référence (mesuré à la règle), puis on construit les angles droits successifs avec l'équerre."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi suivre les étapes d'une construction géométrique dans l'ordre indiqué est-il important, plutôt que de les faire dans n'importe quel ordre ?",
+            "choices": [
+              "L'ordre n'a jamais d'importance en géométrie",
+              "Parce que chaque étape s'appuie souvent sur le tracé de l'étape précédente (un point ou une ligne déjà tracée) : changer l'ordre peut rendre une étape impossible à réaliser correctement",
+              "Parce que les étapes sont juste numérotées pour faire joli",
+              "Il n'existe pas d'étapes en géométrie"
+            ],
+            "answer": 1,
+            "exp": "Une construction géométrique s'appuie souvent sur les tracés précédents : respecter l'ordre garantit que chaque étape dispose des éléments nécessaires pour être réalisée."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève trace un carré en mesurant chaque côté à 5 cm à la règle, mais sans jamais vérifier les angles. Quel risque prend-il ?",
+            "choices": [
+              "Aucun risque, 4 côtés égaux font toujours un carré parfait",
+              "Obtenir une forme à 4 côtés égaux mais pas forcément un carré parfait : sans vérifier les angles droits, la forme pourrait être un losange penché",
+              "Il va forcément obtenir un triangle",
+              "Les angles ne comptent jamais dans un carré"
+            ],
+            "answer": 1,
+            "exp": "4 côtés égaux sans angles droits vérifiés peuvent donner un losange plutôt qu'un carré : il faut aussi contrôler les angles."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Le compas sert notamment à tracer des cercles et à reporter des longueurs égales.",
+            "answer": true,
+            "exp": "Le compas garde un écartement fixe, ce qui permet de tracer un cercle ou de reporter la même longueur plusieurs fois."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour tracer un triangle avec 3 côtés de longueurs données, quel outil mesure chaque côté avant de le tracer ?",
+            "choices": [
+              "La règle graduée",
+              "Le compas uniquement",
+              "L'équerre uniquement",
+              "Aucun outil n'est nécessaire"
+            ],
+            "answer": 0,
+            "exp": "La règle graduée permet de mesurer et tracer des longueurs précises pour chaque côté."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Si on veut reporter exactement la même longueur à plusieurs endroits d'un dessin sans remesurer chaque fois à la règle, quel outil est le plus pratique ?",
+            "choices": [
+              "Le compas, en gardant le même écartement entre les deux tracés",
+              "Une gomme",
+              "Un crayon de couleur différent",
+              "Il faut toujours remesurer à la règle"
+            ],
+            "answer": 0,
+            "exp": "Le compas garde un écartement fixe entre ses deux pointes : il permet de reporter une même longueur sans remesurer chaque fois."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève veut tracer un carré mais utilise uniquement le compas, sans règle ni équerre. Que va-t-il probablement lui manquer pour réussir ?",
+            "choices": [
+              "Rien, le compas suffit pour tout tracer en géométrie",
+              "Le compas seul ne permet pas de tracer des lignes droites précises ni de garantir des angles droits : il faudra aussi la règle et l'équerre",
+              "Le compas est l'unique outil nécessaire pour un carré",
+              "Il n'a besoin que d'une gomme en plus"
+            ],
+            "answer": 1,
+            "exp": "Le compas trace des cercles et reporte des longueurs, mais ne trace pas de lignes droites ni ne garantit des angles droits : règle et équerre restent nécessaires pour un carré."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Avec quel outil trace-t-on un cercle ? (un seul mot)",
+            "answer": "compas",
+            "exp": "Le compas est l'outil spécialement conçu pour tracer des cercles."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour tracer un rectangle (pas un carré) avec des côtés de longueurs différentes, quels outils combine-t-on ?",
+            "choices": [
+              "La règle et l'équerre",
+              "Le compas seul",
+              "Une gomme et un crayon",
+              "Aucun outil n'est nécessaire"
+            ],
+            "answer": 0,
+            "exp": "La règle mesure les longueurs différentes des côtés, l'équerre garantit les angles droits aux coins."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi un programme de construction géométrique écrit étape par étape est-il utile, même pour une figure qu'on connaît déjà bien ?",
+            "choices": [
+              "Ce n'est jamais utile pour une figure déjà connue",
+              "Parce qu'il garantit de ne rien oublier et de réaliser chaque tracé dans le bon ordre, même pour une figure familière, ce qui évite les erreurs de précipitation",
+              "Parce qu'il faut toujours une notice même pour un simple trait",
+              "Parce que les figures changent de forme sans programme écrit"
+            ],
+            "answer": 1,
+            "exp": "Même pour une figure connue, suivre un programme écrit structuré évite les oublis et les erreurs d'ordre, surtout pour des constructions à plusieurs étapes."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un cercle tracé au compas a un rayon de 3 cm. Quel est son diamètre ?",
+            "choices": [
+              "3 cm",
+              "6 cm",
+              "9 cm",
+              "1,5 cm"
+            ],
+            "answer": 1,
+            "exp": "Le diamètre est le double du rayon : 3×2=6 cm."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour tracer un carré, combien de fois doit-on vérifier un angle droit avec l'équerre ?",
+            "choices": [
+              "1 fois",
+              "2 fois",
+              "4 fois, un pour chaque coin",
+              "0 fois, ce n'est jamais nécessaire"
+            ],
+            "answer": 2,
+            "exp": "Un carré a 4 coins, chacun devant être un angle droit : il faut vérifier les 4."
           }
         ]
       },
@@ -8899,6 +10396,195 @@
             ],
             "answer": 1,
             "exp": "Un plan doit être compréhensible par quelqu'un d'autre : sans indiquer clairement quelle direction réelle correspond à « en haut » sur le dessin, le lecteur du plan ne peut pas se repérer correctement."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quel mot décrit la position d'un livre posé au-dessus d'une table ?",
+            "choices": [
+              "Dessous",
+              "Dessus",
+              "Dedans",
+              "Derrière"
+            ],
+            "answer": 1,
+            "exp": "Un objet posé au-dessus d'un support est « dessus »."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Sur un plan vu d'en haut, comment apparaît un objet rond posé sur une table, comme une assiette ?",
+            "choices": [
+              "Comme un rectangle",
+              "Comme un cercle, vu de dessus",
+              "Comme un triangle",
+              "On ne peut jamais le voir sur un plan"
+            ],
+            "answer": 1,
+            "exp": "Vu d'en haut, un objet rond garde une forme ronde (un cercle) sur le plan."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Sur un plan de jardin, l'arbre est dessiné en haut à gauche, le banc en bas à droite. Un enfant part de l'arbre : dans quelle direction générale doit-il se déplacer pour atteindre le banc ?",
+            "choices": [
+              "Vers le haut et la gauche",
+              "Vers le bas et la droite",
+              "Tout droit vers le haut uniquement",
+              "Il doit reculer"
+            ],
+            "answer": 1,
+            "exp": "Pour aller du coin haut-gauche au coin bas-droite, il faut se déplacer vers le bas et vers la droite."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un plan de salle de classe montre le bureau de la maîtresse devant, et les tables des élèves derrière, face au bureau. Où se trouve un élève qui regarde le tableau placé au même endroit que le bureau ?",
+            "choices": [
+              "Il tourne le dos au bureau",
+              "Il fait face au bureau et au tableau",
+              "Il est à côté du bureau",
+              "Impossible à savoir"
+            ],
+            "answer": 1,
+            "exp": "Les tables faisant face au bureau, un élève assis à sa table regarde donc vers le bureau et le tableau."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il utile de combiner plusieurs indications de position (par exemple « sous la table, à gauche de la chaise ») plutôt qu'une seule ?",
+            "choices": [
+              "Une seule indication suffit toujours à localiser précisément un objet",
+              "Parce qu'une seule indication peut correspondre à plusieurs endroits possibles ; en combiner plusieurs réduit les possibilités jusqu'à ne désigner qu'un seul endroit précis",
+              "Parce que combiner des indications rend toujours la position plus floue",
+              "Il est interdit d'utiliser plus d'une indication à la fois"
+            ],
+            "answer": 1,
+            "exp": "Une seule indication de position reste souvent ambiguë (plusieurs endroits « sous la table » par exemple) ; en combiner plusieurs réduit les possibilités jusqu'à un seul endroit précis."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève, sur un plan vu de dessus, dessine une armoire comme on la voit de face (avec ses portes visibles). Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, on dessine toujours les objets de face sur un plan",
+              "Sur un plan vu du dessus, on représente le contour de l'objet vu d'en haut (souvent juste un rectangle pour une armoire), pas sa façade comme si on la regardait de face",
+              "Une armoire n'a pas de forme sur un plan",
+              "Il fallait dessiner l'armoire en 3D"
+            ],
+            "answer": 1,
+            "exp": "Un plan représente une vue de dessus : les objets sont dessinés selon leur contour vu d'en haut, pas leur façade comme on les verrait debout face à eux."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un plan vu de dessus représente une pièce comme si on la regardait depuis le plafond, en ligne droite vers le bas.",
+            "answer": true,
+            "exp": "C'est la définition même d'un plan « vue de dessus » : on regarde la pièce verticalement, depuis au-dessus."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Le chat est sous le canapé » et « Le chat est à côté du canapé » décrivent-elles la même position ?",
+            "choices": [
+              "Oui, exactement la même",
+              "Non, ce sont deux positions très différentes (en dessous vs sur le côté)",
+              "Oui, mais seulement si le canapé est rond",
+              "Ces deux phrases n'ont aucun sens"
+            ],
+            "answer": 1,
+            "exp": "« Sous » et « à côté de » décrivent deux positions nettement différentes par rapport au canapé."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Dans un jeu de piste, l'indication « avance tout droit puis tourne à la première à gauche » utilise quel type d'information ?",
+            "choices": [
+              "Uniquement la couleur des objets",
+              "Une direction de déplacement et un repère de position (tourner) pour se repérer dans l'espace",
+              "Uniquement des mesures de longueur en centimètres",
+              "Aucune information utile"
+            ],
+            "answer": 1,
+            "exp": "Ce type d'indication combine une direction de déplacement et un repère (tourner à un endroit précis) pour guider le repérage dans l'espace."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève, en suivant un plan, confond « à droite » et « à gauche » en se référant à sa propre droite au lieu de celle indiquée sur le plan. Quel problème cela peut-il poser ?",
+            "choices": [
+              "Aucun problème, droite et gauche sont toujours pareilles pour tout le monde",
+              "Il peut se déplacer dans la mauvaise direction, car droite et gauche dépendent du point de vue (celui qui regarde le plan ou celui qui est dessus) et peuvent être inversées selon l'orientation",
+              "Les plans n'ont jamais de droite ni de gauche",
+              "Il n'y a jamais de confusion possible avec droite et gauche"
+            ],
+            "answer": 1,
+            "exp": "Droite et gauche dépendent du point de vue et de l'orientation : une confusion de référentiel peut faire aller dans la direction opposée à celle voulue."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Sur un plan, un symbole en forme de croix indique souvent :",
+            "choices": [
+              "Un emplacement précis ou un point d'intérêt",
+              "Une interdiction totale d'y aller",
+              "Une zone interdite obligatoirement",
+              "Rien de particulier"
+            ],
+            "answer": 0,
+            "exp": "Une croix sur un plan marque généralement un emplacement précis, comme sur une carte au trésor."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi deux personnes situées à des endroits différents dans une même pièce peuvent-elles décrire la position d'un même objet de façon différente (par exemple « à ma gauche » pour l'une, « à ma droite » pour l'autre) ?",
+            "choices": [
+              "C'est impossible, la position d'un objet ne dépend jamais de qui regarde",
+              "Parce que les mots « gauche » et « droite » dépendent du point de vue de la personne qui les utilise, qui peut être différent selon où elle se trouve et vers où elle regarde",
+              "Parce que l'objet change réellement de position selon qui le regarde",
+              "Parce que l'une des deux personnes a toujours tort"
+            ],
+            "answer": 1,
+            "exp": "« Gauche » et « droite » sont relatifs au point de vue de l'observateur : deux personnes à des endroits différents peuvent légitimement les décrire différemment pour un même objet."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans un plan de maison, la cuisine est juste à côté de la salle à manger. Que peut-on en déduire sur leur position relative ?",
+            "choices": [
+              "Elles sont très éloignées l'une de l'autre",
+              "Elles sont voisines, l'une juste à côté de l'autre, sans pièce entre elles",
+              "Elles sont superposées, l'une au-dessus de l'autre",
+              "Il est impossible de savoir où elles sont"
+            ],
+            "answer": 1,
+            "exp": "« À côté » indique une proximité directe, sans autre pièce intercalée entre les deux."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Sur un plan, que signifie généralement une flèche qui pointe vers le haut de la feuille, à côté de la lettre « N » ?",
+            "choices": [
+              "Elle indique où se trouve la cuisine",
+              "Elle indique la direction du Nord, pour orienter le plan",
+              "Elle indique qu'il faut sauter",
+              "Elle n'a aucune signification particulière"
+            ],
+            "answer": 1,
+            "exp": "La lettre N accompagnée d'une flèche indique la direction du Nord, pour orienter correctement le plan."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un ballon posé entre deux chaises se trouve :",
+            "choices": [
+              "Au milieu des deux chaises",
+              "Loin des deux chaises",
+              "Au-dessus des deux chaises",
+              "Sous les deux chaises"
+            ],
+            "answer": 0,
+            "exp": "« Entre » deux objets signifie être positionné au milieu d'eux."
           }
         ]
       },
@@ -8987,6 +10673,189 @@
             ],
             "answer": 1,
             "exp": "Sans préciser le nombre de cases à avancer et la direction du virage, le robot ne peut pas savoir exactement quoi faire : un bon codage doit toujours être complet et sans ambiguïté."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Parmi ces instructions, laquelle est suffisamment précise pour un robot ?",
+            "choices": [
+              "« Va par là »",
+              "« Avance de 3 cases, puis tourne à droite »",
+              "« Bouge un peu »",
+              "« Fais quelque chose »"
+            ],
+            "answer": 1,
+            "exp": "Une instruction précise donne une quantité exacte (3 cases) et une direction claire (à droite)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Si un pion tourne à droite PUIS avance de 2 cases, obtient-il le même résultat qu'en avançant de 2 cases PUIS en tournant à droite ?",
+            "choices": [
+              "Oui, toujours le même résultat",
+              "Non, l'ordre des instructions change généralement le trajet final et la position d'arrivée",
+              "Oui, mais seulement si le pion est rouge",
+              "Cela dépend uniquement de la vitesse du pion"
+            ],
+            "answer": 1,
+            "exp": "Tourner avant ou après avancer change la direction dans laquelle on avance : l'ordre des instructions a un effet réel sur le trajet."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un pion part de la case départ. On lui donne : « avance de 2 cases, tourne à gauche, avance de 1 case ». Que doit-on faire en premier pour suivre ce codage correctement ?",
+            "choices": [
+              "Tourner à gauche d'abord",
+              "Avancer de 1 case d'abord",
+              "Avancer de 2 cases d'abord, car c'est la première instruction de la liste",
+              "Faire les trois actions en même temps"
+            ],
+            "answer": 2,
+            "exp": "Les instructions doivent être suivies dans l'ordre où elles sont données : avancer de 2 cases est la première étape."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il essentiel de vérifier un codage de déplacement en le suivant soi-même, case par case, plutôt que de juste le lire rapidement ?",
+            "choices": [
+              "Ce n'est jamais nécessaire, lire suffit toujours",
+              "Parce qu'en suivant chaque instruction une par une, on peut repérer une erreur (une case oubliée, un mauvais sens) qu'une simple lecture rapide ne révèle pas forcément",
+              "Parce que suivre le codage pas à pas rend le robot plus lent",
+              "Il est interdit de vérifier un codage avant de l'exécuter"
+            ],
+            "answer": 1,
+            "exp": "Exécuter chaque instruction pas à pas permet de repérer concrètement les erreurs (case oubliée, mauvaise direction) qu'une lecture rapide pourrait manquer."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour faire atteindre une case précise à un robot, un élève écrit seulement : « avance, tourne, avance », sans préciser de nombre de cases. Pourquoi ce codage est-il incomplet ?",
+            "choices": [
+              "Il est complet, un robot comprend toujours tout seul",
+              "Il manque les quantités précises (combien de cases avancer à chaque fois) : sans elles, le robot ne sait pas où s'arrêter exactement",
+              "Il manque la couleur du robot",
+              "Un robot n'a jamais besoin de nombre de cases"
+            ],
+            "answer": 1,
+            "exp": "Sans préciser le nombre exact de cases à chaque déplacement, l'instruction reste trop vague pour qu'un robot atteigne une case précise."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Dans un codage de déplacement, l'ordre des instructions influence le trajet final.",
+            "answer": true,
+            "exp": "Changer l'ordre des instructions (avancer puis tourner, ou tourner puis avancer) change généralement le chemin suivi."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un robot reçoit : « avance de 4 cases, tourne à droite, avance de 4 cases, tourne à droite, avance de 4 cases, tourne à droite, avance de 4 cases ». Quelle figure dessine-t-il probablement ?",
+            "choices": [
+              "Une ligne droite",
+              "Un carré (4 côtés égaux avec des virages à angle droit)",
+              "Un cercle",
+              "Un triangle"
+            ],
+            "answer": 1,
+            "exp": "4 segments égaux séparés par des virages à angle droit (4 fois « tourner à droite ») dessinent un carré."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pour coder le déplacement d'un robot sur un quadrillage, quelles informations sont indispensables à chaque instruction de mouvement ?",
+            "choices": [
+              "Uniquement la couleur du robot",
+              "La distance (nombre de cases) et la direction (tourner à droite/gauche ou avancer)",
+              "Uniquement le nom du robot",
+              "Aucune information n'est nécessaire"
+            ],
+            "answer": 1,
+            "exp": "Un codage de déplacement précis nécessite toujours une distance et une direction clairement indiquées."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève code : « tourne à droite, tourne à droite, tourne à droite, tourne à droite », sans jamais avancer. Où se retrouve le robot à la fin ?",
+            "choices": [
+              "Très loin de son point de départ",
+              "Exactement à son point de départ, car 4 quarts de tour (4×90°) font un tour complet, donc la même direction qu'au début",
+              "Le robot explose",
+              "Impossible à savoir"
+            ],
+            "answer": 1,
+            "exp": "4 quarts de tour (4×90°=360°) forment un tour complet : le robot se retrouve orienté exactement comme au début, sans s'être déplacé."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un même trajet peut-il parfois être codé de deux façons différentes mais toutes les deux correctes ?",
+            "choices": [
+              "Ce n'est jamais possible, un trajet n'a qu'un seul codage correct",
+              "Parce qu'il existe parfois plusieurs chemins équivalents pour atteindre la même case (par exemple avancer puis tourner, ou contourner autrement), tant que le résultat final est identique",
+              "Parce que les robots n'ont jamais de trajet précis",
+              "Parce que le codage ne détermine jamais vraiment le trajet"
+            ],
+            "answer": 1,
+            "exp": "Plusieurs suites d'instructions différentes peuvent amener au même point d'arrivée : il peut exister plusieurs codages valides pour un même résultat final."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève écrit un codage pour atteindre une case, mais oublie une instruction de virage au milieu de la séquence. Que va-t-il se passer ?",
+            "choices": [
+              "Le robot atteindra quand même la bonne case",
+              "Le robot risque de continuer tout droit au lieu de tourner, et donc de ne pas atteindre la case visée",
+              "Le robot s'arrêtera automatiquement avant l'erreur",
+              "Cela n'a aucune conséquence sur le trajet"
+            ],
+            "answer": 1,
+            "exp": "Oublier une instruction de virage fait continuer le robot dans la direction précédente, ce qui l'éloigne généralement de la case visée."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un pion avance de 3 cases vers le haut, puis de 2 cases vers la droite. S'il refait exactement l'inverse (2 cases vers la gauche, puis 3 cases vers le bas), où se retrouve-t-il ?",
+            "choices": [
+              "Loin de son point de départ",
+              "Exactement à son point de départ",
+              "Deux fois plus loin qu'au départ",
+              "Impossible à savoir"
+            ],
+            "answer": 1,
+            "exp": "Faire le trajet inverse exact (même distances, directions opposées, dans l'ordre inverse) ramène toujours au point de départ."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pour vérifier qu'un codage de déplacement est correct avant de le donner à un vrai robot, que peut-on faire d'abord ?",
+            "choices": [
+              "Rien, il faut toujours tester directement sur le vrai robot",
+              "Suivre soi-même les instructions sur un quadrillage dessiné, pas à pas, pour vérifier le trajet avant de l'exécuter réellement",
+              "Deviner si ça va marcher sans vérifier",
+              "Il est impossible de vérifier un codage à l'avance"
+            ],
+            "answer": 1,
+            "exp": "Suivre le codage soi-même sur un quadrillage avant de l'exécuter réellement permet de repérer et corriger les erreurs sans risque."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un robot tourne à droite 2 fois de suite, sans avancer entre les deux. Combien de quarts de tour a-t-il fait en tout ?",
+            "answer": "2",
+            "exp": "2 virages de 90° (un quart de tour chacun) font 2 quarts de tour en tout."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un robot doit atteindre une case située 3 cases plus loin et 2 cases plus à droite. Combien d'instructions de déplacement (avancer/tourner) minimum sont nécessaires ?",
+            "choices": [
+              "1",
+              "2 (avancer, tourner, avancer)",
+              "Au moins 3 : avancer de 3, tourner, avancer de 2",
+              "Il est impossible d'atteindre cette case"
+            ],
+            "answer": 2,
+            "exp": "Il faut au moins avancer dans une direction, tourner, puis avancer dans l'autre direction : 3 instructions."
           }
         ]
       },
@@ -9075,6 +10944,189 @@
             ],
             "answer": 1,
             "exp": "Dans un diagramme en barres bien construit, toutes les barres ont la même largeur : seule leur HAUTEUR varie et code l'information (le nombre). La largeur n'a aucune signification particulière."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Sur un diagramme en barres, à quoi sert l'axe vertical (la hauteur) ?",
+            "choices": [
+              "À indiquer la couleur des barres",
+              "À indiquer la quantité représentée par chaque barre",
+              "À indiquer le nom de chaque catégorie",
+              "Il ne sert à rien"
+            ],
+            "answer": 1,
+            "exp": "La hauteur d'une barre indique la quantité (le nombre) associée à cette catégorie."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Sur un diagramme, la barre « chat » atteint 12 et la barre « chien » atteint 18. Quel animal est préféré par le plus d'enfants ?",
+            "choices": [
+              "Le chat",
+              "Le chien",
+              "Les deux sont à égalité",
+              "Impossible à savoir"
+            ],
+            "answer": 1,
+            "exp": "18 > 12 : le chien est préféré par davantage d'enfants."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un diagramme montre les ventes de 3 fruits : pommes (barre à 40), bananes (barre à 55), oranges (barre à 30). Quel fruit s'est le moins vendu ?",
+            "choices": [
+              "Les pommes",
+              "Les bananes",
+              "Les oranges",
+              "Impossible à savoir"
+            ],
+            "answer": 2,
+            "exp": "30 est la plus petite valeur des trois : les oranges se sont le moins vendues."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans un diagramme des sports préférés d'une classe, la barre « foot » est deux fois plus haute que la barre « natation » qui atteint 6. Quelle est la hauteur de la barre « foot » ?",
+            "choices": [
+              "12",
+              "3",
+              "8",
+              "18"
+            ],
+            "answer": 0,
+            "exp": "Deux fois 6 = 12 : la barre « foot » atteint 12."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un diagramme en barres permet-il de répondre « d'un seul coup d'œil » à une question comme « quel est le plus populaire » ?",
+            "choices": [
+              "Il ne permet jamais de répondre rapidement, il faut toujours tout recalculer",
+              "Parce que les hauteurs des barres se comparent visuellement très rapidement, sans avoir besoin de lire ou calculer chaque nombre précisément",
+              "Parce que les barres sont toujours de la même couleur",
+              "Parce qu'un diagramme ne contient jamais de vrais nombres"
+            ],
+            "answer": 1,
+            "exp": "La comparaison visuelle des hauteurs des barres est quasi instantanée, bien plus rapide que de comparer des nombres écrits dans un tableau."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève affirme que, sur un diagramme en barres, la barre la plus LARGE représente la plus grande quantité. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "C'est la HAUTEUR de la barre qui représente la quantité, pas sa largeur : toutes les barres ont généralement la même largeur, seule leur hauteur varie et compte",
+              "La largeur est toujours ce qui compte, jamais la hauteur",
+              "Il n'y a aucune règle pour lire un diagramme en barres"
+            ],
+            "answer": 1,
+            "exp": "Dans un diagramme en barres, toutes les barres ont la même largeur ; seule leur HAUTEUR varie et représente la quantité à lire."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Dans un diagramme en barres, plus une barre est haute, plus la quantité qu'elle représente est grande.",
+            "answer": true,
+            "exp": "C'est le principe de base d'un diagramme en barres : la hauteur est proportionnelle à la quantité représentée."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un diagramme montre le nombre de livres lus par 4 élèves : Léa (8), Tom (5), Zoé (8), Max (3). Combien d'élèves ont lu exactement le même nombre de livres qu'un autre ?",
+            "choices": [
+              "0",
+              "2 (Léa et Zoé)",
+              "4",
+              "1"
+            ],
+            "answer": 1,
+            "exp": "Léa et Zoé ont tous les deux lu 8 livres : leurs barres ont la même hauteur."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pour construire un diagramme en barres à partir d'un comptage, quelle est la première chose à faire ?",
+            "choices": [
+              "Choisir des couleurs au hasard sans compter",
+              "Compter précisément chaque catégorie avant de tracer les barres à la hauteur correspondante",
+              "Dessiner des barres de hauteurs aléatoires",
+              "Il n'y a pas d'étape particulière à suivre"
+            ],
+            "answer": 1,
+            "exp": "Un diagramme fiable nécessite un comptage précis préalable : la hauteur de chaque barre doit correspondre exactement au nombre compté."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève trace une barre à la hauteur 7 alors que son comptage réel donnait 9. Quelle conséquence cela a-t-il sur la lecture du diagramme ?",
+            "choices": [
+              "Aucune conséquence, le diagramme reste parfaitement juste",
+              "Le diagramme donnera une information fausse : quiconque le lira croira qu'il y a 7 alors qu'il y en a réellement 9",
+              "Le diagramme corrigera automatiquement l'erreur",
+              "Un diagramme ne peut jamais contenir d'erreur"
+            ],
+            "answer": 1,
+            "exp": "Une hauteur de barre incorrecte transmet une information fausse à qui lit le diagramme, qui ne peut pas deviner l'erreur sans revérifier le comptage original."
+          },
+          {
+            "type": "text",
+            "kind": "application",
+            "q": "Sur un diagramme, la barre « rouge » atteint 14 et la barre « bleu » atteint 9. Quelle est la différence entre les deux ?",
+            "answer": "5",
+            "exp": "14−9=5, la différence entre les deux barres."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi est-il important que toutes les barres d'un même diagramme aient la même largeur ?",
+            "choices": [
+              "Ce n'est pas important, la largeur peut varier librement",
+              "Pour que seule la hauteur varie et porte l'information : si la largeur changeait aussi, cela pourrait créer une confusion visuelle sur ce qui représente vraiment la quantité",
+              "Parce que des largeurs différentes sont interdites par la loi",
+              "Parce que la largeur est ce qui compte réellement, pas la hauteur"
+            ],
+            "answer": 1,
+            "exp": "Garder une largeur identique pour toutes les barres garantit que seule la hauteur porte l'information de quantité, évitant toute confusion visuelle."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un diagramme montre les couleurs préférées de 20 enfants : bleu (9), rouge (7), vert (4). Que vaut la somme des trois barres ?",
+            "choices": [
+              "20",
+              "16",
+              "13",
+              "9"
+            ],
+            "answer": 0,
+            "exp": "9+7+4=20, ce qui correspond bien au nombre total d'enfants interrogés."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Sur un diagramme, la barre « natation » atteint 11 et c'est la plus haute de toutes les barres. Que peut-on en déduire sur cette activité ?",
+            "choices": [
+              "C'est l'activité la moins choisie",
+              "C'est l'activité la plus choisie parmi celles représentées",
+              "Elle n'a aucun rapport avec les autres barres",
+              "On ne peut rien en déduire"
+            ],
+            "answer": 1,
+            "exp": "La barre la plus haute représente la quantité la plus grande, donc l'activité la plus choisie parmi celles représentées."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Deux barres d'un diagramme ont exactement la même hauteur. Que peut-on en conclure ?",
+            "choices": [
+              "Elles représentent forcément la même catégorie",
+              "Elles représentent deux catégories différentes mais avec la même quantité",
+              "C'est une erreur de tracé, deux barres ne peuvent jamais être égales",
+              "Il est impossible de comparer deux barres égales"
+            ],
+            "answer": 1,
+            "exp": "Deux barres de même hauteur représentent deux catégories différentes ayant la même quantité associée."
           }
         ]
       },
@@ -9163,6 +11215,183 @@
             ],
             "answer": 1,
             "exp": "La question parle des FILLES, donc il faut utiliser la ligne « Filles » (croisée avec la colonne « Bus »), pas la ligne « Garçons » qui donnerait une réponse pour une tout autre catégorie d'enfants."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans un tableau à double entrée, qu'indique une ligne ?",
+            "choices": [
+              "Une seule information isolée, sans lien avec les colonnes",
+              "Une catégorie qui se croise avec chaque colonne pour donner une information précise",
+              "La couleur du tableau",
+              "Rien de particulier"
+            ],
+            "answer": 1,
+            "exp": "Une ligne représente une catégorie qui, croisée avec chaque colonne, donne une valeur précise dans chaque case."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans un tableau avec la ligne « CE1 » = 45 (vélo) et la ligne « CE2 » = 38 (vélo), quelle classe a le plus d'enfants venant à vélo ?",
+            "choices": [
+              "CE1",
+              "CE2",
+              "Elles sont égales",
+              "Impossible à savoir"
+            ],
+            "answer": 0,
+            "exp": "45 > 38 : la classe de CE1 a plus d'enfants venant à vélo."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans un tableau croisant « Garçons/Filles » et « Chat/Chien », la case Garçons-Chien indique 15 et la case Garçons-Chat indique 9. Combien de garçons ont un animal (chat ou chien) d'après ce tableau ?",
+            "choices": [
+              "24",
+              "6",
+              "15",
+              "9"
+            ],
+            "answer": 0,
+            "exp": "15+9=24 garçons ayant soit un chien, soit un chat."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un tableau croise les jours de la semaine et la météo. La case « Lundi »-« Pluie » indique « oui ». Que signifie cette case ?",
+            "choices": [
+              "Il n'a pas plu lundi",
+              "Il a plu le lundi concerné",
+              "Le tableau ne parle pas de la météo",
+              "Cette case n'a aucun sens"
+            ],
+            "answer": 1,
+            "exp": "La case à l'intersection de « Lundi » et « Pluie » marquée « oui » signifie qu'il a effectivement plu ce jour-là."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un tableau à une seule colonne ne suffirait-il pas pour répondre à une question croisant deux critères, comme « combien de filles viennent en bus » ?",
+            "choices": [
+              "Un tableau à une seule colonne suffit toujours pour tout",
+              "Parce qu'il faudrait pouvoir croiser deux informations à la fois (le sexe ET le moyen de transport), ce qu'une seule colonne ne permet pas de représenter clairement",
+              "Parce que les tableaux à une colonne n'existent pas",
+              "Parce que la question ne concerne qu'un seul critère en réalité"
+            ],
+            "answer": 1,
+            "exp": "Croiser deux critères en même temps (sexe et moyen de transport) nécessite un tableau à double entrée ; une seule colonne ne peut représenter qu'un seul critère à la fois."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour répondre à « combien de garçons viennent en voiture », un élève regarde seulement la colonne « voiture » sans tenir compte de la ligne « garçons ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, regarder la colonne suffit",
+              "Il doit regarder précisément la case à l'INTERSECTION de la ligne « garçons » et de la colonne « voiture », pas toute la colonne qui inclut aussi les filles",
+              "Il fallait regarder uniquement la ligne, jamais la colonne",
+              "Il n'existe aucune case précise pour cette question"
+            ],
+            "answer": 1,
+            "exp": "Seule la case à l'intersection exacte de la ligne et de la colonne concernées donne la bonne réponse ; regarder toute une colonne mélangerait filles et garçons."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Dans un tableau à double entrée, la case à l'intersection d'une ligne et d'une colonne donne une information précise croisant les deux.",
+            "answer": true,
+            "exp": "C'est le principe même d'un tableau à double entrée : chaque case croise exactement une ligne et une colonne."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un tableau croise « Matin/Après-midi » et « Pluie/Soleil ». La case Matin-Soleil = 5, Matin-Pluie = 2, Après-midi-Soleil = 3, Après-midi-Pluie = 6. Combien de jours de soleil en tout (matin + après-midi) ?",
+            "choices": [
+              "8",
+              "11",
+              "5",
+              "9"
+            ],
+            "answer": 0,
+            "exp": "5+3=8 jours de soleil en tout."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il utile de calculer les totaux de chaque ligne et de chaque colonne d'un tableau à double entrée, en plus de lire les cases une par une ?",
+            "choices": [
+              "Ce n'est jamais utile",
+              "Parce que les totaux donnent une vue d'ensemble (par exemple le total de chaque catégorie), complémentaire à l'information détaillée de chaque case individuelle",
+              "Parce que seules les cases individuelles ont un intérêt, jamais les totaux",
+              "Parce que calculer des totaux changerait les données du tableau"
+            ],
+            "answer": 1,
+            "exp": "Les totaux de ligne et de colonne donnent une vue d'ensemble utile (par exemple le total par catégorie), en complément du détail fourni par chaque case."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève additionne toutes les cases d'une seule ligne pour trouver le total de cette catégorie. Que doit-il vérifier avant d'être sûr de son résultat ?",
+            "choices": [
+              "Rien, cette méthode est toujours juste sans vérification",
+              "Qu'il a bien additionné TOUTES les cases de cette ligne, sans en oublier ni en compter une en double",
+              "Qu'il a utilisé une calculatrice",
+              "Que le tableau est de couleur verte"
+            ],
+            "answer": 1,
+            "exp": "Pour un total de ligne fiable, il faut s'assurer d'avoir inclus chaque case de cette ligne exactement une fois, sans oubli ni doublon."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un tableau croise « Filles/Garçons » et « Piscine/Vélo ». La case Filles-Piscine = 12, Filles-Vélo = 8. Combien de filles en tout d'après ce tableau ?",
+            "answer": "20",
+            "exp": "12+8=20 filles en tout (celles allant à la piscine + celles faisant du vélo)."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans un tableau croisant 3 classes (CE1, CE2, CM1) et 2 activités (Théâtre, Sport), combien de cases contient ce tableau (sans compter les en-têtes) ?",
+            "choices": [
+              "5",
+              "6",
+              "3",
+              "2"
+            ],
+            "answer": 1,
+            "exp": "3 lignes × 2 colonnes = 6 cases."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un tableau à double entrée est particulièrement utile quand une question porte sur :",
+            "choices": [
+              "Un seul critère isolé",
+              "Le croisement de deux critères différents en même temps",
+              "Aucun critère précis",
+              "La couleur des objets uniquement"
+            ],
+            "answer": 1,
+            "exp": "Le tableau à double entrée est justement conçu pour croiser deux critères simultanément."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un tableau croise « Printemps/Été/Automne/Hiver » et « Pluie/Soleil/Neige ». Combien de cases ce tableau contient-il, en-têtes non comptés ?",
+            "choices": [
+              "7",
+              "12",
+              "4",
+              "3"
+            ],
+            "answer": 1,
+            "exp": "4 lignes × 3 colonnes = 12 cases."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un tableau à double entrée peut avoir un nombre de lignes différent de son nombre de colonnes.",
+            "answer": true,
+            "exp": "Rien n'oblige un tableau à double entrée à avoir autant de lignes que de colonnes : par exemple 3 lignes et 2 colonnes est parfaitement possible."
           }
         ]
       }
