@@ -21928,6 +21928,189 @@
             ],
             "answer": 1,
             "exp": "Le nombre d'issues différentes possibles (ici 2 : rouge ou bleu) ne détermine pas automatiquement des chances égales : il faut regarder combien de billes de CHAQUE couleur sont présentes. Avec 9 rouges contre 1 bleue, les chances sont très inégales, pas 50/50."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Obtenir un nombre entre 1 et 6 en lançant un dé classique à 6 faces est :",
+            "choices": [
+              "Impossible",
+              "Possible mais pas certain",
+              "Certain",
+              "Aucune de ces réponses"
+            ],
+            "answer": 2,
+            "exp": "Un dé à 6 faces a toujours un nombre entre 1 et 6 : c'est donc certain."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Tirer une carte rouge dans un jeu de cartes composé uniquement de cartes noires est :",
+            "choices": [
+              "Certain",
+              "Possible mais pas certain",
+              "Impossible",
+              "Très probable"
+            ],
+            "answer": 2,
+            "exp": "S'il n'y a que des cartes noires, tirer une carte rouge est impossible."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans un sac, il y a 9 billes vertes et 1 bille jaune. Tirer une bille verte au hasard est-il plus ou moins probable que tirer la jaune ?",
+            "choices": [
+              "Plus probable, car il y a beaucoup plus de billes vertes",
+              "Moins probable",
+              "Également probable",
+              "Impossible de tirer une bille verte"
+            ],
+            "answer": 0,
+            "exp": "Avec 9 billes vertes contre seulement 1 jaune, tirer une verte est beaucoup plus probable."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un sac contient uniquement des billes rouges. Tirer une bille bleue est :",
+            "choices": [
+              "Certain",
+              "Possible",
+              "Impossible",
+              "Très probable"
+            ],
+            "answer": 2,
+            "exp": "Sans aucune bille bleue dans le sac, ce tirage est impossible."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi avoir seulement deux issues possibles (comme pile ou face) ne garantit-il pas qu'elles ont exactement la même probabilité ?",
+            "choices": [
+              "Avoir deux issues garantit toujours une égalité de probabilité",
+              "Parce que la probabilité dépend du nombre réel de façons d'obtenir chaque issue, pas seulement du nombre total d'issues différentes : un dé truqué à deux issues pourrait favoriser l'une d'elles",
+              "Il n'existe jamais que deux issues possibles dans un jeu de hasard",
+              "Toutes les situations à deux issues sont toujours garanties équilibrées"
+            ],
+            "answer": 1,
+            "exp": "L'égalité de probabilité dépend des chances réelles d'obtenir chaque issue, pas simplement du nombre d'issues possibles : un objet truqué pourrait avoir deux issues inégales."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève affirme : « Il y a deux issues possibles au tirage d'une bille dans un sac (rouge ou bleue), donc j'ai 1 chance sur 2 d'obtenir chaque couleur. » Que penser de cette affirmation si le sac contient 9 billes rouges et 1 bille bleue ?",
+            "choices": [
+              "Elle est vraie, 2 issues signifient toujours 1 chance sur 2 chacune",
+              "Elle est fausse : avec 9 billes rouges contre 1 bleue, les chances ne sont pas égales, même s'il n'y a que 2 couleurs possibles",
+              "Elle est vraie seulement si le sac contient exactement 10 billes",
+              "Le nombre de billes de chaque couleur n'a jamais d'importance"
+            ],
+            "answer": 1,
+            "exp": "Le nombre de billes de chaque couleur compte autant que le nombre de couleurs possibles : avec 9 rouges contre 1 bleue, les chances sont très inégales malgré les 2 issues possibles."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un événement impossible ne peut jamais se produire, quelles que soient les circonstances.",
+            "answer": true,
+            "exp": "C'est la définition même d'un événement impossible : il ne peut par définition jamais arriver."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Tirer un nombre pair ou impair avec un dé classique à 6 faces (1 à 6) est :",
+            "choices": [
+              "Impossible",
+              "Certain, car chaque nombre est soit pair soit impair",
+              "Possible mais pas certain",
+              "Aucune de ces réponses"
+            ],
+            "answer": 1,
+            "exp": "Chaque nombre de 1 à 6 est forcément pair ou impair : obtenir l'un des deux est donc certain."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un événement « certain » et un événement « très probable » ne sont-ils pas la même chose ?",
+            "choices": [
+              "Ce sont exactement la même chose",
+              "Parce qu'un événement certain se produit toujours sans exception, alors qu'un événement très probable, même fréquent, pourrait ne pas se produire dans certains cas rares",
+              "Un événement très probable est toujours certain",
+              "Un événement certain n'est jamais très probable"
+            ],
+            "answer": 1,
+            "exp": "Un événement certain se produit sans exception, tandis qu'un événement très probable, même fréquent, laisse une petite possibilité qu'il ne se produise pas."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans une urne avec 5 boules numérotées de 1 à 5, tirer un numéro supérieur à 10 est :",
+            "choices": [
+              "Certain",
+              "Possible",
+              "Impossible",
+              "Très probable"
+            ],
+            "answer": 2,
+            "exp": "Aucun numéro de l'urne ne dépasse 5 : tirer un numéro supérieur à 10 est donc impossible."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Lancer une pièce de monnaie et obtenir pile ou face (l'un des deux) est un événement : (réponds en un mot : certain, possible, ou impossible)",
+            "answer": "certain",
+            "exp": "Une pièce donne toujours pile ou face : obtenir l'un des deux est certain."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un dé truqué n'a que des faces marquées 6. Obtenir un 6 est :",
+            "choices": [
+              "Impossible",
+              "Possible mais pas certain",
+              "Certain",
+              "Aucune de ces réponses"
+            ],
+            "answer": 2,
+            "exp": "Si toutes les faces sont des 6, obtenir un 6 est certain à chaque lancer."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, en probabilités, est-il utile de distinguer précisément « certain », « possible » et « impossible » plutôt que de dire simplement « ça peut arriver » ?",
+            "choices": [
+              "Cette distinction n'apporte jamais rien de plus",
+              "Parce que ces trois catégories donnent une information précise sur le degré de certitude d'un événement, essentielle pour raisonner correctement sur le hasard",
+              "« Ça peut arriver » est toujours suffisamment précis",
+              "Il n'existe que deux catégories possibles en probabilités"
+            ],
+            "answer": 1,
+            "exp": "Ces trois catégories (certain, possible, impossible) donnent une information précise sur le degré de certitude, essentielle pour un raisonnement rigoureux sur le hasard."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un sac contient 3 billes rouges, 3 vertes, 3 bleues (9 billes égales). Tirer une bille rouge est-il plus probable que tirer une bille verte ?",
+            "choices": [
+              "Oui, plus probable",
+              "Non, les deux sont également probables (même nombre de billes de chaque couleur)",
+              "Non, moins probable",
+              "Impossible à savoir"
+            ],
+            "answer": 1,
+            "exp": "Avec le même nombre de billes de chaque couleur (3 chacune), les probabilités sont égales."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans une roue de loterie avec 4 secteurs égaux (1 rouge, 3 bleus), le résultat rouge est-il aussi probable que chaque résultat bleu individuellement ?",
+            "choices": [
+              "Oui, exactement la même probabilité",
+              "Oui, car il n'y a que deux couleurs",
+              "Non, cela dépend uniquement de la taille de la roue",
+              "Il est impossible de comparer ces probabilités"
+            ],
+            "answer": 0,
+            "exp": "Avec 4 secteurs égaux, chaque secteur (qu'il soit rouge ou bleu) a la même probabilité individuelle d'être obtenu."
           }
         ]
       },
@@ -22010,6 +22193,177 @@
             ],
             "answer": 1,
             "exp": "Le dénominateur d'une probabilité doit toujours être le nombre TOTAL d'issues possibles (6 faces du dé), pas seulement le nombre d'issues favorables qu'on vient de compter : la bonne expression est « 3 chances sur 6 »."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Dans un jeu de 8 cartes numérotées de 1 à 8, combien y a-t-il d'issues possibles au total si on en tire une au hasard ?",
+            "answer": "8",
+            "exp": "Il y a 8 cartes différentes, donc 8 issues possibles."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "En lançant un dé à 6 faces, quelle est la probabilité d'obtenir un nombre pair (2, 4 ou 6) ?",
+            "choices": [
+              "1 chance sur 6",
+              "3 chances sur 6",
+              "6 chances sur 6",
+              "2 chances sur 6"
+            ],
+            "answer": 1,
+            "exp": "Il y a 3 nombres pairs (2,4,6) sur 6 possibles au total : 3 chances sur 6."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans un sac de 12 billes (5 rouges et 7 bleues), quelle est la probabilité de tirer une bille bleue ?",
+            "choices": [
+              "7 chances sur 12",
+              "5 chances sur 12",
+              "12 chances sur 12",
+              "7 chances sur 5"
+            ],
+            "answer": 0,
+            "exp": "7 billes bleues sur 12 billes au total : 7 chances sur 12."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans une urne de 20 boules (8 jaunes, 12 vertes), quelle est la probabilité de tirer une boule jaune ?",
+            "choices": [
+              "8 chances sur 20",
+              "12 chances sur 20",
+              "20 chances sur 8",
+              "8 chances sur 12"
+            ],
+            "answer": 0,
+            "exp": "8 boules jaunes sur 20 boules au total : 8 chances sur 20."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi faut-il toujours connaître à la fois le nombre d'issues favorables ET le nombre total d'issues possibles pour calculer une probabilité ?",
+            "choices": [
+              "Seul le nombre d'issues favorables compte",
+              "Parce que la probabilité est un rapport entre les deux : connaître seulement l'un des deux nombres ne donne pas assez d'information pour savoir si l'événement est fréquent ou rare",
+              "Seul le nombre total d'issues compte",
+              "Il n'est jamais nécessaire de connaître ces deux nombres"
+            ],
+            "answer": 1,
+            "exp": "La probabilité est un rapport (issues favorables / issues totales) : il faut les deux nombres pour le calculer correctement."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève dit que la probabilité d'obtenir un nombre pair avec un dé à 6 faces est de « 3 chances sur 3 » (en ne comptant que les nombres pairs eux-mêmes). Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Il doit comparer les issues favorables (3 nombres pairs) au nombre TOTAL d'issues possibles (6 faces), pas seulement aux issues favorables entre elles : la bonne probabilité est 3 chances sur 6",
+              "3 chances sur 3 est la bonne réponse",
+              "Un dé n'a pas 6 faces"
+            ],
+            "answer": 1,
+            "exp": "Il faut comparer les issues favorables au nombre TOTAL d'issues possibles (6), pas seulement les compter entre elles : la probabilité est 3/6, pas 3/3."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "La probabilité d'un événement se calcule en comparant le nombre d'issues favorables au nombre total d'issues possibles.",
+            "answer": true,
+            "exp": "C'est la définition même du calcul d'une probabilité simple."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans un jeu de 10 cartes numérotées de 1 à 10, quelle est la probabilité de tirer un nombre supérieur à 7 (donc 8, 9 ou 10) ?",
+            "choices": [
+              "3 chances sur 10",
+              "7 chances sur 10",
+              "10 chances sur 3",
+              "1 chance sur 10"
+            ],
+            "answer": 0,
+            "exp": "3 nombres (8,9,10) sont supérieurs à 7, sur 10 cartes au total : 3 chances sur 10."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi deux événements avec le même nombre d'issues favorables (par exemple « 3 chances ») peuvent-ils avoir des probabilités très différentes ?",
+            "choices": [
+              "Ils ont toujours exactement la même probabilité",
+              "Parce que la probabilité dépend aussi du nombre total d'issues possibles : 3 chances sur 6 n'est pas la même probabilité que 3 chances sur 100",
+              "Le nombre total d'issues n'a jamais d'importance",
+              "Deux événements ont toujours la même probabilité, quel que soit le contexte"
+            ],
+            "answer": 1,
+            "exp": "Le même nombre d'issues favorables peut donner des probabilités très différentes selon le nombre total d'issues possibles (3/6 n'égale pas 3/100)."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans un sac de 15 jetons (6 rouges, 4 verts, 5 bleus), quelle est la probabilité de tirer un jeton vert ?",
+            "choices": [
+              "4 chances sur 15",
+              "6 chances sur 15",
+              "5 chances sur 15",
+              "15 chances sur 4"
+            ],
+            "answer": 0,
+            "exp": "4 jetons verts sur 15 au total : 4 chances sur 15."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Dans un jeu de 6 cartes numérotées de 1 à 6, combien de cartes sont des nombres impairs (1, 3, 5) ?",
+            "answer": "3",
+            "exp": "1, 3 et 5 sont les 3 nombres impairs parmi les 6 cartes."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Si un dé à 6 faces donne une probabilité de 2 chances sur 6 d'obtenir un multiple de 3, quels sont ces multiples de 3 présents sur le dé (parmi 1 à 6) ?",
+            "choices": [
+              "3 et 6",
+              "1 et 2",
+              "4 et 5",
+              "2 et 4"
+            ],
+            "answer": 0,
+            "exp": "Les multiples de 3 entre 1 et 6 sont 3 et 6, soit 2 nombres sur 6 faces."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi, pour un dé à 6 faces truqué qui tombe toujours plus souvent sur le 6, la probabilité réelle de tomber sur 6 serait-elle supérieure à 1 chance sur 6 ?",
+            "choices": [
+              "La probabilité resterait toujours exactement 1 sur 6, même truqué",
+              "Parce qu'un dé truqué ne donne pas une chance égale à chaque face : s'il favorise le 6, ce résultat apparaît plus souvent que les autres, ce qui augmente sa probabilité réelle au-delà de 1/6",
+              "Un dé truqué a toujours exactement la même probabilité pour chaque face",
+              "Il est impossible de truquer un dé"
+            ],
+            "answer": 1,
+            "exp": "Un dé truqué ne donne pas une chance égale à chaque face : s'il favorise le 6, ce résultat apparaît plus fréquemment, augmentant sa probabilité réelle au-delà de 1/6."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans un jeu de 4 cartes (1 pique, 1 cœur, 1 carreau, 1 trèfle), quelle est la probabilité de tirer un pique ?",
+            "choices": [
+              "1 chance sur 4",
+              "4 chances sur 1",
+              "1 chance sur 2",
+              "4 chances sur 4"
+            ],
+            "answer": 0,
+            "exp": "1 carte pique sur 4 cartes au total : 1 chance sur 4."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Dans un sac de 10 billes toutes rouges, quelle est la probabilité (en 'X chances sur Y', réponds juste le nombre total Y) de tirer une bille rouge ?",
+            "answer": "10",
+            "exp": "Il y a 10 billes au total dans le sac, donc Y=10 (et la probabilité est 10 chances sur 10, soit certain)."
           }
         ]
       },
@@ -22098,6 +22452,189 @@
             ],
             "answer": 1,
             "exp": "Observer que deux grandeurs augmentent toutes les deux ne suffit pas pour conclure à la proportionnalité : il faut vérifier que multiplier l'une par un nombre multiplie l'autre par ce même nombre, ce qui n'est clairement pas le cas pour l'âge et la taille (la croissance ralentit puis s'arrête avec l'âge)."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Une situation est proportionnelle quand :",
+            "choices": [
+              "Les deux grandeurs augmentent toutes les deux, peu importe comment",
+              "Multiplier une grandeur par un nombre multiplie l'autre par le même nombre",
+              "Les deux grandeurs restent toujours identiques",
+              "Une grandeur diminue toujours quand l'autre augmente"
+            ],
+            "answer": 1,
+            "exp": "La proportionnalité signifie que multiplier une grandeur par un facteur multiplie l'autre par ce même facteur."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "4 bonbons coûtent 8 €. Si la situation est proportionnelle, combien coûteront 12 bonbons (3 fois plus) ?",
+            "choices": [
+              "24 €",
+              "12 €",
+              "20 €",
+              "32 €"
+            ],
+            "answer": 0,
+            "exp": "12 bonbons = 3×4, donc le prix est aussi 3×8=24 €."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "La vitesse d'une voiture et la distance parcourue en 1 heure sont-elles proportionnelles si la voiture roule à vitesse constante ?",
+            "choices": [
+              "Oui, à vitesse constante, doubler la vitesse double la distance parcourue dans le même temps",
+              "Non, ce n'est jamais proportionnel",
+              "Oui, mais seulement si la voiture s'arrête",
+              "Non, la vitesse n'a aucun rapport avec la distance"
+            ],
+            "answer": 0,
+            "exp": "À temps constant, la distance parcourue est proportionnelle à la vitesse : doubler la vitesse double la distance."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Le poids d'un enfant et son année de naissance sont-ils proportionnels ?",
+            "choices": [
+              "Oui, toujours",
+              "Non, il n'y a aucune relation de multiplication constante entre ces deux grandeurs",
+              "Oui, mais seulement pour certains enfants",
+              "Il est impossible de répondre"
+            ],
+            "answer": 1,
+            "exp": "Rien ne relie le poids d'un enfant et son année de naissance par une relation de proportionnalité : ce ne sont pas des grandeurs liées de cette façon."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi le simple fait que deux grandeurs augmentent toutes les deux (en même temps) ne suffit-il pas à prouver qu'elles sont proportionnelles ?",
+            "choices": [
+              "Cela suffit toujours à le prouver",
+              "Parce que la proportionnalité exige une relation précise de multiplication constante, pas seulement une augmentation simultanée qui pourrait suivre une autre logique (par exemple ajouter toujours la même quantité)",
+              "Deux grandeurs qui augmentent ensemble sont toujours proportionnelles",
+              "Il n'existe aucune autre façon pour deux grandeurs d'augmenter ensemble"
+            ],
+            "answer": 1,
+            "exp": "Une simple augmentation commune ne garantit pas une proportionnalité : il faut vérifier la relation précise de multiplication constante entre les deux grandeurs."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève affirme que l'âge et la taille d'une personne sont proportionnels, « car plus on vieillit, plus on grandit ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, âge et taille sont toujours proportionnels",
+              "Une fois adulte, la taille n'augmente plus avec l'âge (elle se stabilise), alors que l'âge continue d'augmenter : ce n'est donc pas une relation de proportionnalité constante",
+              "L'âge n'a jamais de rapport avec la taille",
+              "La taille diminue toujours quand l'âge augmente"
+            ],
+            "answer": 1,
+            "exp": "La taille se stabilise à l'âge adulte alors que l'âge continue d'augmenter : la relation n'est donc pas une multiplication constante, donc pas une vraie proportionnalité."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Dans une situation de proportionnalité, multiplier une grandeur par 2 multiplie toujours l'autre grandeur par 2 également.",
+            "answer": true,
+            "exp": "C'est la définition même de la proportionnalité : un même facteur multiplicatif s'applique aux deux grandeurs."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "5 billets de bus coûtent 10 €. Combien coûteront 15 billets (3 fois plus), si la situation est proportionnelle ?",
+            "choices": [
+              "30 €",
+              "15 €",
+              "20 €",
+              "45 €"
+            ],
+            "answer": 0,
+            "exp": "15 billets = 3×5, donc le prix est aussi 3×10=30 €."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi le prix de plusieurs objets identiques (comme des pommes à 1€ chacune) est-il généralement proportionnel au nombre d'objets achetés ?",
+            "choices": [
+              "Ce n'est jamais le cas pour des objets identiques",
+              "Parce que chaque objet coûte le même prix unitaire, donc le prix total est obtenu en multipliant ce prix unitaire par le nombre d'objets : une vraie relation de multiplication constante",
+              "Le prix total ne dépend jamais du nombre d'objets",
+              "Les prix ne suivent jamais de règle précise"
+            ],
+            "answer": 1,
+            "exp": "Un prix unitaire fixe appliqué à chaque objet identique crée naturellement une relation de multiplication constante, donc une proportionnalité."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "La surface d'un carré et la longueur de son côté sont-elles proportionnelles ?",
+            "choices": [
+              "Oui, toujours",
+              "Non : doubler le côté quadruple l'aire (car aire=côté×côté), ce n'est pas une simple multiplication par le même facteur",
+              "Oui, mais seulement pour les petits carrés",
+              "Il est impossible de répondre pour un carré"
+            ],
+            "answer": 1,
+            "exp": "Doubler le côté d'un carré multiplie son aire par 4 (2×2), pas par 2 : ce n'est donc pas une relation de proportionnalité simple."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "6 gâteaux coûtent 18 €. Si la situation est proportionnelle, combien coûtent 2 gâteaux (3 fois moins) ?",
+            "answer": "6",
+            "exp": "2 gâteaux = 6÷3, donc le prix est aussi 18÷3=6 €."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, pour vérifier qu'une situation est proportionnelle, est-il utile de tester PLUSIEURS couples de valeurs, pas seulement un seul ?",
+            "choices": [
+              "Un seul couple de valeurs suffit toujours à être sûr",
+              "Parce qu'un seul couple pourrait correspondre par coïncidence à une relation de proportionnalité sans que ce soit réellement le cas pour toutes les valeurs : plusieurs couples confirment la règle de façon plus fiable",
+              "Tester plusieurs couples ne change jamais la conclusion",
+              "Il est impossible de tester plusieurs couples de valeurs"
+            ],
+            "answer": 1,
+            "exp": "Un seul couple pourrait correspondre par coïncidence ; tester plusieurs couples de valeurs confirme de façon plus fiable que la relation de proportionnalité est bien respectée partout."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Le nombre de pages lues et le temps passé à lire à vitesse constante sont-ils proportionnels ?",
+            "choices": [
+              "Oui, à vitesse de lecture constante, le nombre de pages est proportionnel au temps passé",
+              "Non, jamais",
+              "Oui, mais seulement pour les livres courts",
+              "Il est impossible de répondre"
+            ],
+            "answer": 0,
+            "exp": "À vitesse constante, doubler le temps de lecture double le nombre de pages lues : c'est bien une relation de proportionnalité."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi une situation où l'on ajoute toujours la même quantité fixe (plutôt que de multiplier) n'est-elle PAS une situation de proportionnalité ?",
+            "choices": [
+              "Ajouter une quantité fixe est toujours une situation de proportionnalité",
+              "Parce que la proportionnalité exige une relation de MULTIPLICATION constante, alors qu'ajouter une quantité fixe (comme +5 à chaque fois) suit une logique additive différente",
+              "Il n'existe aucune différence entre ajouter et multiplier",
+              "La proportionnalité concerne uniquement l'addition"
+            ],
+            "answer": 1,
+            "exp": "La proportionnalité nécessite une relation de multiplication constante ; une addition d'une quantité fixe suit une logique différente (additive), pas multiplicative."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Si 2 cahiers coûtent 4 €, et que 4 cahiers coûtent 9 € (pas 8 €), la situation est-elle proportionnelle ?",
+            "choices": [
+              "Oui, toujours",
+              "Non, car doubler le nombre de cahiers (2→4) ne double pas exactement le prix (4€→9€ au lieu de 8€)",
+              "Oui, mais seulement approximativement",
+              "Il est impossible de vérifier cela"
+            ],
+            "answer": 1,
+            "exp": "Pour être proportionnelle, doubler la quantité devrait exactement doubler le prix (4€→8€) ; ici ce n'est pas le cas (9€), donc ce n'est pas une vraie proportionnalité."
           }
         ]
       },
@@ -22174,6 +22711,165 @@
             ],
             "answer": 1,
             "exp": "Additionner un prix total (9 €) avec un nombre d'objets (5) n'a pas de sens : il faut utiliser la relation de proportionnalité, par exemple le retour à l'unité (3 € par stylo), puis multiplier par le nombre de stylos recherché, pour obtenir 15 €."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "4 stylos coûtent 8 €. Combien coûte 1 seul stylo (retour à l'unité) ?",
+            "answer": "2",
+            "exp": "8÷4=2€ par stylo."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Sachant qu'1 stylo coûte 3 €, combien coûtent 7 stylos ?",
+            "answer": "21",
+            "exp": "3×7=21€."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une recette pour 3 personnes utilise 150 g de riz. Combien de riz faut-il pour 5 personnes ?",
+            "choices": [
+              "250 g",
+              "300 g",
+              "450 g",
+              "200 g"
+            ],
+            "answer": 0,
+            "exp": "150÷3=50g par personne, puis 50×5=250g pour 5 personnes."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un robinet remplit 60 L en 4 minutes. Combien de litres remplit-il en 7 minutes (à débit constant) ?",
+            "choices": [
+              "105 L",
+              "240 L",
+              "15 L",
+              "420 L"
+            ],
+            "answer": 0,
+            "exp": "60÷4=15L par minute, puis 15×7=105L en 7 minutes."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la méthode du « retour à l'unité » fonctionne-t-elle même quand le nombre recherché n'est pas un multiple simple du nombre de départ ?",
+            "choices": [
+              "Elle ne fonctionne que pour les multiples simples",
+              "Parce qu'elle calcule d'abord la valeur pour UNE seule unité, ce qui permet ensuite de multiplier par n'importe quel nombre, même non multiple du nombre de départ",
+              "Le retour à l'unité ne fonctionne jamais dans ce cas",
+              "Il faut toujours que le nombre recherché soit un multiple exact"
+            ],
+            "answer": 1,
+            "exp": "Calculer la valeur pour une seule unité permet ensuite de multiplier par n'importe quel nombre voulu, qu'il soit ou non un multiple simple du nombre de départ."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour « 4 stylos coûtent 12 €, combien coûtent 7 stylos ? », un élève calcule directement 12 + 7 = 19 €. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Il doit d'abord trouver le prix d'1 stylo (12÷4=3€), puis multiplier par 7 (3×7=21€) : l'addition directe de 12 et 7 n'a aucun sens dans ce contexte",
+              "12+7 est la bonne méthode ici",
+              "Il fallait soustraire 7 de 12"
+            ],
+            "answer": 1,
+            "exp": "Il faut utiliser le retour à l'unité (12÷4=3€ par stylo), puis multiplier par 7 (3×7=21€), pas additionner directement des nombres sans rapport logique."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "La méthode du retour à l'unité consiste à calculer d'abord la valeur correspondant à une seule unité, avant de multiplier pour obtenir la quantité recherchée.",
+            "answer": true,
+            "exp": "C'est exactement le principe de cette méthode, très utile pour résoudre des problèmes de proportionnalité."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Une voiture consomme 30 L pour 500 km. Combien de litres pour 100 km (retour à l'unité partielle) ?",
+            "answer": "6",
+            "exp": "30÷5=6L pour 100km (500km÷100km=5, donc 30÷5)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un ouvrier pose 24 carreaux en 3 heures. À ce rythme, combien de carreaux pose-t-il en 5 heures ?",
+            "choices": [
+              "40",
+              "72",
+              "8",
+              "120"
+            ],
+            "answer": 0,
+            "exp": "24÷3=8 carreaux par heure, puis 8×5=40 carreaux en 5 heures."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, pour un problème de proportionnalité, est-il parfois plus rapide de chercher directement le « facteur multiplicatif » entre deux valeurs connues, plutôt que de passer par le retour à l'unité ?",
+            "choices": [
+              "Ce n'est jamais plus rapide",
+              "Parce que si le nombre recherché est un multiple simple du nombre de départ (comme 3 fois plus), multiplier directement par ce facteur évite une étape de calcul supplémentaire",
+              "Le facteur multiplicatif n'existe jamais dans ces problèmes",
+              "Le retour à l'unité est toujours la seule méthode possible"
+            ],
+            "answer": 1,
+            "exp": "Quand le nombre recherché est un multiple simple du nombre de départ, utiliser directement le facteur multiplicatif est plus rapide qu'un retour à l'unité complet."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pour « 6 œufs coûtent 3 €, combien coûtent 2 œufs ? », quelle méthode est la plus directe ?",
+            "choices": [
+              "Chercher le facteur : 2 est 3 fois moins que 6, donc le prix est aussi 3 fois moins : 3÷3=1€",
+              "Retour à l'unité complet obligatoire",
+              "Addition directe de 6 et 3",
+              "Il est impossible de résoudre ce problème"
+            ],
+            "answer": 0,
+            "exp": "2 étant 3 fois moins que 6, le prix est aussi 3 fois moins : 3€÷3=1€ (équivalent au retour à l'unité, mais plus direct ici)."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Une machine produit 45 pièces en 9 minutes. Combien de pièces produit-elle en 1 minute ?",
+            "answer": "5",
+            "exp": "45÷9=5 pièces par minute."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pour un problème de proportionnalité avec des nombres compliqués (non multiples simples), quelle méthode reste toujours fiable ?",
+            "choices": [
+              "Deviner au hasard",
+              "Le retour à l'unité, qui fonctionne toujours quel que soit le rapport entre les nombres",
+              "Addition directe des deux nombres connus",
+              "Il n'existe aucune méthode fiable pour ces cas"
+            ],
+            "answer": 1,
+            "exp": "Le retour à l'unité reste une méthode universelle, fiable même quand les nombres ne sont pas des multiples simples les uns des autres."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi vérifier son résultat final avec un ordre de grandeur (une estimation rapide) est-il utile après avoir résolu un problème de proportionnalité ?",
+            "choices": [
+              "Ce n'est jamais utile de vérifier",
+              "Parce que cela permet de repérer une erreur grossière (comme avoir multiplié au lieu de diviser), en comparant le résultat obtenu à ce qu'on attendrait intuitivement",
+              "Une estimation donne toujours le résultat exact",
+              "Il est interdit d'estimer un résultat de proportionnalité"
+            ],
+            "answer": 1,
+            "exp": "Une estimation rapide permet de repérer une erreur grossière (comme une confusion entre multiplication et division) en comparant au résultat attendu intuitivement."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "8 tickets de bus coûtent 16 €. Combien coûte 1 seul ticket ?",
+            "answer": "2",
+            "exp": "16÷8=2€ par ticket."
           }
         ]
       },
@@ -22259,6 +22955,177 @@
             ],
             "answer": 0,
             "exp": "4 billes rouges sur 10 billes au total : 4/10. En divisant numérateur et dénominateur par 2, on obtient la fraction simplifiée 2/5."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un gâteau de 400 g est partagé, et 1/4 est mangé. Combien de grammes ont été mangés ?",
+            "answer": "100",
+            "exp": "400÷4=100 g."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Lequel de ces deux nombres décimaux est le plus grand : 7,09 ou 7,9 ?",
+            "choices": [
+              "7,09",
+              "7,9",
+              "Ils sont égaux",
+              "Impossible à savoir"
+            ],
+            "answer": 1,
+            "exp": "7,9=7,90, qui a bien plus de centièmes (90) que 7,09 (9 centièmes) : 7,9 est plus grand."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "4 billets de musée coûtent 36 €. Combien coûtent 6 billets (en utilisant le retour à l'unité) ?",
+            "choices": [
+              "54 €",
+              "60 €",
+              "48 €",
+              "42 €"
+            ],
+            "answer": 0,
+            "exp": "36÷4=9€ par billet, puis 9×6=54€ pour 6 billets."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Face à un problème qui combine plusieurs notions (par exemple décimaux ET proportionnalité), quelle est la meilleure démarche ?",
+            "choices": [
+              "Deviner directement la réponse finale",
+              "Décomposer le problème en étapes séparées, en traitant chaque notion l'une après l'autre dans l'ordre logique",
+              "Ignorer une des deux notions pour simplifier",
+              "Il est impossible de résoudre un problème qui combine plusieurs notions"
+            ],
+            "answer": 1,
+            "exp": "Décomposer en étapes séparées, traitant chaque notion dans l'ordre logique, permet de résoudre méthodiquement un problème combinant plusieurs concepts."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un sac contient 3 billes rouges et 7 billes bleues. On tire une bille au hasard. Quelle est la probabilité de tirer une bille rouge ?",
+            "choices": [
+              "3 chances sur 10",
+              "7 chances sur 10",
+              "3 chances sur 7",
+              "10 chances sur 3"
+            ],
+            "answer": 0,
+            "exp": "3 billes rouges sur 10 billes au total : 3 chances sur 10."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour calculer le périmètre d'un rectangle de 8 cm sur 5 cm, un élève calcule 8×5=40 cm. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, 40 cm est le bon périmètre",
+              "Il a calculé l'AIRE (en multipliant), pas le périmètre : le périmètre se calcule par (8+5)×2=26 cm",
+              "40 cm est toujours juste pour n'importe quel rectangle",
+              "Il fallait soustraire 5 de 8"
+            ],
+            "answer": 1,
+            "exp": "Multiplier longueur et largeur donne l'aire, pas le périmètre : le périmètre se calcule par (longueur+largeur)×2=(8+5)×2=26 cm."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Dans tout problème mathématique, bien identifier ce qui est demandé est la première étape avant de choisir une méthode de résolution.",
+            "answer": true,
+            "exp": "Comprendre précisément la question posée oriente le choix de la bonne méthode et des bonnes opérations à utiliser."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien font 3/8 + 2/8 ?",
+            "answer": "5/8",
+            "exp": "Même dénominateur : on additionne les numérateurs, 3+2=5, donc 5/8."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un randonneur parcourt 4,5 km le matin et 3,25 km l'après-midi. Quelle distance totale a-t-il parcourue ?",
+            "choices": [
+              "7,75 km",
+              "7,25 km",
+              "8,75 km",
+              "7,5 km"
+            ],
+            "answer": 0,
+            "exp": "4,5+3,25=7,75 km."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la vérification finale (relire l'énoncé, comparer avec le résultat obtenu) est-elle une étape essentielle, même pour un problème qui semble simple ?",
+            "choices": [
+              "Ce n'est jamais nécessaire pour un problème simple",
+              "Parce qu'elle permet de s'assurer que la réponse correspond bien à ce qui était demandé, et de repérer d'éventuelles erreurs de calcul ou d'interprétation avant de conclure",
+              "Vérifier change toujours le résultat obtenu",
+              "Il est interdit de relire un énoncé après avoir résolu le problème"
+            ],
+            "answer": 1,
+            "exp": "La vérification finale permet de s'assurer que la réponse correspond à la question posée et de repérer d'éventuelles erreurs avant de conclure."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un carré a un périmètre de 32 cm. Quelle est son aire ?",
+            "choices": [
+              "64 cm²",
+              "32 cm²",
+              "8 cm²",
+              "16 cm²"
+            ],
+            "answer": 0,
+            "exp": "32÷4=8 cm par côté, puis 8×8=64 cm² d'aire."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien font 240 ÷ 10 ?",
+            "answer": "24",
+            "exp": "240÷10=24."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un commerçant vend des articles à 7,50 € chacun. Combien coûtent 4 articles ?",
+            "choices": [
+              "30 €",
+              "28,50 €",
+              "31,50 €",
+              "26 €"
+            ],
+            "answer": 0,
+            "exp": "7,50×4=30€."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un problème combinant fractions, décimaux et proportionnalité est-il un bon « bilan » pour vérifier la maîtrise de toute une année de mathématiques ?",
+            "choices": [
+              "Un tel problème ne vérifie rien du tout",
+              "Parce qu'il mobilise plusieurs notions apprises séparément au cours de l'année, montrant la capacité à les combiner et à choisir la bonne méthode pour chaque partie du problème",
+              "Il est impossible de combiner plusieurs notions dans un seul problème",
+              "Un problème de bilan ne doit jamais combiner plusieurs notions"
+            ],
+            "answer": 1,
+            "exp": "Un problème combinant plusieurs notions mobilise les apprentissages de toute l'année et montre la capacité à les articuler pour résoudre un problème complet."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pour résoudre un grand défi mathématique combinant plusieurs étapes, quelle qualité est la plus importante ?",
+            "choices": [
+              "La rapidité avant tout, sans vérifier",
+              "La méthode : décomposer, traiter chaque étape avec soin, et vérifier le résultat final",
+              "Deviner la réponse finale directement",
+              "Ignorer les étapes intermédiaires"
+            ],
+            "answer": 1,
+            "exp": "Une méthode rigoureuse (décomposer, traiter avec soin, vérifier) est essentielle pour réussir un problème complexe à plusieurs étapes."
           }
         ]
       }
