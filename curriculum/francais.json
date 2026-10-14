@@ -18019,6 +18019,183 @@
             ],
             "answer": 1,
             "exp": "L'objectif n'est pas la vitesse seule, mais un équilibre entre fluidité et lisibilité : un texte écrit très vite mais illisible ne remplit pas sa fonction première, qui est d'être compris par un lecteur."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Au CM1, quel est l'objectif principal concernant l'écriture cursive à la main ?",
+            "choices": [
+              "Apprendre à tracer chaque lettre pour la toute première fois",
+              "Gagner en rapidité et en régularité, sans perdre en lisibilité",
+              "Arrêter complètement d'écrire à la main au profit du clavier",
+              "Écrire uniquement en lettres majuscules détachées"
+            ],
+            "answer": 1,
+            "exp": "L'objectif au CM1 est de gagner en vitesse et en régularité, en conservant une bonne lisibilité."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Qu'est-ce qui caractérise une écriture fluide, selon cette leçon ?",
+            "choices": [
+              "Un geste hésitant devant chaque lettre à tracer",
+              "Un geste qui s'enchaîne sans réflexion consciente sur la forme de chaque lettre",
+              "Une écriture rapide mais totalement illisible",
+              "Une écriture extrêmement lente mais toujours parfaite"
+            ],
+            "answer": 1,
+            "exp": "Une écriture fluide repose sur un geste automatisé qui s'enchaîne sans hésitation, contrairement à un tracé réfléchi lettre par lettre."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pour garder une écriture lisible même en écrivant plus vite, que faut-il surveiller en particulier ?",
+            "choices": [
+              "Rien, la vitesse seule compte",
+              "La régularité : taille homogène des lettres, bonne pose sur la ligne, espacement cohérent",
+              "Uniquement la couleur du stylo utilisé",
+              "Le nombre total de mots écrits par minute, sans autre critère"
+            ],
+            "answer": 1,
+            "exp": "La régularité (taille, pose sur la ligne, espacement) est l'élément clé pour garder une écriture lisible même en accélérant."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève remarque que son écriture devient de plus en plus petite et serrée vers la fin d'un long texte. Que devrait-il travailler en priorité ?",
+            "choices": [
+              "Rien, ce phénomène est sans importance et ne doit jamais être corrigé",
+              "La régularité de la taille de ses lettres tout au long du texte, pour garder une lisibilité constante du début à la fin",
+              "Écrire encore plus vite pour finir plus tôt",
+              "Arrêter complètement d'écrire à la main"
+            ],
+            "answer": 1,
+            "exp": "Surveiller la régularité de la taille des lettres sur tout le texte permet d'éviter une dégradation progressive de la lisibilité."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève rend un devoir avec une écriture très rapide, mais les marges ne sont pas respectées et les mots sont très serrés les uns contre les autres. Quel aspect de la leçon n'a-t-il pas suivi ?",
+            "choices": [
+              "La rapidité du geste, qui est pourtant bien là",
+              "La qualité de la mise en page (marge, espacement), qui facilite la lecture par les autres, en plus de la rapidité du geste",
+              "Aucun aspect, son travail est parfaitement conforme à la leçon",
+              "Il aurait dû écrire encore plus vite"
+            ],
+            "answer": 1,
+            "exp": "La mise en page (marges, espacement) fait partie intégrante d'une bonne écriture, en complément de la rapidité et de la régularité du geste."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi l'automatisation du geste d'écriture permet-elle d'écrire plus facilement de longs textes sans se fatiguer mentalement ?",
+            "choices": [
+              "Ce n'est pas vrai, l'automatisation ne change jamais rien à la fatigue",
+              "Parce que libérer l'attention du tracé des lettres elles-mêmes permet de la consacrer entièrement au contenu du texte (les idées, les mots à choisir), plutôt qu'à la simple formation des lettres",
+              "Parce que l'automatisation ralentit toujours l'écriture et fatigue davantage",
+              "Parce qu'il ne faut jamais automatiser son écriture, au risque de l'oublier"
+            ],
+            "answer": 1,
+            "exp": "L'automatisation libère l'attention pour le contenu du texte plutôt que pour la simple formation des lettres, ce qui réduit la charge mentale."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense qu'écrire le plus vite possible, sans se soucier de la lisibilité, est toujours le meilleur objectif en CM1. Que lui manque-t-il dans sa réflexion ?",
+            "choices": [
+              "Rien, la vitesse est le seul critère important, quelle que soit la lisibilité",
+              "Il oublie que la fluidité doit s'accompagner d'une lisibilité préservée : un texte très rapide mais illisible ne remplit pas son rôle, car il doit rester compréhensible pour celui qui le lira",
+              "Il faut toujours écrire le plus lentement possible, sans jamais chercher la vitesse",
+              "La lisibilité n'a jamais d'importance en écriture manuscrite"
+            ],
+            "answer": 1,
+            "exp": "La fluidité recherchée associe vitesse ET lisibilité ; sacrifier totalement la lisibilité pour la vitesse n'atteint pas l'objectif réel."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Au CM1, l'objectif de l'écriture cursive est de gagner en rapidité et en régularité sans perdre en lisibilité.",
+            "answer": true,
+            "exp": "C'est précisément l'objectif décrit dans cette leçon pour le niveau CM1."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "La qualité de la mise en page (marges, espacement) n'a aucune importance pour la lisibilité d'un texte.",
+            "answer": false,
+            "exp": "Au contraire, la leçon précise que marges respectées, paragraphes visibles et espacement cohérent facilitent grandement la lecture."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Une écriture où le geste s'enchaîne sans hésitation, presque automatiquement, est qualifiée d' . (quel adjectif ?)",
+            "answer": "fluide",
+            "exp": "C'est la définition même de la fluidité en écriture : un geste automatisé qui s'enchaîne sans réflexion consciente."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève s'entraîne chaque jour par la copie de textes courts pour améliorer sa vitesse d'écriture. Est-ce une bonne stratégie selon cette leçon ?",
+            "choices": [
+              "Non, la copie régulière n'a jamais d'utilité pour progresser",
+              "Oui, continuer à s'entraîner régulièrement par la copie et l'écriture quotidienne est exactement le moyen conseillé pour consolider la fluidité",
+              "Non, il faut arrêter de s'entraîner une fois la cursive apprise",
+              "La copie de textes rend toujours l'écriture moins fluide"
+            ],
+            "answer": 1,
+            "exp": "La leçon recommande explicitement l'entraînement régulier par la copie et l'écriture quotidienne pour consolider la fluidité."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi dit-on que l'objectif de l'écriture cursive évolue entre le CP et le CM1 (apprendre à tracer, puis gagner en fluidité) ?",
+            "choices": [
+              "L'objectif ne change jamais, du CP au CM1",
+              "Parce qu'une fois les lettres correctement tracées et maîtrisées (étape du CP), l'enjeu devient ensuite de rendre ce geste automatique et rapide sans perdre en qualité, ce qui correspond à une étape différente d'apprentissage",
+              "Il n'existe aucune différence entre le CP et le CM1 en écriture",
+              "Le CM1 revient uniquement à réapprendre à tracer les lettres depuis le début"
+            ],
+            "answer": 1,
+            "exp": "L'apprentissage évolue logiquement : d'abord maîtriser le tracé des lettres, puis automatiser ce geste pour gagner en rapidité et régularité."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense que, puisqu'il sait déjà bien écrire en cursive, il n'a plus besoin de s'entraîner du tout. Quelle limite cette idée a-t-elle ?",
+            "choices": [
+              "Aucune limite, une fois maîtrisée, l'écriture n'a jamais besoin d'être entretenue",
+              "Elle néglige que continuer à s'entraîner régulièrement reste le meilleur moyen de consolider durablement la fluidité, même quand elle est déjà globalement acquise",
+              "Il est impossible de perdre en fluidité d'écriture, quelle que soit la pratique",
+              "S'entraîner davantage rendrait obligatoirement l'écriture moins bonne"
+            ],
+            "answer": 1,
+            "exp": "Même une fluidité déjà acquise bénéficie d'un entraînement régulier pour être consolidée dans la durée."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi la régularité de l'espacement entre les mots est-elle aussi importante que la régularité de la taille des lettres pour la lisibilité ?",
+            "choices": [
+              "L'espacement entre les mots n'a jamais aucune importance",
+              "Parce qu'un espacement irrégulier peut rendre difficile la distinction entre les mots, perturbant la lecture même si chaque lettre individuelle est bien formée",
+              "Seule la taille des lettres compte pour la lisibilité, jamais l'espacement",
+              "Un espacement irrégulier rend toujours un texte plus facile à lire"
+            ],
+            "answer": 1,
+            "exp": "Un espacement irrégulier entre les mots peut gêner la lecture, même si les lettres elles-mêmes sont bien formées : les deux critères comptent ensemble."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Quelle idée résume le mieux l'esprit de cette leçon sur l'écriture à la main au CM1 ?",
+            "choices": [
+              "Il faut uniquement se concentrer sur la vitesse, sans aucune autre considération",
+              "L'écriture manuscrite au CM1 vise un équilibre entre rapidité, régularité et lisibilité, consolidé par une pratique régulière",
+              "L'écriture à la main n'a plus aucune importance à partir du CM1",
+              "Seule l'orthographe compte dans la qualité d'un texte manuscrit"
+            ],
+            "answer": 1,
+            "exp": "L'esprit de la leçon est bien cet équilibre entre rapidité, régularité et lisibilité, entretenu par la pratique régulière."
           }
         ]
       },
@@ -18107,6 +18284,177 @@
             ],
             "answer": 1,
             "exp": "La reformulation active (par l'écriture) engage un traitement plus profond de l'information que la simple relecture passive : c'est généralement une stratégie de mémorisation plus efficace, bien documentée en sciences de l'apprentissage."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pourquoi reformuler une leçon avec ses propres mots est-il particulièrement utile pour la mémorisation ?",
+            "choices": [
+              "Ce n'est jamais utile, il faut toujours recopier exactement le texte original",
+              "Parce que cela oblige à vraiment comprendre le contenu : si on arrive à le reformuler simplement, c'est le signe d'une bonne compréhension",
+              "Parce que reformuler change toujours complètement le sens de la leçon",
+              "Parce que c'est systématiquement plus rapide que de lire la leçon"
+            ],
+            "answer": 1,
+            "exp": "Reformuler avec ses propres mots est un test actif de compréhension : si la reformulation fonctionne, la leçon est assimilée."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Un écrit de travail (une liste rapide, un schéma) doit-il être parfaitement propre et sans rature avant d'être utile ?",
+            "choices": [
+              "Oui, toujours parfaitement propre, sinon il ne sert à rien",
+              "Non, un écrit de travail sert surtout à organiser ses idées, pas à être un texte final abouti",
+              "Il est totalement interdit de faire des écrits de travail à l'école",
+              "Un écrit de travail doit toujours être extrêmement long"
+            ],
+            "answer": 1,
+            "exp": "Un écrit de travail est un outil pour organiser ses idées, pas un texte final : il n'a pas besoin d'être parfait."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pour comparer deux documents sur un même sujet, quel type d'écrit court peut aider à structurer sa pensée ?",
+            "choices": [
+              "Un texte qui recopie intégralement les deux documents sans les analyser",
+              "Un écrit qui liste les points communs et les différences entre les deux documents",
+              "Un dessin sans aucun lien avec le contenu des documents",
+              "Rien, il ne faut jamais rien écrire pour comparer deux documents"
+            ],
+            "answer": 1,
+            "exp": "Lister points communs et différences dans un écrit court aide à structurer sa pensée lors d'une comparaison de documents."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Tu veux mémoriser le mot « majestueux ». Au-delà de lire sa définition, que peux-tu faire pour renforcer activement ta mémorisation ?",
+            "choices": [
+              "Ne rien faire d'autre que lire la définition une seule fois",
+              "Écrire une phrase personnelle qui utilise ce mot dans un contexte que tu choisis toi-même",
+              "Oublier immédiatement ce mot après l'avoir lu une fois",
+              "Répéter le mot à voix haute sans jamais l'utiliser dans une phrase"
+            ],
+            "answer": 1,
+            "exp": "Produire une phrase personnelle avec le mot renforce activement la mémorisation, bien plus qu'une lecture passive de la définition."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Après une leçon de sciences sur les états de l'eau, un élève note dans son cahier un petit schéma avec des flèches reliant « solide », « liquide » et « gazeux ». À quoi sert concrètement ce schéma ?",
+            "choices": [
+              "À rien, un schéma n'a jamais aucune utilité pour mémoriser",
+              "À organiser visuellement les liens entre les idées de la leçon, ce qui aide à mieux les retenir qu'une simple lecture du texte",
+              "À remplacer complètement la leçon, sans jamais avoir besoin de l'écouter",
+              "À décorer uniquement le cahier, sans fonction pédagogique"
+            ],
+            "answer": 1,
+            "exp": "Un schéma qui organise visuellement les liens entre idées est un outil efficace pour mémoriser le contenu d'une leçon."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi l'écriture peut-elle être considérée comme un outil pour « réfléchir », et pas seulement pour « raconter » une histoire ?",
+            "choices": [
+              "L'écriture ne sert jamais à réfléchir, uniquement à raconter des histoires",
+              "Parce que mettre des idées par écrit (reformuler, lister, comparer) oblige à les organiser et à les clarifier, ce qui aide activement à comprendre et à mémoriser, au-delà du simple récit narratif",
+              "Parce que réfléchir et raconter une histoire sont exactement la même activité",
+              "Parce que l'écriture n'a strictement aucun lien avec la pensée"
+            ],
+            "answer": 1,
+            "exp": "Mettre des idées par écrit (reformulation, listes, comparaisons) est un véritable outil de pensée, pas seulement un moyen de raconter."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense que relire silencieusement sa leçon plusieurs fois est toujours plus efficace que de la reformuler par écrit avec ses propres mots. Que penser de cette idée ?",
+            "choices": [
+              "Il a raison, la relecture silencieuse seule est toujours la meilleure méthode, sans exception",
+              "La reformulation active par écrit est souvent plus efficace pour la mémorisation qu'une simple relecture passive, car elle oblige à vraiment traiter et organiser l'information",
+              "La relecture silencieuse n'a jamais aucune utilité, quelle que soit la situation",
+              "Il faut toujours éviter complètement d'écrire pour mémoriser une leçon"
+            ],
+            "answer": 1,
+            "exp": "La reformulation active par écrit engage davantage le traitement de l'information qu'une simple relecture passive, ce qui renforce la mémorisation."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un écrit de travail comme une liste ou un schéma rapide doit toujours être parfaitement propre pour être utile.",
+            "answer": false,
+            "exp": "Un écrit de travail sert à organiser ses idées, pas à produire un texte final abouti : il n'a pas besoin d'être parfait."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Écrire une phrase personnelle avec un nouveau mot de vocabulaire renforce sa mémorisation.",
+            "answer": true,
+            "exp": "Produire un écrit personnel en lien avec un mot nouvellement appris renforce considérablement sa mémorisation, selon la leçon."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Dire une leçon avec ses propres mots, sans la recopier, s'appelle la : (un mot)",
+            "answer": "reformulation",
+            "exp": "La reformulation consiste à redire le contenu d'une leçon avec ses propres mots, ce qui teste et renforce la compréhension."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève compare un texte sur les volcans et un texte sur les tremblements de terre en notant dans un tableau rapide ce qui est commun aux deux (origine souterraine) et ce qui diffère (manifestations). Que fait-il concrètement ?",
+            "choices": [
+              "Il perd son temps, cette méthode n'a aucune utilité",
+              "Il utilise l'écriture pour structurer sa pensée et clarifier sa compréhension des deux phénomènes, exactement comme le recommande la leçon",
+              "Il recopie simplement les deux textes sans aucune réflexion",
+              "Il invente des informations qui ne sont dans aucun des deux textes"
+            ],
+            "answer": 1,
+            "exp": "Noter points communs et différences dans un tableau est précisément l'usage de l'écriture pour structurer sa pensée recommandé par la leçon."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un écrit de travail imparfait (avec des ratures, des flèches) peut-il être plus utile, à certains moments, qu'un texte très soigné mais rédigé trop tôt ?",
+            "choices": [
+              "Un écrit imparfait n'est jamais utile, il faut toujours viser la perfection immédiate",
+              "Parce qu'un écrit de travail sert à explorer et réorganiser librement ses idées avant la version finale, sans la contrainte de perfection qui pourrait freiner cette exploration",
+              "La perfection immédiate est toujours plus rapide et plus efficace à obtenir",
+              "Les ratures et les flèches rendent toujours un écrit totalement incompréhensible"
+            ],
+            "answer": 1,
+            "exp": "La liberté de rature et de réorganisation dans un écrit de travail permet d'explorer les idées sans la contrainte de perfection, ce qui favorise la réflexion."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense que seule une leçon « parfaitement recopiée mot pour mot » peut être bien mémorisée. Quelle limite cette idée a-t-elle, d'après cette leçon ?",
+            "choices": [
+              "Aucune limite, recopier mot pour mot est toujours la meilleure méthode de mémorisation",
+              "Elle néglige que la reformulation active avec ses propres mots est souvent plus efficace pour vérifier et renforcer sa compréhension qu'une simple copie fidèle",
+              "Recopier une leçon est totalement interdit à l'école",
+              "Reformuler une leçon change toujours son sens de façon incorrecte"
+            ],
+            "answer": 1,
+            "exp": "Recopier mot pour mot ne garantit pas la compréhension ; la reformulation personnelle est un meilleur test et renforcement de la mémorisation."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi dit-on que les écrits de travail sont utiles « dans toutes les matières », et pas seulement en français ?",
+            "choices": [
+              "Les écrits de travail ne concernent en réalité que le français",
+              "Parce que réfléchir par écrit (lister, reformuler, comparer) aide à organiser et mémoriser des informations quel que soit le sujet étudié : sciences, histoire, mathématiques...",
+              "Les écrits de travail sont interdits dans les matières autres que le français",
+              "Seules les matières littéraires bénéficient de l'écriture comme outil de réflexion"
+            ],
+            "answer": 1,
+            "exp": "L'écriture comme outil de réflexion et de mémorisation est utile dans toutes les matières, pas seulement en français."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Reformuler une leçon avec ses propres mots permet de vérifier si on l'a vraiment comprise.",
+            "answer": true,
+            "exp": "C'est l'idée centrale de cette leçon : la reformulation sert de test actif de compréhension."
           }
         ]
       },
@@ -18195,6 +18543,183 @@
             ],
             "answer": 1,
             "exp": "Un récit complet suit généralement une structure avec situation initiale, élément perturbateur, péripéties ET résolution : s'arrêter juste après l'élément perturbateur laisse l'histoire inachevée, sans réponse au problème posé."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quel élément d'un récit vient bouleverser la situation de départ et déclenche véritablement l'aventure ?",
+            "choices": [
+              "La résolution finale",
+              "L'élément perturbateur",
+              "Le titre du récit",
+              "La ponctuation utilisée"
+            ],
+            "answer": 1,
+            "exp": "L'élément perturbateur est l'événement qui bouleverse la situation initiale et lance l'intrigue."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pourquoi est-il utile d'imaginer les grandes lignes de son histoire avant de commencer à l'écrire ?",
+            "choices": [
+              "Ce n'est jamais utile, il faut toujours écrire sans aucune préparation",
+              "Pour organiser ses idées à l'avance (personnages, lieu, problème) et éviter de se perdre en cours d'écriture",
+              "Parce qu'il est strictement interdit d'improviser une histoire à l'école",
+              "Parce que les grandes lignes remplacent complètement la rédaction du texte"
+            ],
+            "answer": 1,
+            "exp": "Imaginer les grandes lignes à l'avance (personnages, lieu, problème) évite de se perdre pendant la rédaction."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans ton récit, tu annonces au début que l'histoire se passe en hiver avec de la neige. Plus loin, sans explication, tu décris un soleil brûlant d'été. Quel est le problème ?",
+            "choices": [
+              "Aucun problème, les détails n'ont jamais besoin d'être cohérents entre eux",
+              "Un manque de cohérence : les informations données au début du récit se contredisent sans justification avec un détail donné plus loin",
+              "Il fallait absolument ajouter encore plus de contradictions de ce type",
+              "C'est une technique d'écriture volontairement recommandée dans tous les récits"
+            ],
+            "answer": 1,
+            "exp": "Une contradiction non justifiée entre le début et la suite du récit est un manque de cohérence à corriger."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève écrit un récit où la situation de départ montre un enfant heureux à l'école, mais n'inclut aucun événement qui vient perturber cette situation. Que manque-t-il à ce récit ?",
+            "choices": [
+              "Rien, un récit peut très bien se limiter à la situation de départ",
+              "Il manque l'élément perturbateur, essentiel pour déclencher une véritable aventure et donner un intérêt narratif au récit",
+              "Il fallait ajouter uniquement une description supplémentaire du lieu",
+              "Un récit n'a jamais besoin d'un événement qui bouleverse la situation initiale"
+            ],
+            "answer": 1,
+            "exp": "Sans élément perturbateur, le récit reste figé dans la situation initiale et manque de véritable intrigue."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève rédige un récit avec une situation de départ, un élément perturbateur et des péripéties, mais le texte s'arrête brutalement sans jamais résoudre le problème posé. Que manque-t-il ?",
+            "choices": [
+              "Rien, un récit peut très bien s'arrêter sans jamais résoudre le problème",
+              "Il manque la résolution, qui permet de répondre au problème posé au début et de donner un sentiment de clôture à l'histoire",
+              "Il fallait ajouter encore plus de péripéties, sans jamais conclure l'histoire",
+              "La résolution n'a jamais d'importance dans la structure d'un récit"
+            ],
+            "answer": 1,
+            "exp": "Sans résolution, le récit laisse le problème initial sans réponse, ce qui frustre le lecteur attendant une forme de clôture."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi une bonne fin de récit doit-elle généralement répondre au problème posé au début de l'histoire ?",
+            "choices": [
+              "Ce n'est jamais nécessaire, une fin peut être totalement déconnectée du début sans problème",
+              "Parce que le lecteur s'est engagé dans l'histoire en suivant ce problème initial : une fin qui y répond donne un sentiment de clôture satisfaisant, alors qu'une fin sans rapport laisserait le lecteur frustré",
+              "Parce qu'il faut toujours une fin heureuse, sans exception possible",
+              "Parce que la fin d'un récit n'a jamais vraiment d'importance pour le lecteur"
+            ],
+            "answer": 1,
+            "exp": "Une fin qui répond au problème initial satisfait l'attente du lecteur engagé dans l'histoire, créant un sentiment de clôture."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève écrit un récit qui s'arrête brusquement juste après l'élément perturbateur, sans péripéties ni résolution. Quel est le problème avec ce récit ?",
+            "choices": [
+              "Aucun problème, un récit peut s'arrêter n'importe où sans conséquence",
+              "Le récit est incomplet : il manque les péripéties (comment les personnages réagissent) et la résolution (comment l'histoire se termine), essentielles à la structure narrative",
+              "Il fallait ajouter encore plus d'éléments perturbateurs successifs",
+              "Les péripéties et la résolution ne sont jamais des éléments nécessaires à un récit"
+            ],
+            "answer": 1,
+            "exp": "Un récit sans péripéties ni résolution reste structurellement incomplet, même avec un bon élément perturbateur."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "La situation de départ, l'élément perturbateur, les péripéties et la résolution sont les grandes étapes classiques d'un récit complet.",
+            "answer": true,
+            "exp": "Ces quatre étapes forment la structure narrative classique présentée dans cette leçon."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Les informations données au début d'un récit (nom, lieu, saison) peuvent se contredire librement plus loin dans le texte, sans aucune justification nécessaire.",
+            "answer": false,
+            "exp": "Sauf si c'est volontaire et justifié par l'histoire, de telles contradictions sont des incohérences à éviter."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "L'événement qui bouleverse la situation de départ d'un récit et déclenche l'aventure s'appelle l'élément : (un mot)",
+            "answer": "perturbateur",
+            "exp": "L'élément perturbateur est le terme technique qui désigne cet événement déclencheur dans la structure narrative."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève prépare son récit en notant avant d'écrire : les personnages (une fillette et son chien), le lieu (une forêt), le problème (le chien se perd). Que fait-il concrètement ?",
+            "choices": [
+              "Il perd son temps avant même de commencer à écrire",
+              "Il prépare les grandes lignes de son histoire avant la rédaction, exactement comme le recommande la leçon pour éviter de se perdre en cours d'écriture",
+              "Il écrit déjà la version finale complète de son récit",
+              "Cette préparation n'a aucun lien avec la qualité du récit final"
+            ],
+            "answer": 1,
+            "exp": "Noter personnages, lieu et problème avant d'écrire est exactement la préparation des grandes lignes recommandée par la leçon."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi inclure des dialogues et des descriptions dans un récit, sans pour autant « noyer l'action dans trop de détails », demande-t-il un certain équilibre ?",
+            "choices": [
+              "Il n'existe aucun équilibre à trouver, plus de détails est toujours préférable",
+              "Parce que les dialogues et descriptions enrichissent le récit et le rendent vivant, mais un excès de détails peut ralentir l'action et perdre l'intérêt du lecteur pour l'histoire elle-même",
+              "Les dialogues et descriptions n'ont jamais leur place dans un récit",
+              "Un récit sans aucun détail est toujours plus intéressant qu'un récit détaillé"
+            ],
+            "answer": 1,
+            "exp": "Trouver un équilibre entre détails enrichissants et fluidité de l'action est essentiel pour garder l'intérêt du lecteur."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense qu'un bon récit doit absolument se terminer de façon heureuse, sinon « ce n'est pas une bonne fin ». Que penser de cette idée, selon la leçon ?",
+            "choices": [
+              "Il a raison, seule une fin heureuse peut être considérée comme réussie",
+              "Son idée est trop restrictive : une fin peut être heureuse, triste ou surprenante, l'important étant qu'elle réponde au problème initial et donne un sentiment de clôture",
+              "Une fin triste est toujours automatiquement ratée, sans exception",
+              "La fin d'un récit n'a besoin de répondre à aucun critère particulier"
+            ],
+            "answer": 1,
+            "exp": "La leçon précise que la fin peut être heureuse, triste ou surprenante : ce qui compte est qu'elle réponde au problème initial avec un sentiment de clôture."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans un récit, les péripéties s'enchaînent logiquement à partir de l'élément perturbateur, mais la résolution finale ne semble avoir aucun lien avec ces péripéties. Quel problème cela pose-t-il ?",
+            "choices": [
+              "Aucun problème, la résolution n'a jamais besoin d'être liée aux péripéties",
+              "Cela crée une incohérence narrative : le lecteur s'attend à ce que la résolution découle logiquement des péripéties vécues, pas qu'elle apparaisse sans lien avec elles",
+              "Il fallait au contraire éviter tout lien entre les péripéties et la résolution",
+              "Les péripéties n'ont jamais d'influence sur la façon dont une histoire doit se terminer"
+            ],
+            "answer": 1,
+            "exp": "La résolution doit découler logiquement des péripéties, sous peine de créer une incohérence narrative frustrante pour le lecteur."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi dit-on que construire un récit demande une réflexion sur la structure globale, et pas seulement sur la qualité de chaque phrase individuellement ?",
+            "choices": [
+              "Seule la qualité de chaque phrase compte, jamais la structure globale",
+              "Parce qu'un texte peut contenir de belles phrases individuellement tout en manquant d'une structure cohérente (situation, élément perturbateur, péripéties, résolution), ce qui nuirait à l'intérêt global du récit",
+              "La structure globale d'un récit n'a jamais aucune importance",
+              "Il est impossible qu'un texte ait de belles phrases sans une bonne structure"
+            ],
+            "answer": 1,
+            "exp": "Une bonne structure narrative globale est indispensable, indépendamment de la qualité de chaque phrase prise isolément."
           }
         ]
       },
@@ -18283,6 +18808,177 @@
             ],
             "answer": 1,
             "exp": "Sans ordre logique pour présenter les éléments d'une description, le lecteur doit faire un effort supplémentaire pour reconstituer une image cohérente, ce qui nuit à la clarté et à l'efficacité du texte descriptif."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pourquoi éviter des mots vagues comme « truc » ou « chose » dans un texte explicatif ou descriptif ?",
+            "choices": [
+              "Ce n'est jamais un problème d'utiliser ces mots, ils sont toujours suffisamment précis",
+              "Parce qu'ils ne donnent aucune information précise au lecteur, contrairement à un vocabulaire exact qui permet de bien comprendre ou visualiser ce qui est décrit",
+              "Parce que ces mots sont strictement interdits dans la langue française",
+              "Parce qu'ils rendent toujours un texte plus intéressant à lire"
+            ],
+            "answer": 1,
+            "exp": "Des mots vagues comme « truc » ou « chose » ne transmettent aucune information précise, contrairement à un vocabulaire exact."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pour décrire un lieu de façon organisée, quel type d'ordre peut-on suivre ?",
+            "choices": [
+              "Aucun ordre, il vaut mieux décrire au hasard, sans logique particulière",
+              "Un ordre logique, par exemple du fond vers l'avant, ou du plus grand détail au plus petit",
+              "Toujours commencer uniquement par le plafond, sans aucune autre possibilité",
+              "Décrire uniquement les couleurs présentes, sans mentionner autre chose"
+            ],
+            "answer": 1,
+            "exp": "Suivre un ordre logique (spatial, du général au particulier...) aide le lecteur à construire une image mentale cohérente."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Tu dois expliquer pourquoi l'eau d'un verre s'évapore au soleil. Quel connecteur logique pourrait relier la cause (la chaleur du soleil) à sa conséquence (l'évaporation) ?",
+            "choices": [
+              "Et puis",
+              "C'est pourquoi",
+              "D'abord",
+              "Mais"
+            ],
+            "answer": 1,
+            "exp": "« C'est pourquoi » exprime une relation de cause à conséquence, adaptée pour relier la chaleur du soleil à l'évaporation."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans une description, un élève utilise le mot « grand » cinq fois dans le même paragraphe pour décrire des objets différents. Que pourrait-il faire pour améliorer son texte ?",
+            "choices": [
+              "Garder exactement les mêmes répétitions, cela n'a aucune importance",
+              "Varier son vocabulaire en utilisant selon le contexte des mots comme « immense », « imposant » ou « vaste », qui apportent chacun une nuance différente",
+              "Supprimer complètement toute description des objets",
+              "Répéter le mot « grand » encore plus souvent pour insister"
+            ],
+            "answer": 1,
+            "exp": "Varier le vocabulaire avec des synonymes nuancés (immense, imposant, vaste) évite les répétitions inutiles et enrichit la description."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève explique une expérience scientifique sans utiliser aucun connecteur logique, en juxtaposant simplement des phrases sans lien apparent. Quel problème cela peut-il poser pour le lecteur ?",
+            "choices": [
+              "Aucun problème, les connecteurs logiques ne servent jamais à rien",
+              "Le lecteur peut avoir du mal à comprendre les relations de cause à effet entre les étapes de l'expérience, faute de connecteurs qui les rendraient explicites",
+              "Il fallait au contraire éviter absolument tout connecteur logique",
+              "Les connecteurs logiques rendent toujours un texte plus confus qu'une simple juxtaposition"
+            ],
+            "answer": 1,
+            "exp": "Sans connecteurs logiques, les relations de cause à effet entre les étapes restent implicites et plus difficiles à suivre pour le lecteur."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi organiser sa description selon un ordre logique (par exemple, du fond vers l'avant d'une pièce) aide-t-elle le lecteur à mieux comprendre le texte ?",
+            "choices": [
+              "Ce n'est jamais utile, le désordre fonctionne aussi bien qu'un ordre logique",
+              "Parce qu'un ordre cohérent permet au lecteur de construire progressivement une image mentale claire, sans avoir à réorganiser lui-même des informations données dans le désordre",
+              "Parce que l'ordre n'a strictement aucune importance dans une description écrite",
+              "Parce que le lecteur devine toujours l'organisation, peu importe l'ordre réellement utilisé"
+            ],
+            "answer": 1,
+            "exp": "Un ordre logique évite au lecteur de devoir réorganiser mentalement des informations éparses, facilitant la construction d'une image claire."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève décrit une pièce en mentionnant des éléments complètement dans le désordre (le plafond, puis un détail d'une fenêtre, puis le sol, puis de nouveau le plafond). Quel est le problème ?",
+            "choices": [
+              "Aucun problème, le désordre n'affecte jamais la compréhension du lecteur",
+              "Le lecteur a du mal à se construire une image mentale cohérente de la pièce, car les informations ne suivent aucun ordre logique qui faciliterait la visualisation",
+              "Il fallait décrire encore plus d'éléments dans le désordre pour enrichir le texte",
+              "Les descriptions n'ont jamais besoin d'organisation particulière"
+            ],
+            "answer": 1,
+            "exp": "L'absence d'ordre logique dans une description gêne la construction d'une image mentale cohérente chez le lecteur."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Utiliser des connecteurs logiques comme « parce que » ou « c'est pourquoi » aide à montrer les liens de cause à effet dans un texte explicatif.",
+            "answer": true,
+            "exp": "C'est exactement le rôle des connecteurs logiques décrit dans cette leçon."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Il est toujours préférable de répéter le même mot plutôt que de chercher un synonyme, même en cas de répétitions fréquentes.",
+            "answer": false,
+            "exp": "La leçon conseille au contraire de varier son vocabulaire avec des synonymes nuancés pour éviter les répétitions inutiles."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un mot comme « parce que » ou « donc », qui montre un lien logique entre deux idées, s'appelle un : (un mot)",
+            "answer": "connecteur",
+            "exp": "Un connecteur logique relie des idées en montrant leur lien (cause, conséquence, temps...)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Après avoir écrit un texte explicatif sur le cycle de l'eau, un élève se relit en se demandant : « Un lecteur qui ne connaît rien sur ce sujet comprendrait-il clairement mon explication ? » Que fait-il concrètement ?",
+            "choices": [
+              "Il perd son temps, cette vérification n'a jamais aucune utilité",
+              "Il applique la stratégie de relecture recommandée par la leçon pour vérifier la clarté de son texte explicatif du point de vue d'un lecteur non spécialiste",
+              "Il réécrit intégralement son texte sans jamais le relire avant",
+              "Cette question n'a aucun rapport avec la qualité d'un texte explicatif"
+            ],
+            "answer": 1,
+            "exp": "Se mettre à la place d'un lecteur non spécialiste pour vérifier la clarté est exactement la stratégie de relecture recommandée."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un vocabulaire précis est-il particulièrement important dans un texte qui explique une démarche scientifique, et pas seulement dans une description de lieu ?",
+            "choices": [
+              "Le vocabulaire précis n'a d'importance que pour décrire un lieu, jamais pour expliquer une démarche",
+              "Parce qu'une imprécision de vocabulaire dans une explication scientifique peut conduire à une mauvaise compréhension du phénomène ou de la démarche décrite, avec des conséquences sur la compréhension globale",
+              "Le vocabulaire scientifique n'a jamais besoin d'être précis, contrairement aux descriptions",
+              "Les démarches scientifiques ne nécessitent jamais d'explication écrite précise"
+            ],
+            "answer": 1,
+            "exp": "Une imprécision de vocabulaire dans un contexte scientifique peut fausser la compréhension du phénomène décrit, ce qui justifie une précision particulière."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense qu'ajouter beaucoup d'adjectifs à sa description, même vagues comme « joli » ou « bien », suffit à la rendre précise. Que penser de cette idée ?",
+            "choices": [
+              "Il a raison, le nombre d'adjectifs utilisés garantit toujours la précision d'une description",
+              "Son idée est fausse : des adjectifs vagues comme « joli » ou « bien » restent imprécis, quel que soit leur nombre ; c'est un vocabulaire exact et spécifique qui rend une description réellement précise",
+              "Les adjectifs n'ont jamais leur place dans une description précise",
+              "Une description sans aucun adjectif est toujours plus précise qu'une description qui en contient"
+            ],
+            "answer": 1,
+            "exp": "Multiplier des adjectifs vagues ne rend pas une description précise ; c'est la spécificité du vocabulaire choisi qui compte."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans un texte qui explique les étapes de fabrication du pain, quels mots seraient les plus utiles pour relier clairement chaque étape à la suivante ?",
+            "choices": [
+              "Des mots vagues comme « truc » et « chose »",
+              "Des connecteurs logiques et temporels comme « d'abord », « ensuite », « puis », « enfin »",
+              "Aucun mot de liaison n'est nécessaire entre les étapes",
+              "Uniquement des adjectifs décrivant la couleur du pain"
+            ],
+            "answer": 1,
+            "exp": "Des connecteurs temporels et logiques structurent clairement la succession des étapes d'un processus expliqué."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un vocabulaire précis et varié rend une description plus claire qu'un vocabulaire vague et répétitif.",
+            "answer": true,
+            "exp": "C'est l'idée centrale de cette leçon : précision et variété du vocabulaire améliorent la clarté d'un texte."
           }
         ]
       },
@@ -18371,6 +19067,177 @@
             ],
             "answer": 1,
             "exp": "Sauter l'étape du brouillon peut sembler gagner du temps, mais cela augmente souvent le risque de devoir reprendre en profondeur le texte final (structure mal pensée, idées manquantes) : le brouillon est un investissement qui facilite la suite."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "À quoi sert principalement un brouillon, selon cette leçon ?",
+            "choices": [
+              "À rédiger directement la version finale et parfaite d'un texte",
+              "À noter, organiser et tester ses idées librement, avant la rédaction finale",
+              "À ne rien écrire du tout avant de produire le texte final",
+              "À copier un texte déjà existant sans aucune modification"
+            ],
+            "answer": 1,
+            "exp": "Le brouillon est un espace de liberté pour noter, organiser et tester ses idées avant la version finale."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Sur quoi faut-il porter son attention en priorité au moment du brouillon, plutôt que sur l'orthographe précise ?",
+            "choices": [
+              "L'orthographe parfaite de chaque mot écrit",
+              "L'organisation générale des idées et leur ordre dans le texte",
+              "La calligraphie parfaitement soignée",
+              "La longueur exacte que devra avoir le texte final"
+            ],
+            "answer": 1,
+            "exp": "Au brouillon, l'enjeu principal est d'organiser ses idées, pas de soigner immédiatement l'orthographe."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Au brouillon, tu listes tes idées pour un texte, puis tu réalises qu'une idée importante manque. Que peux-tu faire ?",
+            "choices": [
+              "Ignorer cette idée manquante et continuer sans elle",
+              "Ajouter cette idée dans la marge ou avec une flèche, pour l'intégrer à la bonne place dans ton texte",
+              "Jeter complètement ton brouillon et abandonner le texte",
+              "Attendre d'avoir fini le texte final pour t'en soucier, sans rien faire au brouillon"
+            ],
+            "answer": 1,
+            "exp": "Le brouillon permet justement d'ajouter librement une idée manquante, grâce à la marge ou à des flèches, avant la rédaction finale."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "En relisant son brouillon, un élève se rend compte qu'une partie de son texte est beaucoup trop longue par rapport aux autres parties. Que peut-il faire grâce au brouillon ?",
+            "choices": [
+              "Rien, il doit attendre la version finale pour corriger ce déséquilibre",
+              "Réduire cette partie ou rééquilibrer les longueurs directement sur le brouillon, avant de rédiger la version finale au propre",
+              "Supprimer complètement le texte et abandonner le projet d'écriture",
+              "Ajouter encore plus de contenu à cette partie déjà trop longue"
+            ],
+            "answer": 1,
+            "exp": "Le brouillon permet justement de repérer et corriger un déséquilibre de longueur entre les parties, avant la rédaction finale."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il plus efficace d'organiser ses idées au brouillon avant de rédiger un texte final, plutôt que d'écrire directement la version finale sans préparation ?",
+            "choices": [
+              "Ce n'est jamais plus efficace, il vaut toujours mieux écrire directement sans brouillon",
+              "Parce que le brouillon permet de repérer et de corriger les problèmes d'organisation AVANT de s'investir dans la rédaction soignée finale, évitant ainsi d'avoir à tout réécrire plus tard",
+              "Parce que le brouillon prend toujours plus de temps que de bien faire du premier coup",
+              "Parce qu'un texte rédigé sans brouillon est systématiquement meilleur"
+            ],
+            "answer": 1,
+            "exp": "Repérer les problèmes d'organisation au brouillon évite de devoir réécrire en profondeur après coup la version soignée."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense qu'utiliser un brouillon est une perte de temps, et qu'il vaut mieux écrire directement le texte final du premier coup. Que lui manque-t-il dans sa réflexion ?",
+            "choices": [
+              "Rien, écrire directement sans brouillon est toujours plus efficace",
+              "Il sous-estime l'utilité du brouillon pour organiser ses idées et repérer des problèmes avant la rédaction finale : sans cette étape, il risque de devoir beaucoup plus recommencer ou corriger après coup",
+              "Le brouillon n'a jamais d'utilité réelle pour aucun type de texte",
+              "Il faut toujours écrire plusieurs versions finales différentes, sans jamais passer par un brouillon"
+            ],
+            "answer": 1,
+            "exp": "Sans brouillon, les problèmes d'organisation ne sont découverts que dans la version censée être finale, ce qui impose souvent plus de corrections."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Au brouillon, il est permis de rayer des mots, d'ajouter des flèches, ou d'écrire une idée dans la marge.",
+            "answer": true,
+            "exp": "Le brouillon est fait pour être modifié librement, ce n'est pas un texte final à présenter tel quel."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "La version finale au propre doit être rédigée en portant attention à l'orthographe et à la ponctuation.",
+            "answer": true,
+            "exp": "Une fois le brouillon satisfaisant, l'attention se porte sur l'orthographe, la ponctuation et la qualité de chaque phrase pour la version finale."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "L'espace de liberté où l'on note ses idées avant de rédiger le texte final s'appelle le : (un mot)",
+            "answer": "brouillon",
+            "exp": "Le brouillon est précisément cet espace de liberté pour organiser ses idées avant la rédaction finale."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève teste au brouillon plusieurs façons différentes d'écrire la phrase d'introduction de son texte, avant de choisir la meilleure. Que fait-il concrètement ?",
+            "choices": [
+              "Il perd son temps, une seule tentative aurait toujours suffi",
+              "Il utilise le brouillon exactement comme recommandé : pour tester plusieurs formulations avant de choisir la plus satisfaisante pour la version finale",
+              "Il écrit déjà sa version finale sans possibilité de revenir en arrière",
+              "Tester plusieurs formulations est une pratique interdite au brouillon"
+            ],
+            "answer": 1,
+            "exp": "Tester plusieurs formulations au brouillon avant de choisir la meilleure est exactement l'usage recommandé de cet outil."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi le brouillon permet-il de « voir » son texte avant qu'il soit terminé, et pas seulement de noter des mots isolés ?",
+            "choices": [
+              "Le brouillon ne permet jamais de voir l'ensemble d'un texte avant sa version finale",
+              "Parce qu'en organisant ses idées (plan, ordre, longueur approximative de chaque partie) au brouillon, on peut repérer des problèmes globaux (idée manquante, déséquilibre) avant même d'avoir rédigé le texte complet",
+              "Seule la version finale permet de repérer des problèmes dans un texte",
+              "Le brouillon sert uniquement à noter des mots isolés, jamais à organiser une structure"
+            ],
+            "answer": 1,
+            "exp": "Organiser ses idées au brouillon (plan, ordre, équilibre) permet d'anticiper des problèmes globaux avant même la rédaction complète du texte."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense que, pour gagner du temps, il doit toujours écrire son brouillon avec la même attention qu'un texte final, en particulier sur l'orthographe. Quelle limite cette idée a-t-elle ?",
+            "choices": [
+              "Aucune limite, l'orthographe doit toujours être parfaite, même au brouillon",
+              "Elle méconnaît l'intérêt du brouillon, qui est justement de pouvoir noter ses idées librement sans se soucier immédiatement de la perfection de l'orthographe ou de la formulation, ce qui accélère l'organisation des idées",
+              "Le brouillon est interdit, il faut toujours écrire directement un texte final",
+              "Se soucier de l'orthographe au brouillon accélère toujours la rédaction du texte final"
+            ],
+            "answer": 1,
+            "exp": "Vouloir une orthographe parfaite dès le brouillon va à l'encontre de son usage, qui privilégie la liberté d'organisation des idées."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Quelle idée résume le mieux l'intérêt pédagogique du brouillon selon cette leçon ?",
+            "choices": [
+              "Le brouillon est une étape inutile qu'on peut toujours éviter",
+              "Le brouillon permet d'organiser et de tester librement ses idées avant la rédaction finale, ce qui améliore la qualité du texte produit au final",
+              "Seule la version finale compte, le brouillon n'a aucune influence sur sa qualité",
+              "Le brouillon doit toujours être aussi soigné que la version finale, sans aucune différence"
+            ],
+            "answer": 1,
+            "exp": "L'intérêt du brouillon est de préparer et tester librement les idées, ce qui améliore in fine la qualité du texte final."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un élève utilise des flèches sur son brouillon pour déplacer un paragraphe qu'il juge mieux placé à un autre endroit du texte. Que fait-il concrètement ?",
+            "choices": [
+              "Une erreur grave qui rend le brouillon inutilisable",
+              "Une utilisation normale et recommandée du brouillon, qui permet de réorganiser librement ses idées avant la version finale",
+              "Une opération réservée uniquement à la version finale du texte",
+              "Une pratique qui n'a aucun lien avec l'organisation d'un texte"
+            ],
+            "answer": 1,
+            "exp": "Utiliser des flèches pour déplacer un passage est précisément l'un des usages encouragés du brouillon pour réorganiser ses idées."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Au brouillon, on peut tester plusieurs façons d'écrire une phrase d' . (quelle partie du texte, au tout début ?)",
+            "answer": "introduction",
+            "exp": "Le brouillon permet de tester plusieurs versions d'une phrase d'introduction avant de choisir la plus satisfaisante."
           }
         ]
       },
@@ -18459,6 +19326,177 @@
             ],
             "answer": 1,
             "exp": "Changer sans raison le prénom d'un même personnage crée une confusion majeure pour le lecteur, qui ne peut plus suivre clairement qui fait quoi dans l'histoire : la cohérence des noms des personnages est essentielle à la compréhension du récit."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Qu'est-ce qu'un texte « cohérent », selon cette leçon ?",
+            "choices": [
+              "Un texte très long, avec beaucoup de pages",
+              "Un texte dont les phrases s'enchaînent logiquement, sans contradiction, et que le lecteur peut suivre facilement",
+              "Un texte qui ne contient que des mots très difficiles",
+              "Un texte totalement dépourvu de ponctuation"
+            ],
+            "answer": 1,
+            "exp": "La cohérence d'un texte repose sur un enchaînement logique des phrases, sans contradiction, suivable par le lecteur."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pourquoi les connecteurs logiques (d'abord, donc, parce que...) participent-ils à la cohérence d'un texte ?",
+            "choices": [
+              "Ils n'ont jamais aucun rôle particulier dans la cohérence d'un texte",
+              "Ils montrent explicitement comment les idées s'articulent entre elles (temps, cause, conséquence)",
+              "Ils rendent toujours un texte plus confus et plus difficile à suivre",
+              "Ils remplacent complètement les phrases du texte, qui deviennent inutiles"
+            ],
+            "answer": 1,
+            "exp": "Les connecteurs logiques rendent explicites les liens entre les idées (temporels, causaux...), renforçant la cohérence du texte."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans un récit, tu commences par raconter au passé, puis une phrase passe soudainement au présent sans raison particulière. Que devrais-tu faire pour assurer la cohérence ?",
+            "choices": [
+              "Garder ce changement de temps sans aucune justification particulière",
+              "Corriger cette phrase pour revenir au même temps que le reste du récit, sauf si ce changement est volontaire et justifié",
+              "Réécrire tout le texte entièrement au présent dès le début, sans aucune réflexion",
+              "Ignorer complètement cette incohérence de temps verbal"
+            ],
+            "answer": 1,
+            "exp": "Un changement de temps verbal non justifié est une incohérence à corriger, en revenant au temps dominant du récit."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans un texte, un personnage est appelé « il » à plusieurs reprises, mais il n'est plus du tout clair, après plusieurs phrases avec deux personnages masculins, de qui ce pronom parle désormais. Quel problème cela illustre-t-il ?",
+            "choices": [
+              "Aucun problème, les pronoms n'ont jamais besoin d'être clairs pour le lecteur",
+              "Un problème de cohérence dans les reprises : le pronom « il » devient ambigu, car le lecteur ne peut plus identifier clairement à quel personnage il renvoie",
+              "Il fallait utiliser encore plus de pronoms « il » pour plus de clarté",
+              "Les reprises par pronom ne sont jamais un problème de cohérence"
+            ],
+            "answer": 1,
+            "exp": "Un pronom qui devient ambigu entre plusieurs personnages possibles crée un problème de cohérence dans les reprises."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il utile de se mettre « à la place d'un lecteur qui découvre le texte pour la première fois » pour vérifier sa cohérence ?",
+            "choices": [
+              "Ce n'est jamais utile, l'auteur sait toujours mieux que quiconque si son texte est cohérent",
+              "Parce que l'auteur connaît déjà toute l'histoire et peut inconsciemment « combler » les trous ou incohérences sans s'en rendre compte, alors qu'un vrai lecteur serait perdu face à ces mêmes problèmes",
+              "Parce que les lecteurs ne remarquent jamais aucune incohérence dans un texte",
+              "Parce que l'auteur ne doit jamais relire son propre texte après l'avoir écrit"
+            ],
+            "answer": 1,
+            "exp": "L'auteur, connaissant déjà toute l'histoire, peut ne pas remarquer des trous ou incohérences qu'un lecteur découvrant le texte percevrait immédiatement."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève écrit un texte où un personnage s'appelle « Léa » au début, puis « Sarah » à la moitié du texte, sans aucune explication, alors qu'il s'agit du même personnage. Quel est le problème ?",
+            "choices": [
+              "Aucun problème, les prénoms peuvent changer librement sans raison particulière",
+              "C'est une incohérence qui va perturber le lecteur, qui ne comprendra pas s'il s'agit du même personnage ou de quelqu'un d'autre : il faut garder le même prénom pour désigner le même personnage",
+              "Il fallait changer le prénom du personnage à chaque nouvelle phrase du texte",
+              "Les prénoms des personnages n'ont jamais aucune importance dans un récit"
+            ],
+            "answer": 1,
+            "exp": "Changer le nom d'un même personnage sans justification perturbe le lecteur et constitue une incohérence à éviter."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un récit raconté au passé peut basculer au présent sans aucune raison, sans que cela nuise à sa cohérence.",
+            "answer": false,
+            "exp": "Un tel changement non justifié nuit à la cohérence ; un changement de temps doit être volontaire et clair, par exemple pour un dialogue."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Les connecteurs logiques montrent explicitement comment les idées d'un texte s'articulent entre elles.",
+            "answer": true,
+            "exp": "C'est précisément le rôle des connecteurs logiques (d'abord, ensuite, parce que, donc...) décrit dans cette leçon."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un texte où les phrases s'enchaînent logiquement sans se contredire est dit : (un mot)",
+            "answer": "coherent",
+            "exp": "La cohérence désigne cet enchaînement logique et non contradictoire des idées dans un texte."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève relit son texte entièrement d'une traite en se mettant à la place d'un lecteur découvrant l'histoire pour la première fois, afin de repérer d'éventuelles incohérences. Que fait-il concrètement ?",
+            "choices": [
+              "Il perd son temps, cette méthode de relecture n'a jamais aucune utilité",
+              "Il applique exactement la méthode de vérification de cohérence recommandée par la leçon",
+              "Il réécrit intégralement son texte sans jamais chercher à le relire",
+              "Cette méthode de relecture ne concerne que l'orthographe, jamais la cohérence"
+            ],
+            "answer": 1,
+            "exp": "Se mettre à la place d'un lecteur découvrant le texte est exactement la méthode de vérification de cohérence recommandée."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi les reprises (pronoms, synonymes) doivent-elles rester cohérentes tout au long d'un texte, et pas seulement au début ?",
+            "choices": [
+              "Les reprises n'ont d'importance qu'au tout début d'un texte, jamais ensuite",
+              "Parce qu'un pronom ou un synonyme utilisé plus loin dans le texte doit toujours permettre au lecteur d'identifier clairement de qui ou de quoi il s'agit, sous peine de créer une confusion",
+              "Les reprises ne doivent jamais être identiques tout au long d'un même texte",
+              "Seul le premier mot utilisé pour désigner un personnage compte vraiment"
+            ],
+            "answer": 1,
+            "exp": "La clarté des reprises doit se maintenir tout au long du texte, pas seulement à son début, pour éviter toute confusion chez le lecteur."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense qu'un texte peut être considéré comme cohérent même s'il contient des contradictions, « tant que chaque phrase individuelle est bien écrite ». Que penser de cette idée ?",
+            "choices": [
+              "Il a raison, la qualité de chaque phrase individuelle suffit toujours à garantir la cohérence globale",
+              "Son idée est fausse : la cohérence concerne l'ensemble du texte (absence de contradictions, enchaînement logique), pas seulement la qualité de chaque phrase prise isolément",
+              "Les contradictions n'ont jamais aucun impact sur la cohérence d'un texte",
+              "Un texte contenant des contradictions est toujours plus intéressant à lire"
+            ],
+            "answer": 1,
+            "exp": "La cohérence s'évalue sur l'ensemble du texte (absence de contradictions, enchaînement logique), pas sur la seule qualité isolée de chaque phrase."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans un texte, un personnage est présenté comme vivant seul au début, puis une phrase mentionne soudainement « ses parents qui l'attendent à la maison », sans qu'ils aient été introduits avant. Quel type de problème cela illustre-t-il ?",
+            "choices": [
+              "Aucun problème, on peut introduire n'importe quel personnage à tout moment sans préparation",
+              "Un problème de cohérence : une information nouvelle (l'existence de parents) contredit ou surprend par rapport à ce qui avait été établi (vivre seul), sans transition ni explication",
+              "Il fallait au contraire ajouter encore plus de personnages non annoncés",
+              "Les informations nouvelles n'ont jamais besoin d'être cohérentes avec ce qui précède"
+            ],
+            "answer": 1,
+            "exp": "Introduire une information qui contredit ce qui a été établi plus tôt, sans transition, crée une incohérence narrative."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un texte alterne sans justification entre « le chat » et « le chien » pour désigner un seul et même animal présenté au début comme un chat. Quel problème cela pose-t-il ?",
+            "choices": [
+              "Aucun problème, varier les mots est toujours une bonne pratique quelle que soit la situation",
+              "Une incohérence grave : contrairement à une reprise nominale valide (synonymes désignant le même être), changer d'espèce animale sans explication contredit l'information initiale",
+              "Il fallait au contraire alterner encore plus entre différents noms d'animaux",
+              "Les noms d'animaux n'ont jamais besoin d'être cohérents dans un texte"
+            ],
+            "answer": 1,
+            "exp": "Contrairement à une reprise nominale valide, changer la nature même de l'être désigné (chat devenu chien) sans explication est une incohérence manifeste."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Le mot qui désigne l'enchaînement logique et non contradictoire des idées d'un texte est la : (un mot)",
+            "answer": "coherence",
+            "exp": "La cohérence d'un texte désigne cet enchaînement logique des idées, sans contradiction, que le lecteur peut suivre facilement."
           }
         ]
       },
@@ -18547,6 +19585,177 @@
             ],
             "answer": 1,
             "exp": "La révision multiple fait partie intégrante du processus d'écriture, même pour des auteurs expérimentés : la considérer comme un échec plutôt que comme une étape normale et bénéfique est une idée fausse sur le travail d'écriture."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quel aspect d'un texte faut-il généralement vérifier en premier lors d'une révision, avant l'orthographe précise ?",
+            "choices": [
+              "Uniquement la ponctuation, sans rien d'autre",
+              "Le sens global et la cohérence du texte",
+              "Uniquement la longueur totale du texte",
+              "Rien de particulier, tout doit être vérifié en même temps, sans aucun ordre"
+            ],
+            "answer": 1,
+            "exp": "La révision suit un ordre logique : d'abord le sens global et la cohérence, avant l'orthographe et la ponctuation précises."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pourquoi est-il utile de demander à un camarade de relire son texte ?",
+            "choices": [
+              "Ce n'est jamais utile de faire relire son texte par quelqu'un d'autre",
+              "Parce qu'un regard extérieur remarque parfois des points que l'auteur, trop proche de son propre texte, ne voit plus",
+              "Parce que le camarade va toujours réécrire le texte entièrement à la place de l'auteur",
+              "Parce que c'est strictement interdit de montrer son texte à quelqu'un d'autre"
+            ],
+            "answer": 1,
+            "exp": "Un regard extérieur permet de repérer des problèmes que l'auteur, trop familier avec son propre texte, ne remarque plus."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "En révisant ton texte, tu te demandes : « ce passage est-il vraiment utile à l'histoire ? » et tu réalises qu'un paragraphe n'apporte rien. Que peux-tu faire ?",
+            "choices": [
+              "Le garder quand même, sans aucune réflexion particulière",
+              "Envisager de le supprimer ou de le réécrire pour qu'il apporte vraiment quelque chose à l'histoire",
+              "Ajouter encore plus de paragraphes inutiles au texte",
+              "Ignorer complètement cette réflexion et ne rien changer"
+            ],
+            "answer": 1,
+            "exp": "Repérer un passage inutile et envisager de le supprimer ou de le réécrire est exactement la démarche critique recommandée en révision."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève relit son texte et se rend compte qu'une phrase est si longue et compliquée qu'il ne la comprend plus lui-même en la relisant. Que devrait-il faire ?",
+            "choices": [
+              "La laisser telle quelle, une phrase compliquée est toujours un signe de qualité",
+              "La simplifier ou la diviser en plusieurs phrases plus courtes et claires, pour que le sens soit mieux compris par le lecteur",
+              "Ajouter encore plus de complexité à cette phrase déjà difficile",
+              "Supprimer complètement toute phrase un peu longue du texte, par principe"
+            ],
+            "answer": 1,
+            "exp": "Simplifier ou diviser une phrase trop complexe pour en clarifier le sens est une révision pertinente de la construction des phrases."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi réviser un texte en plusieurs relectures successives (sens global, puis phrases, puis orthographe) est-il plus efficace que tout vérifier en une seule fois ?",
+            "choices": [
+              "Ce n'est jamais plus efficace, une seule relecture générale suffit toujours",
+              "Parce que se concentrer sur un seul aspect à la fois permet une attention plus précise à chaque niveau, plutôt que de tout mélanger et risquer de laisser passer des problèmes importants",
+              "Parce que plusieurs relectures prennent toujours moins de temps qu'une seule relecture globale",
+              "Parce que l'orthographe doit toujours être vérifiée en tout premier, avant le sens"
+            ],
+            "answer": 1,
+            "exp": "Se concentrer successivement sur un seul aspect à la fois permet une vérification plus précise qu'une relecture qui mélangerait tous les niveaux."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève considère que devoir réviser son texte plusieurs fois est un signe d'échec, « puisqu'un bon texte devrait être parfait du premier coup ». Que penser de cette idée ?",
+            "choices": [
+              "Il a raison, un bon texte est toujours parfait dès sa toute première version",
+              "Son idée est fausse : réviser plusieurs fois un texte est normal et même un signe de sérieux dans le travail d'écriture, y compris chez des écrivains expérimentés, pas un échec",
+              "La révision n'est jamais nécessaire pour produire un bon texte",
+              "Il faut toujours écrire sans jamais chercher à se relire ensuite"
+            ],
+            "answer": 1,
+            "exp": "Réviser plusieurs fois un texte est un signe de sérieux dans le travail d'écriture, pas un échec, même chez des auteurs expérimentés."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Il faut généralement vérifier le sens global d'un texte avant de se concentrer sur l'orthographe précise des mots.",
+            "answer": true,
+            "exp": "La révision suit un ordre logique : sens global et cohérence d'abord, puis construction des phrases, puis orthographe et ponctuation."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un regard extérieur (camarade, adulte) n'apporte jamais rien à la révision d'un texte, car seul l'auteur peut juger de la qualité de son texte.",
+            "answer": false,
+            "exp": "Au contraire, un regard extérieur repère souvent des points que l'auteur, trop proche de son texte, ne remarque plus."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Le travail de relecture approfondie d'un texte pour l'améliorer à plusieurs niveaux s'appelle la : (un mot)",
+            "answer": "revision",
+            "exp": "La révision est ce travail de relecture à plusieurs niveaux (sens, phrases, orthographe) qui peut amener à réécrire des passages."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève relit son texte trois fois : une fois pour vérifier le sens global, une fois pour la construction des phrases, une fois pour l'orthographe. Que fait-il concrètement ?",
+            "choices": [
+              "Il perd son temps, une seule relecture générale aurait toujours suffi",
+              "Il applique exactement la méthode de révision à plusieurs niveaux recommandée par la leçon",
+              "Il réécrit intégralement son texte à chaque relecture, sans aucune amélioration ciblée",
+              "Cette méthode de relectures successives n'a aucun lien avec la qualité finale du texte"
+            ],
+            "answer": 1,
+            "exp": "Réviser successivement le sens, la construction des phrases puis l'orthographe correspond exactement à la méthode recommandée."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi poser des questions critiques sur son propre texte (« Cette phrase est-elle claire ? », « Ce passage est-il utile ? ») est-il plus efficace qu'une simple relecture rapide sans questionnement ?",
+            "choices": [
+              "Ce n'est jamais plus efficace, une relecture rapide sans réflexion suffit toujours",
+              "Parce que se poser des questions précises pousse à évaluer activement chaque aspect du texte, plutôt que de le parcourir passivement sans vraiment chercher à l'améliorer",
+              "Poser des questions sur son texte n'a jamais aucun lien avec sa qualité finale",
+              "Une relecture rapide sans questionnement repère toujours plus de problèmes qu'une relecture active et critique"
+            ],
+            "answer": 1,
+            "exp": "Se poser des questions critiques précises engage une évaluation active du texte, plus efficace qu'une relecture passive et rapide."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense qu'une fois son texte relu une seule fois sans trouver d'erreur, il peut être certain qu'il n'y en a plus aucune. Quelle limite cette idée a-t-elle ?",
+            "choices": [
+              "Aucune limite, une seule relecture garantit toujours l'absence totale d'erreurs",
+              "Elle néglige que plusieurs relectures ciblées (sens, phrases, orthographe) et un regard extérieur permettent souvent de repérer des problèmes qu'une seule relecture rapide ne révèle pas",
+              "Il est impossible de rater une erreur lors d'une relecture, quelle que soit la méthode utilisée",
+              "Les relectures supplémentaires rendent toujours un texte moins bon qu'avant"
+            ],
+            "answer": 1,
+            "exp": "Une seule relecture rapide ne garantit pas l'absence d'erreurs ; plusieurs relectures ciblées et un regard extérieur sont plus fiables."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi la révision d'un texte peut-elle, dans certains cas, amener à réécrire un passage entier plutôt qu'à simplement corriger quelques mots ?",
+            "choices": [
+              "La révision ne peut jamais entraîner la réécriture d'un passage entier, seulement des corrections ponctuelles",
+              "Parce qu'un problème de sens global ou de cohérence découvert en révision peut nécessiter une restructuration plus profonde du passage concerné, pas seulement une correction de surface",
+              "Réécrire un passage entier est toujours interdit lors d'une révision",
+              "Seules les fautes d'orthographe peuvent être corrigées lors d'une révision, jamais le contenu"
+            ],
+            "answer": 1,
+            "exp": "Un problème profond de sens ou de cohérence peut nécessiter une réécriture complète d'un passage, au-delà de simples corrections ponctuelles."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "La révision d'un texte se fait généralement dans un ordre précis : d'abord le sens, puis les phrases, puis l'orthographe.",
+            "answer": true,
+            "exp": "C'est exactement l'ordre de révision recommandé par cette leçon, qui a du sens pédagogiquement."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un élève, après avoir révisé le sens global de son texte, s'aperçoit qu'une phrase reste maladroite même si elle est grammaticalement correcte. Que peut-il faire ?",
+            "choices": [
+              "Rien, une phrase grammaticalement correcte n'a jamais besoin d'être améliorée",
+              "Se demander s'il peut dire la même chose de façon plus intéressante ou plus claire, et reformuler la phrase si besoin",
+              "Supprimer complètement la phrase sans chercher à l'améliorer",
+              "Ajouter uniquement une virgule, sans toucher au reste de la phrase"
+            ],
+            "answer": 1,
+            "exp": "Se demander si on peut reformuler une phrase correcte mais maladroite de façon plus intéressante fait partie du travail de révision de la qualité des phrases."
           }
         ]
       },
