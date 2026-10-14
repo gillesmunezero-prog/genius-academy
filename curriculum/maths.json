@@ -19832,6 +19832,189 @@
             ],
             "answer": 1,
             "exp": "La mesure d'un angle ne dépend que de l'écart (l'ouverture) entre ses deux côtés, jamais de leur longueur : on peut parfaitement dessiner un angle très ouvert avec des petits traits courts, ou un angle très fermé avec de longs traits."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Un angle plus grand qu'un angle droit s'appelle :",
+            "choices": [
+              "Aigu",
+              "Obtus",
+              "Plat",
+              "Nul"
+            ],
+            "answer": 1,
+            "exp": "Un angle plus ouvert qu'un angle droit est un angle obtus."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Comment peut-on vérifier rapidement si un angle est exactement droit, sans rapporteur ?",
+            "choices": [
+              "En utilisant le coin d'une feuille ou une équerre comme référence",
+              "En devinant au hasard",
+              "En mesurant la longueur des côtés",
+              "En comptant le nombre de sommets"
+            ],
+            "answer": 0,
+            "exp": "Le coin d'une feuille (ou une équerre) forme un angle droit de référence, utilisable pour comparer."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un architecte compare le coin d'une pièce avec une équerre et remarque un petit écart. Que peut-on en conclure ?",
+            "choices": [
+              "Le coin est parfaitement droit",
+              "Le coin n'est probablement pas un angle exactement droit, il est légèrement aigu ou obtus",
+              "L'équerre est cassée",
+              "Il est impossible de tirer une conclusion"
+            ],
+            "answer": 1,
+            "exp": "Un écart visible avec l'équerre indique que l'angle n'est pas exactement droit."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Deux angles semblent identiques sur un dessin. Comment vérifier précisément s'ils ont la même ouverture ?",
+            "choices": [
+              "En mesurant la longueur de leurs côtés",
+              "En superposant l'un sur l'autre (par calque) ou en utilisant un rapporteur pour comparer leur ouverture exacte",
+              "En comptant le nombre de sommets",
+              "Il est impossible de comparer deux angles"
+            ],
+            "answer": 1,
+            "exp": "La longueur des côtés n'a pas d'importance pour l'ouverture d'un angle ; la superposition ou le rapporteur donnent une comparaison fiable."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la méthode de superposition (papier calque) permet-elle de comparer deux angles de façon fiable ?",
+            "choices": [
+              "Elle n'est jamais fiable",
+              "Parce qu'elle permet de voir directement si l'ouverture d'un angle correspond exactement à celle de l'autre, indépendamment de la longueur de leurs côtés",
+              "Superposer deux angles change toujours leur ouverture",
+              "Il n'existe aucune méthode fiable pour comparer des angles"
+            ],
+            "answer": 1,
+            "exp": "La superposition révèle directement si les ouvertures correspondent, sans être influencée par la longueur des côtés dessinés."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense qu'un angle dessiné avec des côtés plus LONGS est automatiquement un angle plus GRAND (plus ouvert). Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "La longueur des côtés ne change pas l'ouverture de l'angle : deux angles de même ouverture restent identiques même si leurs côtés ont des longueurs différentes",
+              "Les côtés courts donnent toujours des angles plus grands",
+              "Un angle n'a jamais de côtés"
+            ],
+            "answer": 1,
+            "exp": "L'ouverture d'un angle (sa taille) est indépendante de la longueur de ses côtés : seul l'écart entre les deux côtés compte."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "La taille (ouverture) d'un angle ne dépend pas de la longueur de ses côtés dessinés.",
+            "answer": true,
+            "exp": "Seul l'écart angulaire entre les deux côtés détermine la taille de l'angle, pas leur longueur."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un angle de 45° est-il aigu, droit ou obtus ?",
+            "choices": [
+              "Aigu (plus petit que 90°)",
+              "Droit (exactement 90°)",
+              "Obtus (plus grand que 90°)",
+              "Plat (180°)"
+            ],
+            "answer": 0,
+            "exp": "45° est inférieur à 90° (angle droit) : c'est un angle aigu."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un rapporteur, avec sa graduation de 0° à 180°, permet-il de mesurer précisément n'importe quel angle, pas seulement les angles droits ?",
+            "choices": [
+              "Un rapporteur ne mesure que les angles droits",
+              "Parce que sa graduation continue (de 0° à 180°) couvre toutes les ouvertures possibles d'un angle, permettant une mesure précise, quelle que soit sa taille",
+              "Un rapporteur ne sert à rien pour mesurer un angle",
+              "Il est impossible de mesurer un angle avec précision"
+            ],
+            "answer": 1,
+            "exp": "La graduation continue du rapporteur couvre toute la gamme des ouvertures possibles, permettant une mesure précise pour n'importe quel angle."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un angle de 180° s'appelle :",
+            "choices": [
+              "Un angle droit",
+              "Un angle aigu",
+              "Un angle plat",
+              "Un angle obtus"
+            ],
+            "answer": 2,
+            "exp": "Un angle de 180° (une ligne droite) s'appelle un angle plat."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève compare deux angles en mesurant la distance entre les extrémités de leurs côtés (comme une corde), plutôt que l'ouverture elle-même. Quel est le problème ?",
+            "choices": [
+              "Il n'y a aucun problème avec cette méthode",
+              "Cette distance dépend aussi de la longueur des côtés, pas seulement de l'ouverture : deux angles de même ouverture mais de côtés différents donneraient des distances différentes, ce qui fausse la comparaison",
+              "Cette méthode est toujours la plus précise",
+              "La distance entre les extrémités ne dépend jamais de la longueur des côtés"
+            ],
+            "answer": 1,
+            "exp": "Cette distance dépend à la fois de l'ouverture ET de la longueur des côtés, ce qui peut fausser la comparaison si les côtés ne sont pas de même longueur."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un angle obtus peut-il mesurer 170° ?",
+            "choices": [
+              "Oui, car 170° est entre 90° et 180°",
+              "Non, un angle obtus ne dépasse jamais 100°",
+              "Non, 170° est toujours un angle plat",
+              "Oui, mais seulement si c'est un angle droit"
+            ],
+            "answer": 0,
+            "exp": "Un angle obtus est compris entre 90° et 180° : 170° en fait bien partie."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de degrés mesure un angle droit ?",
+            "answer": "90",
+            "exp": "Un angle droit mesure exactement 90°."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi deux angles aigus peuvent-ils avoir des tailles très différentes, tout en étant tous les deux qualifiés d'« aigus » ?",
+            "choices": [
+              "Tous les angles aigus ont exactement la même taille",
+              "Parce que « aigu » signifie seulement « plus petit que 90° », une catégorie qui regroupe toute une plage de tailles possibles, de presque 0° à presque 90°",
+              "Un angle aigu mesure toujours exactement 45°",
+              "Il n'existe qu'un seul angle aigu possible"
+            ],
+            "answer": 1,
+            "exp": "« Aigu » désigne une catégorie large (de 0° à 90°, exclus), regroupant des angles de tailles très variées, pas une taille unique."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un angle de 90° exactement est-il aigu, droit ou obtus ?",
+            "choices": [
+              "Aigu",
+              "Droit",
+              "Obtus",
+              "Plat"
+            ],
+            "answer": 1,
+            "exp": "90° est précisément la définition d'un angle droit, ni aigu ni obtus."
           }
         ]
       },
@@ -19914,6 +20097,171 @@
             ],
             "answer": 1,
             "exp": "Quand les minutes de l'horaire d'arrivée (05) sont plus petites que celles du départ (20), on ne peut pas simplement soustraire : il faut découper le calcul en passant par l'heure pile (14h00), ce qui donne ici 40+5=45 minutes, pas 15."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de minutes y a-t-il dans 3 heures ?",
+            "answer": "180",
+            "exp": "3×60=180 minutes."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un film commence à 20h00 et dure 2h15. À quelle heure se termine-t-il ?",
+            "choices": [
+              "22h15",
+              "21h15",
+              "22h00",
+              "23h15"
+            ],
+            "answer": 0,
+            "exp": "20h00+2h15=22h15."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un bus part à 7h40 et met 1h35 pour arriver à destination. À quelle heure arrive-t-il ?",
+            "choices": [
+              "9h15",
+              "9h75",
+              "8h75",
+              "9h05"
+            ],
+            "answer": 0,
+            "exp": "7h40+1h35 : 40+35=75min=1h15 ; 7h+1h+1h15=9h15."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi « 10h65 » n'est-il jamais une façon correcte d'écrire une heure, même si le calcul en minutes donne ce résultat ?",
+            "choices": [
+              "C'est en fait une écriture correcte",
+              "Parce que les minutes ne peuvent jamais dépasser 59 : 65 minutes doivent être converties en 1h05, donc il faut écrire 11h05, pas 10h65",
+              "Il faut toujours garder le nombre de minutes tel qu'il sort du calcul",
+              "10h65 est une heure valide dans certains pays"
+            ],
+            "answer": 1,
+            "exp": "Les minutes vont de 0 à 59 ; 65 min = 1h05min, donc le résultat doit être reporté sur l'heure : 10h+1h05=11h05, jamais « 10h65 »."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour calculer la durée entre 10h15 et 11h40, un élève fait directement 40 − 15 = 25 minutes, en oubliant l'heure entière entre les deux. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, 25 minutes est la bonne durée",
+              "Il a oublié l'heure complète entre 10h15 et 11h15 : la vraie durée est 1h00 (de 10h15 à 11h15) + 25 min (de 11h15 à 11h40) = 1h25",
+              "Il fallait additionner 40 et 15",
+              "La durée entre ces deux horaires est de 55 minutes"
+            ],
+            "answer": 1,
+            "exp": "Entre 10h15 et 11h40, il y a 1 heure complète (10h15→11h15) plus 25 minutes (11h15→11h40), soit 1h25 au total, pas seulement 25 minutes."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Dans le calcul de durées, 60 minutes complètes doivent toujours être reportées comme 1 heure supplémentaire.",
+            "answer": true,
+            "exp": "C'est la règle de base de la conversion : 60 minutes forment exactement 1 heure."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de minutes séparent 14h10 et 15h25 ?",
+            "answer": "75",
+            "exp": "De 14h10 à 15h10, 60 min ; de 15h10 à 15h25, 15 min ; total 75 min."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un cours dure 55 minutes et commence à 9h30. À quelle heure se termine-t-il ?",
+            "choices": [
+              "10h25",
+              "9h85",
+              "10h15",
+              "9h55"
+            ],
+            "answer": 0,
+            "exp": "9h30+55min : 30+55=85min=1h25 ; 9h+1h25=10h25."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi faut-il être particulièrement vigilant quand une durée fait traverser le passage de minuit (23h59 à 00h00) ?",
+            "choices": [
+              "Il n'y a aucune vigilance particulière à avoir",
+              "Parce qu'après 23h59, l'heure repart à 00h00, pas à 24h00 : il faut comprendre que la journée recommence, ce qui peut compliquer le calcul si on ne fait pas attention",
+              "Minuit n'existe pas dans le calcul des durées",
+              "Il faut toujours ajouter 24 heures après minuit"
+            ],
+            "answer": 1,
+            "exp": "Après 23h59, l'heure redémarre à 00h00 (nouvelle journée) : il faut bien gérer ce passage pour calculer correctement une durée qui le traverse."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un vol décolle à 22h50 et dure 2h20. À quelle heure atterrit-il (en tenant compte du passage de minuit) ?",
+            "choices": [
+              "1h10 (le lendemain)",
+              "0h70",
+              "23h10",
+              "1h70"
+            ],
+            "answer": 0,
+            "exp": "22h50+2h20 : 50+20=70min=1h10 ; 22h+2h+1h10=25h10, soit 1h10 le lendemain."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien d'heures et de minutes font 130 minutes (réponds juste le nombre d'heures entières) ?",
+            "answer": "2",
+            "exp": "130 minutes = 2h10, soit 2 heures complètes et 10 minutes."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un élève calcule que de 16h45 à 17h20 il s'écoule « 75 minutes moins 45 », soit 30 minutes. A-t-il raison ?",
+            "choices": [
+              "Oui, la durée est bien de 35 minutes (il a dit 30 par erreur, mais la méthode est bonne)",
+              "Non, la méthode entière est fausse",
+              "Oui, exactement 30 minutes comme il le dit",
+              "Non, la durée est de 1h20"
+            ],
+            "answer": 0,
+            "exp": "De 16h45 à 17h20 : 15 min jusqu'à 17h00, puis 20 min jusqu'à 17h20, soit 35 min au total (sa méthode de calcul direct contient une petite erreur arithmétique, mais l'approche par calcul de minutes est la bonne idée)."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il souvent plus simple de calculer une durée en passant par l'heure pile intermédiaire (par exemple de 9h40 à 11h15, passer par 10h00 et 11h00) plutôt que de soustraire directement ?",
+            "choices": [
+              "Ce n'est jamais plus simple ainsi",
+              "Parce que décomposer en petites étapes (jusqu'à l'heure pile, puis heures complètes, puis minutes restantes) évite les erreurs de conversion liées au système en base 60 des minutes",
+              "Il faut toujours soustraire directement sans décomposer",
+              "Passer par l'heure pile change le résultat final"
+            ],
+            "answer": 1,
+            "exp": "Décomposer le calcul en étapes (jusqu'à l'heure pile, puis les heures complètes, puis le reste) évite les erreurs liées à la base 60 des minutes."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de minutes séparent 18h50 et 19h05 ?",
+            "answer": "15",
+            "exp": "De 18h50 à 19h00, 10 min ; de 19h00 à 19h05, 5 min ; total 15 min."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un spectacle commence à 21h15 et se termine à 23h00. Combien de temps a-t-il duré ?",
+            "choices": [
+              "1h45",
+              "1h15",
+              "2h15",
+              "105 minutes et 1h45 sont deux façons justes de l'exprimer"
+            ],
+            "answer": 3,
+            "exp": "21h15 à 23h00 : 1h45, soit aussi 105 minutes (équivalent)."
           }
         ]
       },
@@ -20002,6 +20350,183 @@
             ],
             "answer": 1,
             "exp": "Avoir 4 côtés égaux est une condition nécessaire mais pas suffisante pour être un carré : il faut aussi vérifier les angles. Sans angles droits, une figure à 4 côtés égaux est un losange, pas un carré."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quelle est la différence principale entre un rectangle et un parallélogramme ?",
+            "choices": [
+              "Un rectangle a toujours des angles droits, un parallélogramme n'en a pas forcément",
+              "Un parallélogramme a toujours 5 côtés",
+              "Il n'y a aucune différence",
+              "Un rectangle n'a jamais 4 côtés"
+            ],
+            "answer": 0,
+            "exp": "Le rectangle est un parallélogramme particulier qui a en plus 4 angles droits."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Le diamètre d'un cercle est :",
+            "choices": [
+              "La moitié du rayon",
+              "Le double du rayon",
+              "Égal au rayon",
+              "Sans rapport avec le rayon"
+            ],
+            "answer": 1,
+            "exp": "Le diamètre est toujours le double du rayon."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un cercle a un rayon de 7 cm. Quel est son diamètre ?",
+            "choices": [
+              "14 cm",
+              "3,5 cm",
+              "7 cm",
+              "21 cm"
+            ],
+            "answer": 0,
+            "exp": "Le diamètre est le double du rayon : 7×2=14 cm."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi peut-on dire qu'un rectangle est un cas particulier de parallélogramme, mais qu'un parallélogramme n'est pas toujours un rectangle ?",
+            "choices": [
+              "Ce n'est pas vrai, ce sont deux formes totalement différentes",
+              "Parce qu'un rectangle respecte déjà toutes les règles d'un parallélogramme (côtés opposés parallèles) en plus d'avoir des angles droits ; un parallélogramme quelconque n'a pas forcément ces angles droits",
+              "Rectangle et parallélogramme sont juste deux noms pour la même forme",
+              "Un parallélogramme a toujours plus de côtés qu'un rectangle"
+            ],
+            "answer": 1,
+            "exp": "Un rectangle remplit toutes les conditions d'un parallélogramme (côtés opposés parallèles), en plus d'avoir 4 angles droits : c'est donc un cas particulier."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève affirme qu'une figure à 4 côtés dont les côtés opposés sont parallèles est forcément un rectangle. Face à un parallélogramme penché (sans angle droit), quelle est son erreur ?",
+            "choices": [
+              "Il a raison, c'est forcément un rectangle",
+              "Il oublie de vérifier les angles : avoir des côtés opposés parallèles suffit pour être un parallélogramme, mais il faut en plus des angles droits pour être un rectangle",
+              "Un parallélogramme penché n'existe pas",
+              "Tous les parallélogrammes sont automatiquement des rectangles"
+            ],
+            "answer": 1,
+            "exp": "Des côtés opposés parallèles définissent un parallélogramme ; il faut en plus des angles droits pour que ce soit spécifiquement un rectangle."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Le rayon d'un cercle relie le centre à n'importe quel point du cercle.",
+            "answer": true,
+            "exp": "C'est la définition du rayon : la distance (constante) entre le centre et le bord du cercle."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un cercle a un diamètre de 18 cm. Quel est son rayon ?",
+            "choices": [
+              "9 cm",
+              "36 cm",
+              "18 cm",
+              "6 cm"
+            ],
+            "answer": 0,
+            "exp": "Le rayon est la moitié du diamètre : 18÷2=9 cm."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi tous les rayons d'un même cercle ont-ils exactement la même longueur ?",
+            "choices": [
+              "Ce n'est jamais le cas, les rayons varient",
+              "Parce qu'un cercle est défini comme l'ensemble des points situés à une distance constante (le rayon) d'un centre : par définition, tous ces rayons sont donc égaux",
+              "Les rayons d'un cercle sont toujours différents selon la direction",
+              "Un cercle n'a qu'un seul rayon possible"
+            ],
+            "answer": 1,
+            "exp": "Un cercle est par définition l'ensemble des points à distance constante (le rayon) du centre : tous les rayons sont donc égaux par construction."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un losange a 4 côtés égaux mais pas forcément d'angles droits. En quoi diffère-t-il d'un carré ?",
+            "choices": [
+              "Un losange est toujours identique à un carré",
+              "Un carré est un losange qui a en plus 4 angles droits ; un losange quelconque n'a pas forcément ces angles droits",
+              "Un losange a toujours plus de côtés qu'un carré",
+              "Il n'existe aucune différence entre les deux"
+            ],
+            "answer": 1,
+            "exp": "Un carré est un cas particulier de losange (4 côtés égaux) qui a en plus 4 angles droits ; un losange quelconque ne les a pas forcément."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un cercle a un rayon de 5 cm. Quel est son diamètre (en cm) ?",
+            "answer": "10",
+            "exp": "Le diamètre est le double du rayon : 5×2=10 cm."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un trapèze a-t-il toujours 4 côtés parallèles deux à deux, comme un parallélogramme ?",
+            "choices": [
+              "Oui, toujours",
+              "Non, un trapèze a seulement UNE paire de côtés parallèles, pas deux comme un parallélogramme",
+              "Oui, mais seulement si c'est un trapèze isocèle",
+              "Un trapèze n'a jamais de côtés parallèles"
+            ],
+            "answer": 1,
+            "exp": "Un trapèze se définit par une seule paire de côtés parallèles, contrairement au parallélogramme qui en a deux paires."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la relation « diamètre = 2 × rayon » est-elle toujours vraie, quel que soit le cercle ?",
+            "choices": [
+              "Ce n'est vrai que pour certains cercles particuliers",
+              "Parce que le diamètre traverse le cercle de part en part en passant par le centre, ce qui revient exactement à parcourir deux fois le rayon (du centre à chaque bord)",
+              "Le diamètre n'a aucun rapport avec le rayon",
+              "Cette relation ne s'applique qu'aux grands cercles"
+            ],
+            "answer": 1,
+            "exp": "Le diamètre traverse le cercle en passant par le centre, ce qui équivaut exactement à deux rayons mis côte à côte (centre→bord, puis centre→bord opposé)."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Combien de côtés a un pentagone ?",
+            "choices": [
+              "4",
+              "5",
+              "6",
+              "3"
+            ],
+            "answer": 1,
+            "exp": "Un pentagone a 5 côtés (penta = cinq)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un triangle équilatéral a-t-il tous ses côtés égaux ?",
+            "choices": [
+              "Oui, ses 3 côtés sont égaux",
+              "Non, aucun côté n'est égal",
+              "Oui, mais seulement 2 côtés sur 3",
+              "Un triangle équilatéral n'existe pas"
+            ],
+            "answer": 0,
+            "exp": "« Équilatéral » signifie précisément que les 3 côtés sont égaux."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un cercle a un diamètre de 20 cm. Quel est son rayon (en cm) ?",
+            "answer": "10",
+            "exp": "Le rayon est la moitié du diamètre : 20÷2=10 cm."
           }
         ]
       },
@@ -20090,6 +20615,183 @@
             ],
             "answer": 1,
             "exp": "Un angle tracé « à vue d'œil » peut sembler correct mais être en réalité légèrement différent de 90° : utiliser l'équerre garantit la précision nécessaire, surtout quand les étapes suivantes de la construction dépendent de cet angle exact."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pour tracer un cercle de centre O et de rayon 6 cm, où doit-on placer la pointe du compas ?",
+            "choices": [
+              "Au point O (le centre)",
+              "N'importe où sur la feuille",
+              "Sur le bord du futur cercle",
+              "Il n'y a pas besoin de placer la pointe précisément"
+            ],
+            "answer": 0,
+            "exp": "La pointe du compas se place exactement au centre O avant d'ouvrir l'écartement au rayon voulu."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pourquoi est-il utile de lire tout un programme de construction avant de commencer à tracer ?",
+            "choices": [
+              "Ce n'est jamais utile de lire avant de commencer",
+              "Pour avoir une vue d'ensemble de la figure à construire et éviter de mal interpréter une étape isolée sans connaître la suite",
+              "Il faut toujours commencer à tracer sans lire le programme",
+              "Lire avant de commencer rend toujours la construction plus difficile"
+            ],
+            "answer": 1,
+            "exp": "Une vue d'ensemble du programme aide à mieux comprendre chaque étape dans son contexte, limitant les erreurs d'interprétation."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un programme dit : « Trace le segment [AB] de 8 cm, puis trace le cercle de centre A passant par B. » Que doit mesurer le rayon de ce cercle ?",
+            "choices": [
+              "8 cm (la distance AB)",
+              "4 cm",
+              "16 cm",
+              "Impossible à savoir"
+            ],
+            "answer": 0,
+            "exp": "Le rayon du cercle de centre A passant par B est exactement la distance AB, soit 8 cm."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un programme de construction demande de tracer un carré de 5 cm de côté avec l'équerre et la règle. Quelle est la première étape logique ?",
+            "choices": [
+              "Tracer directement les 4 côtés sans ordre précis",
+              "Tracer un premier côté de 5 cm à la règle, puis construire les angles droits successifs à l'équerre",
+              "Utiliser uniquement le compas",
+              "Mesurer uniquement les diagonales en premier"
+            ],
+            "answer": 1,
+            "exp": "On commence par un côté de référence mesuré à la règle, puis on construit les angles droits successifs avec l'équerre."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi une petite imprécision dans une des premières étapes d'une construction géométrique peut-elle rendre toute la figure finale fausse ?",
+            "choices": [
+              "Une imprécision au début n'a jamais de conséquence sur la suite",
+              "Parce que les étapes suivantes s'appuient souvent sur les tracés précédents : une erreur de départ se propage et s'amplifie potentiellement à chaque étape suivante",
+              "Les erreurs de construction se corrigent toujours automatiquement",
+              "Il est impossible de faire une erreur en géométrie"
+            ],
+            "answer": 1,
+            "exp": "Les étapes suivantes s'appuient sur les précédentes : une erreur initiale se propage et peut s'amplifier au fil des étapes suivantes."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève trace un angle droit « à vue d'œil », sans utiliser son équerre, en pensant que ça suffit. Quel risque prend-il ?",
+            "choices": [
+              "Aucun risque, l'œil est toujours assez précis",
+              "L'angle obtenu risque de ne pas être exactement droit, ce qui peut fausser toute la suite de la construction qui s'appuie sur cet angle précis",
+              "Un angle tracé à vue d'œil est toujours parfaitement droit",
+              "Il n'existe aucun moyen de vérifier un angle"
+            ],
+            "answer": 1,
+            "exp": "Sans outil précis, l'angle tracé « à vue d'œil » risque de ne pas être exactement droit, ce qui peut compromettre la précision de toute la construction suivante."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Dans une construction géométrique, chaque étape doit être réalisée avec précision, car les étapes suivantes s'appuient souvent sur elle.",
+            "answer": true,
+            "exp": "La précision de chaque étape est essentielle, car les erreurs peuvent se propager et s'amplifier dans les étapes suivantes."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour reporter une longueur déjà tracée à un autre endroit de la figure sans la remesurer à la règle, quel outil est le plus pratique ?",
+            "choices": [
+              "La règle, en remesurant chaque fois",
+              "Le compas, en gardant le même écartement entre les deux utilisations",
+              "Une gomme",
+              "Un crayon de couleur différente"
+            ],
+            "answer": 1,
+            "exp": "Le compas garde un écartement fixe, permettant de reporter une longueur sans avoir à la remesurer à la règle."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, pour tracer un triangle équilatéral de 6 cm de côté, le compas est-il particulièrement utile en plus de la règle ?",
+            "choices": [
+              "Le compas ne sert à rien pour cette construction",
+              "Parce qu'il permet de tracer deux arcs de cercle de rayon 6 cm depuis chaque extrémité du premier côté, leur intersection donnant exactement le troisième sommet à la bonne distance des deux premiers",
+              "La règle seule suffit toujours pour tout tracer précisément",
+              "Un triangle équilatéral ne peut jamais être construit précisément"
+            ],
+            "answer": 1,
+            "exp": "Le compas permet de tracer deux arcs de rayon égal à la longueur du côté depuis chaque extrémité : leur intersection donne le troisième sommet, exactement à la bonne distance des deux autres."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève, en suivant un programme de construction, fait l'étape 3 avant l'étape 2 car il trouve ça « plus logique ». Quel est le risque ?",
+            "choices": [
+              "Aucun risque, l'ordre n'a jamais d'importance",
+              "L'étape 3 pourrait avoir besoin d'un élément créé à l'étape 2 (un point, une ligne) : sans cet élément, l'étape 3 pourrait être impossible à réaliser correctement",
+              "Changer l'ordre rend toujours la construction plus rapide sans conséquence",
+              "Il est toujours possible de faire les étapes dans n'importe quel ordre sans problème"
+            ],
+            "answer": 1,
+            "exp": "Une étape ultérieure peut dépendre d'un élément créé à une étape précédente ; inverser l'ordre peut rendre cette étape impossible ou incorrecte à réaliser."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pour tracer un cercle de rayon exactement égal à la moitié d'un segment [AB] déjà tracé, que doit-on faire d'abord ?",
+            "choices": [
+              "Mesurer AB à la règle, diviser par 2, puis régler le compas à cette valeur",
+              "Ouvrir le compas au hasard",
+              "Tracer directement le cercle sans mesurer",
+              "Utiliser uniquement l'équerre"
+            ],
+            "answer": 0,
+            "exp": "Il faut mesurer AB, diviser par 2 pour connaître le rayon souhaité, puis régler précisément l'écartement du compas à cette valeur."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Avec quel outil trace-t-on une ligne parfaitement droite entre deux points ? (un seul mot)",
+            "answer": "regle",
+            "exp": "La règle sert à tracer des lignes droites précises entre deux points."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi suivre scrupuleusement un programme de construction écrit est-il plus fiable que de reproduire une figure uniquement « à l'œil » en la regardant ?",
+            "choices": [
+              "Reproduire à l'œil est toujours aussi précis",
+              "Parce qu'un programme écrit donne des instructions précises (mesures exactes, outils à utiliser) permettant de reconstruire fidèlement la figure, alors qu'une estimation visuelle contient toujours une marge d'erreur",
+              "Un programme écrit n'apporte jamais plus de précision",
+              "Il est impossible de suivre un programme de construction"
+            ],
+            "answer": 1,
+            "exp": "Un programme écrit donne des instructions précises et mesurables, contrairement à une estimation visuelle qui comporte toujours une marge d'erreur."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un programme demande de tracer la perpendiculaire à un segment [AB] passant par son milieu. Quel outil est indispensable pour l'angle droit ?",
+            "choices": [
+              "Le compas seul",
+              "L'équerre",
+              "Une gomme",
+              "Un crayon de couleur"
+            ],
+            "answer": 1,
+            "exp": "L'équerre est l'outil spécialement conçu pour tracer un angle droit précis."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Le compas permet de tracer des cercles mais aussi de reporter des longueurs égales sans les remesurer.",
+            "answer": true,
+            "exp": "Le compas garde un écartement fixe, ce qui en fait un outil pratique pour reporter une même longueur plusieurs fois."
           }
         ]
       },
