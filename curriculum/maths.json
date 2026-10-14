@@ -17621,6 +17621,165 @@
             ],
             "answer": 1,
             "exp": "La question porte sur la recette totale de la journée (matin ET après-midi) : s'arrêter après n'avoir traité qu'une partie des données (les billets du matin seulement) ne répond pas complètement à la question posée."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Une boulangerie vend 56 croissants le samedi et 34 le dimanche. Combien de croissants vendus en deux jours ?",
+            "answer": "90",
+            "exp": "56+34=90."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Avec 90 croissants vendus à 2 € chacun, quelle est la recette totale (en euros) ?",
+            "answer": "180",
+            "exp": "90×2=180€."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un apiculteur récolte 95 kg de miel. Il en vend 60 kg au marché, et met le reste en pots de 5 kg. Combien de pots complets peut-il remplir ?",
+            "choices": [
+              "7",
+              "6",
+              "8",
+              "35"
+            ],
+            "answer": 0,
+            "exp": "95−60=35 kg restants, puis 35÷5=7 pots complets."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un cinéma vend 150 billets le matin et 210 l'après-midi, à 8€ chacun. Quelle est la recette totale ?",
+            "choices": [
+              "2880 €",
+              "1680 €",
+              "1200 €",
+              "3600 €"
+            ],
+            "answer": 0,
+            "exp": "150+210=360 billets, puis 360×8=2880€."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il utile de noter clairement chaque résultat intermédiaire avec une petite explication, plutôt que de calculer directement le résultat final sans détail ?",
+            "choices": [
+              "Ce n'est jamais utile de noter les étapes",
+              "Parce que cela permet de vérifier chaque étape séparément, de repérer une erreur plus facilement, et de montrer sa démarche de raisonnement",
+              "Noter les étapes rend toujours le calcul plus lent sans aucun bénéfice",
+              "Il faut toujours calculer tout d'un coup sans étape intermédiaire"
+            ],
+            "answer": 1,
+            "exp": "Noter chaque étape permet de vérifier la cohérence du raisonnement et de repérer plus facilement une erreur éventuelle."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour le problème du théâtre (120 + 95 places, puis × 9 €), un élève calcule 120 × 9 = 1080 € et s'arrête là, en oubliant les 95 places restantes. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, 1080€ est le résultat final",
+              "Il doit d'abord additionner 120+95=215 places, puis multiplier par 9€ : 215×9=1935€, pas s'arrêter après la première partie seulement",
+              "1080€ est déjà le bon résultat final",
+              "Il fallait soustraire 95 de 120"
+            ],
+            "answer": 1,
+            "exp": "Il faut traiter toutes les étapes du problème : d'abord additionner les deux groupes de places (120+95=215), puis multiplier par le prix (215×9=1935€)."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Dans un problème à plusieurs étapes, le résultat d'une étape sert souvent de donnée pour l'étape suivante.",
+            "answer": true,
+            "exp": "C'est la nature même d'un problème en plusieurs étapes : les calculs s'enchaînent logiquement."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un marchand achète 40 cageots à 12€ chacun, puis en revend 25 à 20€ chacun. Combien a-t-il dépensé pour l'achat (en euros) ?",
+            "answer": "480",
+            "exp": "40×12=480€ dépensés à l'achat."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un magasin reçoit 300 jouets. Il en vend 180 la première semaine, puis reçoit 50 nouveaux jouets. Combien de jouets a-t-il maintenant ?",
+            "choices": [
+              "170",
+              "130",
+              "230",
+              "350"
+            ],
+            "answer": 0,
+            "exp": "300−180=120, puis 120+50=170."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi faut-il toujours respecter l'ordre chronologique des événements dans un problème à plusieurs étapes, plutôt que de faire les calculs dans n'importe quel ordre ?",
+            "choices": [
+              "L'ordre n'a jamais d'importance",
+              "Parce que chaque événement modifie la situation précédente : traiter les événements dans le désordre donnerait un résultat incohérent avec l'histoire racontée",
+              "Il faut toujours commencer par la plus grande opération, peu importe l'histoire",
+              "Les problèmes à plusieurs étapes n'ont jamais d'ordre chronologique"
+            ],
+            "answer": 1,
+            "exp": "Chaque événement modifie la situation précédente ; respecter l'ordre chronologique garantit un résultat cohérent avec le déroulement réel des faits."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un fermier a 250 œufs. Il en casse 15, puis en vend 180 parmi les restants. Combien d'œufs lui reste-t-il ?",
+            "choices": [
+              "55",
+              "65",
+              "445",
+              "50"
+            ],
+            "answer": 0,
+            "exp": "250−15=235, puis 235−180=55."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un club de sport a 80 adhérents. 25 nouveaux s'inscrivent, puis 10 démissionnent. Combien d'adhérents maintenant ?",
+            "answer": "95",
+            "exp": "80+25=105, puis 105−10=95."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pour résoudre un problème complexe, pourquoi est-il utile de le reformuler en plusieurs sous-questions plus simples ?",
+            "choices": [
+              "Ce n'est jamais utile de décomposer un problème",
+              "Parce que décomposer un problème complexe en sous-questions simples rend chaque étape plus facile à résoudre, avant d'assembler les résultats",
+              "Il faut toujours résoudre un problème complexe en une seule étape",
+              "Décomposer un problème le rend toujours plus difficile"
+            ],
+            "answer": 1,
+            "exp": "Décomposer un problème complexe en sous-questions plus simples facilite la résolution de chaque étape avant d'assembler les résultats pour la réponse finale."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Une usine produit 500 jouets par jour. Elle fonctionne 6 jours, puis s'arrête 2 jours. Combien de jouets produits pendant les 6 jours de fonctionnement ?",
+            "choices": [
+              "3000",
+              "2500",
+              "3500",
+              "4000"
+            ],
+            "answer": 0,
+            "exp": "500×6=3000 jouets produits en 6 jours."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un magasin a 600€ en caisse. Il encaisse 350€ de ventes, puis paie 200€ de fournisseur. Combien reste-t-il en caisse ?",
+            "answer": "750",
+            "exp": "600+350=950, puis 950−200=750."
           }
         ]
       },
@@ -17697,6 +17856,171 @@
             ],
             "answer": 1,
             "exp": "« Fois moins » demande une division (par le nombre indiqué), pas une soustraction de ce nombre : 80 ÷ 4 = 20 € est la bonne réponse, très différente des 76 € obtenus par une soustraction incorrecte."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Nina a 8 autocollants. Zoé en a 4 fois plus. Combien Zoé a-t-elle d'autocollants ?",
+            "answer": "32",
+            "exp": "8×4=32."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un stylo coûte 18 €. Un crayon coûte 3 fois moins cher. Combien coûte le crayon ?",
+            "answer": "6",
+            "exp": "18÷3=6€."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une ferme a 360 moutons. Une autre ferme a 4 fois moins de moutons. Combien de moutons la deuxième ferme a-t-elle ?",
+            "choices": [
+              "90",
+              "1440",
+              "356",
+              "364"
+            ],
+            "answer": 0,
+            "exp": "360÷4=90 moutons."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Léa a 12 ans. Son grand-père a 6 fois son âge. Quel âge a le grand-père ?",
+            "choices": [
+              "72 ans",
+              "18 ans",
+              "2 ans",
+              "6 ans"
+            ],
+            "answer": 0,
+            "exp": "12×6=72 ans."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il essentiel de bien distinguer « 5 billes de plus » (comparaison additive) et « 5 fois plus de billes » (comparaison multiplicative) ?",
+            "choices": [
+              "Ces deux expressions signifient toujours la même chose",
+              "Parce qu'elles conduisent à des calculs totalement différents : une addition pour « de plus », une multiplication pour « fois plus », donnant des résultats très différents",
+              "Il n'existe aucune différence entre ces deux expressions",
+              "« De plus » signifie toujours une multiplication"
+            ],
+            "answer": 1,
+            "exp": "« De plus » appelle une addition de l'écart, tandis que « fois plus » appelle une multiplication : confondre les deux donne un résultat complètement différent et faux."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour « Un scooter coûte 5 fois moins cher qu'une moto à 2500 € », un élève calcule 2500 − 5 = 2495 €. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "« 5 fois moins cher » signale une DIVISION par 5, pas une soustraction de 5 : le bon calcul est 2500÷5=500€",
+              "Il fallait multiplier par 5",
+              "2500−5 donne le bon résultat pour ce type de problème"
+            ],
+            "answer": 1,
+            "exp": "« Fois moins » signale une division (par 5 ici), pas une simple soustraction du nombre 5 : 2500÷5=500€ est le bon calcul."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "« 3 fois plus » signale une multiplication, tandis que « 3 de plus » signale une addition.",
+            "answer": true,
+            "exp": "Ce sont deux types de comparaison différents : multiplicative pour « fois », additive pour « de plus »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un immeuble a 8 étages. Un autre immeuble a 3 fois plus d'étages. Combien d'étages a le second immeuble ?",
+            "choices": [
+              "24",
+              "11",
+              "5",
+              "27"
+            ],
+            "answer": 0,
+            "exp": "8×3=24 étages."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la comparaison multiplicative (« fois plus », « fois moins ») est-elle particulièrement utile pour comparer des très grandes différences, contrairement à la comparaison additive ?",
+            "choices": [
+              "Elle n'est jamais plus utile dans ce cas",
+              "Parce qu'elle exprime un rapport proportionnel (par exemple « 10 fois plus »), qui reste compréhensible même pour des écarts énormes, alors qu'un simple « +1000 » donne moins d'intuition sur l'ampleur relative",
+              "La comparaison additive est toujours plus utile",
+              "Il n'existe aucune différence entre les deux types de comparaison"
+            ],
+            "answer": 1,
+            "exp": "Un rapport multiplicatif (« 10 fois plus ») donne une intuition claire de l'ampleur relative, même pour de très grands écarts, contrairement à une simple différence additive."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Une boîte contient 15 bonbons. Une autre boîte en contient 6 fois plus. Combien de bonbons la deuxième boîte contient-elle ?",
+            "choices": [
+              "90",
+              "21",
+              "9",
+              "96"
+            ],
+            "answer": 0,
+            "exp": "15×6=90 bonbons."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un vélo coûte 240 €. Une trottinette coûte 4 fois moins cher. Combien coûte la trottinette (en euros) ?",
+            "answer": "60",
+            "exp": "240÷4=60€."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour « Max a 4 fois plus de livres que Léa, qui en a 7 », un élève calcule 7+4=11 livres pour Max. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "« 4 fois plus » signale une multiplication, pas une addition : le bon calcul est 7×4=28 livres pour Max, pas 11",
+              "7+4 est la bonne méthode ici",
+              "Il fallait soustraire 4 de 7"
+            ],
+            "answer": 1,
+            "exp": "« 4 fois plus » appelle une multiplication (7×4=28), pas une addition du nombre 4 : l'élève confond comparaison additive et multiplicative."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un jardin mesure 80 m². Un autre jardin, plus petit, mesure 5 fois moins. Quelle est la surface du second jardin ?",
+            "choices": [
+              "16 m²",
+              "75 m²",
+              "400 m²",
+              "85 m²"
+            ],
+            "answer": 0,
+            "exp": "80÷5=16 m²."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, face à un problème de comparaison, faut-il toujours repérer avec précision le mot clé (« plus », « moins », « fois ») pour choisir la bonne opération ?",
+            "choices": [
+              "Les mots clés n'ont jamais d'importance dans un problème",
+              "Parce que ces mots indiquent précisément le type de comparaison (additive ou multiplicative) et donc l'opération à utiliser : une erreur de lecture peut conduire à une opération totalement fausse",
+              "Il faut toujours utiliser la même opération quel que soit le mot clé",
+              "Les mots clés indiquent toujours une addition, sans exception"
+            ],
+            "answer": 1,
+            "exp": "Les mots clés signalent précisément le type de comparaison (additive ou multiplicative), déterminant l'opération correcte à utiliser."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un sac pèse 3 kg. Un autre sac pèse 7 fois plus. Combien pèse l'autre sac (en kg) ?",
+            "answer": "21",
+            "exp": "3×7=21 kg."
           }
         ]
       },
@@ -17773,6 +18097,177 @@
             ],
             "answer": 1,
             "exp": "Un nombre de boîtes doit être un nombre entier dans la réalité : la réponse décimale brute (7,4) doit être interprétée selon le contexte du problème (combien de boîtes complètes, ou combien de boîtes au total pour tout ranger), jamais laissée telle quelle."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un restaurant propose 3 plats et 2 boissons. Combien de combinaisons plat + boisson un client peut-il choisir ?",
+            "answer": "6",
+            "exp": "3×2=6 combinaisons possibles."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "52 livres doivent être rangés dans des boîtes de 8 livres maximum. Combien de boîtes complètes de 8 peut-on remplir ?",
+            "answer": "6",
+            "exp": "52÷8=6 reste 4 : 6 boîtes complètes."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour un petit-déjeuner, on propose 3 jus et 4 céréales. Combien de combinaisons jus + céréale différentes sont possibles ?",
+            "choices": [
+              "12",
+              "7",
+              "3",
+              "4"
+            ],
+            "answer": 0,
+            "exp": "3×4=12 combinaisons possibles."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "107 bouteilles doivent être rangées dans des casiers de 12 maximum. Combien de casiers complets de 12 peut-on remplir ?",
+            "choices": [
+              "8",
+              "9",
+              "107",
+              "12"
+            ],
+            "answer": 0,
+            "exp": "107÷12=8 reste 11 : 8 casiers complets."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi peut-on remplacer la construction complète d'un tableau (ou d'un arbre) de toutes les combinaisons possibles par une simple multiplication ?",
+            "choices": [
+              "Ce n'est jamais équivalent, il faut toujours tout lister",
+              "Parce que chaque choix d'une première catégorie peut se combiner avec chaque choix de l'autre catégorie, ce qui donne exactement le produit du nombre de choix de chaque catégorie",
+              "Multiplier donne toujours un résultat différent de la liste complète",
+              "Il est impossible de compter les combinaisons sans tout lister"
+            ],
+            "answer": 1,
+            "exp": "Chaque choix de la première catégorie se combine avec chaque choix de la seconde : le nombre total de combinaisons est exactement le produit des deux nombres de choix."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour ranger 52 livres par lots de 8, un élève calcule 52 ÷ 8 = 6,5 et répond qu'il faut « 6,5 boîtes ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, 6,5 boîtes est la bonne réponse",
+              "On ne peut pas avoir une demi-boîte dans la réalité : il faut arrondir à l'entier inférieur (6 boîtes complètes), le reste (4 livres) nécessitant éventuellement une boîte supplémentaire incomplète",
+              "6,5 boîtes est une réponse parfaitement acceptable",
+              "Il fallait arrondir à 7 boîtes directement sans réfléchir"
+            ],
+            "answer": 1,
+            "exp": "Dans un contexte concret (des boîtes réelles), le résultat décimal n'a pas de sens : il faut garder la partie entière (6 boîtes complètes), le reste étant géré séparément."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Pour compter le nombre total de combinaisons entre deux catégories de choix indépendants, on multiplie le nombre de choix de chaque catégorie.",
+            "answer": true,
+            "exp": "C'est le principe multiplicatif du dénombrement : chaque choix d'une catégorie se combine avec chaque choix de l'autre."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un magasin propose 5 couleurs de tee-shirts en 4 tailles différentes. Combien de combinaisons couleur+taille possibles ?",
+            "choices": [
+              "20",
+              "9",
+              "5",
+              "4"
+            ],
+            "answer": 0,
+            "exp": "5×4=20 combinaisons possibles."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, dans un problème d'optimisation (comme ranger le maximum d'objets dans des boîtes), le reste d'une division a-t-il souvent une conséquence pratique importante ?",
+            "choices": [
+              "Le reste n'a jamais d'importance pratique",
+              "Parce que le reste représente les objets qui ne rentrent pas dans un lot complet, ce qui peut nécessiter une boîte supplémentaire (même partiellement remplie) selon la situation",
+              "Le reste est toujours égal à zéro dans ce type de problème",
+              "Il est toujours possible d'ignorer complètement le reste"
+            ],
+            "answer": 1,
+            "exp": "Le reste représente les éléments qui ne forment pas un lot complet, ce qui a souvent une conséquence pratique (une boîte de plus nécessaire, même partiellement remplie)."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pour un menu avec 2 entrées, 3 plats et 2 desserts, combien de menus complets (entrée+plat+dessert) différents sont possibles ?",
+            "choices": [
+              "12",
+              "7",
+              "6",
+              "2"
+            ],
+            "answer": 0,
+            "exp": "2×3×2=12 menus complets possibles."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "95 chaises doivent être rangées en rangées de 10 maximum. Combien de rangées complètes de 10 peut-on faire ?",
+            "answer": "9",
+            "exp": "95÷10=9 reste 5 : 9 rangées complètes."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève compte les combinaisons de 3 chapeaux et 2 écharpes en additionnant 3+2=5 au lieu de multiplier. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, 5 est le bon résultat",
+              "Compter des combinaisons de deux catégories indépendantes (chapeau ET écharpe) nécessite une multiplication (3×2=6), pas une addition qui ne compterait que les objets séparément",
+              "L'addition est toujours la bonne méthode pour ce type de problème",
+              "3+2 et 3×2 donnent toujours le même résultat"
+            ],
+            "answer": 1,
+            "exp": "Compter des combinaisons de deux catégories indépendantes nécessite une multiplication, pas une addition qui ne ferait que compter les objets séparément sans les combiner."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Une bibliothèque a 230 livres à ranger en piles de 15 maximum. Combien de piles complètes de 15 peut-on faire, et combien de livres restent hors pile complète ?",
+            "choices": [
+              "15 piles complètes, 5 livres restants",
+              "15 piles complètes, 15 livres restants",
+              "14 piles complètes, 20 livres restants",
+              "16 piles complètes, 0 livre restant"
+            ],
+            "answer": 0,
+            "exp": "230÷15=15 reste 5 : 15 piles complètes, 5 livres hors pile."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un problème de dénombrement (compter des combinaisons) et un problème d'optimisation (ranger le maximum avec le moins de reste) utilisent-ils des opérations différentes (multiplication vs division) ?",
+            "choices": [
+              "Ils utilisent toujours la même opération",
+              "Parce qu'ils répondent à des questions différentes : combiner des choix indépendants (multiplication) n'est pas la même chose que répartir un total en groupes égaux (division)",
+              "La multiplication et la division sont toujours interchangeables",
+              "Il n'existe aucune différence entre ces deux types de problèmes"
+            ],
+            "answer": 1,
+            "exp": "Ces deux types de problèmes répondent à des questions différentes : combiner des choix (multiplication) versus répartir un total (division), nécessitant des opérations distinctes."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un glacier propose 6 parfums et 3 tailles de cornet. Combien de choix différents un client peut-il faire ?",
+            "choices": [
+              "18",
+              "9",
+              "6",
+              "3"
+            ],
+            "answer": 0,
+            "exp": "6×3=18 choix possibles."
           }
         ]
       },
@@ -17849,6 +18344,165 @@
             ],
             "answer": 1,
             "exp": "Pour « défaire » une multiplication et isoler le nombre caché, il faut utiliser l'opération inverse, la division (56 ÷ 8 = 7), pas refaire la même multiplication qui ne fait qu'éloigner encore plus du résultat recherché."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Trouve le nombre mystère : 24 + ? = 50",
+            "answer": "26",
+            "exp": "50−24=26."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Trouve le nombre mystère : 7 × ? = 63",
+            "answer": "9",
+            "exp": "63÷7=9."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un commerçant avait des pommes. Il en a vendu 38, il lui en reste 52. Combien en avait-il au départ ? (égalité : ? − 38 = 52)",
+            "choices": [
+              "90",
+              "14",
+              "38",
+              "52"
+            ],
+            "answer": 0,
+            "exp": "52+38=90 : il faut additionner pour retrouver le nombre de départ."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Trouve le nombre mystère dans : ? − 17 = 35",
+            "choices": [
+              "52",
+              "18",
+              "35",
+              "17"
+            ],
+            "answer": 0,
+            "exp": "35+17=52 : on utilise l'opération inverse (addition) pour retrouver le nombre de départ."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi utilise-t-on toujours l'opération INVERSE pour retrouver un nombre caché dans une égalité ?",
+            "choices": [
+              "Ce n'est jamais l'opération inverse qu'il faut utiliser",
+              "Parce que l'opération inverse « annule » l'opération visible dans l'égalité, permettant d'isoler et de retrouver exactement le nombre caché",
+              "Il faut toujours utiliser la même opération que celle visible dans l'égalité",
+              "Il est impossible de retrouver un nombre caché dans une égalité"
+            ],
+            "answer": 1,
+            "exp": "L'opération inverse annule celle présente dans l'égalité, ce qui permet d'isoler et de retrouver précisément le nombre mystère."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour résoudre 9 × ? = 72, un élève calcule ? = 72 × 9 = 648. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "L'opération inverse de la multiplication est la DIVISION, pas une nouvelle multiplication : il fallait calculer 72÷9=8, pas 72×9",
+              "72×9 est la bonne méthode ici",
+              "Il fallait soustraire 9 de 72"
+            ],
+            "answer": 1,
+            "exp": "L'inverse d'une multiplication est une division : 72÷9=8 est le bon calcul pour isoler le nombre mystère, pas une nouvelle multiplication."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Pour une égalité du type ? + a = b, le nombre mystère se trouve en calculant b − a.",
+            "answer": true,
+            "exp": "L'opération inverse de l'addition (la soustraction) permet d'isoler le nombre caché."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Trouve le nombre mystère : ? ÷ 4 = 15",
+            "answer": "60",
+            "exp": "15×4=60 (opération inverse de la division)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un fermier avait des vaches. Après en avoir acheté 12 de plus, il en a maintenant 47. Combien en avait-il au départ ? (égalité : ? + 12 = 47)",
+            "choices": [
+              "35",
+              "59",
+              "12",
+              "47"
+            ],
+            "answer": 0,
+            "exp": "47−12=35 : on utilise l'opération inverse (soustraction) pour retrouver le nombre de départ."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, pour une égalité avec une multiplication (comme ? × 6 = 48), faut-il diviser plutôt que soustraire pour trouver le nombre mystère ?",
+            "choices": [
+              "Il faut toujours soustraire, quelle que soit l'opération visible",
+              "Parce que l'opération inverse de la multiplication est spécifiquement la division, et non la soustraction qui est l'inverse de l'addition",
+              "Soustraire fonctionne toujours aussi bien que diviser dans ce cas",
+              "Il n'existe aucune règle précise pour ce type d'égalité"
+            ],
+            "answer": 1,
+            "exp": "Chaque opération a son propre inverse : multiplication↔division, addition↔soustraction. Utiliser le bon inverse est indispensable."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Trouve le nombre mystère : ? − 29 = 14",
+            "answer": "43",
+            "exp": "14+29=43."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour résoudre ? ÷ 5 = 12, un élève calcule ? = 12 ÷ 5 = 2,4. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, 2,4 est le bon résultat",
+              "L'inverse de la division est la multiplication : il fallait calculer 12×5=60, pas diviser à nouveau par 5",
+              "12÷5 est la bonne opération ici",
+              "Il fallait soustraire 5 de 12"
+            ],
+            "answer": 1,
+            "exp": "L'inverse d'une division est une multiplication : 12×5=60 est le bon calcul, pas une nouvelle division."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un magasin avait des articles en stock. Après en avoir vendu 85, il lui en reste 142. Combien en avait-il au départ ?",
+            "choices": [
+              "227",
+              "57",
+              "142",
+              "85"
+            ],
+            "answer": 0,
+            "exp": "142+85=227 articles au départ."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il utile de vérifier son résultat en remplaçant le nombre mystère trouvé dans l'égalité d'origine ?",
+            "choices": [
+              "Ce n'est jamais utile de vérifier",
+              "Parce que cela permet de confirmer que l'égalité est bien respectée avec ce nombre, garantissant que le calcul de l'opération inverse a été fait correctement",
+              "Remplacer le nombre change toujours l'égalité d'origine",
+              "Il est impossible de vérifier une égalité à trou"
+            ],
+            "answer": 1,
+            "exp": "Remplacer le nombre trouvé dans l'égalité d'origine permet de vérifier que l'égalité reste vraie, confirmant la validité du calcul."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Trouve le nombre mystère : 18 × ? = 90",
+            "answer": "5",
+            "exp": "90÷18=5."
           }
         ]
       },
@@ -17925,6 +18579,171 @@
             ],
             "answer": 1,
             "exp": "Un programme de calcul doit être exécuté dans l'ordre exact de ses instructions : inverser l'ordre (multiplier avant d'ajouter, au lieu d'ajouter avant de multiplier) change complètement le résultat final, ici 21 au lieu de 17."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Dans la suite 3, 6, 9, 12..., quelle règle permet de passer d'un terme au suivant (réponds en un mot comme 'ajouter3')",
+            "answer": "ajouter3",
+            "exp": "On ajoute 3 à chaque fois pour passer au terme suivant."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Programme : « choisis un nombre, ajoute 5, multiplie par 2. » Applique-le au nombre 3 : quel est le résultat ?",
+            "answer": "16",
+            "exp": "3+5=8, puis 8×2=16."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "La suite 1, 3, 9, 27, 81... suit quelle règle pour passer d'un terme au suivant ?",
+            "choices": [
+              "Ajouter 2",
+              "Multiplier par 3",
+              "Ajouter 8",
+              "Multiplier par 2"
+            ],
+            "answer": 1,
+            "exp": "Chaque terme est multiplié par 3 pour obtenir le suivant (1×3=3, 3×3=9, etc.)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "La suite 100, 90, 80, 70... suit quelle règle ?",
+            "choices": [
+              "Ajouter 10",
+              "Soustraire 10",
+              "Multiplier par 10",
+              "Diviser par 10"
+            ],
+            "answer": 1,
+            "exp": "On soustrait 10 à chaque terme pour obtenir le suivant."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi faut-il vérifier qu'une règle trouvée fonctionne pour TOUS les termes consécutifs d'une suite, et pas seulement les deux premiers ?",
+            "choices": [
+              "Vérifier seulement les deux premiers termes suffit toujours",
+              "Parce qu'une règle qui fonctionne seulement pour les deux premiers termes pourrait être fausse ou incomplète pour le reste de la suite : il faut la confirmer sur plusieurs termes",
+              "Il n'est jamais nécessaire de vérifier une règle trouvée",
+              "Toutes les suites ont exactement la même règle"
+            ],
+            "answer": 1,
+            "exp": "Une règle testée sur seulement deux termes pourrait être une coïncidence ; la vérifier sur plusieurs termes consécutifs confirme sa validité pour toute la suite."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour le programme « choisis un nombre, ajoute 4, multiplie le résultat par 2 », appliqué au nombre 6, un élève calcule 6×2=12 puis 12+4=16 au lieu de suivre l'ordre indiqué. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, l'ordre des opérations n'a pas d'importance",
+              "Il a inversé l'ordre des étapes du programme : il fallait d'abord ajouter 4 (6+4=10), puis multiplier par 2 (10×2=20), pas l'inverse",
+              "16 est le bon résultat du programme",
+              "Il fallait multiplier avant d'ajouter dans tous les cas"
+            ],
+            "answer": 1,
+            "exp": "L'ordre des étapes d'un programme de calcul doit être respecté : d'abord ajouter 4 (6+4=10), puis multiplier par 2 (10×2=20), donnant 20, pas 16."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Dans une suite de nombres, la même règle doit s'appliquer entre chaque terme et le suivant, tout au long de la suite.",
+            "answer": true,
+            "exp": "C'est ce qui définit une suite régulière : une règle constante applicable d'un terme à l'autre."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Dans la suite 2, 4, 8, 16..., quel est le terme suivant ?",
+            "answer": "32",
+            "exp": "Chaque terme est multiplié par 2 : 16×2=32."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Programme : « choisis un nombre, multiplie par 3, soustrais 5. » Applique-le au nombre 4. Quel est le résultat ?",
+            "choices": [
+              "7",
+              "17",
+              "2",
+              "12"
+            ],
+            "answer": 0,
+            "exp": "4×3=12, puis 12−5=7."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi l'ordre des opérations dans un programme de calcul (par exemple « ajoute puis multiplie » contre « multiplie puis ajoute ») peut-il donner des résultats très différents ?",
+            "choices": [
+              "L'ordre ne change jamais le résultat final",
+              "Parce que l'addition et la multiplication ne sont pas interchangeables dans leur ordre d'application : appliquer d'abord l'une ou l'autre change la valeur intermédiaire, donc le résultat final",
+              "Les deux ordres donnent toujours exactement le même résultat",
+              "Un programme de calcul n'a jamais d'ordre précis à respecter"
+            ],
+            "answer": 1,
+            "exp": "Changer l'ordre des opérations (addition puis multiplication, ou l'inverse) modifie la valeur intermédiaire, ce qui peut donner un résultat final très différent."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans la suite 50, 45, 40, 35..., quel est le terme suivant ?",
+            "choices": [
+              "30",
+              "25",
+              "40",
+              "45"
+            ],
+            "answer": 0,
+            "exp": "On soustrait 5 à chaque terme : 35−5=30."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Programme : « choisis un nombre, double-le, ajoute 1. » Applique-le à 7. Quel est le résultat ?",
+            "answer": "15",
+            "exp": "7×2=14, puis 14+1=15."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pour retrouver la règle d'une suite comme 7, 11, 15, 19..., quelle démarche est la plus fiable ?",
+            "choices": [
+              "Deviner au hasard sans vérifier",
+              "Calculer l'écart entre plusieurs paires de termes consécutifs (11−7=4, 15−11=4, 19−15=4) pour confirmer une règle constante",
+              "Regarder uniquement le premier terme",
+              "Il est impossible de trouver une règle pour cette suite"
+            ],
+            "answer": 1,
+            "exp": "Calculer l'écart entre plusieurs paires consécutives permet de confirmer qu'une règle (ici +4) est bien constante tout au long de la suite."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un programme de calcul avec plusieurs étapes (comme « ajoute 2, puis multiplie par 3, puis soustrais 1 ») doit-il toujours être suivi dans l'ordre exact indiqué ?",
+            "choices": [
+              "L'ordre des étapes n'a jamais d'importance",
+              "Parce que chaque étape transforme le résultat de l'étape précédente : changer l'ordre changerait les valeurs intermédiaires et donc le résultat final",
+              "Il est toujours possible de faire les étapes dans n'importe quel ordre sans conséquence",
+              "Un programme de calcul n'a jamais plusieurs étapes"
+            ],
+            "answer": 1,
+            "exp": "Chaque étape transforme le résultat de l'étape précédente ; modifier l'ordre change les valeurs intermédiaires et donc potentiellement le résultat final."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans la suite 1, 4, 9, 16, 25..., quelle particularité remarquable ont ces nombres (indice : multiplie chaque position par elle-même) ?",
+            "choices": [
+              "Ce sont tous des multiples de 4",
+              "Ce sont les carrés des nombres entiers (1×1, 2×2, 3×3...)",
+              "Ce sont tous des nombres pairs",
+              "Ce sont des multiples de 5"
+            ],
+            "answer": 1,
+            "exp": "Ces nombres sont les carrés des entiers consécutifs : 1=1×1, 4=2×2, 9=3×3, 16=4×4, 25=5×5."
           }
         ]
       },
