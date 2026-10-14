@@ -32,6 +32,15 @@ REQUIRED_KEYS = ['id','title','emoji','badge','module','chapter','skills','diffi
 # Content explicitly authorized to change (patched on purpose, not a regression)
 ALLOWED_CONTENT_CHANGES = {'anglais-6E-20'}
 
+# Full (matiere, niveau) rewrites explicitly authorized by the user : le contenu
+# pedagogique de ces niveaux a ete entierement reecrit a partir du programme
+# scolaire officiel (Eduscol, licence ouverte etalab-2.0), avec un nouveau
+# decoupage module/chapitre. La comparaison avec la baseline de production se
+# limite donc, pour ces niveaux, aux controles structurels (36 lecons, ids
+# uniques maths-XXX-01..36 / francais-XXX-01..36, aucune lecon disparue) sans
+# comparer le contenu pedagogique a l'ancienne version.
+ALLOWED_LEVEL_REWRITES = {('maths', 'CE1'), ('maths', 'CM1'), ('francais', 'CE1'), ('francais', 'CM1')}
+
 def fail(msg, errors):
     errors.append(msg)
 
@@ -118,7 +127,7 @@ def validate_subject(subj, errors):
             if missing:
                 fail(f"[{subj}] {lvl} : lecons disparues vs production : {missing}", errors)
             for lid, bl in basearr.items():
-                if lid in ALLOWED_CONTENT_CHANGES:
+                if lid in ALLOWED_CONTENT_CHANGES or (subj, lvl) in ALLOWED_LEVEL_REWRITES:
                     continue
                 nl = newarr.get(lid)
                 if not nl:
