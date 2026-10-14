@@ -1,0 +1,28 @@
+name: Deploy to Firebase Hosting on merge
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Write Firebase service account key
+        run: |
+          echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT_GENIUS_ACADEMY_FBB8D }}' > "$RUNNER_TEMP/firebase-service-account.json"
+
+      - name: Deploy to Firebase Hosting
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/firebase-service-account.json
+        run: npx firebase-tools@13 deploy --only hosting --project genius-academy-fbb8d --non-interactive
+
+      - name: Clean up service account key
+        if: always()
+        run: rm -f "$RUNNER_TEMP/firebase-service-account.json"
