@@ -14013,6 +14013,171 @@
             ],
             "answer": 1,
             "exp": "Comparer deux nombres de même longueur demande de continuer chiffre par chiffre, de gauche à droite, jusqu'à trouver une différence : s'arrêter après les deux premiers chiffres identiques ne suffit pas pour conclure à l'égalité."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Dans le nombre 783 912, quelle est la valeur du chiffre 9 (en chiffres, pas en lettres) ?",
+            "answer": "900",
+            "exp": "Le 9 est en position des centaines dans la tranche des mille (912) : 9 centaines = 900."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Comment se lit le nombre 540 207 ?",
+            "choices": [
+              "Cinq cent quarante mille deux cent sept",
+              "Cinquante-quatre mille deux cent sept",
+              "Cinq millions quarante mille deux cent sept",
+              "Cinq cent quatre mille vingt-sept"
+            ],
+            "answer": 0,
+            "exp": "540 207 se lit « cinq cent quarante mille deux cent sept »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une usine produit 128 450 pièces en janvier et 128 540 en février. Quel mois a la production la plus élevée ?",
+            "choices": [
+              "Janvier",
+              "Février",
+              "Les deux mois sont égaux",
+              "Impossible à savoir"
+            ],
+            "answer": 1,
+            "exp": "128 540 > 128 450 (5 centaines contre 4) : février a la production la plus élevée."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi séparer un grand nombre en tranches de 3 chiffres (depuis la droite) aide-t-il à le lire plus facilement ?",
+            "choices": [
+              "Cela ne change rien à la lecture",
+              "Parce que chaque tranche de 3 chiffres correspond à une unité de groupement (unités simples, milliers, millions), ce qui structure la lecture du nombre",
+              "Les tranches de 3 chiffres rendent toujours la lecture plus difficile",
+              "Il est interdit de séparer les grands nombres en tranches"
+            ],
+            "answer": 1,
+            "exp": "Chaque tranche de 3 chiffres correspond à un niveau de groupement (unités, milliers, millions), ce qui facilite la lecture et la compréhension du grand nombre."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève compare 915 230 et 915 320 en ne regardant que les trois premiers chiffres (915=915) et conclut qu'ils sont égaux. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, ils sont égaux",
+              "Il doit continuer la comparaison aux chiffres suivants : 320 (dans le 2e nombre) a plus de centaines que 230, donc 915 320 > 915 230",
+              "Les deux nombres sont toujours différents de toute façon",
+              "Il fallait comparer uniquement le dernier chiffre"
+            ],
+            "answer": 1,
+            "exp": "Même avec les premiers chiffres identiques, il faut continuer la comparaison rang par rang jusqu'à trouver une différence : ici aux centaines (3>2)."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Dans le système décimal, chaque groupe de 3 chiffres (en partant de la droite) représente une unité, un millier, ou un million.",
+            "answer": true,
+            "exp": "C'est la structure de notre système de numération : unités, milliers, millions, chacun regroupés par tranches de 3 chiffres."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de centaines de mille y a-t-il dans 500 000 ?",
+            "answer": "5",
+            "exp": "500 000 = 5 centaines de mille."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un stade a 2 tribunes : l'une de 45 320 places, l'autre de 38 900. Combien de places en tout ?",
+            "choices": [
+              "84 220",
+              "83 220",
+              "84 320",
+              "82 220"
+            ],
+            "answer": 1,
+            "exp": "45 320 + 38 900 = 84 220."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un nombre comme 1 000 000 nécessite-t-il un nouveau nom (« million ») plutôt que de continuer avec « mille mille » ?",
+            "choices": [
+              "Ce n'est jamais nécessaire d'avoir un nouveau nom",
+              "Parce que le système de numération introduit un nouveau mot à chaque fois qu'on atteint un groupement de 1000 fois plus grand, pour simplifier la lecture des très grands nombres",
+              "« Mille mille » est en fait le terme officiellement utilisé",
+              "Un million n'a pas de nom particulier"
+            ],
+            "answer": 1,
+            "exp": "Le système de numération introduit un nouveau mot (million, milliard...) à chaque nouveau groupement de 1000 fois plus grand, simplifiant la lecture des grands nombres."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève écrit « trois cent mille vingt » comme 300 020 et comme 30 020 selon les cas, en confondant les deux formes. Laquelle est correcte ?",
+            "choices": [
+              "30 020",
+              "300 020",
+              "Les deux sont justes",
+              "Aucune des deux"
+            ],
+            "answer": 1,
+            "exp": "« Trois cent mille » = 300 000, puis + 20 = 300 020 ; 30 020 correspondrait à « trente mille vingt »."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Dans 629 000, combien de milliers complets y a-t-il ?",
+            "answer": "629",
+            "exp": "629 000 contient exactement 629 milliers."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Range du plus petit au plus grand : 450 230 ; 405 230 ; 450 320.",
+            "choices": [
+              "405 230, 450 230, 450 320",
+              "450 230, 405 230, 450 320",
+              "450 320, 450 230, 405 230",
+              "405 230, 450 320, 450 230"
+            ],
+            "answer": 0,
+            "exp": "405 230 a moins de centaines de mille (4 vs 4, mais dizaines de mille 0 vs 5) donc le plus petit ; puis 450 230 < 450 320 (centaines 2<3)."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, pour comparer 2 grands nombres de même nombre de chiffres, suffit-il de comparer rang par rang en partant de la gauche (le rang le plus élevé) ?",
+            "choices": [
+              "Ce n'est jamais suffisant",
+              "Parce que le rang le plus à gauche a toujours le plus grand poids : dès qu'une différence apparaît à un rang, elle suffit à déterminer lequel est le plus grand, sans avoir besoin d'aller plus loin",
+              "Il faut toujours comparer tous les chiffres jusqu'au bout",
+              "Le rang le plus à droite est toujours le plus important"
+            ],
+            "answer": 1,
+            "exp": "Le rang le plus à gauche porte le plus grand poids : une différence trouvée là suffit à trancher, sans besoin d'examiner les rangs suivants."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien d'unités de mille y a-t-il dans 7 millions (en milliers, donne juste le nombre) ?",
+            "answer": "7000",
+            "exp": "7 000 000 = 7000 milliers."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un rapport affirme 1 250 000 vues pour une vidéo. Comment se lit ce nombre ?",
+            "choices": [
+              "Un million deux cent cinquante mille",
+              "Douze millions cinq cent mille",
+              "Cent vingt-cinq mille",
+              "Un million vingt-cinq mille"
+            ],
+            "answer": 0,
+            "exp": "1 250 000 se lit « un million deux cent cinquante mille »."
           }
         ]
       },
@@ -14101,6 +14266,189 @@
             ],
             "answer": 1,
             "exp": "Être un diviseur exige une division exacte, sans reste du tout : un résultat « à peu près » ne suffit pas. 50 ÷ 7 = 7 reste 1, donc 7 n'est pas un diviseur de 50."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Lequel de ces nombres est un multiple de 7 ?",
+            "choices": [
+              "30",
+              "35",
+              "40",
+              "45"
+            ],
+            "answer": 1,
+            "exp": "35 = 7×5 : c'est un multiple de 7."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "3 est-il un diviseur de 48 ?",
+            "choices": [
+              "Oui, car 48÷3=16 (division exacte)",
+              "Non, car 48 n'est pas divisible par 3",
+              "Oui, mais seulement partiellement",
+              "Impossible à savoir"
+            ],
+            "answer": 0,
+            "exp": "48÷3=16 exactement, sans reste : 3 est bien un diviseur de 48."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un professeur veut répartir équitablement 54 cahiers en piles de 9. Est-ce possible sans qu'il en reste ?",
+            "choices": [
+              "Oui, car 54 est un multiple de 9 (54÷9=6)",
+              "Non, il en restera toujours",
+              "Oui, mais seulement avec des piles de 10",
+              "Impossible à savoir sans calculer"
+            ],
+            "answer": 0,
+            "exp": "54÷9=6 exactement : 54 est un multiple de 9, la répartition est possible sans reste."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un commerçant a 72 fruits à ranger en cageots de 8. Combien de cageots complets peut-il remplir ?",
+            "choices": [
+              "8",
+              "9",
+              "72",
+              "64"
+            ],
+            "answer": 1,
+            "exp": "72÷8=9 cageots complets."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi dire « 15 est un multiple de 3 » et « 3 est un diviseur de 15 » décrit-il en fait la même relation entre ces deux nombres ?",
+            "choices": [
+              "Ce sont deux relations totalement différentes et sans rapport",
+              "Parce que ces deux phrases décrivent la même situation vue dans deux sens différents : 15 est le résultat de 3 multiplié par un entier, et réciproquement 3 divise exactement 15",
+              "Il n'existe aucun lien entre multiple et diviseur",
+              "Un multiple et un diviseur sont toujours deux nombres différents sans lien"
+            ],
+            "answer": 1,
+            "exp": "Multiple et diviseur décrivent la même relation numérique vue de deux points de vue différents : l'un multiplie, l'autre divise, pour le même couple de nombres."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève affirme que 6 est un diviseur de 40, car « 40÷6 donne à peu près 6 ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Un diviseur doit donner une division EXACTE, sans reste : 40÷6 ne donne pas un résultat exact (il reste 4), donc 6 n'est pas un diviseur de 40",
+              "6 est en fait un multiple de 40",
+              "40 n'a aucun diviseur"
+            ],
+            "answer": 1,
+            "exp": "Un diviseur doit donner une division exacte, sans reste ; une approximation ne suffit pas à affirmer qu'un nombre en est un diviseur."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Tout nombre a toujours 1 et lui-même comme diviseurs.",
+            "answer": true,
+            "exp": "C'est une propriété universelle : 1 divise toujours exactement n'importe quel nombre, et un nombre se divise toujours exactement par lui-même."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Quel est le plus petit multiple de 6 qui soit supérieur à 20 ?",
+            "choices": [
+              "18",
+              "24",
+              "20",
+              "26"
+            ],
+            "answer": 1,
+            "exp": "6×4=24 est le premier multiple de 6 qui dépasse 20 (6×3=18 est encore inférieur)."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un nombre pair (comme 48) a-t-il toujours 2 comme diviseur ?",
+            "choices": [
+              "Ce n'est pas toujours vrai",
+              "Parce qu'être pair signifie justement être divisible exactement par 2, sans reste : c'est la définition même de la parité",
+              "Les nombres pairs n'ont jamais de diviseur 2",
+              "2 n'est jamais un diviseur valide"
+            ],
+            "answer": 1,
+            "exp": "Être pair signifie par définition être divisible exactement par 2 : tout nombre pair a donc 2 comme diviseur."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "64 bonbons doivent être partagés également entre 9 enfants. Est-ce possible sans qu'il en reste ?",
+            "choices": [
+              "Oui, car 64 est un multiple de 9",
+              "Non, car 64 n'est pas un multiple de 9 (64÷9 n'est pas exact)",
+              "Oui, avec 8 bonbons chacun exactement",
+              "Impossible à savoir sans essayer"
+            ],
+            "answer": 1,
+            "exp": "64÷9 n'est pas une division exacte (64 n'est pas un multiple de 9) : le partage ne peut pas se faire sans reste."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Quels sont tous les diviseurs de 12 ?",
+            "choices": [
+              "1, 2, 3, 4, 6, 12",
+              "1, 2, 4, 12",
+              "2, 3, 4, 6",
+              "1, 12"
+            ],
+            "answer": 0,
+            "exp": "Les diviseurs de 12 sont tous les nombres qui le divisent exactement : 1, 2, 3, 4, 6, 12."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi un nombre a-t-il souvent plusieurs diviseurs différents, et pas un seul ?",
+            "choices": [
+              "Un nombre n'a jamais qu'un seul diviseur possible, c'est une règle fixe",
+              "Parce qu'un nombre peut souvent se décomposer de plusieurs façons différentes en produits de deux facteurs entiers, chacun donnant une paire de diviseurs",
+              "Chaque nombre n'a toujours qu'exactement deux diviseurs",
+              "Les diviseurs n'ont aucun rapport avec la décomposition d'un nombre"
+            ],
+            "answer": 1,
+            "exp": "Un nombre peut se décomposer en plusieurs produits de deux facteurs entiers, chaque décomposition révélant une paire de diviseurs."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Quel est le plus petit multiple commun de 4 et 6 (le plus petit nombre multiple des deux en même temps) ?",
+            "answer": "12",
+            "exp": "12 = 4×3 = 6×2 est le plus petit nombre multiple à la fois de 4 et de 6."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "5 est-il un diviseur de 2025 ?",
+            "choices": [
+              "Oui, car un nombre qui se termine par 0 ou 5 est toujours divisible par 5",
+              "Non, car 2025 ne se termine ni par 0 ni par 5",
+              "Impossible à savoir sans diviser",
+              "Non, 2025 n'a aucun diviseur"
+            ],
+            "answer": 0,
+            "exp": "Un nombre qui se termine par 0 ou 5 est toujours divisible par 5 : 2025 se termine par 5, donc 5 en est un diviseur."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Quels sont tous les diviseurs de 10 ?",
+            "choices": [
+              "1, 2, 5, 10",
+              "1, 10",
+              "2, 5",
+              "1, 2, 10"
+            ],
+            "answer": 0,
+            "exp": "Les diviseurs de 10 sont 1, 2, 5 et 10 (10=1×10=2×5)."
           }
         ]
       },
@@ -14189,6 +14537,189 @@
             ],
             "answer": 1,
             "exp": "L'idée qu'une fraction représente toujours « un petit bout » vient de l'habitude des fractions inférieures à 1 (comme 3/4 d'une pizza). Mais dès que le numérateur dépasse le dénominateur, la fraction représente plus d'un tout entier."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "9/5 est-il plus grand ou plus petit que 1 ?",
+            "choices": [
+              "Plus grand",
+              "Plus petit",
+              "Égal à 1",
+              "Impossible à savoir"
+            ],
+            "answer": 0,
+            "exp": "Le numérateur (9) est plus grand que le dénominateur (5) : la fraction dépasse 1."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Comment écrire 8/3 comme un nombre entier plus une fraction inférieure à 1 ?",
+            "choices": [
+              "2 + 2/3",
+              "3 + 2/3",
+              "2 + 1/3",
+              "1 + 5/3"
+            ],
+            "answer": 0,
+            "exp": "8÷3 = 2 reste 2, donc 8/3 = 2 + 2/3."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une corde mesure 13/5 d'unité. Quelle est sa longueur en unité entière plus fraction ?",
+            "choices": [
+              "2 + 3/5",
+              "1 + 3/5",
+              "2 + 2/5",
+              "3 + 2/5"
+            ],
+            "answer": 0,
+            "exp": "13÷5 = 2 reste 3, donc 13/5 = 2 + 3/5."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un pichet contient 7/2 litres d'eau. Combien de litres entiers et quelle fraction restante ?",
+            "choices": [
+              "3 litres et 1/2",
+              "2 litres et 1/2",
+              "3 litres et 0",
+              "3 litres et 1"
+            ],
+            "answer": 0,
+            "exp": "7÷2 = 3 reste 1, donc 7/2 = 3 + 1/2."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Comment peut-on savoir, rien qu'en regardant les chiffres d'une fraction, si elle dépasse 1 ou non, sans faire de dessin ?",
+            "choices": [
+              "Ce n'est jamais possible sans dessin",
+              "En comparant le numérateur et le dénominateur : si le numérateur est plus grand (ou égal) que le dénominateur, la fraction vaut au moins 1",
+              "Il faut toujours deviner au hasard",
+              "Une fraction ne peut jamais dépasser 1"
+            ],
+            "answer": 1,
+            "exp": "Comparer directement numérateur et dénominateur suffit : numérateur ≥ dénominateur signifie une fraction ≥ 1."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève affirme que « toutes les fractions sont forcément plus petites que 1, car une fraction, c'est un petit morceau ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, toute fraction est petite",
+              "Une fraction peut très bien dépasser 1 quand le numérateur est plus grand que le dénominateur (comme 7/4), représentant alors plus qu'un tout entier",
+              "7/4 n'est pas une vraie fraction",
+              "Il n'existe aucune fraction supérieure à 1"
+            ],
+            "answer": 1,
+            "exp": "Une fraction peut représenter plus qu'un tout entier (plusieurs parts au total dépassant le tout), comme 7/4 : l'idée de « petit morceau » n'est pas toujours vraie."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Une fraction dont le numérateur est égal au dénominateur vaut exactement 1.",
+            "answer": true,
+            "exp": "Par exemple 5/5 = 1 : le numérateur égal au dénominateur représente le tout entier."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Comment écrire 11/3 sous forme de nombre entier plus fraction ?",
+            "choices": [
+              "3 + 2/3",
+              "4 + 1/3",
+              "3 + 1/3",
+              "2 + 2/3"
+            ],
+            "answer": 0,
+            "exp": "11÷3 = 3 reste 2, donc 11/3 = 3 + 2/3."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi une fraction comme 9/9 représente-t-elle exactement 1, et pas plus ni moins ?",
+            "choices": [
+              "Ce n'est pas vrai, 9/9 dépasse 1",
+              "Parce que le numérateur et le dénominateur sont identiques : on a repris exactement autant de parts que le tout en contient, ce qui donne exactement le tout entier",
+              "9/9 est toujours inférieur à 1",
+              "Il n'existe aucune règle pour ce cas"
+            ],
+            "answer": 1,
+            "exp": "Numérateur égal au dénominateur signifie qu'on a repris exactement toutes les parts, soit le tout entier, ni plus ni moins."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève convertit 10/4 en « 2 + 1/4 » au lieu de « 2 + 2/4 ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "10÷4 = 2 reste 2 (car 4×2=8, et 10-8=2), donc 10/4 = 2 + 2/4, pas 2 + 1/4",
+              "10/4 vaut exactement 2",
+              "Il fallait écrire 3 + 2/4"
+            ],
+            "answer": 1,
+            "exp": "10÷4=2 reste 2 (4×2=8, 10-8=2) : 10/4 = 2 + 2/4, l'élève a mal calculé le reste."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Quelle fraction représente exactement 2 unités entières, avec un dénominateur de 6 ?",
+            "choices": [
+              "6/6",
+              "12/6",
+              "2/6",
+              "8/6"
+            ],
+            "answer": 1,
+            "exp": "2 unités entières avec un dénominateur de 6 correspondent à 12/6 (car 12÷6=2)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un gâteau et un quart d'un autre gâteau identique représentent quelle fraction du gâteau (avec un dénominateur de 4) ?",
+            "choices": [
+              "1/4",
+              "4/4",
+              "5/4",
+              "3/4"
+            ],
+            "answer": 2,
+            "exp": "1 gâteau entier (4/4) + 1/4 = 5/4."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, pour convertir une fraction supérieure à 1 en nombre entier plus fraction, utilise-t-on une division avec reste ?",
+            "choices": [
+              "La division n'a aucun rapport avec cette conversion",
+              "Parce que le quotient de la division donne le nombre entier de touts complets, et le reste donne la fraction restante sur le même dénominateur",
+              "Il faut toujours multiplier, jamais diviser",
+              "Cette conversion est impossible à faire"
+            ],
+            "answer": 1,
+            "exp": "La division euclidienne (numérateur ÷ dénominateur) donne directement le nombre entier (quotient) et la fraction restante (reste sur le dénominateur)."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien de touts entiers contient la fraction 20/5 ?",
+            "answer": "4",
+            "exp": "20÷5=4 : la fraction 20/5 contient exactement 4 touts entiers, sans reste."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Quelle fraction, avec un dénominateur de 3, représente exactement 4 unités entières ?",
+            "choices": [
+              "4/3",
+              "3/3",
+              "12/3",
+              "8/3"
+            ],
+            "answer": 2,
+            "exp": "4 unités entières en tiers correspondent à 12/3 (car 12÷3=4)."
           }
         ]
       },
@@ -14277,6 +14808,189 @@
             ],
             "answer": 1,
             "exp": "Le numérateur ne donne pas directement un repère entier : il faut diviser le numérateur par le dénominateur pour savoir combien d'unités entières sont dépassées (ici 9 ÷ 4 = 2 reste 1), avant de placer la fraction juste après ce repère entier."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Sur une droite graduée en tiers, entre quels deux nombres entiers se trouve 5/3 ?",
+            "choices": [
+              "0 et 1",
+              "1 et 2",
+              "2 et 3",
+              "3 et 4"
+            ],
+            "answer": 1,
+            "exp": "5/3 = 1 + 2/3, donc entre les repères 1 et 2."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Sur une droite graduée en cinquièmes, quel repère entier correspond exactement à 10/5 ?",
+            "choices": [
+              "1",
+              "2",
+              "5",
+              "10"
+            ],
+            "answer": 1,
+            "exp": "10/5 = 2 : cela correspond exactement au repère entier 2."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Deux élèves sont repérés sur une droite graduée en huitièmes : l'un à 11/8, l'autre à 9/8. Lequel est le plus avancé ?",
+            "choices": [
+              "Celui à 11/8",
+              "Celui à 9/8",
+              "Ils sont à égalité",
+              "Impossible à savoir"
+            ],
+            "answer": 0,
+            "exp": "11/8 > 9/8 (même dénominateur, 11>9) : celui à 11/8 est plus avancé."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une piste graduée en tiers va de 0 à 4. Combien de graduations (repères) y a-t-il entre 0 et 1 (exclu les extrémités) ?",
+            "choices": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "answer": 1,
+            "exp": "Entre 0 et 1, en tiers, il y a les repères 1/3 et 2/3, soit 2 graduations intermédiaires."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la droite graduée permet-elle de comparer deux fractions « d'un seul coup d'œil », sans faire de calcul ?",
+            "choices": [
+              "Elle ne permet jamais de comparer sans calcul",
+              "Parce que la position sur la droite représente directement la valeur de la fraction : celle qui est le plus à droite est toujours la plus grande",
+              "Il faut toujours calculer avant de regarder la droite",
+              "La position sur la droite n'a aucun rapport avec la valeur"
+            ],
+            "answer": 1,
+            "exp": "La position sur la droite représente visuellement la valeur : comparer les positions suffit, sans calcul supplémentaire."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève place 11/5 juste après le repère 11 sur une droite graduée en cinquièmes, en pensant que le numérateur donne directement la position entière. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "11/5 = 2+1/5, donc il faut le placer juste après le repère 2, pas après le repère 11 : le numérateur seul ne donne pas la position, il faut diviser par le dénominateur",
+              "Le dénominateur ne compte jamais dans le placement",
+              "11/5 doit être placé avant le repère 0"
+            ],
+            "answer": 1,
+            "exp": "11/5 = 2+1/5 : la position réelle est juste après 2, pas après 11. Le numérateur seul ne suffit pas, il faut diviser par le dénominateur."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Sur une droite graduée, une fraction plus grande se situe toujours plus à droite qu'une fraction plus petite.",
+            "answer": true,
+            "exp": "C'est le principe même d'une droite numérique : la position de gauche à droite suit l'ordre croissant des valeurs."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Sur une droite graduée en quarts, quel repère correspond à 3 (nombre entier) exprimé en quarts ?",
+            "choices": [
+              "3/4",
+              "12/4",
+              "9/4",
+              "15/4"
+            ],
+            "answer": 1,
+            "exp": "3 = 12/4 (car 12÷4=3) : c'est la fraction équivalente à 3 entiers en quarts."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi deux fractions de dénominateurs différents (comme 1/2 et 3/4) sont-elles plus difficiles à comparer directement sur deux droites graduées différentes ?",
+            "choices": [
+              "Ce n'est jamais difficile",
+              "Parce que les graduations ne sont pas les mêmes (par 2 ou par 4), rendant la comparaison directe moins évidente sans les ramener au même dénominateur ou à la même échelle",
+              "Les fractions de dénominateurs différents ne peuvent jamais être comparées",
+              "Il n'existe aucune différence entre ces deux fractions"
+            ],
+            "answer": 1,
+            "exp": "Des graduations différentes (par 2 vs par 4) compliquent la comparaison directe ; il faut souvent ramener les fractions au même dénominateur ou à une échelle commune."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Entre 7/3 et 8/3, laquelle est la plus proche de 3 (le nombre entier) ?",
+            "choices": [
+              "7/3",
+              "8/3",
+              "Elles sont à égale distance",
+              "Impossible à savoir"
+            ],
+            "answer": 1,
+            "exp": "8/3 = 2+2/3, plus proche de 3 que 7/3 = 2+1/3."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève place 0/4 à la même position que 4/4 sur une droite graduée en quarts. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, les deux sont à la même place",
+              "0/4 vaut 0 (le point de départ), et 4/4 vaut 1 (un tout entier) : ce sont deux positions très différentes sur la droite",
+              "0/4 et 4/4 valent toujours la même chose",
+              "4/4 doit être placé avant 0/4"
+            ],
+            "answer": 1,
+            "exp": "0/4 = 0 et 4/4 = 1 : ce sont deux valeurs et positions très différentes sur la droite graduée."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Sur une droite graduée en sixièmes de 0 à 2, quel repère correspond à 1 (nombre entier) ?",
+            "choices": [
+              "1/6",
+              "6/6",
+              "2/6",
+              "12/6"
+            ],
+            "answer": 1,
+            "exp": "1 = 6/6 (car 6÷6=1) en sixièmes."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, en plaçant plusieurs fractions de même dénominateur sur une droite graduée, suffit-il de comparer les numérateurs pour les ranger ?",
+            "choices": [
+              "Ce n'est jamais suffisant",
+              "Parce que le dénominateur fixe la taille des graduations identiques pour toutes ces fractions : seul le numérateur (le nombre de graduations depuis 0) détermine alors leur position",
+              "Le dénominateur doit toujours être comparé en premier",
+              "Les fractions de même dénominateur ne peuvent pas être placées sur la même droite"
+            ],
+            "answer": 1,
+            "exp": "Avec un dénominateur commun, l'écart de graduation est identique pour toutes les fractions : seul le numérateur (nombre de pas depuis 0) déterminer leur position relative."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Sur une droite graduée en quarts, à quel repère entier correspond la fraction 16/4 ?",
+            "answer": "4",
+            "exp": "16÷4=4 : la fraction 16/4 correspond exactement au repère entier 4."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Sur une droite graduée en huitièmes, quelle fraction se trouve exactement entre 8/8 et 16/8 ?",
+            "choices": [
+              "10/8",
+              "12/8",
+              "14/8",
+              "9/8"
+            ],
+            "answer": 1,
+            "exp": "12/8 est exactement à mi-chemin entre 8/8 (=1) et 16/8 (=2), car (8+16)/2=12."
           }
         ]
       },
@@ -14365,6 +15079,189 @@
             ],
             "answer": 1,
             "exp": "Le dénominateur représente la taille des parts, qui reste identique lors de l'addition : seuls les numérateurs (le nombre de parts) s'additionnent. Le bon résultat est donc 7/5, le dénominateur restant 5."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Combien fait 5/9 + 2/9 ?",
+            "choices": [
+              "7/9",
+              "7/18",
+              "5/9",
+              "2/9"
+            ],
+            "answer": 0,
+            "exp": "Même dénominateur : on additionne les numérateurs, 5+2=7, donc 7/9."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Combien fait 8/6 − 3/6 ?",
+            "choices": [
+              "5/6",
+              "5/12",
+              "11/6",
+              "3/6"
+            ],
+            "answer": 0,
+            "exp": "Même dénominateur : on soustrait les numérateurs, 8-3=5, donc 5/6."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Léa a lu 4/8 d'un livre avant les vacances, puis 3/8 pendant les vacances. Quelle fraction du livre a-t-elle lue en tout ?",
+            "choices": [
+              "7/8",
+              "7/16",
+              "1/8",
+              "5/8"
+            ],
+            "answer": 0,
+            "exp": "4/8 + 3/8 = 7/8, on additionne les parts lues."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un réservoir de 10 parts égales contenait 9/10 d'essence. On en consomme 4/10. Quelle fraction reste-t-il ?",
+            "choices": [
+              "5/10",
+              "13/10",
+              "5/20",
+              "4/10"
+            ],
+            "answer": 0,
+            "exp": "9/10 − 4/10 = 5/10."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un résultat comme 13/9, qui dépasse 1, n'est-il pas un problème ou une erreur de calcul ?",
+            "choices": [
+              "C'est toujours une erreur, le résultat doit rester inférieur à 1",
+              "Parce qu'additionner deux fractions peut légitimement donner un total supérieur à 1 (plus qu'un tout entier), ce qui est normal et correct",
+              "Une fraction ne peut jamais dépasser 1 après une addition",
+              "Il faut toujours arrondir le résultat à 1"
+            ],
+            "answer": 1,
+            "exp": "Additionner deux fractions peut donner un résultat supérieur à 1, ce qui représente légitimement plus qu'un tout entier : ce n'est pas une erreur."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève calcule 4/7 + 5/7 et trouve 9/14 en additionnant aussi les dénominateurs (7+7=14). Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Il additionne les dénominateurs alors qu'ils doivent rester identiques : la bonne réponse est 9/7, pas 9/14",
+              "4/7+5/7 ne peut pas se calculer",
+              "Il fallait soustraire au lieu d'additionner"
+            ],
+            "answer": 1,
+            "exp": "Avec le même dénominateur, seuls les numérateurs s'additionnent (4+5=9) ; le dénominateur reste 7 : résultat 9/7."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "5/8 + 3/8 = 1 exactement.",
+            "answer": true,
+            "exp": "5+3=8, donc 8/8, qui vaut exactement 1."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un gâteau coupé en 12 parts : on en mange 7/12, puis encore 2/12. Combien reste-t-il ?",
+            "choices": [
+              "3/12",
+              "9/12",
+              "5/12",
+              "3/24"
+            ],
+            "answer": 0,
+            "exp": "12/12 (le tout) − 7/12 − 2/12 = 3/12."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, pour additionner ou soustraire deux fractions de même dénominateur, suffit-il d'opérer sur les numérateurs ?",
+            "choices": [
+              "Ce n'est jamais suffisant",
+              "Parce que le dénominateur représente la taille des parts, identique dans les deux fractions : on peut donc directement compter combien de ces parts identiques on obtient au total",
+              "Il faut toujours aussi changer le dénominateur",
+              "Les numérateurs n'ont aucun rôle dans ce calcul"
+            ],
+            "answer": 1,
+            "exp": "Le dénominateur fixe une taille de part commune aux deux fractions ; seul le nombre de ces parts (numérateur) varie et doit être calculé."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un élève calcule 7/10 − 9/10 et obtient -2/10, pensant que c'est impossible. Que peut-on lui dire au CM1 ?",
+            "choices": [
+              "Son calcul est totalement faux",
+              "Mathématiquement 7-9=-2, un nombre négatif ; au CM1, ce type de soustraction est généralement évité en vérifiant que le premier terme est plus grand",
+              "7/10 est toujours plus grand que 9/10",
+              "Il faut toujours ignorer ce genre de calcul"
+            ],
+            "answer": 1,
+            "exp": "7-9 donne un nombre négatif ; au CM1, on évite généralement de soustraire une fraction plus grande d'une plus petite, en vérifiant l'ordre avant de calculer."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Calcule 6/11 + 6/11 + 6/11 (le même ajout répété 3 fois) :",
+            "choices": [
+              "18/11",
+              "18/33",
+              "6/11",
+              "12/11"
+            ],
+            "answer": 0,
+            "exp": "6+6+6=18, donc 18/11."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il utile de vérifier, avant une soustraction de fractions, que le numérateur du premier terme est supérieur ou égal à celui du second ?",
+            "choices": [
+              "Ce n'est jamais utile de vérifier avant",
+              "Parce que soustraire un plus grand numérateur d'un plus petit donnerait un résultat négatif, notion qui dépasse encore le programme du CM1",
+              "Il faut toujours soustraire dans n'importe quel ordre",
+              "Le numérateur n'a aucun rôle dans cette vérification"
+            ],
+            "answer": 1,
+            "exp": "Vérifier l'ordre des numérateurs évite d'obtenir un résultat négatif, notion encore au-delà du programme du CM1."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule 10/6 − 10/6. Donne le résultat sous forme de fraction.",
+            "answer": "0/6",
+            "exp": "10-10=0, le dénominateur reste 6 : résultat 0/6."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un randonneur a parcouru 15/20 d'un sentier, puis encore 3/20. A-t-il dépassé la totalité du sentier ?",
+            "choices": [
+              "Non, il lui reste encore du chemin (18/20)",
+              "Oui, il a largement dépassé 20/20",
+              "Oui, il a dépassé de 2/20",
+              "Impossible à savoir"
+            ],
+            "answer": 0,
+            "exp": "15/20+3/20=18/20, ce qui est inférieur à 20/20 : il n'a pas encore terminé le sentier."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Combien fait 1/4 + 2/4 + 1/4 ?",
+            "choices": [
+              "4/4, soit exactement 1",
+              "4/12",
+              "1/4",
+              "3/4"
+            ],
+            "answer": 0,
+            "exp": "1+2+1=4, donc 4/4, qui vaut exactement 1."
           }
         ]
       },
@@ -14453,6 +15350,195 @@
             ],
             "answer": 1,
             "exp": "Un dixième (0,1) et un centième (0,01) ne représentent pas la même quantité : le dixième est dix fois plus grand. Confondre leur position dans l'écriture à virgule change radicalement la valeur du nombre."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Comment écrit-on 3/10 avec une virgule ?",
+            "choices": [
+              "0,3",
+              "0,03",
+              "3,0",
+              "3,10"
+            ],
+            "answer": 0,
+            "exp": "3/10 = 0,3 : le dixième se place juste après la virgule."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Comment écrit-on 7/100 avec une virgule ?",
+            "choices": [
+              "0,7",
+              "0,07",
+              "7,0",
+              "0,007"
+            ],
+            "answer": 1,
+            "exp": "7/100 = 0,07 : le centième nécessite deux chiffres après la virgule, dont le premier est 0."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un objet mesure 2 + 5/10 + 3/100 unités. Comment écrire cette longueur avec une virgule ?",
+            "choices": [
+              "2,53",
+              "2,503",
+              "2,35",
+              "25,3"
+            ],
+            "answer": 0,
+            "exp": "2 + 5 dixièmes (0,5) + 3 centièmes (0,03) = 2,53."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une distance de 4 + 6/10 + 0/100 km s'écrit comment avec une virgule ?",
+            "choices": [
+              "4,6",
+              "4,06",
+              "4,60",
+              "4,006"
+            ],
+            "answer": 0,
+            "exp": "4 + 6 dixièmes = 4,6 (le 0 centième n'ajoute rien de visible après le 6 à cette position)."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi 0,4 et 0,04 ne représentent-ils pas du tout la même quantité, malgré leur ressemblance ?",
+            "choices": [
+              "Ce sont en fait les mêmes quantités",
+              "Parce que la position des chiffres après la virgule a une valeur précise : 0,4 est 4 dixièmes (une grande part), alors que 0,04 est seulement 4 centièmes (une part 10 fois plus petite)",
+              "Les chiffres après la virgule n'ont jamais de valeur précise",
+              "0,04 est toujours plus grand que 0,4"
+            ],
+            "answer": 1,
+            "exp": "La position après la virgule détermine la valeur : 0,4 (4 dixièmes) est 10 fois plus grand que 0,04 (4 centièmes)."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève écrit « sept centièmes » comme 0,7 et affirme que c'est la même chose que « sept dixièmes » (0,7). Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, les deux s'écrivent 0,7",
+              "« Sept centièmes » s'écrit en réalité 0,07 (avec un 0 après la virgule), pas 0,7 qui représente sept dixièmes, une quantité 10 fois plus grande",
+              "0,07 et 0,7 sont toujours égaux",
+              "Il fallait écrire 0,70 pour les centièmes"
+            ],
+            "answer": 1,
+            "exp": "« Sept centièmes » = 0,07 (avec le 0 de positionnement), bien différent de 0,7 (sept dixièmes), une quantité 10 fois plus grande."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un dixième (1/10) s'écrit 0,1 avec une virgule.",
+            "answer": true,
+            "exp": "1/10 = 0,1 : le chiffre des dixièmes se place juste après la virgule."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Comment écrit-on 45/100 avec une virgule ?",
+            "choices": [
+              "0,45",
+              "4,5",
+              "0,045",
+              "45,0"
+            ],
+            "answer": 0,
+            "exp": "45/100 = 0,45 : 45 centièmes s'écrivent avec deux chiffres après la virgule."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi une fraction décimale (dénominateur 10, 100, 1000...) se convertit-elle si facilement en écriture à virgule ?",
+            "choices": [
+              "Ce n'est jamais facile de les convertir",
+              "Parce que notre système décimal utilise déjà des puissances de 10, ce qui correspond exactement à la structure des dixièmes, centièmes, millièmes représentés après la virgule",
+              "Les fractions décimales n'ont aucun rapport avec l'écriture à virgule",
+              "Il faut toujours une calculatrice pour cette conversion"
+            ],
+            "answer": 1,
+            "exp": "Le système décimal (dixièmes, centièmes, millièmes) correspond exactement à la structure des puissances de 10, d'où la conversion directe et naturelle en écriture à virgule."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève convertit 8/10 en 0,08 au lieu de 0,8. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Il a placé le 8 en position des centièmes au lieu des dixièmes : 8/10 (huit dixièmes) s'écrit 0,8, pas 0,08 qui correspond à 8/100",
+              "0,08 et 0,8 représentent la même quantité",
+              "8/10 ne peut pas s'écrire avec une virgule"
+            ],
+            "answer": 1,
+            "exp": "8 dixièmes se placent juste après la virgule : 0,8, pas 0,08 qui correspondrait à 8 centièmes (8/100)."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Comment écrit-on la fraction 123/100 avec une virgule ?",
+            "choices": [
+              "1,23",
+              "12,3",
+              "0,123",
+              "123,0"
+            ],
+            "answer": 0,
+            "exp": "123/100 = 1,23 (1 unité entière + 23 centièmes)."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Comment écrit-on la fraction 6/10 avec une virgule ?",
+            "choices": [
+              "0,6",
+              "0,06",
+              "6,0",
+              "60,0"
+            ],
+            "answer": 0,
+            "exp": "6/10 = 0,6."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi 2,5 et 2,50 représentent-ils exactement la même quantité, malgré un chiffre supplémentaire dans le second ?",
+            "choices": [
+              "Ce ne sont pas les mêmes quantités",
+              "Parce qu'ajouter un 0 à la fin de la partie décimale (après le dernier chiffre significatif) ne change pas la valeur : 2,5 = 2,50 = 2,500...",
+              "2,50 est toujours plus grand que 2,5",
+              "Il est interdit d'ajouter un 0 après la virgule"
+            ],
+            "answer": 1,
+            "exp": "Un zéro ajouté à la fin de la partie décimale ne change pas la valeur du nombre : 2,5 et 2,50 représentent exactement la même quantité."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Une planche mesure 3 + 0/10 + 7/100 mètres. Comment écrire cette longueur avec une virgule ?",
+            "choices": [
+              "3,07",
+              "3,7",
+              "3,007",
+              "30,7"
+            ],
+            "answer": 0,
+            "exp": "3 + 0 dixième + 7 centièmes = 3,07."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Comment écrit-on 200/100 avec une virgule ?",
+            "choices": [
+              "2,00",
+              "0,200",
+              "20,0",
+              "200,0"
+            ],
+            "answer": 0,
+            "exp": "200/100 = 2 unités entières exactement, soit 2,00."
           }
         ]
       },
