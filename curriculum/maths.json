@@ -6130,6 +6130,153 @@
             ],
             "answer": 1,
             "exp": "Mémoriser les tables permet de répondre immédiatement sans recompter à chaque fois : c'est tout l'intérêt de « savoir par cœur », pour libérer son attention pour des tâches plus complexes."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Complète : 7 + ... = 10",
+            "answer": "3",
+            "exp": "7+3=10 : il manque 3."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien font 8 + 6 ?",
+            "answer": "14",
+            "exp": "8+6=14."
+          },
+          {
+            "type": "text",
+            "kind": "application",
+            "q": "Léa a 4 ans. Dans combien d'années aura-t-elle 9 ans ?",
+            "answer": "5",
+            "exp": "9-4=5 : il faut attendre 5 ans."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un sac contient 5 billes rouges et des billes bleues, 9 billes en tout. Combien de billes bleues ?",
+            "choices": [
+              "4",
+              "3",
+              "5",
+              "14"
+            ],
+            "answer": 0,
+            "exp": "9-5=4 billes bleues."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi connaître 7+5=12 aide-t-il aussi à répondre vite à « 12-5=? » et « 12-7=? » ?",
+            "choices": [
+              "Ce n'est pas lié du tout",
+              "Parce qu'addition et soustraction sont liées : si 7+5=12, alors forcément 12-5=7 et 12-7=5, ce sont les trois faces d'un même fait numérique",
+              "Parce que c'est une coïncidence pour ce calcul précis",
+              "Parce que 12 est un nombre rond"
+            ],
+            "answer": 1,
+            "exp": "Une même relation numérique (7+5=12) se lit dans les deux sens : connaître l'un permet de retrouver les deux soustractions associées."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour répondre à « 6 + ? = 11 », un élève recompte 1,2,3... à chaque fois depuis le début. Que lui conseiller ?",
+            "choices": [
+              "Continuer comme ça, c'est la meilleure méthode",
+              "Mémoriser directement les petites sommes (tables d'addition) pour répondre instantanément sans recompter à chaque fois",
+              "Ne jamais répondre à ce genre de question",
+              "Utiliser une calculatrice"
+            ],
+            "answer": 1,
+            "exp": "Connaître les tables par cœur évite de recompter depuis le début à chaque fois, ce qui est long et source d'erreurs."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Complète : 9 + ... = 15",
+            "answer": "6",
+            "exp": "9+6=15 : il manque 6."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien font 7 + 8 ?",
+            "answer": "15",
+            "exp": "7+8=15."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un marchand a vendu 6 pommes le matin. Il doit en vendre combien l'après-midi pour atteindre 13 pommes vendues dans la journée ?",
+            "choices": [
+              "6",
+              "7",
+              "19",
+              "8"
+            ],
+            "answer": 1,
+            "exp": "13-6=7 pommes à vendre l'après-midi."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Complète : ... + 4 = 12",
+            "answer": "8",
+            "exp": "8+4=12 : il manque 8."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Si 5 + 6 = 11, alors on peut en déduire que 11 − 6 = 5 sans refaire le calcul.",
+            "answer": true,
+            "exp": "Addition et soustraction sont liées : une fois 5+6=11 connu, les deux soustractions associées (11-5 et 11-6) sont automatiquement connues aussi."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Combien font 9 + 9 ?",
+            "choices": [
+              "16",
+              "17",
+              "18",
+              "19"
+            ],
+            "answer": 2,
+            "exp": "9+9=18 (le double de 9)."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Complète : 8 + ... = 16",
+            "answer": "8",
+            "exp": "8+8=16 : il manque 8."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il utile de connaître par cœur les sommes jusqu'à 10 avant de calculer des sommes jusqu'à 20 ?",
+            "choices": [
+              "Ce n'est pas utile, ce sont des savoirs différents",
+              "Parce que les grandes sommes se décomposent souvent en petites sommes connues : par exemple 8+7 = 8+2+5 = 10+5=15, en utilisant le passage par 10",
+              "Parce que les sommes jusqu'à 10 sont les seules qui existent",
+              "Parce que c'est plus joli de commencer petit"
+            ],
+            "answer": 1,
+            "exp": "Les petites sommes connues par cœur (comme compléter à 10) servent de brique de base pour calculer plus vite des sommes plus grandes."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève répond « 7 » à la question « 4 + ? = 9 » en calculant 9-4 mentalement, très vite. Que peut-on dire de sa méthode ?",
+            "choices": [
+              "Sa réponse est fausse",
+              "Sa réponse (5, pas 7) serait juste s'il avait bien calculé 9-4=5 ; ici il s'est trompé dans le calcul, pas dans la méthode",
+              "Il ne faut jamais utiliser la soustraction pour ce genre de question",
+              "Sa méthode est interdite"
+            ],
+            "answer": 1,
+            "exp": "9-4=5, pas 7 : la méthode (passer par la soustraction associée) est la bonne, mais le calcul lui-même contient une erreur."
           }
         ]
       },
@@ -6200,6 +6347,153 @@
             ],
             "answer": 1,
             "exp": "La multiplication est commutative : changer l'ordre des facteurs ne change jamais le résultat. 4 × 7 = 7 × 4 = 28, toujours."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien font 7 × 4 ?",
+            "answer": "28",
+            "exp": "7×4=28."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Complète : 4 × ... = 20",
+            "answer": "5",
+            "exp": "4×5=20 : il manque 5."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une salle a 6 rangées de 3 chaises. Combien de chaises en tout ?",
+            "choices": [
+              "18",
+              "9",
+              "24",
+              "15"
+            ],
+            "answer": 0,
+            "exp": "6×3=18 chaises."
+          },
+          {
+            "type": "text",
+            "kind": "application",
+            "q": "Combien font 9 × 3 ?",
+            "answer": "27",
+            "exp": "9×3=27."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Tu connais 4 × 5 = 20. Comment retrouver rapidement 4 × 6 à partir de ce résultat ?",
+            "choices": [
+              "On ne peut pas le retrouver sans refaire tout le calcul",
+              "On ajoute un groupe de 4 de plus : 20 + 4 = 24, car 4×6 c'est un 4 de plus que 4×5",
+              "On ajoute 1 : 20+1=21",
+              "On double 20"
+            ],
+            "answer": 1,
+            "exp": "4×6 = 4×5 + 4 (un groupe de 4 en plus) = 20+4 = 24."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève dit que 8 × 3 et 3 × 8 pourraient donner des résultats différents. A-t-il raison ?",
+            "choices": [
+              "Oui, ils sont toujours différents",
+              "Non, la multiplication est commutative : l'ordre ne change pas le résultat, 8×3=3×8=24",
+              "Oui, mais seulement parfois",
+              "Impossible à savoir sans calculer les deux"
+            ],
+            "answer": 1,
+            "exp": "La multiplication est commutative : changer l'ordre des deux nombres ne change jamais le résultat."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Complète : ... × 6 = 18",
+            "answer": "3",
+            "exp": "3×6=18 : il manque 3."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien font 8 × 8 ?",
+            "answer": "64",
+            "exp": "8×8=64."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une boîte à œufs a 5 rangées de 6 œufs. Combien d'œufs dans la boîte ?",
+            "choices": [
+              "30",
+              "11",
+              "36",
+              "25"
+            ],
+            "answer": 0,
+            "exp": "5×6=30 œufs."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "5 × 7 et 7 × 5 donnent le même résultat.",
+            "answer": true,
+            "exp": "La multiplication est commutative : l'ordre des deux nombres n'affecte pas le résultat (35 dans les deux cas)."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Complète : 9 × ... = 36",
+            "answer": "4",
+            "exp": "9×4=36 : il manque 4."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Tu sais que 10 × 4 = 40. Comment retrouver vite 9 × 4 à partir de ce résultat ?",
+            "choices": [
+              "On ne peut pas le retrouver autrement qu'en recomptant tout",
+              "On enlève un groupe de 4 : 40 - 4 = 36, car 9×4 a un groupe de 4 en moins que 10×4",
+              "On divise 40 par 2",
+              "On ajoute 4 à 40"
+            ],
+            "answer": 1,
+            "exp": "9×4 = 10×4 − 4 (un groupe de 4 en moins) = 40−4=36."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour calculer 6 × 9, un élève fait 6×10=60 puis oublie de retirer un groupe de 6, et répond 60. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, 6×9=60",
+              "Il a oublié l'étape finale : 6×9 = 6×10 − 6 = 60−6 = 54, pas 60",
+              "6×9 ne peut pas se calculer ainsi",
+              "Il fallait ajouter 6, pas le retirer"
+            ],
+            "answer": 1,
+            "exp": "6×9 = 6×10 − 6 (un groupe de 6 en moins que 6×10) = 60−6=54. Oublier de retirer ce groupe donne un résultat faux."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Combien font 7 × 7 ?",
+            "answer": "49",
+            "exp": "7×7=49, à connaître par cœur."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un verger a 4 rangées de 9 arbres. Combien d'arbres en tout ?",
+            "choices": [
+              "36",
+              "13",
+              "32",
+              "40"
+            ],
+            "answer": 0,
+            "exp": "4×9=36 arbres."
           }
         ]
       },
@@ -6270,6 +6564,153 @@
             ],
             "answer": 1,
             "exp": "Il faut toujours doubler la VALEUR de chaque partie (30 et 4), pas le chiffre isolé (3 et 4). Ici, le résultat 68 est juste car 3 représentait bien 30 (double 60) et 4 restait 4 (double 8) : mais la méthode doit toujours passer par la vraie valeur pour ne pas se tromper avec d'autres nombres."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Quel est le double de 13 ?",
+            "answer": "26",
+            "exp": "13+13=26."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Quelle est la moitié de 24 ?",
+            "answer": "12",
+            "exp": "24÷2=12."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une recette pour 2 personnes utilise 50 g de beurre. Combien de grammes faut-il pour 4 personnes (le double) ?",
+            "choices": [
+              "100 g",
+              "75 g",
+              "150 g",
+              "25 g"
+            ],
+            "answer": 0,
+            "exp": "4 personnes = 2 fois plus que 2 personnes : il faut le double de beurre, 100 g."
+          },
+          {
+            "type": "text",
+            "kind": "application",
+            "q": "Quel est le double de 25 ?",
+            "answer": "50",
+            "exp": "25+25=50."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Tu connais le double de 8 (16). Comment en déduire la moitié de 16 sans recalculer ?",
+            "choices": [
+              "Impossible sans recalculer",
+              "C'est l'opération inverse : si le double de 8 est 16, alors la moitié de 16 est 8",
+              "Il faut diviser 16 par 4",
+              "Il faut multiplier 16 par 2"
+            ],
+            "answer": 1,
+            "exp": "Double et moitié sont deux opérations inverses : connaître l'un permet de retrouver immédiatement l'autre."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour calculer le double de 27, un élève fait « double de 2 = 4, double de 7 = 14 » et écrit 414. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Il traite les chiffres séparément sans les recombiner correctement : double de 27 = 27+27 = 54, pas 414",
+              "27 n'a pas de double",
+              "Il fallait faire la moitié, pas le double"
+            ],
+            "answer": 1,
+            "exp": "Décomposer chiffre par chiffre sans recombiner correctement donne un résultat absurde ; 27+27=54 est la bonne méthode."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "La moitié de 10 est 5.",
+            "answer": true,
+            "exp": "10÷2=5."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Quelle est la moitié de 18 ?",
+            "answer": "9",
+            "exp": "18÷2=9."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un gâteau pesant 80 g doit être partagé en deux parts égales. Combien pèse chaque part ?",
+            "choices": [
+              "40 g",
+              "80 g",
+              "160 g",
+              "20 g"
+            ],
+            "answer": 0,
+            "exp": "La moitié de 80 est 40 g."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Quel est le double de 40 ?",
+            "answer": "80",
+            "exp": "40+40=80."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Tous les nombres ont-ils une moitié qui est un nombre entier ?",
+            "choices": [
+              "Oui, toujours",
+              "Non, seuls les nombres pairs ont une moitié entière ; les nombres impairs donnent une moitié avec une partie décimale",
+              "Oui, mais seulement les nombres pairs ont une vraie moitié, les impairs n'en ont aucune",
+              "Non, aucun nombre n'a de moitié entière"
+            ],
+            "answer": 1,
+            "exp": "Seuls les nombres pairs se partagent exactement en 2 parts entières égales ; un nombre impair laisse un reste."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour trouver la moitié de 50, un élève calcule 50×2=100 au lieu de 50÷2. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, la moitié de 50 est 100",
+              "Il confond double et moitié : ce sont des opérations inverses, la moitié de 50 est 25 (50÷2), pas 100 (50×2)",
+              "50 n'a pas de moitié",
+              "Il fallait faire 50-2"
+            ],
+            "answer": 1,
+            "exp": "Il a utilisé l'opération inverse (×2 au lieu de ÷2) : la moitié de 50 est 25, pas 100."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Quelle est la moitié de 100 ?",
+            "answer": "50",
+            "exp": "100÷2=50."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un ruban de 60 cm est coupé en deux morceaux égaux. Quelle est la longueur de chaque morceau ?",
+            "choices": [
+              "30 cm",
+              "60 cm",
+              "120 cm",
+              "15 cm"
+            ],
+            "answer": 0,
+            "exp": "La moitié de 60 est 30 cm."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Le double d'un nombre pair est toujours un nombre pair.",
+            "answer": true,
+            "exp": "Doubler n'importe quel nombre entier donne toujours un résultat pair, car il devient divisible par 2."
           }
         ]
       },
@@ -6340,6 +6781,159 @@
             ],
             "answer": 1,
             "exp": "9 = 10 − 1, pas 10 + 1. Après avoir ajouté 10 (45+10=55), il faut RETIRER 1 (pas en ajouter un) pour corriger l'excès : 55 − 1 = 54, qui est la bonne réponse."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule de tête : 56 + 9",
+            "answer": "65",
+            "exp": "56+10=66, puis 66-1=65."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule de tête : 73 + 19",
+            "answer": "92",
+            "exp": "73+20=93, puis 93-1=92."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une boutique avait 148 clients hier. Elle en reçoit 9 de plus aujourd'hui qu'hier au même moment. Combien de clients en plus, calculé de tête ?",
+            "choices": [
+              "9",
+              "10",
+              "19",
+              "8"
+            ],
+            "answer": 0,
+            "exp": "L'énoncé donne directement +9, pas de calcul à faire ici au-delà de lire l'énoncé."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un coffre contient 215 pièces. On y ajoute 29 pièces de plus (3 rouleaux de 10 moins 1). Combien de pièces au total ?",
+            "choices": [
+              "244",
+              "245",
+              "234",
+              "254"
+            ],
+            "answer": 0,
+            "exp": "215+29 = 215+30−1 = 245−1=244."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi l'astuce « ajouter 20 puis enlever 1 » fonctionne-t-elle pour calculer +19 ?",
+            "choices": [
+              "Elle ne fonctionne pas toujours",
+              "Parce que 19 = 20 − 1 : ajouter 19, c'est exactement la même chose qu'ajouter 20 puis retirer 1 de trop",
+              "Parce que 19 est un nombre impair",
+              "Par pur hasard"
+            ],
+            "answer": 1,
+            "exp": "19=20-1 : ajouter 20 ajoute 1 de trop, qu'il faut donc retirer ensuite pour obtenir le bon résultat."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour calculer 52 + 19, un élève ajoute 20 puis ajoute encore 1 au lieu de le retirer, et trouve 73. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, 52+19=73",
+              "Il a ajouté 20 (une unité de trop par rapport à 19) et aurait dû RETIRER 1 ensuite, pas en ajouter encore : 52+20-1=71",
+              "52+19 ne peut pas se calculer ainsi",
+              "Il fallait soustraire 19"
+            ],
+            "answer": 1,
+            "exp": "19=20-1 : après avoir ajouté 20, il faut RETIRER 1 (pas en ajouter), car on a ajouté 1 de trop par rapport à 19."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule de tête : 84 + 29",
+            "answer": "113",
+            "exp": "84+30=114, puis 114-1=113."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule de tête : 47 + 9",
+            "answer": "56",
+            "exp": "47+10=57, puis 57-1=56."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une épicerie a vendu 236 fruits ce mois-ci, et vendra 39 fruits de plus le mois prochain (+40, -1). Combien de fruits vendus le mois prochain ?",
+            "choices": [
+              "275",
+              "276",
+              "274",
+              "285"
+            ],
+            "answer": 0,
+            "exp": "236+39 = 236+40-1 = 276-1=275."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Ajouter 9 à un nombre revient à ajouter 10 puis à enlever 1.",
+            "answer": true,
+            "exp": "9=10-1 : c'est exactement la même astuce qui fonctionne pour +9, +19, +29..."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule de tête : 68 + 19",
+            "answer": "87",
+            "exp": "68+20=88, puis 88-1=87."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi cette astuce (ajouter la dizaine supérieure puis retirer le trop-perçu) est-elle plus rapide que de compter un par un ?",
+            "choices": [
+              "Elle n'est pas plus rapide",
+              "Parce qu'ajouter une dizaine ronde (10, 20, 30...) est un calcul mental très simple et rapide, bien plus facile que d'avancer un par un neuf, dix-neuf ou vingt-neuf fois",
+              "Parce que compter un par un est interdit",
+              "Parce que les dizaines rondes n'existent pas vraiment"
+            ],
+            "answer": 1,
+            "exp": "Ajouter une dizaine ronde est un calcul mental immédiat ; compter un par un neuf ou dix-neuf fois est bien plus lent et source d'erreurs."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève calcule 125 + 29 en ajoutant 30 et en retirant 1, et trouve 154. A-t-il bien appliqué la méthode ?",
+            "choices": [
+              "Oui : 125+30=155, puis 155-1=154, c'est correct",
+              "Non, il fallait ajouter 29 directement sans astuce",
+              "Non, le résultat devrait être 156",
+              "Non, il fallait retirer 30 et ajouter 1"
+            ],
+            "answer": 0,
+            "exp": "125+30=155, puis 155-1=154 : la méthode est bien appliquée et le résultat est juste."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Calcule de tête : 29 + 29",
+            "answer": "58",
+            "exp": "29+30=59, puis 59-1=58."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Cette astuce (ajouter la dizaine supérieure puis retirer le trop-perçu) fonctionne-t-elle aussi pour calculer +8 (en passant par +10, −2) ?",
+            "choices": [
+              "Non, elle ne marche que pour 9, 19, 29...",
+              "Oui, le même principe s'applique : 8=10−2, donc ajouter 8 revient à ajouter 10 puis à retirer 2",
+              "Non, 8 n'a pas de dizaine supérieure",
+              "Oui, mais seulement pour les nombres pairs"
+            ],
+            "answer": 1,
+            "exp": "Le même principe général s'applique à tout nombre proche d'une dizaine : 8=10-2, donc +8 = +10 puis -2."
           }
         ]
       },
@@ -6428,6 +7022,183 @@
             ],
             "answer": 1,
             "exp": "Vérifier la vraisemblance du résultat fait partie de la démarche : on ne peut jamais avoir « la moitié d'un enfant ». Un tel résultat signale presque certainement une erreur de calcul à revoir."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Avant de choisir une opération, que doit-on absolument identifier dans un problème ?",
+            "choices": [
+              "La couleur des objets évoqués",
+              "Ce que l'on cherche exactement (la question) et les données utiles pour y répondre",
+              "Le nombre de phrases du texte",
+              "Le prénom des personnages"
+            ],
+            "answer": 0,
+            "exp": "Il faut toujours repérer la question posée et les informations utiles avant de choisir un calcul."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "« Zoé a 4 crayons de moins que Max. Max en a 11. Combien Zoé en a-t-elle ? » Quel calcul faut-il faire ?",
+            "choices": [
+              "11 + 4",
+              "11 − 4",
+              "4 − 11",
+              "11 × 4"
+            ],
+            "answer": 1,
+            "exp": "Zoé a MOINS que Max : on soustrait l'écart (4) au nombre de Max (11) : 11−4=7."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Un bus avait 45 passagers. À un arrêt, il en reste 32. » Que cherche-t-on si la question est « combien sont descendus ? »",
+            "choices": [
+              "Le nombre total de passagers au départ",
+              "L'écart entre le nombre de départ et celui qui reste : 45−32",
+              "Le nombre de passagers qui vont monter ensuite",
+              "Le numéro de l'arrêt"
+            ],
+            "answer": 1,
+            "exp": "On cherche combien sont partis entre le début (45) et maintenant (32) : c'est l'écart, 45−32."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il risqué de choisir l'opération juste en repérant le mot « reste » dans un énoncé ?",
+            "choices": [
+              "Ce n'est jamais risqué, « reste » veut toujours dire soustraction",
+              "Parce que « reste » peut parfois apparaître dans un problème qui demande en réalité une addition ou une autre opération selon le sens complet de la phrase, pas juste ce mot isolé",
+              "Parce que le mot « reste » n'existe pas dans les problèmes",
+              "Parce qu'il faut toujours utiliser une multiplication avec ce mot"
+            ],
+            "answer": 1,
+            "exp": "Un mot seul ne suffit jamais à deviner l'opération : il faut comprendre le sens complet de la situation décrite."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour « Léa avait des images, elle en a donné 8, il lui en reste 15 », un élève répond directement 15 à la question « combien en avait-elle au départ ? ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Il confond ce qui reste (15) avec le total de départ : il faut additionner ce qui a été donné (8) et ce qui reste (15) pour retrouver le départ : 15+8=23",
+              "15 est déjà la bonne réponse",
+              "Il fallait soustraire 8 de 15"
+            ],
+            "answer": 1,
+            "exp": "Le total de départ = ce qui reste + ce qui a été donné : 15+8=23, pas simplement 15."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Avant de calculer, il est toujours utile de reformuler le problème dans ses propres mots pour vérifier qu'on l'a bien compris.",
+            "answer": true,
+            "exp": "Reformuler avec ses propres mots permet de vérifier sa compréhension avant de se lancer dans un calcul qui pourrait être inadapté."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Un jardinier a planté des fleurs en 6 rangées de 4. » Que cherche-t-on probablement si la question demande le nombre total de fleurs ?",
+            "choices": [
+              "6 + 4",
+              "6 × 4",
+              "6 − 4",
+              "4 ÷ 6"
+            ],
+            "answer": 1,
+            "exp": "Des rangées identiques (groupes égaux) suggèrent une multiplication : 6×4."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Dans un problème, la question est toujours écrite :",
+            "choices": [
+              "Au début du texte uniquement",
+              "Généralement à la fin, souvent sous forme de phrase interrogative",
+              "Elle n'est jamais écrite clairement",
+              "Toujours en gras"
+            ],
+            "answer": 1,
+            "exp": "La question est en général formulée à la fin de l'énoncé, sous forme de phrase interrogative."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Il y avait 60 spectateurs. 25 sont partis avant la fin. » Quelle question correspond à un calcul de soustraction ?",
+            "choices": [
+              "Combien de spectateurs sont restés jusqu'à la fin ?",
+              "Combien de spectateurs y avait-il au départ ?",
+              "Quel jour était-ce ?",
+              "Combien coûtait un billet ?"
+            ],
+            "answer": 0,
+            "exp": "« Combien sont restés » demande de retirer ceux qui sont partis (25) du total de départ (60) : 60−25."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un problème donne 3 nombres mais n'en utilise que 2 pour répondre à la question posée. Que doit-on faire du troisième nombre ?",
+            "choices": [
+              "L'utiliser quand même dans le calcul, pour être sûr",
+              "Ne pas l'utiliser s'il n'est pas utile à la question posée : toutes les données d'un énoncé ne servent pas toujours au calcul final",
+              "Toujours l'additionner aux autres",
+              "Le problème est forcément faux s'il y a un nombre inutile"
+            ],
+            "answer": 1,
+            "exp": "Un énoncé peut contenir une information non nécessaire à la question posée ; il faut savoir l'identifier et ne pas l'utiliser à tort."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "« Hugo a 7 ans. Son frère a 3 ans de plus. » Quel calcul permet de trouver l'âge du frère ? (réponds par le signe seul : + ou −)",
+            "answer": "+",
+            "exp": "Le frère a « de plus », donc on additionne l'écart (3) à l'âge de Hugo (7)."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi lire un problème deux fois avant de calculer est-il une bonne habitude ?",
+            "choices": [
+              "Ce n'est jamais utile",
+              "Parce que la première lecture donne une vue d'ensemble, et la seconde permet de repérer précisément la question et les données utiles, en évitant les erreurs de précipitation",
+              "Parce qu'il faut toujours lire deux fois n'importe quel texte",
+              "Parce que les problèmes changent de sens à la deuxième lecture"
+            ],
+            "answer": 1,
+            "exp": "Une première lecture globale, puis une seconde plus attentive sur la question et les données, limite les erreurs de précipitation."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève, pressé, calcule tout de suite dès qu'il voit des nombres dans un énoncé, sans lire la question. Quel risque prend-il ?",
+            "choices": [
+              "Aucun risque, les nombres suffisent toujours",
+              "Il risque de répondre à une question différente de celle posée, ou de faire un calcul qui ne correspond pas à ce qui est demandé",
+              "Il va forcément trouver la bonne réponse plus vite",
+              "Les problèmes n'ont jamais vraiment de question"
+            ],
+            "answer": 1,
+            "exp": "Sans lire la question, on ne sait pas ce qu'il faut réellement calculer : le risque de répondre à côté est grand."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Léo achète un jouet à 12€ et paie avec un billet de 20€. » Quelle question appelle un calcul de soustraction ?",
+            "choices": [
+              "Combien Léo doit-il recevoir de monnaie ?",
+              "Combien coûte le jouet ?",
+              "Quelle couleur est le billet ?",
+              "Combien de jouets Léo a-t-il achetés ?"
+            ],
+            "answer": 0,
+            "exp": "La monnaie à rendre = ce qu'on a payé (20) moins le prix (12) : 20−12."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un problème peut parfois se résoudre avec plusieurs méthodes différentes qui donnent toutes le bon résultat.",
+            "answer": true,
+            "exp": "Il existe souvent plusieurs chemins valides pour résoudre un même problème, tant que le raisonnement est juste."
           }
         ]
       },
@@ -6498,6 +7269,159 @@
             ],
             "answer": 1,
             "exp": "Le total a diminué (des billes ont été données), on cherche ce qu'il reste : c'est une soustraction, 50 − 18 = 32, pas une addition."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Tom a 23 billes vertes et 18 billes jaunes. Combien de billes a-t-il en tout ?",
+            "answer": "41",
+            "exp": "23+18=41."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Dans un panier de 42 fruits, il y a 25 bananes, le reste sont des kiwis. Combien de kiwis ?",
+            "answer": "17",
+            "exp": "42−25=17."
+          },
+          {
+            "type": "text",
+            "kind": "application",
+            "q": "Une boulangère avait des croissants. Elle en a vendu 36 et il lui en reste 14. Combien en avait-elle au départ ?",
+            "answer": "50",
+            "exp": "36+14=50 : on additionne ce qui a été vendu et ce qui reste."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une ferme avait 90 œufs. On en a cassé 23. Combien en reste-t-il ?",
+            "choices": [
+              "67",
+              "113",
+              "57",
+              "77"
+            ],
+            "answer": 0,
+            "exp": "90−23=67 œufs restants."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Comment reconnaît-on qu'un problème « parties-tout » demande une addition plutôt qu'une soustraction ?",
+            "choices": [
+              "On cherche toujours une soustraction dans ce type de problème",
+              "Si on connaît les deux parties séparées et qu'on cherche le tout, c'est une addition ; si on connaît le tout et une partie et qu'on cherche l'autre partie, c'est une soustraction",
+              "On ne peut jamais savoir sans essayer les deux",
+              "Le nombre de mots dans la phrase le détermine"
+            ],
+            "answer": 1,
+            "exp": "Connaître les parties et chercher le tout → addition. Connaître le tout et une partie, chercher l'autre partie → soustraction."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "« Un sac avait 70 jetons. On y ajoute 15 jetons. » Un élève répond 55 à « combien y a-t-il de jetons maintenant ? » en soustrayant au lieu d'additionner. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Le mot « ajoute » signale clairement une addition, pas une soustraction : 70+15=85, pas 55",
+              "70−15 est la bonne opération",
+              "Il fallait multiplier 70 par 15"
+            ],
+            "answer": 1,
+            "exp": "« Ajouter » signale sans ambiguïté une addition : 70+15=85."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Dans un problème « parties-tout », connaître le tout et une partie permet toujours de retrouver l'autre partie par soustraction.",
+            "answer": true,
+            "exp": "Tout − une partie connue = l'autre partie : c'est le principe de base des problèmes parties-tout."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Une classe a 28 élèves : 15 filles et le reste sont des garçons. Combien de garçons ?",
+            "answer": "13",
+            "exp": "28−15=13."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un camion transportait des caisses. Il en a livré 48, et il lui en reste 27 à livrer. Combien de caisses transportait-il au total ?",
+            "choices": [
+              "75",
+              "21",
+              "48",
+              "27"
+            ],
+            "answer": 0,
+            "exp": "48+27=75 caisses au total (livrées + restantes)."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un vase contient 34 fleurs rouges et des fleurs blanches, 52 fleurs en tout. Combien de fleurs blanches ?",
+            "answer": "18",
+            "exp": "52−34=18."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pour résoudre un problème d'ajout ou de retrait, quelle est la première chose à faire, avant même de penser à l'opération ?",
+            "choices": [
+              "Deviner un nombre au hasard",
+              "Identifier clairement ce qui est connu et ce qui est cherché",
+              "Compter le nombre de mots du texte",
+              "Multiplier tous les nombres donnés"
+            ],
+            "answer": 1,
+            "exp": "Repérer d'abord ce qu'on connaît et ce qu'on cherche aide ensuite à choisir la bonne opération."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "« Une bibliothèque avait 300 livres. Elle en reçoit 45 nouveaux. » Un élève calcule 300−45=255 à la question « combien de livres maintenant ? ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "« Reçoit » signifie qu'on ajoute des livres, pas qu'on en retire : il fallait calculer 300+45=345",
+              "300+45 n'est pas la bonne méthode",
+              "Il fallait multiplier"
+            ],
+            "answer": 1,
+            "exp": "« Recevoir » de nouveaux livres signifie une augmentation : il faut additionner, pas soustraire."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un marchand avait 65 melons. Il en vend 29. Combien lui en reste-t-il ?",
+            "answer": "36",
+            "exp": "65−29=36."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Combien de données sont nécessaires au minimum pour résoudre un problème simple d'ajout (trouver un tout à partir de deux parties) ?",
+            "choices": [
+              "1",
+              "2",
+              "3",
+              "4"
+            ],
+            "answer": 1,
+            "exp": "Il faut connaître les deux parties pour calculer le tout par addition : 2 données minimum."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Une salle avait 120 places. 85 sont occupées. » Quelle opération permet de trouver les places libres ?",
+            "choices": [
+              "120 + 85",
+              "120 − 85",
+              "85 − 120",
+              "120 × 85"
+            ],
+            "answer": 1,
+            "exp": "Places libres = total − occupées : 120−85."
           }
         ]
       },
@@ -6568,6 +7492,153 @@
             ],
             "answer": 1,
             "exp": "Léo a 8 ans DE MOINS : son âge est donc plus petit que celui de sa sœur. Il fallait soustraire l'écart à l'âge connu (20 − 8 = 12), pas l'additionner."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Sam a 64 autocollants, Emma en a 48. Combien Sam en a-t-il de plus qu'Emma ?",
+            "answer": "16",
+            "exp": "64−48=16 autocollants de plus."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Léo a 9 ans de moins que son cousin. Son cousin a 17 ans. Quel âge a Léo ?",
+            "answer": "8",
+            "exp": "17−9=8 ans."
+          },
+          {
+            "type": "text",
+            "kind": "application",
+            "q": "Une école a récolté 210 bouchons, une autre école en a récolté 35 de moins. Combien la deuxième école a-t-elle récolté ?",
+            "answer": "175",
+            "exp": "210−35=175 bouchons."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une tour A mesure 95 m, une tour B mesure 30 m de plus. Quelle est la hauteur de la tour B ?",
+            "choices": [
+              "125 m",
+              "65 m",
+              "3150 m",
+              "35 m"
+            ],
+            "answer": 0,
+            "exp": "95+30=125 m."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, face à « combien de plus », faut-il toujours vérifier qui a le plus et qui a le moins avant de calculer ?",
+            "choices": [
+              "Ce n'est pas nécessaire, l'ordre n'a pas d'importance",
+              "Parce que l'écart se calcule toujours en soustrayant le plus petit nombre du plus grand : il faut savoir qui est qui pour poser la bonne soustraction",
+              "Parce que l'écart change selon le jour de la semaine",
+              "Parce qu'il faut toujours additionner, jamais soustraire"
+            ],
+            "answer": 1,
+            "exp": "Pour trouver un écart, on soustrait toujours le plus petit du plus grand ; il faut d'abord identifier correctement qui a le plus et qui a le moins."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "« Nina a 14 ans de plus que son petit frère qui a 5 ans. » Un élève répond 9 à « quel âge a Nina ? » en soustrayant. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Nina a « plus » que son frère, donc il faut ADDITIONNER l'écart à l'âge du frère : 5+14=19, pas 9",
+              "Il fallait multiplier 5 par 14",
+              "5-14 est la bonne opération"
+            ],
+            "answer": 1,
+            "exp": "« Plus que » signale une addition de l'écart au nombre de référence (ici l'âge du frère) : 5+14=19."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Pour trouver un écart entre deux quantités, on soustrait toujours la plus petite de la plus grande.",
+            "answer": true,
+            "exp": "L'écart entre deux nombres s'obtient toujours en soustrayant le plus petit du plus grand, ce qui donne un résultat positif."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Deux immeubles : le premier a 45 fenêtres, le second en a 12 de plus. Combien de fenêtres a le second immeuble ?",
+            "answer": "57",
+            "exp": "45+12=57."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un sac de billes rouges contient 80 billes, 25 de plus que le sac de billes bleues. Combien de billes bleues ?",
+            "choices": [
+              "55",
+              "105",
+              "25",
+              "60"
+            ],
+            "answer": 0,
+            "exp": "Le sac rouge a 25 DE PLUS que le bleu : le bleu a donc 80−25=55 billes."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Max a 130 cm de taille, sa sœur mesure 18 cm de moins. Quelle est la taille de la sœur ?",
+            "answer": "112",
+            "exp": "130−18=112 cm."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi faut-il faire attention à la phrase « A a... de moins que B » plutôt que de se fier uniquement à la présence du mot « moins » ?",
+            "choices": [
+              "Il n'y a aucune précaution à prendre",
+              "Parce qu'il faut bien identifier QUI a moins (A) et par rapport à QUI (B) : on soustrait l'écart au nombre de B pour trouver A, pas l'inverse",
+              "Parce que « moins » veut toujours dire multiplication",
+              "Parce que cette phrase n'a pas de sens"
+            ],
+            "answer": 1,
+            "exp": "Il faut repérer précisément qui est la référence (B) et qui a moins (A), car on part toujours du nombre de B pour calculer celui de A."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "« Léa a 30 billes de moins que Tom, qui en a 80. » Un élève calcule 80+30=110 pour trouver les billes de Léa. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Léa a MOINS que Tom, donc il faut soustraire : 80−30=50, pas additionner",
+              "80-30 n'est pas la bonne méthode",
+              "Il fallait multiplier 80 par 30"
+            ],
+            "answer": 1,
+            "exp": "« Moins que » signale une soustraction de l'écart au nombre de référence (Tom) : 80−30=50."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Deux arbres : l'un mesure 240 cm, l'autre mesure 55 cm de plus. Quelle est la hauteur du second arbre ?",
+            "answer": "295",
+            "exp": "240+55=295 cm."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un problème de comparaison donne deux nombres et dit « l'écart entre les deux est de 20 ». Si le plus petit nombre est 35, quel est le plus grand ?",
+            "choices": [
+              "15",
+              "55",
+              "700",
+              "20"
+            ],
+            "answer": 1,
+            "exp": "Le plus grand = le plus petit + l'écart : 35+20=55."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un pont mesure 150 m, un second pont mesure 40 m de moins. Quelle est la longueur du second pont ?",
+            "answer": "110",
+            "exp": "150−40=110 m."
           }
         ]
       },
@@ -6638,6 +7709,153 @@
             ],
             "answer": 1,
             "exp": "Noter le résultat intermédiaire (ici 17, après le premier arrêt) évite de le perdre ou de se tromper en gardant tout en tête. C'est une habitude essentielle pour les problèmes à plusieurs étapes."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un panier a 60 fruits : 22 pommes et 18 poires, le reste sont des oranges. Combien d'oranges ?",
+            "answer": "20",
+            "exp": "22+18=40 (pommes+poires), puis 60−40=20 oranges."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un magasin avait 120 jouets. Il en vend 45, puis en reçoit 20 nouveaux. Combien de jouets a-t-il maintenant ?",
+            "answer": "95",
+            "exp": "120−45=75, puis 75+20=95."
+          },
+          {
+            "type": "text",
+            "kind": "application",
+            "q": "À la boulangerie, un pain coûte 2 euros et une brioche coûte 1 euro de plus que le pain. Combien coûtent un pain et une brioche ensemble ?",
+            "answer": "5",
+            "exp": "Brioche = 2+1=3€. Total = 2+3=5€."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un bus avait 40 passagers. 15 descendent, puis 9 montent. Combien de passagers maintenant ?",
+            "choices": [
+              "34",
+              "64",
+              "25",
+              "46"
+            ],
+            "answer": 0,
+            "exp": "40−15=25, puis 25+9=34."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi, dans un problème à deux étapes, est-il important de résoudre les calculs dans l'ordre où les événements se produisent dans l'histoire ?",
+            "choices": [
+              "L'ordre n'a jamais d'importance",
+              "Parce que le résultat de la première étape sert de donnée pour la seconde étape : inverser l'ordre donnerait un calcul incorrect ou impossible",
+              "Parce qu'il faut toujours commencer par la plus grande opération",
+              "Parce que les problèmes à deux étapes n'existent pas vraiment"
+            ],
+            "answer": 1,
+            "exp": "Chaque étape utilise souvent le résultat de la précédente : respecter l'ordre chronologique des événements garantit un calcul correct."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour le problème du bus (40 passagers, 15 descendent, puis 9 montent), un élève calcule directement 15+9=24 puis 40−24=16. Que penser de ce résultat ?",
+            "choices": [
+              "C'est juste, 16 est la bonne réponse",
+              "C'est faux : il fallait traiter les deux événements dans l'ordre (40−15=25 puis 25+9=34), pas combiner 15 et 9 ensemble d'abord",
+              "Il fallait juste faire 40-15",
+              "15+9 n'a aucun sens dans ce problème"
+            ],
+            "answer": 1,
+            "exp": "Monter et descendre ne s'annulent pas simplement : il faut appliquer chaque changement dans l'ordre chronologique (40−15 puis +9), ce qui donne 34."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Dans un problème à deux étapes, le résultat de la première étape est souvent nécessaire pour calculer la seconde.",
+            "answer": true,
+            "exp": "C'est la nature même d'un problème à deux étapes : les calculs s'enchaînent, le premier résultat servant de donnée au second."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un verger a 90 arbres : 35 pommiers et 25 poiriers, le reste sont des cerisiers. Combien de cerisiers ?",
+            "answer": "30",
+            "exp": "35+25=60, puis 90−60=30."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une piscine avait 200 baigneurs. 60 sont partis, puis 25 nouveaux sont arrivés. Combien de baigneurs maintenant ?",
+            "choices": [
+              "165",
+              "285",
+              "140",
+              "115"
+            ],
+            "answer": 0,
+            "exp": "200−60=140, puis 140+25=165."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un vendeur avait 300 euros en caisse. Il encaisse 150 euros de ventes, puis rend 40 euros de monnaie. Combien a-t-il en caisse ?",
+            "answer": "410",
+            "exp": "300+150=450, puis 450−40=410."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Comment reconnaît-on qu'un problème comporte deux étapes plutôt qu'une seule ?",
+            "choices": [
+              "Il y a toujours exactement deux phrases",
+              "Il décrit généralement deux événements ou changements successifs (par exemple deux actions qui modifient une même quantité l'une après l'autre), nécessitant deux calculs enchaînés",
+              "Il contient toujours le mot « puis »",
+              "Un problème a toujours une seule étape, jamais deux"
+            ],
+            "answer": 1,
+            "exp": "Deux changements successifs sur une même quantité (ex : on retire, puis on ajoute) signalent un problème à deux étapes, avec deux calculs à enchaîner."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève, face à un problème à deux étapes, additionne directement tous les nombres de l'énoncé sans réfléchir à l'ordre des événements. Quel risque prend-il ?",
+            "choices": [
+              "Aucun risque, cela marche toujours",
+              "Il risque d'obtenir un résultat faux, car certains nombres doivent être soustraits (ce qui part) et d'autres additionnés (ce qui arrive), pas tous additionnés ensemble",
+              "Il va forcément trouver la bonne réponse plus vite",
+              "Les problèmes à deux étapes n'ont jamais de soustraction"
+            ],
+            "answer": 1,
+            "exp": "Mélanger addition et soustraction sans respecter le sens de chaque événement (ce qui part vs ce qui arrive) donne un résultat incorrect."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un sac avait 50 bonbons. On en distribue 22, puis on en ajoute 10 nouveaux. Combien de bonbons maintenant ?",
+            "answer": "38",
+            "exp": "50−22=28, puis 28+10=38."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un problème à deux étapes demande d'abord de calculer un prix total, puis la monnaie à rendre. Quelle est la bonne méthode ?",
+            "choices": [
+              "Calculer d'abord la monnaie, puis le prix total",
+              "Calculer d'abord le prix total (étape 1), puis utiliser ce résultat pour calculer la monnaie à rendre (étape 2)",
+              "Calculer les deux en même temps sans ordre précis",
+              "Deviner directement la monnaie sans calcul"
+            ],
+            "answer": 1,
+            "exp": "Il faut connaître le prix total avant de pouvoir calculer la monnaie à rendre : l'ordre logique des étapes doit être respecté."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Une salle avait 80 chaises. On en retire 25 pour le ménage, puis on en remet 15. Combien de chaises maintenant ?",
+            "answer": "70",
+            "exp": "80−25=55, puis 55+15=70."
           }
         ]
       },
@@ -6708,6 +7926,159 @@
             ],
             "answer": 1,
             "exp": "Le mot « partagé entre » signale qu'on connaît déjà le total et qu'on cherche la taille d'une part : c'est une division (30 ÷ 5 = 6), pas une multiplication qui donnerait un nombre bien plus grand que le total de départ, ce qui n'a pas de sens."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Une classe a 6 tables avec 4 crayons sur chacune. Combien de crayons en tout ?",
+            "answer": "24",
+            "exp": "6×4=24 crayons."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "24 images sont partagées également entre 4 enfants. Combien d'images chacun reçoit-il ?",
+            "answer": "6",
+            "exp": "24÷4=6 images chacun."
+          },
+          {
+            "type": "text",
+            "kind": "application",
+            "q": "Pour un jeu, on range 35 jetons par paquets de 5. Combien de paquets obtient-on ?",
+            "answer": "7",
+            "exp": "35÷5=7 paquets."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un verger a 8 rangées de 6 pommiers. Combien de pommiers en tout ?",
+            "choices": [
+              "48",
+              "14",
+              "42",
+              "56"
+            ],
+            "answer": 0,
+            "exp": "8×6=48 pommiers."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Comment savoir s'il faut multiplier ou diviser face à un problème avec des groupes identiques ?",
+            "choices": [
+              "On multiplie toujours, jamais on ne divise",
+              "Si on connaît la taille et le nombre de groupes et qu'on cherche le total, on multiplie ; si on connaît le total et qu'on cherche le nombre de groupes (ou leur taille), on divise",
+              "On divise toujours, jamais on ne multiplie",
+              "Cela dépend uniquement de la couleur des objets"
+            ],
+            "answer": 1,
+            "exp": "Connaître les groupes et chercher le total → multiplication. Connaître le total et chercher le partage → division."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "« 42 bonbons sont partagés équitablement entre 6 enfants. Combien chacun en reçoit-il ? » Un élève répond 252 en multipliant 42×6. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Le mot « partagés équitablement » signale une division, pas une multiplication : 42÷6=7, pas 42×6=252",
+              "42÷6 n'est pas la bonne opération",
+              "Il fallait soustraire 6 de 42"
+            ],
+            "answer": 1,
+            "exp": "« Partager équitablement » signale clairement une division : 42÷6=7 bonbons chacun."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un problème qui parle de plusieurs groupes identiques dont on connaît la taille, et qui demande le total, se résout par une multiplication.",
+            "answer": true,
+            "exp": "Connaître le nombre et la taille des groupes identiques et chercher le total est la situation typique de la multiplication."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un parking a 7 rangées de 9 voitures. Combien de voitures en tout ?",
+            "answer": "63",
+            "exp": "7×9=63."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "45 œufs sont rangés en boîtes de 9. Combien de boîtes sont nécessaires ?",
+            "choices": [
+              "5",
+              "54",
+              "36",
+              "9"
+            ],
+            "answer": 0,
+            "exp": "45÷9=5 boîtes."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "56 billes sont partagées également entre 8 enfants. Combien de billes chacun reçoit-il ?",
+            "answer": "7",
+            "exp": "56÷8=7 billes chacun."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi une division et une multiplication sont-elles des opérations liées, comme l'addition et la soustraction ?",
+            "choices": [
+              "Elles n'ont aucun lien",
+              "Parce qu'elles sont inverses l'une de l'autre : si 6×7=42, alors on sait aussi que 42÷7=6 et 42÷6=7, sans refaire de calcul séparé",
+              "Parce qu'elles donnent toujours le même résultat",
+              "Parce que ce sont deux noms pour la même opération"
+            ],
+            "answer": 1,
+            "exp": "Multiplication et division sont des opérations inverses : connaître l'une permet de déduire directement les divisions associées."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pour « 36 fleurs sont rangées en bouquets de 4. Combien de bouquets ? », un élève calcule 36×4=144. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Il multiplie alors qu'il faut diviser : on cherche le nombre de groupes à partir d'un total et d'une taille de groupe, donc 36÷4=9 bouquets, pas 144",
+              "36÷4 n'est pas la bonne méthode",
+              "Il fallait soustraire 4 de 36"
+            ],
+            "answer": 1,
+            "exp": "Chercher le nombre de groupes à partir du total et de la taille d'un groupe est une division : 36÷4=9."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Une boîte de 72 chocolats est partagée également entre 8 personnes. Combien chacune reçoit-elle ?",
+            "answer": "9",
+            "exp": "72÷8=9 chocolats chacune."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "63 élèves doivent former des équipes de 7 pour un tournoi. Combien d'équipes seront formées ?",
+            "choices": [
+              "9",
+              "70",
+              "56",
+              "7"
+            ],
+            "answer": 0,
+            "exp": "63÷7=9 équipes."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un fleuriste a 5 vases avec 8 fleurs dans chacun. Combien de fleurs en tout ?",
+            "choices": [
+              "40",
+              "13",
+              "35",
+              "45"
+            ],
+            "answer": 0,
+            "exp": "5×8=40 fleurs."
           }
         ]
       },
