@@ -10976,6 +10976,189 @@
             ],
             "answer": 1,
             "exp": "Le même mot « la » peut avoir des rôles différents selon la phrase : déterminant devant un nom (« la pomme »), ou pronom complément quand il remplace un élément déjà connu (« je la vois », où « la » remplace ce qui est vu)."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans « Elle mange une pomme », « elle » est un pronom :",
+            "choices": [
+              "Complément",
+              "Sujet",
+              "Déterminant",
+              "Adjectif"
+            ],
+            "answer": 1,
+            "exp": "« Elle » fait l'action de manger : c'est un pronom sujet."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans « Tu le vois », que remplace « le » ?",
+            "choices": [
+              "Tu",
+              "Vois",
+              "Un nom masculin déjà mentionné",
+              "Rien de précis"
+            ],
+            "answer": 2,
+            "exp": "« Le » remplace un nom masculin singulier déjà mentionné : c'est un pronom complément."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Remplace « les enfants » par un pronom sujet dans : « Les enfants jouent dans la cour. »",
+            "choices": [
+              "Ils jouent dans la cour.",
+              "Le jouent dans la cour.",
+              "La jouent dans la cour.",
+              "Les jouent dans la cour."
+            ],
+            "answer": 0,
+            "exp": "« Les enfants » (masculin pluriel) se remplace par le pronom sujet « ils »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Remplace « ma sœur » par un pronom complément dans : « Je regarde ma sœur. »",
+            "choices": [
+              "Je la regarde.",
+              "Je le regarde.",
+              "Je les regarde.",
+              "Je lui regarde."
+            ],
+            "answer": 0,
+            "exp": "« Ma sœur » (féminin singulier) se remplace par le pronom complément « la »."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi faut-il se demander si un pronom remplace « celui qui fait l'action » ou « celui qui subit/est concerné » pour savoir si c'est un pronom sujet ou complément ?",
+            "choices": [
+              "Cette distinction n'a aucune importance",
+              "Parce que le pronom sujet désigne celui qui fait l'action du verbe, tandis que le pronom complément désigne celui qui la reçoit ou qui est concerné : ce sont deux rôles différents",
+              "Un pronom est toujours sujet, jamais complément",
+              "Un pronom est toujours complément, jamais sujet"
+            ],
+            "answer": 1,
+            "exp": "Pronom sujet (fait l'action) et pronom complément (reçoit l'action) jouent des rôles grammaticaux différents dans la phrase."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève dit que « la » est toujours un déterminant, jamais un pronom. Que penser de cette affirmation, en pensant à « Je la vois » ?",
+            "choices": [
+              "Il a raison, « la » est toujours un déterminant",
+              "Il a tort : dans « je la vois », « la » remplace un nom déjà mentionné, c'est donc un pronom complément, pas un déterminant",
+              "« La » n'existe que comme déterminant dans la langue française",
+              "« La » ne peut jamais apparaître devant un verbe"
+            ],
+            "answer": 1,
+            "exp": "« La » peut être un déterminant (« la pomme ») ou un pronom complément (« je la vois ») selon le contexte : il ne faut pas généraliser."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un pronom sujet désigne celui qui fait l'action du verbe, tandis qu'un pronom complément désigne celui qui la reçoit.",
+            "answer": true,
+            "exp": "C'est la distinction essentielle entre ces deux types de pronoms personnels."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « Nous les invitons », que remplace « les » ?",
+            "choices": [
+              "Nous",
+              "Invitons",
+              "Des personnes déjà mentionnées, au pluriel",
+              "Rien de précis"
+            ],
+            "answer": 2,
+            "exp": "« Les » remplace des personnes ou choses déjà mentionnées, au pluriel : c'est un pronom complément."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi certains pronoms comme « me », « te », « se » peuvent-ils être utilisés aussi bien dans des phrases simples que réfléchies (comme « je me lave ») ?",
+            "choices": [
+              "Ces pronoms n'ont qu'un seul usage possible",
+              "Parce qu'ils peuvent désigner un complément concernant la même personne que le sujet (réfléchi) ou simplement un complément d'objet dans d'autres contextes",
+              "Ces pronoms n'existent que dans les phrases réfléchies",
+              "Il n'existe aucune différence d'usage pour ces pronoms"
+            ],
+            "answer": 1,
+            "exp": "Ces pronoms peuvent fonctionner comme compléments ordinaires ou comme pronoms réfléchis (l'action revient sur le sujet), selon le contexte."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « Vous nous écoutez », quel pronom est le sujet ?",
+            "choices": [
+              "Vous",
+              "Nous",
+              "Écoutez",
+              "Il n'y a pas de sujet"
+            ],
+            "answer": 0,
+            "exp": "« Vous » fait l'action d'écouter : c'est le pronom sujet."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève remplace « le gâteau » par « il » dans « Je mange le gâteau », écrivant « Je mange il ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, « il » est le bon remplaçant",
+              "« Le gâteau », complément d'objet, doit être remplacé par le pronom complément « le » (« Je le mange »), pas par le pronom sujet « il »",
+              "« Le gâteau » ne peut jamais être remplacé par un pronom",
+              "« Il » est toujours le bon choix pour tout nom masculin"
+            ],
+            "answer": 1,
+            "exp": "« Le gâteau » est un complément d'objet, il faut donc le remplacer par un pronom complément (« le »), pas par un pronom sujet (« il »)."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans « Elles lui offrent un cadeau », à qui ou quoi renvoie « lui » ?",
+            "choices": [
+              "Au cadeau",
+              "À « elles »",
+              "À une personne (probablement) à qui on offre le cadeau",
+              "Rien de précis"
+            ],
+            "answer": 2,
+            "exp": "« Lui » est un pronom complément désignant la personne à qui le cadeau est offert."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « Il nous regarde », quel est le pronom sujet et quel est le pronom complément ?",
+            "choices": [
+              "Sujet : nous ; complément : il",
+              "Sujet : il ; complément : nous",
+              "Les deux sont sujets",
+              "Les deux sont compléments"
+            ],
+            "answer": 1,
+            "exp": "« Il » fait l'action de regarder (sujet), « nous » reçoit cette action (complément)."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Remplace « mes parents » par un pronom sujet dans : « Mes parents travaillent. »",
+            "choices": [
+              "Ils travaillent.",
+              "Elles travaillent.",
+              "Le travaillent.",
+              "Les travaillent."
+            ],
+            "answer": 0,
+            "exp": "« Mes parents » (masculin ou mixte pluriel) se remplace par « ils »."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un même mot comme « la » peut être un déterminant ou un pronom selon le contexte de la phrase.",
+            "answer": true,
+            "exp": "« La pomme » (déterminant) et « je la vois » (pronom) montrent bien ce double usage possible."
           }
         ]
       },
@@ -11064,6 +11247,195 @@
             ],
             "answer": 1,
             "exp": "« Les » signale un groupe au pluriel : toute la chaîne d'accord (nom et adjectifs) doit suivre, avec un -s. Il manquait les marques de pluriel sur « chat » et « noir »."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Accorde : « des ... maisons (grand) »",
+            "choices": [
+              "grand",
+              "grands",
+              "grande",
+              "grandes"
+            ],
+            "answer": 3,
+            "exp": "« Maisons » est féminin pluriel : l'adjectif devient « grandes »."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans un groupe nominal, qui impose son genre et son nombre aux adjectifs et au déterminant ?",
+            "choices": [
+              "Le déterminant",
+              "L'adjectif",
+              "Le nom noyau",
+              "Le verbe"
+            ],
+            "answer": 2,
+            "exp": "Le nom noyau est l'élément de référence auquel s'accordent déterminant et adjectifs."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Accorde correctement : « une ... chemise (petit, bleu) »",
+            "choices": [
+              "petit bleu",
+              "petite bleue",
+              "petits bleus",
+              "petites bleues"
+            ],
+            "answer": 1,
+            "exp": "« Chemise » est féminin singulier : les deux adjectifs s'accordent, donnant « petite bleue »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Accorde correctement : « des ... chiens (gentil, fidèle) »",
+            "choices": [
+              "gentil fidèle",
+              "gentille fidèle",
+              "gentils fidèles",
+              "gentilles fidèles"
+            ],
+            "answer": 2,
+            "exp": "« Chiens » est masculin pluriel : les deux adjectifs s'accordent, donnant « gentils fidèles »."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi faut-il toujours écrire les marques du pluriel ou du féminin sur les adjectifs, même quand on ne les entend pas forcément à l'oral ?",
+            "choices": [
+              "Ce n'est jamais nécessaire à l'écrit",
+              "Parce que l'orthographe française marque ces accords à l'écrit par convention, même quand la prononciation ne change pas toujours à l'oral",
+              "Les marques d'accord ne s'écrivent jamais, seulement à l'oral",
+              "Il est interdit d'écrire des marques d'accord"
+            ],
+            "answer": 1,
+            "exp": "Par convention de l'orthographe française, les marques d'accord s'écrivent systématiquement, même quand elles ne changent pas la prononciation."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève écrit « les chat noir » sans marque de pluriel sur « chat » ni sur « noir ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, pas besoin de marque",
+              "« Les » annonce un pluriel : il faut accorder « chat » en « chats » et « noir » en « noirs » pour respecter la chaîne des accords",
+              "Seul « chat » doit être accordé, pas « noir »",
+              "« Les » n'impose jamais le pluriel"
+            ],
+            "answer": 1,
+            "exp": "Le déterminant « les » signale un pluriel qui doit se répercuter sur le nom (« chats ») et sur l'adjectif (« noirs ») : c'est la chaîne des accords."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Dans un groupe nominal, le déterminant, le nom et les adjectifs doivent tous s'accorder ensemble en genre et en nombre.",
+            "answer": true,
+            "exp": "C'est le principe de la chaîne des accords : la cohérence de genre et de nombre dans tout le groupe nominal."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Accorde : « ces ... histoires (passionnant) »",
+            "choices": [
+              "passionnant",
+              "passionnants",
+              "passionnante",
+              "passionnantes"
+            ],
+            "answer": 3,
+            "exp": "« Histoires » est féminin pluriel : l'adjectif devient « passionnantes »."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi, dans « un gâteau et une tarte délicieux », l'adjectif se met-il au masculin pluriel malgré la présence d'un nom féminin (« tarte ») ?",
+            "choices": [
+              "C'est une erreur, il fallait écrire au féminin",
+              "Quand un adjectif qualifie deux noms de genres différents reliés par « et », il se met généralement au masculin pluriel",
+              "L'adjectif devrait toujours s'accorder uniquement avec le nom le plus proche",
+              "Il n'existe aucune règle dans ce cas"
+            ],
+            "answer": 1,
+            "exp": "Quand un adjectif qualifie des noms de genres mélangés reliés par « et », la règle usuelle est l'accord au masculin pluriel."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève accorde un adjectif avec le mot juste avant lui plutôt qu'avec le nom noyau, écrivant « la maison de mes grand-parents bleue » en pensant que « bleue » s'accorde avec « grand-parents ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, il faut accorder avec le mot le plus proche",
+              "Il doit accorder l'adjectif avec le nom noyau du groupe (« maison », féminin singulier), pas avec le mot juste avant lui dans la phrase",
+              "« Grand-parents » est en fait le bon nom noyau ici",
+              "Il n'existe pas de nom noyau dans cette phrase"
+            ],
+            "answer": 1,
+            "exp": "L'adjectif doit s'accorder avec le nom noyau du groupe nominal (« maison »), pas nécessairement avec le mot qui le précède immédiatement."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Accorde : « cette ... fleur (joli) »",
+            "choices": [
+              "joli",
+              "jolis",
+              "jolie",
+              "jolies"
+            ],
+            "answer": 2,
+            "exp": "« Fleur » est féminin singulier : l'adjectif devient « jolie »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « les beaux papillons colorés », combien de mots doivent s'accorder avec le nom noyau « papillons » ?",
+            "choices": [
+              "Aucun",
+              "1 (le déterminant seulement)",
+              "2 : « beaux » et « colorés »",
+              "3"
+            ],
+            "answer": 2,
+            "exp": "« Beaux » et « colorés » sont deux adjectifs qui s'accordent avec « papillons » (masculin pluriel), en plus du déterminant « les »."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la chaîne des accords est-elle particulièrement importante à vérifier dans les groupes nominaux longs (avec plusieurs adjectifs) ?",
+            "choices": [
+              "Elle n'est jamais plus importante dans les groupes longs",
+              "Parce que plus il y a de mots à accorder, plus il y a de risques d'en oublier un, donc plus il faut être attentif à vérifier chaque élément",
+              "Les groupes longs n'ont jamais besoin d'accord",
+              "Il suffit d'accorder le premier mot pour que tout le reste soit automatiquement juste"
+            ],
+            "answer": 1,
+            "exp": "Plus un groupe nominal contient de mots à accorder (plusieurs adjectifs), plus le risque d'oubli augmente, nécessitant une vérification attentive de chaque élément."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Accorde : « des ... souris (petit, gris) »",
+            "choices": [
+              "petit gris",
+              "petite grise",
+              "petits gris",
+              "petites grises"
+            ],
+            "answer": 3,
+            "exp": "« Souris » est féminin pluriel : les deux adjectifs deviennent « petites grises »."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans « une table et une chaise neuves », pourquoi l'adjectif « neuves » est-il au féminin pluriel ?",
+            "choices": [
+              "Par hasard, sans raison",
+              "Parce que les deux noms « table » et « chaise » sont féminins, et réunis par « et », ils forment un sujet pluriel féminin",
+              "« Neuves » est toujours invariable",
+              "Il fallait écrire « neuf » au masculin"
+            ],
+            "answer": 1,
+            "exp": "Deux noms féminins reliés par « et » forment un ensemble féminin pluriel, ce qui explique l'accord de l'adjectif."
           }
         ]
       },
@@ -11152,6 +11524,189 @@
             ],
             "answer": 1,
             "exp": "Le vrai sujet de la phrase est « les enfants » (pluriel), même si « la classe » (singulier) est placé juste avant le verbe : il fallait accorder avec le vrai sujet, en écrivant « jouent »."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Accorde le verbe : « Le chat (dormir) sur le canapé. »",
+            "choices": [
+              "dors",
+              "dort",
+              "dorment",
+              "dormez"
+            ],
+            "answer": 1,
+            "exp": "« Le chat » est singulier : le verbe se conjugue au singulier, « dort »."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Accorde le verbe : « Mes amis (venir) chez moi demain. »",
+            "choices": [
+              "vient",
+              "viens",
+              "viennent",
+              "venez"
+            ],
+            "answer": 2,
+            "exp": "« Mes amis » est pluriel : le verbe se conjugue au pluriel, « viennent »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Le gâteau que ma mère a préparé (sentir) très bon. » Quel est le bon accord, sachant que le sujet est « le gâteau » (singulier) ?",
+            "choices": [
+              "sent",
+              "sentent",
+              "sens",
+              "sentez"
+            ],
+            "answer": 0,
+            "exp": "Malgré les mots intercalés, le sujet reste « le gâteau » (singulier) : le verbe s'accorde au singulier, « sent »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Les histoires que raconte mon grand-père (passionner) toute la famille. » Quel est le sujet du verbe « passionner » ?",
+            "choices": [
+              "Mon grand-père",
+              "Les histoires",
+              "La famille",
+              "Il n'y a pas de sujet"
+            ],
+            "answer": 1,
+            "exp": "Le sujet du verbe « passionnent » est « les histoires » (pluriel), pas « mon grand-père » qui est le sujet d'un autre verbe (« raconte »)."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un mot placé juste avant le verbe (comme « jardin » dans « les fleurs du jardin sentent ») peut-il induire en erreur sur l'accord ?",
+            "choices": [
+              "Il ne peut jamais induire en erreur",
+              "Parce qu'on peut être tenté d'accorder le verbe avec ce mot proche plutôt qu'avec le véritable sujet (« les fleurs »), ce qui donnerait un accord incorrect",
+              "Ce mot est toujours le vrai sujet",
+              "Le verbe doit toujours s'accorder avec le mot juste avant lui"
+            ],
+            "answer": 1,
+            "exp": "La proximité d'un mot avec le verbe peut tromper, mais c'est le véritable sujet (« les fleurs »), même éloigné, qui doit déterminer l'accord."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève écrit « Les enfants de la classe joue dans la cour », en accordant le verbe avec « la classe ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Le sujet réel est « les enfants » (pluriel), pas « la classe » (complément du nom) : il fallait écrire « jouent »",
+              "« La classe » est en fait le sujet correct",
+              "Il n'y a pas de sujet dans cette phrase"
+            ],
+            "answer": 1,
+            "exp": "Le vrai sujet est « les enfants » (pluriel) ; « de la classe » n'est qu'un complément du nom qui ne doit pas influencer l'accord du verbe."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Le verbe s'accorde toujours avec son véritable sujet, même si d'autres mots s'intercalent entre eux.",
+            "answer": true,
+            "exp": "Peu importe la distance ou les mots intercalés, le verbe doit s'accorder avec son vrai sujet."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Accorde le verbe : « Toi et moi (aller) au cinéma. »",
+            "choices": [
+              "vas",
+              "va",
+              "allons",
+              "vont"
+            ],
+            "answer": 2,
+            "exp": "« Toi et moi » équivaut à « nous » : le verbe se conjugue à la première personne du pluriel, « allons »."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi deux sujets singuliers reliés par « et » (comme « le chat et le chien ») imposent-ils un accord au pluriel du verbe ?",
+            "choices": [
+              "Ce n'est jamais le cas",
+              "Parce qu'ensemble, ces deux sujets forment un ensemble de deux éléments qui agissent, ce qui constitue un sujet pluriel",
+              "Le verbe reste toujours au singulier dans ce cas",
+              "« Et » n'a aucun effet sur l'accord"
+            ],
+            "answer": 1,
+            "exp": "Deux sujets singuliers reliés par « et » forment ensemble un sujet pluriel, car il s'agit de deux éléments distincts réalisant l'action."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Accorde le verbe : « Chacun des élèves (avoir) son propre cahier. »",
+            "choices": [
+              "ont",
+              "a",
+              "avons",
+              "avez"
+            ],
+            "answer": 1,
+            "exp": "« Chacun » est singulier (même suivi de « des élèves ») : le verbe s'accorde au singulier, « a »."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un élève, face à « La plupart des élèves aiment lire », hésite car « la plupart » semble singulier. Comment expliquer l'accord au pluriel ?",
+            "choices": [
+              "C'est une erreur, il fallait écrire « aime »",
+              "« La plupart de... » s'accorde généralement avec le nom qui suit (« des élèves », pluriel), par exception à la règle habituelle",
+              "« La plupart » impose toujours le singulier",
+              "Il n'existe aucune règle pour ce cas"
+            ],
+            "answer": 1,
+            "exp": "« La plupart de... » fait exception et s'accorde généralement avec le complément qui suit, ici « des élèves » (pluriel)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Accorde le verbe : « Le livre et le stylo (être) sur la table. »",
+            "choices": [
+              "est",
+              "sont",
+              "suis",
+              "es"
+            ],
+            "answer": 1,
+            "exp": "Deux sujets singuliers reliés par « et » forment un sujet pluriel : le verbe se conjugue au pluriel, « sont »."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il utile de poser la question « qui est-ce qui + verbe ? » avant d'accorder un verbe, surtout dans une phrase complexe ?",
+            "choices": [
+              "Ce n'est jamais utile",
+              "Parce que cela permet d'identifier avec certitude le vrai sujet, même dans une phrase où plusieurs mots pourraient sembler être le sujet à première vue",
+              "Le sujet est toujours évident sans poser de question",
+              "Cette question ne concerne jamais l'accord du verbe"
+            ],
+            "answer": 1,
+            "exp": "Poser cette question permet d'identifier avec certitude le véritable sujet, essentiel pour accorder correctement le verbe, surtout dans les phrases complexes."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Accorde le verbe : « Où (aller) tes parents ce week-end ? »",
+            "choices": [
+              "va",
+              "vont",
+              "allons",
+              "vais"
+            ],
+            "answer": 1,
+            "exp": "« Tes parents » (pluriel) est le sujet, même inversé après le verbe : « vont »."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Le sujet d'un verbe peut être placé après le verbe (sujet inversé), notamment dans les phrases interrogatives.",
+            "answer": true,
+            "exp": "Dans « Que veulent les enfants ? », le sujet « les enfants » est bien placé après le verbe."
           }
         ]
       },
@@ -11240,6 +11795,189 @@
             ],
             "answer": 1,
             "exp": "« Cheval » suit la règle des noms en -al, qui deviennent -aux au pluriel : « chevaux », et non « chevals » qui applique à tort la règle générale du simple ajout de -s."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quel est le pluriel de « un oiseau » ?",
+            "choices": [
+              "Des oiseaus",
+              "Des oiseaux",
+              "Des oiseau",
+              "Des oiseauxs"
+            ],
+            "answer": 1,
+            "exp": "Les mots en « -eau » forment leur pluriel en « -eaux » : « des oiseaux »."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quel est le féminin de « joyeux » ?",
+            "choices": [
+              "Joyeux",
+              "Joyeuse",
+              "Joyeuxe",
+              "Joyeuze"
+            ],
+            "answer": 1,
+            "exp": "Les adjectifs en « -eux » forment leur féminin en « -euse » : « joyeuse »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Comment écrire « un journal » au pluriel ?",
+            "choices": [
+              "Des journals",
+              "Des journaux",
+              "Des journales",
+              "Des journaus"
+            ],
+            "answer": 1,
+            "exp": "Les mots en « -al » forment souvent leur pluriel en « -aux » : « des journaux »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Comment écrire « un bijou » au pluriel ?",
+            "choices": [
+              "Des bijous",
+              "Des bijoux",
+              "Des bijoues",
+              "Des bijou"
+            ],
+            "answer": 1,
+            "exp": "Certains mots en « -ou » forment leur pluriel en « -oux » (bijou, chou, genou...) : « des bijoux »."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il important de connaître les pluriels et féminins irréguliers (comme « animal »/« animaux » ou « neuf »/« neuve »), plutôt que de toujours appliquer la règle générale (+s ou +e) ?",
+            "choices": [
+              "Ce n'est jamais important, la règle générale marche toujours",
+              "Parce que certains mots ne suivent pas la règle générale, et les écrire avec +s ou +e seulement donnerait une orthographe fausse",
+              "Les mots irréguliers n'existent pas vraiment en français",
+              "Il faut toujours ignorer les exceptions"
+            ],
+            "answer": 1,
+            "exp": "Certains mots suivent des règles spécifiques différentes de la règle générale ; les connaître évite des erreurs d'orthographe."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève écrit « des chevals » pour le pluriel de « cheval ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "« Cheval » fait partie des mots en « -al » qui forment leur pluriel en « -aux » : « des chevaux », pas « des chevals »",
+              "« Cheval » n'a pas de pluriel",
+              "Il fallait écrire « des chevales »"
+            ],
+            "answer": 1,
+            "exp": "« Cheval », comme beaucoup de mots en « -al », forme son pluriel en « -aux » : « chevaux », pas « chevals »."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Tous les noms et adjectifs ne suivent pas la même règle pour former leur pluriel ou leur féminin : certains sont irréguliers.",
+            "answer": true,
+            "exp": "Le français a des règles générales (+s, +e) mais aussi de nombreuses exceptions à mémoriser."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Quel est le pluriel de « un prix » ?",
+            "choices": [
+              "Des prixs",
+              "Des prix",
+              "Des prices",
+              "Des prizes"
+            ],
+            "answer": 1,
+            "exp": "Les mots se terminant déjà par « -x » ne changent pas au pluriel : « des prix »."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi certains mots comme « prix » ou « nez » ne changent-ils pas du tout au pluriel ?",
+            "choices": [
+              "Ils changent toujours, comme tous les autres mots",
+              "Parce qu'ils se terminent déjà par une lettre (x, z) qui reste identique au singulier comme au pluriel, sans besoin d'ajouter de marque supplémentaire",
+              "C'est une erreur de ne pas les faire changer",
+              "Ces mots n'ont pas de forme plurielle"
+            ],
+            "answer": 1,
+            "exp": "Ces mots se terminent déjà par une lettre finale qui ne change pas entre le singulier et le pluriel."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Quel est le féminin de « sportif » ?",
+            "choices": [
+              "Sportif",
+              "Sportife",
+              "Sportive",
+              "Sportifte"
+            ],
+            "answer": 2,
+            "exp": "Les adjectifs en « -if » forment leur féminin en « -ive » : « sportive »."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève écrit « une fille sportif » sans accorder l'adjectif au féminin. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, « sportif » reste identique au féminin",
+              "Il fallait écrire « sportive » : les adjectifs en « -if » changent en « -ive » au féminin",
+              "« Fille » est en fait masculin",
+              "Il n'existe pas de forme féminine pour « sportif »"
+            ],
+            "answer": 1,
+            "exp": "« Sportif » devient « sportive » au féminin, suivant la règle des adjectifs en « -if »."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Quel est le pluriel de « un travail » ?",
+            "choices": [
+              "Des travails",
+              "Des travaux",
+              "Des travailles",
+              "Des travaile"
+            ],
+            "answer": 1,
+            "exp": "« Travail » fait partie des mots irréguliers dont le pluriel est « travaux »."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi est-il utile, en cas de doute sur un pluriel ou un féminin irrégulier, de vérifier dans un dictionnaire plutôt que de deviner ?",
+            "choices": [
+              "Deviner est toujours aussi fiable que vérifier",
+              "Parce que les formes irrégulières ne suivent pas de règle simple et prévisible : seule la vérification garantit l'orthographe correcte",
+              "Un dictionnaire ne donne jamais cette information",
+              "Il est interdit d'utiliser un dictionnaire pour ce genre de question"
+            ],
+            "answer": 1,
+            "exp": "Les formes irrégulières, sans règle simple et prévisible, nécessitent une vérification fiable (dictionnaire) plutôt qu'une simple supposition."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Quel est le féminin de « neuf » (l'adjectif, pas le nombre) ?",
+            "choices": [
+              "Neuf",
+              "Neuve",
+              "Neufe",
+              "Neuffe"
+            ],
+            "answer": 1,
+            "exp": "L'adjectif « neuf » devient « neuve » au féminin, une forme irrégulière à mémoriser."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "La règle générale du pluriel en français est d'ajouter un -s, mais certains mots suivent des règles différentes.",
+            "answer": true,
+            "exp": "C'est effectivement la règle de base, avec de nombreuses exceptions (-x, -aux, invariables...) à connaître."
           }
         ]
       },
@@ -11328,6 +12066,195 @@
             ],
             "answer": 1,
             "exp": "Chaque pronom a sa propre forme du verbe être : « sont » correspond à « ils/elles », pas à « nous », qui demande « sommes ». Il faut bien associer chaque pronom à sa forme verbale correcte."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Comment conjugue-t-on « jouer » avec « il » au présent ?",
+            "choices": [
+              "joue",
+              "joues",
+              "jouent",
+              "jouez"
+            ],
+            "answer": 0,
+            "exp": "« Il joue » : la 3e personne du singulier des verbes en -er prend la terminaison -e."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Comment conjugue-t-on « être » avec « vous » au présent ?",
+            "choices": [
+              "es",
+              "est",
+              "êtes",
+              "sont"
+            ],
+            "answer": 2,
+            "exp": "« Vous êtes » : c'est la forme du verbe être avec « vous » au présent."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Complète : « Elle ... (avoir) un beau vélo rouge. »",
+            "choices": [
+              "a",
+              "as",
+              "ont",
+              "avez"
+            ],
+            "answer": 0,
+            "exp": "« Elle a » : la 3e personne du singulier du verbe avoir au présent."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Complète : « Nous ... (chanter) une belle chanson. »",
+            "choices": [
+              "chante",
+              "chantes",
+              "chantons",
+              "chantent"
+            ],
+            "answer": 2,
+            "exp": "« Nous chantons » : la 1re personne du pluriel des verbes en -er prend la terminaison -ons."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il particulièrement important de bien mémoriser la conjugaison de « être » et « avoir », plus que celle d'autres verbes moins fréquents ?",
+            "choices": [
+              "Ce n'est jamais plus important que les autres verbes",
+              "Parce que « être » et « avoir » sont des verbes extrêmement fréquents, utilisés aussi comme auxiliaires pour former d'autres temps (comme le passé composé)",
+              "« Être » et « avoir » ne servent jamais à former d'autres temps",
+              "Ces deux verbes sont les plus rares de la langue française"
+            ],
+            "answer": 1,
+            "exp": "« Être » et « avoir » sont très fréquents et servent aussi d'auxiliaires pour construire d'autres temps (passé composé), ce qui rend leur maîtrise essentielle."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève écrit « nous sont contents » en confondant les formes de « être ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "Avec « nous », le verbe être se conjugue « sommes », pas « sont » (qui correspond à « ils/elles ») : il fallait écrire « nous sommes contents »",
+              "« Sont » est la bonne forme pour « nous »",
+              "« Être » ne se conjugue jamais avec « nous »"
+            ],
+            "answer": 1,
+            "exp": "« Sont » correspond à « ils/elles », pas à « nous » qui se conjugue en « sommes » : « nous sommes contents »."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Les verbes réguliers en -er suivent généralement les mêmes terminaisons au présent : -e, -es, -e, -ons, -ez, -ent.",
+            "answer": true,
+            "exp": "C'est le schéma de conjugaison régulier des verbes du premier groupe (en -er) au présent."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Complète : « Tu ... (être) très gentil. »",
+            "choices": [
+              "es",
+              "est",
+              "êtes",
+              "suis"
+            ],
+            "answer": 0,
+            "exp": "« Tu es » : la 2e personne du singulier du verbe être au présent."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi les verbes « être » et « avoir » sont-ils qualifiés d'« irréguliers », contrairement aux verbes réguliers en -er ?",
+            "choices": [
+              "Ils ne sont pas irréguliers, ils suivent les mêmes règles",
+              "Parce que leurs formes au présent (suis, es, est, sommes, êtes, sont pour être) ne suivent pas le schéma régulier des terminaisons -e, -es, -e, -ons, -ez, -ent",
+              "Tous les verbes français sont irréguliers",
+              "Les verbes irréguliers n'existent pas en français"
+            ],
+            "answer": 1,
+            "exp": "Leurs formes conjuguées ne suivent pas le schéma régulier des verbes en -er, ce qui en fait des verbes irréguliers à mémoriser à part."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Complète : « Ils ... (avoir) de la chance. »",
+            "choices": [
+              "a",
+              "as",
+              "ont",
+              "avons"
+            ],
+            "answer": 2,
+            "exp": "« Ils ont » : la 3e personne du pluriel du verbe avoir au présent."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève conjugue « je mangeons » en pensant appliquer la terminaison du pluriel. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "« Je » est la 1re personne du singulier, qui prend la terminaison -e (« je mange »), pas -ons qui est réservée à « nous »",
+              "« Mangeons » est la bonne forme pour « je »",
+              "« Je » ne peut jamais se conjuguer avec ce verbe"
+            ],
+            "answer": 1,
+            "exp": "« -ons » est la terminaison de « nous », pas de « je » qui prend « -e » : il fallait écrire « je mange »."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Complète : « Vous ... (jouer) très bien au ballon. »",
+            "choices": [
+              "joue",
+              "joues",
+              "jouez",
+              "jouent"
+            ],
+            "answer": 2,
+            "exp": "« Vous jouez » : la 2e personne du pluriel des verbes en -er prend la terminaison -ez."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi conjuguer correctement un verbe selon son sujet est-il important pour la compréhension d'une phrase ?",
+            "choices": [
+              "Ce n'est jamais important pour la compréhension",
+              "Parce qu'une mauvaise conjugaison peut rendre une phrase confuse ou incorrecte, même si le sens général reste parfois deviné",
+              "La conjugaison n'a aucun rapport avec le sens d'une phrase",
+              "Il est toujours possible de comprendre une phrase quelle que soit sa conjugaison"
+            ],
+            "answer": 1,
+            "exp": "Une conjugaison correcte assure la clarté et la justesse grammaticale d'une phrase, essentielle à une bonne communication écrite."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Complète : « Je ... (avoir) faim. »",
+            "choices": [
+              "ai",
+              "as",
+              "a",
+              "avons"
+            ],
+            "answer": 0,
+            "exp": "« J'ai faim » : la 1re personne du singulier du verbe avoir au présent."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Complète : « Elles ... (être) très heureuses. »",
+            "choices": [
+              "est",
+              "es",
+              "sont",
+              "sommes"
+            ],
+            "answer": 2,
+            "exp": "« Elles sont » : la 3e personne du pluriel du verbe être au présent."
           }
         ]
       },
@@ -11416,6 +12343,189 @@
             ],
             "answer": 1,
             "exp": "« Rester », comme d'autres verbes exprimant un état ou un déplacement (aller, venir, partir...), se conjugue avec l'auxiliaire « être », pas « avoir » : la forme correcte est « je suis resté »."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "De combien de parties se compose le passé composé ?",
+            "choices": [
+              "1",
+              "2 : un auxiliaire et un participe passé",
+              "3",
+              "4"
+            ],
+            "answer": 1,
+            "exp": "Le passé composé se forme avec un auxiliaire (être ou avoir) et un participe passé."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quel est le participe passé du verbe « jouer » ?",
+            "choices": [
+              "Joué",
+              "Jouer",
+              "Jouant",
+              "Joue"
+            ],
+            "answer": 0,
+            "exp": "Le participe passé des verbes en -er se forme généralement en -é : « joué »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Mets au passé composé : « Il mange une pomme. » (le verbe « manger » utilise l'auxiliaire avoir)",
+            "choices": [
+              "Il a mangé une pomme.",
+              "Il est mangé une pomme.",
+              "Il mangeait une pomme.",
+              "Il mange une pomme."
+            ],
+            "answer": 0,
+            "exp": "« Manger » se conjugue avec l'auxiliaire « avoir » au passé composé : « il a mangé »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Mets au passé composé : « Elle arrive à l'école. » (le verbe « arriver » utilise l'auxiliaire être)",
+            "choices": [
+              "Elle a arrivé à l'école.",
+              "Elle est arrivée à l'école.",
+              "Elle arrivait à l'école.",
+              "Elle arrive à l'école."
+            ],
+            "answer": 1,
+            "exp": "« Arriver » se conjugue avec l'auxiliaire « être » : « elle est arrivée », avec accord du participe passé."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi dit-on que la forme négative du passé composé encadre uniquement l'auxiliaire (« je n'ai pas mangé »), et non le participe passé ?",
+            "choices": [
+              "Ce n'est pas vrai, elle encadre toujours le participe passé",
+              "Parce que « ne » et « pas » se placent autour de l'auxiliaire conjugué (« ai »), le participe passé (« mangé ») restant après « pas »",
+              "La négation n'a aucun rapport avec le passé composé",
+              "Il faut toujours encadrer le participe passé, jamais l'auxiliaire"
+            ],
+            "answer": 1,
+            "exp": "La négation « ne... pas » encadre l'auxiliaire conjugué, tandis que le participe passé reste après « pas » : « je n'ai pas mangé »."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève écrit « j'ai resté à la maison » pour le verbe « rester ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "« Rester » se conjugue avec l'auxiliaire « être », pas « avoir » : il fallait écrire « je suis resté »",
+              "« Resté » n'est pas le bon participe passé",
+              "Il fallait écrire « j'ai restée »"
+            ],
+            "answer": 1,
+            "exp": "« Rester » fait partie des verbes qui utilisent l'auxiliaire « être », pas « avoir » : « je suis resté »."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Le passé composé se forme avec un auxiliaire (être ou avoir) conjugué, suivi du participe passé du verbe.",
+            "answer": true,
+            "exp": "C'est la structure fondamentale du passé composé en français."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Quel est le participe passé du verbe « finir » ?",
+            "choices": [
+              "Fini",
+              "Finir",
+              "Finissant",
+              "Finissé"
+            ],
+            "answer": 0,
+            "exp": "Le participe passé des verbes en -ir (2e groupe) se forme généralement en -i : « fini »."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi le participe passé d'un verbe avec l'auxiliaire « être » doit-il s'accorder avec le sujet, alors que ce n'est pas toujours le cas avec « avoir » ?",
+            "choices": [
+              "Ce n'est jamais le cas, les deux fonctionnent pareil",
+              "Parce que la règle d'accord du participe passé diffère selon l'auxiliaire utilisé : avec « être », l'accord avec le sujet est systématique",
+              "Le participe passé ne s'accorde jamais, quel que soit l'auxiliaire",
+              "L'accord dépend uniquement de la longueur du verbe"
+            ],
+            "answer": 1,
+            "exp": "Avec l'auxiliaire « être », le participe passé s'accorde systématiquement avec le sujet, contrairement à certains cas avec « avoir »."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Mets au passé composé : « Nous regardons un film. » (auxiliaire avoir)",
+            "choices": [
+              "Nous avons regardé un film.",
+              "Nous sommes regardé un film.",
+              "Nous regardions un film.",
+              "Nous regardons un film."
+            ],
+            "answer": 0,
+            "exp": "« Regarder » se conjugue avec « avoir » : « nous avons regardé »."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève écrit « elle a tombé » pour le verbe « tomber ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison",
+              "« Tomber » utilise l'auxiliaire « être », pas « avoir » : il fallait écrire « elle est tombée »",
+              "« Tombé » n'est pas un participe passé valide",
+              "Il fallait écrire « elle a tombée »"
+            ],
+            "answer": 1,
+            "exp": "« Tomber » fait partie des verbes utilisant l'auxiliaire « être » : « elle est tombée »."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Quel est le participe passé du verbe « avoir » lui-même ?",
+            "choices": [
+              "Avu",
+              "Eu",
+              "Avoir",
+              "Ayant"
+            ],
+            "answer": 1,
+            "exp": "Le participe passé du verbe « avoir » est « eu » (irrégulier)."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il utile de connaître à l'avance quels verbes utilisent « être » plutôt que « avoir » au passé composé ?",
+            "choices": [
+              "Ce n'est jamais utile de le savoir",
+              "Parce que le choix du bon auxiliaire est indispensable pour former correctement le passé composé, et certains verbes (comme aller, venir, tomber...) utilisent systématiquement « être »",
+              "Tous les verbes utilisent toujours le même auxiliaire",
+              "Le choix de l'auxiliaire n'a aucune importance pour la correction"
+            ],
+            "answer": 1,
+            "exp": "Connaître les verbes utilisant systématiquement « être » (aller, venir, tomber...) permet de former correctement le passé composé sans erreur d'auxiliaire."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Quel est le participe passé du verbe « être » lui-même ?",
+            "choices": [
+              "Étant",
+              "Été",
+              "Ête",
+              "Êtu"
+            ],
+            "answer": 1,
+            "exp": "Le participe passé du verbe « être » est « été » (invariable)."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Au passé composé, l'auxiliaire se conjugue selon le sujet, tandis que le participe passé reste souvent identique (sauf accord avec être).",
+            "answer": true,
+            "exp": "L'auxiliaire porte la marque de la personne et du nombre, le participe passé restant plus stable (sauf règles d'accord)."
           }
         ]
       }
