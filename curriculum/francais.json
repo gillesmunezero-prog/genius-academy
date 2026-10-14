@@ -4960,6 +4960,195 @@
             ],
             "answer": 1,
             "exp": "Une prise trop crispée du crayon fatigue rapidement la main et nuit à la qualité du geste d'écriture : il faut chercher une prise plus détendue, avec une bonne posture générale du corps."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans l'écriture cursive, comment les lettres d'un même mot sont-elles reliées ?",
+            "choices": [
+              "Elles ne se touchent jamais",
+              "Elles sont reliées entre elles par un geste continu, sans lever le crayon",
+              "Elles sont toujours séparées par un espace",
+              "Elles sont toutes en majuscules"
+            ],
+            "answer": 1,
+            "exp": "La cursive relie les lettres d'un mot par un tracé continu, contrairement aux lettres détachées de l'écriture scripte."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quelle posture aide à bien écrire en cursive sans fatigue ?",
+            "choices": [
+              "Le dos très courbé et le visage collé à la feuille",
+              "Le dos droit, le bras posé confortablement, sans crispation excessive",
+              "Debout en équilibre sur une jambe",
+              "Allongé par terre"
+            ],
+            "answer": 1,
+            "exp": "Une bonne posture (dos droit, bras détendu) facilite un geste d'écriture fluide et évite la fatigue."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève remarque que ses lettres penchent dans des directions différentes selon les mots. Que peut-il faire pour s'améliorer ?",
+            "choices": [
+              "Rien, cela n'a aucune importance",
+              "S'entraîner à garder une inclinaison régulière, en s'aidant par exemple de lignes obliques repères",
+              "Écrire de plus en plus vite pour corriger cela",
+              "Changer de main pour écrire"
+            ],
+            "answer": 1,
+            "exp": "S'entraîner avec des repères visuels (comme des lignes obliques) aide à garder une inclinaison régulière des lettres."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi certaines lettres rondes comme le « o » ou le « a » demandent-elles un geste légèrement différent des lettres plus anguleuses comme le « l » ?",
+            "choices": [
+              "Il n'y a aucune différence de geste entre les lettres",
+              "Parce que les lettres rondes nécessitent un tracé courbé fluide, alors que les lettres anguleuses demandent des changements de direction plus nets",
+              "Parce que les lettres rondes se dessinent toujours en dernier",
+              "Parce que les lettres anguleuses n'existent pas en cursive"
+            ],
+            "answer": 1,
+            "exp": "Les formes rondes demandent un tracé courbé continu, tandis que les formes anguleuses impliquent des changements de direction plus marqués dans le geste."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève crispe très fort ses doigts sur son crayon en écrivant, et se plaint d'avoir mal à la main après quelques lignes. Quel est le problème ?",
+            "choices": [
+              "Il n'y a aucun problème, c'est normal d'avoir mal",
+              "Une prise trop crispée fatigue rapidement la main ; il faudrait tenir le crayon plus souplement pour écrire plus longtemps sans douleur",
+              "Il faut serrer encore plus fort pour bien écrire",
+              "La douleur n'a aucun rapport avec la façon de tenir le crayon"
+            ],
+            "answer": 1,
+            "exp": "Une prise trop crispée fatigue vite la main ; une prise plus souple permet d'écrire plus longtemps sans douleur."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "L'écriture cursive relie les lettres d'un mot sans lever le crayon entre chaque lettre.",
+            "answer": true,
+            "exp": "C'est la caractéristique principale de la cursive : un tracé continu reliant les lettres d'un même mot."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour progresser en écriture cursive, quelle pratique est la plus utile ?",
+            "choices": [
+              "Écrire une seule fois puis ne plus jamais s'entraîner",
+              "S'entraîner régulièrement, en recopiant des lettres et des mots avec attention",
+              "Écrire uniquement en majuscules détachées",
+              "Ne jamais corriger ses erreurs de tracé"
+            ],
+            "answer": 1,
+            "exp": "La pratique régulière et attentive est la clé pour progresser dans la fluidité et la régularité de l'écriture cursive."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il conseillé de ne pas trop appuyer sur le crayon en écrivant en cursive ?",
+            "choices": [
+              "Appuyer fort n'a aucun effet",
+              "Appuyer trop fort fatigue la main plus vite et peut rendre le geste moins fluide et moins précis",
+              "Il faut toujours appuyer le plus fort possible pour une écriture lisible",
+              "Appuyer fort rend automatiquement l'écriture plus belle"
+            ],
+            "answer": 1,
+            "exp": "Une pression excessive fatigue la main et peut nuire à la fluidité et à la précision du geste d'écriture."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève écrit des lettres de tailles très inégales dans un même mot (certaines minuscules, d'autres beaucoup plus grandes). Quel conseil lui donner ?",
+            "choices": [
+              "Continuer comme ça, la taille n'a pas d'importance",
+              "S'entraîner à respecter une hauteur régulière pour les lettres, en s'aidant des lignes du cahier",
+              "Écrire uniquement en très grandes lettres désormais",
+              "Changer complètement de style d'écriture"
+            ],
+            "answer": 1,
+            "exp": "S'appuyer sur les lignes du cahier aide à garder une hauteur régulière entre les lettres d'un même mot."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans un mot cursif, où le crayon doit-il généralement se lever ?",
+            "choices": [
+              "Entre chaque lettre du mot",
+              "Seulement entre deux mots différents, ou pour certains détails comme le point du « i » ou la barre du « t »",
+              "Il ne faut jamais lever le crayon, même entre deux mots",
+              "Au milieu de chaque lettre"
+            ],
+            "answer": 1,
+            "exp": "Dans un mot, les lettres s'enchaînent sans lever le crayon, sauf pour quelques détails précis comme le point du « i » ou la barre du « t »."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi l'entraînement régulier à l'écriture cursive aide-t-il aussi à écrire plus vite plus tard ?",
+            "choices": [
+              "Il n'y a aucun lien entre les deux",
+              "Parce que le geste devient de plus en plus automatique et fluide avec la pratique, ce qui permet d'écrire plus rapidement sans perdre en lisibilité",
+              "Parce que s'entraîner rend l'écriture toujours illisible",
+              "L'entraînement ralentit toujours l'écriture"
+            ],
+            "answer": 1,
+            "exp": "La pratique régulière rend le geste d'écriture plus automatique et fluide, ce qui permet d'écrire plus vite sans perdre en lisibilité."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour bien démarrer l'apprentissage de l'écriture cursive, que recommande-t-on souvent en premier ?",
+            "choices": [
+              "Écrire directement de longs textes compliqués",
+              "S'entraîner d'abord sur des tracés simples (boucles, ponts) avant de former des lettres entières",
+              "Copier uniquement des mots très longs",
+              "Ignorer les lignes du cahier"
+            ],
+            "answer": 1,
+            "exp": "S'entraîner d'abord sur des tracés de base (boucles, ponts) prépare le geste nécessaire à la formation des lettres cursives."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un élève fatigue très vite en écrivant, même sur un texte court. Parmi ces causes possibles, laquelle est la plus probable ?",
+            "choices": [
+              "Le texte est toujours trop facile",
+              "Une mauvaise posture ou une prise de crayon trop crispée",
+              "Il écrit toujours trop lentement",
+              "Il n'existe aucune cause possible à la fatigue en écrivant"
+            ],
+            "answer": 1,
+            "exp": "Une mauvaise posture ou une prise crispée du crayon sont des causes fréquentes de fatigue rapide en écrivant."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la régularité de l'inclinaison des lettres rend-elle un texte cursif plus facile à lire ?",
+            "choices": [
+              "Ce n'est jamais plus facile à lire",
+              "Parce qu'une inclinaison régulière rend l'ensemble du texte visuellement cohérent et évite une impression de désordre qui gênerait la lecture",
+              "L'inclinaison n'a aucun effet sur la lisibilité",
+              "Un texte doit toujours avoir des inclinaisons très différentes"
+            ],
+            "answer": 1,
+            "exp": "Une inclinaison régulière donne une cohérence visuelle au texte, facilitant sa lecture, contrairement à des inclinaisons désordonnées."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Combien de fois conseille-t-on généralement de lever le crayon à l'intérieur d'un seul mot écrit en cursive (hors points et barres) ?",
+            "choices": [
+              "Autant de fois qu'il y a de lettres",
+              "Zéro fois : les lettres d'un mot s'enchaînent sans lever le crayon",
+              "Une fois par syllabe obligatoirement",
+              "Il n'y a pas de règle"
+            ],
+            "answer": 1,
+            "exp": "Dans un mot cursif, on ne lève normalement pas le crayon entre les lettres : elles s'enchaînent en un tracé continu."
           }
         ]
       },
@@ -5048,6 +5237,189 @@
             ],
             "answer": 1,
             "exp": "Prendre le temps de se relire et de comparer avec le modèle à la fin permet justement de repérer les oublis avant de rendre son travail, ce qui aurait évité les mots manquants."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pourquoi vaut-il mieux mémoriser un groupe de mots avant de le copier plutôt que de copier lettre par lettre en regardant sans arrêt le modèle ?",
+            "choices": [
+              "Cela ne fait aucune différence",
+              "Parce que mémoriser un groupe entier rend la copie plus rapide et moins fatigante, en évitant de revenir sans cesse au modèle",
+              "Il est interdit de mémoriser plusieurs lettres à la fois",
+              "Copier lettre par lettre est toujours plus rapide"
+            ],
+            "answer": 1,
+            "exp": "Mémoriser un groupe de mots avant de l'écrire limite les allers-retours vers le modèle, rendant la copie plus fluide et rapide."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Après avoir terminé une copie, que faut-il faire avant de la rendre ?",
+            "choices": [
+              "Rien, c'est terminé dès qu'on a fini d'écrire",
+              "Se relire attentivement pour vérifier qu'on n'a rien oublié ni mal copié",
+              "Effacer immédiatement tout ce qu'on a écrit",
+              "Recommencer depuis le début sans relire"
+            ],
+            "answer": 1,
+            "exp": "La relecture finale permet de repérer et corriger les éventuelles erreurs ou oublis avant de rendre son travail."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève doit copier « Les oiseaux chantent au printemps ». Quelle est la meilleure méthode ?",
+            "choices": [
+              "Copier lettre par lettre en regardant le modèle à chaque lettre",
+              "Lire et mémoriser des groupes de mots entiers (« Les oiseaux », « chantent au printemps »), puis les écrire sans regarder sans arrêt",
+              "Copier le texte à l'envers",
+              "Deviner le texte sans le lire du tout"
+            ],
+            "answer": 1,
+            "exp": "Mémoriser des groupes de mots entiers avant de les écrire est plus efficace que de copier lettre par lettre."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi copier lettre par lettre est-il plus fatigant que de mémoriser des mots entiers avant de les écrire ?",
+            "choices": [
+              "Ce n'est jamais plus fatigant",
+              "Parce que cela demande de regarder le modèle beaucoup plus souvent, ce qui ralentit et fatigue davantage les yeux et l'attention",
+              "Copier lettre par lettre est toujours plus rapide et moins fatigant",
+              "Il n'y a aucune différence de fatigue entre les deux méthodes"
+            ],
+            "answer": 1,
+            "exp": "Les allers-retours fréquents vers le modèle pour copier lettre par lettre fatiguent davantage les yeux et l'attention que la mémorisation de groupes entiers."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève copie un texte très vite sans jamais se relire, et rend sa copie avec plusieurs mots oubliés. Que lui conseiller ?",
+            "choices": [
+              "De continuer à copier sans jamais se relire",
+              "De prendre le temps de se relire après la copie pour repérer les oublis et les corriger",
+              "D'écrire encore plus vite la prochaine fois",
+              "De ne plus jamais faire de copie"
+            ],
+            "answer": 1,
+            "exp": "Prendre le temps de se relire après la copie permet de repérer et corriger les oublis avant de rendre son travail."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Se relire après une copie permet de repérer des mots oubliés ou mal copiés.",
+            "answer": true,
+            "exp": "C'est justement l'utilité de la relecture : vérifier la fidélité de sa copie par rapport au modèle."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il utile de repérer la ponctuation (virgules, points) avant de commencer à copier une phrase ?",
+            "choices": [
+              "La ponctuation n'a aucune importance en copie",
+              "Parce qu'elle fait partie intégrante du texte à copier fidèlement, et l'oublier change le sens ou la lisibilité de la phrase",
+              "Il est interdit de copier la ponctuation",
+              "La ponctuation se rajoute toujours après coup, jamais pendant la copie"
+            ],
+            "answer": 1,
+            "exp": "La ponctuation fait partie du texte à copier fidèlement ; l'oublier change le sens ou nuit à la lisibilité de la phrase copiée."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Quelle habitude aide le plus à éviter les erreurs de copie sur un mot long et compliqué ?",
+            "choices": [
+              "Le copier d'un seul coup, lettre par lettre, très vite",
+              "Le découper mentalement en syllabes ou en petits groupes de lettres plus faciles à retenir",
+              "Deviner comment il s'écrit sans le regarder",
+              "Changer certaines lettres pour que ce soit plus simple"
+            ],
+            "answer": 1,
+            "exp": "Découper un mot long en syllabes ou petits groupes facilite sa mémorisation et réduit le risque d'erreur de copie."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi copier un texte en respectant exactement les majuscules et la ponctuation est-il important ?",
+            "choices": [
+              "Ce n'est jamais important lors d'une copie",
+              "Parce qu'une copie fidèle doit respecter tous les éléments du texte original, y compris les majuscules et la ponctuation, pour en garder le sens exact",
+              "Les majuscules et la ponctuation peuvent être changées librement",
+              "Il est interdit d'utiliser des majuscules en copiant"
+            ],
+            "answer": 1,
+            "exp": "Une copie fidèle doit respecter tous les éléments du texte original (majuscules, ponctuation) pour en conserver le sens exact."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève copie un texte en changeant involontairement un mot par un synonyme qu'il connaît mieux. Est-ce une bonne pratique de copie ?",
+            "choices": [
+              "Oui, c'est toujours une bonne pratique",
+              "Non, une copie doit reproduire exactement le texte original, pas le reformuler même avec des synonymes",
+              "Oui, mais seulement pour les mots difficiles",
+              "Cela n'a aucune importance pour une copie"
+            ],
+            "answer": 1,
+            "exp": "Une copie doit reproduire fidèlement le texte original ; remplacer un mot par un synonyme, même involontairement, n'est pas une copie exacte."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi certains élèves copient-ils plus facilement un texte qu'ils ont déjà lu et compris, plutôt qu'un texte dont ils ne comprennent pas le sens ?",
+            "choices": [
+              "Comprendre un texte ne change jamais la facilité de le copier",
+              "Parce que comprendre le sens aide à mémoriser des groupes de mots cohérents plutôt que des suites de lettres sans signification",
+              "Un texte compris est toujours plus long à copier",
+              "Il est impossible de copier un texte qu'on ne comprend pas"
+            ],
+            "answer": 1,
+            "exp": "Comprendre le sens d'un texte facilite le découpage en groupes de mots logiques, ce qui aide à les mémoriser et donc à mieux les copier."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour copier un texte long sans erreur, quelle est la meilleure stratégie globale ?",
+            "choices": [
+              "Copier le texte entier d'un seul coup, sans jamais relire",
+              "Copier phrase par phrase (ou groupe de mots par groupe de mots), en relisant régulièrement pour vérifier",
+              "Copier le texte à l'envers, de la fin vers le début",
+              "Deviner le contenu sans jamais regarder le modèle"
+            ],
+            "answer": 1,
+            "exp": "Copier par petites unités avec vérifications régulières réduit le risque d'erreurs accumulées sur un texte long."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi relire sa copie en la comparant phrase par phrase avec le modèle original est-elle plus efficace qu'une relecture rapide globale ?",
+            "choices": [
+              "Ce n'est jamais plus efficace",
+              "Parce qu'une comparaison phrase par phrase permet de repérer précisément chaque erreur ou oubli, alors qu'une relecture rapide peut en manquer beaucoup",
+              "Une relecture rapide trouve toujours plus d'erreurs",
+              "Comparer phrase par phrase est inutile si le texte est court"
+            ],
+            "answer": 1,
+            "exp": "Une comparaison minutieuse, phrase par phrase, permet de repérer précisément chaque erreur, contrairement à une relecture rapide et globale."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Mémoriser un mot avant de l'écrire permet de l'écrire plus vite que de le copier lettre par lettre.",
+            "answer": true,
+            "exp": "Une fois le mot mémorisé, l'écrire ne demande plus de revenir sans cesse au modèle, ce qui accélère la copie."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un élève copie un texte en sautant accidentellement une ligne entière. Comment aurait-il pu éviter cette erreur ?",
+            "choices": [
+              "Il ne pouvait rien faire pour l'éviter",
+              "En suivant son avancée avec un repère (doigt ou règle) sur le texte modèle, et en se relisant à la fin",
+              "En copiant encore plus vite",
+              "En ignorant complètement la relecture"
+            ],
+            "answer": 1,
+            "exp": "Suivre sa progression avec un repère visuel et se relire aide à éviter de sauter des lignes pendant la copie."
           }
         ]
       },
@@ -5136,6 +5508,195 @@
             ],
             "answer": 1,
             "exp": "Écrire uniquement en fonction des sons, sans réfléchir au sens, fait courir le risque de se tromper sur les accords grammaticaux (pluriels, féminins...) qui ne s'entendent pas toujours clairement à l'oral mais se déduisent du sens."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pourquoi faut-il bien écouter et comprendre le sens d'une phrase dictée, pas juste les sons entendus ?",
+            "choices": [
+              "Le sens n'a jamais d'importance en dictée",
+              "Parce que comprendre le sens aide à choisir l'orthographe correcte, notamment pour les accords et les homophones (comme « et »/« est »)",
+              "Il faut écrire uniquement les sons, jamais réfléchir au sens",
+              "Comprendre le sens est interdit pendant une dictée"
+            ],
+            "answer": 1,
+            "exp": "Comprendre le sens aide à choisir la bonne orthographe, en particulier pour les accords et les mots qui se prononcent pareil mais s'écrivent différemment."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pour écrire un mot entendu pour la première fois pendant une dictée, que peux-tu faire ?",
+            "choices": [
+              "Ne rien écrire du tout",
+              "Découper le mot en syllabes que tu entends, et essayer de les transcrire avec les lettres correspondantes",
+              "Deviner un mot complètement différent",
+              "Écrire uniquement la première lettre"
+            ],
+            "answer": 1,
+            "exp": "Découper un mot inconnu en syllabes entendues aide à le transcrire progressivement, syllabe par syllabe."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pendant une dictée, un élève doit écrire « Les chats dorment ». Pourquoi le verbe se termine-t-il par -ent et pas par -e ?",
+            "choices": [
+              "Par hasard, sans raison particulière",
+              "Parce que le sujet « les chats » est au pluriel, et le verbe doit s'accorder avec lui au pluriel",
+              "Parce que « chats » commence par une consonne",
+              "Il n'y a pas de règle à ce sujet"
+            ],
+            "answer": 1,
+            "exp": "Le verbe s'accorde avec son sujet : « les chats » étant pluriel, le verbe prend la terminaison du pluriel -ent."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pendant une dictée, comment peux-tu reconnaître qu'un mot est probablement un verbe conjugué plutôt qu'un nom ?",
+            "choices": [
+              "Un verbe est toujours plus court qu'un nom",
+              "En cherchant qui fait l'action (le sujet) dans la phrase : si le mot décrit une action réalisée par ce sujet, c'est probablement un verbe conjugué",
+              "Les verbes ont toujours une majuscule",
+              "Il est impossible de distinguer un verbe d'un nom en dictée"
+            ],
+            "answer": 1,
+            "exp": "Identifier le sujet et chercher l'action qu'il réalise aide à reconnaître un verbe conjugué dans la phrase."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi les erreurs commises pendant une dictée ne sont-elles pas forcément un problème, mais plutôt une information utile ?",
+            "choices": [
+              "Les erreurs ne servent jamais à rien",
+              "Parce qu'elles montrent précisément quelles règles ou quels mots il faut encore travailler pour progresser",
+              "Il faut toujours cacher ses erreurs sans les regarder",
+              "Une dictée sans erreur est la seule chose qui compte"
+            ],
+            "answer": 1,
+            "exp": "Les erreurs révèlent précisément les points à retravailler, ce qui en fait une information précieuse pour progresser."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève, pendant une dictée, écrit chaque mot en se dépêchant sans jamais réfléchir au sens de la phrase. Que lui conseiller ?",
+            "choices": [
+              "De continuer ainsi, la vitesse est plus importante que le sens",
+              "De prendre le temps de comprendre le sens de chaque phrase avant de l'écrire, pour choisir la bonne orthographe (accords, homophones)",
+              "De ne plus jamais faire de dictée",
+              "D'écrire encore plus vite pour terminer avant les autres"
+            ],
+            "answer": 1,
+            "exp": "Comprendre le sens avant d'écrire aide à choisir la bonne orthographe, notamment pour les accords et les homophones."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Comprendre le sens d'une phrase dictée aide à choisir la bonne orthographe pour les mots qui se prononcent pareil mais s'écrivent différemment.",
+            "answer": true,
+            "exp": "Le sens de la phrase permet de distinguer par exemple « et » (qui relie) de « est » (le verbe être)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans la phrase dictée « Elle mange une pomme », comment sait-on qu'il faut écrire « mange » et pas « mangent » ?",
+            "choices": [
+              "Au hasard",
+              "Parce que le sujet « elle » est au singulier, donc le verbe reste au singulier",
+              "Parce que « pomme » commence par un « p »",
+              "Il n'y a aucune règle à ce sujet"
+            ],
+            "answer": 1,
+            "exp": "Le sujet « elle » étant singulier, le verbe s'accorde au singulier : « mange », sans -nt."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il utile, avant une dictée, de revoir les règles de conjugaison des verbes qui seront probablement utilisés ?",
+            "choices": [
+              "Ce n'est jamais utile de réviser avant une dictée",
+              "Parce que connaître à l'avance les terminaisons correctes selon les sujets aide à les appliquer correctement pendant l'écriture rapide d'une dictée",
+              "Réviser change le texte de la dictée",
+              "Les verbes ne sont jamais utilisés dans une dictée"
+            ],
+            "answer": 1,
+            "exp": "Réviser les conjugaisons à l'avance aide à appliquer les bonnes terminaisons rapidement et correctement pendant la dictée."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pendant une dictée, un élève entend « les enfants » et écrit « lézenfant », sans découper les mots. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, c'est la bonne façon d'écrire",
+              "Il n'a pas correctement découpé les mots entendus : « les » et « enfants » sont deux mots séparés, chacun avec sa propre orthographe",
+              "« Lézenfant » est une orthographe acceptée",
+              "Il fallait écrire encore plus vite"
+            ],
+            "answer": 1,
+            "exp": "Bien découper les mots entendus (« les » puis « enfants ») est essentiel pour les écrire séparément et correctement."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour une dictée, pourquoi est-il utile de se relire à la fin, même si on pense avoir bien écrit chaque mot ?",
+            "choices": [
+              "La relecture ne sert jamais à rien",
+              "Parce qu'elle permet de repérer des erreurs d'accord ou d'orthographe qu'on n'a pas vues en écrivant au fil de la dictée",
+              "Il est interdit de se relire après une dictée",
+              "Se relire change le texte original"
+            ],
+            "answer": 1,
+            "exp": "La relecture finale permet de repérer des erreurs qui ont pu passer inaperçues pendant l'écriture rapide de la dictée."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans « Le chien et le chat jouent ensemble », pourquoi le verbe « jouent » est-il au pluriel ?",
+            "choices": [
+              "Parce que « chien » est masculin",
+              "Parce que le sujet est composé de deux éléments reliés par « et » (le chien ET le chat), ce qui forme un sujet pluriel",
+              "Par hasard, sans raison précise",
+              "Parce que « ensemble » est à la fin de la phrase"
+            ],
+            "answer": 1,
+            "exp": "Deux sujets reliés par « et » forment ensemble un sujet pluriel, qui impose l'accord pluriel du verbe."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi une dictée régulière (même courte) aide-t-elle à progresser en orthographe sur le long terme ?",
+            "choices": [
+              "Une dictée ne sert jamais à progresser",
+              "Parce qu'elle entraîne régulièrement l'application des règles d'orthographe et d'accord, ce qui finit par les rendre plus automatiques",
+              "Les dictées rendent toujours l'orthographe plus difficile",
+              "Il vaut mieux ne jamais faire de dictée pour progresser"
+            ],
+            "answer": 1,
+            "exp": "La pratique régulière des dictées entraîne l'application des règles d'orthographe, les rendant progressivement plus automatiques."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pendant une dictée, tu hésites entre écrire « il mange » et « il manges ». Quelle règle te permet de trancher ?",
+            "choices": [
+              "Il faut deviner au hasard",
+              "Avec le sujet « il » (3e personne du singulier), le verbe au présent se termine généralement par -e, pas -es (réservé à « tu »)",
+              "Les deux orthographes sont toujours acceptées",
+              "Il faut toujours écrire -es après « il »"
+            ],
+            "answer": 1,
+            "exp": "« Il » (3e personne du singulier) prend la terminaison -e au présent ; -es est réservé à « tu »."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il utile de repérer d'abord les mots qu'on connaît déjà bien avant une dictée, pour se concentrer ensuite sur les plus difficiles ?",
+            "choices": [
+              "Ce n'est jamais utile",
+              "Parce que cela permet de ne pas perdre de temps ni d'attention sur ce qui est déjà maîtrisé, et de mieux se concentrer sur les vraies difficultés",
+              "Il faut toujours traiter tous les mots de la même façon, sans distinction",
+              "Les mots connus sont toujours les plus difficiles à écrire"
+            ],
+            "answer": 1,
+            "exp": "Identifier ce qui est déjà maîtrisé permet de concentrer son attention sur les réelles difficultés de la dictée."
           }
         ]
       },
@@ -5224,6 +5785,189 @@
             ],
             "answer": 1,
             "exp": "Sans verbe conjugué, cette suite de mots ne raconte rien de complet : le lecteur reste en attente d'une information (que font les fleurs ?), ce qui montre que ce n'est pas encore une phrase correcte."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quels sont les deux éléments indispensables d'une phrase écrite complète ?",
+            "choices": [
+              "Un adjectif et un adverbe",
+              "Un sujet et un verbe (au minimum)",
+              "Une majuscule et des guillemets",
+              "Un nombre et une couleur"
+            ],
+            "answer": 1,
+            "exp": "Une phrase complète nécessite au minimum un sujet et un verbe pour exprimer une idée."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "« Le grand chien noir du voisin » est-ce une phrase complète ?",
+            "choices": [
+              "Oui, c'est une phrase complète",
+              "Non, il manque un verbe : ce n'est qu'un groupe de mots qui décrit quelque chose, sans action exprimée",
+              "Oui, car il y a beaucoup de mots",
+              "Non, car il n'y a pas de point d'exclamation"
+            ],
+            "answer": 1,
+            "exp": "Malgré sa longueur, ce groupe de mots n'a pas de verbe : ce n'est donc pas une phrase complète."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Tu veux enrichir la phrase « Léa mange » en précisant OÙ elle mange. Laquelle de ces phrases convient ?",
+            "choices": [
+              "Léa mange une pomme",
+              "Léa mange dans la cuisine",
+              "Léa et Tom mangent",
+              "Mange Léa"
+            ],
+            "answer": 1,
+            "exp": "« Dans la cuisine » répond à la question « où ? », précisant le lieu de l'action."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour enrichir « Le chat dort » en précisant QUAND il dort, laquelle de ces phrases convient le mieux ?",
+            "choices": [
+              "Le chat dort le soir",
+              "Le chat noir dort",
+              "Le chat dort sur le canapé",
+              "Dort le chat"
+            ],
+            "answer": 0,
+            "exp": "« Le soir » répond à la question « quand ? », précisant le moment de l'action."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi dit-on qu'une suite de mots longue et riche en détails peut quand même ne pas être une phrase ?",
+            "choices": [
+              "Ce n'est jamais vrai, plus il y a de mots, plus c'est une phrase",
+              "Parce que ce qui définit une phrase n'est pas sa longueur mais la présence d'un sujet et d'un verbe exprimant une action ou un état : sans cela, même un groupe de mots très riche reste incomplet",
+              "Une phrase doit toujours contenir au moins 10 mots",
+              "Il suffit d'ajouter une majuscule pour transformer n'importe quel groupe de mots en phrase"
+            ],
+            "answer": 1,
+            "exp": "La longueur n'est pas le critère : c'est la présence d'un sujet et d'un verbe qui fait d'un groupe de mots une phrase complète."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève écrit : « dans le jardin les fleurs ». Pourquoi un lecteur serait-il gêné en lisant cela ?",
+            "choices": [
+              "Ce n'est pas gênant du tout, c'est une phrase parfaite",
+              "Il manque un verbe : on ne sait pas ce que font les fleurs dans le jardin, la phrase reste incomplète et incompréhensible comme action",
+              "Il manque juste une majuscule",
+              "Il y a trop de mots dans cette phrase"
+            ],
+            "answer": 1,
+            "exp": "Sans verbe, on ne sait pas quelle action se produit : la suite de mots reste incomplète et incompréhensible comme une vraie phrase."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Une phrase complète a besoin d'au moins un sujet et un verbe pour avoir du sens.",
+            "answer": true,
+            "exp": "C'est la structure minimale d'une phrase : sans sujet ni verbe, ce n'est qu'un groupe de mots incomplet."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Court le chien » est-ce une phrase correcte en français courant ?",
+            "choices": [
+              "Oui, c'est parfaitement normal",
+              "C'est compréhensible mais l'ordre habituel en français est plutôt sujet puis verbe : « Le chien court »",
+              "Non, cela n'a aucun sens du tout",
+              "Oui, c'est la seule façon correcte d'écrire cette idée"
+            ],
+            "answer": 1,
+            "exp": "L'ordre habituel en français place généralement le sujet avant le verbe (« le chien court »), même si l'inversion reste parfois possible dans certains contextes."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi ajouter des détails (lieu, temps, manière) à une phrase simple la rend-elle souvent plus intéressante à lire ?",
+            "choices": [
+              "Les détails ne rendent jamais un texte plus intéressant",
+              "Parce qu'ils précisent et enrichissent l'information donnée, aidant le lecteur à mieux imaginer la scène décrite",
+              "Il est interdit d'ajouter des détails à une phrase simple",
+              "Une phrase sans détail est toujours plus facile à comprendre"
+            ],
+            "answer": 1,
+            "exp": "Ajouter des précisions (lieu, temps, manière) enrichit l'information et aide le lecteur à mieux visualiser la scène."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un élève écrit : « Jouent les enfants dans le jardin au ballon joyeusement ». Que peut-on dire de cette phrase ?",
+            "choices": [
+              "Elle est incorrecte car un verbe ne peut jamais être au pluriel",
+              "Elle contient bien un sujet et un verbe (c'est une phrase), même si l'ordre des mots pourrait être réorganisé pour être plus naturel",
+              "Elle n'a aucun sens du tout",
+              "Il manque un sujet dans cette phrase"
+            ],
+            "answer": 1,
+            "exp": "Elle contient un sujet (« les enfants ») et un verbe (« jouent ») : c'est une phrase, même si un ordre plus courant existerait."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour transformer le groupe de mots incomplet « le beau papillon jaune » en phrase complète, que faut-il ajouter au minimum ?",
+            "choices": [
+              "Rien, c'est déjà une phrase complète",
+              "Un verbe exprimant une action ou un état du papillon (par exemple « vole »)",
+              "Encore plus d'adjectifs",
+              "Une virgule supplémentaire"
+            ],
+            "answer": 1,
+            "exp": "Il manque un verbe : ajouter une action (« vole », « se pose »...) transformerait ce groupe de mots en phrase complète."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi une phrase sans sujet clair (par exemple « mange une pomme » sans dire qui mange) peut-elle rester ambiguë ?",
+            "choices": [
+              "Elle n'est jamais ambiguë",
+              "Parce qu'on ne sait pas QUI réalise l'action, ce qui laisse le lecteur ou l'auditeur dans l'incertitude sur un élément essentiel",
+              "Le sujet n'a jamais d'importance dans une phrase",
+              "Une phrase n'a jamais besoin de sujet"
+            ],
+            "answer": 1,
+            "exp": "Sans sujet clairement identifié, on ne sait pas qui réalise l'action décrite, ce qui crée une ambiguïté dans la compréhension."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Laquelle de ces phrases est complète et a du sens ?",
+            "choices": [
+              "Le gentil petit chat blanc",
+              "Dans le jardin fleuri",
+              "Le chat dort paisiblement sur le canapé",
+              "Rapidement et joyeusement"
+            ],
+            "answer": 2,
+            "exp": "Seule cette option contient un sujet (« le chat ») et un verbe (« dort »), formant une phrase complète."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pour écrire une phrase riche et complète sur « un enfant qui joue », quel élément faut-il absolument inclure, en plus du sujet « un enfant » ?",
+            "choices": [
+              "Un adjectif obligatoirement",
+              "Un verbe décrivant son action, comme « joue »",
+              "Une rime",
+              "Une question"
+            ],
+            "answer": 1,
+            "exp": "Un verbe est indispensable pour transformer un simple sujet en une phrase complète exprimant une action."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Ajouter des précisions de lieu, de temps ou de manière enrichit une phrase simple sans la rendre incorrecte.",
+            "answer": true,
+            "exp": "Ces précisions ajoutent de l'information utile sans changer la validité grammaticale de la phrase de base."
           }
         ]
       },
@@ -5312,6 +6056,189 @@
             ],
             "answer": 1,
             "exp": "Un bon texte progresse d'idée en idée : répéter la même information sans rien ajouter de nouveau rend le texte ennuyeux et peu informatif pour le lecteur."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Avant d'écrire un petit texte, pourquoi est-il utile de noter d'abord les idées principales au brouillon ?",
+            "choices": [
+              "Ce n'est jamais utile",
+              "Pour organiser ses idées avant de les rédiger, et éviter d'en oublier une importante en cours d'écriture",
+              "Le brouillon est interdit pour un petit texte",
+              "Il faut toujours écrire directement au propre sans réfléchir"
+            ],
+            "answer": 1,
+            "exp": "Noter ses idées au brouillon permet de les organiser avant la rédaction finale, en évitant d'en oublier."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pourquoi est-il déconseillé de répéter plusieurs fois la même idée avec des mots différents dans un petit texte ?",
+            "choices": [
+              "Répéter la même idée est toujours une bonne chose",
+              "Parce que cela n'apporte pas de nouvelle information au lecteur et rend le texte moins intéressant, sans faire avancer l'histoire ou l'explication",
+              "Il est interdit par la loi de répéter une idée",
+              "Un texte doit toujours contenir des répétitions"
+            ],
+            "answer": 1,
+            "exp": "Répéter la même idée n'apporte rien de nouveau et rend le texte moins intéressant, sans le faire progresser."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour éviter de répéter « Le chat » au début de chaque phrase d'un texte, que peux-tu faire ?",
+            "choices": [
+              "Rien, il faut toujours répéter le même nom",
+              "Utiliser des pronoms (« il ») ou des synonymes (« ce petit animal ») pour varier",
+              "Changer complètement d'histoire",
+              "Supprimer le chat de l'histoire"
+            ],
+            "answer": 1,
+            "exp": "Utiliser des pronoms ou des synonymes permet de varier le texte sans perdre le fil de qui est désigné."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour écrire un texte de 4 phrases sur une sortie au zoo, quelle structure serait la plus logique ?",
+            "choices": [
+              "4 phrases parlant uniquement du trajet en bus",
+              "Une phrase d'introduction, deux phrases décrivant ce qu'on a vu/fait, une phrase de conclusion",
+              "4 phrases identiques répétées",
+              "Une seule très longue phrase sans ponctuation"
+            ],
+            "answer": 1,
+            "exp": "Une structure avec introduction, développement et conclusion organise clairement les idées d'un petit texte."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il utile de relire son texte en entier une fois terminé, plutôt que de s'arrêter dès la dernière phrase écrite ?",
+            "choices": [
+              "Ce n'est jamais utile de relire",
+              "Parce que la relecture complète permet de vérifier la cohérence de l'ensemble du texte, pas seulement de la dernière phrase isolée",
+              "Il faut toujours relire uniquement la première phrase",
+              "Relire un texte entier est impossible"
+            ],
+            "answer": 1,
+            "exp": "Une relecture complète permet de vérifier que toutes les parties du texte s'enchaînent bien et restent cohérentes entre elles."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève écrit un texte de 5 phrases qui répètent toutes la même information avec des mots légèrement différents. Quel conseil lui donner ?",
+            "choices": [
+              "De continuer ainsi, c'est une bonne technique",
+              "D'ajouter de nouvelles informations ou étapes à chaque phrase, plutôt que de répéter la même idée",
+              "De supprimer toutes les phrases",
+              "De ne plus jamais écrire de texte"
+            ],
+            "answer": 1,
+            "exp": "Chaque phrase devrait apporter une information nouvelle plutôt que de répéter la même idée sous une forme légèrement différente."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Noter ses idées au brouillon avant de rédiger aide à organiser son texte.",
+            "answer": true,
+            "exp": "Le brouillon permet de structurer ses idées avant l'écriture définitive, évitant les oublis et le désordre."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans un petit texte qui raconte une sortie, quelle phrase serait la meilleure pour conclure ?",
+            "choices": [
+              "Une phrase qui donne une impression finale ou un sentiment sur la sortie",
+              "Une phrase totalement sans rapport avec le reste du texte",
+              "La répétition exacte de la première phrase",
+              "Une liste de courses"
+            ],
+            "answer": 0,
+            "exp": "Une phrase de conclusion résume ou donne un ressenti final, ce qui clôt bien le texte."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi varier la longueur des phrases dans un petit texte (certaines courtes, d'autres plus longues) peut-il le rendre plus agréable à lire ?",
+            "choices": [
+              "Varier la longueur n'a jamais d'effet sur la lecture",
+              "Parce que cela crée un rythme plus naturel et évite la monotonie d'un texte où toutes les phrases se ressembleraient",
+              "Il est interdit d'avoir des phrases de longueurs différentes",
+              "Toutes les phrases doivent toujours avoir exactement la même longueur"
+            ],
+            "answer": 1,
+            "exp": "Varier la longueur des phrases crée un rythme de lecture plus naturel et évite la monotonie."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève écrit un texte sans aucune majuscule ni point, tout collé en une seule ligne. Quel est le principal problème pour le lecteur ?",
+            "choices": [
+              "Aucun problème, cela se lit très bien ainsi",
+              "Le lecteur ne peut plus repérer où commence et où finit chaque phrase, ce qui rend le texte très difficile à comprendre",
+              "Les majuscules et points ne servent jamais à rien",
+              "Un texte sans ponctuation est toujours plus rapide à lire"
+            ],
+            "answer": 1,
+            "exp": "Sans majuscules ni points, impossible de distinguer les phrases : le texte devient confus et difficile à suivre."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pour écrire un texte cohérent sur un sujet donné, pourquoi est-il important que toutes les phrases parlent bien de ce même sujet ?",
+            "choices": [
+              "Ce n'est jamais important",
+              "Pour que le texte reste clair et centré, sans perdre le lecteur avec des informations sans rapport",
+              "Un bon texte doit toujours parler de plusieurs sujets différents sans lien",
+              "Chaque phrase doit parler d'un sujet totalement différent"
+            ],
+            "answer": 1,
+            "exp": "Rester centré sur le sujet garde le texte clair et cohérent, évitant de perdre le lecteur avec des digressions sans rapport."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans un texte de 5 phrases sur un anniversaire, laquelle de ces phrases serait hors sujet ?",
+            "choices": [
+              "Nous avons mangé un gros gâteau au chocolat",
+              "Mon ami a reçu beaucoup de cadeaux",
+              "Les mathématiques sont une matière importante à l'école",
+              "Tout le monde a chanté joyeux anniversaire"
+            ],
+            "answer": 2,
+            "exp": "Cette phrase sur les mathématiques n'a aucun rapport avec le sujet de l'anniversaire : elle est hors sujet."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi un texte bien structuré (début, milieu, fin) est-il plus facile à suivre qu'un texte où les idées sont mélangées sans ordre ?",
+            "choices": [
+              "Ce n'est jamais plus facile à suivre",
+              "Parce qu'une structure claire guide le lecteur à travers les idées dans un ordre logique, évitant la confusion",
+              "L'ordre des idées n'a aucune importance",
+              "Un texte doit toujours être écrit dans le désordre"
+            ],
+            "answer": 1,
+            "exp": "Une structure claire (début, milieu, fin) guide le lecteur à travers les idées de façon logique, facilitant la compréhension."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève a du mal à savoir combien de phrases écrire pour un texte de 3 à 5 phrases. Quel conseil pratique lui donner ?",
+            "choices": [
+              "Écrire le moins de mots possible dans une seule phrase géante",
+              "Compter ses phrases au fur et à mesure (en repérant les points), en visant entre 3 et 5 phrases complètes et cohérentes",
+              "Écrire autant de phrases que possible, sans limite",
+              "Ignorer complètement la consigne"
+            ],
+            "answer": 1,
+            "exp": "Compter ses phrases (délimitées par les points) aide à respecter la consigne de 3 à 5 phrases complètes."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un petit texte cohérent doit rester centré sur un même sujet du début à la fin.",
+            "answer": true,
+            "exp": "Rester centré sur le sujet évite de perdre le lecteur avec des informations sans rapport."
           }
         ]
       },
@@ -5400,6 +6327,195 @@
             ],
             "answer": 1,
             "exp": "« Donc » doit relier une cause à sa vraie conséquence logique. Ici, il n'existe aucun lien de cause à effet entre la couleur d'un chat et la météo : le connecteur est utilisé à tort, ce qui rend la phrase absurde."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Lequel de ces mots est un connecteur de temps ?",
+            "choices": [
+              "Mais",
+              "Ensuite",
+              "Parce que",
+              "Dans"
+            ],
+            "answer": 1,
+            "exp": "« Ensuite » indique une succession dans le temps, c'est un connecteur temporel."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "« Il pleuvait, ... nous sommes restés à l'intérieur. » Quel connecteur complète le mieux cette phrase ?",
+            "choices": [
+              "et",
+              "donc",
+              "mais",
+              "ou"
+            ],
+            "answer": 1,
+            "exp": "« Donc » exprime une conséquence : rester à l'intérieur est la conséquence logique de la pluie."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour raconter une recette dans l'ordre (verser la farine, puis mélanger, puis cuire), quels connecteurs choisirais-tu ?",
+            "choices": [
+              "Mais, ou, et",
+              "D'abord, ensuite, enfin",
+              "Parce que, car, donc",
+              "Jamais, toujours, souvent"
+            ],
+            "answer": 1,
+            "exp": "« D'abord, ensuite, enfin » marquent clairement l'ordre chronologique des étapes."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour expliquer une cause (« Il est tombé parce que... »), quel type de connecteur utiliser ?",
+            "choices": [
+              "Un connecteur de temps comme « ensuite »",
+              "Un connecteur de cause comme « parce que » ou « car »",
+              "Un connecteur d'opposition comme « mais »",
+              "Aucun connecteur n'est nécessaire"
+            ],
+            "answer": 1,
+            "exp": "« Parce que » et « car » introduisent une explication, une cause."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un texte sans aucun connecteur peut-il sembler être juste une liste de phrases, plutôt qu'une histoire cohérente ?",
+            "choices": [
+              "Les connecteurs n'ont aucun effet sur un texte",
+              "Parce que les connecteurs créent des liens logiques entre les phrases (temps, cause, opposition), sans lesquels les phrases semblent juste juxtaposées sans lien clair",
+              "Un texte n'a jamais besoin de lien entre les phrases",
+              "Les connecteurs rendent toujours un texte plus confus"
+            ],
+            "answer": 1,
+            "exp": "Les connecteurs créent des liens logiques entre les phrases ; sans eux, le texte ressemble à une simple liste sans cohérence."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève utilise le connecteur « donc » dans « Le chat est noir, donc il fait beau dehors ». Quel est le problème ?",
+            "choices": [
+              "Il n'y a aucun problème, la phrase est logique",
+              "« Donc » exprime une conséquence logique, mais la couleur du chat n'a aucun rapport logique avec la météo : ce lien n'a pas de sens",
+              "Le mot « donc » est mal orthographié",
+              "Il fallait utiliser « mais » à la place"
+            ],
+            "answer": 1,
+            "exp": "« Donc » doit relier une cause à sa conséquence logique ; ici, la couleur du chat n'a aucun rapport avec le temps qu'il fait."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Les connecteurs comme « ensuite », « parce que » ou « mais » aident à relier logiquement les idées d'un texte.",
+            "answer": true,
+            "exp": "Les connecteurs créent des liens de temps, de cause ou d'opposition entre les phrases d'un texte."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« J'aime les chats ... je n'aime pas les chiens. » Quel connecteur d'opposition complète cette phrase ?",
+            "choices": [
+              "et",
+              "donc",
+              "mais",
+              "ensuite"
+            ],
+            "answer": 2,
+            "exp": "« Mais » introduit une opposition entre deux idées contraires."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi choisir le bon connecteur (et pas n'importe lequel) est-il important pour la clarté d'un texte ?",
+            "choices": [
+              "Le choix du connecteur n'a jamais d'importance",
+              "Parce que chaque connecteur exprime une relation logique précise (temps, cause, opposition) : un mauvais choix peut rendre la phrase illogique ou confuse",
+              "Tous les connecteurs sont toujours interchangeables sans problème",
+              "Il est interdit d'utiliser plus d'un connecteur par texte"
+            ],
+            "answer": 1,
+            "exp": "Chaque connecteur exprime une relation logique précise ; un choix inapproprié peut rendre la phrase illogique ou confuse."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour enchaîner deux actions qui se suivent dans le temps (« Il se lève. Il se lave les dents. »), quel connecteur pourrait-on ajouter ?",
+            "choices": [
+              "Mais",
+              "Puis",
+              "Parce que",
+              "Jamais"
+            ],
+            "answer": 1,
+            "exp": "« Puis » marque la succession dans le temps entre deux actions."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève écrit : « J'ai faim mais je vais manger. » Que penser de l'utilisation de « mais » ici ?",
+            "choices": [
+              "Elle est parfaitement logique",
+              "Elle est étrange : « mais » introduit normalement une opposition, alors qu'ici manger est la conséquence logique de la faim, donc « donc » conviendrait mieux",
+              "« Mais » est toujours le bon choix dans ce genre de phrase",
+              "Il fallait utiliser « parce que » à la place"
+            ],
+            "answer": 1,
+            "exp": "« Mais » introduit une opposition, mais ici manger est plutôt la conséquence logique d'avoir faim : « donc » conviendrait mieux."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans une histoire, quel connecteur marquerait bien la fin, la conclusion du récit ?",
+            "choices": [
+              "D'abord",
+              "Enfin",
+              "Et",
+              "Parce que"
+            ],
+            "answer": 1,
+            "exp": "« Enfin » marque souvent la dernière étape ou la conclusion d'un récit."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi utiliser plusieurs connecteurs différents dans un même texte (au lieu de toujours le même) rend-il le texte plus riche ?",
+            "choices": [
+              "Utiliser un seul connecteur est toujours préférable",
+              "Parce que varier les connecteurs permet d'exprimer différentes relations logiques (temps, cause, opposition), rendant le texte plus précis et nuancé",
+              "Les connecteurs doivent toujours être identiques dans un même texte",
+              "Varier les connecteurs rend toujours un texte confus"
+            ],
+            "answer": 1,
+            "exp": "Varier les connecteurs permet d'exprimer des relations logiques différentes et nuancées, enrichissant la précision du texte."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Léo a raté son bus, ... il est arrivé en retard à l'école. » Quel connecteur de conséquence complète la phrase ?",
+            "choices": [
+              "mais",
+              "donc",
+              "ou",
+              "avant"
+            ],
+            "answer": 1,
+            "exp": "« Donc » relie la cause (rater le bus) à sa conséquence logique (arriver en retard)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Lequel de ces connecteurs exprime une addition d'idées plutôt qu'une opposition ou une cause ?",
+            "choices": [
+              "Mais",
+              "Et",
+              "Parce que",
+              "Donc"
+            ],
+            "answer": 1,
+            "exp": "« Et » sert à ajouter une idée à une autre, sans opposition ni lien de cause."
           }
         ]
       },
@@ -5488,6 +6604,189 @@
             ],
             "answer": 1,
             "exp": "Une relecture complète vérifie plusieurs niveaux : le sens global, la construction des phrases, et seulement ensuite l'orthographe précise. Se limiter à l'orthographe laisse passer des problèmes de sens ou de construction tout aussi importants."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Un premier jet d'écriture est-il généralement parfait du premier coup ?",
+            "choices": [
+              "Oui, toujours parfait dès la première fois",
+              "Non, il contient souvent des erreurs ou des points à améliorer, ce qui est tout à fait normal",
+              "Oui, il est interdit de le modifier ensuite",
+              "Non, un premier jet ne sert jamais à rien"
+            ],
+            "answer": 1,
+            "exp": "Un premier jet est une première version, normalement imparfaite, qui s'améliore par la relecture et la correction."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pourquoi lire son texte à voix haute aide-t-il à repérer des erreurs ?",
+            "choices": [
+              "Cela ne sert jamais à rien",
+              "Parce qu'entendre son texte permet de remarquer des phrases qui sonnent mal, des répétitions ou des oublis qu'on ne voyait pas en lisant silencieusement",
+              "Lire à voix haute est interdit pendant la relecture",
+              "Cela rend le texte plus difficile à comprendre"
+            ],
+            "answer": 1,
+            "exp": "Lire à voix haute fait remarquer des maladresses (phrases qui sonnent mal, répétitions) qui passent parfois inaperçues en lecture silencieuse."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève a écrit trois fois le mot « content » dans son petit texte. Comment pourrait-il l'améliorer en se relisant ?",
+            "choices": [
+              "Ne rien changer, c'est très bien ainsi",
+              "Remplacer certaines occurrences par des synonymes comme « heureux » ou « ravi » pour varier le vocabulaire",
+              "Supprimer complètement le mot « content » partout",
+              "Ajouter encore plus de fois le mot « content »"
+            ],
+            "answer": 1,
+            "exp": "Varier le vocabulaire avec des synonymes rend le texte plus riche et évite la répétition excessive d'un même mot."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "En se relisant, un élève remarque qu'une phrase de son texte ne fait pas de sens avec le reste de l'histoire. Que doit-il faire ?",
+            "choices": [
+              "Laisser la phrase telle quelle, cela n'a pas d'importance",
+              "La modifier ou la supprimer pour qu'elle s'intègre correctement au reste du texte",
+              "Supprimer tout le texte et recommencer",
+              "Ignorer complètement ce problème"
+            ],
+            "answer": 1,
+            "exp": "La relecture sert justement à repérer et corriger les incohérences pour que le texte reste cohérent dans son ensemble."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un regard extérieur (un camarade ou un adulte) peut-il repérer des erreurs que l'auteur lui-même ne voit pas toujours ?",
+            "choices": [
+              "Un regard extérieur ne sert jamais à rien",
+              "Parce que l'auteur connaît déjà ce qu'il a voulu dire et peut ne pas remarquer que ce n'est pas clairement écrit, alors qu'un lecteur extérieur découvre le texte sans cette connaissance préalable",
+              "Les autres personnes font toujours moins d'erreurs",
+              "Il est interdit de montrer son texte à quelqu'un d'autre"
+            ],
+            "answer": 1,
+            "exp": "L'auteur connaît déjà l'intention derrière son texte, ce qui peut l'empêcher de voir qu'une idée n'est pas clairement exprimée ; un lecteur extérieur, sans cette connaissance, le remarque plus facilement."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève considère que se relire se limite uniquement à vérifier l'orthographe des mots. Que lui manque-t-il de prendre en compte ?",
+            "choices": [
+              "Rien, l'orthographe est tout ce qui compte",
+              "Il devrait aussi vérifier le sens général, la cohérence des idées, la ponctuation et les répétitions, pas seulement l'orthographe",
+              "L'orthographe n'a elle-même aucune importance",
+              "Il faut uniquement vérifier la longueur du texte"
+            ],
+            "answer": 1,
+            "exp": "Une relecture complète vérifie aussi le sens, la cohérence, la ponctuation et les répétitions, pas seulement l'orthographe des mots."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Relire son texte permet de repérer des erreurs d'orthographe, mais aussi des problèmes de sens ou de répétition.",
+            "answer": true,
+            "exp": "La relecture couvre plusieurs aspects : orthographe, cohérence du sens, et variété du vocabulaire."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour améliorer un texte après une première relecture, quelle action est la plus utile ?",
+            "choices": [
+              "Ne rien changer du tout, même en cas d'erreur repérée",
+              "Corriger les erreurs repérées et réécrire les passages peu clairs",
+              "Supprimer entièrement le texte et ne plus jamais écrire",
+              "Ajouter des erreurs supplémentaires exprès"
+            ],
+            "answer": 1,
+            "exp": "Corriger les erreurs et clarifier les passages peu clairs est l'objectif même de la relecture et de la réécriture."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il conseillé d'attendre un petit moment entre l'écriture d'un texte et sa relecture, plutôt que de se relire immédiatement ?",
+            "choices": [
+              "Attendre n'apporte jamais rien",
+              "Parce qu'un peu de recul permet de voir le texte avec un regard plus neuf, plus proche de celui d'un vrai lecteur, et de mieux repérer les erreurs",
+              "Il faut toujours se relire exactement au même moment que l'écriture, jamais après",
+              "Attendre fait oublier complètement le texte"
+            ],
+            "answer": 1,
+            "exp": "Un peu de recul aide à relire son texte avec un regard plus neuf, plus proche de celui d'un lecteur extérieur, facilitant la détection des erreurs."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève relit son texte uniquement pour vérifier les fautes d'orthographe, sans jamais vérifier si les phrases ont du sens. Quel risque prend-il ?",
+            "choices": [
+              "Aucun risque, l'orthographe suffit toujours",
+              "Il risque de laisser passer des phrases incohérentes ou mal construites, même si l'orthographe de chaque mot est correcte",
+              "Les phrases ont toujours du sens automatiquement",
+              "Vérifier le sens est inutile si l'orthographe est bonne"
+            ],
+            "answer": 1,
+            "exp": "Une bonne orthographe ne garantit pas que les phrases aient du sens ou soient bien construites : il faut aussi vérifier la cohérence."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Comment appelle-t-on généralement la toute première version d'un texte, avant les corrections ?",
+            "choices": [
+              "La version finale",
+              "Le premier jet (ou brouillon)",
+              "Le résumé",
+              "La dictée"
+            ],
+            "answer": 1,
+            "exp": "La première version d'un texte, avant corrections, s'appelle souvent le « premier jet » ou le brouillon."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la relecture fait-elle partie intégrante du processus d'écriture, et pas seulement une étape facultative ?",
+            "choices": [
+              "La relecture est toujours facultative et inutile",
+              "Parce qu'elle permet d'améliorer réellement la qualité du texte final, en corrigeant les erreurs et en clarifiant les idées peu claires du premier jet",
+              "Écrire sans jamais se relire donne toujours un résultat parfait",
+              "La relecture change complètement le sujet du texte"
+            ],
+            "answer": 1,
+            "exp": "La relecture est une étape essentielle qui améliore réellement la qualité du texte en corrigeant erreurs et incohérences."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève se relit et trouve une phrase un peu longue et confuse. Que peut-il faire pour l'améliorer ?",
+            "choices": [
+              "La laisser telle quelle, une phrase longue est toujours meilleure",
+              "La couper en deux phrases plus courtes et plus claires",
+              "La supprimer et ne plus en reparler jamais",
+              "La recopier à l'identique plusieurs fois"
+            ],
+            "answer": 1,
+            "exp": "Couper une phrase trop longue et confuse en phrases plus courtes et claires est une technique efficace d'amélioration."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi la relecture collective (avec la classe ou en groupe) peut-elle parfois être plus efficace qu'une relecture seul ?",
+            "choices": [
+              "Ce n'est jamais plus efficace",
+              "Parce que plusieurs regards différents peuvent repérer des erreurs ou des points à améliorer que l'auteur seul n'aurait pas vus",
+              "Une relecture collective est toujours inutile",
+              "Il est interdit de relire un texte en groupe"
+            ],
+            "answer": 1,
+            "exp": "Plusieurs regards différents permettent souvent de repérer des erreurs ou des améliorations possibles que l'auteur seul n'aurait pas remarquées."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Il est normal et utile de corriger son texte plusieurs fois avant d'obtenir une version satisfaisante.",
+            "answer": true,
+            "exp": "L'écriture est un processus progressif : plusieurs relectures et corrections améliorent généralement le résultat final."
           }
         ]
       },
