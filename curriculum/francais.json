@@ -7694,6 +7694,189 @@
             ],
             "answer": 1,
             "exp": "Deux mots qui se ressemblent par hasard à l'écrit ne sont pas forcément de la même famille : il faut vérifier que le sens est bien lié, pas seulement l'apparence des lettres. « Chantier » et « chant » n'ont aucun lien de sens malgré leur ressemblance."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Lequel de ces mots appartient à la même famille que « jardin » ?",
+            "choices": [
+              "Jardinier",
+              "Journal",
+              "Jaune",
+              "Jouer"
+            ],
+            "answer": 0,
+            "exp": "« Jardinier » contient le radical « jardin » : il appartient à la même famille de mots."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Que fait souvent le préfixe « re- » devant un verbe ?",
+            "choices": [
+              "Il rend le verbe négatif",
+              "Il indique que l'action se répète ou se fait à nouveau",
+              "Il n'a jamais de sens particulier",
+              "Il transforme le verbe en nom"
+            ],
+            "answer": 1,
+            "exp": "« Re- » indique souvent la répétition : « refaire » = faire à nouveau."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Tu connais le mot « possible ». Tu rencontres le mot « impossible ». Que peux-tu deviner grâce au préfixe « im- » ?",
+            "choices": [
+              "Que cela veut dire la même chose que « possible »",
+              "Que cela signifie le contraire de « possible »",
+              "Que cela parle d'un animal",
+              "Que le mot n'a aucun sens"
+            ],
+            "answer": 1,
+            "exp": "Le préfixe « im- » (comme « in- ») indique souvent le contraire : « impossible » = pas possible."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Tu connais « heureux ». Tu rencontres « malheureux ». Que peux-tu deviner grâce au préfixe « mal- » ?",
+            "choices": [
+              "Que cela signifie très heureux",
+              "Que cela signifie le contraire, pas heureux",
+              "Que cela parle de maladie uniquement",
+              "Que le mot est mal écrit"
+            ],
+            "answer": 1,
+            "exp": "Le préfixe « mal- » indique souvent le contraire ou une version négative : « malheureux » = pas heureux."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi reconnaître la famille d'un mot nouveau peut-il t'aider à deviner son sens, même sans dictionnaire ?",
+            "choices": [
+              "Cela n'aide jamais à deviner un sens",
+              "Parce que les mots d'une même famille partagent souvent un sens de base commun (le radical), ce qui donne un indice sur le sens du mot nouveau",
+              "Les mots d'une même famille n'ont jamais de rapport entre eux",
+              "Il faut toujours ignorer les familles de mots"
+            ],
+            "answer": 1,
+            "exp": "Les mots d'une même famille partagent un radical porteur de sens, ce qui aide à deviner le sens d'un mot nouveau de cette famille."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense que « mer » et « mère » sont de la même famille de mots, juste parce qu'ils se prononcent pareil. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, ils sont dans la même famille",
+              "Deux mots de même famille doivent partager un sens commun lié au même radical, pas seulement une prononciation identique : « mer » et « mère » n'ont aucun lien de sens",
+              "« Mer » et « mère » ont exactement le même sens",
+              "Il est impossible que deux mots se prononcent pareil"
+            ],
+            "answer": 1,
+            "exp": "La famille de mots se définit par un sens commun (le radical), pas seulement par la prononciation : « mer » et « mère » n'ont aucun lien de sens malgré leur prononciation identique."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Les mots d'une même famille partagent souvent un radical commun porteur de sens.",
+            "answer": true,
+            "exp": "C'est la définition même d'une famille de mots : un radical commun qui porte le sens de base partagé."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Lequel de ces mots N'appartient PAS à la famille de « terre » ?",
+            "choices": [
+              "Terrain",
+              "Souterrain",
+              "Territoire",
+              "Terrible"
+            ],
+            "answer": 3,
+            "exp": "« Terrible » n'a pas de lien de sens avec « terre » malgré une ressemblance de lettres au début."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi deux mots qui se ressemblent beaucoup à l'écrit (comme « porte » et « porter ») peuvent-ils appartenir à la même famille, alors que d'autres qui se ressemblent (comme « chant » et « chantier ») n'y appartiennent pas forcément ?",
+            "choices": [
+              "La ressemblance à l'écrit suffit toujours à prouver une famille commune",
+              "Parce que c'est le lien de SENS qui définit une famille de mots, pas uniquement la ressemblance des lettres : il faut vérifier que le sens de base est réellement partagé",
+              "Deux mots qui se ressemblent sont toujours de la même famille",
+              "Il n'existe jamais de ressemblance entre mots de familles différentes"
+            ],
+            "answer": 1,
+            "exp": "Le critère décisif est le sens partagé (le radical), pas seulement la ressemblance visuelle des lettres : certains mots se ressemblent sans appartenir à la même famille."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Le mot « dentiste » appartient à quelle famille de mots ?",
+            "choices": [
+              "La famille de « dent »",
+              "La famille de « liste »",
+              "La famille de « tiste »",
+              "Aucune famille particulière"
+            ],
+            "answer": 0,
+            "exp": "« Dentiste » contient le radical « dent » et partage son sens de base (soigner les dents)."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève invente le mot « jardinage » en pensant qu'il n'a aucun rapport avec « jardin ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, il n'y a aucun rapport",
+              "« Jardinage » contient le radical « jardin » et partage son sens (l'activité de s'occuper d'un jardin) : ils sont bien de la même famille",
+              "« Jardinage » et « jardin » ont des sens opposés",
+              "Un mot ne peut jamais être dérivé d'un autre"
+            ],
+            "answer": 1,
+            "exp": "« Jardinage » dérive directement de « jardin », avec lequel il partage le sens de base lié au jardin."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Le préfixe « anti- » (comme dans « antigel ») indique généralement :",
+            "choices": [
+              "Une répétition de l'action",
+              "Une opposition ou une protection contre quelque chose",
+              "Une couleur particulière",
+              "Un très grand nombre"
+            ],
+            "answer": 1,
+            "exp": "« Anti- » indique souvent une opposition ou une protection contre quelque chose (« antigel » protège contre le gel)."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi certains mots très courants comme « avoir » ou « être » n'ont-ils pas vraiment de grande « famille » de mots dérivés, contrairement à « chant » ou « jardin » ?",
+            "choices": [
+              "Tous les mots ont toujours autant de mots dérivés",
+              "Certains mots très basiques fonctionnent différemment et ne se combinent pas autant avec des préfixes ou suffixes pour créer de nouveaux mots dérivés",
+              "C'est toujours une erreur de penser cela, « avoir » a énormément de mots dérivés",
+              "Les verbes n'ont jamais de famille de mots"
+            ],
+            "answer": 1,
+            "exp": "Certains mots très basiques de la langue n'ont pas le même potentiel de dérivation que d'autres radicaux plus « productifs » comme « chant » ou « jardin »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Le mot « reconstruire » peut-il se décomposer en « re- » + « construire » ?",
+            "choices": [
+              "Non, ce mot ne se décompose pas",
+              "Oui : « re- » (à nouveau) + « construire » (bâtir), ce qui donne le sens « construire à nouveau »",
+              "Oui, mais cela ne change pas le sens",
+              "Non, car « construire » n'existe pas seul"
+            ],
+            "answer": 1,
+            "exp": "« Reconstruire » se décompose bien en « re- » (à nouveau) et « construire », donnant le sens « construire à nouveau »."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Le préfixe « re- » indique généralement qu'une action est répétée ou refaite.",
+            "answer": true,
+            "exp": "C'est le sens habituel de ce préfixe : « refaire », « relire », « reconstruire »..."
           }
         ]
       },
@@ -7782,6 +7965,195 @@
             ],
             "answer": 1,
             "exp": "Deux mots qui se ressemblent à l'écrit peuvent avoir des sens totalement différents. Pour être synonymes, deux mots doivent avoir un sens proche, pas juste une orthographe similaire."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Lequel de ces mots est un synonyme de « content » ?",
+            "choices": [
+              "Triste",
+              "Joyeux",
+              "Fatigué",
+              "Grand"
+            ],
+            "answer": 1,
+            "exp": "« Joyeux » a un sens très proche de « content » : c'est un synonyme."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quel est l'antonyme de « grand » ?",
+            "choices": [
+              "Immense",
+              "Énorme",
+              "Petit",
+              "Haut"
+            ],
+            "answer": 2,
+            "exp": "« Petit » est le contraire de « grand » : c'est un antonyme."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans un texte, tu as déjà utilisé trois fois le mot « joli ». Que peux-tu faire pour varier ton vocabulaire ?",
+            "choices": [
+              "Continuer à répéter « joli »",
+              "Utiliser des synonymes comme « beau », « magnifique » ou « ravissant »",
+              "Supprimer le mot partout",
+              "Changer complètement de sujet"
+            ],
+            "answer": 1,
+            "exp": "Utiliser des synonymes variés évite la répétition excessive d'un même mot dans un texte."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans la phrase « Le monstre était terrifiant », quel antonyme pourrait décrire un monstre qui ne fait pas peur du tout ?",
+            "choices": [
+              "Effrayant",
+              "Rassurant",
+              "Énorme",
+              "Rapide"
+            ],
+            "answer": 1,
+            "exp": "« Rassurant » est l'antonyme de « terrifiant » : il décrit quelque chose qui ne fait pas peur."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi faut-il se baser sur le SENS d'un mot, et non sur sa sonorité, pour trouver un bon synonyme ?",
+            "choices": [
+              "La sonorité suffit toujours à trouver un bon synonyme",
+              "Parce qu'un synonyme doit avoir un sens proche, même si les mots ne se ressemblent pas du tout à l'oral (par exemple « rapide » et « véloce »)",
+              "Deux mots qui se ressemblent à l'oral sont toujours synonymes",
+              "Le sens n'a aucune importance pour trouver un synonyme"
+            ],
+            "answer": 1,
+            "exp": "Un vrai synonyme partage un sens proche, indépendamment de sa sonorité : « rapide » et « véloce » se ressemblent peu à l'oral mais sont synonymes."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève dit que « chaud » et « chat » sont presque des synonymes « parce qu'ils se ressemblent à l'écrit ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, ils sont bien synonymes",
+              "Il confond la ressemblance des lettres avec le sens : « chaud » (une température) et « chat » (un animal) n'ont absolument aucun rapport de sens",
+              "« Chaud » et « chat » ont exactement le même sens",
+              "Un synonyme se définit toujours par la ressemblance des lettres"
+            ],
+            "answer": 1,
+            "exp": "Un synonyme se définit par un sens proche, pas par la ressemblance des lettres : « chaud » et « chat » n'ont aucun rapport de sens."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un synonyme est un mot qui a un sens proche ou identique à un autre mot.",
+            "answer": true,
+            "exp": "C'est la définition même d'un synonyme : deux mots différents partageant un sens proche."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Quel est l'antonyme de « commencer » ?",
+            "choices": [
+              "Débuter",
+              "Démarrer",
+              "Terminer",
+              "Continuer"
+            ],
+            "answer": 2,
+            "exp": "« Terminer » est le contraire de « commencer » : c'est un antonyme."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi certains mots n'ont-ils pas vraiment d'antonyme simple (par exemple « table ») ?",
+            "choices": [
+              "Tous les mots ont toujours un antonyme simple",
+              "Parce que les antonymes existent surtout pour des mots qui expriment une qualité, une action ou un état pouvant avoir un contraire logique (chaud/froid), pas pour de simples objets",
+              "« Table » a en fait un antonyme très connu",
+              "Les antonymes n'existent que pour les couleurs"
+            ],
+            "answer": 1,
+            "exp": "Les antonymes existent surtout pour des mots exprimant une qualité ou un état ayant un contraire logique ; de simples noms d'objets comme « table » n'ont généralement pas d'antonyme évident."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Agréable » et « désagréable » sont :",
+            "choices": [
+              "Des synonymes",
+              "Des antonymes",
+              "Deux mots sans aucun rapport",
+              "Le même mot répété"
+            ],
+            "answer": 1,
+            "exp": "Le préfixe « dés- » inverse le sens : « désagréable » est l'antonyme de « agréable »."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève cherche un antonyme pour « gentil » et propose « aimable ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, c'est un bon antonyme",
+              "« Aimable » est en fait un SYNONYME de « gentil » (sens proche), pas un antonyme (sens opposé comme « méchant »)",
+              "« Gentil » n'a pas d'antonyme",
+              "« Aimable » et « gentil » n'ont aucun rapport"
+            ],
+            "answer": 1,
+            "exp": "« Aimable » a un sens proche de « gentil » (synonyme) ; l'antonyme attendu serait plutôt « méchant »."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi utiliser des synonymes variés rend-il un texte plus agréable à lire qu'un texte qui répète toujours le même mot ?",
+            "choices": [
+              "Cela ne change jamais rien à la qualité d'un texte",
+              "Parce que la variété du vocabulaire évite la monotonie et peut aussi apporter des nuances légèrement différentes selon le synonyme choisi",
+              "Il est toujours préférable de répéter le même mot",
+              "Les synonymes rendent toujours un texte plus confus"
+            ],
+            "answer": 1,
+            "exp": "Varier le vocabulaire avec des synonymes évite la monotonie et peut apporter des nuances de sens légèrement différentes."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « Le lion est féroce », quel antonyme pourrait décrire un animal très doux ?",
+            "choices": [
+              "Agressif",
+              "Sauvage",
+              "Docile",
+              "Rapide"
+            ],
+            "answer": 2,
+            "exp": "« Docile » décrit un animal doux et facile à maîtriser, le contraire de « féroce »."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi un même mot peut-il avoir plusieurs synonymes différents selon le contexte (par exemple « rapide » pour une voiture ou pour une réponse) ?",
+            "choices": [
+              "Ce n'est jamais le cas, un mot n'a toujours qu'un seul synonyme possible",
+              "Parce que le sens d'un mot peut varier légèrement selon le contexte, ce qui fait que différents synonymes conviennent mieux selon la situation",
+              "Les synonymes ne dépendent jamais du contexte",
+              "Un mot ne peut jamais avoir plus d'un synonyme"
+            ],
+            "answer": 1,
+            "exp": "Le sens d'un mot peut légèrement varier selon le contexte, ce qui explique que plusieurs synonymes différents puissent convenir selon la situation."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Quel est le synonyme le plus proche de « petit » parmi ces mots ?",
+            "choices": [
+              "Minuscule",
+              "Grand",
+              "Énorme",
+              "Gigantesque"
+            ],
+            "answer": 0,
+            "exp": "« Minuscule » a un sens proche de « petit » (voire plus intense) : c'est un bon synonyme."
           }
         ]
       },
@@ -7870,6 +8242,189 @@
             ],
             "answer": 1,
             "exp": "« Avoir une faim de loup » est une expression imagée signifiant avoir très faim, sans aucun rapport avec une transformation réelle : comprendre une expression au sens figuré comme si elle était littérale mène à un contresens."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "« Il a cassé le verre » utilise le mot « cassé » au sens :",
+            "choices": [
+              "Propre, exact (sens propre)",
+              "Imagé, détourné (sens figuré)",
+              "Il n'y a pas de sens particulier",
+              "Un sens inventé qui n'existe pas"
+            ],
+            "answer": 0,
+            "exp": "« Cassé » décrit ici une action réelle et concrète : c'est le sens propre."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "« Ce problème me casse la tête » utilise le mot « casse » au sens :",
+            "choices": [
+              "Propre (il y a vraiment une tête cassée)",
+              "Figuré (cela veut dire que le problème est difficile à résoudre)",
+              "Il n'y a aucun sens à cette phrase",
+              "Un sens totalement différent sans rapport"
+            ],
+            "answer": 1,
+            "exp": "Personne n'a vraiment la tête cassée : cette expression imagée signifie que le problème est très difficile."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Quelqu'un dit : « Ce travail m'a pris des heures. » Que comprends-tu grâce au sens de cette phrase ?",
+            "choices": [
+              "Que le travail a littéralement volé des heures, comme un objet",
+              "Que le travail a demandé beaucoup de temps",
+              "Que l'heure s'est arrêtée",
+              "Que la phrase n'a aucun sens"
+            ],
+            "answer": 1,
+            "exp": "« Prendre du temps » est une expression courante signifiant que quelque chose demande beaucoup de temps."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Cette nouvelle m'a brisé le cœur » utilise quel type de sens pour le mot « brisé » ?",
+            "choices": [
+              "Le sens propre, car le cœur est vraiment cassé physiquement",
+              "Le sens figuré, pour exprimer une très grande tristesse",
+              "Aucun sens particulier",
+              "Le sens d'un objet en verre"
+            ],
+            "answer": 1,
+            "exp": "Le cœur n'est pas réellement cassé : cette expression imagée exprime une immense tristesse (sens figuré)."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi les auteurs utilisent-ils souvent le sens figuré plutôt que de toujours s'en tenir au sens propre, strictement littéral ?",
+            "choices": [
+              "Le sens figuré n'apporte jamais rien à un texte",
+              "Parce que le sens figuré permet d'exprimer des idées de façon plus imagée, plus expressive et souvent plus frappante pour le lecteur",
+              "Il est interdit d'utiliser le sens propre dans un texte",
+              "Le sens figuré rend toujours un texte incompréhensible"
+            ],
+            "answer": 1,
+            "exp": "Le sens figuré permet une expression plus imagée et frappante, rendant souvent le texte plus vivant qu'une description strictement littérale."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève comprend littéralement l'expression « j'ai une faim de loup » et s'inquiète parce qu'il pense que son camarade se transforme en loup. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison de s'inquiéter",
+              "Il prend au sens propre une expression qui est en réalité au sens figuré : cela signifie simplement avoir très faim, sans aucun rapport avec un vrai loup",
+              "Cette expression n'existe pas vraiment",
+              "Il fallait comprendre que son camarade a vraiment faim de la viande de loup"
+            ],
+            "answer": 1,
+            "exp": "« Avoir une faim de loup » est une expression figurée signifiant avoir très faim, sans lien réel avec un loup véritable."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Le sens figuré d'une expression ne doit pas être compris mot à mot, mais de façon imagée.",
+            "answer": true,
+            "exp": "Le sens figuré utilise des images pour exprimer une idée, sans que cela doive être pris littéralement."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Il a une mémoire d'éléphant » signifie :",
+            "choices": [
+              "Qu'il a vraiment la mémoire d'un éléphant",
+              "Qu'il a une excellente mémoire, qui retient beaucoup de choses",
+              "Qu'il ressemble physiquement à un éléphant",
+              "Que cette phrase n'a aucun sens"
+            ],
+            "answer": 1,
+            "exp": "Cette expression imagée (sens figuré) signifie qu'une personne a une très bonne mémoire."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi certaines expressions au sens figuré (comme « avoir le cafard ») peuvent-elles sembler étranges ou amusantes si on les prend au sens propre ?",
+            "choices": [
+              "Elles ne sont jamais étranges",
+              "Parce qu'au sens propre, l'image utilisée (un insecte, un animal...) n'a souvent aucun rapport logique avec le sens réel visé (être triste), ce qui crée un décalage amusant",
+              "Ces expressions n'ont jamais de sens figuré",
+              "Le sens propre et le sens figuré sont toujours identiques"
+            ],
+            "answer": 1,
+            "exp": "L'image utilisée au sens propre (un insecte pour « avoir le cafard ») n'a souvent aucun rapport logique avec le sens figuré réel (être triste), créant un décalage parfois amusant."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Cette blague est tombée à l'eau » signifie :",
+            "choices": [
+              "Que la blague a littéralement atterri dans l'eau",
+              "Que la blague n'a pas fonctionné, qu'elle a échoué",
+              "Que quelqu'un a vraiment nagé",
+              "Cette phrase n'a aucun sens possible"
+            ],
+            "answer": 1,
+            "exp": "« Tomber à l'eau » au sens figuré signifie qu'un projet ou une blague a échoué."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève, lisant « ce livre m'a transporté », croit qu'il a vraiment été déplacé physiquement par le livre. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, les livres peuvent transporter physiquement",
+              "Il prend au sens propre une expression figurée qui signifie en réalité avoir été passionné et absorbé par l'histoire du livre",
+              "« Transporter » n'a jamais de sens figuré",
+              "Cette phrase est fausse et n'a aucun sens"
+            ],
+            "answer": 1,
+            "exp": "« Être transporté » par un livre, au sens figuré, signifie être complètement absorbé et passionné par son histoire, sans déplacement physique réel."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi faut-il souvent s'appuyer sur le contexte pour savoir si une phrase utilise le sens propre ou le sens figuré d'un mot ?",
+            "choices": [
+              "Le contexte n'a jamais d'importance pour cela",
+              "Parce qu'un même mot peut avoir les deux sens selon la situation (comme « casser » : casser un verre au sens propre, ou casser les pieds au sens figuré), et seul le contexte permet de trancher",
+              "Un mot n'a toujours qu'un seul sens possible",
+              "Il est toujours évident sans contexte de savoir quel sens est utilisé"
+            ],
+            "answer": 1,
+            "exp": "Un même mot peut avoir sens propre et sens figuré selon la situation ; le contexte de la phrase permet de déterminer lequel est utilisé."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Avoir la tête dans les nuages » signifie, au sens figuré :",
+            "choices": [
+              "Être vraiment monté très haut dans le ciel",
+              "Être distrait, rêveur, pas concentré sur la réalité",
+              "Avoir le vertige",
+              "Être très grand physiquement"
+            ],
+            "answer": 1,
+            "exp": "Cette expression imagée décrit une personne distraite ou rêveuse, sans rapport avec une vraie présence dans les nuages."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Il pleut des cordes » signifie, au sens figuré :",
+            "choices": [
+              "Que de vraies cordes tombent du ciel",
+              "Qu'il pleut très fort",
+              "Qu'il fait beau",
+              "Que quelqu'un joue de la musique"
+            ],
+            "answer": 1,
+            "exp": "Cette expression imagée signifie simplement qu'il pleut très fort, sans cordes réelles."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Une même phrase peut parfois être comprise au sens propre ou au sens figuré selon le contexte.",
+            "answer": true,
+            "exp": "C'est pourquoi le contexte est essentiel pour savoir quel sens est réellement utilisé dans une phrase donnée."
           }
         ]
       },
@@ -7958,6 +8513,195 @@
             ],
             "answer": 1,
             "exp": "Le fait de connaître mieux un mot ne détermine pas s'il est général ou précis : c'est le sens qui compte. « Véhicule » englobe plusieurs types de moyens de transport (voiture, vélo, bus...), donc c'est le terme général, et « voiture » est l'un des types précis qu'il contient."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Parmi ces mots, lequel est le plus GÉNÉRAL ?",
+            "choices": [
+              "Rose",
+              "Fleur",
+              "Tulipe",
+              "Marguerite"
+            ],
+            "answer": 1,
+            "exp": "« Fleur » est la catégorie générale qui inclut rose, tulipe et marguerite."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quel mot est contenu dans la catégorie « vêtement » ?",
+            "choices": [
+              "Chaussure",
+              "Pull",
+              "Fourchette",
+              "Chaise"
+            ],
+            "answer": 1,
+            "exp": "« Pull » est un type de vêtement, donc contenu dans cette catégorie plus générale."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Tu veux ranger ces mots du plus général au plus précis : « rose », « plante », « fleur ». Quel est le bon ordre ?",
+            "choices": [
+              "Rose, fleur, plante",
+              "Plante, fleur, rose",
+              "Fleur, rose, plante",
+              "Plante, rose, fleur"
+            ],
+            "answer": 1,
+            "exp": "« Plante » est le plus général, « fleur » un type de plante, « rose » un type précis de fleur."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Tu veux ranger ces mots du plus précis au plus général : « moineau », « animal », « oiseau ». Quel est le bon ordre ?",
+            "choices": [
+              "Moineau, oiseau, animal",
+              "Animal, oiseau, moineau",
+              "Oiseau, animal, moineau",
+              "Moineau, animal, oiseau"
+            ],
+            "answer": 0,
+            "exp": "« Moineau » est le plus précis, « oiseau » une catégorie plus large, « animal » la catégorie la plus générale."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi peut-on dire qu'un « chien » est un « animal », mais pas l'inverse (« un animal est un chien ») ?",
+            "choices": [
+              "Les deux phrases sont toujours vraies de la même façon",
+              "Parce que « animal » est une catégorie générale qui contient de nombreux types différents (chiens, chats, oiseaux...), alors qu'un chien n'est qu'un exemple particulier parmi d'autres",
+              "« Chien » et « animal » veulent dire exactement la même chose",
+              "Ce sont deux mots totalement sans rapport"
+            ],
+            "answer": 1,
+            "exp": "« Animal » est la catégorie générale englobant de nombreux types (dont le chien), tandis qu'un chien n'est qu'un exemple particulier de cette catégorie plus large."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève affirme que « véhicule » est contenu dans « voiture », car « voiture » est un mot qu'il connaît mieux. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, « véhicule » est bien contenu dans « voiture »",
+              "Il inverse la relation : « véhicule » est la catégorie générale qui contient « voiture » (comme aussi « vélo », « camion »...), pas l'inverse",
+              "« Voiture » et « véhicule » n'ont aucun rapport",
+              "Les deux mots sont parfaitement interchangeables"
+            ],
+            "answer": 1,
+            "exp": "C'est « véhicule » qui est la catégorie générale contenant « voiture » (et d'autres types comme « vélo », « camion »), pas l'inverse."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un mot général (comme « animal ») peut contenir plusieurs mots plus précis (comme « chien », « chat », « oiseau »).",
+            "answer": true,
+            "exp": "C'est le principe même de la hiérarchie des catégories : du plus général au plus précis."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Quelle catégorie générale contient à la fois « pomme », « banane » et « orange » ?",
+            "choices": [
+              "Légume",
+              "Fruit",
+              "Viande",
+              "Boisson"
+            ],
+            "answer": 1,
+            "exp": "« Fruit » est la catégorie générale qui regroupe pomme, banane et orange."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il utile de savoir ranger les mots du général au particulier, notamment pour comprendre un texte documentaire ?",
+            "choices": [
+              "Ce n'est jamais utile",
+              "Parce que les textes documentaires organisent souvent l'information en catégories générales et sous-catégories plus précises, et comprendre cette structure aide à mieux suivre le texte",
+              "Les textes documentaires n'utilisent jamais de catégories",
+              "Il faut toujours ignorer les catégories générales"
+            ],
+            "answer": 1,
+            "exp": "Les textes documentaires organisent souvent l'information en catégories générales et précises ; comprendre cette structure aide à mieux suivre et retenir l'information."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève dit que « meuble » et « chaise » sont de parfaits synonymes, puisqu'une chaise est un meuble. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, ce sont des synonymes",
+              "Il confond catégorie générale (« meuble ») et exemple précis (« chaise ») avec synonymie : une chaise EST un meuble, mais « meuble » et « chaise » n'ont pas exactement le même sens, puisque table et armoire sont aussi des meubles",
+              "« Meuble » et « chaise » n'ont aucun rapport",
+              "Il faut toujours confondre catégorie et synonyme"
+            ],
+            "answer": 1,
+            "exp": "Une chaise est un exemple de meuble (relation d'inclusion), mais « meuble » et « chaise » ne sont pas synonymes : il existe d'autres meubles que des chaises."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans la catégorie « instrument de musique », lequel de ces mots n'y appartient pas ?",
+            "choices": [
+              "Guitare",
+              "Piano",
+              "Tambour",
+              "Cahier"
+            ],
+            "answer": 3,
+            "exp": "« Cahier » n'est pas un instrument de musique, contrairement aux trois autres."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pour classer rapidement une grande liste de mots (par exemple des noms d'animaux), pourquoi est-il utile de créer des catégories intermédiaires (mammifères, oiseaux, poissons) ?",
+            "choices": [
+              "Créer des catégories n'aide jamais à classer",
+              "Parce que cela permet d'organiser l'information par groupes logiques, rendant le classement plus clair et plus facile à retenir que si tout était mélangé sans ordre",
+              "Il faut toujours tout ranger dans une seule catégorie unique",
+              "Les catégories intermédiaires rendent toujours le classement plus confus"
+            ],
+            "answer": 1,
+            "exp": "Créer des catégories intermédiaires organise l'information de façon logique, facilitant la compréhension et la mémorisation du classement."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "« Rouge », « bleu » et « vert » appartiennent à quelle catégorie générale ?",
+            "choices": [
+              "Forme",
+              "Couleur",
+              "Animal",
+              "Nombre"
+            ],
+            "answer": 1,
+            "exp": "« Couleur » est la catégorie générale qui regroupe rouge, bleu et vert."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans la chaîne « être vivant » → « animal » → « chien » → « labrador », comment évolue le niveau de précision ?",
+            "choices": [
+              "Il reste toujours identique",
+              "Il devient de plus en plus précis à chaque étape",
+              "Il devient de plus en plus général à chaque étape",
+              "Il n'y a aucune logique dans cet ordre"
+            ],
+            "answer": 1,
+            "exp": "Chaque catégorie est plus précise que la précédente : du très général (être vivant) au très précis (labrador)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Quelle catégorie générale contient « table », « chaise » et « armoire » ?",
+            "choices": [
+              "Vêtement",
+              "Meuble",
+              "Animal",
+              "Fruit"
+            ],
+            "answer": 1,
+            "exp": "« Meuble » est la catégorie générale qui regroupe table, chaise et armoire."
           }
         ]
       },
@@ -8046,6 +8790,189 @@
             ],
             "answer": 1,
             "exp": "La stratégie repose sur de vrais mots de la langue française, pas sur des mots inventés sur le moment : si aucun vrai mot de la même famille n'existe, il faut simplement mémoriser l'orthographe directement, comme pour les mots invariables."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Comment savoir que « long » se termine par un « g », même si on ne l'entend pas forcément à l'oral ?",
+            "choices": [
+              "On ne peut jamais le savoir",
+              "En pensant au mot de la même famille « longue », où le « g » s'entend clairement",
+              "En devinant au hasard",
+              "Le « g » ne s'écrit jamais dans ce mot"
+            ],
+            "answer": 1,
+            "exp": "« Longue » (féminin) fait entendre clairement le « g », ce qui confirme l'orthographe de « long »."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quel mot de la même famille permet de deviner la lettre muette finale de « petit » (le t) ?",
+            "choices": [
+              "Petitesse",
+              "Petite",
+              "Peu",
+              "Petiot"
+            ],
+            "answer": 1,
+            "exp": "« Petite » (féminin) fait entendre le « t » final, confirmant l'orthographe de « petit »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Tu hésites sur la dernière lettre de « chaud ». À quel mot de la même famille peux-tu penser pour t'aider ?",
+            "choices": [
+              "Chaude, où le « d » s'entend clairement",
+              "Chat, qui n'a aucun rapport",
+              "Froid, qui est son antonyme",
+              "Chauffage, qui ne t'aide pas ici"
+            ],
+            "answer": 0,
+            "exp": "« Chaude » (féminin) fait entendre le « d » final, confirmant l'orthographe de « chaud »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Tu hésites sur la dernière lettre de « grand ». Quel mot de la même famille t'aide à la retrouver ?",
+            "choices": [
+              "Grande, où le « d » s'entend",
+              "Grange, qui n'a aucun rapport de sens",
+              "Grain, qui n'a aucun rapport",
+              "Gros, qui est un synonyme mais pas de la même famille"
+            ],
+            "answer": 0,
+            "exp": "« Grande » (féminin) fait entendre le « d » final, confirmant l'orthographe de « grand »."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi cette stratégie (chercher un mot de la même famille) fonctionne-t-elle pour deviner une lettre muette finale ?",
+            "choices": [
+              "Elle ne fonctionne jamais vraiment",
+              "Parce que la lettre muette au masculin redevient souvent audible dans un mot dérivé (comme le féminin ou un dérivé), ce qui permet de la retrouver par analogie",
+              "Les lettres muettes ne peuvent jamais être retrouvées",
+              "Cette stratégie change le sens du mot"
+            ],
+            "answer": 1,
+            "exp": "La lettre muette, silencieuse au masculin, redevient souvent audible dans un mot dérivé de la même famille (féminin, dérivé), ce qui permet de la déduire par analogie."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève cherche à deviner l'orthographe de « avec » en pensant au mot « avecque », qu'il invente lui-même sans certitude. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, cette méthode est fiable",
+              "« Avecque » n'est pas un vrai mot de la même famille reconnu : pour cette stratégie, il faut utiliser de vrais mots dérivés existants, pas en inventer un",
+              "« Avec » n'a pas besoin de cette stratégie",
+              "Inventer un mot est toujours une bonne méthode"
+            ],
+            "answer": 1,
+            "exp": "La stratégie fonctionne seulement avec de vrais mots dérivés existants ; inventer un mot sans certitude ne garantit rien."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un mot de la même famille peut aider à deviner une lettre muette en la rendant audible dans ce mot dérivé.",
+            "answer": true,
+            "exp": "C'est le principe de cette stratégie : la lettre silencieuse redevient parfois audible dans un mot dérivé."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour deviner la dernière lettre de « vert », à quel mot de la même famille peux-tu penser ?",
+            "choices": [
+              "Verte, où le « t » s'entend",
+              "Verre, qui n'a aucun rapport de sens",
+              "Ver, qui a un rapport de sonorité seulement",
+              "Verger, qui ne t'aide pas directement ici"
+            ],
+            "answer": 0,
+            "exp": "« Verte » (féminin) fait entendre le « t » final, confirmant l'orthographe de « vert »."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi cette stratégie est-elle particulièrement utile pour les adjectifs qui changent de forme au féminin ?",
+            "choices": [
+              "Elle n'est utile que pour les verbes",
+              "Parce que le passage au féminin révèle souvent une lettre muette du masculin, qui redevient alors clairement audible",
+              "Le féminin ne révèle jamais de lettre muette",
+              "Cette stratégie ne concerne jamais les adjectifs"
+            ],
+            "answer": 1,
+            "exp": "Le passage au féminin d'un adjectif révèle souvent une consonne finale muette au masculin, qui devient alors audible."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour deviner la dernière lettre de « fort », quel mot de la même famille peux-tu utiliser ?",
+            "choices": [
+              "Forte, où le « t » s'entend",
+              "Fort comme nom (une forteresse), qui ne t'aide pas directement",
+              "Faible, qui est son antonyme",
+              "Fortune, qui n'a pas de rapport direct ici"
+            ],
+            "answer": 0,
+            "exp": "« Forte » (féminin) fait entendre le « t » final, confirmant l'orthographe de « fort »."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Cette stratégie fonctionne-t-elle pour TOUS les mots qui ont une lettre muette, sans exception ?",
+            "choices": [
+              "Oui, elle fonctionne toujours parfaitement pour tous les mots",
+              "Non, elle fonctionne bien pour certains mots qui ont un dérivé clair (féminin, nom lié), mais pas pour tous les mots à lettre muette qui n'ont pas de dérivé utile",
+              "Oui, c'est une règle absolue sans aucune exception",
+              "Non, cette stratégie ne fonctionne jamais"
+            ],
+            "answer": 1,
+            "exp": "Cette stratégie est utile quand un dérivé pertinent existe (féminin, mot de la même famille), mais ne s'applique pas automatiquement à tous les mots à lettre muette."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour deviner la dernière lettre de « lourd », quel mot de la même famille t'aide ?",
+            "choices": [
+              "Lourde, où le « d » s'entend",
+              "Loup, qui n'a aucun rapport",
+              "Lourdeur, qui ne t'aide pas directement pour la lettre finale précise ici",
+              "Léger, qui est son antonyme"
+            ],
+            "answer": 0,
+            "exp": "« Lourde » (féminin) fait entendre le « d » final, confirmant l'orthographe de « lourd »."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi cette stratégie de recherche de mots dérivés est-elle une méthode plus fiable que de deviner au hasard l'orthographe d'une lettre muette ?",
+            "choices": [
+              "Deviner au hasard est toujours tout aussi fiable",
+              "Parce qu'elle s'appuie sur un indice concret et vérifiable (le mot dérivé existant), plutôt que sur une simple supposition sans fondement",
+              "Cette stratégie n'est jamais plus fiable que le hasard",
+              "Il n'existe aucune méthode plus fiable que le hasard"
+            ],
+            "answer": 1,
+            "exp": "S'appuyer sur un mot dérivé réel et vérifiable est bien plus fiable qu'une simple supposition au hasard sur l'orthographe."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour deviner la dernière lettre de « court », quel mot de la même famille t'aide ?",
+            "choices": [
+              "Courte, où le « t » s'entend",
+              "Cour, qui n'a pas le même sens",
+              "Courir, qui est utile mais moins direct ici",
+              "Courant, qui ne t'aide pas directement pour la lettre finale"
+            ],
+            "answer": 0,
+            "exp": "« Courte » (féminin) fait entendre le « t » final, confirmant l'orthographe de « court »."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Cette stratégie de recherche de mots dérivés s'applique aussi bien aux adjectifs qu'à certains noms.",
+            "answer": true,
+            "exp": "Elle fonctionne pour tout mot ayant un dérivé pertinent qui rend la lettre muette audible, qu'il s'agisse d'un adjectif ou d'un nom."
           }
         ]
       },
