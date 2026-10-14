@@ -92,6 +92,7 @@ header .logo{font-size:24px;font-weight:800;color:#ff8a00;font-family:'Baloo 2',
 .lesson-row .em{font-size:30px;}
 .lesson-row .tt{font-weight:800;font-family:'Baloo 2';flex:1;}
 .lesson-row .badge{font-size:20px;}
+.lesson-row .meta{font-size:12px;color:var(--ink2);font-weight:600;margin-top:2px;}
 .diag{background:#fff3d6;border:2px dashed var(--gold);border-radius:18px;padding:16px;text-align:center;margin-bottom:16px;}
 .diag .choices{display:flex;gap:10px;justify-content:center;margin-top:10px;flex-wrap:wrap;}
 .progressbar{height:12px;background:#eee2cf;border-radius:8px;overflow:hidden;margin:10px 0 18px;}
@@ -435,6 +436,16 @@ if(!p.progress[subject]) p.progress[subject]={};
 if(!p.progress[subject][track]) p.progress[subject][track]=[];
 while(p.progress[subject][track].length<count) p.progress[subject][track].push(false);
 return p.progress[subject][track];
+}
+const MASTERY_MIN_QUESTIONS=20;
+const MASTERY_PASS_SCORE=18;
+function ensureProgressDetail(p,subject,track,count){
+if(!p.progressDetail) p.progressDetail={};
+if(!p.progressDetail[subject]) p.progressDetail[subject]={};
+if(!p.progressDetail[subject][track]) p.progressDetail[subject][track]=[];
+const arr=p.progressDetail[subject][track];
+while(arr.length<count) arr.push({attempts:0,bestScore:null,lastScore:null,lastTotal:null,lastMastered:false});
+return arr;
 }
 function getSubjectTrack(p,subjectKey){
 return p.subjectTrack && p.subjectTrack[subjectKey] ? p.subjectTrack[subjectKey] : String(p.track);
@@ -1424,13 +1435,20 @@ toggle.appendChild(b);
 }
 const lessons=getLessons(key,track);
 const prog=ensureProgress(p,key,track,lessons.length);
+const detailArr=ensureProgressDetail(p,key,track,lessons.length);
 const list=document.getElementById('lessonList');
 list.innerHTML='';
 lessons.forEach((lesson,i)=>{
 const locked = i>0 && !prog[i-1];
+const d=detailArr[i];
+let metaHtml='';
+if(d && d.attempts>0){
+const scoreTxt = (d.lastTotal>=MASTERY_MIN_QUESTIONS) ? (d.bestScore+'/'+d.lastTotal+' · ') : '';
+metaHtml='<div class="meta">'+scoreTxt+d.attempts+' essai'+(d.attempts>1?'s':'')+'</div>';
+}
 const row=document.createElement('div');
 row.className='lesson-row'+(locked?' locked':'');
-row.innerHTML='<div class="em">'+lesson.emoji+'</div><div class="tt">'+lesson.title+'</div><div class="badge">'+(prog[i]?'✅':(locked?'🔒':'▶️'))+'</div>';
+row.innerHTML='<div class="em">'+lesson.emoji+'</div><div class="tt">'+lesson.title+metaHtml+'</div><div class="badge">'+(prog[i]?'✅':(locked?'🔒':'▶️'))+'</div>';
 if(!locked) row.onclick=()=>openLesson(key,track,i);
 list.appendChild(row);
 });
@@ -1555,28 +1573,58 @@ const p=getCurrentProfile();
 const key=LS.subjectKey, track=LS.track, index=LS.index;
 const list=currentExerciseList();
 const total=list.length;
+const score=total-LS.mistakes;
+const requiresMastery = total>=MASTERY_MIN_QUESTIONS;
+const mastered = requiresMastery ? (score>=MASTERY_PASS_SCORE) : true;
 const wasAlreadyDone = p.progress[key][track][index]===true;
 let stars = wasAlreadyDone ? Math.max(1,Math.round(total/2)) : total;
 if(LS.mistakes===0) stars+=3;
-p.progress[key][track][index]=true;
+if(mastered) p.progress[key][track][index]=true;
 p.stars+=stars;
 if(todayIsNewDay(p)) bumpStreak(p);
+const detailArr=ensureProgressDetail(p,key,track,list.length);
+const detail=detailArr[index];
+detail.attempts=(detail.attempts||0)+1;
+detail.lastScore=score;
+detail.lastTotal=total;
+detail.bestScore=(detail.bestScore===null||detail.bestScore===undefined)?score:Math.max(detail.bestScore,score);
+detail.lastMastered=mastered;
 saveData(DATA);
 const newBadges=checkBadges(p);
 saveData(DATA);
 LS.starsEarned=stars;
 LS.newBadges=newBadges;
+LS.score=score;
+LS.total=total;
+LS.mastered=mastered;
+LS.requiresMastery=requiresMastery;
 LS.phase='result';
 renderResultStep();
+}
+function redoCurrentLesson(){
+if(!LS) return;
+openLesson(LS.subjectKey, LS.track, LS.index);
 }
 function renderResultStep(){
 document.getElementById('lessonProgress').style.width='100%';
 const body=document.getElementById('lessonBody');
 const perfect=LS.mistakes===0;
-let html='<div class="result-box"><div class="big">'+(perfect?'🌟':'🎉')+'</div><h2>Bravo ! Tu as terminé la leçon !</h2><p style="font-size:20px;font-weight:800;color:#c97e00;">+ '+LS.starsEarned+' étoiles ⭐</p>';
+const needsRetry = LS.requiresMastery && !LS.mastered;
+let html='<div class="result-box"><div class="big">'+(needsRetry?'🔁':(perfect?'🌟':'🎉'))+'</div>';
+if(LS.requiresMastery){
+html+='<h2>'+(LS.mastered?'Bravo, leçon maîtrisée ! 🏆':'Pas encore acquise, tu peux réessayer !')+'</h2>';
+html+='<p style="font-size:24px;font-weight:800;color:'+(LS.mastered?'#2e8b57':'#c0392b')+';">Score : '+LS.score+' / '+LS.total+'</p>';
+html+='<p style="color:var(--ink2);font-weight:600;">Il faut au moins '+MASTERY_PASS_SCORE+'/'+MASTERY_MIN_QUESTIONS+' pour valider cette leçon et débloquer la suivante.</p>';
+} else {
+html+='<h2>Bravo ! Tu as terminé la leçon !</h2>';
+}
+html+='<p style="font-size:20px;font-weight:800;color:#c97e00;">+ '+LS.starsEarned+' étoiles ⭐</p>';
 if(perfect) html+='<div class="mascot-msg">🦉 Parfait, aucune erreur ! Bonus de 3 étoiles !</div>';
 if(LS.newBadges && LS.newBadges.length){html+='<div class="badge-row" style="justify-content:center;">'+LS.newBadges.map(b=>'<div class="badge-chip">🏅 Badge '+b+' étoiles !</div>').join('')+'</div>';}
-html+='<div style="margin-top:20px;"><button class="btn" onclick="showScreen(\'subject\')">Continuer ➡️</button></div></div>';
+html+='<div style="margin-top:20px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">';
+html+='<button class="btn" onclick="showScreen(\'subject\')">'+(needsRetry?'Plus tard':'Continuer ➡️')+'</button>';
+html+='<button class="btn" style="background:#eee2cf;color:#6b4b1b;" onclick="redoCurrentLesson()">🔄 Refaire la leçon</button>';
+html+='</div></div>';
 body.innerHTML=html;
 updateStarsBar();
 }
