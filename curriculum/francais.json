@@ -19844,6 +19844,177 @@
             ],
             "answer": 1,
             "exp": "Sans suivre le fil structurel général d'un message (comment les idées s'enchaînent), se focaliser uniquement sur des détails isolés empêche de construire une compréhension cohérente de l'ensemble du propos."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pour bien suivre un message oral long, que peux-tu essayer de repérer dès le début ?",
+            "choices": [
+              "Rien de particulier, il suffit d'écouter sans aucune stratégie",
+              "Sa structure générale (introduction, développement, conclusion)",
+              "Uniquement le ton de la voix du locuteur",
+              "Le nombre exact de mots prononcés pendant le discours"
+            ],
+            "answer": 1,
+            "exp": "Repérer la structure générale d'un message oral long aide à organiser sa compréhension."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Les informations implicites existent-elles aussi à l'oral, ou seulement à l'écrit ?",
+            "choices": [
+              "Non, l'oral ne contient jamais aucune information implicite",
+              "Oui, on peut déduire des informations du ton, du contexte, ou de ce qui n'est pas dit directement, même à l'oral",
+              "L'oral ne contient que des informations explicites, jamais d'implicite",
+              "L'implicite n'existe que dans les contes écrits, jamais à l'oral"
+            ],
+            "answer": 1,
+            "exp": "L'implicite existe aussi à l'oral : le ton, les silences et le contexte peuvent révéler des informations non dites explicitement."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Tu écoutes une interview où le ton de la personne interrogée devient hésitant à une question précise. Que peux-tu en déduire, même sans qu'elle le dise explicitement ?",
+            "choices": [
+              "Rien du tout, le ton d'une voix n'a jamais aucune signification",
+              "Que cette question la met peut-être mal à l'aise ou lui pose une difficulté particulière, une information implicite déduite du ton",
+              "Que la question posée était forcément sans aucun intérêt",
+              "Que la personne interrogée ment forcément à propos de tout"
+            ],
+            "answer": 1,
+            "exp": "Un ton hésitant permet de déduire, de façon implicite, un possible malaise face à la question, même sans mot explicite à ce sujet."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Tu écoutes un reportage qui alterne des faits présentés par le journaliste et des témoignages de personnes interrogées sur le terrain. Quelle caractéristique de genre peux-tu repérer dans ce document oral ?",
+            "choices": [
+              "Aucune caractéristique particulière, tous les documents oraux sont identiques",
+              "L'alternance entre présentation de faits par le journaliste et témoignages, typique du genre du reportage",
+              "Il s'agit forcément d'une fiction inventée de toutes pièces",
+              "Un reportage ne contient jamais de témoignages de personnes interrogées"
+            ],
+            "answer": 1,
+            "exp": "L'alternance entre faits et témoignages est une caractéristique typique du genre du reportage, à repérer pour bien comprendre sa structure."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi repérer la structure d'un message oral long (introduction, développement, conclusion) aide-t-il à mieux le mémoriser ?",
+            "choices": [
+              "Ce n'est jamais utile de repérer une structure dans un message oral",
+              "Parce qu'organiser mentalement les informations selon une structure connue facilite leur rangement en mémoire, plutôt que de tout retenir pêle-mêle sans organisation",
+              "Parce que la structure remplace entièrement le contenu réel du message",
+              "Parce qu'un message oral long n'a jamais de structure identifiable"
+            ],
+            "answer": 1,
+            "exp": "Organiser les informations selon une structure connue (intro/développement/conclusion) facilite leur mémorisation par rapport à une écoute désordonnée."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève, après avoir écouté un exposé long, ne retient que des détails isolés sans comprendre le fil général du propos. Que lui manque-t-il dans sa méthode d'écoute ?",
+            "choices": [
+              "Rien, retenir uniquement des détails isolés est toujours suffisant pour bien comprendre",
+              "Il lui manque une vision d'ensemble de la structure du message : se concentrer uniquement sur des détails isolés rend la compréhension globale difficile",
+              "Il fallait retenir encore plus de détails isolés, sans chercher de structure",
+              "Les exposés oraux n'ont jamais de structure à suivre, quelle que soit leur longueur"
+            ],
+            "answer": 1,
+            "exp": "Se concentrer uniquement sur des détails isolés, sans suivre le fil général du message, nuit à une compréhension globale correcte."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Il est possible de déduire des informations implicites à partir du ton d'une voix, même à l'oral.",
+            "answer": true,
+            "exp": "Le ton, les hésitations ou les silences peuvent révéler des informations implicites, tout comme à l'écrit."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Reformuler les idées principales d'un message oral avec ses propres mots n'aide jamais à manifester sa compréhension.",
+            "answer": false,
+            "exp": "Au contraire, la leçon recommande cette reformulation comme un bon moyen de manifester sa compréhension d'un message oral."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "La partie d'un message oral qui présente le sujet avant le développement s'appelle l' . (un mot)",
+            "answer": "introduction",
+            "exp": "L'introduction est la partie initiale d'un message oral qui présente le sujet avant d'entrer dans le développement."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève reformule, après l'écoute d'un exposé, les idées principales avec ses propres mots, en incluant à la fois ce qui était dit clairement et ce qu'il a pu déduire du ton. Que fait-il concrètement ?",
+            "choices": [
+              "Il perd son temps, cette méthode n'a jamais aucune utilité",
+              "Il applique exactement la méthode recommandée pour manifester sa compréhension d'un message oral, en mêlant explicite et implicite",
+              "Il invente des informations qui n'étaient présentes ni explicitement ni implicitement dans l'exposé",
+              "Cette méthode ne concerne que les messages écrits, jamais les messages oraux"
+            ],
+            "answer": 1,
+            "exp": "Reformuler en combinant informations explicites et déductions implicites est exactement la méthode recommandée par la leçon."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il utile de distinguer les caractéristiques propres à chaque genre de discours oral (interview, reportage, récit) avant de l'écouter attentivement ?",
+            "choices": [
+              "Ce n'est jamais utile, tous les genres de discours oraux fonctionnent exactement de la même façon",
+              "Parce que connaître la structure typique d'un genre (questions/réponses pour une interview, faits/témoignages pour un reportage) aide à anticiper l'organisation du message et à mieux le suivre",
+              "Les genres de discours oraux n'ont jamais de caractéristiques propres distinctes",
+              "Seul le contenu compte, jamais la structure du genre de discours"
+            ],
+            "answer": 1,
+            "exp": "Anticiper la structure typique d'un genre de discours facilite le suivi et la compréhension du message oral correspondant."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense qu'écouter un message oral long ne demande aucune stratégie particulière, contrairement à la lecture d'un texte long. Que penser de cette idée ?",
+            "choices": [
+              "Il a raison, l'écoute ne nécessite jamais aucune stratégie particulière",
+              "Son idée est fausse : comme pour un texte écrit long, repérer la structure, distinguer explicite et implicite, et reformuler sont des stratégies utiles à l'écoute d'un message oral long",
+              "Seule la lecture de textes écrits demande une vraie stratégie de compréhension",
+              "Les messages oraux sont toujours plus simples à comprendre que les textes écrits, sans aucune exception"
+            ],
+            "answer": 1,
+            "exp": "Comme pour un texte écrit, l'écoute d'un message long bénéficie de stratégies actives (structure, implicite, reformulation)."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pendant une interview enregistrée, le journaliste pose d'abord des questions générales, puis des questions de plus en plus précises sur un sujet technique. Quelle stratégie d'écoute serait la plus utile pour suivre cette progression ?",
+            "choices": [
+              "Ignorer complètement les premières questions générales",
+              "Repérer la progression du général au particulier dans la structure de l'interview, pour mieux relier les questions précises aux informations générales déjà données",
+              "Se concentrer uniquement sur la toute dernière question posée",
+              "Compter uniquement le nombre de questions posées, sans suivre leur contenu"
+            ],
+            "answer": 1,
+            "exp": "Repérer la progression du général au particulier aide à relier les questions précises au cadre général déjà établi par les premières questions."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi la capacité à reformuler un message oral long avec ses propres mots est-elle considérée comme une preuve de compréhension plus fiable qu'une simple répétition mot pour mot ?",
+            "choices": [
+              "Répéter mot pour mot est toujours une preuve suffisante et fiable de compréhension",
+              "Parce que reformuler avec ses propres mots oblige à avoir vraiment traité et compris le sens du message, alors qu'une répétition mot pour mot peut se faire sans compréhension réelle",
+              "La reformulation n'a jamais aucun lien avec la compréhension d'un message",
+              "Il est impossible de répéter un message oral mot pour mot sans le comprendre"
+            ],
+            "answer": 1,
+            "exp": "Reformuler avec ses propres mots demande un traitement actif du sens, contrairement à une répétition mécanique qui peut se faire sans compréhension réelle."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Une interview se caractérise souvent par une alternance entre questions et réponses.",
+            "answer": true,
+            "exp": "C'est une caractéristique typique du genre de l'interview, utile à repérer pour bien suivre ce type de message oral."
           }
         ]
       },
@@ -19932,6 +20103,177 @@
             ],
             "answer": 1,
             "exp": "Un exposé formel devant un public (la classe) demande généralement un registre de langue plus soigné qu'une conversation familière entre amis : ne pas adapter son discours à la situation peut nuire à la qualité de la communication."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Que signifie précisément « argumenter » à l'oral, selon cette leçon ?",
+            "choices": [
+              "Répéter la même phrase plusieurs fois de suite",
+              "Défendre un point de vue en donnant des raisons claires qui le soutiennent",
+              "Parler sans aucune structure particulière",
+              "Lire un texte préparé sans jamais y ajouter d'idée personnelle"
+            ],
+            "answer": 1,
+            "exp": "Argumenter consiste à défendre un point de vue à l'aide de raisons claires qui le soutiennent."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pour structurer un propos argumentatif à l'oral, que doit-on faire après avoir annoncé son idée principale ?",
+            "choices": [
+              "Ne rien ajouter d'autre, l'idée principale suffit toujours seule",
+              "Donner un ou plusieurs arguments qui la soutiennent, éventuellement avec un exemple concret pour chacun",
+              "Changer immédiatement de sujet de conversation",
+              "Répéter uniquement l'idée principale plusieurs fois sans l'appuyer"
+            ],
+            "answer": 1,
+            "exp": "Un propos argumentatif structuré enchaîne l'idée principale, des arguments, et idéalement des exemples concrets qui les illustrent."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pour expliquer comment tu as résolu un problème de mathématiques à un camarade qui ne l'a pas vu, que dois-tu faire en priorité ?",
+            "choices": [
+              "Donner directement la réponse finale sans aucune explication de la démarche",
+              "Expliquer ta démarche de façon claire et ordonnée, étape par étape, pour qu'il puisse suivre ton raisonnement",
+              "Parler très vite sans donner aucun détail sur les étapes suivies",
+              "Ne rien expliquer du tout et attendre qu'il devine"
+            ],
+            "answer": 1,
+            "exp": "Expliquer une démarche demande de détailler les étapes de façon ordonnée, pour qu'un auditeur extérieur puisse suivre le raisonnement."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Tu prépares un exposé sur le recyclage pour toute la classe. Que devrais-tu faire en amont pour qu'il soit réussi ?",
+            "choices": [
+              "Improviser entièrement sans aucune préparation ni structure",
+              "Structurer tes idées, éventuellement avec des notes ou un support visuel, t'entraîner à voix haute et anticiper les questions possibles",
+              "Écrire un texte très long que tu liras mot pour mot sans jamais lever les yeux",
+              "Ne préparer aucun contenu et parler au hasard devant la classe"
+            ],
+            "answer": 1,
+            "exp": "Une bonne préparation d'exposé inclut la structuration des idées, l'entraînement à voix haute et l'anticipation des questions du public."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un exemple concret renforce-t-il souvent un argument présenté à l'oral ?",
+            "choices": [
+              "Un exemple concret n'a jamais aucune utilité dans une argumentation orale",
+              "Parce qu'il rend l'idée abstraite plus tangible et compréhensible pour l'auditoire, en illustrant concrètement ce que l'argument signifie dans la réalité",
+              "Parce qu'un exemple remplace complètement le besoin d'avoir un argument",
+              "Parce que les exemples rendent toujours un discours plus confus pour l'auditoire"
+            ],
+            "answer": 1,
+            "exp": "Un exemple concret illustre une idée abstraite de façon tangible, ce qui aide l'auditoire à mieux comprendre l'argument."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève présente un exposé devant toute la classe en utilisant un langage très familier, comme s'il parlait à un ami proche dans la cour de récréation. Quel est le problème ?",
+            "choices": [
+              "Aucun problème, le registre de langue ne doit jamais changer selon la situation",
+              "Il n'a pas adapté son registre de langue à la situation formelle de l'exposé devant la classe, ce qui peut nuire à la clarté et au sérieux de sa présentation",
+              "Il fallait parler encore plus familièrement pour être plus naturel",
+              "Les exposés devant la classe ne nécessitent jamais d'adaptation particulière du langage"
+            ],
+            "answer": 1,
+            "exp": "Ne pas adapter son registre de langue à une situation formelle (exposé devant la classe) nuit au sérieux et à la clarté du discours."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Adapter son registre de langue selon son public fait partie des compétences orales attendues au CM1.",
+            "answer": true,
+            "exp": "La leçon insiste sur l'importance d'adapter son registre de langue à la situation de communication (exposé formel vs conversation informelle)."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un argument oral n'a jamais besoin d'être accompagné d'un exemple concret pour être convaincant.",
+            "answer": false,
+            "exp": "Un exemple concret renforce souvent un argument en le rendant plus tangible et compréhensible pour l'auditoire."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Défendre un point de vue avec des raisons claires qui le soutiennent s'appelle : (un mot)",
+            "answer": "argumenter",
+            "exp": "Argumenter consiste précisément à défendre un point de vue en apportant des raisons claires qui le justifient."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève s'entraîne à voix haute avant son exposé, en anticipant les questions que la classe pourrait lui poser à la fin. Que fait-il concrètement ?",
+            "choices": [
+              "Il perd son temps, cette préparation n'a jamais aucune utilité réelle",
+              "Il applique exactement la méthode de préparation d'exposé recommandée par la leçon",
+              "Il mémorise son exposé mot pour mot, ce qui est toujours interdit",
+              "Anticiper les questions du public n'a aucun lien avec la réussite d'un exposé"
+            ],
+            "answer": 1,
+            "exp": "S'entraîner à voix haute et anticiper les questions du public sont exactement les étapes de préparation recommandées pour un exposé réussi."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi expliquer une démarche à quelqu'un qui ne l'a pas vécue demande-t-il un effort particulier de clarté, différent d'une simple description pour soi-même ?",
+            "choices": [
+              "Il n'existe aucune différence entre expliquer pour soi-même et expliquer à quelqu'un d'autre",
+              "Parce que l'auditeur n'a pas accès aux mêmes informations implicites que celui qui a vécu la démarche : il faut donc rendre explicite chaque étape pour qu'il puisse suivre le raisonnement sans connaissance préalable",
+              "Expliquer une démarche à quelqu'un d'autre est toujours plus simple qu'expliquer pour soi-même",
+              "Il est impossible d'expliquer une démarche à quelqu'un qui ne l'a pas vécue"
+            ],
+            "answer": 1,
+            "exp": "L'auditeur n'ayant pas vécu la démarche, il faut rendre explicite chaque étape du raisonnement pour qu'il puisse vraiment la suivre."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense qu'un bon exposé oral consiste uniquement à parler le plus longtemps possible, sans se soucier de la structure du propos. Que penser de cette idée ?",
+            "choices": [
+              "Il a raison, la durée est le seul critère important pour un bon exposé",
+              "Son idée est fausse : un bon exposé demande surtout une structure claire (idée, arguments, exemples) et une adaptation au public, pas seulement une longue durée",
+              "La structure d'un exposé n'a jamais aucune importance, seule la durée compte",
+              "Un exposé très court est toujours automatiquement raté, quelle que soit sa qualité"
+            ],
+            "answer": 1,
+            "exp": "La qualité d'un exposé dépend de sa structure et de son adaptation au public, pas simplement de sa durée."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans un exposé argumentatif sur l'importance du sport, un élève annonce son idée (le sport est bénéfique), donne un argument (il améliore la santé) mais oublie tout exemple concret. Que pourrait-il ajouter pour renforcer son propos ?",
+            "choices": [
+              "Rien, un argument sans exemple est toujours suffisant et complet",
+              "Un exemple concret, comme le fait que la pratique régulière d'un sport réduit certains risques de maladies, pour illustrer concrètement son argument",
+              "Répéter uniquement l'idée principale une deuxième fois sans rien ajouter d'autre",
+              "Changer complètement d'argument sans lien avec l'idée principale"
+            ],
+            "answer": 1,
+            "exp": "Ajouter un exemple concret illustrant l'argument renforce sa force de conviction auprès de l'auditoire."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi dit-on que l'oral argumentatif au CM1 prépare aussi à des compétences utiles hors de l'école, comme défendre une opinion dans la vie quotidienne ?",
+            "choices": [
+              "L'argumentation orale apprise à l'école n'a jamais aucune utilité hors de la classe",
+              "Parce que structurer un point de vue avec des arguments clairs et des exemples est une compétence transférable à de nombreuses situations de la vie, pas seulement aux exposés scolaires",
+              "Seuls les exposés scolaires nécessitent de savoir argumenter, jamais la vie quotidienne",
+              "Argumenter à l'oral est une compétence qui ne s'applique qu'aux adultes, jamais aux enfants"
+            ],
+            "answer": 1,
+            "exp": "La compétence à structurer et défendre un point de vue avec des arguments est transférable à de nombreuses situations de la vie, au-delà du cadre scolaire."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Adapter son registre de langue selon le public (classe entière ou conversation informelle) fait partie des compétences orales attendues.",
+            "answer": true,
+            "exp": "La leçon insiste explicitement sur l'importance d'adapter son registre de langue selon la situation de communication."
           }
         ]
       },
@@ -20020,6 +20362,177 @@
             ],
             "answer": 1,
             "exp": "Un vrai débat est un échange vivant qui demande de réagir à ce qui se dit : réciter une opinion figée sans tenir compte des arguments des autres transforme le débat en une simple succession de monologues, sans véritable interaction."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pendant un débat, pourquoi est-il important de tenir compte de ce qui a déjà été dit par les autres participants ?",
+            "choices": [
+              "Ce n'est jamais important, on peut parler sans jamais écouter les autres",
+              "Pour faire avancer la discussion en apportant quelque chose de nouveau, plutôt que de répéter une idée déjà exprimée",
+              "Parce qu'il faut toujours être automatiquement d'accord avec la dernière personne qui a parlé",
+              "Parce qu'il est strictement interdit de réagir aux propos des autres participants"
+            ],
+            "answer": 1,
+            "exp": "Tenir compte des propos précédents permet d'apporter une contribution nouvelle, plutôt que de répéter ce qui a déjà été dit."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pendant un débat, critiquer une idée signifie-t-il forcément critiquer la personne qui l'a exprimée ?",
+            "choices": [
+              "Oui, c'est exactement la même chose dans tous les cas",
+              "Non, on peut être en désaccord avec une idée tout en restant respectueux envers la personne qui l'a exprimée",
+              "Il est strictement interdit de critiquer une idée pendant un débat",
+              "Seules les idées des adultes peuvent être critiquées pendant un débat"
+            ],
+            "answer": 1,
+            "exp": "Critiquer une idée et critiquer une personne sont deux choses distinctes : on peut contester un propos en restant respectueux envers son auteur."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Pendant un débat, un camarade donne un argument qui te semble vraiment convaincant, différent de ton avis initial. Que peux-tu faire ?",
+            "choices": [
+              "Refuser catégoriquement de changer d'avis, quoi qu'il arrive et quels que soient les arguments",
+              "Reconnaître que cet argument te fait réfléchir et nuancer ton propos, ce qui est un signe de bonne réflexion",
+              "Te fâcher immédiatement contre ce camarade sans réagir à son argument",
+              "Ignorer complètement son argument sans jamais y réfléchir"
+            ],
+            "answer": 1,
+            "exp": "Reconnaître la force d'un argument et nuancer son propos en conséquence est un signe de bonne réflexion, pas de faiblesse."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Léa dit pendant un débat : « Il faut limiter le temps d'écran. » Tu réponds : « Je suis d'accord avec Léa, et j'ajouterais qu'il faut aussi varier les activités, pas seulement limiter le temps. » Que fais-tu concrètement dans cette intervention ?",
+            "choices": [
+              "Tu répètes exactement la même idée que Léa, sans rien y ajouter de nouveau",
+              "Tu t'appuies sur ce que Léa a dit pour faire avancer la discussion avec une idée complémentaire, sans simplement répéter son propos",
+              "Tu contredis complètement Léa sans aucune raison précise",
+              "Tu changes totalement de sujet de conversation, sans lien avec le débat en cours"
+            ],
+            "answer": 1,
+            "exp": "Construire sur l'idée d'un autre participant en y ajoutant un élément nouveau fait avancer la discussion, contrairement à une simple répétition."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi changer légèrement d'avis après avoir entendu un argument solide est-il un signe de bonne réflexion, et non de faiblesse ?",
+            "choices": [
+              "Ce n'est jamais un bon signe de changer d'avis pendant un débat",
+              "Parce que cela montre qu'on écoute vraiment les autres et qu'on est capable d'adapter sa pensée face à de nouveaux éléments, plutôt que de rester figé sur une position sans tenir compte des arguments présentés",
+              "Parce qu'il faut toujours changer d'avis à chaque nouvelle intervention entendue",
+              "Parce que changer d'avis signifie qu'on n'avait jamais vraiment réfléchi au départ"
+            ],
+            "answer": 1,
+            "exp": "Adapter sa pensée face à un argument solide montre une écoute réelle et une capacité de réflexion, pas une faiblesse."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Pendant un débat, un élève répond à chaque fois en répétant exactement la même phrase qu'il avait préparée à l'avance, sans jamais réagir à ce que disent les autres. Quel est le problème ?",
+            "choices": [
+              "Aucun problème, c'est une excellente stratégie à adopter pendant un débat",
+              "Il ne participe pas vraiment à un échange : un débat demande d'écouter et de réagir aux propos des autres, pas seulement de réciter une opinion préparée sans tenir compte de la discussion",
+              "Il fallait préparer encore plus de phrases à répéter sans jamais écouter personne",
+              "Les débats ne nécessitent jamais d'écoute réelle des autres participants"
+            ],
+            "answer": 1,
+            "exp": "Réciter une opinion préparée sans jamais réagir aux autres n'est pas une vraie participation à un débat, qui demande écoute et adaptation."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "On peut être en désaccord avec une idée exprimée pendant un débat tout en restant respectueux envers la personne qui l'a exprimée.",
+            "answer": true,
+            "exp": "C'est précisément la distinction centrale de cette leçon entre critiquer une idée et critiquer une personne."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Changer d'avis pendant un débat après avoir entendu un argument convaincant est toujours considéré comme un signe de faiblesse.",
+            "answer": false,
+            "exp": "Au contraire, la leçon explique que nuancer son propos face à un bon argument est un signe de bonne réflexion."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "S'exprimer à tour de rôle sur un sujet, en défendant chacun son opinion dans le respect des autres, s'appelle un : (un mot)",
+            "answer": "debat",
+            "exp": "Un débat est précisément cet échange construit où plusieurs points de vue s'expriment sur un même sujet, dans le respect mutuel."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève, pendant un débat, dit : « Je ne suis pas d'accord avec cette idée, car elle ne tient pas compte de... », sans jamais attaquer directement la personne qui a exprimé cette idée. Que fait-il concrètement ?",
+            "choices": [
+              "Il attaque directement la personne, ce qui est une mauvaise pratique de débat",
+              "Il applique exactement la bonne pratique recommandée : critiquer l'idée elle-même tout en respectant la personne qui l'a exprimée",
+              "Il refuse de participer réellement au débat en restant silencieux",
+              "Cette formulation n'a aucun lien avec les bonnes pratiques d'un débat respectueux"
+            ],
+            "answer": 1,
+            "exp": "Critiquer une idée précise sans attaquer la personne est exactement la bonne pratique de débat respectueux recommandée par la leçon."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un débat où chaque participant se contente de répéter son opinion initiale, sans jamais réagir aux autres, n'est-il pas un « vrai » débat au sens plein du terme ?",
+            "choices": [
+              "C'est au contraire la définition même d'un vrai débat réussi",
+              "Parce qu'un vrai débat implique une interaction réelle entre les participants (écoute, réaction, nuance), et non une simple juxtaposition d'opinions figées sans lien entre elles",
+              "Les débats n'ont jamais besoin d'interaction réelle entre les participants",
+              "Répéter son opinion initiale est toujours la meilleure stratégie de débat possible"
+            ],
+            "answer": 1,
+            "exp": "Un vrai débat suppose une interaction réelle (écoute, réaction aux autres), contrairement à une simple succession d'opinions figées sans lien."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense que, pour « gagner » un débat, il doit absolument ne jamais reconnaître le moindre point valable chez ses adversaires, même si un de leurs arguments est solide. Que penser de cette idée ?",
+            "choices": [
+              "Il a raison, reconnaître un point valable chez un adversaire signifie toujours perdre le débat",
+              "Son idée est contre-productive : reconnaître un argument solide des autres et nuancer son propos est un signe de bonne réflexion, pas une faiblesse qui ferait « perdre » le débat",
+              "Un débat se gagne toujours uniquement en ne cédant jamais sur rien, quelle que soit la qualité des arguments adverses",
+              "Il est impossible qu'un argument d'un adversaire soit valable dans un débat"
+            ],
+            "answer": 1,
+            "exp": "Un débat n'est pas une compétition où céder serait une défaite : reconnaître un bon argument et nuancer son propos est un signe de maturité réflexive."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans un débat sur l'alimentation à la cantine, trois élèves successifs répètent presque la même idée sans s'appuyer les uns sur les autres, tandis qu'un quatrième élève dit : « Comme l'ont dit mes camarades, mais je voudrais ajouter que... ». Quelle intervention fait le plus avancer la discussion ?",
+            "choices": [
+              "Les trois premières interventions, car elles se répètent entre elles",
+              "La quatrième intervention, car elle s'appuie sur ce qui a été dit tout en apportant un élément nouveau à la discussion",
+              "Aucune des quatre interventions n'a de valeur dans ce débat",
+              "Toutes les interventions ont exactement la même valeur, qu'elles apportent du nouveau ou non"
+            ],
+            "answer": 1,
+            "exp": "S'appuyer sur les propos précédents en apportant un élément nouveau fait avancer la discussion, contrairement à une simple répétition."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi peut-on dire qu'un débat réussi demande un équilibre entre défendre fermement son opinion et rester ouvert aux arguments des autres ?",
+            "choices": [
+              "Il ne faut jamais défendre fermement son opinion pendant un débat, sous aucun prétexte",
+              "Parce qu'un débat sans fermeté deviendrait une absence totale d'opinions défendues, tandis qu'un débat sans ouverture empêcherait tout vrai échange ou évolution de la réflexion collective",
+              "Il ne faut jamais rester ouvert aux arguments des autres pendant un débat, sous aucun prétexte",
+              "Un débat n'a besoin d'aucun équilibre particulier entre fermeté et ouverture"
+            ],
+            "answer": 1,
+            "exp": "L'équilibre entre fermeté (défendre son opinion) et ouverture (écouter et nuancer) est ce qui rend un débat à la fois vivant et constructif."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Dire « je ne suis pas d'accord avec cette idée, car... » permet de critiquer un propos sans attaquer la personne qui l'a exprimé.",
+            "answer": true,
+            "exp": "C'est exactement la bonne pratique recommandée : séparer la critique de l'idée du respect de la personne qui l'exprime."
           }
         ]
       },
