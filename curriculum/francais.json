@@ -15399,6 +15399,183 @@
             ],
             "answer": 1,
             "exp": "L'objectif final de la fluence est de soutenir la compréhension, pas de battre un record de vitesse : un lecteur très rapide qui ne comprend rien doit retravailler l'équilibre entre vitesse et attention au sens."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Lire vite ET bien comprendre : laquelle de ces situations montre que l'objectif de fluence est vraiment atteint ?",
+            "choices": [
+              "Un élève lit 130 mots/min mais ne sait rien dire du texte",
+              "Un élève lit 110 mots/min et sait raconter précisément ce qu'il a lu",
+              "Un élève lit très lentement mot par mot en articulant fort",
+              "Un élève ne lit jamais à voix haute"
+            ],
+            "answer": 1,
+            "exp": "La fluence réussie associe une vitesse correcte ET une vraie compréhension : lire vite sans comprendre n'est pas un objectif atteint."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Que signifie le mot « fluence » en lecture ?",
+            "choices": [
+              "La capacité à lire un texte avec aisance, rapidité et compréhension",
+              "La capacité à écrire sans fautes",
+              "Le nombre de pages d'un livre",
+              "La capacité à dessiner une histoire"
+            ],
+            "answer": 0,
+            "exp": "La fluence désigne l'aisance de lecture : vitesse, précision et compréhension réunies."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pour chronométrer sa fluence, que doit-on faire exactement ?",
+            "choices": [
+              "Compter le nombre de pages lues en une heure",
+              "Lire pendant une minute précise et compter le nombre de mots lus",
+              "Compter uniquement les mots difficiles",
+              "Lire le texte en entier sans jamais s'arrêter"
+            ],
+            "answer": 1,
+            "exp": "On chronomètre une minute de lecture puis on compte le nombre de mots lus pendant ce temps précis."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève lit 60 mots en 30 secondes. À ce rythme, combien de mots lirait-il environ en une minute ?",
+            "choices": [
+              "60 mots",
+              "90 mots",
+              "120 mots",
+              "30 mots"
+            ],
+            "answer": 2,
+            "exp": "60 mots en 30 secondes, donc le double en 60 secondes (1 minute) : environ 120 mots."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi faut-il s'entraîner sur des textes « pas trop difficiles » pour progresser en fluence, et non sur les textes les plus compliqués possibles ?",
+            "choices": [
+              "Les textes faciles n'ont aucune utilité pour s'entraîner",
+              "Parce qu'un texte trop difficile oblige à déchiffrer chaque mot, ce qui empêche justement de travailler la vitesse et l'automatisation visées par l'entraînement de fluence",
+              "Il faut toujours choisir le texte le plus long possible",
+              "La difficulté du texte n'a aucune importance pour la fluence"
+            ],
+            "answer": 1,
+            "exp": "Un texte trop difficile bloque sur le déchiffrage des mots, ce qui empêche de travailler spécifiquement la vitesse et l'automatisation de la lecture."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève s'entraîne uniquement en lisant des textes beaucoup trop faciles pour lui, qu'il connaît presque par cœur. Progressera-t-il autant en fluence réelle ?",
+            "choices": [
+              "Oui, le niveau du texte n'a jamais d'importance",
+              "Pas autant : un texte légèrement stimulant (pas trop difficile, mais pas déjà maîtrisé) permet un meilleur entraînement que des textes trop faciles ou déjà connus par cœur",
+              "Non, il faut toujours lire le texte le plus difficile possible",
+              "Il progressera obligatoirement plus vite qu'avec un texte adapté"
+            ],
+            "answer": 1,
+            "exp": "Un texte trop facile ou déjà connu par cœur n'entraîne pas vraiment la fluence : il faut un texte nouveau, légèrement stimulant mais accessible."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Lire vite sans rien comprendre du texte est considéré comme un objectif de fluence réussi.",
+            "answer": false,
+            "exp": "La vitesse n'a d'intérêt que si elle s'accompagne d'une vraie compréhension : lire vite sans comprendre n'est pas réussir sa fluence."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "La mémoire de travail libérée par une bonne fluence peut servir à repérer les liens logiques d'un texte.",
+            "answer": true,
+            "exp": "Quand le déchiffrage devient automatique, l'attention disponible peut se porter sur la compréhension fine : liens logiques, anticipation, mémorisation d'informations."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quel est le principal avantage d'automatiser le déchiffrage des mots en lecture ?",
+            "choices": [
+              "Cela permet de lire sans jamais comprendre",
+              "Cela libère de l'attention pour des tâches plus exigeantes comme comprendre les liens logiques du texte",
+              "Cela permet d'arrêter de lire des livres",
+              "Cela n'a aucun avantage particulier"
+            ],
+            "answer": 1,
+            "exp": "Un déchiffrage automatisé libère la mémoire de travail pour des tâches de compréhension plus complexes."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Pour mesurer ses progrès en fluence, on se chronomètre pendant une : (combien de temps, en un mot ?)",
+            "answer": "minute",
+            "exp": "L'astuce classique consiste à se chronométrer sur une minute de lecture pour compter les mots lus."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève lisait 80 mots/minute en septembre. En mars, il lit 115 mots/minute tout en comprenant bien ses textes. Que peut-on en conclure ?",
+            "choices": [
+              "Il n'a fait aucun progrès",
+              "Il a progressé en fluence : sa vitesse a augmenté tout en gardant une bonne compréhension, ce qui est l'objectif recherché",
+              "Il a régressé car il lit trop vite maintenant",
+              "La vitesse de lecture n'a aucun rapport avec ce test"
+            ],
+            "answer": 1,
+            "exp": "Une augmentation de vitesse accompagnée d'une bonne compréhension est exactement le signe de progrès en fluence recherché."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi répéter régulièrement l'entraînement de fluence (plutôt qu'une seule fois) est-il nécessaire pour progresser durablement ?",
+            "choices": [
+              "Une seule séance suffit toujours pour progresser définitivement",
+              "Parce que l'automatisation du déchiffrage se construit progressivement, par la répétition régulière d'une lecture adaptée, et non en une seule fois",
+              "La répétition n'apporte jamais aucun progrès",
+              "Il vaut mieux ne jamais répéter un entraînement"
+            ],
+            "answer": 1,
+            "exp": "L'automatisation de la lecture, comme toute compétence automatisée, se construit par la pratique répétée et régulière."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève affirme : « Je lis très vite, donc je suis forcément un bon lecteur. » Que penser de cette affirmation ?",
+            "choices": [
+              "Elle est toujours vraie, la vitesse suffit",
+              "Elle est incomplète : être bon lecteur demande à la fois la vitesse ET la compréhension ; lire vite sans comprendre n'est pas suffisant",
+              "Elle est fausse car la vitesse n'a jamais d'importance",
+              "Un bon lecteur ne doit jamais lire vite"
+            ],
+            "answer": 1,
+            "exp": "Un bon lecteur associe vitesse et compréhension ; la vitesse seule, sans compréhension, ne suffit pas à définir une bonne lecture."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Au CM1, viser environ 110 mots par minute concerne quel type de lecture ?",
+            "choices": [
+              "Uniquement la lecture à voix haute devant la classe",
+              "La lecture silencieuse ou à voix haute, sans que la vitesse nuise à la compréhension",
+              "Uniquement la lecture de poèmes",
+              "Uniquement la lecture de mots isolés, sans phrase"
+            ],
+            "answer": 1,
+            "exp": "L'objectif de fluence concerne la lecture silencieuse comme à voix haute, à condition de garder une vraie compréhension du texte."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Si un élève se chronomètre régulièrement et voit son nombre de mots lus par minute augmenter au fil des semaines, que peut-il en déduire ?",
+            "choices": [
+              "Que son entraînement ne sert à rien",
+              "Que son entraînement porte ses fruits et que sa fluence de lecture progresse",
+              "Qu'il doit absolument arrêter de s'entraîner",
+              "Que le nombre de mots lus n'a aucun lien avec l'entraînement"
+            ],
+            "answer": 1,
+            "exp": "Une progression du nombre de mots lus par minute, mesurée régulièrement, est un signe concret que l'entraînement fonctionne."
           }
         ]
       },
@@ -15487,6 +15664,183 @@
             ],
             "answer": 1,
             "exp": "Garder une voix identique pour tous les personnages rend le dialogue monotone et parfois confus (difficile de savoir qui parle) : varier le ton selon la personnalité de chacun est essentiel pour une lecture expressive réussie."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Lire à voix haute « avec expressivité » signifie surtout :",
+            "choices": [
+              "Lire toujours à la même vitesse et sur le même ton",
+              "Transmettre les émotions et les intentions du texte à l'auditoire par la voix",
+              "Lire le plus fort possible",
+              "Lire sans jamais respirer"
+            ],
+            "answer": 1,
+            "exp": "L'expressivité consiste à transmettre réellement les émotions et intentions du texte, pas seulement à articuler."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pour une scène joyeuse et pleine d'action, que peut-on faire avec sa voix ?",
+            "choices": [
+              "Ralentir fortement et parler très bas",
+              "Accélérer légèrement le débit et dynamiser le ton",
+              "Chuchoter sans aucune énergie",
+              "Rester complètement silencieux"
+            ],
+            "answer": 1,
+            "exp": "Une scène joyeuse et pleine d'action se lit avec un débit plus vif et un ton plus dynamique."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Avant de lire un texte à voix haute devant un public, que faut-il faire en premier ?",
+            "choices": [
+              "Le lire directement devant le public sans préparation",
+              "Le lire d'abord silencieusement pour repérer les passages à intonation particulière",
+              "Le mémoriser mot pour mot obligatoirement",
+              "Ne jamais répéter sa lecture"
+            ],
+            "answer": 1,
+            "exp": "La préparation silencieuse permet de repérer à l'avance les passages qui demandent une intonation particulière."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Tu lis un dialogue entre une grand-mère douce et fatiguée et un enfant surexcité. Comment adapter ta voix à la grand-mère ?",
+            "choices": [
+              "Une voix aiguë, rapide et très énergique",
+              "Une voix plus posée, douce, et un débit plus lent",
+              "La même voix que pour l'enfant",
+              "Un ton agressif et fort"
+            ],
+            "answer": 1,
+            "exp": "La personnalité douce et fatiguée de la grand-mère appelle une voix posée, douce et un débit plus lent."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi le silence attentif d'un auditoire pendant un passage tendu est-il un signe positif pour le lecteur ?",
+            "choices": [
+              "Le silence signifie toujours que l'auditoire s'ennuie",
+              "Parce que ce silence montre que l'auditoire est captivé et ressent la tension du texte, preuve que la lecture expressive a transmis l'émotion voulue",
+              "Le silence n'a jamais aucune signification",
+              "Il faut toujours que l'auditoire parle pendant la lecture"
+            ],
+            "answer": 1,
+            "exp": "Un silence attentif pendant un passage tendu montre que l'émotion du texte a été transmise avec succès par la lecture expressive."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève lit un passage de peur en pleine nuit avec une voix joyeuse et rapide, comme pour une scène de fête. Quel est le problème ?",
+            "choices": [
+              "Aucun problème, le ton n'a pas besoin de correspondre à la scène",
+              "Le ton choisi ne correspond pas à l'émotion du texte : une scène de peur demande plutôt un débit ralenti et une voix plus sourde, pas un ton joyeux et rapide",
+              "Il fallait lire encore plus vite",
+              "Les scènes de peur doivent toujours être lues avec un ton joyeux"
+            ],
+            "answer": 1,
+            "exp": "Le ton de lecture doit correspondre à l'émotion du texte ; un ton joyeux sur une scène de peur ne transmet pas l'émotion voulue."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Dans un dialogue, il est conseillé de donner une voix différente à chaque personnage selon sa personnalité.",
+            "answer": true,
+            "exp": "C'est l'une des techniques essentielles pour rendre un dialogue vivant et compréhensible à l'oral."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Préparer sa lecture à voix haute en la lisant d'abord silencieusement est une perte de temps inutile.",
+            "answer": false,
+            "exp": "Cette préparation silencieuse permet au contraire de bien repérer les intonations nécessaires avant de lire devant un public."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Pour une scène triste, il est conseillé de et d'adoucir sa voix. (quel verbe, pour le débit : ralentir ou accélérer ?)",
+            "answer": "ralentir",
+            "exp": "Pour une scène triste, on ralentit le débit et on adoucit la voix pour transmettre l'émotion."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève répète 3 fois sa lecture à voix haute avant de la présenter à la classe, en notant les passages où marquer une pause. Est-ce une bonne méthode ?",
+            "choices": [
+              "Non, il ne faut jamais répéter une lecture",
+              "Oui, c'est exactement la préparation recommandée pour repérer les intonations et pauses nécessaires avant une lecture publique",
+              "Non, répéter rend la lecture moins naturelle",
+              "Cela n'a aucun effet sur la qualité de la lecture"
+            ],
+            "answer": 1,
+            "exp": "Répéter sa lecture pour repérer pauses et intonations est précisément la méthode de préparation recommandée."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi une voix différente par personnage facilite-t-elle la compréhension d'un dialogue lu à voix haute, et pas seulement son effet théâtral ?",
+            "choices": [
+              "Cela n'a aucun effet sur la compréhension",
+              "Parce que l'auditoire, qui n'a pas le texte sous les yeux, identifie qui parle grâce aux différences de voix, sans quoi il peut confondre les personnages",
+              "Un auditoire reconnaît toujours qui parle sans aucun indice vocal",
+              "Les dialogues ne nécessitent jamais d'être compris par l'auditoire"
+            ],
+            "answer": 1,
+            "exp": "Sans voir le texte, l'auditoire s'appuie sur les différences de voix pour distinguer qui parle : c'est une aide essentielle à la compréhension."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense que lire fort est toujours suffisant pour bien lire à voix haute, quel que soit le texte. Que lui manque-t-il dans sa compréhension ?",
+            "choices": [
+              "Rien, lire fort suffit toujours",
+              "Il lui manque la notion d'expressivité : varier le débit, le ton et le volume selon l'émotion du texte, pas seulement parler fort",
+              "Il faut toujours lire le plus doucement possible",
+              "Le volume de la voix n'a jamais d'importance"
+            ],
+            "answer": 1,
+            "exp": "Lire fort ne suffit pas : l'expressivité demande de varier débit, ton et volume selon l'émotion du passage, pas uniquement le volume."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans un texte avec 4 personnages différents qui dialoguent, combien de voix distinctes un bon lecteur expressif essaiera-t-il, dans l'idéal, de donner ?",
+            "choices": [
+              "Une seule voix pour tous",
+              "Une voix cohérente et différente pour chacun des 4 personnages",
+              "Deux voix au maximum, peu importe le nombre de personnages",
+              "Aucune voix particulière n'est nécessaire"
+            ],
+            "answer": 1,
+            "exp": "L'idéal est de donner à chaque personnage une voix cohérente avec sa personnalité, même s'il y en a plusieurs."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi dit-on que le véritable objectif d'une lecture expressive est que « l'auditoire ressente ce que le texte raconte », plutôt que simplement « bien articuler » ?",
+            "choices": [
+              "Articuler est le seul objectif réel",
+              "Parce que l'articulation correcte n'est qu'un moyen technique : le but final est de transmettre une émotion et une compréhension vivante du texte à ceux qui écoutent",
+              "Ressentir une émotion n'a jamais d'importance en lecture",
+              "Une bonne articulation garantit automatiquement que l'auditoire ressent les émotions du texte"
+            ],
+            "answer": 1,
+            "exp": "L'articulation est un moyen, mais l'objectif final de la lecture expressive est de transmettre vraiment l'émotion et le sens du texte à l'auditoire."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pour lire à voix haute un passage d'action rapide (une course, une poursuite), quelle erreur faut-il éviter ?",
+            "choices": [
+              "Accélérer légèrement le débit pour transmettre le mouvement",
+              "Lire d'une voix monotone et très lente, comme pour un passage calme et triste",
+              "Marquer de petites variations de ton selon les événements",
+              "Préparer sa lecture en la lisant silencieusement avant"
+            ],
+            "answer": 1,
+            "exp": "Lire une scène d'action rapide d'une voix lente et monotone ne transmet pas l'énergie du passage ; il faut au contraire dynamiser le débit."
           }
         ]
       },
@@ -15575,6 +15929,183 @@
             ],
             "answer": 1,
             "exp": "Une bonne interprétation doit toujours s'appuyer sur des éléments concrets et vérifiables du texte : une réponse basée uniquement sur une impression, sans aucune justification textuelle, reste fragile et peu convaincante."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Qu'est-ce qu'une information « implicite » dans un texte ?",
+            "choices": [
+              "Une information écrite clairement et directement",
+              "Une information que le lecteur doit déduire, car elle n'est pas écrite directement dans le texte",
+              "Une information fausse volontairement",
+              "Une information présente uniquement dans le titre"
+            ],
+            "answer": 1,
+            "exp": "L'implicite doit être déduit par le lecteur à partir d'indices, contrairement à l'explicite qui est écrit clairement."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quelle est la première étape conseillée pour comprendre l'essentiel d'un texte long et complexe ?",
+            "choices": [
+              "Mémoriser chaque mot du texte",
+              "Identifier la trame générale (qui, où, quand, que se passe-t-il)",
+              "Chercher uniquement les informations implicites, en sautant l'explicite",
+              "Compter le nombre de phrases du texte"
+            ],
+            "answer": 1,
+            "exp": "On identifie d'abord la trame générale du texte, avant d'affiner avec les détails et les inférences."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans un texte, un personnage est appelé « la fillette », puis « Léa », puis « elle ». Que représentent ces trois expressions ?",
+            "choices": [
+              "Trois personnages différents",
+              "Le même personnage, désigné par des mots différents au fil du texte (une reprise nominale)",
+              "Une erreur de l'auteur",
+              "Le titre du texte"
+            ],
+            "answer": 1,
+            "exp": "Ces trois expressions désignent la même personne : c'est un exemple de reprise nominale qu'il faut suivre."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un texte raconte qu'un personnage « claque la porte, les poings serrés, sans un mot ». Quelle émotion ce comportement laisse-t-il deviner, bien qu'elle ne soit pas écrite directement ?",
+            "choices": [
+              "La joie",
+              "La colère",
+              "L'ennui",
+              "La fatigue"
+            ],
+            "answer": 1,
+            "exp": "Claquer la porte et serrer les poings sont des indices qui permettent de déduire la colère, sans que le mot soit écrit : c'est une inférence."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi deux lectures successives d'un même texte long sont-elles souvent plus efficaces qu'une seule lecture pour répondre à des questions précises ?",
+            "choices": [
+              "Une seule lecture est toujours largement suffisante",
+              "Parce que la première lecture permet de saisir le sens global, et la seconde permet de repérer les détails précis et les inférences nécessaires aux questions",
+              "Relire un texte est toujours interdit",
+              "La deuxième lecture ne sert jamais à rien de nouveau"
+            ],
+            "answer": 1,
+            "exp": "La première lecture donne une vue globale, la seconde affine la compréhension des détails et des informations implicites nécessaires aux réponses précises."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève répond à une question sur un texte en disant seulement : « Je pense que le personnage est triste, je le sens comme ça. » Que manque-t-il à sa réponse ?",
+            "choices": [
+              "Rien, l'impression personnelle suffit toujours",
+              "Il manque une justification précise : citer ou pointer le passage du texte qui montre concrètement cette tristesse",
+              "Il fallait répondre encore plus vaguement",
+              "Les questions de ce type n'ont jamais besoin d'être justifiées"
+            ],
+            "answer": 1,
+            "exp": "Une bonne réponse d'interprétation doit s'appuyer sur un passage précis du texte, pas seulement sur une impression non justifiée."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Une information explicite est écrite clairement dans le texte, sans besoin de déduction.",
+            "answer": true,
+            "exp": "C'est la définition de l'explicite, à l'opposé de l'implicite qui doit être déduit."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Il est inutile de suivre les reprises nominales d'un personnage pour comprendre un texte.",
+            "answer": false,
+            "exp": "Suivre les reprises nominales (les différents mots désignant le même personnage) est essentiel pour ne pas se perdre dans l'histoire."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Déduire une information qui n'est pas écrite directement dans un texte s'appelle faire une : (un mot)",
+            "answer": "inference",
+            "exp": "Une inférence est une déduction logique à partir d'indices présents dans le texte, sans que l'information soit écrite directement."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans un texte, on lit : « Le vieux marin regardait la mer depuis trois heures, le visage fermé. » Que peut-on raisonnablement déduire (implicite), sans que ce soit écrit directement ?",
+            "choices": [
+              "Qu'il est très heureux",
+              "Qu'il semble préoccupé ou inquiet par quelque chose",
+              "Qu'il va bientôt partir en vacances",
+              "Qu'il n'aime pas du tout la mer"
+            ],
+            "answer": 1,
+            "exp": "Le visage fermé et l'attente prolongée suggèrent une préoccupation ou une inquiétude, même si ce n'est pas écrit explicitement."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un texte qui mélange beaucoup d'explicite et d'implicite est-il plus exigeant à lire qu'un texte purement explicite ?",
+            "choices": [
+              "Il n'est jamais plus exigeant à lire",
+              "Parce que le lecteur doit non seulement comprendre ce qui est écrit, mais aussi déduire activement ce qui ne l'est pas, à partir d'indices répartis dans le texte",
+              "L'implicite rend toujours un texte plus court",
+              "Un texte avec de l'implicite est toujours plus facile"
+            ],
+            "answer": 1,
+            "exp": "La présence d'implicite demande un travail actif de déduction en plus de la simple lecture de ce qui est écrit, ce qui augmente l'exigence de compréhension."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève, face à un texte avec plusieurs reprises nominales du même personnage, pense qu'il s'agit chaque fois d'un personnage différent. Quelle est la conséquence probable de cette erreur ?",
+            "choices": [
+              "Aucune conséquence, cela n'affecte jamais la compréhension",
+              "Il risque de mal comprendre l'histoire en croyant qu'il y a plus de personnages qu'en réalité, ce qui brouille le fil du récit",
+              "Cela rend sa lecture plus rapide et plus efficace",
+              "Les reprises nominales n'existent pas réellement dans les textes"
+            ],
+            "answer": 1,
+            "exp": "Confondre les reprises nominales avec des personnages différents brouille la compréhension du récit et de ses relations entre personnages."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pour justifier qu'un personnage est généreux à partir d'un texte, quelle est la meilleure démarche ?",
+            "choices": [
+              "Dire seulement « il est gentil, c'est évident »",
+              "Citer un passage précis du texte montrant un acte de générosité du personnage",
+              "Ne jamais répondre à ce type de question",
+              "Inventer un acte de générosité qui n'est pas dans le texte"
+            ],
+            "answer": 1,
+            "exp": "La meilleure démarche consiste à citer un passage précis du texte qui illustre concrètement la générosité du personnage."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un texte long contient à la fois des informations explicites (dates, lieux) et des informations implicites (sentiments suggérés). Quelle stratégie de lecture est la plus efficace ?",
+            "choices": [
+              "Ignorer complètement les informations implicites",
+              "Repérer d'abord la trame générale, puis relire pour affiner avec les détails explicites et les inférences implicites nécessaires",
+              "Ignorer complètement les informations explicites",
+              "Lire le texte une seule fois très rapidement, sans jamais relire"
+            ],
+            "answer": 1,
+            "exp": "La stratégie efficace combine repérage de la trame générale puis relecture attentive pour les détails et les inférences."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi dire qu'une interprétation « non justifiée par le texte » reste fragile, même si elle semble plausible ?",
+            "choices": [
+              "Une interprétation plausible n'a jamais besoin d'être vérifiée",
+              "Parce que sans appui précis dans le texte, l'interprétation reste une simple impression, impossible à vérifier et parfois erronée malgré son apparence plausible",
+              "Toute interprétation plausible est automatiquement juste",
+              "Il est impossible de vérifier une interprétation, même avec le texte sous les yeux"
+            ],
+            "answer": 1,
+            "exp": "Sans ancrage précis dans le texte, une interprétation reste invérifiable et potentiellement erronée, même si elle semble plausible au premier abord."
           }
         ]
       },
@@ -15663,6 +16194,183 @@
             ],
             "answer": 1,
             "exp": "Ignorer le schéma prive l'élève d'informations complémentaires essentielles (ici, la représentation spatiale de l'enchaînement des étapes), que le texte seul ne peut pas toujours transmettre aussi clairement."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Qu'est-ce qu'un document composite ?",
+            "choices": [
+              "Un texte seul, sans image ni schéma",
+              "Un document qui combine plusieurs éléments (texte, image, schéma, tableau...) qui s'enrichissent mutuellement",
+              "Un document composé uniquement d'images",
+              "Un document toujours écrit à la main"
+            ],
+            "answer": 1,
+            "exp": "Un document composite associe plusieurs types d'éléments qui se complètent pour transmettre l'information."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Avant de lire un document en détail, que faut-il identifier en priorité ?",
+            "choices": [
+              "Le nombre de pages du document",
+              "La nature et la source du document (article, manuel, site internet...)",
+              "La couleur des images",
+              "Le nombre de mots du texte"
+            ],
+            "answer": 1,
+            "exp": "Identifier la nature et la source du document aide à évaluer sa fiabilité avant de le lire en détail."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quelle est la bonne stratégie générale face à un document composite (texte + schéma) ?",
+            "choices": [
+              "Lire uniquement le schéma, jamais le texte",
+              "Commencer par le texte pour comprendre le sujet général, puis revenir vers les images et schémas pour préciser",
+              "Lire le texte et le schéma en même temps, sans aucun ordre",
+              "Ignorer systématiquement le texte"
+            ],
+            "answer": 1,
+            "exp": "La stratégie recommandée est de lire d'abord le texte, puis de revenir sur les images et schémas pour préciser la compréhension."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Tu lis un document sur les volcans avec un texte et une coupe schématique du volcan. Le texte ne précise pas où se trouve la « chambre magmatique ». Comment obtenir cette information ?",
+            "choices": [
+              "Elle est impossible à connaître",
+              "En regardant le schéma, qui montre visuellement l'emplacement de la chambre magmatique",
+              "En relisant le texte une dixième fois",
+              "En ignorant cette information"
+            ],
+            "answer": 1,
+            "exp": "Le schéma apporte souvent des informations complémentaires absentes du texte, comme ici l'emplacement précis d'un élément."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Tu compares un article de blog et un manuel scolaire sur le réchauffement climatique. Que dois-tu chercher en priorité pour bien les comparer ?",
+            "choices": [
+              "Uniquement la couleur de la mise en page",
+              "Ce qui est commun aux deux documents, et ce qui les différencie (détails, points de vue, fiabilité)",
+              "Le nombre de photos de chaque document",
+              "Rien, les deux documents disent toujours exactement la même chose"
+            ],
+            "answer": 1,
+            "exp": "Comparer deux documents demande de repérer leurs points communs et leurs différences, incluant leur fiabilité respective."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la source d'un document (site internet personnel, manuel scolaire, encyclopédie) influence-t-elle la façon de lire son contenu ?",
+            "choices": [
+              "La source n'a jamais aucune influence sur la fiabilité d'un contenu",
+              "Parce que certaines sources sont plus fiables ou plus vérifiées que d'autres, ce qui doit inciter à lire certains contenus avec plus de prudence",
+              "Toutes les sources sont toujours également fiables",
+              "Seul le nombre de pages compte pour juger un document"
+            ],
+            "answer": 1,
+            "exp": "La fiabilité d'une source varie : un contenu non vérifié mérite davantage de prudence qu'un document vérifié par des experts."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève lit uniquement le tableau de chiffres d'un document composite en géographie, sans lire le texte qui l'accompagne, et ne comprend pas ce que ces chiffres représentent. Quel est le problème ?",
+            "choices": [
+              "Aucun problème, un tableau se comprend toujours seul",
+              "Il lui manque les explications du texte, qui donnent le contexte et le sens nécessaires pour interpréter correctement le tableau de chiffres",
+              "Il fallait lire le tableau encore plus vite",
+              "Les textes n'apportent jamais d'information utile à un tableau"
+            ],
+            "answer": 1,
+            "exp": "Un tableau de chiffres a souvent besoin du texte qui l'accompagne pour être compris et interprété correctement."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Dans un document composite, l'image ou le schéma peut apporter une information absente du texte écrit.",
+            "answer": true,
+            "exp": "C'est justement l'intérêt des documents composites : les différents éléments s'enrichissent mutuellement."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Tous les documents, quelle que soit leur source, sont toujours également fiables.",
+            "answer": false,
+            "exp": "La fiabilité dépend de la source : un article vérifié n'a pas la même fiabilité qu'un contenu non vérifié publié par n'importe qui."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un document qui combine texte, image et schéma s'appelle un document : (un mot)",
+            "answer": "composite",
+            "exp": "C'est la définition même d'un document composite : plusieurs éléments combinés qui s'enrichissent mutuellement."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans quelles matières rencontre-t-on le plus souvent des documents composites à l'école ?",
+            "choices": [
+              "Uniquement en éducation physique",
+              "En sciences, histoire et géographie notamment",
+              "Uniquement en poésie",
+              "Jamais à l'école primaire"
+            ],
+            "answer": 1,
+            "exp": "Les documents composites (texte + schémas, cartes, tableaux) sont fréquents en sciences, histoire et géographie."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi lire d'abord le texte avant de revenir sur les schémas est souvent plus efficace que l'inverse ?",
+            "choices": [
+              "Ce n'est jamais plus efficace",
+              "Parce que le texte donne généralement le sujet général et le vocabulaire nécessaire pour ensuite bien interpréter les détails visuels des schémas",
+              "Les schémas ne doivent jamais être lus",
+              "Le texte et les schémas ne sont jamais liés entre eux"
+            ],
+            "answer": 1,
+            "exp": "Le texte pose le cadre général et le vocabulaire, ce qui facilite ensuite l'interprétation précise des schémas."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève affirme : « Les schémas sont juste de la décoration, seul le texte contient de vraies informations. » Que penser de cette affirmation ?",
+            "choices": [
+              "Elle est vraie, les schémas ne servent jamais à rien",
+              "Elle est fausse : les schémas apportent souvent des informations complémentaires importantes, parfois absentes du texte",
+              "Les schémas remplacent toujours complètement le texte",
+              "Le texte ne contient jamais d'informations utiles"
+            ],
+            "answer": 1,
+            "exp": "Les schémas ne sont pas de simples décorations : ils transmettent souvent des informations essentielles, complémentaires au texte."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un document composite sur le système solaire comprend un texte, une carte des planètes et un tableau de distances. Pour répondre à « quelle est la planète la plus proche du Soleil ? », quel élément consulter en priorité ?",
+            "choices": [
+              "Uniquement le texte, même s'il ne mentionne pas les distances",
+              "Le tableau de distances ou la carte, qui donnent l'information précise recherchée",
+              "Aucun élément ne peut répondre à cette question",
+              "Il faut ignorer tous les éléments visuels"
+            ],
+            "answer": 1,
+            "exp": "Pour une information précise comme une distance ou un ordre, le tableau ou la carte sont souvent les éléments les plus directement utiles."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi dit-on qu'un bon lecteur de documents composites doit « naviguer » entre texte et éléments visuels plutôt que de lire dans un seul sens figé ?",
+            "choices": [
+              "Il n'existe qu'une seule façon rigide de lire ces documents",
+              "Parce que la compréhension complète se construit en allant et venant entre texte et visuels, chacun apportant un éclairage différent et complémentaire",
+              "Les éléments visuels sont toujours inutiles à consulter",
+              "Le texte seul suffit toujours, sans jamais consulter les visuels"
+            ],
+            "answer": 1,
+            "exp": "La compréhension d'un document composite demande souvent des allers-retours entre texte et visuels, chacun complétant l'autre."
           }
         ]
       },
@@ -15751,6 +16459,177 @@
             ],
             "answer": 1,
             "exp": "Le carnet de lecteur n'est pas qu'un simple résumé technique : sa valeur principale vient de la dimension personnelle (impressions, émotions, liens avec sa propre vie), qui en fait une vraie trace de l'expérience de lecture."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quel est le rôle principal d'un carnet de lecteur ?",
+            "choices": [
+              "Copier intégralement le texte d'un livre",
+              "Garder une trace personnelle de ses lectures : impressions, passages marquants, liens personnels",
+              "Remplacer la lecture du livre",
+              "Noter uniquement le titre et l'auteur, rien d'autre"
+            ],
+            "answer": 1,
+            "exp": "Le carnet de lecteur garde la mémoire personnelle d'une lecture : impressions, questions, passages marquants."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Lequel de ces éléments peut-on noter dans un carnet de lecteur ?",
+            "choices": [
+              "Uniquement des calculs mathématiques",
+              "Un passage marquant, une question qu'on s'est posée, ou un dessin illustrant un moment de l'histoire",
+              "Rien, le carnet de lecteur doit rester vide",
+              "Uniquement la date d'emprunt du livre à la bibliothèque"
+            ],
+            "answer": 1,
+            "exp": "Le carnet de lecteur accueille des éléments personnels variés : impressions, questions, dessins, passages marquants."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Relier une œuvre à sa propre vie signifie :",
+            "choices": [
+              "Écrire une suite complète au livre",
+              "Faire des liens entre l'histoire lue et ses propres expériences ou d'autres œuvres connues",
+              "Oublier le livre après l'avoir lu",
+              "Recopier intégralement un chapitre"
+            ],
+            "answer": 1,
+            "exp": "S'approprier une œuvre, c'est aussi la relier à sa vie personnelle ou à d'autres lectures ou films connus."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Après avoir lu un roman où un personnage a très peur de parler en public, un élève se souvient avoir vécu la même peur lors d'un exposé. Que pourrait-il noter dans son carnet de lecteur ?",
+            "choices": [
+              "Rien, il ne faut jamais faire de lien personnel",
+              "Ce passage du livre et le souvenir personnel qu'il lui rappelle, avec ce qu'il a ressenti",
+              "Uniquement le nombre de pages du roman",
+              "Une critique de la couverture du livre uniquement"
+            ],
+            "answer": 1,
+            "exp": "Noter le passage et le lien avec sa propre expérience est exactement la démarche d'appropriation personnelle visée par le carnet de lecteur."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans un cercle de lecture, un camarade remarque un détail du livre que tu n'avais pas du tout vu. Que peux-tu en tirer ?",
+            "choices": [
+              "Rien, les remarques des autres n'ont jamais d'intérêt",
+              "Que l'échange avec d'autres lecteurs peut enrichir ta propre compréhension de l'œuvre, en révélant des aspects que tu n'avais pas remarqués",
+              "Qu'il faut arrêter immédiatement le cercle de lecture",
+              "Que ton camarade a forcément mal compris le livre"
+            ],
+            "answer": 1,
+            "exp": "Le partage de points de vue dans un cercle de lecture permet souvent de découvrir des aspects d'une œuvre qu'on n'avait pas perçus seul."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi dit-on que le carnet de lecteur devient, au fil du temps, une « mémoire personnelle » de ses lectures ?",
+            "choices": [
+              "Parce qu'il remplace la mémoire naturelle du lecteur",
+              "Parce qu'en le relisant plus tard, on peut se souvenir de ses découvertes passées et observer l'évolution de ses propres goûts de lecture",
+              "Un carnet de lecteur s'efface automatiquement après une semaine",
+              "Il n'a aucune utilité après la lecture du livre"
+            ],
+            "answer": 1,
+            "exp": "Relire son carnet de lecteur plus tard permet de retrouver ses impressions passées et de voir comment ses goûts ont évolué."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense qu'un carnet de lecteur doit uniquement résumer fidèlement l'intrigue, sans jamais exprimer d'avis personnel. Que lui manque-t-il dans sa compréhension du carnet de lecteur ?",
+            "choices": [
+              "Rien, un simple résumé suffit toujours",
+              "Il lui manque la dimension personnelle : le carnet sert justement à exprimer impressions, questions et liens personnels, pas seulement à résumer",
+              "Les résumés sont interdits dans un carnet de lecteur",
+              "Un carnet de lecteur ne doit jamais contenir de résumé, même partiel"
+            ],
+            "answer": 1,
+            "exp": "Le carnet de lecteur dépasse le simple résumé : il accueille surtout les impressions et réactions personnelles du lecteur."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "S'approprier une œuvre consiste uniquement à la résumer sans jamais exprimer d'avis personnel.",
+            "answer": false,
+            "exp": "S'approprier une œuvre inclut d'y exprimer ses impressions personnelles et de la relier à sa propre vie, pas seulement la résumer."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Partager ses impressions de lecture avec d'autres personnes peut enrichir sa propre compréhension d'une œuvre.",
+            "answer": true,
+            "exp": "Les échanges en cercle de lecture permettent souvent de découvrir des points de vue ou détails qu'on n'avait pas perçus seul."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Le carnet où l'on note ses impressions personnelles de lecture s'appelle un carnet de : (un mot)",
+            "answer": "lecteur",
+            "exp": "On parle d'un « carnet de lecteur », destiné à garder une trace personnelle de ses lectures."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève tient son carnet de lecteur depuis le début de l'année. En le relisant en juin, il remarque qu'il préférait les contes en septembre et qu'il aime désormais surtout les romans d'aventure. À quoi cela sert-il ?",
+            "choices": [
+              "À rien, ces observations n'ont aucun intérêt",
+              "À observer l'évolution de ses propres goûts de lecteur au fil du temps, grâce à la trace gardée dans le carnet",
+              "À prouver qu'il a mal choisi ses livres en septembre",
+              "Un carnet de lecteur ne peut jamais montrer une évolution"
+            ],
+            "answer": 1,
+            "exp": "Le carnet de lecteur permet justement de suivre l'évolution de ses goûts littéraires au fil du temps, grâce aux traces conservées."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi noter une question qu'on s'est posée pendant la lecture (et non seulement des réponses) peut-il être utile dans un carnet de lecteur ?",
+            "choices": [
+              "Les questions n'ont jamais leur place dans un carnet de lecteur",
+              "Parce que cela garde une trace de sa réflexion en train de se construire, et permet d'y revenir plus tard, par exemple après une discussion ou une relecture",
+              "Seules les réponses certaines ont de la valeur",
+              "Noter une question montre qu'on n'a pas compris le livre"
+            ],
+            "answer": 1,
+            "exp": "Noter une question en cours de lecture garde une trace vivante de la réflexion, qu'on peut explorer plus tard avec de nouveaux éléments."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève refuse de noter dans son carnet de lecteur qu'un passage lui a semblé ennuyeux, pensant qu'on ne doit noter que ce qu'on a aimé. Que penser de cette idée ?",
+            "choices": [
+              "Elle est juste, il ne faut jamais noter ce qu'on n'a pas aimé",
+              "Elle est incorrecte : le carnet de lecteur peut aussi noter ce qu'on a moins aimé, car cela fait partie d'une impression de lecture honnête et complète",
+              "Un carnet de lecteur ne doit contenir aucune impression",
+              "Il faut toujours mentir sur ses impressions de lecture"
+            ],
+            "answer": 1,
+            "exp": "Le carnet de lecteur accueille aussi bien ce qu'on a aimé que ce qu'on a moins aimé : il reflète une impression de lecture honnête."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "En quoi le carnet de lecteur se distingue-t-il d'une simple fiche de lecture scolaire classique (titre, auteur, résumé) ?",
+            "choices": [
+              "Il n'y a aucune différence entre les deux",
+              "Le carnet de lecteur met l'accent sur la dimension personnelle (impressions, questions, liens avec sa vie), au-delà des simples informations factuelles d'une fiche classique",
+              "Une fiche de lecture classique est toujours plus personnelle",
+              "Le carnet de lecteur interdit de mentionner le titre du livre"
+            ],
+            "answer": 1,
+            "exp": "Le carnet de lecteur se distingue par sa dimension personnelle et réflexive, contrairement à une fiche factuelle classique."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un dessin illustrant un moment de l'histoire peut avoir sa place dans un carnet de lecteur.",
+            "answer": true,
+            "exp": "Le carnet de lecteur peut accueillir des formes variées d'expression personnelle, y compris un dessin."
           }
         ]
       },
@@ -15839,6 +16718,177 @@
             ],
             "answer": 1,
             "exp": "Le théâtre raconte une histoire complète à travers les dialogues et les didascalies (indications de jeu), avec un plaisir de lecture spécifique (imaginer la mise en scène) : réduire ce genre à « juste des gens qui parlent » sous-estime sa richesse propre."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Lequel de ces genres littéraires fait partie des lectures variées proposées au CM1 ?",
+            "choices": [
+              "Uniquement les manuels de mathématiques",
+              "La poésie, le théâtre, les contes, les romans, les documentaires",
+              "Uniquement les notices techniques d'appareils",
+              "Aucun genre varié n'est proposé au CM1"
+            ],
+            "answer": 1,
+            "exp": "Le programme de CM1 invite à lire des genres variés : contes, fables, romans, théâtre, poésie, documentaires."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pourquoi la poésie procure-t-elle un plaisir de lecture différent d'un roman ?",
+            "choices": [
+              "Elle ne procure jamais aucun plaisir de lecture",
+              "Parce qu'elle joue avec les sons, les rythmes et les images des mots, différemment d'un récit qui suit une histoire continue",
+              "Parce qu'elle est toujours beaucoup plus longue qu'un roman",
+              "Parce qu'elle ne contient jamais d'émotions à transmettre"
+            ],
+            "answer": 1,
+            "exp": "La poésie se distingue par son jeu sur les sons, les rythmes et les images, différent de la narration continue d'un roman."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Comment se lit différemment une pièce de théâtre par rapport à un roman classique ?",
+            "choices": [
+              "Exactement de la même façon, aucune différence",
+              "En imaginant des personnages qui parlent et agissent, comme sur une scène, à travers des dialogues",
+              "En ignorant complètement les dialogues",
+              "Le théâtre ne se lit jamais, il ne peut être que joué"
+            ],
+            "answer": 1,
+            "exp": "Le théâtre se lit en imaginant les personnages parler et agir sur une scène, à travers les dialogues du texte."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève n'a jamais aimé les documentaires, pensant qu'ils sont toujours ennuyeux. Que pourrais-tu lui conseiller pour développer son plaisir de lecture ?",
+            "choices": [
+              "De ne jamais essayer, ses goûts ne changeront jamais",
+              "D'essayer un documentaire sur un sujet qui l'intéresse vraiment, car un genre qu'on pense ne pas aimer peut parfois surprendre agréablement",
+              "D'arrêter complètement de lire tout type de texte",
+              "De lire uniquement le même genre pour toujours"
+            ],
+            "answer": 1,
+            "exp": "Essayer un genre dans un sujet qui intéresse vraiment peut permettre de dépasser une impression négative préalable."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève qui lisait seulement des bandes dessinées essaie pour la première fois un recueil de fables. Quel bénéfice peut-il en tirer, même s'il n'est pas sûr d'aimer ce genre au départ ?",
+            "choices": [
+              "Aucun bénéfice possible avec un genre nouveau",
+              "Il peut découvrir un nouveau plaisir de lecture et enrichir sa culture littéraire, en élargissant ses goûts",
+              "Les fables n'apportent jamais aucun intérêt",
+              "Changer de genre est toujours une perte de temps"
+            ],
+            "answer": 1,
+            "exp": "Essayer un nouveau genre permet d'enrichir sa culture littéraire et de découvrir, parfois, un plaisir de lecture inattendu."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi varier ses lectures entre plusieurs genres aide-t-il à mieux connaître ses propres goûts littéraires qu'en lisant toujours le même genre ?",
+            "choices": [
+              "Cela n'aide jamais à mieux connaître ses goûts",
+              "Parce qu'en comparant les plaisirs procurés par différents genres (aventure, poésie, théâtre...), on identifie plus précisément ce qu'on préfère réellement",
+              "Un seul genre suffit toujours à connaître parfaitement ses goûts",
+              "Tous les genres procurent exactement le même plaisir de lecture"
+            ],
+            "answer": 1,
+            "exp": "Comparer plusieurs genres permet d'affiner sa connaissance de ses propres préférences de lecture, bien mieux qu'en restant sur un seul genre."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève affirme : « Le théâtre, ce n'est pas une vraie histoire, juste des gens qui parlent, donc ça ne vaut pas la lecture d'un roman. » Quelle est l'erreur de ce raisonnement ?",
+            "choices": [
+              "Il a entièrement raison",
+              "Le théâtre raconte bien une vraie histoire, sous une forme différente (dialogues et actions à imaginer) : c'est un genre à part entière, avec son propre plaisir de lecture",
+              "Le théâtre n'existe pas comme genre littéraire",
+              "Il faut toujours éviter les textes avec des dialogues"
+            ],
+            "answer": 1,
+            "exp": "Le théâtre est un genre narratif à part entière qui raconte une histoire par les dialogues et les actions, et non un genre à écarter."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Au CM1, le programme de lecture invite uniquement à lire des romans, sans aucun autre genre.",
+            "answer": false,
+            "exp": "Le programme invite à lire des genres très variés : contes, fables, théâtre, poésie, documentaires, albums, pas seulement des romans."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un genre qu'on pense ne pas aimer au départ peut parfois surprendre agréablement une fois qu'on lui donne vraiment sa chance.",
+            "answer": true,
+            "exp": "C'est l'une des raisons pour lesquelles il est conseillé de sortir parfois de sa zone de confort en lecture."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Lire des genres différents (romans, poésie, théâtre...) permet de développer son de lire. (quel mot : plaisir ou ennui ?)",
+            "answer": "plaisir",
+            "exp": "Varier ses lectures permet justement de développer son plaisir de lire, en découvrant ses goûts personnels."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève a lu cette année un conte, un recueil de poésie, une pièce de théâtre et un roman d'aventure. Que peut-on dire de sa pratique de lecture ?",
+            "choices": [
+              "Elle est mauvaise, il faut toujours se concentrer sur un seul genre",
+              "Elle correspond bien à l'esprit du programme de CM1, qui encourage à varier les genres pour développer le plaisir de lire",
+              "Lire plusieurs genres est toujours une perte de temps",
+              "Il aurait dû lire uniquement des documentaires"
+            ],
+            "answer": 1,
+            "exp": "Varier les genres lus (conte, poésie, théâtre, roman) correspond exactement à l'esprit du programme de lecture au CM1."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi dit-on que le plaisir de lire « se cultive avec le temps et la pratique », plutôt que d'être acquis une fois pour toutes ?",
+            "choices": [
+              "Le plaisir de lire est toujours figé dès la naissance",
+              "Parce qu'en lisant des textes variés régulièrement, on enrichit sa culture littéraire et il devient plus facile de trouver des livres qui passionnent vraiment",
+              "La pratique de la lecture n'a jamais d'effet sur le plaisir ressenti",
+              "Il suffit de lire un seul livre pour connaître définitivement tous ses goûts"
+            ],
+            "answer": 1,
+            "exp": "Le plaisir de lire se construit progressivement par la pratique variée, qui enrichit la culture littéraire et affine les goûts personnels."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève lit uniquement des romans d'aventure depuis le CP, sans jamais essayer d'autres genres, et pense connaître parfaitement tous ses goûts de lecture. Quelle limite peut-on pointer dans ce raisonnement ?",
+            "choices": [
+              "Aucune limite, son raisonnement est parfait",
+              "Il ne peut pas être certain de connaître tous ses goûts sans avoir essayé d'autres genres (poésie, théâtre, documentaires) qui pourraient aussi lui plaire",
+              "Les romans d'aventure sont le seul genre qui compte vraiment",
+              "Essayer d'autres genres est toujours inutile une fois qu'on a trouvé un genre qu'on aime"
+            ],
+            "answer": 1,
+            "exp": "Sans avoir exploré d'autres genres, on ne peut pas être certain de connaître l'étendue réelle de ses goûts littéraires."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Quelle idée résume le mieux l'esprit de cette leçon sur la variété des lectures ?",
+            "choices": [
+              "Il faut toujours lire le même genre pour progresser",
+              "Explorer des genres variés enrichit la culture littéraire et aide à mieux connaître et développer son plaisir personnel de lire",
+              "La variété des genres n'a aucune utilité pédagogique",
+              "Seuls les romans méritent d'être lus à l'école"
+            ],
+            "answer": 1,
+            "exp": "L'esprit de la leçon est bien que la variété des genres lus enrichit la culture littéraire et le plaisir personnel de lecture."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Sortir parfois de sa zone de confort en lecture peut permettre de découvrir un genre qu'on pensait ne pas aimer.",
+            "answer": true,
+            "exp": "C'est précisément l'une des idées de cette leçon : un genre qu'on pense ne pas aimer peut surprendre agréablement une fois essayé sincèrement."
           }
         ]
       },
