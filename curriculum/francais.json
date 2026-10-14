@@ -23211,6 +23211,177 @@
             ],
             "answer": 1,
             "exp": "« Vite » précise la manière dont se déroule l'action du verbe « manger » et reste invariable (on ne dit jamais « vites » ou « vite » au féminin) : c'est la définition même d'un adverbe, pas d'un adjectif."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quelle est la particularité du déterminant par rapport au nom qu'il accompagne ?",
+            "choices": [
+              "Il ne varie jamais avec le nom qu'il accompagne",
+              "Il varie en genre et en nombre avec le nom qu'il accompagne",
+              "Il précise toujours un verbe, jamais un nom",
+              "Il relie toujours deux phrases entre elles"
+            ],
+            "answer": 1,
+            "exp": "Le déterminant varie en genre et en nombre avec le nom qu'il accompagne : « le » chat, « la » table, « les » enfants."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quelle est la fonction principale d'une conjonction comme « et », « mais », « car » ?",
+            "choices": [
+              "Accompagner un nom en variant avec lui",
+              "Relier des mots, groupes de mots ou phrases entre eux",
+              "Préciser un verbe, un adjectif ou un adverbe",
+              "Remplacer complètement un nom dans la phrase"
+            ],
+            "answer": 1,
+            "exp": "La conjonction relie des mots, groupes de mots ou phrases, contrairement au déterminant ou à l'adverbe."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « Elle chante joyeusement mais doucement », quelle est la nature de « joyeusement » ?",
+            "choices": [
+              "Déterminant",
+              "Conjonction",
+              "Adverbe",
+              "Nom"
+            ],
+            "answer": 2,
+            "exp": "« Joyeusement » précise le verbe « chante » et reste invariable : c'est un adverbe."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans la phrase « Ce grand chien aboie car il a peur », identifie la conjonction de subordination.",
+            "choices": [
+              "Ce",
+              "Grand",
+              "Car",
+              "Peur"
+            ],
+            "answer": 2,
+            "exp": "« Car » relie les deux parties de la phrase en exprimant une cause : c'est une conjonction."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi dire qu'un adverbe est « invariable » aide-t-il à le distinguer d'un déterminant ou d'un adjectif, qui eux s'accordent ?",
+            "choices": [
+              "Ce n'est jamais un critère utile pour cette distinction",
+              "Parce que si un mot change de forme selon le genre ou le nombre du nom auquel il se rapporte, ce n'est pas un adverbe (qui garde toujours la même forme), mais plutôt un déterminant ou un adjectif",
+              "Parce que tous les mots de la langue française sont invariables, sans exception",
+              "Parce qu'un adverbe est en réalité toujours un nom déguisé"
+            ],
+            "answer": 1,
+            "exp": "L'invariabilité est un critère fiable : un mot qui varie en genre/nombre n'est jamais un adverbe, contrairement au déterminant ou à l'adjectif."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense que dans « Il mange vite », « vite » est un adjectif qui qualifie « il ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, « vite » est effectivement bien un adjectif dans cette phrase",
+              "« Vite » précise le verbe « mange » (comment il mange), et il est invariable : c'est un adverbe, pas un adjectif (qui devrait s'accorder avec le mot qu'il qualifie)",
+              "« Vite » est en réalité un déterminant dans cette phrase",
+              "« Vite » ne peut en réalité jamais être utilisé dans une phrase correcte"
+            ],
+            "answer": 1,
+            "exp": "Confondre un adverbe (invariable, précise le verbe) avec un adjectif (variable, qualifie un nom) est l'erreur classique que cette leçon corrige."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un déterminant se place toujours devant un nom et varie en genre et en nombre avec lui.",
+            "answer": true,
+            "exp": "C'est exactement la définition du déterminant présentée dans cette leçon."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un adverbe peut changer de forme selon le genre ou le nombre du mot qu'il précise.",
+            "answer": false,
+            "exp": "Au contraire, l'adverbe est invariable : il garde toujours la même forme, quel que soit le mot qu'il précise."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Le mot-outil qui relie deux mots, groupes de mots ou phrases entre eux s'appelle une : (un mot)",
+            "answer": "conjonction",
+            "exp": "La conjonction est précisément ce mot-outil qui relie des éléments entre eux, comme « et », « mais », « car »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans la phrase « Mon petit frère joue dehors quand il fait beau », identifie respectivement le déterminant, l'adverbe et la conjonction.",
+            "choices": [
+              "Déterminant : « mon » ; adverbe : « dehors » ; conjonction : « quand »",
+              "Déterminant : « dehors » ; adverbe : « mon » ; conjonction : « beau »",
+              "Il n'y a ni déterminant, ni adverbe, ni conjonction dans cette phrase",
+              "« Joue » est le déterminant de cette phrase"
+            ],
+            "answer": 0,
+            "exp": "« Mon » accompagne et varie avec « frère » (déterminant), « dehors » précise le verbe « joue » sans varier (adverbe), « quand » relie les deux parties de la phrase (conjonction)."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la conjonction de subordination « parce que » introduit-elle une proposition entière, et pas seulement un mot comme le ferait un déterminant ?",
+            "choices": [
+              "Une conjonction de subordination ne relie en réalité jamais rien à autre chose",
+              "Parce que son rôle est justement de relier une proposition (un groupe de mots avec un verbe) à une autre partie de la phrase, exprimant souvent une cause ou une condition, contrairement au déterminant qui accompagne seulement un nom",
+              "Un déterminant peut lui aussi introduire une proposition entière, exactement comme une conjonction",
+              "« Parce que » est en réalité un adverbe, jamais une conjonction"
+            ],
+            "answer": 1,
+            "exp": "Une conjonction de subordination relie une proposition entière à une autre partie de la phrase, un rôle différent de celui du déterminant qui se limite à accompagner un nom."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense que tout mot placé juste avant un nom est automatiquement un déterminant. Quelle limite cette idée a-t-elle ?",
+            "choices": [
+              "Aucune limite, tout mot placé avant un nom est toujours un déterminant",
+              "Elle néglige qu'un adjectif épithète peut aussi se placer avant un nom (« un grand chien »), sans pour autant être un déterminant : seul un mot qui varie avec le nom ET appartient à la catégorie des déterminants (le, la, mon, ce, trois...) en est un",
+              "Un nom ne peut en réalité jamais être précédé d'un autre mot dans une phrase correcte",
+              "Les adjectifs ne peuvent en réalité jamais se placer avant un nom"
+            ],
+            "answer": 1,
+            "exp": "La position avant le nom ne suffit pas à définir un déterminant : un adjectif épithète peut aussi occuper cette position sans être un déterminant."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans la phrase « Elle parle très doucement », combien d'adverbes identifies-tu, et lesquels ?",
+            "choices": [
+              "Un seul adverbe : « doucement »",
+              "Deux adverbes : « très » (précise l'adverbe « doucement ») et « doucement » (précise le verbe « parle »)",
+              "Aucun adverbe dans cette phrase",
+              "Trois adverbes différents dans cette phrase"
+            ],
+            "answer": 1,
+            "exp": "« Très » précise l'adverbe « doucement », qui lui-même précise le verbe « parle » : deux adverbes s'enchaînent dans cette phrase."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi la distinction entre déterminant, conjonction et adverbe est-elle utile pour bien analyser une phrase complexe avec plusieurs petits mots-outils ?",
+            "choices": [
+              "Cette distinction n'a en réalité jamais aucune utilité pour analyser une phrase",
+              "Parce que chacun de ces mots-outils a un rôle grammatical bien précis et différent (accompagner un nom, relier des éléments, préciser un verbe/adjectif/adverbe), et les confondre mène à des erreurs d'analyse de la phrase",
+              "Les trois catégories désignent en réalité exactement le même rôle grammatical",
+              "Seuls les noms et les verbes ont un rôle grammatical réel, les autres mots n'en ont aucun"
+            ],
+            "answer": 1,
+            "exp": "Chaque catégorie de mot-outil a un rôle précis et distinct ; les confondre mène à des erreurs d'analyse grammaticale de la phrase."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Les conjonctions de coordination (et, ou, mais, car, donc, or, ni) relient des éléments de même niveau dans une phrase.",
+            "answer": true,
+            "exp": "C'est exactement le rôle des conjonctions de coordination présentées dans cette leçon."
           }
         ]
       },
@@ -23299,6 +23470,171 @@
             ],
             "answer": 1,
             "exp": "Un adjectif épithète est un seul mot directement accordé avec le nom. « De pierre » est un groupe introduit par une préposition : c'est la définition même d'un complément du nom, pas d'une épithète."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Comment reconnaît-on un adjectif épithète ?",
+            "choices": [
+              "C'est toujours un groupe de plusieurs mots introduit par une préposition",
+              "C'est un seul mot (adjectif) directement accolé au nom et qui s'accorde avec lui",
+              "Il se trouve toujours après le verbe de la phrase",
+              "Il ne s'accorde jamais avec le nom qu'il qualifie"
+            ],
+            "answer": 1,
+            "exp": "L'épithète est un adjectif, un seul mot, directement accolé au nom et accordé avec lui en genre et en nombre."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans « un vélo à trois roues », quel est le complément du nom ?",
+            "choices": [
+              "Un vélo",
+              "À trois roues",
+              "Vélo",
+              "Roues"
+            ],
+            "answer": 1,
+            "exp": "« À trois roues » est le groupe introduit par la préposition « à » qui précise le nom « vélo » : c'est le complément du nom."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « une petite table en bois », identifie l'épithète et le complément du nom.",
+            "choices": [
+              "Épithète : « en bois » ; complément du nom : « petite »",
+              "Épithète : « petite » ; complément du nom : « en bois »",
+              "Il n'y a ni épithète ni complément du nom dans cette phrase",
+              "« Table » est l'épithète de cette phrase"
+            ],
+            "answer": 1,
+            "exp": "« Petite » est l'adjectif épithète (accordé avec « table ») et « en bois » est le complément du nom (introduit par la préposition « en »)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « un manteau à capuche doublé de fourrure », identifie précisément les deux compléments du nom présents.",
+            "choices": [
+              "« À capuche » et « de fourrure », tous deux introduits par une préposition",
+              "« Doublé » et « manteau », aucun des deux n'étant introduit par une préposition",
+              "Il n'y a qu'un seul complément du nom dans cette phrase",
+              "Aucun complément du nom n'est présent dans cette phrase"
+            ],
+            "answer": 0,
+            "exp": "« À capuche » et « de fourrure » sont deux compléments du nom distincts, chacun introduit par une préposition (« à » et « de »)."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi peut-on dire que l'épithète et le complément du nom, bien que différents dans leur construction, ont un point commun dans leur rôle ?",
+            "choices": [
+              "Ils n'ont en réalité aucun point commun entre eux",
+              "Tous les deux apportent une précision supplémentaire sur le nom qu'ils accompagnent, même si l'un est un simple adjectif accordé et l'autre un groupe introduit par une préposition",
+              "Les deux sont toujours obligatoires dans une phrase correcte",
+              "Les deux sont en réalité des verbes déguisés"
+            ],
+            "answer": 1,
+            "exp": "Malgré des constructions différentes, l'épithète et le complément du nom partagent le même rôle : préciser le nom qu'ils accompagnent."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève affirme que dans « une maison de pierre », « de pierre » est un adjectif épithète. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, c'est effectivement bien un adjectif épithète dans cette phrase",
+              "« De pierre » est un groupe de mots introduit par la préposition « de », pas un adjectif seul : c'est un complément du nom, qui se distingue justement de l'épithète par sa construction avec une préposition",
+              "« Maison » est en réalité l'adjectif dans cette phrase",
+              "« De pierre » ne peut en réalité jamais accompagner un nom dans une phrase correcte"
+            ],
+            "answer": 1,
+            "exp": "Confondre un groupe prépositionnel (complément du nom) avec un adjectif seul (épithète) est l'erreur classique que cette leçon corrige."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un complément du nom est un groupe de mots introduit par une préposition, qui précise un nom.",
+            "answer": true,
+            "exp": "C'est exactement la définition du complément du nom présentée dans cette leçon, par opposition à l'épithète qui est un adjectif seul."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Une épithète et un complément du nom ne peuvent jamais se combiner dans un même groupe nominal.",
+            "answer": false,
+            "exp": "Au contraire, la leçon montre qu'ils peuvent se combiner : « une grande maison de pierre » associe une épithète (« grande ») et un complément du nom (« de pierre »)."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un adjectif placé directement à côté du nom qu'il qualifie, et accordé avec lui, s'appelle une : (un mot)",
+            "answer": "epithete",
+            "exp": "L'épithète est précisément ce terme technique désignant un adjectif directement accolé au nom qu'il qualifie."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « une grande maison de pierre », combine l'épithète et le complément du nom pour vérifier qu'ils enrichissent bien le nom « maison ». Que remarques-tu ?",
+            "choices": [
+              "Les deux procédés se combinent bien : « grande » (épithète) et « de pierre » (complément du nom) précisent ensemble le même nom « maison »",
+              "Il est impossible de combiner une épithète et un complément du nom dans une même phrase",
+              "« Grande » et « de pierre » désignent en réalité deux noms différents",
+              "Seul « de pierre » précise réellement le nom « maison », « grande » n'a aucun rôle"
+            ],
+            "answer": 0,
+            "exp": "L'épithète et le complément du nom peuvent effectivement se combiner pour enrichir ensemble un même nom, comme le montre cet exemple."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la préposition qui introduit un complément du nom (de, à, en...) est-elle un indice fiable pour le distinguer d'un adjectif épithète ?",
+            "choices": [
+              "La préposition n'a en réalité jamais aucun rôle dans cette distinction",
+              "Parce qu'un adjectif épithète ne nécessite jamais de préposition pour se rattacher au nom, alors qu'un complément du nom est toujours introduit par une préposition qui marque le lien avec le nom qu'il précise",
+              "Un adjectif épithète est en réalité toujours introduit par une préposition, comme le complément du nom",
+              "Les deux procédés n'utilisent en réalité jamais aucune préposition"
+            ],
+            "answer": 1,
+            "exp": "La présence d'une préposition est le critère distinctif principal : elle signale un complément du nom, jamais une épithète qui se rattache directement au nom."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense qu'un groupe nominal ne peut contenir qu'un seul élément d'enrichissement (soit une épithète, soit un complément du nom, jamais les deux). Quelle limite cette idée a-t-elle ?",
+            "choices": [
+              "Aucune limite, un groupe nominal ne peut en effet jamais contenir les deux à la fois",
+              "Elle est contredite par l'exemple « une grande maison de pierre », qui montre justement qu'une épithète et un complément du nom peuvent coexister et enrichir ensemble le même nom",
+              "Les épithètes et les compléments du nom ne peuvent en réalité jamais enrichir un nom",
+              "Un groupe nominal ne peut en réalité jamais être enrichi d'aucune façon"
+            ],
+            "answer": 1,
+            "exp": "L'exemple de la leçon montre explicitement que l'épithète et le complément du nom peuvent se combiner dans un même groupe nominal, contredisant cette idée restrictive."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans « un chapeau de paille usé par le soleil », identifie les deux procédés d'enrichissement du nom « chapeau » et leur nature respective.",
+            "choices": [
+              "« De paille » (complément du nom, introduit par « de ») et « usé » (épithète, un adjectif accordé)",
+              "« De paille » et « usé » sont tous les deux des épithètes",
+              "« De paille » et « usé » sont tous les deux des compléments du nom",
+              "Il n'y a aucun procédé d'enrichissement dans cette phrase"
+            ],
+            "answer": 0,
+            "exp": "« De paille » est un complément du nom introduit par une préposition, tandis que « usé » est un adjectif épithète accordé avec « chapeau »."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "L'épithète et le complément du nom peuvent tous les deux ajouter des précisions sur la couleur, la taille ou la matière d'un nom.",
+            "answer": true,
+            "exp": "C'est exactement ce que la leçon décrit : ces deux procédés enrichissent les descriptions en précisant diverses caractéristiques du nom."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Le groupe de mots introduit par une préposition qui précise un nom s'appelle le complément du : (un mot)",
+            "answer": "nom",
+            "exp": "Le complément du nom est précisément ce groupe introduit par une préposition (de, à, en...) qui précise un nom."
           }
         ]
       },
@@ -23387,6 +23723,177 @@
             ],
             "answer": 1,
             "exp": "L'adjectif doit s'accorder en genre ET en nombre avec le nom : « chevaux » étant masculin pluriel, il faut écrire « beaux chevaux », avec un -x au pluriel, pas « beau chevaux »."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Qu'est-ce que la « chaîne des accords » dans un groupe nominal ?",
+            "choices": [
+              "Le fait que tous les mots d'une phrase doivent rimer entre eux",
+              "Le fait que le déterminant et les adjectifs qui accompagnent un nom doivent s'accorder avec lui en genre et en nombre",
+              "Le fait que les noms ne s'accordent jamais avec aucun autre mot",
+              "Le fait d'utiliser toujours le même déterminant dans toute la phrase"
+            ],
+            "answer": 1,
+            "exp": "La chaîne des accords désigne cet accord en genre et en nombre entre le nom et tous les mots qui s'y rapportent (déterminant, adjectifs)."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans « les petites fleurs jaunes », à quel genre et nombre doivent s'accorder « petites » et « jaunes » ?",
+            "choices": [
+              "Masculin singulier",
+              "Féminin pluriel",
+              "Masculin pluriel",
+              "Féminin singulier"
+            ],
+            "answer": 1,
+            "exp": "« Fleurs » étant féminin pluriel, les adjectifs « petites » et « jaunes » doivent s'accorder au féminin pluriel."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Complète correctement l'accord : « Des pommes et des poires (rouge) ... décorent la table. »",
+            "choices": [
+              "rouge",
+              "rouges",
+              "rouget",
+              "rougées"
+            ],
+            "answer": 1,
+            "exp": "« Pommes » et « poires » étant au pluriel, l'adjectif qui s'accorde avec les deux se met au pluriel : « rouges »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Complète correctement l'accord : « Ce vieux livre et cette carte (ancien) ... racontent une histoire fascinante. »",
+            "choices": [
+              "ancien",
+              "ancienne",
+              "anciens",
+              "anciennes"
+            ],
+            "answer": 2,
+            "exp": "« Livre » (masculin) et « carte » (féminin) reliés par « et » donnent un adjectif au pluriel et au masculin : « anciens »."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il important d'identifier d'abord le nom noyau d'un groupe nominal avant de vérifier les accords, plutôt que de regarder chaque mot séparément sans ordre précis ?",
+            "choices": [
+              "Ce n'est jamais important de procéder dans cet ordre",
+              "Parce que c'est le nom noyau qui détermine le genre et le nombre de référence : sans l'identifier clairement d'abord, on risque d'accorder les autres mots au hasard ou par rapport à un mot qui n'est pas réellement le nom principal du groupe",
+              "Parce que le nom noyau n'a en réalité aucun rôle dans les accords",
+              "Parce que tous les mots s'accordent toujours entre eux, peu importe le nom noyau"
+            ],
+            "answer": 1,
+            "exp": "Identifier le nom noyau en premier fournit la référence de genre et de nombre nécessaire pour vérifier correctement tous les accords qui s'y rapportent."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève écrit « les beau chevaux » en pensant que « beau » reste toujours invariable devant un nom masculin. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, « beau » ne s'accorde en réalité jamais, quel que soit le contexte",
+              "« Chevaux » est au pluriel, donc l'adjectif doit aussi se mettre au pluriel : « beaux chevaux ». L'élève a oublié que l'adjectif doit suivre le NOMBRE du nom, pas seulement son genre",
+              "« Chevaux » est en réalité un nom féminin dans cette phrase",
+              "« Les » ne s'accorde en réalité jamais avec un nom pluriel"
+            ],
+            "answer": 1,
+            "exp": "L'élève a accordé l'adjectif seulement en genre (masculin) mais a oublié le nombre (pluriel), ce qui est une erreur fréquente dans la chaîne des accords."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Dans un groupe nominal, le déterminant et les adjectifs qui accompagnent le nom doivent s'accorder avec lui en genre et en nombre.",
+            "answer": true,
+            "exp": "C'est exactement la définition de la chaîne des accords présentée dans cette leçon."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un groupe nominal long, avec plusieurs mots intercalés, n'a jamais besoin de vérifier l'accord de chaque élément séparément.",
+            "answer": false,
+            "exp": "Au contraire, la leçon insiste sur le fait qu'il faut vérifier chaque élément séparément, même dans un groupe nominal long avec des mots intercalés."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Dans un groupe nominal, le mot qui donne son genre et son nombre à tout le groupe s'appelle le nom : (un mot)",
+            "answer": "noyau",
+            "exp": "Le nom noyau est ce terme technique désignant le mot central d'un groupe nominal, qui détermine le genre et le nombre de référence pour les accords."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève vérifie la chaîne des accords dans « ces nouvelles aventures extraordinaires » en identifiant d'abord « aventures » (féminin pluriel), puis en vérifiant « ces », « nouvelles » et « extraordinaires ». Que fait-il concrètement ?",
+            "choices": [
+              "Il perd son temps, cette méthode de vérification n'a jamais aucune utilité réelle",
+              "Il applique exactement la méthode recommandée pour vérifier une chaîne d'accords : identifier le nom noyau puis vérifier chaque élément qui s'y rapporte",
+              "Il invente une méthode qui n'a aucun rapport avec la chaîne des accords",
+              "Cette méthode ne concerne que les noms masculins, jamais les noms féminins"
+            ],
+            "answer": 1,
+            "exp": "Identifier le nom noyau puis vérifier systématiquement chaque élément qui s'y rapporte est exactement la méthode recommandée pour contrôler une chaîne d'accords."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un groupe nominal avec plusieurs adjectifs successifs (par exemple « une grande et belle maison ancienne ») demande-t-il une vigilance particulière pour la chaîne des accords ?",
+            "choices": [
+              "Aucune vigilance particulière n'est nécessaire dans ce cas précis",
+              "Parce que chaque adjectif, même éloigné les uns des autres par d'autres mots, doit individuellement s'accorder avec le même nom noyau, ce qui multiplie les vérifications à effectuer",
+              "Un seul des adjectifs a réellement besoin de s'accorder avec le nom dans ce type de groupe",
+              "Les adjectifs successifs ne s'accordent jamais entre eux avec le même nom"
+            ],
+            "answer": 1,
+            "exp": "Chaque adjectif, même multiple, doit être vérifié individuellement par rapport au nom noyau, ce qui demande une attention particulière dans les groupes nominaux riches."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense qu'un adjectif placé loin du nom dans la phrase n'a plus besoin de s'accorder avec lui. Quelle limite cette idée a-t-elle ?",
+            "choices": [
+              "Aucune limite, un adjectif éloigné n'a en effet jamais besoin de s'accorder avec le nom",
+              "Elle est fausse : la leçon précise justement que les groupes nominaux longs demandent de vérifier chaque élément séparément par rapport au nom, même si certains mots sont éloignés de lui dans la phrase",
+              "Les adjectifs ne s'accordent en réalité jamais avec un nom, qu'il soit proche ou éloigné",
+              "Seul le déterminant a besoin de s'accorder avec le nom, jamais les adjectifs"
+            ],
+            "answer": 1,
+            "exp": "La distance entre un adjectif et le nom n'annule jamais l'obligation d'accord : chaque élément doit être vérifié, même éloigné dans la phrase."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans « une veste et un pantalon neufs », pourquoi l'adjectif « neufs » se met-il au masculin pluriel, bien que « veste » soit féminin ?",
+            "choices": [
+              "Parce que « veste » est en réalité un nom masculin, pas féminin",
+              "Parce que quand deux noms de genres différents sont reliés par « et », l'adjectif qui s'accorde avec les deux se met généralement au masculin pluriel, selon la règle présentée dans cette leçon",
+              "Il s'agit d'une erreur qu'il faudrait corriger en écrivant « neuves »",
+              "L'adjectif ne s'accorde en réalité jamais avec deux noms reliés par « et »"
+            ],
+            "answer": 1,
+            "exp": "La règle présentée dans la leçon précise que, pour deux noms de genres différents reliés par « et », l'adjectif se met généralement au masculin pluriel."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Le nom noyau d'un groupe nominal donne son genre et son nombre à tout le groupe.",
+            "answer": true,
+            "exp": "C'est exactement la définition du rôle du nom noyau présentée dans cette leçon."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Complète correctement l'accord : « Cette longue et (difficile) ... aventure se termina bien. »",
+            "choices": [
+              "difficil",
+              "difficile",
+              "difficils",
+              "difficiles"
+            ],
+            "answer": 1,
+            "exp": "« Aventure » est féminin singulier : l'adjectif doit s'accorder au féminin singulier, « difficile »."
           }
         ]
       },
@@ -23475,6 +23982,171 @@
             ],
             "answer": 1,
             "exp": "Malgré l'inversion (le sujet « les enfants » est placé après le verbe), c'est bien lui qui commande l'accord : étant pluriel, le verbe doit s'écrire « vont », pas « va »."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans « Que veulent les élèves ? », avec quoi le verbe « veulent » s'accorde-t-il ?",
+            "choices": [
+              "Avec « que »",
+              "Avec le sujet inversé « les élèves » (pluriel)",
+              "Le verbe ne s'accorde avec rien dans cette phrase",
+              "Avec un sujet caché singulier, différent des élèves"
+            ],
+            "answer": 1,
+            "exp": "Même inversé, le sujet « les élèves » (pluriel) commande l'accord du verbe « veulent » au pluriel."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Comment s'accorde généralement le verbe quand deux sujets singuliers sont reliés par « et » ?",
+            "choices": [
+              "Toujours au singulier, quel que soit le contexte",
+              "Au pluriel",
+              "Cela dépend uniquement de la couleur du sujet concerné",
+              "Le verbe disparaît complètement de la phrase"
+            ],
+            "answer": 1,
+            "exp": "Deux sujets singuliers reliés par « et » commandent généralement un verbe au pluriel : « Le chat et le chien dorment »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Complète : « Le vent et la pluie (abimer) ... le toit de la maison. »",
+            "choices": [
+              "abime",
+              "abiment",
+              "abimes",
+              "abimez"
+            ],
+            "answer": 1,
+            "exp": "Deux sujets singuliers (« le vent », « la pluie ») reliés par « et » commandent le verbe au pluriel : « abiment »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Complète : « Dans la cour jouaient (jouer) ... les enfants pendant la récréation. » (sujet : les enfants, pluriel, inversé)",
+            "choices": [
+              "joue",
+              "jouait",
+              "jouaient",
+              "jouais"
+            ],
+            "answer": 2,
+            "exp": "Malgré l'inversion, le sujet « les enfants » (pluriel) commande l'accord du verbe au pluriel : « jouaient »."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi l'inversion du sujet (placé après le verbe) ne change-t-elle rien à la règle d'accord sujet-verbe ?",
+            "choices": [
+              "Parce que l'inversion annule toujours complètement l'accord du verbe",
+              "Parce que la règle d'accord dépend du sujet réel (celui qui fait l'action), pas de sa position physique dans la phrase : qu'il soit avant ou après le verbe, c'est toujours lui qui détermine l'accord",
+              "Parce qu'un sujet inversé n'a en réalité jamais besoin d'accord avec le verbe",
+              "Parce que seul le verbe compte pour l'accord, jamais le sujet lui-même"
+            ],
+            "answer": 1,
+            "exp": "L'accord dépend du rôle fonctionnel du sujet, pas de sa position physique : l'inversion ne change donc rien à la règle d'accord."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève écrit « Où va les enfants ? » en pensant que le verbe reste toujours au singulier devant « où ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, le verbe reste toujours au singulier après « où », quel que soit le sujet",
+              "Il a oublié de chercher le vrai sujet (« les enfants », pluriel), qui est inversé après le verbe mais reste bien le sujet : il fallait écrire « Où vont les enfants ? » avec le verbe au pluriel",
+              "« Où » est en réalité le sujet de cette phrase, pas « les enfants »",
+              "« Les enfants » ne peut en réalité jamais être sujet dans une phrase de ce type"
+            ],
+            "answer": 1,
+            "exp": "Oublier de chercher le vrai sujet inversé mène à un mauvais accord du verbe : il faut toujours accorder avec le sujet réel, quelle que soit sa position."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Quand le sujet est inversé, l'accord du verbe se fait quand même normalement avec lui.",
+            "answer": true,
+            "exp": "L'inversion ne change rien à la règle d'accord : le verbe s'accorde toujours avec son sujet réel, qu'il soit avant ou après lui dans la phrase."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Deux sujets singuliers reliés par « ou » demandent toujours obligatoirement un verbe au pluriel, sans aucune exception.",
+            "answer": false,
+            "exp": "Au contraire, avec « ou », le verbe peut se mettre au singulier si on comprend qu'un seul des deux sujets agit à la fois, comme « Paul ou Marie viendra »."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un sujet placé après le verbe qu'il commande est appelé sujet : (un mot)",
+            "answer": "inverse",
+            "exp": "Le sujet inversé reste le terme technique pour un sujet placé après le verbe, et il continue de commander l'accord du verbe normalement."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève accorde correctement « Paul ou Marie viendra » au singulier, en comprenant qu'un seul des deux viendra réellement. Que fait-il concrètement ?",
+            "choices": [
+              "Il commet une erreur, le verbe devrait toujours être au pluriel avec « ou »",
+              "Il applique exactement la règle présentée dans la leçon pour les sujets singuliers reliés par « ou », quand on comprend qu'un seul des deux agit à la fois",
+              "Cette règle ne concerne en réalité que les sujets reliés par « et », jamais par « ou »",
+              "Il est impossible d'accorder correctement un verbe avec deux sujets reliés par « ou »"
+            ],
+            "answer": 1,
+            "exp": "Accorder au singulier quand un seul des deux sujets reliés par « ou » agit réellement est exactement la règle présentée dans cette leçon."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la méthode pour accorder le verbe reste-t-elle la même, qu'il s'agisse d'un sujet inversé, éloigné, ou de sujets multiples reliés par « et » ou « ou » ?",
+            "choices": [
+              "Il n'existe en réalité aucune méthode commune à ces différents cas",
+              "Parce que dans tous les cas, il s'agit d'identifier précisément QUI ou QUOI fait l'action (le ou les sujets réels), avant d'accorder le verbe en conséquence, quelle que soit la complexité de la construction de la phrase",
+              "Chaque cas nécessite en réalité une méthode complètement différente et sans aucun lien entre elles",
+              "Seuls les sujets non inversés et non multiples ont réellement besoin d'une méthode d'accord"
+            ],
+            "answer": 1,
+            "exp": "La méthode reste fondamentalement la même dans tous les cas complexes : identifier le ou les sujets réels avant d'accorder le verbe en conséquence."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense qu'un verbe précédé de plusieurs mots entre le sujet et lui (sujet éloigné) ne doit plus s'accorder avec ce sujet lointain. Quelle limite cette idée a-t-elle ?",
+            "choices": [
+              "Aucune limite, un sujet éloigné n'a en effet jamais besoin de commander l'accord du verbe",
+              "Elle est fausse : même éloigné par d'autres groupes de mots, le sujet réel continue de commander l'accord du verbe, comme le montre l'exemple du vieux chat qui « se réveilla » malgré la proposition insérée entre le sujet et le verbe",
+              "Seuls les sujets juste avant le verbe ont réellement besoin de commander son accord",
+              "Un sujet éloigné cesse en réalité d'être le sujet du verbe qu'il commandait initialement"
+            ],
+            "answer": 1,
+            "exp": "La distance entre le sujet et le verbe ne change jamais la règle d'accord : le sujet réel continue de commander l'accord, même éloigné dans la phrase."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans la phrase « Sur la table traînaient encore les jouets de la veille », identifie le sujet du verbe « traînaient » et explique l'accord.",
+            "choices": [
+              "Le sujet est « la table », qui est au singulier, donc l'accord est incorrect dans cette phrase",
+              "Le sujet, inversé, est « les jouets de la veille » (pluriel), ce qui explique correctement l'accord du verbe au pluriel « traînaient »",
+              "Il n'y a aucun sujet identifiable dans cette phrase complexe",
+              "« Encore » est le sujet de cette phrase, ce qui explique l'accord au pluriel"
+            ],
+            "answer": 1,
+            "exp": "Malgré l'inversion, le sujet réel « les jouets de la veille » (pluriel) explique correctement l'accord du verbe « traînaient » au pluriel."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Avec deux sujets singuliers reliés par « ou », le verbe peut rester au singulier si un seul des deux agit réellement.",
+            "answer": true,
+            "exp": "C'est exactement la règle présentée dans cette leçon pour les sujets reliés par « ou », comme « Paul ou Marie viendra »."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un sujet qui n'est pas placé juste avant le verbe, mais séparé de lui par d'autres mots, est dit sujet : (un mot)",
+            "answer": "eloigne",
+            "exp": "Un sujet éloigné reste le sujet qui commande l'accord du verbe, même séparé de lui par d'autres groupes de mots dans la phrase."
           }
         ]
       },
@@ -23563,6 +24235,177 @@
             ],
             "answer": 1,
             "exp": "Le mot « soudain » signale une action brève et ponctuelle : elle devrait donc être au passé simple (« il commença à pleuvoir »), et non à l'imparfait, qui est réservé aux situations qui durent, pas aux ruptures soudaines dans le récit."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quel temps utilise-t-on pour décrire un décor ou une situation qui dure dans un récit au passé ?",
+            "choices": [
+              "Le futur",
+              "L'imparfait",
+              "Le présent",
+              "L'impératif"
+            ],
+            "answer": 1,
+            "exp": "L'imparfait sert à décrire une situation qui dure, un décor, une habitude, un état dans un récit au passé."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quel temps utilise-t-on pour raconter une action brève et précise qui fait avancer l'histoire ?",
+            "choices": [
+              "L'imparfait",
+              "Le passé simple",
+              "Le conditionnel",
+              "Le présent de l'indicatif"
+            ],
+            "answer": 1,
+            "exp": "Le passé simple sert à raconter une action précise et brève qui fait avancer l'histoire dans un récit."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « Le roi dormait paisiblement quand un cri retentit », quel verbe est au passé simple ?",
+            "choices": [
+              "Dormait",
+              "Retentit",
+              "Les deux verbes",
+              "Aucun des deux verbes"
+            ],
+            "answer": 1,
+            "exp": "« Retentit » est au passé simple : c'est une action brève et précise qui surgit dans la situation décrite par l'imparfait « dormait »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « La nuit était calme. Soudain, une ombre surgit derrière l'arbre », identifie le verbe à l'imparfait et celui au passé simple.",
+            "choices": [
+              "Imparfait : « surgit » ; passé simple : « était »",
+              "Imparfait : « était » ; passé simple : « surgit »",
+              "Les deux verbes sont au même temps dans cette phrase",
+              "Aucun des deux verbes n'est conjugué au passé dans cette phrase"
+            ],
+            "answer": 1,
+            "exp": "« Était » décrit la situation qui dure (imparfait), tandis que « surgit » raconte une action brève et soudaine qui fait avancer l'histoire (passé simple)."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi combiner imparfait et passé simple dans un même récit rend-il l'histoire plus claire que d'utiliser un seul de ces deux temps partout ?",
+            "choices": [
+              "Cela ne change en réalité rien à la clarté du récit",
+              "Parce que cette combinaison permet de bien distinguer ce qui sert de décor ou de situation stable (imparfait) de ce qui constitue les événements précis qui font avancer l'histoire (passé simple), rendant le récit plus structuré et vivant",
+              "Parce qu'il est strictement interdit d'utiliser un seul temps dans un récit au passé",
+              "Parce que l'imparfait et le passé simple ont en réalité exactement le même sens"
+            ],
+            "answer": 1,
+            "exp": "La combinaison des deux temps distingue clairement le décor stable (imparfait) des événements précis qui font progresser l'histoire (passé simple)."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève écrit : « Il faisait beau. Soudain, il commençait à pleuvoir. » Quelle est l'incohérence de temps dans ce récit ?",
+            "choices": [
+              "Il n'y a en réalité aucune incohérence dans ce récit",
+              "« Soudain » annonce une action brève et précise, qui devrait être au passé simple (« il commença à pleuvoir »), pas à l'imparfait qui convient aux situations durables, pas aux actions soudaines",
+              "« Faisait » devrait en réalité être au passé simple dans cette phrase",
+              "Les deux verbes devraient en réalité être conjugués au présent"
+            ],
+            "answer": 1,
+            "exp": "« Soudain » annonce une action brève qui aurait dû être au passé simple ; l'utiliser avec l'imparfait crée une incohérence de temps dans le récit."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "L'imparfait convient aux situations qui durent, aux décors ou aux habitudes dans un récit au passé.",
+            "answer": true,
+            "exp": "C'est exactement le rôle de l'imparfait présenté dans cette leçon, par opposition au passé simple qui raconte des actions précises."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Le passé simple et l'imparfait ont exactement le même rôle dans un récit, et peuvent être utilisés indifféremment l'un pour l'autre.",
+            "answer": false,
+            "exp": "Au contraire, chacun a un rôle bien précis : l'imparfait pour la situation qui dure, le passé simple pour les actions brèves qui font avancer l'histoire."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Le temps qui sert à raconter une action brève et précise dans un récit au passé s'appelle le passé : (un mot)",
+            "answer": "simple",
+            "exp": "Le passé simple est précisément ce temps utilisé pour les actions brèves et précises qui font avancer un récit au passé."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève écrit un récit en utilisant l'imparfait pour décrire le décor initial, puis bascule au passé simple dès qu'un événement précis survient. Que fait-il concrètement ?",
+            "choices": [
+              "Il commet une erreur grave de temps verbal dans son récit",
+              "Il applique exactement la combinaison recommandée par la leçon : l'imparfait pour poser le décor, le passé simple pour les actions qui font avancer l'histoire",
+              "Cette combinaison n'a en réalité aucun rapport avec la qualité d'un récit",
+              "Il aurait dû utiliser uniquement le présent de l'indicatif dans tout son récit"
+            ],
+            "answer": 1,
+            "exp": "Utiliser l'imparfait pour le décor et le passé simple pour les actions précises est exactement la combinaison recommandée pour un récit clair et vivant."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi se poser la question « est-ce que je décris une situation qui dure, ou est-ce que je raconte une action précise qui fait avancer l'histoire ? » est-elle une bonne stratégie pour choisir entre imparfait et passé simple ?",
+            "choices": [
+              "Cette question n'a jamais aucune utilité pour choisir un temps verbal",
+              "Parce qu'elle cible directement le critère qui distingue les deux temps (durée/décor vs action précise/progression de l'histoire), ce qui permet de choisir le bon temps de façon réfléchie plutôt qu'au hasard",
+              "Il est en réalité impossible de distinguer une situation qui dure d'une action précise dans un récit",
+              "Le choix entre imparfait et passé simple ne dépend en réalité jamais du sens de la phrase"
+            ],
+            "answer": 1,
+            "exp": "Cette question cible exactement le critère de distinction entre les deux temps, permettant un choix réfléchi plutôt qu'arbitraire."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense qu'un récit au passé devrait toujours utiliser uniquement le passé simple, car c'est « le vrai temps du passé ». Quelle limite cette idée a-t-elle ?",
+            "choices": [
+              "Aucune limite, le passé simple est en effet toujours suffisant seul pour un récit",
+              "Elle néglige le rôle essentiel de l'imparfait pour décrire les situations qui durent ou les décors, sans lequel un récit perdrait en clarté et en richesse descriptive",
+              "L'imparfait n'existe en réalité jamais dans un récit correctement écrit",
+              "Seul l'imparfait devrait en réalité être utilisé dans un récit au passé, jamais le passé simple"
+            ],
+            "answer": 1,
+            "exp": "Négliger le rôle de l'imparfait prive le récit de sa capacité à poser un décor ou une situation durable, essentielle à la clarté narrative."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans « Les villageois travaillaient dans les champs quand la cloche sonna l'alarme », explique pourquoi « travaillaient » est à l'imparfait et « sonna » au passé simple.",
+            "choices": [
+              "« Travaillaient » décrit une situation qui dure (le travail habituel), tandis que « sonna » raconte une action brève et précise qui interrompt cette situation et fait avancer l'histoire",
+              "Les deux verbes devraient en réalité être au même temps pour que la phrase soit correcte",
+              "« Sonna » décrit une situation qui dure, tandis que « travaillaient » raconte une action brève",
+              "Le choix des temps dans cette phrase est en réalité totalement arbitraire et sans aucune règle"
+            ],
+            "answer": 0,
+            "exp": "« Travaillaient » pose la situation durable (le travail habituel), tandis que « sonna » introduit l'action précise qui vient la bouleverser, exactement selon la logique de cette leçon."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "L'imparfait et le passé simple se combinent souvent naturellement dans un même récit au passé.",
+            "answer": true,
+            "exp": "C'est exactement l'idée centrale de cette leçon : les deux temps se combinent pour un récit à la fois clair et vivant."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans un récit, quel temps conviendrait le mieux pour la phrase « Chaque matin, le vieux pêcheur préparait son bateau » ?",
+            "choices": [
+              "Le passé simple, car c'est une action brève",
+              "L'imparfait, car c'est une habitude qui se répète et dure dans le temps",
+              "Le présent de l'indicatif",
+              "Le futur simple"
+            ],
+            "answer": 1,
+            "exp": "« Chaque matin » indique une habitude répétée, ce qui appelle l'imparfait plutôt que le passé simple."
           }
         ]
       },
@@ -23651,6 +24494,183 @@
             ],
             "answer": 1,
             "exp": "Avec l'auxiliaire « être », l'accord du participe passé avec le sujet est obligatoire : le sujet « elle » étant féminin singulier, il fallait écrire « allée », avec la marque du féminin -e."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Avec quoi le participe passé s'accorde-t-il toujours quand le verbe est conjugué avec l'auxiliaire « être » ?",
+            "choices": [
+              "Avec le complément d'objet direct du verbe",
+              "Avec le sujet du verbe",
+              "Il ne s'accorde en réalité jamais, quel que soit le cas",
+              "Avec le verbe qui suit dans la phrase"
+            ],
+            "answer": 1,
+            "exp": "Avec l'auxiliaire « être », le participe passé s'accorde toujours en genre et en nombre avec le sujet du verbe."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Comment écrit-on le participe passé de « partir » pour un sujet féminin pluriel (« elles ») ?",
+            "choices": [
+              "parti",
+              "partis",
+              "partie",
+              "parties"
+            ],
+            "answer": 3,
+            "exp": "Pour un sujet féminin pluriel, le participe passé prend la terminaison « -es » : « parties »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Complète correctement : « Léa et Tom sont (arriver) ... en retard. » (Léa : fille, Tom : garçon)",
+            "choices": [
+              "arrivé",
+              "arrivée",
+              "arrivés",
+              "arrivées"
+            ],
+            "answer": 2,
+            "exp": "Un sujet mixte (féminin + masculin) au pluriel donne un accord au masculin pluriel : « arrivés »."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Complète correctement : « Mes deux sœurs sont (rester) ... à la maison toute la journée. »",
+            "choices": [
+              "resté",
+              "restée",
+              "restés",
+              "restées"
+            ],
+            "answer": 3,
+            "exp": "« Mes deux sœurs » est féminin pluriel : le participe passé prend la terminaison « -es » : « restées »."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la règle d'accord du participe passé avec l'auxiliaire « être » est-elle considérée comme plus simple que celle avec l'auxiliaire « avoir » ?",
+            "choices": [
+              "Ce n'est en réalité jamais plus simple avec l'auxiliaire « être »",
+              "Parce qu'avec « être », l'accord se fait toujours et systématiquement avec le sujet, sans condition particulière à vérifier, alors qu'avec « avoir », l'accord dépend de la position du complément d'objet direct, ce qui demande une vérification supplémentaire",
+              "Parce que l'auxiliaire « être » n'existe en réalité que dans de très rares verbes",
+              "Parce que l'accord avec « être » ne concerne en réalité jamais le genre du sujet"
+            ],
+            "answer": 1,
+            "exp": "La simplicité de la règle avec « être » vient de sa systématicité (toujours avec le sujet), contrairement à « avoir » qui dépend de la position du COD."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève écrit « Elle est allé au marché » sans accorder le participe passé. Quelle est son erreur ?",
+            "choices": [
+              "Il n'y a en réalité aucune erreur dans cette phrase",
+              "Le verbe « aller » se conjugue avec l'auxiliaire « être », donc le participe passé doit s'accorder avec le sujet « elle » (féminin singulier) : il fallait écrire « Elle est allée » avec un -e",
+              "« Allé » ne s'accorde en réalité jamais, quel que soit le sujet de la phrase",
+              "« Elle » n'est en réalité pas vraiment le sujet de cette phrase"
+            ],
+            "answer": 1,
+            "exp": "Oublier l'accord du participe passé avec le sujet féminin, alors que le verbe se conjugue avec « être », est l'erreur classique corrigée par cette leçon."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Avec l'auxiliaire « être », le participe passé s'accorde toujours en genre et en nombre avec le sujet du verbe.",
+            "answer": true,
+            "exp": "C'est exactement la règle présentée dans cette leçon, plus régulière que celle de l'auxiliaire « avoir »."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Le participe passé conjugué avec l'auxiliaire « être » ne prend jamais aucune marque d'accord, quel que soit le sujet.",
+            "answer": false,
+            "exp": "Au contraire, il prend systématiquement la marque correspondant au genre et au nombre du sujet : rien, -e, -s ou -es."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Le verbe qui, avec « avoir », permet de conjuguer au passé composé et dont « être » est l'autre possibilité s'appelle l' : (un mot)",
+            "answer": "auxiliaire",
+            "exp": "L'auxiliaire est ce verbe (« être » ou « avoir ») qui accompagne le participe passé pour former le passé composé."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève accorde correctement « Mes frères sont nés le même jour » en laissant « nés » au masculin pluriel sans « e » final. Que fait-il concrètement ?",
+            "choices": [
+              "Il commet une erreur, il fallait ajouter un « e » au participe passé",
+              "Il applique correctement la règle : « mes frères » étant masculin pluriel, le participe passé prend seulement la marque du pluriel « -s », sans « e »",
+              "Cette phrase ne nécessite en réalité aucun accord du participe passé",
+              "Le participe passé devrait en réalité rester invariable dans cette phrase"
+            ],
+            "answer": 1,
+            "exp": "« Mes frères » étant masculin pluriel, la terminaison correcte du participe passé est « -s » seul, sans « e » : « nés » est donc correctement accordé."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi dit-on que la règle d'accord du participe passé avec « être » « n'a presque jamais d'exception », contrairement à d'autres règles orthographiques plus irrégulières ?",
+            "choices": [
+              "Cette règle a en réalité énormément d'exceptions, bien plus que d'autres règles orthographiques",
+              "Parce que, selon la leçon, le participe passé suit toujours fidèlement le genre et le nombre du sujet avec l'auxiliaire « être », ce qui en fait une règle particulièrement régulière et fiable à appliquer",
+              "Il est en réalité impossible d'appliquer cette règle de façon fiable, quel que soit le sujet",
+              "Cette règle ne s'applique en réalité qu'à un seul verbe particulier en français"
+            ],
+            "answer": 1,
+            "exp": "La régularité de cette règle (toujours accord avec le sujet, sans condition particulière) en fait une règle fiable, contrairement à d'autres plus irrégulières."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense que, puisque le participe passé avec « être » s'accorde toujours avec le sujet, il peut appliquer exactement la même règle avec l'auxiliaire « avoir ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, la règle est en réalité exactement identique avec les deux auxiliaires",
+              "Il confond les deux règles : avec « avoir », l'accord ne se fait pas automatiquement avec le sujet, mais dépend de la position du complément d'objet direct, une règle différente de celle de l'auxiliaire « être »",
+              "L'auxiliaire « avoir » n'existe en réalité jamais au passé composé",
+              "Le participe passé ne s'accorde en réalité jamais avec l'auxiliaire « avoir », quel que soit le contexte"
+            ],
+            "answer": 1,
+            "exp": "Les règles d'accord diffèrent selon l'auxiliaire : avec « être », l'accord est systématique avec le sujet, tandis qu'avec « avoir », il dépend de la position du COD."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans « Les lettres que j'ai reçues étaient émouvantes », pourquoi ce participe passé (ailleurs avec « avoir ») ne contredit-il pas la règle de cette leçon centrée sur l'auxiliaire « être » ?",
+            "choices": [
+              "Cette phrase prouve en réalité que la règle de l'auxiliaire « être » est fausse",
+              "Cette phrase utilise l'auxiliaire « avoir », pas « être » : elle suit une règle différente (accord avec le COD placé avant le verbe), que cette leçon ne traite pas, centrée uniquement sur l'auxiliaire « être »",
+              "« Reçues » est en réalité un adjectif, pas un participe passé, dans cette phrase",
+              "Cette phrase est en réalité incorrecte et ne devrait jamais être écrite ainsi"
+            ],
+            "answer": 1,
+            "exp": "Cette phrase relève de la règle de l'auxiliaire « avoir » (accord avec le COD antéposé), différente et non traitée par cette leçon centrée sur l'auxiliaire « être »."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Complète correctement : « Les deux chevaux sont (sortir) ... de l'écurie ce matin. »",
+            "choices": [
+              "sorti",
+              "sortie",
+              "sortis",
+              "sorties"
+            ],
+            "answer": 2,
+            "exp": "« Les deux chevaux » est masculin pluriel : le participe passé prend la terminaison « -s » seule : « sortis »."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Complète correctement : « La petite fille est (tomber) ... dans la cour de récréation. »",
+            "choices": [
+              "tombé",
+              "tombée",
+              "tombés",
+              "tombées"
+            ],
+            "answer": 1,
+            "exp": "« La petite fille » est féminin singulier : le participe passé prend la terminaison « -e » : « tombée »."
           }
         ]
       }
