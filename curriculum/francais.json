@@ -16977,6 +16977,183 @@
             ],
             "answer": 1,
             "exp": "L'héroïsme ne se définit pas par l'absence de peur, mais par la capacité à agir malgré elle, pour une cause qui compte : de nombreux récits valorisent justement ce courage face à la peur, plutôt que son absence totale."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Qu'est-ce qui fait souvent qu'un personnage est considéré comme un héros, selon cette leçon ?",
+            "choices": [
+              "Il ne ressent jamais aucune émotion",
+              "Sa façon d'affronter ses doutes et ses faiblesses face aux épreuves",
+              "Il réussit toujours sans aucune difficulté",
+              "Il est toujours le personnage le plus riche de l'histoire"
+            ],
+            "answer": 1,
+            "exp": "C'est souvent la façon d'affronter ses faiblesses et ses doutes qui rend un personnage héroïque, pas la perfection."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pour analyser un personnage héroïque, lesquels de ces trois éléments faut-il observer ?",
+            "choices": [
+              "Son âge, sa taille et sa couleur de cheveux",
+              "Ses actions, ses motivations et son évolution au fil de l'histoire",
+              "Le nombre de pages où il apparaît",
+              "Le titre du chapitre où il apparaît pour la première fois"
+            ],
+            "answer": 1,
+            "exp": "La leçon invite à observer les actions, les motivations et l'évolution du personnage pour bien l'analyser."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Les valeurs célébrées par un héros (courage, ruse, loyauté...) sont-elles toujours les mêmes dans tous les récits ?",
+            "choices": [
+              "Oui, toujours exactement les mêmes",
+              "Non, elles varient selon les époques et les cultures",
+              "Les héros ne portent jamais aucune valeur particulière",
+              "Seul le courage est toujours célébré, jamais d'autre valeur"
+            ],
+            "answer": 1,
+            "exp": "Les valeurs portées par un héros varient selon les époques et les cultures : courage, ruse, loyauté, intelligence, générosité peuvent toutes être célébrées différemment."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un personnage hésite longtemps avant d'aider un inconnu en danger, car il a peur des conséquences, puis décide finalement de l'aider malgré sa peur. Comment analyser ce personnage selon la méthode de la leçon ?",
+            "choices": [
+              "Il n'est jamais un héros car il a hésité",
+              "Observer sa motivation (la peur des conséquences) et son action finale (aider malgré la peur) permet de comprendre la dimension héroïque de son choix",
+              "Il faut ignorer complètement son hésitation",
+              "Seule l'action finale compte, sans jamais regarder la motivation"
+            ],
+            "answer": 1,
+            "exp": "Analyser à la fois la motivation et l'action permet de bien comprendre la dimension héroïque d'un choix, même hésitant."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans un récit, un personnage riche et puissant abandonne tout pour aider des villageois pauvres, sans rien attendre en retour. Quelle valeur ce choix met-il en avant ?",
+            "choices": [
+              "L'égoïsme",
+              "La générosité",
+              "La lâcheté",
+              "L'indifférence"
+            ],
+            "answer": 1,
+            "exp": "Abandonner ses avantages pour aider les autres sans contrepartie illustre la valeur de générosité."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi se demander « Aurais-je agi comme ce héros ? » est-il plus utile pour comprendre un récit que de simplement se demander « Ce héros est-il gentil ou méchant ? » ?",
+            "choices": [
+              "Les deux questions ont exactement le même intérêt",
+              "Parce que la première question pousse à réfléchir activement aux motivations et au contexte des choix du personnage, développant un vrai sens critique, alors que la seconde reste une catégorie simpliste",
+              "La question « gentil ou méchant » est toujours plus utile",
+              "Aucune de ces deux questions n'a d'intérêt pour comprendre un récit"
+            ],
+            "answer": 1,
+            "exp": "Se demander si on aurait agi pareil pousse à analyser motivations et contexte, un exercice plus riche qu'une simple catégorisation gentil/méchant."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève affirme : « Un personnage qui ment une fois dans l'histoire ne peut jamais être un héros, c'est impossible. » Que penser de cette idée ?",
+            "choices": [
+              "Elle est vraie, un seul mensonge disqualifie définitivement un héros",
+              "Elle est trop catégorique : un héros peut avoir des défauts, y compris mentir à un moment, et c'est souvent son évolution et ses choix ultérieurs qui comptent pour l'analyse de son parcours",
+              "Les héros ne mentent jamais, dans aucune histoire",
+              "Un personnage parfait sans aucun défaut est obligatoire pour être un héros"
+            ],
+            "answer": 1,
+            "exp": "Un héros peut avoir des défauts, y compris mentir ; c'est son évolution et ses choix globaux qui comptent, pas une perfection absolue."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un héros peut avoir des faiblesses et des doutes tout en restant un personnage héroïque.",
+            "answer": true,
+            "exp": "La leçon insiste sur le fait qu'un héros n'est pas forcément parfait : c'est sa façon d'affronter ses faiblesses qui compte."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Les valeurs portées par les héros sont toujours exactement identiques, quelle que soit l'époque du récit.",
+            "answer": false,
+            "exp": "Les valeurs célébrées par les héros varient selon les époques et les cultures : courage, ruse, loyauté, générosité peuvent être mises en avant différemment."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Se demander pourquoi un personnage agit d'une certaine façon, c'est s'interroger sur sa : (un mot)",
+            "answer": "motivation",
+            "exp": "La motivation d'un personnage est la raison profonde qui explique ses actions dans le récit."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un personnage évolue au fil de l'histoire : d'abord égoïste, il devient généreux après avoir vécu une épreuve difficile. Quel aspect de l'analyse d'un héros ce changement illustre-t-il en particulier ?",
+            "choices": [
+              "Son physique",
+              "Son évolution au fil de l'histoire",
+              "Le titre du livre",
+              "Le nombre de personnages secondaires"
+            ],
+            "answer": 1,
+            "exp": "Un changement de comportement au fil du récit illustre précisément la notion d'évolution du personnage."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi l'analyse d'un héros à travers ses actions, motivations et évolution est-elle plus riche qu'un simple jugement « il est bien » ou « il est mal » ?",
+            "choices": [
+              "Un jugement simple est toujours suffisant et plus riche",
+              "Parce qu'elle permet de comprendre les raisons profondes des choix du personnage et comment il se transforme, plutôt que de le réduire à une étiquette simpliste",
+              "L'analyse détaillée n'apporte jamais rien de plus qu'un jugement simple",
+              "Les motivations et l'évolution d'un personnage n'ont jamais d'importance"
+            ],
+            "answer": 1,
+            "exp": "Analyser actions, motivations et évolution donne une compréhension nuancée du personnage, bien plus riche qu'une étiquette simpliste bien/mal."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense que seuls les personnages qui gagnent toujours et ne doutent jamais méritent d'être étudiés comme des héros. Quelle limite cette vision a-t-elle ?",
+            "choices": [
+              "Aucune limite, cette vision est complète",
+              "Elle ignore que les doutes, les échecs et les faiblesses d'un personnage font souvent partie intégrante de ce qui le rend intéressant et humain en tant que héros",
+              "Les héros ne doutent jamais, dans aucune histoire",
+              "Seuls les personnages invincibles existent dans la littérature"
+            ],
+            "answer": 1,
+            "exp": "Ignorer les doutes et les échecs d'un personnage passe à côté de ce qui le rend souvent le plus intéressant et le plus humain en tant que héros."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans un récit, une héroïne doute énormément avant une décision difficile, pèse le pour et le contre, puis choisit d'agir pour protéger les siens malgré le risque. En quoi ce doute enrichit-il le récit plutôt que de l'affaiblir ?",
+            "choices": [
+              "Le doute affaiblit toujours un récit, sans exception",
+              "Le doute rend la décision finale plus significative : elle montre que l'héroïne a conscience des risques et choisit malgré tout d'agir, ce qui renforce la dimension héroïque de son geste",
+              "Un vrai héros ne doit jamais montrer de doute, cela gâche l'histoire",
+              "Le doute n'a aucun effet sur la perception du lecteur"
+            ],
+            "answer": 1,
+            "exp": "Montrer le doute avant l'action renforce la portée du choix final : il devient plus significatif car pris en pleine conscience des risques."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi peut-on dire que l'étude des héros à l'école ne vise pas seulement à admirer des personnages, mais aussi à développer l'esprit critique du lecteur ?",
+            "choices": [
+              "L'étude des héros ne vise jamais à développer l'esprit critique",
+              "Parce qu'interroger les choix, les motivations et les valeurs d'un héros pousse le lecteur à réfléchir par lui-même plutôt qu'à simplement accepter une admiration automatique",
+              "Il faut toujours admirer un héros sans jamais le questionner",
+              "L'esprit critique n'a aucun rapport avec la lecture de récits héroïques"
+            ],
+            "answer": 1,
+            "exp": "Interroger les choix et valeurs d'un héros développe un vrai esprit critique chez le lecteur, au-delà d'une simple admiration passive."
           }
         ]
       },
@@ -17065,6 +17242,177 @@
             ],
             "answer": 1,
             "exp": "La distance avec le réel n'empêche pas un récit merveilleux ou étrange d'aborder, de façon symbolique, des questions humaines profondes et universelles : réduire ces récits à du simple divertissement sans valeur sous-estime leur richesse."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quelle est la différence essentielle entre le merveilleux et l'étrange ?",
+            "choices": [
+              "Il n'existe aucune différence entre les deux",
+              "Le merveilleux évoque un monde magique accepté avec émerveillement, l'étrange crée un sentiment d'inquiétude ou de mystère difficile à expliquer",
+              "Le merveilleux se déroule toujours dans la vraie vie",
+              "L'étrange concerne uniquement des histoires drôles"
+            ],
+            "answer": 1,
+            "exp": "Le merveilleux suscite l'émerveillement devant la magie acceptée, tandis que l'étrange crée un malaise ou un mystère non résolu."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pourquoi les récits merveilleux ou étranges permettent-ils d'aborder certains sujets difficiles plus facilement ?",
+            "choices": [
+              "Ils ne permettent jamais d'aborder aucun sujet",
+              "Parce que s'éloigner du monde réel par la fiction fantastique peut rendre certains sujets effrayants ou complexes plus faciles à explorer symboliquement",
+              "Parce qu'ils évitent totalement toute émotion",
+              "Parce qu'ils sont toujours plus courts que les récits réalistes"
+            ],
+            "answer": 1,
+            "exp": "La distance offerte par le fantastique permet souvent d'aborder des sujets difficiles (peurs, angoisses) de façon plus accessible."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans un conte, un enfant reçoit un objet magique qui lui permet de voir la vérité derrière les apparences des gens. Que peut représenter symboliquement cet objet ?",
+            "choices": [
+              "Rien, c'est juste un objet sans signification",
+              "La capacité à mieux comprendre les autres au-delà des apparences, une forme de maturité ou de perspicacité grandissante",
+              "Une simple erreur de l'auteur",
+              "Un objet purement décoratif sans aucun rôle dans l'histoire"
+            ],
+            "answer": 1,
+            "exp": "Un objet magique qui révèle la vérité peut symboliser une maturité grandissante ou une perspicacité nouvelle du personnage."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un récit décrit une maison qui semble normale le jour, mais où des bruits inexplicables se font entendre chaque nuit, sans jamais être expliqués. À quel registre ce récit appartient-il principalement ?",
+            "choices": [
+              "Le merveilleux, car la maison est magique et acceptée comme telle",
+              "L'étrange, car les événements inexpliqués créent un sentiment de mystère et d'inquiétude",
+              "Le documentaire scientifique",
+              "Le théâtre comique"
+            ],
+            "answer": 1,
+            "exp": "Des événements troublants et non expliqués, créant un malaise, relèvent du registre de l'étrange plutôt que du merveilleux."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi dit-on que des récits très éloignés du réel (dragons, sorciers, mondes magiques) peuvent quand même parler de sujets « bien réels » comme la peur de grandir ?",
+            "choices": [
+              "Ce n'est jamais le cas, le merveilleux n'a aucun lien avec la réalité humaine",
+              "Parce que les éléments fantastiques fonctionnent souvent comme des symboles qui explorent des émotions et questionnements humains universels, à travers une mise en scène différente du quotidien",
+              "Parce que le merveilleux remplace totalement les questions réelles",
+              "Les histoires fantastiques ne traitent jamais d'émotions humaines"
+            ],
+            "answer": 1,
+            "exp": "Les éléments fantastiques servent souvent de métaphores pour des thèmes humains universels, malgré leur éloignement apparent du réel."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève affirme : « Un dragon qui parle dans une histoire, c'est juste n'importe quoi, ça ne représente rien de sérieux. » Que penser de cette idée ?",
+            "choices": [
+              "Il a entièrement raison, les créatures fantastiques ne représentent jamais rien",
+              "Il se trompe souvent : une créature fantastique comme un dragon peut incarner symboliquement une peur, un obstacle intérieur ou une force à affronter, bien au-delà d'un simple élément décoratif",
+              "Seuls les récits réalistes peuvent avoir un sens profond",
+              "Les dragons n'apparaissent jamais dans la littérature pour enfants"
+            ],
+            "answer": 1,
+            "exp": "Une créature fantastique peut symboliser une peur ou un obstacle à surmonter, bien plus qu'un simple élément de décor sans signification."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "L'étrange crée généralement un sentiment d'inquiétude ou de mystère, contrairement au merveilleux qui évoque plutôt l'émerveillement.",
+            "answer": true,
+            "exp": "C'est la distinction centrale de cette leçon entre les deux registres."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un récit merveilleux ou étrange ne peut jamais, selon cette leçon, parler de sujets réels comme la peur de l'inconnu.",
+            "answer": false,
+            "exp": "Au contraire, la leçon explique que ces récits parlent souvent de sujets bien réels à travers une mise en scène fantastique."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un récit où la magie est acceptée naturellement, sans inquiétude, relève du registre du : (un mot)",
+            "answer": "merveilleux",
+            "exp": "Le merveilleux désigne un monde où la magie est acceptée avec émerveillement, sans créer d'inquiétude particulière."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans une histoire, un miroir magique permet à un personnage de voir son propre futur. Que peut symboliser ce miroir, au-delà de son aspect fantastique ?",
+            "choices": [
+              "Rien du tout",
+              "Une réflexion sur soi-même, ses choix et ce que l'on pourrait devenir",
+              "Un simple objet de décoration dans la maison",
+              "Une erreur de traduction du conte"
+            ],
+            "answer": 1,
+            "exp": "Un objet qui révèle le futur ou l'identité profonde d'un personnage symbolise souvent une réflexion sur soi-même et ses choix."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi l'étrange, contrairement au merveilleux, laisse-t-il souvent le lecteur dans une forme d'incertitude à la fin du récit ?",
+            "choices": [
+              "L'étrange explique toujours tout parfaitement à la fin",
+              "Parce que le registre de l'étrange cultive volontairement le mystère et l'inexpliqué, sans toujours donner d'explication rationnelle complète, ce qui prolonge le trouble chez le lecteur",
+              "L'étrange et le merveilleux fonctionnent toujours de façon identique",
+              "Il n'existe aucune différence d'effet entre les deux registres sur le lecteur"
+            ],
+            "answer": 1,
+            "exp": "L'étrange entretient le mystère sans toujours tout expliquer, ce qui laisse le lecteur dans une incertitude prolongée, contrairement au merveilleux pleinement accepté."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense que lire des histoires fantastiques est une perte de temps « car ça ne pourrait jamais arriver dans la vraie vie ». Quelle limite a ce raisonnement ?",
+            "choices": [
+              "Aucune limite, il a entièrement raison",
+              "Il néglige que ces récits explorent souvent, à travers le fantastique, des émotions et des questionnements bien réels (peur, désir d'évasion, passage à l'âge adulte)",
+              "Les histoires fantastiques ne contiennent jamais aucune émotion",
+              "Seules les histoires parfaitement réalistes ont un intérêt"
+            ],
+            "answer": 1,
+            "exp": "Ce raisonnement néglige la dimension symbolique du fantastique, qui explore des émotions et questionnements humains bien réels."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans un même recueil, un conte merveilleux raconte un royaume magique heureux, tandis qu'une nouvelle étrange raconte une maison hantée inexpliquée. Quelle différence de ressenti ces deux textes produisent-ils probablement chez le lecteur ?",
+            "choices": [
+              "Exactement le même ressenti dans les deux cas",
+              "Le conte merveilleux produit plutôt de l'émerveillement, tandis que la nouvelle étrange produit plutôt un sentiment de malaise ou de mystère non résolu",
+              "Aucun des deux textes ne produit d'émotion particulière",
+              "Seul le conte merveilleux peut produire une émotion chez le lecteur"
+            ],
+            "answer": 1,
+            "exp": "Le merveilleux et l'étrange produisent des effets émotionnels différents : émerveillement pour l'un, malaise ou mystère pour l'autre."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi l'analyse symbolique (que représente cet élément fantastique ?) est-elle une étape essentielle pour vraiment comprendre un récit merveilleux ou étrange, au-delà du simple plaisir de l'histoire ?",
+            "choices": [
+              "Cette analyse n'apporte jamais rien à la compréhension du récit",
+              "Parce qu'elle permet de relier les éléments fantastiques à des questionnements humains plus profonds, révélant le sens caché derrière la mise en scène fantastique",
+              "Seul le plaisir immédiat de l'histoire compte, sans jamais chercher de sens plus profond",
+              "Les récits fantastiques n'ont jamais de sens caché à découvrir"
+            ],
+            "answer": 1,
+            "exp": "L'analyse symbolique révèle le sens profond derrière les éléments fantastiques, dépassant le simple plaisir immédiat de l'histoire."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Les récits merveilleux ou étranges peuvent servir à explorer symboliquement des émotions universelles comme la peur ou le désir d'évasion.",
+            "answer": true,
+            "exp": "La leçon explique que ces récits, malgré leur éloignement du réel, parlent souvent d'émotions humaines bien réelles."
           }
         ]
       },
@@ -17153,6 +17501,177 @@
             ],
             "answer": 1,
             "exp": "Juger un poème selon les critères d'un roman (histoire avec début-milieu-fin) méconnaît la nature propre de la poésie, qui peut privilégier d'autres dimensions (sonorité, rythme, image) sans nécessairement raconter une histoire suivie."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Qu'est-ce qui caractérise souvent la poésie, par rapport à un texte narratif classique ?",
+            "choices": [
+              "Elle raconte toujours une histoire suivie avec un début et une fin",
+              "Elle joue avec les sons, les rythmes et les images des mots pour créer une émotion ou une sensation",
+              "Elle n'utilise jamais aucune image ni comparaison",
+              "Elle doit obligatoirement rimer à chaque vers, sans exception"
+            ],
+            "answer": 1,
+            "exp": "La poésie privilégie le jeu sur les sons, les rythmes et les images, plutôt qu'une narration suivie classique."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pourquoi est-il souvent conseillé de lire un poème à voix haute plutôt que silencieusement ?",
+            "choices": [
+              "Ce n'est jamais conseillé pour la poésie",
+              "Pour mieux ressentir la musicalité des mots, les rimes et le rythme, qui s'apprécient davantage à l'oral",
+              "Parce que la lecture silencieuse d'un poème est totalement interdite",
+              "Parce que les poèmes n'ont jamais de sens à l'écrit"
+            ],
+            "answer": 1,
+            "exp": "La musicalité d'un poème (rimes, rythme, sonorités) se perçoit souvent mieux à l'oral qu'à la simple lecture silencieuse."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans le vers « le vent chuchote des secrets aux arbres », à quelle figure poétique correspond cette formulation ?",
+            "choices": [
+              "Une simple description scientifique du vent",
+              "Une image poétique qui prête au vent une action humaine (chuchoter), rendant la scène plus vivante",
+              "Une erreur de grammaire à corriger absolument",
+              "Une liste de nombres"
+            ],
+            "answer": 1,
+            "exp": "Prêter une action humaine à un élément naturel (le vent qui chuchote) est une image poétique qui anime la scène."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un poème répète plusieurs fois le même mot « silence » à la fin de chaque vers. Quel effet cette répétition peut-elle produire sur le lecteur ?",
+            "choices": [
+              "Aucun effet particulier, c'est juste un hasard sans intérêt",
+              "Elle peut renforcer un sentiment d'insistance, de calme pesant ou d'obsession autour de cette idée de silence",
+              "Elle rend le poème totalement incompréhensible",
+              "Elle prouve que le poète a fait une erreur en écrivant"
+            ],
+            "answer": 1,
+            "exp": "La répétition d'un mot clé dans un poème renforce souvent une idée ou une émotion, créant un effet d'insistance voulu."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi n'y a-t-il pas, selon cette leçon, « une seule bonne façon » de ressentir un même poème face à différents lecteurs ?",
+            "choices": [
+              "Il existe toujours une interprétation unique et parfaitement correcte à trouver",
+              "Parce que la poésie fait appel à la sensibilité personnelle de chacun : les mêmes mots peuvent évoquer des images et émotions différentes selon l'expérience de chaque lecteur",
+              "La poésie n'a jamais vraiment de sens, quel que soit le lecteur",
+              "Il faut toujours être d'accord avec l'interprétation donnée par l'enseignant, sans exception"
+            ],
+            "answer": 1,
+            "exp": "La poésie sollicite la sensibilité personnelle : les mêmes vers peuvent résonner différemment selon le vécu de chaque lecteur."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense qu'un poème est « raté » s'il ne raconte pas une histoire claire avec un début, un milieu et une fin, comme un roman classique. Que penser de cette idée ?",
+            "choices": [
+              "Il a entièrement raison, tout poème doit obligatoirement raconter une histoire complète",
+              "Il se trompe : la poésie ne vise pas toujours à raconter une histoire suivie ; elle peut privilégier les sons, le rythme et les images pour créer une émotion, sans structure narrative classique",
+              "Tous les poèmes sont en réalité des histoires cachées",
+              "Seuls les poèmes qui racontent une histoire complète ont de la valeur littéraire"
+            ],
+            "answer": 1,
+            "exp": "La poésie peut se construire sur des sonorités et des images plutôt que sur une structure narrative classique, sans que cela la rende « ratée »."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "La poésie privilégie souvent les sons, le rythme et les images plutôt que de toujours raconter une histoire suivie.",
+            "answer": true,
+            "exp": "C'est l'une des particularités essentielles de la poésie par rapport aux récits narratifs classiques."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Tous les lecteurs ressentent obligatoirement exactement la même émotion face à un même poème.",
+            "answer": false,
+            "exp": "Chaque lecteur peut être touché différemment par les mêmes mots, selon sa sensibilité et ses propres expériences."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un ensemble de sons qui se répètent à la fin de plusieurs vers d'un poème s'appelle une : (un mot)",
+            "answer": "rime",
+            "exp": "Les rimes sont des sons répétés en fin de vers, l'un des outils musicaux classiques de la poésie."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un poète écrit « mes rêves volent comme des oiseaux de papier ». Quel effet produit cette comparaison inhabituelle entre des rêves et des oiseaux de papier ?",
+            "choices": [
+              "Aucun effet, c'est une phrase totalement ordinaire",
+              "Elle crée une image poétique fragile et légère, qui évoque la délicatesse et la fugacité des rêves de façon vivante",
+              "Elle rend le texte incompréhensible pour tout lecteur",
+              "Elle prouve que le poète s'est trompé de mots"
+            ],
+            "answer": 1,
+            "exp": "Comparer les rêves à des oiseaux de papier crée une image poétique évocatrice de légèreté et de fragilité."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi dit-on que la poésie permet au poète de « s'écarter » de la façon habituelle de parler ou d'écrire (inversion des mots, images surprenantes) ?",
+            "choices": [
+              "La poésie doit toujours respecter exactement les mêmes règles que la prose ordinaire",
+              "Parce que la poésie autorise des libertés formelles (ordre des mots, images inattendues, sonorités travaillées) que la prose courante n'utilise pas de la même façon, pour créer des effets particuliers",
+              "Un poète n'a jamais le droit de modifier l'ordre habituel des mots",
+              "Les images surprenantes sont toujours interdites en poésie"
+            ],
+            "answer": 1,
+            "exp": "La poésie autorise des libertés formelles particulières (ordre des mots, images inattendues) qui créent des effets différents de la prose ordinaire."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève, face à un poème qui le laisse perplexe, pense qu'il doit forcément trouver « la » bonne interprétation unique avant de pouvoir apprécier le texte. Quelle limite cette approche a-t-elle ?",
+            "choices": [
+              "Aucune limite, il faut toujours trouver une interprétation unique et certaine",
+              "Elle néglige que la poésie peut aussi être appréciée pour sa musicalité et ses sensations, sans qu'une interprétation unique et définitive soit nécessaire",
+              "La poésie n'a jamais besoin d'être appréciée, seulement analysée",
+              "Il est impossible d'apprécier un poème sans en comprendre parfaitement tous les mots"
+            ],
+            "answer": 1,
+            "exp": "La poésie peut être appréciée pour sa musicalité et ses sensations, sans toujours exiger une interprétation unique et parfaitement définitive."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi la lecture d'un même poème à voix haute par deux personnes différentes peut-elle produire des effets sensiblement différents chez les auditeurs ?",
+            "choices": [
+              "Il est impossible que deux lectures diffèrent, le texte étant identique",
+              "Parce que chaque lecteur peut choisir un rythme, une intonation et des pauses différentes, ce qui modifie la façon dont la musicalité et les émotions du poème sont transmises",
+              "La voix du lecteur n'a jamais d'influence sur la perception d'un poème",
+              "Seul le texte écrit compte, la voix qui le porte n'a aucune importance"
+            ],
+            "answer": 1,
+            "exp": "Le rythme, l'intonation et les pauses choisis par chaque lecteur influencent directement la transmission de la musicalité et des émotions d'un poème."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Quelle idée résume le mieux ce que cette leçon cherche à faire comprendre sur la poésie ?",
+            "choices": [
+              "La poésie suit toujours exactement les mêmes règles que la prose",
+              "La poésie explore une relation particulière aux sons, aux rythmes et aux images des mots, offrant une liberté d'expression et de ressenti propre à ce genre",
+              "Seuls les poèmes qui riment parfaitement ont une vraie valeur",
+              "La poésie n'a aucun intérêt particulier à être étudiée à l'école"
+            ],
+            "answer": 1,
+            "exp": "L'esprit de la leçon est de montrer la relation particulière de la poésie aux sons, rythmes et images, et la liberté de ressenti qu'elle permet."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Une image poétique comme une métaphore peut rendre une description plus vivante qu'une simple phrase ordinaire.",
+            "answer": true,
+            "exp": "C'est tout l'intérêt des images poétiques : elles enrichissent la perception d'une scène par rapport à une description neutre."
           }
         ]
       },
@@ -17241,6 +17760,177 @@
             ],
             "answer": 1,
             "exp": "L'ancienneté d'un texte ne le rend pas automatiquement valable pour toutes les époques : certaines valeurs ou morales anciennes peuvent sembler dépassées aujourd'hui, d'où l'importance de les interroger avec un regard critique actuel."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Qu'est-ce que la « morale » d'une histoire, selon cette leçon ?",
+            "choices": [
+              "Le titre complet du livre",
+              "Une leçon de vie ou une réflexion sur des valeurs humaines que l'histoire transmet",
+              "Le nombre total de personnages de l'histoire",
+              "Le nom de l'illustrateur du livre"
+            ],
+            "answer": 1,
+            "exp": "La morale est la leçon de vie ou la réflexion sur des valeurs humaines que l'histoire cherche à transmettre."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pour comprendre la morale d'une histoire, que peut-on observer en particulier chez les personnages ?",
+            "choices": [
+              "Uniquement leur apparence physique",
+              "Comment ils sont récompensés ou pénalisés selon leurs choix et leurs actions",
+              "Le nombre de fois où ils apparaissent dans le livre",
+              "Uniquement leur nom de famille"
+            ],
+            "answer": 1,
+            "exp": "Observer comment les personnages sont récompensés ou pénalisés selon leurs choix révèle souvent le message moral de l'histoire."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Comprendre la morale d'une histoire signifie-t-il forcément être totalement d'accord avec elle ?",
+            "choices": [
+              "Oui, il faut toujours être d'accord avec toute morale lue",
+              "Non, on peut comprendre une morale tout en la discutant ou en n'étant pas entièrement d'accord avec elle",
+              "La morale n'a jamais aucune importance dans un récit",
+              "Il est strictement interdit de discuter une morale d'histoire"
+            ],
+            "answer": 1,
+            "exp": "On peut parfaitement comprendre une morale sans y adhérer totalement : la comprendre et l'accepter sont deux choses différentes."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans une fable, un personnage paresseux finit sans ressources en hiver, tandis qu'un personnage travailleur est bien préparé. Quelle morale cette histoire transmet-elle probablement ?",
+            "choices": [
+              "Il ne faut jamais travailler",
+              "Il vaut mieux se préparer et travailler à l'avance plutôt que d'être paresseux",
+              "Le travail n'a aucune conséquence sur l'avenir",
+              "La paresse est toujours récompensée dans les fables"
+            ],
+            "answer": 1,
+            "exp": "Les conséquences opposées des deux personnages (misère vs préparation) révèlent une morale sur la valeur du travail et de l'anticipation."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Une fable ancienne semble dire que les plus faibles doivent toujours obéir sans discuter aux plus forts. Que peux-tu faire face à cette morale, selon la démarche proposée par la leçon ?",
+            "choices": [
+              "L'accepter immédiatement sans aucune réflexion",
+              "T'interroger sur cette morale, la discuter, et réfléchir si elle te semble juste ou si elle a des limites avec un regard d'aujourd'hui",
+              "Refuser complètement de lire la fable",
+              "Penser que toutes les morales anciennes sont automatiquement vraies"
+            ],
+            "answer": 1,
+            "exp": "La leçon encourage à interroger activement une morale, surtout une morale ancienne, plutôt que de l'accepter sans réflexion."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il important d'apprendre à interroger la morale d'une histoire, plutôt que de simplement la mémoriser et l'accepter telle quelle ?",
+            "choices": [
+              "Ce n'est jamais important, il faut toujours accepter une morale sans réfléchir",
+              "Parce que développer un regard critique sur les valeurs proposées par une histoire aide à construire sa propre réflexion personnelle, plutôt que d'adopter des idées sans les avoir examinées",
+              "Toutes les morales sont systématiquement fausses et sans intérêt",
+              "Les histoires ne contiennent jamais vraiment de morale à analyser"
+            ],
+            "answer": 1,
+            "exp": "Interroger une morale développe l'esprit critique et une réflexion personnelle, plutôt qu'une simple adoption passive d'idées."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève affirme que la morale d'une vieille fable doit être suivie exactement comme elle est écrite, « car c'est un texte ancien et donc toujours vrai ». Que penser de cette idée ?",
+            "choices": [
+              "Il a raison, un texte ancien est toujours une vérité absolue et indiscutable",
+              "L'ancienneté d'un texte ne garantit pas que sa morale soit toujours adaptée à notre époque : il est important de la questionner avec un regard critique actuel",
+              "Les textes anciens n'ont jamais de morale à transmettre",
+              "Il faut toujours rejeter systématiquement tous les textes anciens, sans exception"
+            ],
+            "answer": 1,
+            "exp": "L'ancienneté d'un texte ne garantit pas la validité intemporelle de sa morale ; un regard critique actuel reste nécessaire."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "On peut comprendre la morale d'une histoire sans être totalement d'accord avec elle.",
+            "answer": true,
+            "exp": "Comprendre et accepter sont deux choses différentes : on peut comprendre un message tout en le discutant ou le questionnant."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Discuter la morale d'une histoire avec d'autres personnes n'apporte jamais rien à sa réflexion personnelle.",
+            "answer": false,
+            "exp": "Au contraire, la leçon explique que discuter avec d'autres enrichit la réflexion, chacun pouvant avoir une interprétation différente."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Une histoire qui transmet souvent une morale claire, mettant en scène des animaux, s'appelle une : (un mot)",
+            "answer": "fable",
+            "exp": "Les fables sont des récits, souvent avec des animaux, qui portent fréquemment une morale explicite."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans une fable, un personnage trop vantard finit ridiculisé devant tout le monde, tandis qu'un personnage modeste est respecté. Si un élève pense que cette morale « ne s'applique jamais dans la vraie vie », que pourrait-il faire selon la démarche de la leçon ?",
+            "choices": [
+              "Refuser absolument de réfléchir à la question",
+              "Se demander si cette morale a des limites ou si elle s'applique parfois, parfois non, selon les situations réelles qu'il connaît",
+              "Accepter immédiatement que la morale est fausse sans aucune réflexion",
+              "Ignorer complètement la fable et ne plus jamais y repenser"
+            ],
+            "answer": 1,
+            "exp": "Se demander si une morale a des limites ou s'applique selon les situations est exactement la démarche critique proposée par la leçon."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi certaines morales anciennes peuvent-elles sembler « dépassées ou discutables » aujourd'hui, selon cette leçon ?",
+            "choices": [
+              "Les morales ne changent jamais de sens avec le temps",
+              "Parce que les valeurs et les façons de voir le monde évoluent avec les époques, ce qui peut rendre certains messages anciens moins adaptés à la sensibilité actuelle",
+              "Toutes les morales anciennes sont automatiquement fausses, sans exception",
+              "Il est impossible qu'une morale semble différente selon l'époque"
+            ],
+            "answer": 1,
+            "exp": "Les valeurs évoluent avec le temps, ce qui peut rendre certaines morales anciennes moins adaptées à la sensibilité d'aujourd'hui."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense qu'une histoire sans morale explicite écrite à la fin n'a « aucune leçon à offrir ». Quelle limite cette idée a-t-elle ?",
+            "choices": [
+              "Aucune limite, seules les morales explicitement écrites comptent",
+              "Elle ignore que de nombreuses histoires transmettent une réflexion sur des valeurs sans l'énoncer explicitement, à travers les choix et les conséquences vécues par les personnages",
+              "Toutes les histoires sans morale écrite sont ratées",
+              "Une morale ne peut exister que si elle est écrite mot pour mot à la fin du texte"
+            ],
+            "answer": 1,
+            "exp": "Une morale peut se dégager implicitement des choix et conséquences des personnages, sans être forcément énoncée explicitement."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Deux élèves discutent de la morale d'un même conte et arrivent à des interprétations légèrement différentes sur le message principal. Que peut-on en conclure, selon cette leçon ?",
+            "choices": [
+              "L'un des deux élèves a forcément totalement tort",
+              "Chacun peut avoir une interprétation ou une opinion différente sur un même texte, et cet échange enrichit la réflexion de chacun",
+              "Un texte ne peut avoir qu'une seule interprétation possible, sans exception",
+              "Discuter d'une morale ne sert jamais à rien"
+            ],
+            "answer": 1,
+            "exp": "La leçon souligne que des interprétations différentes sur une même morale peuvent coexister et enrichir la réflexion de chacun."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Observer les récompenses et les punitions des personnages aide souvent à comprendre la morale d'une histoire.",
+            "answer": true,
+            "exp": "La leçon explique que les conséquences vécues par les personnages révèlent souvent le message moral de l'histoire."
           }
         ]
       },
