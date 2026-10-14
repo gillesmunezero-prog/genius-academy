@@ -4388,8 +4388,34 @@ metaSubj[track] = ids;
 });
 saveData(DATA);
 };
+
+/* ---------- Remise a zero ponctuelle : maths et francais CE1/CM1 ont ete entierement
+   reecrits (memes identifiants de lecon, contenu different), donc les coches "terminee"
+   existantes ne correspondent plus a rien. Applique une seule fois par profil (marque dans
+   progressMeta), puis synchronise vers le cloud. ---------- */
+GT.applyCE1CM1ProgressReset = function(){
+var RESET_FLAG = '_resetCE1CM1MathsFr20261014';
+var changed = false;
+(DATA.profiles||[]).forEach(function(p){
+if (!p.progressMeta) p.progressMeta = {};
+if (p.progressMeta[RESET_FLAG]) return;
+['maths','francais'].forEach(function(subj){
+['CE1','CM1'].forEach(function(track){
+if (p.progress && p.progress[subj] && Array.isArray(p.progress[subj][track])){
+p.progress[subj][track] = p.progress[subj][track].map(function(){ return false; });
+}
+});
+});
+p.progressMeta[RESET_FLAG] = true;
+changed = true;
+});
+if (changed) saveData(DATA);
+return changed;
+};
+
 document.addEventListener('gt:curriculum-loaded', function(){
 try { DATA.profiles.forEach(function(p){ GT.reconcileProgressByIds(p); }); } catch(e){ console.warn('reconcile error', e); }
+try { GT.applyCE1CM1ProgressReset(); } catch(e){ console.warn('reset CE1/CM1 error', e); }
 });
 console.log('GT v51 curriculum version + progress reconciliation loaded');
 })();
@@ -5429,6 +5455,12 @@ var p = doc.data();
 var idx = DATA.profiles.findIndex(function(x){ return x.id===p.id; });
 if (idx>=0) DATA.profiles[idx]=p; else DATA.profiles.push(p);
 localStorage.setItem(STORAGE_KEY, JSON.stringify(DATA));
+try {
+if (GT.applyCE1CM1ProgressReset()){
+var resetP = DATA.profiles.find(function(x){ return x.id===p.id; });
+if (resetP) self.pushProfile(resetP);
+}
+} catch(e){ console.warn('reset CE1/CM1 error', e); }
 var b1=document.getElementById('btnSignOut'), b2=document.getElementById('btnParentSpace'), b3=document.getElementById('btnSwitchProfile');
 if (b1) b1.style.display='inline-block';
 if (b2) b2.style.display='none';
@@ -5469,6 +5501,7 @@ var idx = DATA.profiles.findIndex(function(p){ return p.id===doc.id; });
 if (idx>=0) DATA.profiles[idx] = cloudP; else DATA.profiles.push(cloudP);
 });
 localStorage.setItem(STORAGE_KEY, JSON.stringify(DATA));
+try { GT.applyCE1CM1ProgressReset(); } catch(e){ console.warn('reset CE1/CM1 error', e); }
 renderProfiles();
 self.pushAllProfiles();
 return self.pullMessages();
