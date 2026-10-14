@@ -21916,6 +21916,177 @@
             ],
             "answer": 1,
             "exp": "Contrairement à certains compléments (de lieu, de temps) qui se déplacent facilement, le sujet est généralement moins mobile en français : son déplacement donne souvent une phrase peu naturelle, ce qui aide à le distinguer des autres éléments de la phrase."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quelles sont des manipulations syntaxiques utiles pour analyser une phrase ?",
+            "choices": [
+              "La lecture et l'écriture",
+              "Le déplacement, la suppression et la substitution",
+              "Le coloriage et le dessin",
+              "La mémorisation et la récitation"
+            ],
+            "answer": 1,
+            "exp": "Le déplacement, la suppression et la substitution sont les manipulations syntaxiques de base pour analyser une phrase."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans « Le chat dort sur le tapis », peut-on déplacer « sur le tapis » en début de phrase sans la rendre fausse ?",
+            "choices": [
+              "Non, c'est totalement impossible",
+              "Oui : « Sur le tapis, le chat dort » reste parfaitement correct",
+              "Seulement si on supprime en même temps le sujet de la phrase",
+              "Cela rend toujours la phrase incorrecte, sans exception"
+            ],
+            "answer": 1,
+            "exp": "« Sur le tapis, le chat dort » reste correct, ce qui montre que ce groupe est mobile, donc non essentiel à la structure de base."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « Hier, mes parents ont acheté une voiture », quel groupe peut être facilement déplacé ou supprimé sans rendre la phrase incorrecte ?",
+            "choices": [
+              "Mes parents",
+              "Ont acheté",
+              "Hier",
+              "Une voiture"
+            ],
+            "answer": 2,
+            "exp": "« Hier » peut être déplacé ou supprimé sans rendre la phrase incorrecte, contrairement au sujet, au verbe ou au complément d'objet."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans la phrase « Le matin, les élèves rangent leurs affaires dans leur casier », quel groupe pourrait être supprimé sans rendre la phrase grammaticalement incorrecte ?",
+            "choices": [
+              "Les élèves",
+              "Rangent",
+              "Le matin",
+              "Leurs affaires"
+            ],
+            "answer": 2,
+            "exp": "« Le matin » peut être supprimé (« Les élèves rangent leurs affaires dans leur casier ») sans rendre la phrase incorrecte, contrairement au sujet, au verbe ou au complément d'objet."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi les manipulations syntaxiques (déplacement, suppression, substitution) sont-elles utiles pour analyser une phrase, plutôt que de simplement deviner le rôle de chaque mot ?",
+            "choices": [
+              "Ce n'est jamais utile, deviner suffit toujours amplement",
+              "Parce qu'elles permettent de tester concrètement le rôle d'un groupe de mots plutôt que de se fier uniquement à une impression, ce qui rend l'analyse plus fiable et vérifiable",
+              "Parce que ces manipulations changent toujours le sens profond de la phrase",
+              "Parce qu'il est strictement interdit de modifier une phrase pour l'analyser"
+            ],
+            "answer": 1,
+            "exp": "Les manipulations testent concrètement le rôle d'un groupe de mots, rendant l'analyse grammaticale plus fiable qu'une simple impression."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève essaie de déplacer le sujet « les enfants » dans « Les enfants jouent dans la cour » en le mettant à la fin : « Jouent dans la cour les enfants ». Que peut-on observer ?",
+            "choices": [
+              "La phrase reste parfaitement naturelle et correcte en français courant",
+              "Ce déplacement rend la phrase étrange et peu naturelle, ce qui confirme que le sujet est un élément moins « mobile » que certains compléments de temps ou de lieu",
+              "Le sujet est toujours l'élément le plus facile à déplacer dans une phrase",
+              "Cette manipulation est en réalité impossible à tester sur une phrase"
+            ],
+            "answer": 1,
+            "exp": "Le déplacement du sujet en fin de phrase crée une formulation peu naturelle, ce qui confirme qu'il est moins mobile que certains compléments circonstanciels."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un groupe de mots qui peut être déplacé ou supprimé sans rendre la phrase incorrecte est généralement moins essentiel à la structure de base de la phrase.",
+            "answer": true,
+            "exp": "C'est le principe des manipulations syntaxiques : la mobilité d'un groupe indique souvent son caractère moins essentiel."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Le sujet et le verbe d'une phrase simple peuvent toujours être supprimés sans rendre la phrase incorrecte.",
+            "answer": false,
+            "exp": "Au contraire, le sujet et le verbe sont généralement les éléments essentiels d'une phrase, difficiles à supprimer sans la rendre incorrecte."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "L'ensemble formé par le verbe et ses compléments éventuels s'appelle le groupe : (un mot)",
+            "answer": "verbal",
+            "exp": "Le groupe verbal (GV) désigne le verbe, seul ou accompagné de ses compléments, qui complète le groupe sujet dans une phrase simple."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève teste si le groupe « dans sa chambre » peut être remplacé par le pronom « y » dans la phrase « Léa lit dans sa chambre », obtenant « Léa y lit ». Que montre cette substitution réussie ?",
+            "choices": [
+              "Rien du tout, la substitution par un pronom n'a jamais aucune utilité",
+              "Que « dans sa chambre » fonctionne comme un complément de lieu, remplaçable par le pronom « y », ce qui confirme son rôle dans la phrase",
+              "Que la phrase devient incorrecte après cette substitution",
+              "Que « dans sa chambre » est en réalité le sujet de la phrase"
+            ],
+            "answer": 1,
+            "exp": "La substitution réussie par le pronom « y » confirme que ce groupe fonctionne comme un complément de lieu dans la phrase."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la suppression d'un groupe de mots est-elle une manipulation particulièrement utile pour distinguer les éléments essentiels d'une phrase simple des éléments plus facultatifs ?",
+            "choices": [
+              "La suppression n'a jamais aucune utilité pour analyser une phrase",
+              "Parce que si la phrase reste grammaticalement correcte après la suppression d'un groupe, cela montre que ce groupe n'était pas indispensable à la structure de base de la phrase",
+              "Il est toujours interdit de supprimer un groupe de mots pour analyser une phrase",
+              "La suppression rend systématiquement une phrase incorrecte, quel que soit le groupe supprimé"
+            ],
+            "answer": 1,
+            "exp": "Si une phrase reste correcte après suppression d'un groupe, cela indique que ce groupe n'était pas indispensable à sa structure de base."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense qu'un groupe de mots qui peut être déplacé est automatiquement inutile et sans importance dans une phrase. Que penser de cette idée ?",
+            "choices": [
+              "Il a raison, un groupe déplaçable est toujours totalement inutile",
+              "Son idée est trop catégorique : un groupe déplaçable (comme un complément circonstanciel) peut rester important pour le sens précis de la phrase, même s'il n'est pas grammaticalement indispensable à sa structure de base",
+              "Un groupe déplaçable ne peut jamais apporter d'information importante",
+              "Seuls les groupes non déplaçables peuvent avoir une quelconque importance dans une phrase"
+            ],
+            "answer": 1,
+            "exp": "Un groupe mobile n'est pas pour autant sans importance pour le sens : il peut enrichir la phrase même s'il n'est pas structurellement indispensable."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans la phrase « Patiemment, le vieux pêcheur attendait une touche », quel groupe serait le plus facilement déplaçable ou supprimable sans rendre la phrase incorrecte ?",
+            "choices": [
+              "Le vieux pêcheur",
+              "Attendait",
+              "Patiemment",
+              "Une touche"
+            ],
+            "answer": 2,
+            "exp": "« Patiemment » est un complément circonstanciel de manière, mobile et supprimable sans rendre la phrase incorrecte."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi dit-on que l'analyse de la phrase simple au CM1 va au-delà de la simple identification du sujet et du verbe déjà connue auparavant ?",
+            "choices": [
+              "L'analyse de phrase au CM1 reste exactement identique à celle des années précédentes",
+              "Parce qu'elle inclut désormais l'identification précise des différents compléments qui enrichissent le groupe verbal, en plus du sujet et du verbe déjà connus",
+              "Le sujet et le verbe ne sont plus du tout étudiés au CM1",
+              "Seuls les compléments sont étudiés au CM1, jamais le sujet ni le verbe"
+            ],
+            "answer": 1,
+            "exp": "L'approfondissement au CM1 consiste à identifier précisément les différents compléments, en plus du sujet et du verbe déjà maîtrisés."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Le groupe sujet (GS) et le groupe verbal (GV) forment ensemble la structure de base d'une phrase simple.",
+            "answer": true,
+            "exp": "C'est la définition de la structure de base d'une phrase simple présentée dans cette leçon."
           }
         ]
       },
@@ -22004,6 +22175,177 @@
             ],
             "answer": 1,
             "exp": "Le sujet n'est pas toujours le premier mot de la phrase : il faut utiliser la question « qui est-ce qui + verbe » pour le retrouver correctement, ce qui donne ici « le lapin », pas « que » qui est un simple mot interrogatif."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans « Ainsi parlait le sage », où se trouve le sujet par rapport au verbe ?",
+            "choices": [
+              "Avant le verbe",
+              "Après le verbe (sujet inversé)",
+              "Il n'y a pas de sujet dans cette phrase",
+              "Le sujet est caché dans un autre mot de la phrase"
+            ],
+            "answer": 1,
+            "exp": "Dans « Ainsi parlait le sage », le sujet « le sage » est placé après le verbe « parlait » : c'est un sujet inversé."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Quelle question permet de retrouver le sujet, même s'il est inversé après le verbe ?",
+            "choices": [
+              "Où est-ce que ?",
+              "Qui est-ce qui + verbe ?",
+              "Quand est-ce que ?",
+              "Comment ?"
+            ],
+            "answer": 1,
+            "exp": "La question « qui est-ce qui + verbe ? » permet de retrouver le sujet, quelle que soit sa position dans la phrase."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « Le vieux chat gris, qui dormait depuis des heures sur le canapé, se réveilla soudainement », quel est le sujet du verbe « se réveilla » ?",
+            "choices": [
+              "Des heures",
+              "Le canapé",
+              "Le vieux chat gris",
+              "Soudainement"
+            ],
+            "answer": 2,
+            "exp": "Malgré la distance avec le verbe « se réveilla », le sujet reste « le vieux chat gris », séparé par une proposition insérée."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « Peut-être viendra-t-il demain », quel est le sujet du verbe « viendra », malgré l'inversion typique d'une tournure interrogative ?",
+            "choices": [
+              "Peut-être",
+              "Il",
+              "Demain",
+              "Viendra"
+            ],
+            "answer": 1,
+            "exp": "Le sujet « il » est inversé après le verbe « viendra », typique de cette tournure, mais reste bien le sujet identifiable par la question « qui est-ce qui viendra ? »."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la méthode de la question « qui est-ce qui + verbe » reste-t-elle fiable même pour un sujet inversé ou éloigné du verbe ?",
+            "choices": [
+              "Elle n'est fiable que pour les sujets placés juste avant le verbe, jamais dans les autres cas",
+              "Parce que cette question cible directement le rôle du sujet (celui qui fait l'action), peu importe sa position physique dans la phrase",
+              "Parce que les sujets inversés n'existent en réalité jamais dans la langue française",
+              "Parce qu'il faut toujours deviner le sujet au hasard, sans jamais poser de question précise"
+            ],
+            "answer": 1,
+            "exp": "La question cible le rôle fonctionnel du sujet, indépendamment de sa position physique dans la phrase, ce qui la rend fiable dans tous les cas."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Face à « Que mange le lapin ? », un élève répond que le sujet est « que », car c'est le premier mot de la phrase. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, le sujet est toujours le premier mot d'une phrase",
+              "Il confond la position (premier mot) avec le vrai rôle de sujet : en posant la question « qui est-ce qui mange ? », la réponse est « le lapin », le vrai sujet, même placé après le verbe",
+              "« Que » est toujours le sujet des phrases interrogatives, sans exception",
+              "Cette phrase ne contient en réalité aucun sujet identifiable"
+            ],
+            "answer": 1,
+            "exp": "Confondre la position (premier mot) avec le rôle réel de sujet est une erreur classique ; seule la question « qui est-ce qui + verbe » révèle le vrai sujet."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un sujet inversé se place après le verbe, notamment dans certaines phrases interrogatives ou incises de dialogue.",
+            "answer": true,
+            "exp": "C'est exactement la définition du sujet inversé donnée dans cette leçon, illustrée par des exemples comme « dit le loup »."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un sujet éloigné du verbe par plusieurs groupes de mots cesse d'être le sujet de ce verbe.",
+            "answer": false,
+            "exp": "Au contraire, le sujet reste lié au verbe même s'il en est séparé par d'autres groupes de mots insérés dans la phrase."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Un sujet placé après le verbe, plutôt qu'avant comme d'habitude, est appelé sujet : (un mot)",
+            "answer": "inverse",
+            "exp": "Le sujet inversé est ce terme technique désignant un sujet placé après le verbe qu'il commande."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans un dialogue, on lit : « — Je reviendrai bientôt, murmura la vieille dame. » Quel est le sujet du verbe « murmura » ?",
+            "choices": [
+              "Je",
+              "Bientôt",
+              "La vieille dame",
+              "Reviendrai"
+            ],
+            "answer": 2,
+            "exp": "Dans cette incise de dialogue, le sujet « la vieille dame » est inversé, placé après le verbe « murmura »."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il utile, face à une phrase complexe avec un sujet très éloigné du verbe, de repérer d'abord le verbe avant de chercher le sujet ?",
+            "choices": [
+              "Il n'est jamais utile de repérer le verbe avant de chercher le sujet",
+              "Parce qu'identifier d'abord le verbe (qui change selon le temps et la personne) permet ensuite de poser correctement la question « qui est-ce qui + ce verbe » pour retrouver le sujet, même éloigné",
+              "Le verbe n'a jamais aucun rapport avec l'identification du sujet d'une phrase",
+              "Il faut toujours chercher le sujet avant même de savoir où se trouve le verbe"
+            ],
+            "answer": 1,
+            "exp": "Repérer d'abord le verbe permet de poser correctement la question qui révèle le sujet, même si celui-ci est éloigné dans la phrase."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense qu'un sujet composé de plusieurs éléments reliés (par exemple « Léa et son frère ») ne peut jamais être retrouvé par la méthode de la question « qui est-ce qui ». Que penser de cette idée ?",
+            "choices": [
+              "Il a raison, cette méthode ne fonctionne jamais pour les sujets composés",
+              "Son idée est fausse : la question « qui est-ce qui + verbe ? » fonctionne aussi pour un sujet composé, la réponse donnant alors l'ensemble des éléments reliés (« Léa et son frère »)",
+              "Un sujet composé de plusieurs éléments n'existe en réalité jamais en français",
+              "Il est impossible qu'un sujet soit composé de plusieurs éléments reliés entre eux"
+            ],
+            "answer": 1,
+            "exp": "La méthode de la question reste valable même pour un sujet composé : elle révèle alors l'ensemble des éléments reliés formant ce sujet."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans la phrase « Dans le ciel gris et menaçant volaient de grands oiseaux noirs », quel est le sujet du verbe « volaient » ?",
+            "choices": [
+              "Le ciel gris et menaçant",
+              "De grands oiseaux noirs",
+              "Dans le ciel",
+              "Gris et menaçant"
+            ],
+            "answer": 1,
+            "exp": "Malgré l'inversion poétique de cette phrase, le sujet du verbe « volaient » est « de grands oiseaux noirs », identifiable par la question « qui est-ce qui volait ? »."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Pourquoi la reconnaissance des sujets inversés est-elle particulièrement utile pour la lecture de textes littéraires, notamment de dialogues ou de textes au style soutenu ?",
+            "choices": [
+              "Les sujets inversés n'apparaissent en réalité jamais dans les textes littéraires",
+              "Parce que l'inversion du sujet est une construction fréquente dans les incises de dialogue et le style littéraire soutenu, et sa reconnaissance évite les erreurs de compréhension sur qui fait l'action",
+              "La reconnaissance du sujet inversé n'a aucune utilité particulière pour la lecture de textes littéraires",
+              "Seuls les textes scientifiques utilisent des sujets inversés, jamais les textes littéraires"
+            ],
+            "answer": 1,
+            "exp": "L'inversion du sujet est fréquente en style littéraire soutenu et dans les incises de dialogue ; la reconnaître évite les erreurs de compréhension sur qui fait l'action."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Pour retrouver un sujet, la méthode consiste à identifier d'abord le verbe, puis à poser la question « qui est-ce qui + verbe ? ».",
+            "answer": true,
+            "exp": "C'est exactement la méthode générale présentée dans cette leçon, valable quelle que soit la position du sujet."
           }
         ]
       },
@@ -22092,6 +22434,177 @@
             ],
             "answer": 1,
             "exp": "La position dans la phrase ne suffit pas à déterminer le type de complément : il faut regarder le SENS (quand ? où ? comment ? ou quoi/qui ?) et tester la mobilité. « Le soir » répond à « quand » et se déplace facilement : c'est un complément circonstanciel, pas un complément d'objet."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans « Tom lit un livre le soir », quel groupe est un complément circonstanciel de temps ?",
+            "choices": [
+              "Tom",
+              "Lit",
+              "Un livre",
+              "Le soir"
+            ],
+            "answer": 3,
+            "exp": "« Le soir » répond à la question « quand ? » et constitue un complément circonstanciel de temps."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Pourquoi « une pomme » dans « Léa mange une pomme » est-il un complément d'objet plutôt que circonstanciel ?",
+            "choices": [
+              "Parce qu'il est très facile à déplacer n'importe où dans la phrase",
+              "Parce qu'il est directement lié au sens du verbe « manger » (ce qui est mangé), et difficile à déplacer sans rendre la phrase bizarre",
+              "Parce qu'il répond précisément à la question « où ? »",
+              "Parce qu'il est toujours supprimable sans aucun problème de sens"
+            ],
+            "answer": 1,
+            "exp": "Un complément d'objet est directement lié au sens du verbe, ce qui le rend difficile à déplacer sans rendre la phrase étrange."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « Les enfants jouent au ballon dans la cour », identifie le complément circonstanciel de lieu.",
+            "choices": [
+              "Les enfants",
+              "Au ballon",
+              "Dans la cour",
+              "Jouent"
+            ],
+            "answer": 2,
+            "exp": "« Dans la cour » répond à la question « où ? » et constitue le complément circonstanciel de lieu de cette phrase."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans la phrase « Elle prépare le repas rapidement dans la cuisine », identifie le complément circonstanciel de manière.",
+            "choices": [
+              "Elle",
+              "Le repas",
+              "Rapidement",
+              "Dans la cuisine"
+            ],
+            "answer": 2,
+            "exp": "« Rapidement » répond à la question « comment ? » et constitue le complément circonstanciel de manière de cette phrase."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un complément circonstanciel est-il généralement plus facile à déplacer ou supprimer qu'un complément d'objet ?",
+            "choices": [
+              "Ce n'est jamais le cas, les deux sont toujours exactement aussi mobiles l'un que l'autre",
+              "Parce que le complément circonstanciel apporte une information complémentaire mais facultative (où, quand, comment), alors que le complément d'objet est souvent indispensable pour que le verbe ait un sens complet",
+              "Parce que le complément circonstanciel est toujours plus court que le complément d'objet",
+              "Parce que le complément d'objet n'existe en réalité jamais vraiment dans une phrase simple"
+            ],
+            "answer": 1,
+            "exp": "Le caractère facultatif du complément circonstanciel (information sur les circonstances) explique sa plus grande mobilité par rapport au complément d'objet, souvent indispensable au sens du verbe."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense que « le soir » dans « Il mange une pomme le soir » est un complément d'objet, « car il est placé juste après le verbe dans certains cas ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, la position après le verbe suffit toujours à définir un complément d'objet",
+              "Il confond la simple position avec le vrai rôle : « le soir » répond à la question « quand ? » et peut facilement se déplacer, ce qui en fait un complément circonstanciel de temps, pas un complément d'objet",
+              "Un complément d'objet ne peut en réalité jamais être placé après le verbe",
+              "« Le soir » est en réalité toujours un complément circonstanciel de lieu, jamais de temps"
+            ],
+            "answer": 1,
+            "exp": "La position seule ne suffit pas à identifier la fonction d'un groupe : il faut tester sa mobilité et la question à laquelle il répond."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un complément circonstanciel de lieu répond à la question « où ? ».",
+            "answer": true,
+            "exp": "C'est exactement la définition du complément circonstanciel de lieu, l'un des trois types présentés dans cette leçon avec le temps et la manière."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un complément d'objet est généralement aussi facile à déplacer qu'un complément circonstanciel.",
+            "answer": false,
+            "exp": "Au contraire, un complément d'objet est souvent plus difficile à déplacer sans rendre la phrase bizarre, contrairement à un complément circonstanciel, plus mobile."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Le complément qui donne une information sur les circonstances (où, quand, comment) s'appelle le complément : (un mot)",
+            "answer": "circonstanciel",
+            "exp": "Le complément circonstanciel désigne précisément ce type de complément qui apporte une information sur les circonstances d'une action."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève teste la phrase « Une pomme, Léa mange dans le jardin » pour vérifier si « une pomme » est mobile. Que révèle le caractère bizarre de cette formulation ?",
+            "choices": [
+              "Rien du tout, ce test n'a jamais aucune utilité pour l'analyse grammaticale",
+              "Que « une pomme » est moins mobile qu'un complément circonstanciel, ce qui confirme son rôle de complément d'objet, directement lié au sens du verbe",
+              "Que la phrase de départ « Léa mange une pomme dans le jardin » est en réalité incorrecte",
+              "Que « une pomme » est en réalité un complément circonstanciel de lieu"
+            ],
+            "answer": 1,
+            "exp": "Le caractère étrange de ce déplacement confirme que « une pomme » est moins mobile, ce qui est typique d'un complément d'objet."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la classification des compléments circonstanciels par type (lieu, temps, manière) est-elle utile, même sans toujours utiliser ce vocabulaire technique ?",
+            "choices": [
+              "Cette classification n'a jamais aucune utilité pratique pour comprendre une phrase",
+              "Parce qu'identifier le TYPE précis d'information apportée (où, quand, comment) aide à mieux comprendre le rôle exact de chaque groupe dans la phrase, au-delà de la simple étiquette « complément circonstanciel »",
+              "Seul le vocabulaire technique compte, la compréhension du sens n'a jamais d'importance",
+              "Il n'existe en réalité qu'un seul type de complément circonstanciel possible"
+            ],
+            "answer": 1,
+            "exp": "Identifier le type précis d'information (lieu, temps, manière) affine la compréhension du rôle exact de chaque complément circonstanciel dans la phrase."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense que tout groupe de mots placé après un complément d'objet est automatiquement aussi un complément d'objet. Quelle limite cette idée a-t-elle ?",
+            "choices": [
+              "Aucune limite, la position après un complément d'objet garantit toujours la même fonction",
+              "Elle néglige que la fonction d'un groupe dépend de son sens et de sa mobilité (test de déplacement/suppression), pas uniquement de sa position par rapport à un autre complément déjà identifié",
+              "Un seul type de complément peut exister après un verbe, jamais plusieurs à la suite",
+              "Il est impossible qu'un complément circonstanciel suive un complément d'objet dans une même phrase"
+            ],
+            "answer": 1,
+            "exp": "La fonction d'un groupe se détermine par son sens et sa mobilité testée, pas simplement par sa position relative à un autre complément."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans la phrase « Le menuisier fabrique une table avec soin dans son atelier », combine les trois compléments présents : lequel est le complément d'objet ?",
+            "choices": [
+              "Avec soin",
+              "Dans son atelier",
+              "Une table",
+              "Le menuisier"
+            ],
+            "answer": 2,
+            "exp": "« Une table » est directement liée au sens du verbe « fabriquer » (ce qui est fabriqué) : c'est le complément d'objet, distinct des deux compléments circonstanciels de manière et de lieu."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un complément circonstanciel de manière répond généralement à la question « comment ? ».",
+            "answer": true,
+            "exp": "C'est exactement la définition du complément circonstanciel de manière présentée dans cette leçon."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans « Au printemps, les arbres fleurissent dans le verger », combien de compléments circonstanciels peux-tu identifier, et de quels types ?",
+            "choices": [
+              "Un seul complément circonstanciel, de lieu uniquement",
+              "Deux compléments circonstanciels : « au printemps » (temps) et « dans le verger » (lieu)",
+              "Aucun complément circonstanciel dans cette phrase",
+              "Trois compléments circonstanciels différents"
+            ],
+            "answer": 1,
+            "exp": "« Au printemps » répond à « quand ? » (temps) et « dans le verger » répond à « où ? » (lieu) : deux compléments circonstanciels de types différents."
           }
         ]
       },
@@ -22180,6 +22693,177 @@
             ],
             "answer": 1,
             "exp": "La présence de la préposition « à » devant « sa grand-mère » signale clairement un complément d'objet INDIRECT (COI), et non un COD qui, par définition, se construit toujours directement, sans aucune préposition."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans « Léa regarde la télévision », quel est le COD ?",
+            "choices": [
+              "Léa",
+              "Regarde",
+              "La télévision",
+              "Il n'y a pas de COD dans cette phrase"
+            ],
+            "answer": 2,
+            "exp": "« La télévision » répond à la question « Léa regarde quoi ? » sans préposition : c'est le COD."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans « Il pense à ses vacances », quel est le COI ?",
+            "choices": [
+              "Il",
+              "Pense",
+              "À ses vacances",
+              "Il n'y a pas de COI dans cette phrase"
+            ],
+            "answer": 2,
+            "exp": "« À ses vacances » est introduit par la préposition « à » : c'est le complément d'objet indirect (COI)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « Le professeur explique la leçon aux élèves », identifie le COD et le COI.",
+            "choices": [
+              "COD : aux élèves ; COI : la leçon",
+              "COD : la leçon ; COI : aux élèves",
+              "Il n'y a ni COD ni COI dans cette phrase",
+              "COD et COI désignent exactement le même groupe de mots"
+            ],
+            "answer": 1,
+            "exp": "« La leçon » (sans préposition) est le COD, « aux élèves » (avec la préposition « à ») est le COI."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « Elle prête son stylo à son voisin », identifie précisément le COD et le COI de cette phrase.",
+            "choices": [
+              "COD : à son voisin ; COI : son stylo",
+              "COD : son stylo ; COI : à son voisin",
+              "Il n'y a ni COD ni COI dans cette phrase",
+              "Les deux groupes sont des compléments circonstanciels"
+            ],
+            "answer": 1,
+            "exp": "« Son stylo » (sans préposition, répond à « prête quoi ? ») est le COD ; « à son voisin » (avec préposition, répond à « prête à qui ? ») est le COI."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la présence ou l'absence d'une préposition (à, de) directement devant le complément est-elle un bon indice pour distinguer COD et COI ?",
+            "choices": [
+              "Ce n'est jamais un bon indice fiable pour cette distinction",
+              "Parce que le COD se construit directement après le verbe sans préposition, alors que le COI se construit avec une préposition (à, de) qui introduit le lien entre le verbe et son complément",
+              "Parce que les prépositions n'ont en réalité aucun rôle dans la construction des phrases",
+              "Parce que tous les compléments d'objet ont toujours systématiquement une préposition devant eux"
+            ],
+            "answer": 1,
+            "exp": "La présence d'une préposition (à, de) directement devant le complément est précisément ce qui distingue structurellement le COI du COD."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève, dans « Elle téléphone à sa grand-mère », identifie « à sa grand-mère » comme un COD. Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, c'est effectivement bien un COD dans cette phrase",
+              "Il a oublié de vérifier la préposition : « à sa grand-mère » est introduit par la préposition « à », ce qui en fait un COI, pas un COD qui se construit sans préposition",
+              "Il fallait dire que ce groupe n'est ni un COD ni un COI",
+              "Un COD peut parfois être introduit par une préposition, comme dans ce cas précis"
+            ],
+            "answer": 1,
+            "exp": "Oublier de vérifier la présence de la préposition « à » mène à confondre un COI avec un COD, alors que leur distinction repose justement sur ce critère."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Le COD se construit directement après le verbe, sans préposition.",
+            "answer": true,
+            "exp": "C'est exactement la définition du complément d'objet direct (COD), par opposition au COI qui nécessite une préposition."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un même verbe ne peut jamais avoir à la fois un COD et un COI dans la même phrase.",
+            "answer": false,
+            "exp": "Au contraire, un verbe comme « offrir » peut avoir les deux en même temps : « Léa offre un cadeau (COD) à sa sœur (COI) »."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "Le complément d'objet relié au verbe par une préposition comme « à » ou « de » s'appelle le complément d'objet : (un mot)",
+            "answer": "indirect",
+            "exp": "Le complément d'objet indirect (COI) est précisément ce complément introduit par une préposition, par opposition au complément d'objet direct (COD)."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans la phrase « Le chef cuisinier prépare un gâteau pour ses invités », combien de COD et de COI peux-tu identifier avec certitude ?",
+            "choices": [
+              "Un COD (« un gâteau ») et aucun COI, car « pour ses invités » n'est pas introduit par « à » ou « de »",
+              "Aucun COD ni COI dans cette phrase",
+              "Deux COD et aucun COI",
+              "Un COI (« un gâteau ») et aucun COD"
+            ],
+            "answer": 0,
+            "exp": "« Un gâteau » est le COD (sans préposition) ; « pour ses invités » n'étant pas introduit par « à » ou « de », ce n'est pas un COI typique au sens strict de cette leçon."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi un même verbe comme « offrir » peut-il avoir à la fois un COD et un COI dans une même phrase, comme dans « Léa offre un cadeau à sa sœur » ?",
+            "choices": [
+              "Ce n'est en réalité jamais possible, un verbe ne peut avoir qu'un seul complément à la fois",
+              "Parce que le verbe « offrir » répond à la fois à « offre quoi ? » (un cadeau, COD) et à « offre à qui ? » (à sa sœur, COI), deux questions différentes qui peuvent coexister dans la même phrase",
+              "Le COD et le COI désignent en réalité toujours le même groupe de mots dans une phrase",
+              "Seuls certains verbes rares peuvent théoriquement avoir ces deux compléments, jamais un verbe courant comme « offrir »"
+            ],
+            "answer": 1,
+            "exp": "Un même verbe peut répondre simultanément aux deux questions (« quoi ? » et « à qui ? »), ce qui permet la coexistence d'un COD et d'un COI dans une même phrase."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense que tout groupe introduit par une préposition est automatiquement un COI, sans aucune exception. Quelle limite cette idée a-t-elle ?",
+            "choices": [
+              "Aucune limite, tout groupe avec une préposition est toujours un COI",
+              "Elle néglige qu'un groupe introduit par une préposition peut aussi être un complément circonstanciel (par exemple « dans le jardin » répond à « où ? », pas à « à/de qui/quoi ? »), pas uniquement un COI",
+              "Il n'existe en réalité aucun autre type de complément prépositionnel que le COI",
+              "Un complément circonstanciel ne peut jamais être introduit par une préposition"
+            ],
+            "answer": 1,
+            "exp": "Une préposition ne garantit pas automatiquement un COI : un complément circonstanciel peut aussi être introduit par une préposition (dans, sur...), sans être un COI."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans « Le vétérinaire soigne les animaux avec attention », quel est le COD, et pourquoi « avec attention » n'en est-il pas un ?",
+            "choices": [
+              "« Les animaux » est le COD (répond à « soigne quoi/qui ? » sans préposition) ; « avec attention » est un complément circonstanciel de manière, introduit par « avec » et répondant à « comment ? »",
+              "« Avec attention » est le COD, car il est placé juste après le complément d'objet",
+              "Il n'y a aucun COD dans cette phrase, seulement des compléments circonstanciels",
+              "« Les animaux » et « avec attention » sont tous les deux des COI"
+            ],
+            "answer": 0,
+            "exp": "« Les animaux » répond à « soigne qui ? » sans préposition (COD), tandis que « avec attention » répond à « comment ? » : c'est un complément circonstanciel de manière, pas un COI ni un COD."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Le COD répond à la question « qui ? » ou « quoi ? » posée directement après le verbe, sans préposition.",
+            "answer": true,
+            "exp": "C'est exactement la méthode de repérage du COD présentée dans cette leçon."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans « Les spectateurs applaudissent le chanteur », quelle question permet de retrouver le COD « le chanteur » ?",
+            "choices": [
+              "Applaudissent où ?",
+              "Applaudissent quand ?",
+              "Applaudissent qui ?",
+              "Applaudissent comment ?"
+            ],
+            "answer": 2,
+            "exp": "La question « applaudissent qui ? » donne directement la réponse « le chanteur », sans préposition : c'est le COD."
           }
         ]
       },
@@ -22268,6 +22952,177 @@
             ],
             "answer": 1,
             "exp": "« Sujet » désigne un rôle dans la phrase (une fonction), pas une catégorie de mot (une nature) : il ne faut jamais confondre ces deux notions, qui répondent à des questions différentes sur un même mot ou groupe de mots."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "La nature d'un mot change-t-elle selon la phrase où il est utilisé ?",
+            "choices": [
+              "Oui, elle change à chaque phrase différente",
+              "Non, la nature d'un mot (nom, verbe, adjectif...) reste toujours la même, c'est sa fonction qui peut changer",
+              "La nature et la fonction désignent exactement la même chose",
+              "La nature ne concerne en réalité que les verbes"
+            ],
+            "answer": 1,
+            "exp": "La nature grammaticale d'un mot (nom, verbe, adjectif...) est fixe, contrairement à sa fonction qui dépend de la phrase."
+          },
+          {
+            "type": "qcm",
+            "kind": "practice",
+            "q": "Dans « Le chien court » et « Je vois le chien », que peut-on dire de la fonction de « le chien » ?",
+            "choices": [
+              "La fonction est toujours sujet dans les deux phrases",
+              "La fonction change : sujet dans la première phrase, complément d'objet direct dans la seconde",
+              "La fonction n'existe que dans la première phrase, pas dans la seconde",
+              "« Le chien » n'a en réalité aucune fonction dans ces deux phrases"
+            ],
+            "answer": 1,
+            "exp": "La fonction de « le chien » change selon la phrase : sujet dans la première, COD dans la seconde, bien que sa nature (groupe nominal) reste identique."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans « Léa aime lire » (nature de « Léa » : nom propre), quelle fonction occupe ce mot dans cette phrase ?",
+            "choices": [
+              "Complément d'objet",
+              "Sujet",
+              "Adjectif",
+              "Déterminant"
+            ],
+            "answer": 1,
+            "exp": "« Léa » occupe la fonction de sujet du verbe « aime » dans cette phrase."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Dans la phrase « Les élèves admirent ce tableau », quelle est la fonction du groupe nominal « ce tableau », sachant que sa nature est groupe nominal ?",
+            "choices": [
+              "Sujet du verbe admirer",
+              "Complément d'objet direct du verbe admirer",
+              "Complément circonstanciel de lieu",
+              "Déterminant du verbe"
+            ],
+            "answer": 1,
+            "exp": "« Ce tableau » occupe la fonction de complément d'objet direct, répondant à la question « admirent quoi ? », bien que sa nature reste groupe nominal."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi est-il important de distinguer nature et fonction, plutôt que de les confondre comme une seule et même notion ?",
+            "choices": [
+              "Ce n'est jamais important, les deux notions sont en réalité identiques",
+              "Parce que la nature répond à « qu'est-ce que c'est » (une information fixe sur le mot) alors que la fonction répond à « à quoi ça sert dans cette phrase » (une information qui dépend du contexte) : les confondre mène à des analyses grammaticales incorrectes",
+              "Parce que seule la nature compte vraiment en grammaire, jamais la fonction",
+              "Parce que seule la fonction compte vraiment en grammaire, jamais la nature"
+            ],
+            "answer": 1,
+            "exp": "Nature (fixe) et fonction (dépendante du contexte) répondent à deux questions différentes ; les confondre mène à des erreurs d'analyse grammaticale."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève dit que « sujet » est la nature du mot « chat » dans « le chat dort ». Quelle est son erreur ?",
+            "choices": [
+              "Il a raison, « sujet » est effectivement bien une nature grammaticale",
+              "Il confond nature et fonction : « sujet » est la FONCTION de « le chat » dans cette phrase, tandis que sa NATURE est « groupe nominal » (ou « nom commun » pour le mot chat seul)",
+              "« Chat » n'a en réalité ni nature ni fonction dans cette phrase",
+              "Nature et fonction sont deux mots différents pour désigner exactement la même chose"
+            ],
+            "answer": 1,
+            "exp": "Confondre « sujet » (une fonction) avec une nature grammaticale est l'erreur classique que cette leçon cherche à corriger."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "Un groupe nominal peut occuper différentes fonctions (sujet, complément d'objet, complément circonstanciel) selon la phrase où il apparaît.",
+            "answer": true,
+            "exp": "C'est précisément l'idée centrale de cette leçon : la nature (groupe nominal) reste fixe, mais la fonction varie selon le contexte."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "La fonction d'un mot est une information fixe qui ne dépend jamais du contexte de la phrase.",
+            "answer": false,
+            "exp": "Au contraire, c'est la nature qui est fixe ; la fonction, elle, dépend justement du contexte précis de la phrase."
+          },
+          {
+            "type": "text",
+            "kind": "practice",
+            "q": "La catégorie grammaticale fixe d'un mot (nom, verbe, adjectif...) s'appelle sa : (un mot)",
+            "answer": "nature",
+            "exp": "La nature grammaticale désigne cette catégorie fixe d'un mot, par opposition à sa fonction qui varie selon la phrase."
+          },
+          {
+            "type": "qcm",
+            "kind": "application",
+            "q": "Un élève analyse le mot « rapidement » dans deux phrases différentes et observe qu'il est toujours un adverbe (nature), mais qu'il occupe la fonction de complément circonstanciel de manière dans les deux cas. Que peut-on en conclure ?",
+            "choices": [
+              "Que nature et fonction sont toujours exactement identiques pour ce mot",
+              "Que, dans cet exemple précis, la fonction ne change pas non plus, mais que ce n'est pas toujours le cas pour tous les mots selon les phrases",
+              "Que « rapidement » n'a en réalité aucune nature grammaticale précise",
+              "Que les adverbes n'ont jamais de fonction dans une phrase"
+            ],
+            "answer": 1,
+            "exp": "Dans cet exemple, la fonction reste la même dans les deux phrases, mais cela n'est pas une règle générale : pour d'autres mots, la fonction peut varier d'une phrase à l'autre."
+          },
+          {
+            "type": "qcm",
+            "kind": "reasoning",
+            "q": "Pourquoi la question « quelle est la nature de ce mot ? » doit-elle toujours être posée séparément de la question « quelle est sa fonction dans cette phrase ? » ?",
+            "choices": [
+              "Il ne faut jamais poser ces deux questions, une seule suffit toujours amplement",
+              "Parce que ce sont deux questions de nature différente (l'une fixe et générale, l'autre dépendante du contexte précis), et les traiter ensemble risque de mener à une confusion entre les deux notions",
+              "Ces deux questions ont en réalité toujours exactement la même réponse",
+              "Seule la question sur la fonction a un intérêt réel, celle sur la nature n'en a aucun"
+            ],
+            "answer": 1,
+            "exp": "Séparer ces deux questions évite la confusion entre une information fixe (nature) et une information dépendante du contexte (fonction)."
+          },
+          {
+            "type": "qcm",
+            "kind": "error_analysis",
+            "q": "Un élève pense qu'un adjectif ne peut jamais occuper une fonction différente de « épithète », quelle que soit la phrase. Quelle limite cette idée a-t-elle ?",
+            "choices": [
+              "Aucune limite, un adjectif occupe toujours exactement la même fonction, sans exception",
+              "Elle est trop restrictive dans l'absolu : si un adjectif occupe souvent la fonction d'épithète, le raisonnement général de cette leçon rappelle que c'est toujours le contexte précis de la phrase qui déterminera la fonction exacte d'un mot",
+              "Les adjectifs n'ont en réalité jamais aucune fonction possible dans une phrase",
+              "La fonction d'épithète n'existe en réalité jamais pour les adjectifs"
+            ],
+            "answer": 1,
+            "exp": "Le principe général de la leçon (c'est le contexte qui détermine la fonction) invite à rester prudent plutôt que d'affirmer qu'un mot a toujours la même fonction, quelle que soit la phrase."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Dans les phrases « Le vent souffle fort » et « J'aime le vent frais du matin », quelle est la nature de « le vent » dans les deux cas, et sa fonction change-t-elle ?",
+            "choices": [
+              "La nature change (nom puis verbe), mais la fonction reste identique dans les deux phrases",
+              "La nature reste groupe nominal dans les deux cas, mais la fonction change : sujet dans la première phrase, complément d'objet direct dans la seconde",
+              "Ni la nature ni la fonction ne changent jamais entre ces deux phrases",
+              "La nature et la fonction changent toutes les deux entre ces deux phrases"
+            ],
+            "answer": 1,
+            "exp": "La nature (groupe nominal) reste constante, tandis que la fonction varie selon la phrase : sujet dans la première, complément d'objet direct dans la seconde."
+          },
+          {
+            "type": "vf",
+            "kind": "practice",
+            "q": "La nature d'un mot est une information fixe, alors que sa fonction dépend du contexte précis de la phrase.",
+            "answer": true,
+            "exp": "C'est le résumé exact de la distinction centrale présentée dans cette leçon entre nature et fonction."
+          },
+          {
+            "type": "qcm",
+            "kind": "challenge",
+            "q": "Un adjectif comme « grand » occupe la fonction d'épithète dans « un grand arbre ». Quelle est sa nature grammaticale, indépendamment de cette fonction ?",
+            "choices": [
+              "Nom",
+              "Adjectif",
+              "Verbe",
+              "Adverbe"
+            ],
+            "answer": 1,
+            "exp": "« Grand » est de nature adjective (un adjectif), quelle que soit la fonction précise qu'il occupe dans une phrase donnée."
           }
         ]
       },
