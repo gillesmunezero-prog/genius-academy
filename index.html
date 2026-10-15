@@ -103,6 +103,7 @@ header .logo{font-size:24px;font-weight:800;color:#ff8a00;font-family:'Baloo 2',
 .cours-box p{font-size:17px;line-height:1.55;}
 .example-box{background:#eefaf0;border:2px dashed var(--green);border-radius:14px;padding:12px 16px;margin:14px 0;font-weight:700;}
 .exo-box{background:#fff;border-radius:20px;padding:20px;box-shadow:0 4px 14px rgba(0,0,0,.06);}
+.exo-counter{display:inline-block;font-size:13px;font-weight:800;color:#c97e00;background:#fff3d6;border:2px solid var(--gold);border-radius:14px;padding:3px 12px;margin-bottom:10px;}
 .exo-q{font-size:18px;font-weight:800;font-family:'Baloo 2';margin-bottom:14px;}
 .choices2{display:flex;flex-direction:column;gap:10px;}
 .choice-btn{background:#fff;border:2px solid var(--line);border-radius:14px;padding:12px 16px;font-size:15px;font-weight:700;cursor:pointer;text-align:left;font-family:'Nunito';}
@@ -1472,6 +1473,10 @@ renderLessonCours();
 function currentExerciseList(){
 return LS.lesson.procedural ? LS.exGen : LS.lesson.exercises;
 }
+function exerciseCounterHtml(){
+const total=currentExerciseList().length;
+return '<div class="exo-counter">Question '+(LS.exIndex+1)+' / '+total+'</div>';
+}
 function updateLessonProgressBar(){
 const total = LS.phase==='cours' ? 1 : currentExerciseList().length+1;
 const done = LS.phase==='cours' ? 0 : LS.exIndex+1;
@@ -1502,7 +1507,7 @@ LS.answered=false;
 const list=currentExerciseList();
 const ex=list[LS.exIndex];
 const body=document.getElementById('lessonBody');
-let html='<div class="exo-box"><div class="exo-q">'+ex.q+'</div>';
+let html='<div class="exo-box">'+exerciseCounterHtml()+'<div class="exo-q">'+ex.q+'</div>';
 if(ex.type==='qcm'){
 html+='<div class="choices2" id="choicesBox">';
 ex.choices.forEach((c,i)=>{html+='<button class="choice-btn" onclick="answerExercise('+i+')">'+c+'</button>';});
@@ -1876,7 +1881,7 @@ GT.renderOralExercise = function(ex){
   const body = document.getElementById('lessonBody');
   if(!body) return;
   const lang = GT.langForSubject(LS.subjectKey);
-  let html = '<div class="exo-box"><div class="exo-q">🎤 '+ex.q+'</div>';
+  let html = '<div class="exo-box">'+exerciseCounterHtml()+'<div class="exo-q">🎤 '+ex.q+'</div>';
   html += '<div style="text-align:center;margin:10px 0;">';
   html += '<button class="btn" onclick="GT.speakQuestion()">🔊 Écouter la question</button> ';
   html += '<button class="btn" id="gtMicBtn" onclick="GT.startOralAnswer()">🎤 Parler</button>';
@@ -3657,7 +3662,7 @@ GT.renderTextExercise = function(ex){
 var body = document.getElementById('lessonBody');
 if(!body) return;
 LS._p5TextAttempt = 1;
-var html = '<div class="exo-box"><div class="exo-q">'+ex.q+'</div>';
+var html = '<div class="exo-box">'+exerciseCounterHtml()+'<div class="exo-q">'+ex.q+'</div>';
 html += '<input type="text" class="textans" id="textAnsInput" placeholder="Ta reponse...">';
 html += '<div style="text-align:center;margin-top:12px;"><button class="btn" id="validateBtn" onclick="GT.answerTextExercise()">Valider \u2705</button></div>';
 html += '<div id="expBox"></div></div>';
