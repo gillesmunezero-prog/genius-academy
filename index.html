@@ -36,6 +36,8 @@ header .logo{font-size:24px;font-weight:800;color:#ff8a00;font-family:'Baloo 2',
 .stars-bar{font-size:18px;color:#c97e00;font-weight:800;background:#fff3d6;padding:6px 14px;border-radius:20px;border:2px solid var(--gold);}
 .headerRight{display:flex;align-items:center;gap:8px;}
 .iconbtn{background:var(--card);border:2px solid var(--line);border-radius:14px;padding:7px 10px;cursor:pointer;font-size:16px;}
+.iconbtn.spinning{animation:gtSpin .8s linear infinite;pointer-events:none;opacity:.7;}
+@keyframes gtSpin{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
 @media (max-width:480px){header{flex-wrap:wrap;gap:8px;padding:10px 14px;}header .logo{font-size:18px;}.stars-bar{font-size:15px;padding:5px 10px;}.iconbtn{padding:6px 8px;font-size:14px;}}
 
 .btn{background:#ff8a00;color:#fff;border:none;padding:13px 22px;border-radius:16px;font-weight:800;font-size:16px;cursor:pointer;font-family:'Nunito';box-shadow:0 4px 0 #d97400;transition:transform .08s;}
@@ -250,6 +252,7 @@ header,nav,.backbar,.btn,.iconbtn{display:none !important;}
 <header id="appHeader" style="display:none;">
 <div class="logo" onclick="showScreen(&#39;home&#39;)">🦉 Genius Academy</div>
 <div class="headerRight">
+<button class="iconbtn" title="Actualiser l'application (recevoir les mises à jour)" id="btnRefreshApp" onclick="forceAppUpdate()">🔄</button>
 <div class="stars-bar" id="starsBar">⭐ 0</div>
 <button class="iconbtn" title="Récompenses" onclick="showScreen(&#39;rewards&#39;)">🏆</button>
 <button class="iconbtn" title="Écrire à mes parents" onclick="showScreen(&#39;childmessages&#39;);GT.renderChildMessages();">✉️</button>
@@ -1685,6 +1688,29 @@ navigator.serviceWorker.register('sw.js').catch(()=>{});
 }
 }
 initApp();
+function forceAppUpdate(){
+var btn=document.getElementById('btnRefreshApp');
+if(btn){ if(btn.classList.contains('spinning')) return; btn.classList.add('spinning'); }
+var done=false;
+function reloadNow(){
+if(done) return;
+done=true;
+location.href=location.pathname+'?_upd='+Date.now();
+}
+var tasks=[];
+if('serviceWorker' in navigator && navigator.serviceWorker.getRegistrations){
+tasks.push(navigator.serviceWorker.getRegistrations().then(function(regs){
+return Promise.all(regs.map(function(r){ return r.unregister().catch(function(){}); }));
+}).catch(function(){}));
+}
+if(window.caches && caches.keys){
+tasks.push(caches.keys().then(function(keys){
+return Promise.all(keys.map(function(k){ return caches.delete(k); }));
+}).catch(function(){}));
+}
+Promise.all(tasks).catch(function(){}).then(reloadNow);
+setTimeout(reloadNow,4000);
+}
 </script><script>
 /* ===== GENIUS ACADEMY - INSTALLATION PWA (additif) ===== */
 var GTInstall = (function(){

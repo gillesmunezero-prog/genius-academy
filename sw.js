@@ -1,4 +1,4 @@
-const CACHE_NAME = 'genius-academy-v5';
+const CACHE_NAME = 'genius-academy-v6';
 const CORE_ASSETS = [
 './',
 './index.html',
