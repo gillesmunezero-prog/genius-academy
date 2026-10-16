@@ -4607,6 +4607,26 @@ saveData(DATA);
 return true;
 });
 };
+GT.resetSingleLesson = function(pid, subjectKey, track, index){
+return GT.Auth.ensure().then(function(ok){
+if (!ok) return false;
+var p = DATA.profiles.find(function(x){ return x.id===pid; });
+if (!p) return false;
+var lessons = getLessons(subjectKey, track) || [];
+var l = lessons[index];
+var title = l ? l.title : ('leçon '+(index+1));
+if (!confirm('Remettre la leçon « '+title+' » à zéro pour '+p.name+' ? L\'enfant devra revoir tout le cours et refaire les exercices depuis le début. Les leçons suivantes déjà acquises ne sont pas affectées, mais celles qui dépendaient de celle-ci seront de nouveau verrouillées. Cette action est irréversible.')) return false;
+if (p.progress && p.progress[subjectKey] && p.progress[subjectKey][track]) {
+p.progress[subjectKey][track][index] = false;
+}
+if (p.progressDetail && p.progressDetail[subjectKey] && p.progressDetail[subjectKey][track] && p.progressDetail[subjectKey][track][index]) {
+p.progressDetail[subjectKey][track][index] = {attempts:0,bestScore:null,lastScore:null,lastTotal:null,lastMastered:false};
+}
+saveData(DATA);
+if (GT.renderAnnualProgram) GT.renderAnnualProgram();
+return true;
+});
+};
 console.log('GT v51 protections PIN chargees');
 })();
 </script>
@@ -4926,13 +4946,13 @@ if (!lessons.length) return;
 var prog = (p.progress && p.progress[s.key] && p.progress[s.key][lvl]) || [];
 var due = GT.getDueReviews(p).filter(function(d){ return d.subjectKey===s.key; }).map(function(d){ return d.index; });
 html += '<div class="gt-pcard"><b>'+(s.emoji||'')+' '+s.name+'</b> (niveau '+gradeLabel(lvl)+')';
-html += '<table style="width:100%;margin-top:6px;font-size:14px;"><thead><tr><th style="text-align:left;">Lecon</th><th>Module / Chapitre</th><th>Competences</th><th>Etat</th><th></th></tr></thead><tbody>';
+html += '<table style="width:100%;margin-top:6px;font-size:14px;"><thead><tr><th style="text-align:left;">Lecon</th><th>Module / Chapitre</th><th>Competences</th><th>Etat</th><th></th><th></th></tr></thead><tbody>';
 lessons.forEach(function(l, i){
 var done = !!prog[i];
 var isNext = !done && (i===0 || prog[i-1]);
 var toReview = due.indexOf(i)>=0;
 var etat = toReview ? '🔁 A reviser' : (done ? '✅ Acquis' : (isNext ? '🟡 En cours' : '⚪ A venir'));
-html += '<tr style="cursor:pointer;" onclick="GT.showLessonPreview(\''+s.key+'\',\''+lvl+'\','+i+')"><td>'+(l.emoji||'')+' '+l.title+'</td><td>'+(l.chapter||l.module||'-')+'</td><td>'+((l.skills||[]).join(', ')||'-')+'</td><td>'+etat+'</td><td><button class="btn secondary" style="padding:4px 10px;font-size:12px;white-space:nowrap;" onclick="event.stopPropagation();GT.showLessonPreview(\''+s.key+'\',\''+lvl+'\','+i+')">👁️ Voir le contenu</button></td></tr>';
+html += '<tr style="cursor:pointer;" onclick="GT.showLessonPreview(\''+s.key+'\',\''+lvl+'\','+i+')"><td>'+(l.emoji||'')+' '+l.title+'</td><td>'+(l.chapter||l.module||'-')+'</td><td>'+((l.skills||[]).join(', ')||'-')+'</td><td>'+etat+'</td><td><button class="btn secondary" style="padding:4px 10px;font-size:12px;white-space:nowrap;" onclick="event.stopPropagation();GT.showLessonPreview(\''+s.key+'\',\''+lvl+'\','+i+')">👁️ Voir le contenu</button></td><td><button class="btn secondary" style="padding:4px 10px;font-size:12px;white-space:nowrap;background:#ffe3d6;color:#b8470e;" onclick="event.stopPropagation();GT.resetSingleLesson(\''+p.id+'\',\''+s.key+'\',\''+lvl+'\','+i+')">🔁 Cours à refaire</button></td></tr>';
 });
 html += '</tbody></table></div>';
 });
