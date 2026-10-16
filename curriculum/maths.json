@@ -2661,17 +2661,16 @@
             "exp": "3 centaines (300) + 4 dizaines (40) + 2 unités (2) = 342."
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "practice",
             "q": "Pour dénombrer rapidement 450 perles en vrac, la meilleure méthode est :",
-            "choices": [
-              "Les compter une par une dans l'ordre",
-              "Les regrouper par paquets de 10 puis de 100",
-              "Les peser sur une balance",
-              "Deviner le nombre"
-            ],
-            "answer": 1,
-            "exp": "Regrouper par 10 puis par 100 permet de compter vite et sans erreur, même avec beaucoup d'objets."
+            "exp": "Regrouper par 10 puis par 100 permet de compter vite et sans erreur, même avec beaucoup d'objets.",
+            "answer": "par paquets de 10 puis de 100",
+            "answers": [
+              "les regrouper par paquets de 10 et de 100",
+              "par paquets",
+              "regrouper par paquets"
+            ]
           },
           {
             "type": "text",
@@ -2681,30 +2680,29 @@
             "exp": "5 centaines + 3 dizaines + 8 unités = 500 + 30 + 8 = 538 billes."
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "reasoning",
             "q": "Léna a déjà fait 7 paquets de 10 crayons, et il lui reste 23 crayons en vrac à ranger. Que doit-elle faire avant de pouvoir annoncer le nombre total de crayons ?",
-            "choices": [
-              "Rien, elle peut dire directement 723",
-              "Continuer à faire des paquets de 10",
-              "Recompter tout depuis le début",
-              "Jeter les crayons en trop"
-            ],
-            "answer": 1,
-            "exp": "23, ce n'est pas encore rangé : il y a 2 paquets de 10 cachés dedans et 3 unités. Il faut finir le rangement avant de pouvoir lire le nombre total directement."
+            "exp": "23, ce n'est pas encore rangé : il y a 2 paquets de 10 cachés dedans et 3 unités. Il faut finir le rangement avant de pouvoir lire le nombre total directement.",
+            "answer": "continuer à faire des paquets de 10",
+            "answers": [
+              "faire encore des paquets de 10",
+              "continuer les paquets",
+              "ranger le reste en paquets de 10"
+            ]
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "error_analysis",
             "q": "Malo dit : « J'ai 4 paquets de 10 et 15 objets seuls, donc j'ai le nombre 4015 ». Quelle est son erreur ?",
-            "choices": [
-              "Il a raison",
-              "15 objets cachent encore un paquet de 10",
-              "Il manque un chiffre",
-              "Il fallait compter en paquets de 100"
-            ],
-            "answer": 1,
-            "exp": "15, c'est 1 dizaine et 5 unités : il reste donc 5 paquets de 10 (pas 4) et 5 objets seuls, donc 55, pas 4015. On n'écrit jamais plus de 9 dans une case avant de refaire un paquet."
+            "exp": "15, c'est 1 dizaine et 5 unités : il reste donc 5 paquets de 10 (pas 4) et 5 objets seuls, donc 55, pas 4015. On n'écrit jamais plus de 9 dans une case avant de refaire un paquet.",
+            "answer": "15 cache encore un paquet de 10",
+            "answers": [
+              "il reste un paquet de 10 dans les 15",
+              "15 contient un paquet de 10 de plus",
+              "il a oublié de refaire un paquet avec les 15",
+              "un paquet caché"
+            ]
           },
           {
             "type": "text",
@@ -2714,30 +2712,26 @@
             "exp": "4 centaines (400) + 2 dizaines (20) + 6 unités (6) = 426."
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "practice",
             "q": "316, c'est :",
-            "choices": [
-              "3 dizaines, 1 centaine, 6 unités",
-              "3 centaines, 1 dizaine, 6 unités",
-              "3 unités, 1 dizaine, 6 centaines",
-              "3 centaines, 6 dizaines, 1 unité"
-            ],
-            "answer": 1,
-            "exp": "316 = 3 centaines + 1 dizaine + 6 unités."
+            "exp": "316 = 3 centaines + 1 dizaine + 6 unités.",
+            "answer": "3 centaines 1 dizaine 6 unités",
+            "answers": [
+              "3 centaines, 1 dizaine et 6 unités"
+            ]
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "application",
             "q": "Au marché, Hugo compte des œufs : 5 caisses de 100, 0 paquet de 10, et 14 œufs isolés. Que doit-il corriger avant de donner le total ?",
-            "choices": [
-              "Rien, le total est 5014",
-              "14, ce n'est pas rangé",
-              "Il faut recompter les caisses de 100",
-              "Il faut jeter les 14 œufs"
-            ],
-            "answer": 1,
-            "exp": "14 contient 1 dizaine cachée (10) et 4 unités. Il faut toujours finir le rangement : 5 centaines + 1 dizaine + 4 unités = 514."
+            "exp": "14 contient 1 dizaine cachée (10) et 4 unités. Il faut toujours finir le rangement : 5 centaines + 1 dizaine + 4 unités = 514.",
+            "answer": "14 n'est pas rangé",
+            "answers": [
+              "il reste une dizaine cachée dans les 14",
+              "14 contient encore une dizaine",
+              "ranger les 14 œufs"
+            ]
           },
           {
             "type": "text",
@@ -2754,43 +2748,34 @@
             "exp": "Regrouper par paquets de 10 (puis de 100) permet de compter plus vite et sans erreur."
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "reasoning",
             "q": "Pourquoi forme-t-on un paquet de 100 seulement quand on a exactement 10 paquets de 10 ?",
-            "choices": [
-              "Parce que c'est plus joli",
-              "Parce que 10 dizaines font toujours 1 centaine",
-              "Parce que 100 est un nombre rond",
-              "Il n'y a pas de raison particulière"
-            ],
-            "answer": 1,
-            "exp": "Notre système est en base 10 : dix dizaines font toujours une centaine, ni plus ni moins."
+            "exp": "Notre système est en base 10 : dix dizaines font toujours une centaine, ni plus ni moins.",
+            "answer": "10 dizaines font 1 centaine",
+            "answers": [
+              "dix dizaines égalent une centaine",
+              "10 paquets de 10 font un paquet de 100"
+            ]
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "error_analysis",
             "q": "Léo dit : « J'ai rangé 23 jetons en paquets de 10, donc j'ai 23 paquets ». Quelle est son erreur ?",
-            "choices": [
-              "Il a raison",
-              "Il confond le nombre de jetons (23) avec le nombre de paquets",
-              "23 jetons ne peuvent pas être rangés",
-              "Il fallait faire des paquets de 100"
-            ],
-            "answer": 1,
-            "exp": "23 jetons = 2 dizaines (20) + 3 unités, donc 2 paquets de 10, pas 23 !"
+            "exp": "23 jetons = 2 dizaines (20) + 3 unités, donc 2 paquets de 10, pas 23 !",
+            "answer": "il confond le nombre de jetons avec le nombre de paquets",
+            "answers": [
+              "23 est le nombre de jetons, pas de paquets",
+              "il n'a que 2 paquets de 10 et pas 23",
+              "confond jetons paquets"
+            ]
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "challenge",
             "q": "Une collection contient le même nombre de centaines, de dizaines et d'unités : 4 de chaque. Quel est ce nombre ?",
-            "choices": [
-              "404",
-              "440",
-              "444",
-              "44"
-            ],
-            "answer": 2,
-            "exp": "4 centaines + 4 dizaines + 4 unités = 400+40+4 = 444."
+            "exp": "4 centaines + 4 dizaines + 4 unités = 400+40+4 = 444.",
+            "answer": "444"
           },
           {
             "type": "text",
@@ -2800,17 +2785,15 @@
             "exp": "7 dizaines = 7×10 = 70 unités."
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "application",
             "q": "Un épicier a 612 pommes à ranger en cagettes de 100. Combien de cagettes pleines, et combien de pommes resteront hors cagette ?",
-            "choices": [
-              "6 cagettes pleines, 12 pommes restantes",
-              "6 cagettes pleines, 1 pomme restante",
-              "61 cagettes pleines, 2 pommes restantes",
-              "12 cagettes pleines, 6 pommes restantes"
-            ],
-            "answer": 0,
-            "exp": "612 = 6 centaines (6 cagettes) + 1 dizaine + 2 unités, donc 12 pommes hors cagette pleine."
+            "exp": "612 = 6 centaines (6 cagettes) + 1 dizaine + 2 unités, donc 12 pommes hors cagette pleine.",
+            "answer": "6 cagettes pleines et 12 pommes restantes",
+            "answers": [
+              "6 cagettes et 12 pommes",
+              "6 et 12"
+            ]
           },
           {
             "type": "vf",
@@ -2827,43 +2810,33 @@
             "exp": "3 centaines (300) + 9 dizaines (90) + 0 = 390."
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "practice",
             "q": "Combien de paquets de 10 peut-on faire avec 95 billes, et combien en restera-t-il ?",
-            "choices": [
-              "9 paquets, 5 billes restantes",
-              "95 paquets, 0 bille restante",
-              "5 paquets, 9 billes restantes",
-              "9 paquets, 0 bille restante"
-            ],
-            "answer": 0,
-            "exp": "95 = 9 dizaines (9 paquets de 10) + 5 unités restantes."
+            "exp": "95 = 9 dizaines (9 paquets de 10) + 5 unités restantes.",
+            "answer": "9 paquets et 5 billes restantes",
+            "answers": [
+              "9 paquets de 10 et 5 billes",
+              "9 et 5"
+            ]
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "error_analysis",
             "q": "Enzo range 230 timbres et affirme : « J'ai 23 centaines ». Quelle est l'erreur ?",
-            "choices": [
-              "Il a raison",
-              "Il confond dizaines et centaines",
-              "230 n'a pas de centaines",
-              "Il fallait dire 230 dizaines"
-            ],
-            "answer": 1,
-            "exp": "230 = 2 centaines (200) + 3 dizaines (30). 23 centaines feraient 2300."
+            "exp": "230 = 2 centaines (200) + 3 dizaines (30). 23 centaines feraient 2300.",
+            "answer": "il confond dizaines et centaines",
+            "answers": [
+              "230 c'est 2 centaines et 3 dizaines, pas 23 centaines",
+              "23 centaines ferait 2300"
+            ]
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "challenge",
             "q": "Je suis un nombre à 3 chiffres. Mon chiffre des centaines est le double de mon chiffre des unités, qui vaut 3. Mon chiffre des dizaines est 0. Qui suis-je ?",
-            "choices": [
-              "603",
-              "630",
-              "306",
-              "360"
-            ],
-            "answer": 0,
-            "exp": "Unités = 3, centaines = 2×3 = 6, dizaines = 0 → 603."
+            "exp": "Unités = 3, centaines = 2×3 = 6, dizaines = 0 → 603.",
+            "answer": "603"
           }
         ]
       },
