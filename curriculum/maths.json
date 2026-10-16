@@ -3070,30 +3070,26 @@
             "exp": "Toutes ont 2 centaines. Aux dizaines : CE1 a 8, CE2 a 9, CM1 a 7. 9 est le plus grand : CE2 gagne avec 298 bouchons."
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "reasoning",
             "q": "Pour comparer deux nombres à trois chiffres, pourquoi regarde-t-on presque toujours les centaines en premier, et pas les unités ?",
-            "choices": [
-              "Parce que c'est écrit en premier en partant de la gauche, sans raison particulière",
-              "Parce que la maison des centaines vaut toujours plus que toutes les dizaines et unités réunies",
-              "Parce que les unités sont trop petites pour compter",
-              "Il n'y a pas de règle, ça dépend du nombre"
-            ],
-            "answer": 1,
-            "exp": "Un nombre avec plus de centaines est toujours plus grand, quelles que soient ses dizaines et unités : c'est donc la comparaison la plus rapide et la plus sûre à faire en premier."
+            "exp": "Un nombre avec plus de centaines est toujours plus grand, quelles que soient ses dizaines et unités : c'est donc la comparaison la plus rapide et la plus sûre à faire en premier.",
+            "answer": "les centaines pèsent plus que le reste",
+            "answers": [
+              "centaines plus fortes",
+              "les centaines comptent le plus"
+            ]
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "error_analysis",
             "q": "Pour comparer 419 et 362, Inès regarde d'abord les unités (9 et 2) et conclut que 419 est plus grand « parce que 9 > 2 ». A-t-elle bien raisonné ?",
-            "choices": [
-              "Oui, c'est la bonne méthode",
-              "Elle a la bonne réponse mais la mauvaise méthode",
-              "Non, 362 est en fait plus grand",
-              "On ne peut pas comparer ces deux nombres"
-            ],
-            "answer": 1,
-            "exp": "419 est bien plus grand que 362, mais Inès a eu de la chance : il fallait comparer les centaines en premier (4 > 3). Avec d'autres nombres, regarder les unités en premier donnerait une mauvaise réponse."
+            "exp": "419 est bien plus grand que 362, mais Inès a eu de la chance : il fallait comparer les centaines en premier (4 > 3). Avec d'autres nombres, regarder les unités en premier donnerait une mauvaise réponse.",
+            "answer": "bonne réponse mauvaise méthode",
+            "answers": [
+              "bon résultat mauvaise méthode",
+              "elle a eu de la chance"
+            ]
           },
           {
             "type": "text",
@@ -3124,30 +3120,26 @@
             "answer": "346, 354, 356, 365"
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "reasoning",
             "q": "Pour comparer 723 et 719, pourquoi n'est-il pas utile de regarder le chiffre des unités en premier ?",
-            "choices": [
-              "Il faut toujours commencer par les unités",
-              "Parce que les centaines et les dizaines pèsent plus lourd",
-              "Les unités sont toujours égales",
-              "Ce n'est jamais utile de regarder les dizaines"
-            ],
-            "answer": 1,
-            "exp": "723 a 2 dizaines, 719 en a 1 : cet écart suffit à conclure 723>719, sans même regarder les unités."
+            "exp": "723 a 2 dizaines, 719 en a 1 : cet écart suffit à conclure 723>719, sans même regarder les unités.",
+            "answer": "les dizaines pèsent plus lourd",
+            "answers": [
+              "dizaines plus fortes",
+              "pas besoin des unités"
+            ]
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "error_analysis",
             "q": "Léa compare 605 et 650 et dit : « Ils ont les mêmes chiffres, donc ils sont égaux ». Quelle est son erreur ?",
-            "choices": [
-              "Elle a raison",
-              "Elle oublie que la position des chiffres change leur valeur",
-              "605 et 650 sont bien égaux",
-              "Il faut comparer les lettres, pas les chiffres"
-            ],
-            "answer": 1,
-            "exp": "Mêmes chiffres, ordre différent : 605 = 6c+0d+5u, 650 = 6c+5d+0u. 650 a bien plus de dizaines, donc 650>605."
+            "exp": "Mêmes chiffres, ordre différent : 605 = 6c+0d+5u, 650 = 6c+5d+0u. 650 a bien plus de dizaines, donc 650>605.",
+            "answer": "la position des chiffres change leur valeur",
+            "answers": [
+              "position change la valeur",
+              "même chiffres positions différentes"
+            ]
           },
           {
             "type": "vf",
@@ -3206,17 +3198,15 @@
             "answer": "mardi, lundi, mercredi"
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "reasoning",
             "q": "Clara dit : « 299 est plus petit que 301 car 2 est plus petit que 3 ». Sa méthode est-elle toujours fiable ?",
-            "choices": [
-              "Oui, toujours, car on regarde bien le rang des centaines en premier",
-              "Non, il faudrait plutôt regarder les unités d'abord",
-              "Non, le nombre de chiffres compte plus que les chiffres eux-mêmes",
-              "On ne peut jamais comparer 299 et 301"
-            ],
-            "answer": 0,
-            "exp": "Sa méthode est la bonne : comparer le rang le plus élevé (ici les centaines, 2 contre 3) en premier est toujours fiable."
+            "exp": "Sa méthode est la bonne : comparer le rang le plus élevé (ici les centaines, 2 contre 3) en premier est toujours fiable.",
+            "answer": "oui, toujours fiable",
+            "answers": [
+              "oui car centaines en premier",
+              "toujours fiable"
+            ]
           }
         ]
       },
@@ -3256,43 +3246,35 @@
             "answer": "Le plus grand"
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "application",
             "q": "Une course se déroule sur une piste graduée de 0 à 1000 mètres. L'arrivée est à 850 m, un coureur est à 790 m. Que peut-on dire ?",
-            "choices": [
-              "Il a dépassé l'arrivée",
-              "Il est après la moitié de la course mais pas encore arrivé",
-              "Il est avant la moitié de la course",
-              "Il est exactement à l'arrivée"
-            ],
-            "answer": 1,
-            "exp": "790 est plus loin de 0 que 500 (il a dépassé la moitié) mais plus proche de 0 que 850 (il n'a pas atteint l'arrivée)."
+            "exp": "790 est plus loin de 0 que 500 (il a dépassé la moitié) mais plus proche de 0 que 850 (il n'a pas atteint l'arrivée).",
+            "answer": "après la moitié, pas encore arrivé",
+            "answers": [
+              "dépassé la moitié pas arrivé"
+            ]
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "reasoning",
             "q": "512 et 521 ont les mêmes chiffres. Pourquoi ne sont-ils pourtant pas voisins sur la droite numérique ?",
-            "choices": [
-              "Ils sont en fait voisins",
-              "Il y a plusieurs nombres entre les deux (513, 514... jusqu'à 520)",
-              "Parce que 5 est un chiffre impair",
-              "On ne peut pas comparer deux nombres qui ont les mêmes chiffres"
-            ],
-            "answer": 1,
-            "exp": "Se ressembler visuellement (mêmes chiffres, ordre différent) n'a rien à voir avec être proches sur la droite numérique : seule la distance en « pas » compte, et ici il y a 9 pas d'écart."
+            "exp": "Se ressembler visuellement (mêmes chiffres, ordre différent) n'a rien à voir avec être proches sur la droite numérique : seule la distance en « pas » compte, et ici il y a 9 pas d'écart.",
+            "answer": "il y a des nombres entre les deux",
+            "answers": [
+              "plusieurs nombres entre eux",
+              "9 nombres entre les deux"
+            ]
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "error_analysis",
             "q": "Sacha place le nombre 199 juste avant le repère 100 sur une droite graduée de 100 en 100. Quelle est son erreur ?",
-            "choices": [
-              "Il a bien fait",
-              "199 est très proche de 200, pas de 100",
-              "199 n'existe pas",
-              "Il fallait le placer après 200"
-            ],
-            "answer": 1,
-            "exp": "199, c'est un de moins que 200 : il se place juste avant le repère 200, tout près de lui, et très loin du repère 100 (99 pas plus loin)."
+            "exp": "199, c'est un de moins que 200 : il se place juste avant le repère 200, tout près de lui, et très loin du repère 100 (99 pas plus loin).",
+            "answer": "199 est proche de 200",
+            "answers": [
+              "proche de 200 pas de 100"
+            ]
           },
           {
             "type": "text",
@@ -3309,17 +3291,11 @@
             "answer": "Grand"
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "application",
             "q": "Une tour de 1000 m est graduée tous les 100 m. Un alpiniste est entre le 5e et le 6e repère. Entre quelles altitudes se trouve-t-il ?",
-            "choices": [
-              "Entre 400 et 500 m",
-              "Entre 500 et 600 m",
-              "Entre 600 et 700 m",
-              "Entre 50 et 60 m"
-            ],
-            "answer": 1,
-            "exp": "Le 5e repère est à 500 m, le 6e à 600 m : l'alpiniste est entre les deux."
+            "exp": "Le 5e repère est à 500 m, le 6e à 600 m : l'alpiniste est entre les deux.",
+            "answer": "entre 500 et 600 m"
           },
           {
             "type": "text",
@@ -3329,30 +3305,24 @@
             "exp": "Les repères sont 0, 100, 200... 700 est le repère juste avant 800."
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "reasoning",
             "q": "Pourquoi deux nombres comme 305 et 350 peuvent-ils être très éloignés sur une droite numérique même s'ils utilisent les mêmes chiffres ?",
-            "choices": [
-              "Ils ne sont jamais éloignés",
-              "Parce que la position des chiffres change leur valeur",
-              "Parce que 3 et 5 sont des chiffres différents",
-              "Il n'y a pas d'explication"
-            ],
-            "answer": 1,
-            "exp": "350-305=45 : la différence de position des chiffres change beaucoup la valeur et donc l'écart réel sur la droite."
+            "exp": "350-305=45 : la différence de position des chiffres change beaucoup la valeur et donc l'écart réel sur la droite.",
+            "answer": "la position des chiffres change leur valeur",
+            "answers": [
+              "position change la valeur"
+            ]
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "error_analysis",
             "q": "Tom place le nombre 299 juste avant le repère 200 sur une droite graduée de 100 en 100. Quelle est son erreur ?",
-            "choices": [
-              "Il a raison",
-              "299 est très proche de 300, pas de 200",
-              "299 doit être placé après 400",
-              "Il n'y a pas d'erreur possible sur une droite"
-            ],
-            "answer": 1,
-            "exp": "299 est à seulement 1 de 300, donc tout près du repère 300, pas du repère 200."
+            "exp": "299 est à seulement 1 de 300, donc tout près du repère 300, pas du repère 200.",
+            "answer": "299 est proche de 300",
+            "answers": [
+              "proche de 300 pas de 200"
+            ]
           },
           {
             "type": "vf",
@@ -3383,30 +3353,26 @@
             "answer": "350 m"
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "reasoning",
             "q": "Pourquoi utilise-t-on souvent une droite numérique graduée régulièrement (toujours le même écart) plutôt qu'avec des écarts qui changent ?",
-            "choices": [
-              "Pour que ce soit plus joli",
-              "Pour pouvoir comparer facilement les distances entre les nombres",
-              "Parce que c'est obligatoire sans raison",
-              "Les écarts changent toujours sur une droite numérique"
-            ],
-            "answer": 1,
-            "exp": "Une graduation régulière permet de lire d'un coup d'œil des écarts égaux entre les nombres, ce qui aide à comparer."
+            "exp": "Une graduation régulière permet de lire d'un coup d'œil des écarts égaux entre les nombres, ce qui aide à comparer.",
+            "answer": "pour comparer facilement les distances",
+            "answers": [
+              "comparer les distances facilement",
+              "même écart partout"
+            ]
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "error_analysis",
             "q": "Léna dit : « 450 est pile au milieu entre 0 et 1000 ». A-t-elle raison ?",
-            "choices": [
-              "Oui, car 450 est à égale distance de 0 et de 1000",
-              "Non, le milieu entre 0 et 1000 est 500, pas 450",
-              "Non, le milieu entre 0 et 1000 est 450",
-              "Il n'y a pas de milieu entre 0 et 1000"
-            ],
-            "answer": 1,
-            "exp": "Le milieu entre 0 et 1000 est 500 (1000÷2=500). 450 est donc un peu avant le milieu."
+            "exp": "Le milieu entre 0 et 1000 est 500 (1000÷2=500). 450 est donc un peu avant le milieu.",
+            "answer": "non, le milieu est 500",
+            "answers": [
+              "500 pas 450",
+              "le milieu est 500"
+            ]
           },
           {
             "type": "text",
@@ -3474,30 +3440,25 @@
             "exp": "12 coureurs devant lui + lui-même = il arrive 13e, donc treizième."
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "reasoning",
             "q": "Dans la suite répétitive A-B-A-B-A-B..., comment savoir, sans tout écrire, si la vingtième lettre est un A ou un B ?",
-            "choices": [
-              "Il faut forcément écrire toute la suite jusqu'à 20",
-              "Les A sont aux rangs impairs, les B aux rangs pairs",
-              "La vingtième lettre est toujours un A",
-              "On ne peut pas savoir"
-            ],
-            "answer": 1,
-            "exp": "Repérer la règle (A aux rangs impairs 1,3,5..., B aux rangs pairs 2,4,6...) permet de répondre instantanément pour n'importe quel rang, sans compter un par un jusqu'à 20."
+            "exp": "Repérer la règle (A aux rangs impairs 1,3,5..., B aux rangs pairs 2,4,6...) permet de répondre instantanément pour n'importe quel rang, sans compter un par un jusqu'à 20.",
+            "answer": "a aux rangs impairs, b aux rangs pairs",
+            "answers": [
+              "rangs impairs a rangs pairs b",
+              "a impair b pair"
+            ]
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "error_analysis",
             "q": "Zoé dit : « Il y a 5 personnes devant moi dans la file, donc je suis cinquième. » Quelle est son erreur ?",
-            "choices": [
-              "Elle a raison",
-              "Elle a oublié de compter sa propre place",
-              "Il fallait dire quatrième",
-              "Il n'y a pas d'erreur possible"
-            ],
-            "answer": 1,
-            "exp": "5 personnes devant elle + elle-même = 6e place. Elle a confondu « nombre de personnes devant » et « son propre rang » : il faut toujours ajouter 1 pour soi-même."
+            "exp": "5 personnes devant elle + elle-même = 6e place. Elle a confondu « nombre de personnes devant » et « son propre rang » : il faut toujours ajouter 1 pour soi-même.",
+            "answer": "elle a oublié de se compter",
+            "answers": [
+              "oublié sa propre place"
+            ]
           },
           {
             "type": "text",
@@ -3535,17 +3496,15 @@
             "answer": "Rouge"
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "error_analysis",
             "q": "Mia dit : « Il y a 8 personnes devant moi dans la file, donc je suis 8e ». Quelle est son erreur ?",
-            "choices": [
-              "Elle a raison",
-              "S'il y a 8 personnes devant elle, elle est 9e (les 8 devant + elle-même), pas 8e",
-              "Elle est en réalité 7e",
-              "On ne peut pas savoir sans compter aussi derrière elle"
-            ],
-            "answer": 1,
-            "exp": "8 personnes devant + Mia elle-même = elle occupe la 9e place."
+            "exp": "8 personnes devant + Mia elle-même = elle occupe la 9e place.",
+            "answer": "elle est 9e, pas 8e",
+            "answers": [
+              "9e position",
+              "elle a oublié de se compter"
+            ]
           },
           {
             "type": "vf",
@@ -3569,17 +3528,15 @@
             "answer": "Elle est arrivée dernière"
           },
           {
-            "type": "qcm",
+            "type": "text",
             "kind": "reasoning",
             "q": "Pourquoi, dans un escalier, le mot « 1er étage » désigne-t-il souvent l'étage juste après le rez-de-chaussée, et non le rez-de-chaussée lui-même ?",
-            "choices": [
-              "Parce que le rez-de-chaussée n'est pas compté comme un étage dans ce système",
-              "Parce que c'est une erreur de langage",
-              "Parce que le rez-de-chaussée est toujours le 2e étage",
-              "Il n'y a pas de règle"
-            ],
-            "answer": 0,
-            "exp": "Par convention en France, le rez-de-chaussée est le niveau 0, et le 1er étage est le niveau juste au-dessus."
+            "exp": "Par convention en France, le rez-de-chaussée est le niveau 0, et le 1er étage est le niveau juste au-dessus.",
+            "answer": "le rez-de-chaussée n'est pas compté",
+            "answers": [
+              "rez-de-chaussée pas un étage",
+              "rdc non compté"
+            ]
           },
           {
             "type": "text",
