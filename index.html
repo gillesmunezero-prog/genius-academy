@@ -469,6 +469,7 @@ return p.progress[subject][track];
 }
 const MASTERY_MIN_QUESTIONS=20;
 const MASTERY_PASS_SCORE=18;
+const MASTERY_SMARTSCORE=90;
 function ensureProgressDetail(p,subject,track,count){
 if(!p.progressDetail) p.progressDetail={};
 if(!p.progressDetail[subject]) p.progressDetail[subject]={};
@@ -1497,6 +1498,7 @@ showScreen('lesson');
 renderLessonCours();
 }
 function currentExerciseList(){
+if(LS.adaptiveList) return LS.adaptiveList;
 return LS.lesson.procedural ? LS.exGen : LS.lesson.exercises;
 }
 function exerciseCounterHtml(){
@@ -1524,6 +1526,8 @@ function startExercises(){
 LS.phase='exercise';
 LS.exIndex=0;
 LS.mistakes=0;
+LS.adaptiveList = (LS.lesson && !LS.lesson.procedural && Array.isArray(LS.lesson.exercises)) ? LS.lesson.exercises.slice() : null;
+LS.smartScore = 50;
 renderExerciseStep();
 }
 
@@ -1609,11 +1613,13 @@ const list=currentExerciseList();
 const total=list.length;
 const score=total-LS.mistakes;
 const requiresMastery = total>=MASTERY_MIN_QUESTIONS;
-const mastered = requiresMastery ? (score>=MASTERY_PASS_SCORE) : true;
+const usingAdaptive = !!LS.adaptiveList && typeof LS.smartScore==='number';
+const mastered = requiresMastery ? (usingAdaptive ? LS.smartScore>=MASTERY_SMARTSCORE : score>=MASTERY_PASS_SCORE) : true;
 const wasAlreadyDone = p.progress[key][track][index]===true;
 let stars = wasAlreadyDone ? Math.max(1,Math.round(total/2)) : total;
 if(LS.mistakes===0) stars+=3;
 if(mastered) p.progress[key][track][index]=true;
+else if(requiresMastery && wasAlreadyDone) p.progress[key][track][index]=false;
 p.stars+=stars;
 if(todayIsNewDay(p)) bumpStreak(p);
 const detailArr=ensureProgressDetail(p,key,track,list.length);
@@ -1976,6 +1982,50 @@ GT.spellingDiffHtml = function(typed, canonical){
     html += matched[k] ? ch : ('<span class="spell-err">'+ch+'</span>');
   }
   return html;
+};
+
+/* ---- DIFFICULTE ADAPTATIVE (inspire d'IXL SmartScore) ----
+   Un score continu 0-100 remplace le simple compteur de bonnes reponses : une
+   reponse juste le fait monter (plus fort quand le score est encore bas), une
+   erreur le fait baisser (plus fort quand le score est deja haut, comme la
+   "Challenge Zone" d'IXL). Le score pilote aussi la difficulte ("kind") des
+   questions restantes : plus l'enfant reussit, plus les questions suivantes
+   piochees dans la leçon sont exigeantes (challenge/reasoning), et inversement
+   en cas d'erreurs (retour vers practice/application). */
+GT.KIND_RANK = {practice:1, error_analysis:2, application:3, reasoning:4, challenge:5};
+GT.smartScoreDelta = function(score, correct){
+  if(correct) return Math.max(3, Math.round((100-score)*0.35));
+  return -(Math.max(5, Math.round(score*0.35)+5));
+};
+GT.updateSmartScore = function(correct){
+  if(typeof LS.smartScore !== 'number') LS.smartScore = 50;
+  LS.smartScore = Math.max(0, Math.min(100, LS.smartScore + GT.smartScoreDelta(LS.smartScore, correct)));
+};
+GT.targetKindRank = function(score){
+  return 1 + Math.min(4, Math.floor(score/20));
+};
+GT.reorderRemainingByDifficulty = function(){
+  var list = LS.adaptiveList;
+  if(!list) return;
+  var targetRank = GT.targetKindRank(LS.smartScore);
+  var head = list.slice(0, LS.exIndex+1);
+  var tail = list.slice(LS.exIndex+1);
+  tail.sort(function(a,b){
+    var ra = Math.abs((GT.KIND_RANK[a.kind]||3) - targetRank);
+    var rb = Math.abs((GT.KIND_RANK[b.kind]||3) - targetRank);
+    return ra - rb;
+  });
+  LS.adaptiveList = head.concat(tail);
+};
+var __adaptive_nextExercise = nextExercise;
+nextExercise = function(){
+  if(LS.adaptiveList){
+    var hist = LS._p5FirstTry;
+    var wasCorrect = (hist && hist.length) ? hist[hist.length-1] : true;
+    GT.updateSmartScore(wasCorrect);
+    GT.reorderRemainingByDifficulty();
+  }
+  __adaptive_nextExercise();
 };
 
 /* ---- EXERCICE "ordre" : remettre des elements dans le bon ordre en les touchant ---- */
