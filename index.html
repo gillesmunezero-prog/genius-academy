@@ -114,6 +114,19 @@ header .logo{font-size:24px;font-weight:800;color:#ff8a00;font-family:'Baloo 2',
 .exp-box{margin-top:14px;padding:12px 14px;border-radius:12px;background:#f4f2ff;font-weight:700;color:var(--ink2);}
 .spell-note{margin-top:10px;padding:10px 14px;border-radius:12px;background:#fff6e0;color:#8a5a00;font-weight:700;}
 .spell-err{color:#e63946;font-weight:900;text-decoration:underline;}
+.ordre-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:10px 0;}
+.ordre-chip{background:#fff;border:2px solid var(--line);border-radius:12px;padding:10px 16px;font-weight:800;font-size:15px;cursor:pointer;font-family:'Nunito';}
+.ordre-chip:disabled{opacity:0.5;cursor:default;}
+.ordre-answer-row{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;align-items:center;min-height:52px;padding:10px;border:2px dashed var(--line);border-radius:14px;margin:10px 0;background:#fafafa;}
+.ordre-answer-chip{background:#fff3d6;border:2px solid var(--gold);border-radius:10px;padding:8px 14px;font-weight:800;font-size:14px;}
+.cp-table{border-collapse:collapse;margin:14px auto;font-family:'Baloo 2';}
+.cp-table td{width:38px;height:38px;text-align:center;vertical-align:middle;font-size:20px;font-weight:800;}
+.cp-table td.op-sign{font-size:22px;text-align:left;width:26px;}
+.cp-carry input{width:26px;height:26px;font-size:13px;text-align:center;border:1px solid var(--line);border-radius:6px;color:#c97e00;font-family:'Nunito';}
+.cp-input{width:32px;height:40px;font-size:20px;text-align:center;border:2px solid var(--line);border-radius:8px;font-family:'Baloo 2';}
+.cp-input.correct{background:#e8fbee;border-color:var(--green);}
+.cp-input.wrong{background:#ffecec;border-color:var(--red);}
+.cp-line{border-top:3px solid var(--ink);padding:0 !important;height:2px !important;}
 .textans{padding:12px;border-radius:12px;border:2px solid var(--line);font-size:16px;width:100%;font-family:'Nunito';}
 .result-box{text-align:center;padding:30px 20px;}
 .result-box .big{font-size:70px;}
@@ -1963,6 +1976,143 @@ GT.spellingDiffHtml = function(typed, canonical){
     html += matched[k] ? ch : ('<span class="spell-err">'+ch+'</span>');
   }
   return html;
+};
+
+/* ---- EXERCICE "ordre" : remettre des elements dans le bon ordre en les touchant ---- */
+GT.renderOrdre = function(ex){
+  var body = document.getElementById('lessonBody');
+  if(!body) return;
+  var pool = ex.items.map(function(v){ return {v:v, used:false}; });
+  for(var i=pool.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var t=pool[i]; pool[i]=pool[j]; pool[j]=t; }
+  GT._ordreState = { pool: pool, answer: [], total: ex.items.length };
+  var html = '<div class="exo-box">'+exerciseCounterHtml()+'<div class="exo-q">'+ex.q+'</div>';
+  html += '<div class="ordre-answer-row" id="ordreAnswerRow"></div>';
+  html += '<div class="ordre-row" id="ordrePoolRow"></div>';
+  html += '<div style="text-align:center;margin-top:12px;"><button class="btn secondary" id="ordreResetBtn" onclick="GT.resetOrdre()">↩️ Recommencer</button> <button class="btn" id="validateBtn" onclick="GT.answerOrdre()">Valider ✅</button></div>';
+  html += '<div id="expBox"></div></div>';
+  body.innerHTML = html;
+  GT.renderOrdrePools();
+};
+GT.renderOrdrePools = function(){
+  var st = GT._ordreState;
+  var poolRow = document.getElementById('ordrePoolRow');
+  var ansRow = document.getElementById('ordreAnswerRow');
+  if(!poolRow || !ansRow) return;
+  poolRow.innerHTML = '';
+  st.pool.forEach(function(item, idx){
+    if(item.used) return;
+    var btn = document.createElement('button');
+    btn.className = 'ordre-chip';
+    btn.textContent = item.v;
+    btn.onclick = function(){ GT.pickOrdre(idx); };
+    poolRow.appendChild(btn);
+  });
+  ansRow.innerHTML = '';
+  st.answer.forEach(function(v, i){
+    var span = document.createElement('span');
+    span.className = 'ordre-answer-chip';
+    span.textContent = (i+1)+'. '+v;
+    ansRow.appendChild(span);
+  });
+  var vb = document.getElementById('validateBtn');
+  if(vb) vb.disabled = (st.answer.length < st.total);
+};
+GT.pickOrdre = function(idx){
+  if(LS.answered) return;
+  var st = GT._ordreState;
+  st.pool[idx].used = true;
+  st.answer.push(st.pool[idx].v);
+  GT.renderOrdrePools();
+};
+GT.resetOrdre = function(){
+  if(LS.answered) return;
+  var st = GT._ordreState;
+  st.pool.forEach(function(p){ p.used=false; });
+  st.answer = [];
+  GT.renderOrdrePools();
+};
+GT.answerOrdre = function(){
+  if(LS.answered) return;
+  var list = currentExerciseList();
+  var ex = list[LS.exIndex];
+  var st = GT._ordreState;
+  if(st.answer.length < st.total) return;
+  LS.answered = true;
+  var correct = JSON.stringify(st.answer) === JSON.stringify(ex.items);
+  if(!correct) LS.mistakes++;
+  LS._p5Attempts = LS._p5Attempts || []; LS._p5FirstTry = LS._p5FirstTry || [];
+  LS._p5Attempts.push(1); LS._p5FirstTry.push(correct);
+  GT.lockHintButton();
+  var rb = document.getElementById('ordreResetBtn'); if(rb) rb.disabled = true;
+  var vb = document.getElementById('validateBtn'); if(vb) vb.style.display = 'none';
+  document.querySelectorAll('#ordrePoolRow .ordre-chip').forEach(function(b){ b.onclick=null; b.disabled=true; });
+  var expBox = document.getElementById('expBox');
+  var correction = correct ? '' : ('<div class="spell-note">✏️ Le bon ordre était : '+ex.items.join(' → ')+'</div>');
+  expBox.innerHTML = '<div class="exp-box">'+(correct?'✅ Bravo ! ':'❌ Pas tout à fait. ')+ex.exp+'</div>'+correction+'<div style="text-align:center;margin-top:14px;"><button class="btn" onclick="nextExercise()">'+(LS.exIndex+1<list.length?'Suivant ➡️':'Terminer 🏁')+'</button></div>';
+};
+
+/* ---- EXERCICE "calcul_pose" : addition/soustraction en colonnes, comme sur un cahier ---- */
+GT.renderCalculPose = function(ex){
+  var body = document.getElementById('lessonBody');
+  if(!body) return;
+  var op = ex.operation;
+  var a = ex.operands[0], b = ex.operands[1];
+  var result = op==='addition' ? (a+b) : (a-b);
+  var resultStr = String(Math.abs(result));
+  var cols = resultStr.length;
+  GT._cpState = { cols: cols, resultStr: resultStr };
+  var aStr = String(a).padStart(cols, ' ');
+  var bStr = String(b).padStart(cols, ' ');
+  var sign = op==='addition' ? '+' : '−';
+  function digitsRow(str, signCell){
+    var r = '<tr><td class="op-sign">'+(signCell||'')+'</td>';
+    for(var c=0;c<cols;c++){ r += '<td>'+(str[c]===' '?'':str[c])+'</td>'; }
+    return r+'</tr>';
+  }
+  var html = '<div class="exo-box">'+exerciseCounterHtml()+'<div class="exo-q">'+ex.q+'</div>';
+  html += '<table class="cp-table"><tbody>';
+  if(op==='addition'){
+    var carryRow = '<tr class="cp-carry"><td></td>';
+    for(var c=0;c<cols;c++){ carryRow += '<td><input type="text" maxlength="1" inputmode="numeric" id="cpCarry'+c+'"></td>'; }
+    html += carryRow+'</tr>';
+  }
+  html += digitsRow(aStr, '');
+  html += digitsRow(bStr, sign);
+  html += '<tr><td colspan="'+(cols+1)+'" class="cp-line"></td></tr>';
+  var resRow = '<tr><td></td>';
+  for(var c=0;c<cols;c++){ resRow += '<td><input type="text" maxlength="1" inputmode="numeric" class="cp-input" id="cpRes'+c+'"></td>'; }
+  html += resRow+'</tr>';
+  html += '</tbody></table>';
+  html += '<div style="text-align:center;margin-top:10px;"><button class="btn" id="validateBtn" onclick="GT.answerCalculPose()">Valider ✅</button></div>';
+  html += '<div id="expBox"></div></div>';
+  body.innerHTML = html;
+  var firstInput = document.getElementById('cpRes0');
+  if(firstInput) firstInput.focus();
+};
+GT.answerCalculPose = function(){
+  if(LS.answered) return;
+  var list = currentExerciseList();
+  var ex = list[LS.exIndex];
+  var st = GT._cpState;
+  var allCorrect = true;
+  for(var c=0;c<st.cols;c++){
+    var inp = document.getElementById('cpRes'+c);
+    var val = (inp.value||'').trim();
+    var expected = st.resultStr[c];
+    var ok = (val===expected);
+    if(!ok) allCorrect = false;
+    inp.classList.add(ok?'correct':'wrong');
+    inp.disabled = true;
+  }
+  LS.answered = true;
+  if(!allCorrect) LS.mistakes++;
+  LS._p5Attempts = LS._p5Attempts || []; LS._p5FirstTry = LS._p5FirstTry || [];
+  LS._p5Attempts.push(1); LS._p5FirstTry.push(allCorrect);
+  GT.lockHintButton();
+  var vb = document.getElementById('validateBtn'); if(vb) vb.style.display = 'none';
+  var expBox = document.getElementById('expBox');
+  var correction = allCorrect ? '' : ('<div class="spell-note">✏️ Le bon résultat est : '+st.resultStr+'</div>');
+  expBox.innerHTML = '<div class="exp-box">'+(allCorrect?'✅ Bravo ! ':'❌ Pas tout à fait. ')+ex.exp+'</div>'+correction+'<div style="text-align:center;margin-top:14px;"><button class="btn" onclick="nextExercise()">'+(LS.exIndex+1<list.length?'Suivant ➡️':'Terminer 🏁')+'</button></div>';
 };
 
 /* ---- SPEECH : synthese vocale + reconnaissance vocale (API natives navigateur) ---- */
@@ -3873,6 +4023,14 @@ if(ex && ex.type === 'text'){
 updateLessonProgressBar();
 LS.answered = false;
 GT.renderTextExercise(ex);
+} else if(ex && ex.type === 'ordre'){
+updateLessonProgressBar();
+LS.answered = false;
+GT.renderOrdre(ex);
+} else if(ex && ex.type === 'calcul_pose'){
+updateLessonProgressBar();
+LS.answered = false;
+GT.renderCalculPose(ex);
 } else {
 __p5_renderExerciseStep();
 }
