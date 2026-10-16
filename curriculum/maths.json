@@ -2686,7 +2686,7 @@
             "q": "Léna a déjà fait 7 paquets de 10 crayons, et il lui reste 23 crayons en vrac à ranger. Que doit-elle faire avant de pouvoir annoncer le nombre total de crayons ?",
             "choices": [
               "Rien, elle peut dire directement 723",
-              "Continuer à faire des paquets de 10 avec les 23 crayons restants, car il s'en cache encore 2 dedans",
+              "Continuer à faire des paquets de 10",
               "Recompter tout depuis le début",
               "Jeter les crayons en trop"
             ],
@@ -2699,7 +2699,7 @@
             "q": "Malo dit : « J'ai 4 paquets de 10 et 15 objets seuls, donc j'ai le nombre 4015 ». Quelle est son erreur ?",
             "choices": [
               "Il a raison",
-              "15 objets seuls contiennent en fait encore un paquet de 10 caché, qu'il n'a pas vu",
+              "15 objets cachent encore un paquet de 10",
               "Il manque un chiffre",
               "Il fallait compter en paquets de 100"
             ],
@@ -2732,7 +2732,7 @@
             "q": "Au marché, Hugo compte des œufs : 5 caisses de 100, 0 paquet de 10, et 14 œufs isolés. Que doit-il corriger avant de donner le total ?",
             "choices": [
               "Rien, le total est 5014",
-              "14, ce n'est pas rangé : il cache encore 1 dizaine et 4 unités, il faut refaire un paquet de 10",
+              "14, ce n'est pas rangé",
               "Il faut recompter les caisses de 100",
               "Il faut jeter les 14 œufs"
             ],
@@ -2759,7 +2759,7 @@
             "q": "Pourquoi forme-t-on un paquet de 100 seulement quand on a exactement 10 paquets de 10 ?",
             "choices": [
               "Parce que c'est plus joli",
-              "Parce que notre système de numération fonctionne par groupes de 10 : 10 dizaines font toujours 1 centaine",
+              "Parce que 10 dizaines font toujours 1 centaine",
               "Parce que 100 est un nombre rond",
               "Il n'y a pas de raison particulière"
             ],
@@ -2772,7 +2772,7 @@
             "q": "Léo dit : « J'ai rangé 23 jetons en paquets de 10, donc j'ai 23 paquets ». Quelle est son erreur ?",
             "choices": [
               "Il a raison",
-              "Il confond le nombre de jetons (23) avec le nombre de paquets : avec 23 jetons, on fait 2 paquets de 10 et il reste 3 jetons seuls",
+              "Il confond le nombre de jetons (23) avec le nombre de paquets",
               "23 jetons ne peuvent pas être rangés",
               "Il fallait faire des paquets de 100"
             ],
@@ -2845,7 +2845,7 @@
             "q": "Enzo range 230 timbres et affirme : « J'ai 23 centaines ». Quelle est l'erreur ?",
             "choices": [
               "Il a raison",
-              "Il confond dizaines et centaines : 230 = 2 centaines et 3 dizaines, pas 23 centaines",
+              "Il confond dizaines et centaines",
               "230 n'a pas de centaines",
               "Il fallait dire 230 dizaines"
             ],
@@ -2921,7 +2921,7 @@
             "q": "Sans faire le total, comment peut-on être sûr que 512 est plus grand que 498 ?",
             "choices": [
               "En comparant les unités : 2 et 8",
-              "En comparant les centaines : 5 contre 4, donc 512 est forcément plus grand",
+              "En comparant les centaines",
               "On ne peut pas savoir sans tout calculer",
               "En comptant le nombre de chiffres"
             ],
@@ -2934,7 +2934,7 @@
             "q": "Un élève écrit le nombre « cinq cent deux » comme ceci : 52. Quelle est son erreur ?",
             "choices": [
               "Il a bien fait",
-              "Il a oublié la maison des dizaines (qui est vide, donc un 0) entre le 5 et le 2",
+              "Il a oublié le 0 des dizaines",
               "Il fallait écrire 520",
               "Il fallait écrire 25"
             ],
@@ -2987,7 +2987,7 @@
             "q": "Pourquoi écrit-on un 0 pour le chiffre des dizaines dans 309, plutôt que de ne rien écrire ?",
             "choices": [
               "Pour faire joli",
-              "Pour garder la place : sans le 0, on ne saurait pas que le 9 est au rang des unités et pas des dizaines",
+              "Pour garder la place",
               "Le 0 ne sert à rien",
               "Parce que c'est obligatoire sans raison"
             ],
@@ -3000,7 +3000,7 @@
             "q": "Un élève écrit le nombre « trois cent sept » comme ceci : 37. Quelle est son erreur ?",
             "choices": [
               "Il a raison",
-              "Il a oublié le 0 des dizaines : 'trois cent sept' = 3 centaines, 0 dizaine, 7 unités, donc 307",
+              "Il a oublié le 0 des dizaines",
               "37 est déjà correct",
               "Il fallait écrire 370"
             ],
@@ -3073,7 +3073,7 @@
             "q": "Nina dit : « Dans 802, il n'y a pas de dizaine car je ne vois pas de dizaine écrite ». Quelle est son erreur ?",
             "choices": [
               "Elle a raison",
-              "Elle confond 'rien à ce rang' avec 'rang absent' : il y a bien un rang des dizaines dans 802, sa valeur est juste 0",
+              "Le rang des dizaines existe, il vaut 0",
               "802 n'a pas 3 chiffres",
               "Il fallait écrire 82"
             ],
@@ -3175,7 +3175,7 @@
             "q": "Pour comparer 419 et 362, Inès regarde d'abord les unités (9 et 2) et conclut que 419 est plus grand « parce que 9 > 2 ». A-t-elle bien raisonné ?",
             "choices": [
               "Oui, c'est la bonne méthode",
-              "Elle a la bonne réponse mais la mauvaise méthode : il fallait comparer les centaines (4 contre 3) en premier",
+              "Elle a la bonne réponse mais la mauvaise méthode",
               "Non, 362 est en fait plus grand",
               "On ne peut pas comparer ces deux nombres"
             ],
@@ -3234,7 +3234,7 @@
             "q": "Pour comparer 723 et 719, pourquoi n'est-il pas utile de regarder le chiffre des unités en premier ?",
             "choices": [
               "Il faut toujours commencer par les unités",
-              "Parce que les centaines et les dizaines pèsent plus lourd : ici les dizaines (2 contre 1) suffisent déjà à trancher, peu importe les unités",
+              "Parce que les centaines et les dizaines pèsent plus lourd",
               "Les unités sont toujours égales",
               "Ce n'est jamais utile de regarder les dizaines"
             ],
@@ -3247,7 +3247,7 @@
             "q": "Léa compare 605 et 650 et dit : « Ils ont les mêmes chiffres, donc ils sont égaux ». Quelle est son erreur ?",
             "choices": [
               "Elle a raison",
-              "Elle oublie que la position des chiffres change leur valeur : 650 a 5 dizaines (50) alors que 605 n'en a aucune (0), donc 650 > 605",
+              "Elle oublie que la position des chiffres change leur valeur",
               "605 et 650 sont bien égaux",
               "Il faut comparer les lettres, pas les chiffres"
             ],
@@ -3415,7 +3415,7 @@
             "q": "512 et 521 ont les mêmes chiffres. Pourquoi ne sont-ils pourtant pas voisins sur la droite numérique ?",
             "choices": [
               "Ils sont en fait voisins",
-              "Il y a plusieurs nombres entre les deux (513, 514... jusqu'à 520) : 521 est 9 pas plus loin que 512",
+              "Il y a plusieurs nombres entre les deux (513, 514... jusqu'à 520)",
               "Parce que 5 est un chiffre impair",
               "On ne peut pas comparer deux nombres qui ont les mêmes chiffres"
             ],
@@ -3428,7 +3428,7 @@
             "q": "Sacha place le nombre 199 juste avant le repère 100 sur une droite graduée de 100 en 100. Quelle est son erreur ?",
             "choices": [
               "Il a bien fait",
-              "199 est très proche de 200, pas de 100 : il faut le placer juste avant le repère 200",
+              "199 est très proche de 200, pas de 100",
               "199 n'existe pas",
               "Il fallait le placer après 200"
             ],
@@ -3487,7 +3487,7 @@
             "q": "Pourquoi deux nombres comme 305 et 350 peuvent-ils être très éloignés sur une droite numérique même s'ils utilisent les mêmes chiffres ?",
             "choices": [
               "Ils ne sont jamais éloignés",
-              "Parce que la position des chiffres change leur valeur : 350 a 5 dizaines (50) alors que 305 n'en a aucune, l'écart réel est de 45",
+              "Parce que la position des chiffres change leur valeur",
               "Parce que 3 et 5 sont des chiffres différents",
               "Il n'y a pas d'explication"
             ],
@@ -3500,7 +3500,7 @@
             "q": "Tom place le nombre 299 juste avant le repère 200 sur une droite graduée de 100 en 100. Quelle est son erreur ?",
             "choices": [
               "Il a raison",
-              "299 est très proche de 300, pas de 200 : il doit le placer juste avant le repère 300",
+              "299 est très proche de 300, pas de 200",
               "299 doit être placé après 400",
               "Il n'y a pas d'erreur possible sur une droite"
             ],
@@ -3553,7 +3553,7 @@
             "q": "Pourquoi utilise-t-on souvent une droite numérique graduée régulièrement (toujours le même écart) plutôt qu'avec des écarts qui changent ?",
             "choices": [
               "Pour que ce soit plus joli",
-              "Pour pouvoir comparer facilement les distances entre les nombres : un écart toujours identique représente toujours la même quantité",
+              "Pour pouvoir comparer facilement les distances entre les nombres",
               "Parce que c'est obligatoire sans raison",
               "Les écarts changent toujours sur une droite numérique"
             ],
@@ -3662,7 +3662,7 @@
             "q": "Dans la suite répétitive A-B-A-B-A-B..., comment savoir, sans tout écrire, si la vingtième lettre est un A ou un B ?",
             "choices": [
               "Il faut forcément écrire toute la suite jusqu'à 20",
-              "Les A sont aux rangs impairs, les B aux rangs pairs ; 20 est pair donc c'est un B",
+              "Les A sont aux rangs impairs, les B aux rangs pairs",
               "La vingtième lettre est toujours un A",
               "On ne peut pas savoir"
             ],
@@ -3675,7 +3675,7 @@
             "q": "Zoé dit : « Il y a 5 personnes devant moi dans la file, donc je suis cinquième. » Quelle est son erreur ?",
             "choices": [
               "Elle a raison",
-              "Elle a oublié de compter sa propre place : avec 5 personnes devant elle, elle est sixième",
+              "Elle a oublié de compter sa propre place",
               "Il fallait dire quatrième",
               "Il n'y a pas d'erreur possible"
             ],
@@ -3768,7 +3768,7 @@
             "q": "Dans un classement de 15 participants, Zoé est 15e. Que peut-on en déduire ?",
             "choices": [
               "Elle est arrivée première",
-              "Elle est arrivée dernière, car 15e est la dernière place possible sur 15 participants",
+              "Elle est arrivée dernière",
               "Elle n'a pas participé",
               "Elle est arrivée au milieu"
             ],
@@ -3780,7 +3780,7 @@
             "kind": "reasoning",
             "q": "Pourquoi, dans un escalier, le mot « 1er étage » désigne-t-il souvent l'étage juste après le rez-de-chaussée, et non le rez-de-chaussée lui-même ?",
             "choices": [
-              "Parce que le rez-de-chaussée n'est pas compté comme un étage dans ce système : le 1er étage est le premier niveau situé AU-DESSUS du rez-de-chaussée",
+              "Parce que le rez-de-chaussée n'est pas compté comme un étage dans ce système",
               "Parce que c'est une erreur de langage",
               "Parce que le rez-de-chaussée est toujours le 2e étage",
               "Il n'y a pas de règle"
@@ -3906,7 +3906,7 @@
             "q": "Avec les chiffres 2, 9 et 5, comment trouver le plus petit nombre possible à trois chiffres ?",
             "choices": [
               "On place les chiffres dans l'ordre où ils sont donnés : 295",
-              "On place le plus petit chiffre dans la maison qui pèse le plus (les centaines), puis les suivants dans l'ordre croissant : 259",
+              "On place le plus petit chiffre en premier, dans les centaines",
               "On place le plus grand chiffre en premier",
               "Le plus petit nombre est toujours 0"
             ],
@@ -3998,7 +3998,7 @@
             "q": "Noah compare 630 et 603 et dit qu'ils sont égaux car ils contiennent les mêmes chiffres. Quelle est son erreur ?",
             "choices": [
               "Il a raison",
-              "Il oublie que la position change la valeur : 630 a 3 dizaines (30) alors que 603 n'en a aucune, donc 630 > 603",
+              "Il oublie que la position change la valeur",
               "630 et 603 sont bien égaux",
               "Il faut comparer uniquement les unités"
             ],
@@ -4031,7 +4031,7 @@
             "q": "Pourquoi, pour comparer deux grands nombres, est-il inutile de les compter un par un depuis zéro ?",
             "choices": [
               "Il faut toujours compter depuis zéro",
-              "Parce qu'on peut comparer directement les chiffres rang par rang (centaines, puis dizaines, puis unités), ce qui est bien plus rapide et tout aussi fiable",
+              "Parce qu'on compare directement rang par rang, du plus grand au plus petit",
               "Parce que les grands nombres ne peuvent pas être comparés",
               "Il n'y a pas de méthode plus rapide"
             ],
@@ -4153,7 +4153,7 @@
             "q": "Pourquoi ne peut-on pas dire qu'un gâteau est coupé « en quarts » s'il a 4 morceaux de tailles très différentes ?",
             "choices": [
               "On peut le dire quand même",
-              "Une fraction suppose toujours des parts égales : 4 morceaux inégaux ne sont pas des quarts",
+              "Une fraction suppose toujours des parts égales",
               "Il faudrait plus de morceaux",
               "Les quarts n'existent que pour les pizzas"
             ],
@@ -4166,7 +4166,7 @@
             "q": "Milo partage un gâteau en 5 parts (une grande pour lui, 4 petites pour ses amis) et dit : « On a chacun un cinquième. » Que penses-tu de sa phrase ?",
             "choices": [
               "Elle est juste",
-              "Elle est fausse : les parts ne sont pas égales, donc ce ne sont pas des cinquièmes",
+              "Elle est fausse : les parts ne sont pas égales",
               "Il fallait dire un quart",
               "Il fallait dire la moitié"
             ],
@@ -4212,7 +4212,7 @@
             "q": "Un ruban est coupé en 3 morceaux de longueurs très différentes. Peut-on dire que chaque morceau mesure 1/3 du ruban ?",
             "choices": [
               "Oui, car il y a 3 morceaux",
-              "Non, car une fraction suppose des parts de même taille, ce qui n'est pas le cas ici",
+              "Non, car une fraction suppose des parts de même taille",
               "Oui, toujours, quel que soit le découpage",
               "Seulement si les morceaux sont de la même couleur"
             ],
@@ -4278,7 +4278,7 @@
             "q": "Pourquoi 4/4 d'un gâteau représente-t-il le gâteau tout entier ?",
             "choices": [
               "Parce que 4 est un grand nombre",
-              "Parce que lorsque le numérateur est égal au dénominateur, on a repris toutes les parts, donc le tout",
+              "Parce que numérateur égal au dénominateur veut dire le tout",
               "Ce n'est pas vrai, 4/4 est toujours moins que le tout",
               "Parce que 4/4 = 1 par hasard"
             ],
@@ -4323,7 +4323,7 @@
             "kind": "challenge",
             "q": "Un jardin est divisé en 5 parcelles égales. Combien de parcelles forment la moitié du jardin, en nombre entier de parcelles ?",
             "choices": [
-              "2 ou 3 parcelles, mais pas exactement la moitié (5 n'est pas divisible par 2)",
+              "2 ou 3 parcelles, pas exactement la moitié",
               "2,5 parcelles exactement",
               "5 parcelles",
               "1 parcelle"
@@ -4406,7 +4406,7 @@
             "q": "Pourquoi peut-on comparer 3/8 et 6/8 juste en regardant 3 et 6, comme si c'étaient des nombres entiers normaux ?",
             "choices": [
               "Parce que les fractions, ça n'a pas vraiment d'importance",
-              "Parce que les deux touts sont coupés en autant de parts (8), donc les parts ont la même taille : seul le nombre de parts prises change",
+              "Parce que les deux touts sont coupés en autant de parts (8)",
               "Parce que 8 est un nombre pair",
               "On ne peut pas faire ça, il faut toujours calculer le total"
             ],
@@ -4419,7 +4419,7 @@
             "q": "Un élève affirme que 2/4 est plus petit que 1/4 « parce que 2 est après 1 dans l'écriture, donc c'est après, donc plus petit ». Que penser de son raisonnement ?",
             "choices": [
               "Il a raison",
-              "Il se trompe : avec un même dénominateur, plus le numérateur est grand, plus la fraction est grande, donc 2/4 > 1/4",
+              "Il se trompe : plus le numérateur est grand, plus c'est grand",
               "Les deux fractions sont égales",
               "On ne peut pas comparer ces deux fractions"
             ],
@@ -4484,7 +4484,7 @@
             "q": "Pourquoi, quand deux fractions ont le même dénominateur, suffit-il de comparer les numérateurs ?",
             "choices": [
               "Parce que c'est une règle sans explication",
-              "Parce que les parts sont de la même taille dans les deux fractions : seul le nombre de parts prises (numérateur) change, donc plus il y a de parts prises, plus la fraction est grande",
+              "Parce que les parts sont de la même taille dans les deux fractions",
               "Parce que les dénominateurs ne comptent jamais",
               "Ce n'est vrai que pour certains dénominateurs"
             ],
@@ -4497,7 +4497,7 @@
             "q": "Léo dit : « 6/10 est plus petit que 4/10 car 6 est un chiffre impair ». Quelle est son erreur ?",
             "choices": [
               "Il a raison",
-              "Il invente une règle sans rapport : il faut comparer directement les numérateurs à dénominateur égal, 6>4 donc 6/10>4/10",
+              "Il invente une règle sans rapport",
               "6/10 n'existe pas",
               "4/10 est toujours plus grand"
             ],
@@ -4550,7 +4550,7 @@
             "q": "Pourquoi 0/4 est-il la plus petite fraction possible avec un dénominateur de 4 ?",
             "choices": [
               "Parce que 0 est négatif",
-              "Parce que prendre 0 part, c'est ne rien prendre du tout : on ne peut pas prendre moins que rien",
+              "Parce que prendre 0 part, c'est ne rien prendre du tout",
               "Ce n'est pas vrai, 0/4 n'existe pas",
               "Parce que 4 est pair"
             ],
@@ -4665,7 +4665,7 @@
             "q": "Pourquoi 1/5 est-il plus petit que 1/3, alors que 5 est un nombre plus grand que 3 ?",
             "choices": [
               "C'est une erreur, 1/5 est plus grand",
-              "Parce qu'un même tout partagé en plus de parts (5) donne des parts plus petites qu'un partage en moins de parts (3)",
+              "Plus on partage en de parts, plus chaque part est petite",
               "Parce que 5 est un nombre impair",
               "Les fractions ne suivent pas de règle"
             ],
@@ -4678,7 +4678,7 @@
             "q": "Un élève dit : « 1/7 est plus grand que 1/4 parce que 7 est plus grand que 4 ». Quelle est son erreur ?",
             "choices": [
               "Il a raison",
-              "Il compare les dénominateurs comme des nombres entiers classiques, alors qu'ici un grand dénominateur veut dire une PETITE part : en fait 1/7 < 1/4",
+              "Un grand dénominateur donne une petite part : 1/7 < 1/4",
               "Il fallait comparer les numérateurs",
               "Les deux fractions sont égales"
             ],
@@ -4730,7 +4730,7 @@
             "q": "Pourquoi 1/2 est-il plus grand que 1/100, même si 100 est un bien plus grand nombre que 2 ?",
             "choices": [
               "Ce n'est pas vrai, 1/100 est plus grand",
-              "Parce que plus on partage un même tout en de nombreuses parts, plus chaque part devient petite : partager en 100 donne des parts minuscules comparées à un partage en 2",
+              "Parce que plus on partage un même tout en de nombreuses parts, plus chaque part devient petite",
               "Parce que 2 est pair et 100 est pair aussi, donc ils devraient être égaux",
               "Il n'y a pas d'explication logique"
             ],
@@ -4743,7 +4743,7 @@
             "q": "Léa dit : « 1/9 est plus grand que 1/3 car 9 est plus grand que 3 ». Quelle est son erreur ?",
             "choices": [
               "Elle a raison",
-              "Elle inverse la logique : pour les fractions de numérateur 1, plus le dénominateur est grand, plus la part est PETITE, donc 1/9 < 1/3",
+              "Elle inverse la logique",
               "1/9 et 1/3 sont égaux",
               "1/3 n'existe pas"
             ],
@@ -4795,7 +4795,7 @@
             "kind": "challenge",
             "q": "Zoé affirme : « 1/1 est la plus grande fraction de numérateur 1 possible ». A-t-elle raison ?",
             "choices": [
-              "Oui, car 1/1 représente le tout entier, on ne peut pas faire plus grand avec un numérateur 1",
+              "Oui, 1/1 représente déjà le tout entier",
               "Non, 1/10 est plus grand",
               "Non, il n'existe pas de plus grande fraction",
               "1/1 n'est pas une fraction valide"
@@ -4924,7 +4924,7 @@
             "q": "Pourquoi le dénominateur ne change-t-il jamais quand on additionne deux fractions de même dénominateur ?",
             "choices": [
               "Parce qu'on l'oublie souvent",
-              "Parce qu'il représente la taille des parts, qui ne change pas : seul le nombre de parts prises (numérateur) évolue",
+              "Parce qu'il représente la taille des parts, qui ne change pas",
               "Parce qu'il faut toujours garder le plus petit dénominateur",
               "Il change, mais seulement pour les grands nombres"
             ],
@@ -4937,7 +4937,7 @@
             "q": "Un élève calcule : 1/4 + 1/4 = 2/8. Que penses-tu de son calcul ?",
             "choices": [
               "Il a bien calculé et simplifié",
-              "Son calcul des numérateurs est juste (1+1=2) mais il a eu tort de changer aussi le dénominateur : la bonne réponse est 2/4, qui vaut d'ailleurs la moitié",
+              "Le dénominateur ne doit pas changer : 2/4",
               "Il fallait faire 1/4",
               "Le résultat est 4/8"
             ],
@@ -5002,7 +5002,7 @@
             "q": "Pourquoi, pour additionner 2/5 et 1/5, additionne-t-on seulement les numérateurs (2+1) sans toucher au dénominateur ?",
             "choices": [
               "Parce que c'est une règle à apprendre sans comprendre",
-              "Parce que les parts sont de la même taille (cinquièmes) dans les deux fractions : on compte juste combien de ces parts identiques on a en tout",
+              "Parce que les parts sont de la même taille (cinquièmes) dans les deux fractions",
               "Parce que le dénominateur change toujours de son côté",
               "Parce que 5 est un nombre impair"
             ],
@@ -5015,7 +5015,7 @@
             "q": "Un élève calcule : 2/6 + 3/6 = 5/12. Quelle est son erreur ?",
             "choices": [
               "Il a raison",
-              "Il additionne aussi les dénominateurs alors qu'ils doivent rester identiques : la bonne réponse est 5/6, pas 5/12",
+              "Il additionne aussi les dénominateurs : la réponse est 5/6",
               "2/6+3/6 ne peut pas se calculer",
               "Il fallait soustraire au lieu d'additionner"
             ],
@@ -5055,7 +5055,7 @@
             "q": "Pourquoi ne peut-on pas calculer directement 3/4 + 1/2 de la même façon que 3/8 + 1/8 ?",
             "choices": [
               "On peut toujours faire pareil",
-              "Parce que 3/4 et 1/2 n'ont pas le même dénominateur : les parts n'ont pas la même taille, donc on ne peut pas juste additionner les numérateurs sans transformation préalable",
+              "Parce que 3/4 et 1/2 n'ont pas le même dénominateur",
               "Parce que 1/2 n'est pas une vraie fraction",
               "Parce que l'addition de fractions est toujours impossible"
             ],
@@ -5068,7 +5068,7 @@
             "q": "Léo calcule 8/9 − 3/9 et obtient 5/0. Quelle est son erreur ?",
             "choices": [
               "Il a raison",
-              "Le dénominateur ne change jamais dans une soustraction de fractions de même dénominateur : la bonne réponse est 5/9, pas 5/0",
+              "Le dénominateur ne change jamais : la réponse est 5/9",
               "Il fallait additionner au lieu de soustraire",
               "8/9 n'existe pas"
             ],
@@ -5101,7 +5101,7 @@
             "q": "Peut-on calculer 2/5 + 4/5 et obtenir une fraction supérieure à 1 (le tout entier) ?",
             "choices": [
               "Non, jamais",
-              "Oui : 2/5+4/5=6/5, ce qui dépasse le tout (comme si on avait plus d'un gâteau)",
+              "Oui : 2/5+4/5=6/5",
               "Oui, mais seulement avec des dénominateurs pairs",
               "Non, car 5 est trop petit"
             ],
@@ -5171,7 +5171,7 @@
             "q": "Pourquoi commence-t-on toujours une addition posée par la colonne des unités, et jamais par celle des centaines ?",
             "choices": [
               "Ça n'a pas d'importance, on peut commencer où on veut",
-              "Parce qu'une retenue se transmet toujours vers la colonne de gauche : il faut donc connaître le résultat des unités avant de calculer les dizaines",
+              "Parce qu'une retenue se transmet toujours vers la colonne de gauche",
               "Parce que les unités sont plus faciles à calculer",
               "Parce que c'est écrit comme ça sur le cahier"
             ],
@@ -5184,7 +5184,7 @@
             "q": "Un élève calcule 58 + 26 et trouve 714. Que s'est-il passé ?",
             "choices": [
               "Le résultat est juste",
-              "Il a oublié la retenue : 8+6=14, il fallait écrire 4 et retenir 1 pour les dizaines (5+2+1=8), le bon résultat est 84",
+              "Il a oublié la retenue",
               "Il fallait écrire 84 d'abord puis 7",
               "Les deux nombres sont mal alignés"
             ],
@@ -5237,7 +5237,7 @@
             "q": "Pourquoi, lors d'une addition posée, écrit-on toujours un seul chiffre par colonne, même si la somme dépasse 9 ?",
             "choices": [
               "Parce que c'est plus joli",
-              "Parce que chaque colonne ne peut contenir qu'un seul chiffre (0 à 9) : le surplus devient une retenue qui part dans la colonne suivante",
+              "Parce que chaque colonne ne peut contenir qu'un seul chiffre (0 à 9)",
               "Parce que les retenues n'existent pas vraiment",
               "Parce qu'il est interdit d'écrire 2 chiffres"
             ],
@@ -5249,7 +5249,7 @@
             "kind": "error_analysis",
             "q": "Un élève calcule 67 + 48 et trouve 1015. Quelle est son erreur la plus probable ?",
             "choices": [
-              "Il a oublié d'écrire la retenue correctement et a collé les deux résultats partiels au lieu de les combiner : 67+48=115, pas 1015",
+              "Il a mal géré la retenue : 67+48=115, pas 1015",
               "Il a bien calculé",
               "Il fallait soustraire",
               "67+48 ne se calcule pas en colonnes"
@@ -5289,7 +5289,7 @@
             "kind": "reasoning",
             "q": "Pourquoi une retenue se place-t-elle toujours dans la colonne immédiatement à gauche, jamais à droite ?",
             "choices": [
-              "Parce que la colonne à gauche représente le rang supérieur (10 fois plus grand) : une retenue de 1 dizaine va logiquement dans la colonne des dizaines, pas celle des unités",
+              "Parce que la colonne à gauche vaut 10 fois plus",
               "Par habitude, sans raison précise",
               "Parce que c'est plus simple à écrire",
               "Les retenues peuvent aller n'importe où"
@@ -5303,7 +5303,7 @@
             "q": "Un élève calcule 85 + 37 et oublie complètement la retenue, trouvant 112 au lieu de 122. Où est passée l'erreur ?",
             "choices": [
               "Il a bien calculé",
-              "Aux unités, 5+7=12, il a dû écrire 2 et retenir 1 mais n'a pas ajouté cette retenue aux dizaines (8+3=11, +1 de retenue=12)",
+              "Il a oublié d'ajouter la retenue aux dizaines",
               "Il fallait soustraire",
               "85+37 ne peut pas se calculer"
             ],
@@ -5323,7 +5323,7 @@
             "q": "Un commerçant additionne ses ventes de deux jours : 999 + 1. Que doit-il se passer dans le calcul ?",
             "choices": [
               "Une seule retenue, aux unités seulement",
-              "Une chaîne de retenues qui traverse toutes les colonnes : unités, dizaines, centaines, jusqu'à créer un nouveau chiffre des milliers : résultat 1000",
+              "Une chaîne de retenues qui traverse toutes les colonnes",
               "Aucune retenue n'est nécessaire",
               "Le calcul est impossible"
             ],
@@ -5380,7 +5380,7 @@
             "q": "Pour calculer 341 − 157, que doit-on faire à la colonne des unités (1 − 7) ?",
             "choices": [
               "Faire 7 − 1 à la place",
-              "Casser une dizaine du nombre du haut pour transformer 1 en 11, puis calculer 11 − 7",
+              "Casser une dizaine pour transformer 1 en 11",
               "Écrire 0",
               "C'est impossible, il n'y a pas de solution"
             ],
@@ -5400,7 +5400,7 @@
             "q": "Pourquoi, quand on casse une dizaine pour les unités, doit-on ensuite enlever 1 à la colonne des dizaines du nombre du haut ?",
             "choices": [
               "Il ne faut rien enlever, ça ne change rien",
-              "Parce que cette dizaine a été prêtée aux unités : il en reste donc une de moins dans la colonne des dizaines",
+              "Parce que cette dizaine a été prêtée aux unités",
               "Parce que c'est une règle sans explication, à apprendre par cœur",
               "Parce qu'on doit toujours enlever 1 quelque part"
             ],
@@ -5413,7 +5413,7 @@
             "q": "Pour calculer 52 − 27, un élève écrit directement 7 − 2 = 5 aux unités (en inversant l'ordre pour éviter l'emprunt). Que penses-tu de sa méthode ?",
             "choices": [
               "C'est une bonne astuce, le résultat sera juste",
-              "C'est une erreur fréquente mais fausse : il faut casser une dizaine (12 − 7 = 5), sinon le résultat final sera faux",
+              "C'est une erreur fréquente mais fausse",
               "Il fallait faire 2 − 7",
               "Les deux méthodes donnent toujours le même résultat"
             ],
@@ -5466,7 +5466,7 @@
             "q": "Pourquoi, quand on emprunte une dizaine pour les unités, la colonne des dizaines perd-elle 1, même si on n'a encore rien soustrait à cette colonne ?",
             "choices": [
               "C'est une erreur, elle ne devrait rien perdre",
-              "Parce que la dizaine empruntée vient forcément de la colonne des dizaines : ce qu'on gagne aux unités (10), on le perd ailleurs (1 dizaine en moins)",
+              "Ce qu'on gagne aux unités, on le perd en dizaines",
               "Par habitude, sans logique particulière",
               "Parce que les dizaines sont toujours impaires"
             ],
@@ -5479,7 +5479,7 @@
             "q": "Pour calculer 83 − 46, un élève écrit directement 6 − 3 = 3 aux unités, en inversant l'ordre pour éviter l'emprunt. Que penser de cette méthode ?",
             "choices": [
               "C'est une bonne astuce, toujours valable",
-              "C'est une erreur : l'ordre compte dans une soustraction (83−46 n'est pas pareil que 46−83), il faut vraiment emprunter plutôt qu'inverser",
+              "C'est une erreur",
               "Cela ne change jamais le résultat",
               "Il fallait additionner au lieu de soustraire"
             ],
@@ -5518,7 +5518,7 @@
             "kind": "reasoning",
             "q": "Pourquoi une soustraction comme 500 − 1 nécessite-t-elle des emprunts en chaîne à travers plusieurs colonnes ?",
             "choices": [
-              "Parce que 500 n'a que des zéros après le 5, donc il faut emprunter de colonne en colonne jusqu'à trouver un chiffre non nul à « casser »",
+              "Parce que 500 n'a que des zéros après le 5",
               "Il n'y a besoin d'aucun emprunt",
               "Parce que 1 est un nombre trop petit",
               "Parce que 500 est un nombre pair"
@@ -5532,7 +5532,7 @@
             "q": "Un élève calcule 304 − 128 et obtient 224. Que penses-tu de ce résultat ?",
             "choices": [
               "Il est correct",
-              "Il est faux : la bonne réponse est 176 ; l'élève a probablement oublié de gérer l'emprunt sur le zéro des dizaines",
+              "Il est faux : la bonne réponse est 176",
               "Il manque juste une retenue en plus",
               "304−128 ne peut pas se calculer"
             ],
@@ -5552,7 +5552,7 @@
             "q": "Peut-on calculer 157 − 289 avec seulement des nombres entiers positifs au CE1 ?",
             "choices": [
               "Oui, cela donne un résultat positif",
-              "Non, car 289 est plus grand que 157 : le résultat serait négatif, ce qui dépasse ce qu'on étudie pour l'instant",
+              "Non, car 289 est plus grand que 157",
               "Oui, cela donne toujours 0",
               "Oui, cela donne 132"
             ],
@@ -5629,7 +5629,7 @@
             "q": "Comment peut-on vérifier, avec des jetons posés en rangées, que 3 × 5 donne le même résultat que 5 × 3 ?",
             "choices": [
               "On ne peut pas vérifier, il faut juste l'apprendre par cœur",
-              "En posant un rectangle de jetons : 3 rangées de 5, ou 5 rangées de 3, le total de jetons est le même dans les deux cas",
+              "En posant un rectangle de jetons",
               "3 × 5 et 5 × 3 sont deux calculs différents qui ne se comparent pas",
               "Il faut compter les jetons un par un sans faire de rangées"
             ],
@@ -5642,7 +5642,7 @@
             "q": "Pour calculer 6 × 2, un élève écrit 6+6 = 12, un autre écrit 2+2+2+2+2+2 = 12. Que penser des deux méthodes ?",
             "choices": [
               "Une seule est correcte",
-              "Les deux sont correctes : 6 × 2 peut se voir comme 2 groupes de 6, ou comme 6 groupes de 2, grâce à la commutativité",
+              "Les deux sont correctes",
               "Il fallait faire 6 × 6",
               "6 × 2 ne peut pas s'écrire en addition"
             ],
@@ -5695,7 +5695,7 @@
             "q": "Comment peut-on vérifier, sans calculer, que 4 × 7 donne le même résultat que 7 × 4 ?",
             "choices": [
               "On ne peut pas le vérifier sans calculer",
-              "En dessinant un quadrillage de 4 lignes et 7 colonnes : on peut le regarder en lignes (4 fois 7) ou en colonnes (7 fois 4), le nombre total de cases ne change pas",
+              "En dessinant un quadrillage de 4 lignes et 7 colonnes",
               "Ce n'est pas vrai, les deux calculs sont différents",
               "En comptant uniquement les lignes"
             ],
@@ -5708,7 +5708,7 @@
             "q": "Pour calculer 5 × 3, un élève écrit 5+3=8. Quelle est son erreur ?",
             "choices": [
               "Il a raison",
-              "Il confond addition et multiplication : 5 × 3 signifie 5 répété 3 fois (5+5+5=15), pas 5+3",
+              "Il confond addition et multiplication",
               "5×3 ne peut pas se calculer",
               "Il fallait écrire 3+3+3+3+3=15, ce qui est faux aussi"
             ],
@@ -5754,7 +5754,7 @@
             "q": "Pourquoi multiplier par 1 ne change-t-il jamais un nombre (exemple : 9 × 1 = 9) ?",
             "choices": [
               "Parce que c'est une règle sans explication",
-              "Parce que multiplier par 1, c'est prendre le nombre une seule fois : il reste donc identique",
+              "Parce que multiplier par 1, c'est prendre le nombre une seule fois",
               "Parce que 1 est un nombre spécial sans raison",
               "Ce n'est pas toujours vrai"
             ],
@@ -5767,7 +5767,7 @@
             "q": "Un élève calcule 6 × 0 et trouve 6. Quelle est son erreur ?",
             "choices": [
               "Il a raison",
-              "Multiplier par 0 signifie prendre le nombre zéro fois, donc rien du tout : le résultat est toujours 0, pas 6",
+              "Multiplier par 0 donne toujours 0",
               "6×0 ne peut pas se calculer",
               "Il fallait dire 60"
             ],
@@ -5876,7 +5876,7 @@
             "q": "Pourquoi suffit-il de regarder le dernier chiffre d'un nombre pour savoir s'il est pair, sans s'occuper des centaines ni des dizaines ?",
             "choices": [
               "Ce n'est pas vrai, il faut tout regarder",
-              "Parce que les dizaines et centaines représentent toujours des paquets de 10 (ou 100), qui se partagent toujours parfaitement en 2 : seul ce qui reste en unités seules peut créer un « reste »",
+              "Les centaines et dizaines se partagent toujours en 2",
               "Parce que les centaines sont toujours paires",
               "C'est une coïncidence, sans explication"
             ],
@@ -5889,7 +5889,7 @@
             "q": "Un élève dit : « 342 est impair car 3 et 4 (les deux premiers chiffres) sont bizarres ». Que penser de son raisonnement ?",
             "choices": [
               "Il a raison",
-              "Il se trompe : seul le dernier chiffre (2) compte, et 2 est pair, donc 342 est pair",
+              "Il se trompe : seul le dernier chiffre (2) compte, et 2 est pair",
               "Il fallait regarder les 3 chiffres ensemble",
               "342 n'est ni pair ni impair"
             ],
@@ -5948,7 +5948,7 @@
             "q": "Pourquoi suffit-il de regarder le dernier chiffre d'un nombre pour savoir s'il est pair, sans s'occuper des autres chiffres ?",
             "choices": [
               "Ce n'est pas vrai, il faut regarder tous les chiffres",
-              "Parce que tous les paquets de 10 (centaines, dizaines) se partagent toujours exactement en 2 : seul ce qui reste après (les unités) peut empêcher le partage parfait en 2",
+              "Tous les paquets de 10 se partagent exactement en 2",
               "Par pure convention, sans logique",
               "Parce que les autres chiffres ne comptent jamais"
             ],
@@ -5961,7 +5961,7 @@
             "q": "Un élève dit : « 530 est impair car il y a un 3 dedans, et 3 est impair ». Que penser de cette affirmation ?",
             "choices": [
               "Il a raison",
-              "Il se trompe : seul le DERNIER chiffre (les unités) détermine la parité ; 530 se termine par 0, qui est pair, donc 530 est pair",
+              "Seul le dernier chiffre compte : 530 finit par 0, donc pair",
               "530 n'a pas de parité",
               "Il fallait regarder le premier chiffre"
             ],
@@ -6001,7 +6001,7 @@
             "q": "Pourquoi la somme de deux nombres pairs est-elle toujours un nombre pair (exemple : 4+6=10) ?",
             "choices": [
               "Ce n'est pas toujours vrai",
-              "Parce que chaque nombre pair peut se partager parfaitement en 2 : en additionnant deux quantités qui se partagent chacune en 2, le total se partage aussi parfaitement en 2",
+              "Parce que chaque nombre pair peut se partager parfaitement en 2",
               "Par pur hasard à chaque fois",
               "Parce que l'addition rend toujours pair"
             ],
@@ -6111,7 +6111,7 @@
             "q": "Pourquoi est-il utile de connaître 6 + 4 = 10 « dans les trois sens » (6+4=?, 6+?=10, ?+4=10) plutôt que juste dans un seul sens ?",
             "choices": [
               "Ce n'est pas utile, un seul sens suffit toujours",
-              "Parce que les problèmes de la vie réelle posent parfois la question « combien manque-t-il » plutôt que « combien ça fait en tout »",
+              "Parce que la vie pose parfois « combien manque-t-il »",
               "Parce que les maîtresses aiment compliquer",
               "Parce que les nombres changent de valeur selon le sens"
             ],
@@ -6124,7 +6124,7 @@
             "q": "Pour répondre à « 5 + ? = 9 », un élève compte sur ses doigts à partir de 1 à chaque fois et met longtemps. Que pourrait-on lui conseiller ?",
             "choices": [
               "De continuer comme ça, c'est la seule méthode possible",
-              "De mémoriser les tables d'addition par cœur pour répondre instantanément, sans recompter depuis le début à chaque fois",
+              "Mémoriser les tables d'addition pour répondre instantanément",
               "D'utiliser une calculatrice",
               "De ne plus faire ce genre d'exercice"
             ],
@@ -6171,7 +6171,7 @@
             "q": "Pourquoi connaître 7+5=12 aide-t-il aussi à répondre vite à « 12-5=? » et « 12-7=? » ?",
             "choices": [
               "Ce n'est pas lié du tout",
-              "Parce qu'addition et soustraction sont liées : si 7+5=12, alors forcément 12-5=7 et 12-7=5, ce sont les trois faces d'un même fait numérique",
+              "Parce qu'addition et soustraction sont liées",
               "Parce que c'est une coïncidence pour ce calcul précis",
               "Parce que 12 est un nombre rond"
             ],
@@ -6184,7 +6184,7 @@
             "q": "Pour répondre à « 6 + ? = 11 », un élève recompte 1,2,3... à chaque fois depuis le début. Que lui conseiller ?",
             "choices": [
               "Continuer comme ça, c'est la meilleure méthode",
-              "Mémoriser directement les petites sommes (tables d'addition) pour répondre instantanément sans recompter à chaque fois",
+              "Mémoriser les petites sommes pour répondre instantanément",
               "Ne jamais répondre à ce genre de question",
               "Utiliser une calculatrice"
             ],
@@ -6258,7 +6258,7 @@
             "q": "Pourquoi est-il utile de connaître par cœur les sommes jusqu'à 10 avant de calculer des sommes jusqu'à 20 ?",
             "choices": [
               "Ce n'est pas utile, ce sont des savoirs différents",
-              "Parce que les grandes sommes se décomposent souvent en petites sommes connues : par exemple 8+7 = 8+2+5 = 10+5=15, en utilisant le passage par 10",
+              "Parce que les grandes sommes se décomposent souvent en petites sommes connues",
               "Parce que les sommes jusqu'à 10 sont les seules qui existent",
               "Parce que c'est plus joli de commencer petit"
             ],
@@ -6271,7 +6271,7 @@
             "q": "Un élève répond « 7 » à la question « 4 + ? = 9 » en calculant 9-4 mentalement, très vite. Que peut-on dire de sa méthode ?",
             "choices": [
               "Sa réponse est fausse",
-              "Sa réponse (5, pas 7) serait juste s'il avait bien calculé 9-4=5 ; ici il s'est trompé dans le calcul, pas dans la méthode",
+              "Sa réponse (5, pas 7) serait juste s'il avait bien calculé 9-4=5",
               "Il ne faut jamais utiliser la soustraction pour ce genre de question",
               "Sa méthode est interdite"
             ],
@@ -6341,7 +6341,7 @@
             "q": "Un élève affirme que 4 × 7 et 7 × 4 sont deux calculs différents qui donnent des résultats différents. A-t-il raison ?",
             "choices": [
               "Oui, ce sont deux calculs totalement différents",
-              "Non : grâce à la commutativité de la multiplication, 4 × 7 et 7 × 4 donnent exactement le même résultat (28)",
+              "Non, grâce à la commutativité : 4×7 = 7×4 = 28",
               "Seulement si les nombres sont pairs",
               "Seulement pour les petits nombres"
             ],
@@ -6401,7 +6401,7 @@
             "q": "Un élève dit que 8 × 3 et 3 × 8 pourraient donner des résultats différents. A-t-il raison ?",
             "choices": [
               "Oui, ils sont toujours différents",
-              "Non, la multiplication est commutative : l'ordre ne change pas le résultat, 8×3=3×8=24",
+              "Non, la multiplication est commutative",
               "Oui, mais seulement parfois",
               "Impossible à savoir sans calculer les deux"
             ],
@@ -6468,7 +6468,7 @@
             "q": "Pour calculer 6 × 9, un élève fait 6×10=60 puis oublie de retirer un groupe de 6, et répond 60. Quelle est son erreur ?",
             "choices": [
               "Il a raison, 6×9=60",
-              "Il a oublié l'étape finale : 6×9 = 6×10 − 6 = 60−6 = 54, pas 60",
+              "Il a oublié l'étape finale",
               "6×9 ne peut pas se calculer ainsi",
               "Il fallait ajouter 6, pas le retirer"
             ],
@@ -6545,7 +6545,7 @@
             "q": "Si tu connais le double de 6 (qui est 12), comment retrouver instantanément la moitié de 12 ?",
             "choices": [
               "Il faut refaire un calcul complètement différent",
-              "La moitié de 12 est justement 6, puisque le double de 6 est 12 : double et moitié sont deux opérations inverses l'une de l'autre",
+              "La moitié de 12 est justement 6, puisque le double de 6 est 12",
               "La moitié de 12 est 24",
               "Double et moitié n'ont aucun rapport"
             ],
@@ -6558,7 +6558,7 @@
             "q": "Pour calculer le double de 34, un élève fait « double de 3 = 6, double de 4 = 8 » et répond 68. Quelle est son erreur ?",
             "choices": [
               "Il a bien fait",
-              "Il a doublé les chiffres isolés au lieu des dizaines et unités : il fallait doubler 30 (=60) et 4 (=8), soit 60+8=68, ce qui donne en fait le même résultat par chance ici",
+              "Il a doublé les chiffres isolés au lieu des dizaines et unités",
               "Il fallait doubler seulement les dizaines",
               "Le double de 34 est 17"
             ],
@@ -6605,7 +6605,7 @@
             "q": "Tu connais le double de 8 (16). Comment en déduire la moitié de 16 sans recalculer ?",
             "choices": [
               "Impossible sans recalculer",
-              "C'est l'opération inverse : si le double de 8 est 16, alors la moitié de 16 est 8",
+              "C'est l'opération inverse",
               "Il faut diviser 16 par 4",
               "Il faut multiplier 16 par 2"
             ],
@@ -6618,7 +6618,7 @@
             "q": "Pour calculer le double de 27, un élève fait « double de 2 = 4, double de 7 = 14 » et écrit 414. Quelle est son erreur ?",
             "choices": [
               "Il a raison",
-              "Il traite les chiffres séparément sans les recombiner correctement : double de 27 = 27+27 = 54, pas 414",
+              "Il traite les chiffres séparément sans les recombiner correctement",
               "27 n'a pas de double",
               "Il fallait faire la moitié, pas le double"
             ],
@@ -6678,7 +6678,7 @@
             "q": "Pour trouver la moitié de 50, un élève calcule 50×2=100 au lieu de 50÷2. Quelle est son erreur ?",
             "choices": [
               "Il a raison, la moitié de 50 est 100",
-              "Il confond double et moitié : ce sont des opérations inverses, la moitié de 50 est 25 (50÷2), pas 100 (50×2)",
+              "Il confond double et moitié",
               "50 n'a pas de moitié",
               "Il fallait faire 50-2"
             ],
@@ -6762,7 +6762,7 @@
             "q": "Pourquoi l'astuce « ajouter 10 puis enlever 1 » fonctionne-t-elle pour calculer + 9 ?",
             "choices": [
               "C'est un hasard qui marche parfois",
-              "Parce que 9 = 10 − 1 : ajouter 9, c'est exactement la même chose qu'ajouter 10 puis retirer 1",
+              "Parce que 9 = 10 − 1",
               "Parce que 9 est un nombre impair",
               "Cette astuce ne fonctionne que pour certains nombres"
             ],
@@ -6775,7 +6775,7 @@
             "q": "Pour calculer 45 + 9, un élève ajoute 10 puis ajoute encore 1 (au lieu de le retirer), et trouve 56. Où est son erreur ?",
             "choices": [
               "Il a bien fait, 56 est juste",
-              "Il a ajouté 10 puis a encore ajouté 1 au lieu de le RETIRER : comme 9 = 10 − 1, il fallait soustraire 1 à la fin, pas l'ajouter ; la bonne réponse est 54",
+              "Il a ajouté 10 puis a encore ajouté 1 au lieu de le RETIRER",
               "Il fallait ajouter 10 puis ajouter 2",
               "45 + 9 ne peut pas se calculer avec cette astuce"
             ],
@@ -6828,7 +6828,7 @@
             "q": "Pourquoi l'astuce « ajouter 20 puis enlever 1 » fonctionne-t-elle pour calculer +19 ?",
             "choices": [
               "Elle ne fonctionne pas toujours",
-              "Parce que 19 = 20 − 1 : ajouter 19, c'est exactement la même chose qu'ajouter 20 puis retirer 1 de trop",
+              "Parce que 19 = 20 − 1",
               "Parce que 19 est un nombre impair",
               "Par pur hasard"
             ],
@@ -6841,7 +6841,7 @@
             "q": "Pour calculer 52 + 19, un élève ajoute 20 puis ajoute encore 1 au lieu de le retirer, et trouve 73. Quelle est son erreur ?",
             "choices": [
               "Il a raison, 52+19=73",
-              "Il a ajouté 20 (une unité de trop par rapport à 19) et aurait dû RETIRER 1 ensuite, pas en ajouter encore : 52+20-1=71",
+              "Il a ajouté 20 au lieu de 19, et aurait dû retirer 1",
               "52+19 ne peut pas se calculer ainsi",
               "Il fallait soustraire 19"
             ],
@@ -6895,7 +6895,7 @@
             "q": "Pourquoi cette astuce (ajouter la dizaine supérieure puis retirer le trop-perçu) est-elle plus rapide que de compter un par un ?",
             "choices": [
               "Elle n'est pas plus rapide",
-              "Parce qu'ajouter une dizaine ronde (10, 20, 30...) est un calcul mental très simple et rapide, bien plus facile que d'avancer un par un neuf, dix-neuf ou vingt-neuf fois",
+              "Parce qu'ajouter une dizaine ronde est un calcul mental très rapide",
               "Parce que compter un par un est interdit",
               "Parce que les dizaines rondes n'existent pas vraiment"
             ],
@@ -6928,7 +6928,7 @@
             "q": "Cette astuce (ajouter la dizaine supérieure puis retirer le trop-perçu) fonctionne-t-elle aussi pour calculer +8 (en passant par +10, −2) ?",
             "choices": [
               "Non, elle ne marche que pour 9, 19, 29...",
-              "Oui, le même principe s'applique : 8=10−2, donc ajouter 8 revient à ajouter 10 puis à retirer 2",
+              "Oui, le même principe s'applique",
               "Non, 8 n'a pas de dizaine supérieure",
               "Oui, mais seulement pour les nombres pairs"
             ],
@@ -7003,7 +7003,7 @@
             "q": "Pourquoi est-il dangereux de choisir son opération juste en repérant le mot « plus » ou « moins » dans l'énoncé, sans comprendre l'histoire ?",
             "choices": [
               "Ce n'est jamais dangereux, c'est la meilleure méthode",
-              "Parce que certains problèmes contiennent le mot « plus » tout en demandant en réalité une soustraction (ou l'inverse), selon ce qui est cherché",
+              "Parce qu'un énoncé avec « plus » peut parfois demander une soustraction",
               "Parce que les mots n'ont aucune importance dans un problème",
               "Parce qu'il ne faut jamais lire l'énoncé en entier"
             ],
@@ -7016,7 +7016,7 @@
             "q": "Pour un problème demandant combien d'enfants restent dans une file après le départ de certains, un élève trouve comme résultat 47,5 enfants. Que peut-on en conclure ?",
             "choices": [
               "C'est une réponse tout à fait normale",
-              "C'est très probablement une erreur de calcul : un nombre d'enfants est toujours un nombre entier, jamais une fraction de personne",
+              "C'est très probablement une erreur de calcul",
               "Il fallait arrondir à 48",
               "Il fallait arrondir à 47"
             ],
@@ -7068,7 +7068,7 @@
             "q": "Pourquoi est-il risqué de choisir l'opération juste en repérant le mot « reste » dans un énoncé ?",
             "choices": [
               "Ce n'est jamais risqué, « reste » veut toujours dire soustraction",
-              "Parce que « reste » peut parfois apparaître dans un problème qui demande en réalité une addition ou une autre opération selon le sens complet de la phrase, pas juste ce mot isolé",
+              "Parce que « reste » peut parfois demander une addition selon le sens",
               "Parce que le mot « reste » n'existe pas dans les problèmes",
               "Parce qu'il faut toujours utiliser une multiplication avec ce mot"
             ],
@@ -7081,7 +7081,7 @@
             "q": "Pour « Léa avait des images, elle en a donné 8, il lui en reste 15 », un élève répond directement 15 à la question « combien en avait-elle au départ ? ». Quelle est son erreur ?",
             "choices": [
               "Il a raison",
-              "Il confond ce qui reste (15) avec le total de départ : il faut additionner ce qui a été donné (8) et ce qui reste (15) pour retrouver le départ : 15+8=23",
+              "Il confond ce qui reste (15) avec le total de départ",
               "15 est déjà la bonne réponse",
               "Il fallait soustraire 8 de 15"
             ],
@@ -7114,7 +7114,7 @@
             "q": "Dans un problème, la question est toujours écrite :",
             "choices": [
               "Au début du texte uniquement",
-              "Généralement à la fin, souvent sous forme de phrase interrogative",
+              "Généralement à la fin, en phrase interrogative",
               "Elle n'est jamais écrite clairement",
               "Toujours en gras"
             ],
@@ -7140,7 +7140,7 @@
             "q": "Un problème donne 3 nombres mais n'en utilise que 2 pour répondre à la question posée. Que doit-on faire du troisième nombre ?",
             "choices": [
               "L'utiliser quand même dans le calcul, pour être sûr",
-              "Ne pas l'utiliser s'il n'est pas utile à la question posée : toutes les données d'un énoncé ne servent pas toujours au calcul final",
+              "Ne pas l'utiliser s'il n'est pas utile à la question posée",
               "Toujours l'additionner aux autres",
               "Le problème est forcément faux s'il y a un nombre inutile"
             ],
@@ -7160,7 +7160,7 @@
             "q": "Pourquoi lire un problème deux fois avant de calculer est-il une bonne habitude ?",
             "choices": [
               "Ce n'est jamais utile",
-              "Parce que la première lecture donne une vue d'ensemble, et la seconde permet de repérer précisément la question et les données utiles, en évitant les erreurs de précipitation",
+              "La première lecture donne une vue d'ensemble, la seconde précise la question",
               "Parce qu'il faut toujours lire deux fois n'importe quel texte",
               "Parce que les problèmes changent de sens à la deuxième lecture"
             ],
@@ -7173,7 +7173,7 @@
             "q": "Un élève, pressé, calcule tout de suite dès qu'il voit des nombres dans un énoncé, sans lire la question. Quel risque prend-il ?",
             "choices": [
               "Aucun risque, les nombres suffisent toujours",
-              "Il risque de répondre à une question différente de celle posée, ou de faire un calcul qui ne correspond pas à ce qui est demandé",
+              "Il risque de répondre à côté de la question posée",
               "Il va forcément trouver la bonne réponse plus vite",
               "Les problèmes n'ont jamais vraiment de question"
             ],
@@ -7250,7 +7250,7 @@
             "q": "Comment savoir si un problème « parties-tout » demande une addition ou une soustraction ?",
             "choices": [
               "C'est toujours une addition",
-              "Si on cherche le TOUT en connaissant les deux parties, c'est une addition ; si on cherche UNE partie en connaissant le tout et l'autre partie, c'est une soustraction",
+              "Si on cherche le TOUT en connaissant les deux parties, c'est une addition",
               "C'est toujours une soustraction",
               "Cela dépend si les nombres sont grands ou petits"
             ],
@@ -7263,7 +7263,7 @@
             "q": "« Un sac contenait 50 billes. On en a donné 18. Combien en reste-t-il ? » Un élève répond 68 en additionnant 50+18. Où est son erreur ?",
             "choices": [
               "Il n'y a pas d'erreur",
-              "Il fallait soustraire, pas additionner : on connaît le tout de départ (50) et une partie donnée (18), on cherche ce qui RESTE, donc 50 − 18 = 32",
+              "Il fallait soustraire, pas additionner",
               "Il fallait multiplier 50 par 18",
               "68 est la bonne réponse"
             ],
@@ -7310,7 +7310,7 @@
             "q": "Comment reconnaît-on qu'un problème « parties-tout » demande une addition plutôt qu'une soustraction ?",
             "choices": [
               "On cherche toujours une soustraction dans ce type de problème",
-              "Si on connaît les deux parties séparées et qu'on cherche le tout, c'est une addition ; si on connaît le tout et une partie et qu'on cherche l'autre partie, c'est une soustraction",
+              "Si on connaît les deux parties séparées et qu'on cherche le tout, c'est une addition",
               "On ne peut jamais savoir sans essayer les deux",
               "Le nombre de mots dans la phrase le détermine"
             ],
@@ -7323,7 +7323,7 @@
             "q": "« Un sac avait 70 jetons. On y ajoute 15 jetons. » Un élève répond 55 à « combien y a-t-il de jetons maintenant ? » en soustrayant au lieu d'additionner. Quelle est son erreur ?",
             "choices": [
               "Il a raison",
-              "Le mot « ajoute » signale clairement une addition, pas une soustraction : 70+15=85, pas 55",
+              "« Ajoute » signale une addition : 70+15=85",
               "70−15 est la bonne opération",
               "Il fallait multiplier 70 par 15"
             ],
@@ -7370,7 +7370,7 @@
             "q": "Pour résoudre un problème d'ajout ou de retrait, quelle est la première chose à faire, avant même de penser à l'opération ?",
             "choices": [
               "Deviner un nombre au hasard",
-              "Identifier clairement ce qui est connu et ce qui est cherché",
+              "Identifier ce qui est connu et ce qui est cherché",
               "Compter le nombre de mots du texte",
               "Multiplier tous les nombres donnés"
             ],
@@ -7383,7 +7383,7 @@
             "q": "« Une bibliothèque avait 300 livres. Elle en reçoit 45 nouveaux. » Un élève calcule 300−45=255 à la question « combien de livres maintenant ? ». Quelle est son erreur ?",
             "choices": [
               "Il a raison",
-              "« Reçoit » signifie qu'on ajoute des livres, pas qu'on en retire : il fallait calculer 300+45=345",
+              "« Reçoit » veut dire qu'on ajoute : 300+45=345",
               "300+45 n'est pas la bonne méthode",
               "Il fallait multiplier"
             ],
@@ -7473,7 +7473,7 @@
             "q": "Pourquoi, face à un problème de comparaison, faut-il toujours se demander si on cherche l'écart ou une des deux quantités, plutôt que de juste repérer le mot « plus » ?",
             "choices": [
               "Parce que le mot « plus » veut toujours dire qu'il faut additionner",
-              "Parce que selon ce qu'on connaît déjà et ce qu'on cherche, la même phrase avec « plus » peut demander une addition ou une soustraction",
+              "Selon ce qu'on cherche, « plus » peut demander une addition ou une soustraction",
               "Parce qu'il ne faut jamais faire confiance à l'énoncé",
               "Parce que les comparaisons ne se calculent jamais"
             ],
@@ -7533,7 +7533,7 @@
             "q": "Pourquoi, face à « combien de plus », faut-il toujours vérifier qui a le plus et qui a le moins avant de calculer ?",
             "choices": [
               "Ce n'est pas nécessaire, l'ordre n'a pas d'importance",
-              "Parce que l'écart se calcule toujours en soustrayant le plus petit nombre du plus grand : il faut savoir qui est qui pour poser la bonne soustraction",
+              "L'écart se calcule en soustrayant le plus petit du plus grand",
               "Parce que l'écart change selon le jour de la semaine",
               "Parce qu'il faut toujours additionner, jamais soustraire"
             ],
@@ -7546,7 +7546,7 @@
             "q": "« Nina a 14 ans de plus que son petit frère qui a 5 ans. » Un élève répond 9 à « quel âge a Nina ? » en soustrayant. Quelle est son erreur ?",
             "choices": [
               "Il a raison",
-              "Nina a « plus » que son frère, donc il faut ADDITIONNER l'écart à l'âge du frère : 5+14=19, pas 9",
+              "Nina a « plus » que son frère",
               "Il fallait multiplier 5 par 14",
               "5-14 est la bonne opération"
             ],
@@ -7593,7 +7593,7 @@
             "q": "Pourquoi faut-il faire attention à la phrase « A a... de moins que B » plutôt que de se fier uniquement à la présence du mot « moins » ?",
             "choices": [
               "Il n'y a aucune précaution à prendre",
-              "Parce qu'il faut bien identifier QUI a moins (A) et par rapport à QUI (B) : on soustrait l'écart au nombre de B pour trouver A, pas l'inverse",
+              "Parce qu'il faut bien identifier QUI a moins (A) et par rapport à QUI (B)",
               "Parce que « moins » veut toujours dire multiplication",
               "Parce que cette phrase n'a pas de sens"
             ],
@@ -7606,7 +7606,7 @@
             "q": "« Léa a 30 billes de moins que Tom, qui en a 80. » Un élève calcule 80+30=110 pour trouver les billes de Léa. Quelle est son erreur ?",
             "choices": [
               "Il a raison",
-              "Léa a MOINS que Tom, donc il faut soustraire : 80−30=50, pas additionner",
+              "Léa a MOINS que Tom",
               "80-30 n'est pas la bonne méthode",
               "Il fallait multiplier 80 par 30"
             ],
@@ -7690,7 +7690,7 @@
             "q": "Pourquoi est-il important, dans un problème à deux étapes, de résoudre les calculs dans l'ordre où les événements se déroulent dans l'histoire ?",
             "choices": [
               "Ce n'est pas important, l'ordre ne change rien",
-              "Parce que chaque étape utilise souvent le résultat de l'étape précédente : il faut donc connaître ce résultat avant de pouvoir continuer",
+              "Parce que chaque étape utilise souvent le résultat de l'étape précédente",
               "Parce que les maîtresses l'exigent sans raison",
               "Parce que les deux étapes sont toujours indépendantes l'une de l'autre"
             ],
@@ -7703,7 +7703,7 @@
             "q": "Pour le problème des 29 enfants dans le bus (12 descendent, puis 7 montent), un élève calcule directement 29 − 12 + 7 sans écrire le résultat intermédiaire (17), et se perd en route. Que lui conseiller ?",
             "choices": [
               "De continuer à tout faire de tête sans rien noter",
-              "D'écrire clairement le résultat de chaque étape avant de passer à la suivante, pour ne pas le perdre en cours de calcul",
+              "D'écrire le résultat de chaque étape avant de continuer",
               "D'abandonner le problème",
               "De ne faire que la dernière étape"
             ],
@@ -7750,7 +7750,7 @@
             "q": "Pourquoi, dans un problème à deux étapes, est-il important de résoudre les calculs dans l'ordre où les événements se produisent dans l'histoire ?",
             "choices": [
               "L'ordre n'a jamais d'importance",
-              "Parce que le résultat de la première étape sert de donnée pour la seconde étape : inverser l'ordre donnerait un calcul incorrect ou impossible",
+              "Parce que le résultat de la première étape sert de donnée pour la seconde étape",
               "Parce qu'il faut toujours commencer par la plus grande opération",
               "Parce que les problèmes à deux étapes n'existent pas vraiment"
             ],
@@ -7763,7 +7763,7 @@
             "q": "Pour le problème du bus (40 passagers, 15 descendent, puis 9 montent), un élève calcule directement 15+9=24 puis 40−24=16. Que penser de ce résultat ?",
             "choices": [
               "C'est juste, 16 est la bonne réponse",
-              "C'est faux : il fallait traiter les deux événements dans l'ordre (40−15=25 puis 25+9=34), pas combiner 15 et 9 ensemble d'abord",
+              "C'est faux : 40-15=25 puis 25+9=34",
               "Il fallait juste faire 40-15",
               "15+9 n'a aucun sens dans ce problème"
             ],
@@ -7810,7 +7810,7 @@
             "q": "Comment reconnaît-on qu'un problème comporte deux étapes plutôt qu'une seule ?",
             "choices": [
               "Il y a toujours exactement deux phrases",
-              "Il décrit généralement deux événements ou changements successifs (par exemple deux actions qui modifient une même quantité l'une après l'autre), nécessitant deux calculs enchaînés",
+              "Il décrit deux événements successifs, donc deux calculs",
               "Il contient toujours le mot « puis »",
               "Un problème a toujours une seule étape, jamais deux"
             ],
@@ -7823,7 +7823,7 @@
             "q": "Un élève, face à un problème à deux étapes, additionne directement tous les nombres de l'énoncé sans réfléchir à l'ordre des événements. Quel risque prend-il ?",
             "choices": [
               "Aucun risque, cela marche toujours",
-              "Il risque d'obtenir un résultat faux, car certains nombres doivent être soustraits (ce qui part) et d'autres additionnés (ce qui arrive), pas tous additionnés ensemble",
+              "Il risque d'obtenir un résultat faux",
               "Il va forcément trouver la bonne réponse plus vite",
               "Les problèmes à deux étapes n'ont jamais de soustraction"
             ],
@@ -7843,7 +7843,7 @@
             "q": "Un problème à deux étapes demande d'abord de calculer un prix total, puis la monnaie à rendre. Quelle est la bonne méthode ?",
             "choices": [
               "Calculer d'abord la monnaie, puis le prix total",
-              "Calculer d'abord le prix total (étape 1), puis utiliser ce résultat pour calculer la monnaie à rendre (étape 2)",
+              "Calculer d'abord le prix total, puis la monnaie à rendre",
               "Calculer les deux en même temps sans ordre précis",
               "Deviner directement la monnaie sans calcul"
             ],
@@ -7907,7 +7907,7 @@
             "q": "Comment savoir s'il faut multiplier ou diviser face à un problème avec plusieurs groupes identiques ?",
             "choices": [
               "On multiplie toujours",
-              "Si on connaît le nombre de groupes ET la taille de chaque groupe et qu'on cherche le total, on multiplie ; si on connaît le total et qu'on cherche à le partager, on divise",
+              "On multiplie pour le total, on divise pour partager",
               "On divise toujours",
               "Cela dépend si les nombres sont pairs"
             ],
@@ -7920,7 +7920,7 @@
             "q": "« 30 bonbons sont partagés équitablement entre 5 enfants. Combien chacun en reçoit-il ? » Un élève répond 150 en calculant 30 × 5. Où est son erreur ?",
             "choices": [
               "Il n'y a pas d'erreur",
-              "Il fallait diviser, pas multiplier : on connaît déjà le total (30) et on le partage en 5, donc 30 ÷ 5 = 6 bonbons chacun",
+              "Il fallait diviser, pas multiplier",
               "Il fallait faire 30 − 5",
               "150 est la bonne réponse"
             ],
@@ -7967,7 +7967,7 @@
             "q": "Comment savoir s'il faut multiplier ou diviser face à un problème avec des groupes identiques ?",
             "choices": [
               "On multiplie toujours, jamais on ne divise",
-              "Si on connaît la taille et le nombre de groupes et qu'on cherche le total, on multiplie ; si on connaît le total et qu'on cherche le nombre de groupes (ou leur taille), on divise",
+              "On multiplie pour le total, on divise pour trouver un groupe",
               "On divise toujours, jamais on ne multiplie",
               "Cela dépend uniquement de la couleur des objets"
             ],
@@ -7980,7 +7980,7 @@
             "q": "« 42 bonbons sont partagés équitablement entre 6 enfants. Combien chacun en reçoit-il ? » Un élève répond 252 en multipliant 42×6. Quelle est son erreur ?",
             "choices": [
               "Il a raison",
-              "Le mot « partagés équitablement » signale une division, pas une multiplication : 42÷6=7, pas 42×6=252",
+              "« Partagés » signale une division : 42÷6=7",
               "42÷6 n'est pas la bonne opération",
               "Il fallait soustraire 6 de 42"
             ],
@@ -8027,7 +8027,7 @@
             "q": "Pourquoi une division et une multiplication sont-elles des opérations liées, comme l'addition et la soustraction ?",
             "choices": [
               "Elles n'ont aucun lien",
-              "Parce qu'elles sont inverses l'une de l'autre : si 6×7=42, alors on sait aussi que 42÷7=6 et 42÷6=7, sans refaire de calcul séparé",
+              "Parce qu'elles sont inverses l'une de l'autre",
               "Parce qu'elles donnent toujours le même résultat",
               "Parce que ce sont deux noms pour la même opération"
             ],
@@ -8040,7 +8040,7 @@
             "q": "Pour « 36 fleurs sont rangées en bouquets de 4. Combien de bouquets ? », un élève calcule 36×4=144. Quelle est son erreur ?",
             "choices": [
               "Il a raison",
-              "Il multiplie alors qu'il faut diviser : on cherche le nombre de groupes à partir d'un total et d'une taille de groupe, donc 36÷4=9 bouquets, pas 144",
+              "Il multiplie alors qu'il faut diviser",
               "36÷4 n'est pas la bonne méthode",
               "Il fallait soustraire 4 de 36"
             ],
@@ -8149,7 +8149,7 @@
             "q": "Un élève dit que la hauteur d'une porte de maison mesure environ 2 centimètres. Que penser de cette estimation ?",
             "choices": [
               "C'est une bonne estimation",
-              "C'est totalement irréaliste : 2 centimètres, c'est à peine la taille d'un petit bouchon, une porte mesure plutôt environ 2 mètres",
+              "C'est totalement irréaliste",
               "Il fallait dire 2 kilomètres",
               "On ne peut pas estimer la hauteur d'une porte"
             ],
@@ -8202,7 +8202,7 @@
             "q": "Pourquoi utilise-t-on le mètre plutôt que le centimètre pour mesurer la longueur d'un terrain de football ?",
             "choices": [
               "Parce que le centimètre est interdit pour les terrains",
-              "Parce qu'avec le centimètre, le nombre serait énorme et peu pratique à lire ou écrire (plusieurs milliers), alors que le mètre donne un nombre plus simple et lisible",
+              "Avec le centimètre, le nombre serait énorme et peu pratique",
               "Parce que le mètre est toujours la seule unité valable",
               "Parce que les terrains de football n'ont pas de longueur précise"
             ],
@@ -8215,7 +8215,7 @@
             "q": "Un élève affirme que la longueur de son crayon est d'environ 2 mètres. Que penser de cette affirmation ?",
             "choices": [
               "C'est exact, les crayons mesurent 2 mètres",
-              "C'est absurde : 2 mètres est une taille d'adulte allongé, bien trop grand pour un crayon qui mesure plutôt une quinzaine de centimètres",
+              "C'est absurde, un crayon mesure plutôt 15 cm",
               "2 mètres est une bonne estimation pour un petit crayon",
               "Il faut mesurer en kilogrammes, pas en mètres"
             ],
@@ -8243,7 +8243,7 @@
             "choices": [
               "Le mètre",
               "Le kilomètre",
-              "Le centimètre, même si ce n'est pas encore très précis pour une si petite épaisseur",
+              "Le centimètre",
               "Le kilogramme"
             ],
             "answer": 2,
@@ -8275,7 +8275,7 @@
             "q": "Pourquoi deux objets peuvent-ils avoir la même longueur en centimètres mais sembler différents si l'un est mesuré en mètres et l'autre en centimètres sans réfléchir ?",
             "choices": [
               "Ce n'est jamais possible",
-              "Parce qu'un nombre seul sans son unité ne veut rien dire : 150 (cm) et 150 (m) représentent des longueurs extrêmement différentes malgré le même chiffre",
+              "Parce qu'un nombre seul sans son unité ne veut rien dire",
               "Parce que les unités n'ont aucune importance",
               "Parce que mètre et centimètre représentent toujours la même chose"
             ],
@@ -8288,7 +8288,7 @@
             "q": "Un élève compare 3 m et 250 cm et dit que 250 cm est plus grand car 250>3. Quelle est son erreur ?",
             "choices": [
               "Il a raison",
-              "Il compare des nombres sans convertir dans la même unité : 3 m = 300 cm, qui est plus grand que 250 cm",
+              "Il compare des nombres sans convertir dans la même unité",
               "3m et 250cm sont égaux",
               "Il fallait comparer en kilogrammes"
             ],
@@ -8377,7 +8377,7 @@
             "q": "Un gros ballon de baudruche semble énorme, mais il est très léger. Pourquoi n'est-ce pas contradictoire ?",
             "choices": [
               "C'est contradictoire, un gros objet est toujours lourd",
-              "La taille (le volume) et la masse (le poids) sont deux choses différentes : un objet peut être grand mais contenir peu de matière, donc être léger",
+              "La taille (le volume) et la masse (le poids) sont deux choses différentes",
               "Un ballon n'a pas de masse du tout",
               "Seuls les petits objets peuvent être légers"
             ],
@@ -8390,7 +8390,7 @@
             "q": "Un élève affirme qu'une pomme pèse 150 kilogrammes. Que penser de cette affirmation ?",
             "choices": [
               "C'est juste",
-              "C'est totalement impossible : 150 kg, c'est plus lourd qu'un adulte ! Une pomme pèse plutôt environ 150 grammes",
+              "C'est totalement impossible",
               "Il fallait dire 150 mètres",
               "Les pommes n'ont pas de masse"
             ],
@@ -8449,7 +8449,7 @@
             "q": "Une grosse valise semble lourde à porter, mais une plume semble légère même si elle paraît grande dans l'air. Pourquoi la taille (le volume) ne suffit-elle pas à deviner le poids ?",
             "choices": [
               "La taille suffit toujours à deviner le poids",
-              "Parce que le poids dépend de la matière dont est fait l'objet (dense ou légère), pas seulement de sa taille apparente : une plume est grande mais faite d'une matière très légère",
+              "Parce que le poids dépend de la matière dont est fait l'objet (dense ou légère), pas seulement de sa taille apparente",
               "Parce que les plumes n'ont pas de poids",
               "Parce que les valises sont toujours plus lourdes que les plumes par définition"
             ],
@@ -8462,7 +8462,7 @@
             "q": "Un élève affirme qu'un œuf pèse 2 kilogrammes. Que penser de cette affirmation ?",
             "choices": [
               "C'est exact",
-              "C'est peu réaliste : un œuf pèse plutôt une soixantaine de grammes, bien moins que 2 kilogrammes (qui est le poids d'un gros melon)",
+              "C'est peu réaliste",
               "2 kilogrammes est une bonne estimation pour tout aliment",
               "Il fallait dire 2 grammes, ce qui serait aussi faux dans l'autre sens"
             ],
@@ -8509,7 +8509,7 @@
             "q": "Pourquoi, pour comparer le poids de deux objets, est-il important de les peser dans la même unité ?",
             "choices": [
               "Ce n'est jamais nécessaire",
-              "Parce que comparer des nombres exprimés dans des unités différentes (grammes et kilogrammes) sans convertir donnerait une comparaison fausse",
+              "Comparer des unités différentes sans convertir fausserait tout",
               "Parce que le gramme est toujours plus lourd que le kilogramme",
               "Parce qu'il est interdit d'utiliser deux unités différentes"
             ],
@@ -8522,7 +8522,7 @@
             "q": "Un élève compare 2 kg et 1500 g et dit que 1500 g est plus lourd car 1500>2. Quelle est son erreur ?",
             "choices": [
               "Il a raison",
-              "Il ne convertit pas dans la même unité : 2 kg = 2000 g, qui est plus lourd que 1500 g",
+              "Il ne convertit pas dans la même unité",
               "2 kg et 1500 g sont égaux",
               "Il fallait comparer en centimètres"
             ],
@@ -8612,7 +8612,7 @@
             "q": "Pourquoi avoir beaucoup de pièces dans son porte-monnaie ne veut-il pas forcément dire avoir beaucoup d'argent ?",
             "choices": [
               "Si, c'est toujours vrai : plus de pièces veut dire plus d'argent",
-              "Parce que la valeur dépend de CHAQUE pièce, pas de leur nombre : 50 petites pièces de faible valeur peuvent valoir moins que 2 grosses pièces",
+              "Parce que la valeur dépend de CHAQUE pièce, pas de leur nombre",
               "Parce que les pièces n'ont pas vraiment de valeur",
               "Parce qu'il faut toujours avoir des billets, jamais des pièces"
             ],
@@ -8625,7 +8625,7 @@
             "q": "Un enfant affirme qu'il est plus riche que son copain « parce qu'il a 20 pièces alors que son copain n'en a que 3 ». Son copain a 3 pièces de 2 euros, lui a 20 pièces de 10 centimes. Qui a raison ?",
             "choices": [
               "L'enfant aux 20 pièces est plus riche",
-              "Le copain est en fait plus riche : 3 × 2 = 6 euros contre 20 × 0,10 = 2 euros pour les 20 pièces de 10 centimes",
+              "Le copain est en fait plus riche",
               "Ils ont exactement la même somme",
               "On ne peut pas comparer des pièces différentes"
             ],
@@ -8672,7 +8672,7 @@
             "q": "Pourquoi avoir beaucoup de petites pièces ne veut-il pas forcément dire avoir plus d'argent qu'avec peu de grosses pièces ?",
             "choices": [
               "C'est toujours le cas, plus de pièces = plus d'argent",
-              "Parce que la valeur totale dépend de la valeur de chaque pièce, pas seulement du nombre de pièces : 3 pièces de 2€ (6€) valent moins que 1 billet de 10€",
+              "La valeur dépend de celle de chaque pièce, pas seulement du nombre",
               "Les pièces n'ont jamais de valeur différente",
               "Parce que seules les pièces comptent, jamais les billets"
             ],
@@ -8685,7 +8685,7 @@
             "q": "Un enfant dit qu'il a plus d'argent que son ami car il a 15 pièces alors que son ami n'en a que 2. Que penser de cette affirmation ?",
             "choices": [
               "Elle est forcément vraie",
-              "Elle n'est pas forcément vraie : il faut connaître la VALEUR de chaque pièce pour savoir qui a le plus d'argent, pas juste le nombre de pièces",
+              "Elle n'est pas forcément vraie",
               "Avoir plus de pièces veut toujours dire avoir plus d'argent",
               "15 pièces valent toujours plus que 2 pièces quelles qu'elles soient"
             ],
@@ -8732,7 +8732,7 @@
             "q": "Pourquoi, pour compter une somme d'argent, est-il plus rapide de regrouper les pièces de même valeur avant de les additionner ?",
             "choices": [
               "Ce n'est jamais plus rapide",
-              "Parce qu'on peut alors multiplier la valeur d'une pièce par le nombre de pièces identiques, plutôt que d'additionner un par un chaque pièce",
+              "On peut multiplier la valeur d'une pièce par leur nombre",
               "Parce que les pièces doivent toujours être rangées par couleur",
               "Il n'existe pas de méthode plus rapide"
             ],
@@ -8745,7 +8745,7 @@
             "q": "Un enfant compte 3 pièces de 2 euros comme « 3+2=5 euros ». Quelle est son erreur ?",
             "choices": [
               "Il a raison",
-              "Il additionne le nombre de pièces (3) et la valeur d'une pièce (2) au lieu de multiplier : 3 pièces de 2€ valent 3×2=6€, pas 5€",
+              "Il additionne au lieu de multiplier : 3×2=6€, pas 5€",
               "3 pièces de 2 euros valent toujours 5 euros",
               "Il fallait soustraire 2 de 3"
             ],
@@ -8847,7 +8847,7 @@
             "q": "Pourquoi « 2 euros et 5 centimes » (2,05 €) n'est-il pas la même chose que « 2 euros et 50 centimes » (2,50 €) ?",
             "choices": [
               "Ce sont en fait la même somme",
-              "5 centimes, c'est 10 fois moins que 50 centimes : le zéro après la virgule dans 2,05 € garde la place pour montrer qu'il n'y a presque rien après le 2 euros",
+              "5 centimes, c'est 10 fois moins que 50 centimes",
               "Il n'y a aucune différence tant qu'on parle d'euros",
               "2,05 € est toujours plus grand que 2,50 €"
             ],
@@ -8860,7 +8860,7 @@
             "q": "Pour écrire « 3 euros et 8 centimes », un élève écrit 3,8 €. Quelle est son erreur ?",
             "choices": [
               "Il a bien écrit",
-              "Il a oublié le zéro qui garde la place des dizaines de centimes : la bonne écriture est 3,08 €, car 3,8 € voudrait dire 3 euros et 80 centimes",
+              "Il a oublié le zéro : c'est 3,08 €",
               "Il fallait écrire 38 €",
               "Il fallait écrire 3,008 €"
             ],
@@ -8925,7 +8925,7 @@
             "q": "Pourquoi « 1 euro et 5 centimes » (1,05 €) n'est-il pas la même somme que « 1 euro et 50 centimes » (1,50 €) ?",
             "choices": [
               "Ce sont bien les mêmes sommes",
-              "Parce que les chiffres après la virgule indiquent une position précise (dizaines et unités de centimes) : 05 signifie 5 centimes seulement, alors que 50 signifie 50 centimes, dix fois plus",
+              "05 veut dire 5 centimes, 50 veut dire 50 centimes",
               "Parce que la virgule n'a aucune importance",
               "Parce que 1,05 est toujours plus grand que 1,50"
             ],
@@ -8938,7 +8938,7 @@
             "q": "Pour écrire « 2 euros et 7 centimes », un élève écrit 2,7 €. Quelle est son erreur ?",
             "choices": [
               "Il a raison",
-              "2,7 € se lirait comme 2 euros et 70 centimes ; pour 7 centimes seulement, il fallait écrire 2,07 € avec un zéro",
+              "2,7 € se lirait comme 2 euros et 70 centimes",
               "2,7 € est une somme impossible",
               "Il fallait écrire 27 €"
             ],
@@ -8997,7 +8997,7 @@
             "q": "Pourquoi, pour comparer 2,45 € et 2,9 €, ne faut-il pas se contenter de comparer les chiffres après la virgule comme des nombres entiers séparés ?",
             "choices": [
               "Il faut toujours comparer ainsi",
-              "Parce qu'il faut comparer la valeur totale en centimes équivalente : 2,9 € = 2,90 €, qui a 90 centimes, bien plus que les 45 centimes de 2,45 €, même si 9 semble plus petit que 45 à première vue",
+              "Parce qu'il faut comparer la valeur totale en centimes équivalente",
               "Les deux sommes sont toujours égales",
               "On ne peut jamais comparer deux sommes en euros"
             ],
@@ -9010,7 +9010,7 @@
             "q": "Un élève compare 1,8 € et 1,45 € et dit que 1,45 € est plus grand car 45>8. Quelle est son erreur ?",
             "choices": [
               "Il a raison",
-              "Il compare 8 et 45 sans remarquer que 1,8 € = 1,80 € (80 centimes), ce qui est bien plus que 1,45 € (45 centimes)",
+              "1,8€ = 1,80€ (80 centimes), plus que 1,45€",
               "1,8 € et 1,45 € sont égaux",
               "Il fallait comparer les euros uniquement"
             ],
@@ -9112,7 +9112,7 @@
             "q": "Pourquoi faut-il faire particulièrement attention en calculant une durée en heures et minutes, par rapport à un calcul avec des nombres normaux ?",
             "choices": [
               "Il n'y a aucune différence, on calcule pareil",
-              "Parce qu'une heure contient 60 minutes et non 100 : on ne peut pas appliquer directement les mêmes retenues que pour les nombres habituels, qui fonctionnent par paquets de 10",
+              "Parce qu'une heure contient 60 minutes et non 100",
               "Parce que les heures n'ont pas vraiment de valeur",
               "Parce qu'il faut toujours arrondir à l'heure la plus proche"
             ],
@@ -9125,7 +9125,7 @@
             "q": "Pour calculer la durée entre 13h45 et 14h20, un élève fait directement « 45 − 20 = 25 minutes ». Que penser de son calcul ?",
             "choices": [
               "C'est juste",
-              "C'est faux : il a mélangé les minutes des deux horaires sans tenir compte du passage à l'heure suivante ; il fallait d'abord compter jusqu'à 14h00 (15 min) puis de 14h00 à 14h20 (20 min), soit 35 minutes en tout",
+              "C'est faux, la bonne réponse est 35 minutes",
               "Il fallait faire 45 + 20",
               "La bonne réponse est 65 minutes"
             ],
@@ -9178,7 +9178,7 @@
             "q": "Pourquoi faut-il faire attention en calculant une durée qui traverse une heure pile (comme de 8h50 à 9h10), par rapport à un calcul habituel en base 10 ?",
             "choices": [
               "Il n'y a aucune précaution particulière à prendre",
-              "Parce que le temps ne fonctionne pas en base 10 : après 59 minutes, on passe directement à l'heure suivante (0 minute), pas à 60, 70 ou 100 minutes",
+              "Parce que le temps ne fonctionne pas en base 10",
               "Parce que les heures n'existent pas vraiment",
               "Parce qu'il faut toujours éviter de calculer des durées autour de l'heure pile"
             ],
@@ -9191,7 +9191,7 @@
             "q": "Pour calculer la durée entre 10h15 et 10h50, un élève fait « 50 − 15 = 35 minutes ». Que penser de ce calcul ?",
             "choices": [
               "Il est faux, il fallait additionner",
-              "Il est juste, car les deux horaires sont dans la même heure (10h), donc on peut simplement soustraire les minutes : 50−15=35 minutes",
+              "Il est juste, car les deux horaires sont dans la même heure (10h)",
               "Il fallait multiplier 50 par 15",
               "On ne peut jamais soustraire des minutes directement"
             ],
@@ -9238,7 +9238,7 @@
             "q": "Pourquoi, pour calculer une durée qui traverse minuit ou une heure pile avec des minutes qui dépassent 59, faut-il « transformer » les minutes en heure supplémentaire ?",
             "choices": [
               "Il ne faut jamais faire cette transformation",
-              "Parce qu'une fois qu'on atteint ou dépasse 60 minutes, cela forme une heure complète de plus : il faut la compter comme une heure, pas comme des minutes en trop",
+              "Parce que 60 minutes forment une heure de plus",
               "Parce que 60 minutes n'existent pas",
               "Parce qu'il faut toujours arrondir au quart d'heure"
             ],
@@ -9251,7 +9251,7 @@
             "q": "Un film commence à 20h45 et dure 30 minutes. Un élève calcule 45+30=75 et répond « 20h75 ». Quelle est son erreur ?",
             "choices": [
               "Il a raison, le film finit à 20h75",
-              "20h75 n'existe pas : 75 minutes = 1h15, donc le film finit à 21h15, pas 20h75",
+              "20h75 n'existe pas",
               "Il fallait dire 20h30",
               "Le calcul est impossible à faire"
             ],
@@ -9335,7 +9335,7 @@
             "q": "Pourquoi deux quarts d'heure font-ils exactement une demi-heure ?",
             "choices": [
               "C'est une coïncidence sans explication",
-              "Parce qu'un quart d'heure est 15 minutes, et 15 + 15 = 30 minutes, ce qui est justement la durée d'une demi-heure",
+              "Parce qu'un quart d'heure est 15 minutes, et 15 + 15 = 30 minutes",
               "Parce que 2 est la moitié de 4",
               "Ce n'est pas vrai, deux quarts d'heure font une heure entière"
             ],
@@ -9348,7 +9348,7 @@
             "q": "Un élève dit : « un quart d'heure, c'est 4 fois plus court qu'une heure, donc ça dure 4 minutes (60 ÷ 15) ». Où est son erreur de calcul ?",
             "choices": [
               "Il a raison, 4 minutes est juste",
-              "Il a inversé l'opération : un quart d'heure, c'est 60 ÷ 4 = 15 minutes, pas 60 ÷ 15",
+              "Il a inversé l'opération",
               "Un quart d'heure dure toujours 1 minute",
               "Il fallait multiplier 60 par 4"
             ],
@@ -9395,7 +9395,7 @@
             "q": "Pourquoi une demi-heure dure-t-elle exactement deux fois plus qu'un quart d'heure ?",
             "choices": [
               "Ce n'est pas vrai, elles durent pareil",
-              "Parce qu'une heure se divise en 4 quarts égaux (15 min chacun) ; une demi-heure correspond à 2 de ces quarts, donc 2×15=30 minutes, le double d'un seul quart",
+              "Parce qu'une heure se divise en 4 quarts égaux (15 min chacun)",
               "Parce que « demi » et « quart » sont juste des synonymes",
               "Parce que 30 est un hasard sans rapport avec 15"
             ],
@@ -9408,7 +9408,7 @@
             "q": "Un élève dit : « un quart d'heure, c'est 4 fois plus court qu'une heure, donc ça dure 60÷4=15 minutes ». Que penser de ce raisonnement ?",
             "choices": [
               "Il est faux, un quart d'heure dure 4 minutes",
-              "Son raisonnement et son calcul sont corrects : 60÷4=15 minutes est bien la durée d'un quart d'heure",
+              "Son raisonnement et son calcul sont corrects",
               "Il fallait multiplier 60 par 4",
               "Un quart d'heure dure toujours 1 heure"
             ],
@@ -9455,7 +9455,7 @@
             "q": "Pourquoi dit-on parfois « il est une heure moins le quart » plutôt que de donner directement les minutes ?",
             "choices": [
               "Cela n'a aucun sens particulier",
-              "Parce que c'est une façon courante de dire qu'il manque un quart d'heure (15 min) pour atteindre l'heure pile suivante, une habitude de langage pratique",
+              "C'est une façon courante de dire qu'il manque un quart d'heure",
               "Parce que les minutes n'existent pas dans ce cas",
               "Parce qu'il est interdit de dire les minutes directement"
             ],
@@ -9468,7 +9468,7 @@
             "q": "Un élève dit que « midi moins le quart » signifie 12h15. Quelle est son erreur ?",
             "choices": [
               "Il a raison",
-              "« Moins le quart » signifie qu'il MANQUE un quart d'heure pour atteindre midi, donc c'est 11h45, pas 12h15 qui serait « midi et quart »",
+              "« Moins le quart » signifie 11h45, pas 12h15",
               "Midi moins le quart n'existe pas",
               "Il fallait dire 12h45"
             ],
@@ -9576,7 +9576,7 @@
             "q": "Pourquoi peut-on dire qu'un carré est un cas particulier de rectangle, mais qu'un rectangle n'est pas toujours un carré ?",
             "choices": [
               "Ce n'est pas vrai, un carré et un rectangle n'ont aucun rapport",
-              "Un carré a toutes les propriétés d'un rectangle (4 angles droits, côtés opposés égaux) ET en plus tous ses côtés sont égaux : c'est donc un rectangle « spécial », mais un rectangle classique n'a pas forcément tous ses côtés égaux",
+              "Un carré a toutes les propriétés d'un rectangle, et plus encore",
               "Un rectangle a plus de côtés qu'un carré",
               "Un carré n'a pas d'angles droits"
             ],
@@ -9589,7 +9589,7 @@
             "q": "Un élève dit : « cette forme a 4 côtés égaux, c'est donc forcément un carré », en parlant d'un losange (qui a 4 côtés égaux mais pas d'angle droit). Quelle est son erreur ?",
             "choices": [
               "Il a raison, c'est bien un carré",
-              "Il a oublié de vérifier les angles : un carré doit AUSSI avoir 4 angles droits, pas seulement 4 côtés égaux",
+              "Il a oublié de vérifier les angles",
               "Il fallait compter les sommets",
               "Cette forme n'existe pas"
             ],
@@ -9648,7 +9648,7 @@
             "q": "Pourquoi un carré peut-il aussi être appelé rectangle, mais pas l'inverse ?",
             "choices": [
               "Ce n'est pas vrai, ce sont deux formes totalement différentes",
-              "Parce qu'un carré respecte déjà toutes les règles d'un rectangle (4 côtés, 4 angles droits) en plus d'avoir ses côtés égaux ; un rectangle quelconque, lui, n'a pas forcément des côtés tous égaux",
+              "Un carré respecte déjà toutes les règles d'un rectangle",
               "Parce que carré et rectangle sont juste deux noms pour la même forme",
               "Parce qu'un rectangle a toujours plus de côtés qu'un carré"
             ],
@@ -9661,7 +9661,7 @@
             "q": "Un élève voit une forme à 4 côtés égaux et affirme : « c'est sûrement un carré ». Pourquoi doit-il vérifier autre chose avant d'être sûr ?",
             "choices": [
               "Il n'y a rien d'autre à vérifier, 4 côtés égaux suffisent",
-              "Il doit aussi vérifier que les 4 angles sont droits : une forme à 4 côtés égaux mais sans angles droits est un losange, pas un carré",
+              "Il doit aussi vérifier que les 4 angles sont droits",
               "Un carré n'a jamais 4 côtés égaux",
               "Il doit vérifier la couleur de la forme"
             ],
@@ -9708,7 +9708,7 @@
             "q": "Pourquoi le cercle n'a-t-il ni côté ni sommet, contrairement aux autres formes vues (carré, rectangle, triangle) ?",
             "choices": [
               "Le cercle a en fait 4 côtés comme le carré",
-              "Parce que le cercle est tracé d'un seul mouvement courbe, sans aucune ligne droite ni angle, alors que les autres formes sont faites de segments droits qui se rencontrent en sommets",
+              "Le cercle est tracé d'une courbe, sans ligne droite ni angle",
               "Parce que le cercle est trop petit pour avoir des côtés",
               "Il n'y a pas de différence réelle entre le cercle et les autres formes"
             ],
@@ -9721,7 +9721,7 @@
             "q": "Un élève dit qu'un triangle a toujours 3 côtés ET 3 angles droits. Quelle est son erreur ?",
             "choices": [
               "Il a raison",
-              "Un triangle a toujours 3 côtés, mais pas forcément des angles droits : il existe des triangles sans aucun angle droit",
+              "Un triangle a 3 côtés, mais pas forcément d'angle droit",
               "Un triangle n'a jamais d'angle droit",
               "Un triangle a 4 côtés, pas 3"
             ],
@@ -9735,7 +9735,7 @@
             "choices": [
               "Un carré",
               "Un rectangle",
-              "Ni un carré ni un rectangle (une autre forme à 4 côtés)",
+              "Ni un carré ni un rectangle",
               "Un triangle"
             ],
             "answer": 2,
@@ -9835,7 +9835,7 @@
             "q": "Pourquoi le coin d'une feuille de papier peut-il servir de « gabarit » pour vérifier un angle droit ailleurs ?",
             "choices": [
               "Ça ne marche pas, il faut toujours une vraie équerre",
-              "Parce que les coins d'une feuille de papier rectangulaire sont eux-mêmes des angles droits : on peut donc les superposer à un autre angle pour comparer",
+              "Les coins d'une feuille sont déjà des angles droits",
               "Parce que le papier est toujours plat",
               "Parce que la feuille est blanche"
             ],
@@ -9848,7 +9848,7 @@
             "q": "Un élève dit : « cet angle est très ouvert, presque à plat, donc c'est sûrement un angle droit ». Que penser de son raisonnement ?",
             "choices": [
               "Il a raison",
-              "Il se trompe : un angle très ouvert (presque à plat) est un angle obtus, plus grand qu'un angle droit, pas un angle droit",
+              "Il se trompe : un angle très ouvert est un angle obtus",
               "Un angle droit est toujours très ouvert",
               "On ne peut jamais savoir sans équerre"
             ],
@@ -9887,7 +9887,7 @@
             "q": "Un élève veut vérifier si le coin d'une table est un angle droit, sans équerre. Que peut-il utiliser ?",
             "choices": [
               "Une règle seule, posée n'importe comment",
-              "Le coin d'une feuille de papier, en le superposant exactement sur le coin à vérifier",
+              "Le coin d'une feuille de papier, en le superposant",
               "Un crayon de couleur",
               "Il est impossible de vérifier sans équerre"
             ],
@@ -9913,7 +9913,7 @@
             "q": "Pourquoi le coin d'une feuille de papier est-il un bon « gabarit » universel pour reconnaître un angle droit ?",
             "choices": [
               "Parce que toutes les feuilles ont obligatoirement un coin arrondi",
-              "Parce qu'une feuille de papier standard a des coins qui forment exactement des angles droits, on peut donc la superposer sur n'importe quel autre angle pour comparer",
+              "Une feuille a des coins qui forment des angles droits",
               "Parce que le papier est toujours de la même couleur",
               "Parce que les feuilles de papier n'ont jamais de coin"
             ],
@@ -9926,7 +9926,7 @@
             "q": "Un élève dit : « cet angle est très fermé, presque pointu, donc c'est sûrement un angle droit ». Quelle est son erreur ?",
             "choices": [
               "Il a raison",
-              "Un angle très fermé (pointu) est un angle AIGU, plus petit qu'un angle droit, pas un angle droit lui-même",
+              "Un angle très fermé est un angle aigu, pas droit",
               "Un angle droit est toujours très fermé",
               "Il n'existe pas d'angle plus fermé qu'un angle droit"
             ],
@@ -9972,7 +9972,7 @@
             "q": "Pourquoi dit-on qu'un angle droit est une sorte de « référence » entre les angles aigus et les angles obtus ?",
             "choices": [
               "Il n'a aucun rapport avec les autres angles",
-              "Parce qu'il marque exactement la limite : tout angle plus fermé que lui est aigu, tout angle plus ouvert que lui est obtus",
+              "Parce qu'il marque exactement la limite",
               "Parce que l'angle droit est toujours le plus grand de tous les angles",
               "Parce que l'angle droit n'existe pas vraiment"
             ],
@@ -9985,7 +9985,7 @@
             "q": "Pour vérifier qu'un angle est droit avec une équerre, un élève place l'équerre n'importe comment, sans faire coïncider le sommet et un côté de l'angle. Que risque-t-il ?",
             "choices": [
               "Rien, l'équerre fonctionne toujours peu importe comment on la place",
-              "De se tromper dans sa vérification, car l'équerre doit être alignée précisément sur le sommet et un côté de l'angle pour une comparaison fiable",
+              "De se tromper dans sa vérification",
               "L'équerre ne peut jamais servir à vérifier un angle",
               "Il doit utiliser un compas à la place"
             ],
@@ -10011,7 +10011,7 @@
             "q": "Un triangle peut-il avoir un angle droit ?",
             "choices": [
               "Jamais",
-              "Oui, certains triangles ont un angle droit (on les appelle triangles rectangles)",
+              "Oui, on les appelle des triangles rectangles",
               "Toujours, tous les triangles ont un angle droit",
               "Seulement les triangles équilatéraux"
             ],
@@ -10024,7 +10024,7 @@
             "q": "Un losange a 4 côtés égaux mais ses angles ne sont pas droits. Peut-on l'appeler un carré ?",
             "choices": [
               "Oui, toujours",
-              "Non, car un carré exige en plus des angles droits, que le losange n'a pas forcément",
+              "Non, un carré exige aussi des angles droits",
               "Oui, mais seulement s'il est petit",
               "Un losange n'a jamais 4 côtés égaux"
             ],
@@ -10106,7 +10106,7 @@
             "q": "Pourquoi est-il important de suivre les étapes d'un programme de construction géométrique dans l'ordre indiqué ?",
             "choices": [
               "Ce n'est pas important, on peut faire les étapes dans n'importe quel ordre",
-              "Parce que chaque étape s'appuie souvent sur ce qui a déjà été tracé à l'étape précédente : changer l'ordre peut rendre la construction impossible ou fausse",
+              "Parce que chaque étape s'appuie souvent sur ce qui a déjà été tracé à l'étape précédente",
               "Parce que les étapes sont toujours indépendantes les unes des autres",
               "Parce que ça va plus vite dans le désordre"
             ],
@@ -10119,7 +10119,7 @@
             "q": "Un élève trace un carré en mesurant bien chaque côté à 5 cm avec sa règle, mais sans jamais utiliser son équerre. Que risque-t-il de se passer ?",
             "choices": [
               "Rien, le carré sera forcément parfait",
-              "Les angles risquent de ne pas être bien droits, et la figure obtenue pourrait ressembler à un losange penché plutôt qu'à un vrai carré",
+              "Les angles risquent de ne pas être droits",
               "La règle suffit toujours pour tout tracer",
               "Il fallait utiliser seulement le compas"
             ],
@@ -10171,7 +10171,7 @@
             "q": "Pour tracer un carré de 5 cm de côté avec la règle et l'équerre, quelle est la première chose à faire ?",
             "choices": [
               "Tracer directement les 4 côtés sans réfléchir à l'ordre",
-              "Tracer un premier segment de 5 cm avec la règle, puis utiliser l'équerre pour tracer les angles droits aux extrémités",
+              "Tracer un segment de 5 cm, puis les angles droits à l'équerre",
               "Utiliser uniquement le compas",
               "Mesurer uniquement les diagonales"
             ],
@@ -10184,7 +10184,7 @@
             "q": "Pourquoi suivre les étapes d'une construction géométrique dans l'ordre indiqué est-il important, plutôt que de les faire dans n'importe quel ordre ?",
             "choices": [
               "L'ordre n'a jamais d'importance en géométrie",
-              "Parce que chaque étape s'appuie souvent sur le tracé de l'étape précédente (un point ou une ligne déjà tracée) : changer l'ordre peut rendre une étape impossible à réaliser correctement",
+              "Chaque étape s'appuie sur le tracé précédent",
               "Parce que les étapes sont juste numérotées pour faire joli",
               "Il n'existe pas d'étapes en géométrie"
             ],
@@ -10197,7 +10197,7 @@
             "q": "Un élève trace un carré en mesurant chaque côté à 5 cm à la règle, mais sans jamais vérifier les angles. Quel risque prend-il ?",
             "choices": [
               "Aucun risque, 4 côtés égaux font toujours un carré parfait",
-              "Obtenir une forme à 4 côtés égaux mais pas forcément un carré parfait : sans vérifier les angles droits, la forme pourrait être un losange penché",
+              "Obtenir une forme à 4 côtés égaux mais pas forcément un carré parfait",
               "Il va forcément obtenir un triangle",
               "Les angles ne comptent jamais dans un carré"
             ],
@@ -10243,7 +10243,7 @@
             "q": "Un élève veut tracer un carré mais utilise uniquement le compas, sans règle ni équerre. Que va-t-il probablement lui manquer pour réussir ?",
             "choices": [
               "Rien, le compas suffit pour tout tracer en géométrie",
-              "Le compas seul ne permet pas de tracer des lignes droites précises ni de garantir des angles droits : il faudra aussi la règle et l'équerre",
+              "Le compas seul ne trace pas de lignes droites précises",
               "Le compas est l'unique outil nécessaire pour un carré",
               "Il n'a besoin que d'une gomme en plus"
             ],
@@ -10276,7 +10276,7 @@
             "q": "Pourquoi un programme de construction géométrique écrit étape par étape est-il utile, même pour une figure qu'on connaît déjà bien ?",
             "choices": [
               "Ce n'est jamais utile pour une figure déjà connue",
-              "Parce qu'il garantit de ne rien oublier et de réaliser chaque tracé dans le bon ordre, même pour une figure familière, ce qui évite les erreurs de précipitation",
+              "Il garantit de ne rien oublier et de suivre le bon ordre",
               "Parce qu'il faut toujours une notice même pour un simple trait",
               "Parce que les figures changent de forme sans programme écrit"
             ],
@@ -10377,7 +10377,7 @@
             "q": "Pourquoi est-il utile de combiner plusieurs indications de position (par exemple « sous la table, entre la chaise et le mur ») plutôt qu'une seule ?",
             "choices": [
               "Ce n'est jamais utile, une seule indication suffit toujours",
-              "Parce qu'une seule indication peut correspondre à plusieurs endroits possibles, alors que plusieurs indications combinées permettent de retrouver un endroit précis et unique",
+              "Une seule indication peut correspondre à plusieurs endroits",
               "Parce qu'il faut toujours parler le plus possible",
               "Parce que les mots de position n'ont pas vraiment de sens"
             ],
@@ -10390,7 +10390,7 @@
             "q": "Un élève dessine un plan de sa chambre en mettant le lit « en haut » parce qu'il est contre le mur du fond, et la porte « en bas » parce qu'elle est proche de lui en entrant. Un camarade ne comprend pas le plan. Quel pourrait être le problème ?",
             "choices": [
               "Le plan est parfait, c'est le camarade qui ne sait pas lire",
-              "Sans légende ni explication du sens de lecture (quel mur correspond à « en haut »), un plan peut être mal interprété par quelqu'un d'autre",
+              "Sans légende du sens de lecture, un plan peut être mal compris",
               "Les plans ne doivent jamais représenter de chambre",
               "Il fallait écrire le mot « lit » en lettres énormes"
             ],
@@ -10455,7 +10455,7 @@
             "q": "Pourquoi est-il utile de combiner plusieurs indications de position (par exemple « sous la table, à gauche de la chaise ») plutôt qu'une seule ?",
             "choices": [
               "Une seule indication suffit toujours à localiser précisément un objet",
-              "Parce qu'une seule indication peut correspondre à plusieurs endroits possibles ; en combiner plusieurs réduit les possibilités jusqu'à ne désigner qu'un seul endroit précis",
+              "Parce qu'une seule indication peut correspondre à plusieurs endroits possibles",
               "Parce que combiner des indications rend toujours la position plus floue",
               "Il est interdit d'utiliser plus d'une indication à la fois"
             ],
@@ -10468,7 +10468,7 @@
             "q": "Un élève, sur un plan vu de dessus, dessine une armoire comme on la voit de face (avec ses portes visibles). Quelle est son erreur ?",
             "choices": [
               "Il a raison, on dessine toujours les objets de face sur un plan",
-              "Sur un plan vu du dessus, on représente le contour de l'objet vu d'en haut (souvent juste un rectangle pour une armoire), pas sa façade comme si on la regardait de face",
+              "Vu de dessus, on dessine le contour, pas la façade de face",
               "Une armoire n'a pas de forme sur un plan",
               "Il fallait dessiner l'armoire en 3D"
             ],
@@ -10488,7 +10488,7 @@
             "q": "« Le chat est sous le canapé » et « Le chat est à côté du canapé » décrivent-elles la même position ?",
             "choices": [
               "Oui, exactement la même",
-              "Non, ce sont deux positions très différentes (en dessous vs sur le côté)",
+              "Non, ce sont deux positions différentes",
               "Oui, mais seulement si le canapé est rond",
               "Ces deux phrases n'ont aucun sens"
             ],
@@ -10501,7 +10501,7 @@
             "q": "Dans un jeu de piste, l'indication « avance tout droit puis tourne à la première à gauche » utilise quel type d'information ?",
             "choices": [
               "Uniquement la couleur des objets",
-              "Une direction de déplacement et un repère de position (tourner) pour se repérer dans l'espace",
+              "Une direction et un repère pour se situer dans l'espace",
               "Uniquement des mesures de longueur en centimètres",
               "Aucune information utile"
             ],
@@ -10514,7 +10514,7 @@
             "q": "Un élève, en suivant un plan, confond « à droite » et « à gauche » en se référant à sa propre droite au lieu de celle indiquée sur le plan. Quel problème cela peut-il poser ?",
             "choices": [
               "Aucun problème, droite et gauche sont toujours pareilles pour tout le monde",
-              "Il peut se déplacer dans la mauvaise direction, car droite et gauche dépendent du point de vue (celui qui regarde le plan ou celui qui est dessus) et peuvent être inversées selon l'orientation",
+              "Il peut se déplacer dans la mauvaise direction",
               "Les plans n'ont jamais de droite ni de gauche",
               "Il n'y a jamais de confusion possible avec droite et gauche"
             ],
@@ -10540,7 +10540,7 @@
             "q": "Pourquoi deux personnes situées à des endroits différents dans une même pièce peuvent-elles décrire la position d'un même objet de façon différente (par exemple « à ma gauche » pour l'une, « à ma droite » pour l'autre) ?",
             "choices": [
               "C'est impossible, la position d'un objet ne dépend jamais de qui regarde",
-              "Parce que les mots « gauche » et « droite » dépendent du point de vue de la personne qui les utilise, qui peut être différent selon où elle se trouve et vers où elle regarde",
+              "« Gauche » et « droite » dépendent du point de vue de chacun",
               "Parce que l'objet change réellement de position selon qui le regarde",
               "Parce que l'une des deux personnes a toujours tort"
             ],
@@ -10654,7 +10654,7 @@
             "q": "Pourquoi est-il essentiel de vérifier un codage de déplacement en le suivant soi-même, pas à pas, plutôt que de juste le relire une fois ?",
             "choices": [
               "Ce n'est jamais nécessaire, relire suffit toujours",
-              "En suivant chaque instruction une par une sur un plan, on peut repérer immédiatement une erreur d'ordre ou une instruction ambiguë qu'une simple relecture ne révèle pas toujours",
+              "Suivre chaque instruction révèle une erreur qu'une relecture ne montre pas",
               "Parce qu'il faut toujours tout refaire plusieurs fois sans raison",
               "Parce que les robots ne comprennent jamais les instructions correctement"
             ],
@@ -10667,7 +10667,7 @@
             "q": "Pour faire atteindre une case précise à un robot, un élève écrit : « avance, tourne, avance ». Pourquoi ce codage risque-t-il de ne pas fonctionner ?",
             "choices": [
               "Il est parfait tel quel",
-              "Il manque des précisions essentielles : de combien de cases avancer, et dans quel sens tourner (à droite ou à gauche)",
+              "Il manque des précisions essentielles",
               "Il y a trop d'instructions",
               "Un robot comprend toujours ce qu'on veut dire même sans précision"
             ],
@@ -10693,7 +10693,7 @@
             "q": "Si un pion tourne à droite PUIS avance de 2 cases, obtient-il le même résultat qu'en avançant de 2 cases PUIS en tournant à droite ?",
             "choices": [
               "Oui, toujours le même résultat",
-              "Non, l'ordre des instructions change généralement le trajet final et la position d'arrivée",
+              "Non, l'ordre des instructions change le trajet final",
               "Oui, mais seulement si le pion est rouge",
               "Cela dépend uniquement de la vitesse du pion"
             ],
@@ -10707,7 +10707,7 @@
             "choices": [
               "Tourner à gauche d'abord",
               "Avancer de 1 case d'abord",
-              "Avancer de 2 cases d'abord, car c'est la première instruction de la liste",
+              "Avancer de 2 cases d'abord",
               "Faire les trois actions en même temps"
             ],
             "answer": 2,
@@ -10719,7 +10719,7 @@
             "q": "Pourquoi est-il essentiel de vérifier un codage de déplacement en le suivant soi-même, case par case, plutôt que de juste le lire rapidement ?",
             "choices": [
               "Ce n'est jamais nécessaire, lire suffit toujours",
-              "Parce qu'en suivant chaque instruction une par une, on peut repérer une erreur (une case oubliée, un mauvais sens) qu'une simple lecture rapide ne révèle pas forcément",
+              "Suivre chaque instruction révèle une erreur qu'une lecture rapide ne montre pas",
               "Parce que suivre le codage pas à pas rend le robot plus lent",
               "Il est interdit de vérifier un codage avant de l'exécuter"
             ],
@@ -10732,7 +10732,7 @@
             "q": "Pour faire atteindre une case précise à un robot, un élève écrit seulement : « avance, tourne, avance », sans préciser de nombre de cases. Pourquoi ce codage est-il incomplet ?",
             "choices": [
               "Il est complet, un robot comprend toujours tout seul",
-              "Il manque les quantités précises (combien de cases avancer à chaque fois) : sans elles, le robot ne sait pas où s'arrêter exactement",
+              "Il manque les quantités précises (combien de cases avancer à chaque fois)",
               "Il manque la couleur du robot",
               "Un robot n'a jamais besoin de nombre de cases"
             ],
@@ -10752,7 +10752,7 @@
             "q": "Un robot reçoit : « avance de 4 cases, tourne à droite, avance de 4 cases, tourne à droite, avance de 4 cases, tourne à droite, avance de 4 cases ». Quelle figure dessine-t-il probablement ?",
             "choices": [
               "Une ligne droite",
-              "Un carré (4 côtés égaux avec des virages à angle droit)",
+              "Un carré (4 côtés égaux)",
               "Un cercle",
               "Un triangle"
             ],
@@ -10765,7 +10765,7 @@
             "q": "Pour coder le déplacement d'un robot sur un quadrillage, quelles informations sont indispensables à chaque instruction de mouvement ?",
             "choices": [
               "Uniquement la couleur du robot",
-              "La distance (nombre de cases) et la direction (tourner à droite/gauche ou avancer)",
+              "La distance et la direction du mouvement",
               "Uniquement le nom du robot",
               "Aucune information n'est nécessaire"
             ],
@@ -10778,7 +10778,7 @@
             "q": "Un élève code : « tourne à droite, tourne à droite, tourne à droite, tourne à droite », sans jamais avancer. Où se retrouve le robot à la fin ?",
             "choices": [
               "Très loin de son point de départ",
-              "Exactement à son point de départ, car 4 quarts de tour (4×90°) font un tour complet, donc la même direction qu'au début",
+              "Exactement à son point de départ",
               "Le robot explose",
               "Impossible à savoir"
             ],
@@ -10791,7 +10791,7 @@
             "q": "Pourquoi un même trajet peut-il parfois être codé de deux façons différentes mais toutes les deux correctes ?",
             "choices": [
               "Ce n'est jamais possible, un trajet n'a qu'un seul codage correct",
-              "Parce qu'il existe parfois plusieurs chemins équivalents pour atteindre la même case (par exemple avancer puis tourner, ou contourner autrement), tant que le résultat final est identique",
+              "Il existe parfois plusieurs chemins équivalents pour le même résultat",
               "Parce que les robots n'ont jamais de trajet précis",
               "Parce que le codage ne détermine jamais vraiment le trajet"
             ],
@@ -10804,7 +10804,7 @@
             "q": "Un élève écrit un codage pour atteindre une case, mais oublie une instruction de virage au milieu de la séquence. Que va-t-il se passer ?",
             "choices": [
               "Le robot atteindra quand même la bonne case",
-              "Le robot risque de continuer tout droit au lieu de tourner, et donc de ne pas atteindre la case visée",
+              "Le robot continuera tout droit au lieu de tourner",
               "Le robot s'arrêtera automatiquement avant l'erreur",
               "Cela n'a aucune conséquence sur le trajet"
             ],
@@ -10830,7 +10830,7 @@
             "q": "Pour vérifier qu'un codage de déplacement est correct avant de le donner à un vrai robot, que peut-on faire d'abord ?",
             "choices": [
               "Rien, il faut toujours tester directement sur le vrai robot",
-              "Suivre soi-même les instructions sur un quadrillage dessiné, pas à pas, pour vérifier le trajet avant de l'exécuter réellement",
+              "Suivre les instructions sur un quadrillage dessiné d'abord",
               "Deviner si ça va marcher sans vérifier",
               "Il est impossible de vérifier un codage à l'avance"
             ],
@@ -10925,7 +10925,7 @@
             "q": "Pourquoi un diagramme en barres permet-il de répondre « d'un seul coup d'œil » à une question comme « quel est le résultat le plus fréquent », sans même lire les nombres précis ?",
             "choices": [
               "Ce n'est pas possible sans lire les nombres",
-              "Parce que la barre la plus haute est visuellement immédiate à repérer, sans besoin de comparer les nombres un par un comme dans un tableau",
+              "La barre la plus haute se repère immédiatement",
               "Parce que les diagrammes ne donnent jamais de vraie information",
               "Parce que toutes les barres ont toujours la même hauteur"
             ],
@@ -10938,7 +10938,7 @@
             "q": "Un élève affirme que, sur un diagramme en barres, la barre la plus LARGE (la plus épaisse) représente toujours le plus grand nombre. Que penser de son affirmation ?",
             "choices": [
               "Il a raison",
-              "Il se trompe : c'est la HAUTEUR de la barre qui compte, pas sa largeur (qui est en général la même pour toutes les barres)",
+              "Il se trompe : c'est la hauteur qui compte, pas la largeur",
               "La largeur et la hauteur comptent autant l'une que l'autre",
               "Les diagrammes en barres n'ont jamais de largeur"
             ],
@@ -11003,7 +11003,7 @@
             "q": "Pourquoi un diagramme en barres permet-il de répondre « d'un seul coup d'œil » à une question comme « quel est le plus populaire » ?",
             "choices": [
               "Il ne permet jamais de répondre rapidement, il faut toujours tout recalculer",
-              "Parce que les hauteurs des barres se comparent visuellement très rapidement, sans avoir besoin de lire ou calculer chaque nombre précisément",
+              "Les hauteurs des barres se comparent visuellement très vite",
               "Parce que les barres sont toujours de la même couleur",
               "Parce qu'un diagramme ne contient jamais de vrais nombres"
             ],
@@ -11016,7 +11016,7 @@
             "q": "Un élève affirme que, sur un diagramme en barres, la barre la plus LARGE représente la plus grande quantité. Quelle est son erreur ?",
             "choices": [
               "Il a raison",
-              "C'est la HAUTEUR de la barre qui représente la quantité, pas sa largeur : toutes les barres ont généralement la même largeur, seule leur hauteur varie et compte",
+              "C'est la HAUTEUR de la barre qui représente la quantité, pas sa largeur",
               "La largeur est toujours ce qui compte, jamais la hauteur",
               "Il n'y a aucune règle pour lire un diagramme en barres"
             ],
@@ -11049,7 +11049,7 @@
             "q": "Pour construire un diagramme en barres à partir d'un comptage, quelle est la première chose à faire ?",
             "choices": [
               "Choisir des couleurs au hasard sans compter",
-              "Compter précisément chaque catégorie avant de tracer les barres à la hauteur correspondante",
+              "Compter précisément chaque catégorie avant de tracer",
               "Dessiner des barres de hauteurs aléatoires",
               "Il n'y a pas d'étape particulière à suivre"
             ],
@@ -11062,7 +11062,7 @@
             "q": "Un élève trace une barre à la hauteur 7 alors que son comptage réel donnait 9. Quelle conséquence cela a-t-il sur la lecture du diagramme ?",
             "choices": [
               "Aucune conséquence, le diagramme reste parfaitement juste",
-              "Le diagramme donnera une information fausse : quiconque le lira croira qu'il y a 7 alors qu'il y en a réellement 9",
+              "Le diagramme donnera une information fausse",
               "Le diagramme corrigera automatiquement l'erreur",
               "Un diagramme ne peut jamais contenir d'erreur"
             ],
@@ -11082,7 +11082,7 @@
             "q": "Pourquoi est-il important que toutes les barres d'un même diagramme aient la même largeur ?",
             "choices": [
               "Ce n'est pas important, la largeur peut varier librement",
-              "Pour que seule la hauteur varie et porte l'information : si la largeur changeait aussi, cela pourrait créer une confusion visuelle sur ce qui représente vraiment la quantité",
+              "Pour que seule la hauteur varie et porte l'information",
               "Parce que des largeurs différentes sont interdites par la loi",
               "Parce que la largeur est ce qui compte réellement, pas la hauteur"
             ],
@@ -11157,7 +11157,7 @@
             "q": "Dans un tableau à double entrée, à quoi correspond la case située à l'intersection d'une ligne et d'une colonne ?",
             "choices": [
               "À rien de particulier",
-              "Au nombre d'éléments qui respectent À LA FOIS la condition de la ligne ET celle de la colonne",
+              "Ce qui respecte à la fois la ligne et la colonne",
               "Au total de toutes les lignes",
               "Au nom de la colonne"
             ],
@@ -11196,7 +11196,7 @@
             "q": "Pourquoi un simple tableau à une seule colonne ne suffit-il pas pour répondre à « combien de garçons viennent en vélo », alors qu'un tableau à double entrée le permet ?",
             "choices": [
               "Un tableau simple suffit toujours",
-              "Parce qu'un tableau simple ne peut représenter qu'UNE SEULE catégorie à la fois (soit le genre, soit le moyen de transport), alors qu'un tableau à double entrée croise les DEUX catégories en même temps dans ses cases",
+              "Un tableau simple ne représente qu'une seule catégorie à la fois",
               "Parce que les tableaux à double entrée sont toujours plus petits",
               "Parce qu'il n'y a aucune différence entre les deux types de tableaux"
             ],
@@ -11209,7 +11209,7 @@
             "q": "Pour répondre à « combien de filles viennent en bus », un élève regarde la case à l'intersection de la ligne « Garçons » et de la colonne « Bus ». Quelle est son erreur ?",
             "choices": [
               "Il n'y a pas d'erreur",
-              "Il s'est trompé de ligne : il fallait chercher la ligne « Filles », pas « Garçons », pour répondre à la question posée",
+              "Il s'est trompé de ligne",
               "Il fallait regarder la colonne « Filles »",
               "Il fallait additionner toutes les cases du tableau"
             ],
@@ -11274,7 +11274,7 @@
             "q": "Pourquoi un tableau à une seule colonne ne suffirait-il pas pour répondre à une question croisant deux critères, comme « combien de filles viennent en bus » ?",
             "choices": [
               "Un tableau à une seule colonne suffit toujours pour tout",
-              "Parce qu'il faudrait pouvoir croiser deux informations à la fois (le sexe ET le moyen de transport), ce qu'une seule colonne ne permet pas de représenter clairement",
+              "Il faudrait croiser deux informations, ce qu'une colonne ne permet pas",
               "Parce que les tableaux à une colonne n'existent pas",
               "Parce que la question ne concerne qu'un seul critère en réalité"
             ],
@@ -11287,7 +11287,7 @@
             "q": "Pour répondre à « combien de garçons viennent en voiture », un élève regarde seulement la colonne « voiture » sans tenir compte de la ligne « garçons ». Quelle est son erreur ?",
             "choices": [
               "Il a raison, regarder la colonne suffit",
-              "Il doit regarder précisément la case à l'INTERSECTION de la ligne « garçons » et de la colonne « voiture », pas toute la colonne qui inclut aussi les filles",
+              "Il doit regarder la case à l'intersection des deux",
               "Il fallait regarder uniquement la ligne, jamais la colonne",
               "Il n'existe aucune case précise pour cette question"
             ],
@@ -11320,7 +11320,7 @@
             "q": "Pourquoi est-il utile de calculer les totaux de chaque ligne et de chaque colonne d'un tableau à double entrée, en plus de lire les cases une par une ?",
             "choices": [
               "Ce n'est jamais utile",
-              "Parce que les totaux donnent une vue d'ensemble (par exemple le total de chaque catégorie), complémentaire à l'information détaillée de chaque case individuelle",
+              "Les totaux donnent une vue d'ensemble, en plus du détail",
               "Parce que seules les cases individuelles ont un intérêt, jamais les totaux",
               "Parce que calculer des totaux changerait les données du tableau"
             ],
@@ -11333,7 +11333,7 @@
             "q": "Un élève additionne toutes les cases d'une seule ligne pour trouver le total de cette catégorie. Que doit-il vérifier avant d'être sûr de son résultat ?",
             "choices": [
               "Rien, cette méthode est toujours juste sans vérification",
-              "Qu'il a bien additionné TOUTES les cases de cette ligne, sans en oublier ni en compter une en double",
+              "Qu'il a additionné toutes les cases, sans en oublier",
               "Qu'il a utilisé une calculatrice",
               "Que le tableau est de couleur verte"
             ],
