@@ -101,7 +101,9 @@ def validate_subject(subj, errors):
             if len(exs) < 2:
                 fail(f"[{subj}] {lid} : seulement {len(exs)} exercices", errors)
             for e in exs:
-                for req in ('type','q','answer','exp'):
+                etype = e.get('type')
+                base_req = ('type','q','exp') if etype in ('ordre','calcul_pose') else ('type','q','answer','exp')
+                for req in base_req:
                     if req not in e or e[req] in (None, ''):
                         fail(f"[{subj}] {lid} : exercice sans '{req}' valide", errors)
                 kind = e.get('kind')
@@ -109,8 +111,20 @@ def validate_subject(subj, errors):
                     fail(f"[{subj}] {lid} : kind invalide ({kind!r})", errors)
                 else:
                     kind_counts[kind] += 1
-                if e.get('type') == 'qcm' and not e.get('choices'):
+                if etype == 'qcm' and not e.get('choices'):
                     fail(f"[{subj}] {lid} : qcm sans choices", errors)
+                if etype == 'ordre':
+                    items = e.get('items')
+                    if not isinstance(items, list) or len(items) < 2:
+                        fail(f"[{subj}] {lid} : ordre sans 'items' valide (>=2 elements)", errors)
+                if etype == 'calcul_pose':
+                    if e.get('operation') not in ('addition', 'soustraction'):
+                        fail(f"[{subj}] {lid} : calcul_pose operation invalide ({e.get('operation')!r})", errors)
+                    operands = e.get('operands')
+                    if not (isinstance(operands, list) and len(operands) == 2 and all(isinstance(o, int) for o in operands)):
+                        fail(f"[{subj}] {lid} : calcul_pose operands invalides ({operands!r})", errors)
+                    elif e.get('operation') == 'soustraction' and operands[0] < operands[1]:
+                        fail(f"[{subj}] {lid} : calcul_pose soustraction negative ({operands!r})", errors)
 
     dup = [i for i,c in collections.Counter(all_ids).items() if c > 1]
     if dup:
