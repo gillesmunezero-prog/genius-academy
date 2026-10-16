@@ -1,3 +1,4 @@
 __pycache__/
 *.pyc
 curriculum/_production_backups/
+.claude/worktrees/
