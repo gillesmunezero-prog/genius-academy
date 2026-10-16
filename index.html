@@ -112,6 +112,8 @@ header .logo{font-size:24px;font-weight:800;color:#ff8a00;font-family:'Baloo 2',
 .vf-row{display:flex;gap:12px;}
 .vf-row button{flex:1;padding:16px;border-radius:14px;border:2px solid var(--line);font-weight:800;font-size:16px;cursor:pointer;background:#fff;}
 .exp-box{margin-top:14px;padding:12px 14px;border-radius:12px;background:#f4f2ff;font-weight:700;color:var(--ink2);}
+.spell-note{margin-top:10px;padding:10px 14px;border-radius:12px;background:#fff6e0;color:#8a5a00;font-weight:700;}
+.spell-err{color:#e63946;font-weight:900;text-decoration:underline;}
 .textans{padding:12px;border-radius:12px;border:2px solid var(--line);font-size:16px;width:100%;font-family:'Nunito';}
 .result-box{text-align:center;padding:30px 20px;}
 .result-box .big{font-size:70px;}
@@ -1823,6 +1825,124 @@ GT.wordOverlap = function(a,b){
   let hit = 0;
   bw.forEach(w=>{ if(aw.includes(w)) hit++; });
   return hit/bw.length;
+};
+
+/* ---- REPONSES ECRITES : tolerance aux fautes d'orthographe ----
+   Le contenu est juge correct ou non independamment de l'orthographe
+   (distance de Levenshtein par mot), mais les lettres fautives sont
+   ensuite affichees en rouge pour que l'enfant apprenne la bonne graphie. */
+GT.levenshtein = function(a,b){
+  a = a||''; b = b||'';
+  const m = a.length, n = b.length;
+  if(m===0) return n;
+  if(n===0) return m;
+  let prev = new Array(n+1);
+  for(let j=0;j<=n;j++) prev[j]=j;
+  for(let i=1;i<=m;i++){
+    const cur = [i];
+    for(let j=1;j<=n;j++){
+      const cost = a[i-1]===b[j-1] ? 0 : 1;
+      cur[j] = Math.min(prev[j]+1, cur[j-1]+1, prev[j-1]+cost);
+    }
+    prev = cur;
+  }
+  return prev[n];
+};
+GT.wordTolerance = function(len){
+  if(len<=3) return 0;
+  if(len<=6) return 1;
+  if(len<=10) return 2;
+  return 3;
+};
+GT.wordsFuzzyEqual = function(w1,w2){
+  if(w1===w2) return true;
+  if(!w1 || !w2) return false;
+  return GT.levenshtein(w1,w2) <= GT.wordTolerance(Math.max(w1.length,w2.length));
+};
+/* Normalisation "stricte" : casse et ponctuation ignorees, mais les accents sont CONSERVES.
+   Sert uniquement a decider si l'orthographe est exacte (un accent manquant doit etre signale). */
+GT.normKeepAccents = function(s){
+  return (s||'').toString().toLowerCase().replace(/[^a-z0-9àâäéèêëïîôöùûüÿñç ]/gi,' ').replace(/\s+/g,' ').trim();
+};
+/* Compare un texte tape a une reponse acceptee (le FOND est juge en ignorant accents/casse/fautes de frappe).
+   Retourne {correct, exact} ; exact=false signifie "bonne reponse, mais orthographe a corriger (accent, lettre...)" . */
+GT.fuzzyTextMatch = function(typed, accepted){
+  const tWords = GT.norm(typed).split(' ').filter(Boolean);
+  const aWords = GT.norm(accepted).split(' ').filter(Boolean);
+  const tWordsStrict = GT.normKeepAccents(typed).split(' ').filter(Boolean);
+  const aWordsStrict = GT.normKeepAccents(accepted).split(' ').filter(Boolean);
+  if(tWords.length===0 || aWords.length===0) return {correct:false, exact:false};
+  if(tWords.length === aWords.length){
+    let exact = true, allMatch = true;
+    for(let i=0;i<aWords.length;i++){
+      if(tWordsStrict[i] !== aWordsStrict[i]) exact = false;
+      if(!GT.wordsFuzzyEqual(tWords[i], aWords[i])){ allMatch = false; break; }
+    }
+    return {correct: allMatch, exact: allMatch && exact};
+  }
+  /* Nombre de mots different : on accepte si tous les mots-cles attendus (reponse courte,
+     <=3 mots) se retrouvent dans le texte tape, dans n'importe quel ordre. */
+  if(aWords.length <= 3){
+    const usedIdx = {};
+    let allFound = true, exact = (tWords.length === aWords.length);
+    for(let ai=0; ai<aWords.length; ai++){
+      const aw = aWords[ai];
+      let foundIdx = -1;
+      for(let i=0;i<tWords.length;i++){
+        if(usedIdx[i]) continue;
+        if(GT.wordsFuzzyEqual(tWords[i], aw)){ foundIdx = i; if(tWordsStrict[i]!==aWordsStrict[ai]) exact = false; break; }
+      }
+      if(foundIdx===-1){ allFound = false; break; }
+      usedIdx[foundIdx] = true;
+    }
+    return {correct: allFound, exact: allFound && exact};
+  }
+  return {correct:false, exact:false};
+};
+/* Verifie une reponse tapee contre ex.answer (+ ex.answers[] si present).
+   Retourne {correct, spelling, canonical} : spelling=true => reponse juste mais a corriger a l'affichage. */
+GT.checkTextAnswer = function(typed, ex){
+  const accepted = [];
+  if(ex.answer != null) accepted.push(String(ex.answer));
+  if(Array.isArray(ex.answers)) ex.answers.forEach(a=>accepted.push(String(a)));
+  let best = null;
+  for(const acc of accepted){
+    const r = GT.fuzzyTextMatch(typed, acc);
+    if(r.correct){
+      if(r.exact) return {correct:true, spelling:false, canonical:acc};
+      if(!best) best = {correct:true, spelling:true, canonical:acc};
+    }
+  }
+  return best || {correct:false, spelling:false, canonical: accepted[0] || ''};
+};
+/* Affiche 'canonical' avec, en rouge, les lettres que l'enfant n'a pas ecrites correctement
+   (accent manquant, lettre fautive...), pour montrer la bonne orthographe. */
+GT.spellingDiffHtml = function(typed, canonical){
+  const a = String(canonical);
+  const b = String(typed).trim();
+  const al = a.toLowerCase();
+  const bl = b.toLowerCase();
+  const m = al.length, n = bl.length;
+  const dp = [];
+  for(let i=0;i<=m;i++) dp.push(new Array(n+1).fill(0));
+  for(let i=1;i<=m;i++){
+    for(let j=1;j<=n;j++){
+      dp[i][j] = al[i-1]===bl[j-1] ? dp[i-1][j-1]+1 : Math.max(dp[i-1][j], dp[i][j-1]);
+    }
+  }
+  let i=m, j=n;
+  const matched = new Array(m).fill(false);
+  while(i>0 && j>0){
+    if(al[i-1]===bl[j-1]){ matched[i-1]=true; i--; j--; }
+    else if(dp[i-1][j] >= dp[i][j-1]) i--;
+    else j--;
+  }
+  let html = '';
+  for(let k=0;k<m;k++){
+    const ch = a[k].replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    html += matched[k] ? ch : ('<span class="spell-err">'+ch+'</span>');
+  }
+  return html;
 };
 
 /* ---- SPEECH : synthese vocale + reconnaissance vocale (API natives navigateur) ---- */
@@ -3698,7 +3818,9 @@ if(LS.answered) return;
 var list = currentExerciseList();
 var ex = list[LS.exIndex];
 var inp = document.getElementById('textAnsInput');
-var correct = normText(inp.value) === normText(ex.answer);
+var typedVal = inp.value;
+var check = GT.checkTextAnswer(typedVal, ex);
+var correct = check.correct;
 var expBox = document.getElementById('expBox');
 if(correct || LS._p5TextAttempt>=2){
 LS.answered = true;
@@ -3711,7 +3833,11 @@ inp.disabled = true;
 var vb = document.getElementById('validateBtn'); if(vb) vb.style.display='none';
 GT.lockHintButton();
 var listAfter = currentExerciseList();
-expBox.innerHTML = '<div class="exp-box">'+(correct?'\u2705 Bravo ! ':'\u274c Pas tout \u00e0 fait. ')+ex.exp+'</div><div style="text-align:center;margin-top:14px;"><button class="btn" onclick="nextExercise()">'+(LS.exIndex+1<listAfter.length?'Suivant \u27a1\ufe0f':'Terminer \ud83c\udfc1')+'</button></div>';
+var spellHtml = '';
+if(correct && check.spelling && typedVal.trim()){
+spellHtml = '<div class="spell-note">\u270f\ufe0f Bonne r\u00e9ponse ! Attention \u00e0 l\'orthographe, \u00e7a s\'\u00e9crit : <strong>'+GT.spellingDiffHtml(typedVal, check.canonical)+'</strong></div>';
+}
+expBox.innerHTML = '<div class="exp-box">'+(correct?'\u2705 Bravo ! ':'\u274c Pas tout \u00e0 fait. ')+ex.exp+'</div>'+spellHtml+'<div style="text-align:center;margin-top:14px;"><button class="btn" onclick="nextExercise()">'+(LS.exIndex+1<listAfter.length?'Suivant \u27a1\ufe0f':'Terminer \ud83c\udfc1')+'</button></div>';
 } else {
 LS._p5TextAttempt = 2;
 expBox.innerHTML = '<div class="exp-box">\ud83e\udd14 Pas encore, essaie encore une fois !</div>';
