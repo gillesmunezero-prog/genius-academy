@@ -4094,12 +4094,41 @@ if(!body) return;
 LS._p5TextAttempt = 1;
 var html = '<div class="exo-box">'+exerciseCounterHtml()+'<div class="exo-q">'+ex.q+'</div>';
 html += '<input type="text" class="textans" id="textAnsInput" placeholder="Ta reponse...">';
-html += '<div style="text-align:center;margin-top:12px;"><button class="btn" id="validateBtn" onclick="GT.answerTextExercise()">Valider \u2705</button></div>';
+html += '<div style="text-align:center;margin-top:12px;">';
+html += '<button class="btn" id="validateBtn" onclick="GT.answerTextExercise()">Valider \u2705</button>';
+if(GT.speechSupported()){
+html += ' <button class="btn secondary" id="micAnswerBtn" onclick="GT.micAnswerText()">\ud83c\udfa4 Je pr\u00e9f\u00e8re le dire</button>';
+}
+html += '</div>';
+html += '<div id="micStatus" style="text-align:center;font-style:italic;color:#888;min-height:20px;margin-top:6px;"></div>';
 html += '<div id="expBox"></div></div>';
 body.innerHTML = html;
 var inp = document.getElementById('textAnsInput');
 inp.focus();
 inp.addEventListener('keydown', function(e){ if(e.key==='Enter') GT.answerTextExercise(); });
+};
+GT.micAnswerText = function(){
+if(LS.answered) return;
+var micBtn = document.getElementById('micAnswerBtn');
+var statusEl = document.getElementById('micStatus');
+if(micBtn){ micBtn.disabled = true; micBtn.textContent = '\ud83c\udfa4 J\'\u00e9coute...'; }
+if(statusEl) statusEl.textContent = '\ud83c\udfa4 Parle, je t\'\u00e9coute...';
+GT.listen({
+lang: GT.langForSubject(LS.subjectKey),
+onResult: function(transcript){
+var inp = document.getElementById('textAnsInput');
+if(inp){ inp.value = transcript; inp.focus(); }
+if(statusEl) statusEl.textContent = '\ud83d\udcac Tu as dit : \u00ab '+transcript+' \u00bb \u2014 tu peux corriger puis valider, ou valider directement.';
+if(micBtn){ micBtn.disabled = false; micBtn.textContent = '\ud83c\udfa4 Je pr\u00e9f\u00e8re le dire'; }
+},
+onError: function(err){
+if(statusEl) statusEl.textContent = '\ud83d\ude15 Je n\'ai pas bien entendu, tu peux r\u00e9essayer ou \u00e9crire ta r\u00e9ponse.';
+if(micBtn){ micBtn.disabled = false; micBtn.textContent = '\ud83c\udfa4 Je pr\u00e9f\u00e8re le dire'; }
+},
+onEnd: function(){
+if(micBtn){ micBtn.disabled = false; micBtn.textContent = '\ud83c\udfa4 Je pr\u00e9f\u00e8re le dire'; }
+}
+});
 };
 GT.answerTextExercise = function(){
 if(LS.answered) return;
