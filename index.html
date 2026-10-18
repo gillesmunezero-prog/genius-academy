@@ -18,6 +18,7 @@
 <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.0/firebase-functions-compat.js"></script>
 <style>
 :root{
 --bg:#fef6e9;--card:#ffffff;--ink:#2d2a4a;--ink2:#6b6890;--gold:#ffb400;
@@ -1990,6 +1991,18 @@ GT.checkTextAnswer = function(typed, ex){
   if(bestExact) return {correct:true, spelling:false, canonical:bestExact};
   if(bestFuzzy) return {correct:true, spelling:true, canonical:bestFuzzy};
   return {correct:false, spelling:false, canonical: accepted[0] || ''};
+};
+
+/* Correction par IA (Claude, via une fonction serveur Firebase) : juge le fond de la
+   reponse plutot qu'une comparaison de mots, pragmatique sur la formulation mais
+   exigeant sur le contenu. Retourne une Promise {correct, feedback}, rejetee si le
+   service est indisponible (appelant: repli sur GT.checkTextAnswer). */
+GT.gradeAnswerAI = function(payload){
+  if(!(window.GT && GT.Cloud && GT.Cloud.ready && GT.Cloud.functions)){
+    return Promise.reject(new Error('cloud-unavailable'));
+  }
+  var call = GT.Cloud.functions.httpsCallable('gradeAnswer');
+  return call(payload).then(function(res){ return res.data; });
 };
 /* Affiche 'canonical' avec, en rouge, les lettres que l'enfant n'a pas ecrites correctement
    (accent manquant, lettre fautive...), pour montrer la bonne orthographe. */
@@ -4136,9 +4149,11 @@ var list = currentExerciseList();
 var ex = list[LS.exIndex];
 var inp = document.getElementById('textAnsInput');
 var typedVal = inp.value;
-var check = GT.checkTextAnswer(typedVal, ex);
-var correct = check.correct;
 var expBox = document.getElementById('expBox');
+var vb = document.getElementById('validateBtn');
+var localCheck = GT.checkTextAnswer(typedVal, ex);
+
+function finishWithVerdict(correct, aiFeedback){
 if(correct || LS._p5TextAttempt>=2){
 LS.answered = true;
 if(!correct) LS.mistakes++;
@@ -4147,19 +4162,43 @@ LS._p5FirstTry = LS._p5FirstTry || [];
 LS._p5Attempts.push(LS._p5TextAttempt);
 LS._p5FirstTry.push(LS._p5TextAttempt===1 && correct);
 inp.disabled = true;
-var vb = document.getElementById('validateBtn'); if(vb) vb.style.display='none';
+if(vb) vb.style.display='none';
 GT.lockHintButton();
 GT.Avatar.setExpression(correct?'happy':'encourage');
 var listAfter = currentExerciseList();
 var spellHtml = '';
-if(correct && check.spelling && typedVal.trim()){
-spellHtml = '<div class="spell-note">\u270f\ufe0f Bonne r\u00e9ponse ! Attention \u00e0 l\'orthographe, \u00e7a s\'\u00e9crit : <strong>'+GT.spellingDiffHtml(typedVal, check.canonical)+'</strong></div>';
+if(correct && localCheck.spelling && typedVal.trim()){
+spellHtml = '<div class="spell-note">\u270f\ufe0f Bonne r\u00e9ponse ! Attention \u00e0 l\'orthographe, \u00e7a s\'\u00e9crit : <strong>'+GT.spellingDiffHtml(typedVal, localCheck.canonical)+'</strong></div>';
 }
-expBox.innerHTML = '<div class="exp-box">'+(correct?'\u2705 Bravo ! ':'\u274c Pas tout \u00e0 fait. ')+ex.exp+'</div>'+spellHtml+'<div style="text-align:center;margin-top:14px;"><button class="btn" onclick="nextExercise()">'+(LS.exIndex+1<listAfter.length?'Suivant \u27a1\ufe0f':'Terminer \ud83c\udfc1')+'</button></div>';
+var aiHtml = aiFeedback ? '<div class="exp-box" style="margin-bottom:8px;">\ud83d\udc69\u200d\ud83c\udfeb '+aiFeedback+'</div>' : '';
+expBox.innerHTML = aiHtml+'<div class="exp-box">'+(correct?'\u2705 Bravo ! ':'\u274c Pas tout \u00e0 fait. ')+ex.exp+'</div>'+spellHtml+'<div style="text-align:center;margin-top:14px;"><button class="btn" onclick="nextExercise()">'+(LS.exIndex+1<listAfter.length?'Suivant \u27a1\ufe0f':'Terminer \ud83c\udfc1')+'</button></div>';
 } else {
+if(vb) vb.disabled = false;
 LS._p5TextAttempt = 2;
-expBox.innerHTML = '<div class="exp-box">\ud83e\udd14 Pas encore, essaie encore une fois !</div>';
+var aiPrefix = aiFeedback ? ('\ud83d\udc69\u200d\ud83c\udfeb '+aiFeedback+' ') : '';
+expBox.innerHTML = '<div class="exp-box">\ud83e\udd14 '+aiPrefix+'Pas encore, essaie encore une fois !</div>';
 inp.value=''; inp.focus();
+}
+}
+
+if(GT.Cloud && GT.Cloud.ready && GT.Cloud.functions){
+if(vb) vb.disabled = true;
+expBox.innerHTML = '<div class="exp-box" style="opacity:.7;">\u270f\ufe0f La ma\u00eetresse corrige...</div>';
+GT.gradeAnswerAI({
+question: ex.q,
+officialAnswer: localCheck.canonical || ex.answer,
+explanation: ex.exp,
+childAnswer: typedVal,
+subject: LS.subjectKey,
+level: LS.track
+}).then(function(verdict){
+finishWithVerdict(!!verdict.correct, verdict.feedback);
+}).catch(function(err){
+console.warn('Correction IA indisponible, repli sur le moteur local.', err);
+finishWithVerdict(localCheck.correct, null);
+});
+} else {
+finishWithVerdict(localCheck.correct, null);
 }
 };
 
@@ -5930,6 +5969,7 @@ try{
 firebase.initializeApp(firebaseConfig);
 this.auth = firebase.auth();
 this.db = firebase.firestore();
+this.functions = firebase.app().functions('europe-west1');
 this.ready = true;
 var self = this;
 var bootTimer = setTimeout(function(){ self.showLoginFallback(); }, 6000);

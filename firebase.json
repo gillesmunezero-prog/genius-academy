@@ -1,4 +1,11 @@
 {
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "runtime": "nodejs20"
+    }
+  ],
   "hosting": {
     "public": ".",
     "ignore": [
@@ -9,7 +16,8 @@
       "scripts/**",
       "**/*.py",
       "**/__pycache__/**",
-      "curriculum/_production_backups/**"
+      "curriculum/_production_backups/**",
+      "functions/**"
     ],
     "headers": [
       {
