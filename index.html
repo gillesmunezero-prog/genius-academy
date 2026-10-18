@@ -127,6 +127,21 @@ header .logo{font-size:24px;font-weight:800;color:#ff8a00;font-family:'Baloo 2',
 .cp-input.correct{background:#e8fbee;border-color:var(--green);}
 .cp-input.wrong{background:#ffecec;border-color:var(--red);}
 .cp-line{border-top:3px solid var(--ink);padding:0 !important;height:2px !important;}
+.teacher-avatar{display:flex;justify-content:center;margin:6px 0 14px;}
+.teacher-avatar svg{width:92px;height:92px;overflow:visible;}
+.teacher-avatar .ta-body-group{animation:taBob 3s ease-in-out infinite;transform-origin:center bottom;}
+@keyframes taBob{0%,100%{transform:translateY(0);}50%{transform:translateY(-3px);}}
+.teacher-avatar .ta-eyes{transform-origin:100px 95px;animation:taBlink 4.5s ease-in-out infinite;}
+@keyframes taBlink{0%,96%,100%{transform:scaleY(1);}98%{transform:scaleY(.1);}}
+.teacher-avatar .ta-beak{transform-origin:100px 118px;transition:transform .15s;}
+.teacher-avatar.ta-talking .ta-beak{animation:taTalk .32s ease-in-out infinite;}
+@keyframes taTalk{0%,100%{transform:scaleY(.5);}50%{transform:scaleY(1.3);}}
+.teacher-avatar .ta-cheeks{opacity:0;transition:opacity .3s;}
+.teacher-avatar.ta-happy .ta-cheeks{opacity:1;}
+.teacher-avatar.ta-encourage .ta-body-group{animation:none;transform:rotate(-6deg);}
+.teacher-avatar .ta-listening-ring{opacity:0;transition:opacity .2s;}
+.teacher-avatar.ta-listening .ta-listening-ring{opacity:1;animation:taPulse 1.1s ease-in-out infinite;}
+@keyframes taPulse{0%{transform:scale(.9);opacity:.7;}50%{transform:scale(1.08);opacity:.3;}100%{transform:scale(.9);opacity:.7;}}
 .textans{padding:12px;border-radius:12px;border:2px solid var(--line);font-size:16px;width:100%;font-family:'Nunito';}
 .result-box{text-align:center;padding:30px 20px;}
 .result-box .big{font-size:70px;}
@@ -349,6 +364,26 @@ Premier parent sur cette famille ? <button class="btn secondary small" onclick="
 <div class="screen" id="screen-lesson">
 <div class="backbar"><button class="b" onclick="showScreen(&#39;subject&#39;)">⬅ Retour</button></div>
 <div class="progressbar"><div id="lessonProgress" style="width:0%;"></div></div>
+<div class="teacher-avatar ta-neutral" id="teacherAvatar">
+<svg viewBox="0 0 200 200">
+<circle class="ta-listening-ring" cx="100" cy="112" r="85" fill="none" stroke="var(--blue)" stroke-width="4"></circle>
+<g class="ta-body-group">
+<path d="M70 50 L80 20 L92 55 Z" fill="var(--brown)"></path>
+<path d="M130 50 L120 20 L108 55 Z" fill="var(--brown)"></path>
+<ellipse cx="100" cy="120" rx="70" ry="65" fill="var(--brown)"></ellipse>
+<ellipse cx="100" cy="130" rx="46" ry="46" fill="#f4e3c1"></ellipse>
+<ellipse class="ta-cheeks" cx="62" cy="128" rx="10" ry="7" fill="var(--pink)"></ellipse>
+<ellipse class="ta-cheeks" cx="138" cy="128" rx="10" ry="7" fill="var(--pink)"></ellipse>
+<g class="ta-eyes">
+<circle cx="75" cy="95" r="26" fill="#fff"></circle>
+<circle cx="125" cy="95" r="26" fill="#fff"></circle>
+<circle cx="75" cy="97" r="12" fill="var(--ink)"></circle>
+<circle cx="125" cy="97" r="12" fill="var(--ink)"></circle>
+</g>
+<path class="ta-beak" d="M90 112 L100 128 L110 112 Z" fill="var(--gold)"></path>
+</g>
+</svg>
+</div>
 <div id="lessonBody"></div>
 </div>
 
@@ -1513,6 +1548,7 @@ document.getElementById('lessonProgress').style.width=pct+'%';
 }
 function renderLessonCours(){
 updateLessonProgressBar();
+if(window.GT && GT.Avatar) GT.Avatar.setExpression('neutral');
 const l=LS.lesson;
 const body=document.getElementById('lessonBody');
 let html='<div class="cours-box"><h2>'+l.emoji+' '+l.title+'</h2>';
@@ -1579,6 +1615,7 @@ inp.disabled=true;
 document.getElementById('validateBtn').style.display='none';
 }
 if(!correct) LS.mistakes++;
+if(window.GT && GT.Avatar) GT.Avatar.setExpression(correct?'happy':'encourage');
 const expBox=document.getElementById('expBox');
 expBox.innerHTML='<div class="exp-box">'+(correct?'✅ Bravo ! ':'❌ Pas tout à fait. ')+ex.exp+'</div><div style="text-align:center;margin-top:14px;"><button class="btn" onclick="nextExercise()">'+(LS.exIndex+1<list.length?'Suivant ➡️':'Terminer 🏁')+'</button></div>';
 }
@@ -2093,6 +2130,7 @@ GT.answerOrdre = function(){
   LS._p5Attempts = LS._p5Attempts || []; LS._p5FirstTry = LS._p5FirstTry || [];
   LS._p5Attempts.push(1); LS._p5FirstTry.push(correct);
   GT.lockHintButton();
+  GT.Avatar.setExpression(correct?'happy':'encourage');
   var rb = document.getElementById('ordreResetBtn'); if(rb) rb.disabled = true;
   var vb = document.getElementById('validateBtn'); if(vb) vb.style.display = 'none';
   document.querySelectorAll('#ordrePoolRow .ordre-chip').forEach(function(b){ b.onclick=null; b.disabled=true; });
@@ -2159,10 +2197,35 @@ GT.answerCalculPose = function(){
   LS._p5Attempts = LS._p5Attempts || []; LS._p5FirstTry = LS._p5FirstTry || [];
   LS._p5Attempts.push(1); LS._p5FirstTry.push(allCorrect);
   GT.lockHintButton();
+  GT.Avatar.setExpression(allCorrect?'happy':'encourage');
   var vb = document.getElementById('validateBtn'); if(vb) vb.style.display = 'none';
   var expBox = document.getElementById('expBox');
   var correction = allCorrect ? '' : ('<div class="spell-note">✏️ Le bon résultat est : '+st.resultStr+'</div>');
   expBox.innerHTML = '<div class="exp-box">'+(allCorrect?'✅ Bravo ! ':'❌ Pas tout à fait. ')+ex.exp+'</div>'+correction+'<div style="text-align:center;margin-top:14px;"><button class="btn" onclick="nextExercise()">'+(LS.exIndex+1<list.length?'Suivant ➡️':'Terminer 🏁')+'</button></div>';
+};
+
+/* ---- AVATAR 2D DU PROFESSEUR : visage anime, synchronise sur la voix ---- */
+GT.Avatar = {
+  setExpression: function(state){
+    try{
+      var el = document.getElementById('teacherAvatar');
+      if(!el) return;
+      el.classList.remove('ta-neutral','ta-happy','ta-encourage');
+      el.classList.add('ta-'+(state||'neutral'));
+    }catch(e){}
+  },
+  startTalking: function(){
+    try{ var el = document.getElementById('teacherAvatar'); if(el) el.classList.add('ta-talking'); }catch(e){}
+  },
+  stopTalking: function(){
+    try{ var el = document.getElementById('teacherAvatar'); if(el) el.classList.remove('ta-talking'); }catch(e){}
+  },
+  startListening: function(){
+    try{ var el = document.getElementById('teacherAvatar'); if(el) el.classList.add('ta-listening'); }catch(e){}
+  },
+  stopListening: function(){
+    try{ var el = document.getElementById('teacherAvatar'); if(el) el.classList.remove('ta-listening'); }catch(e){}
+  }
 };
 
 /* ---- SPEECH : synthese vocale + reconnaissance vocale (API natives navigateur) ---- */
@@ -2173,6 +2236,9 @@ GT.speak = function(text, lang){
     const u = new SpeechSynthesisUtterance(text);
     u.lang = lang || 'fr-FR';
     u.rate = 0.92;
+    u.onstart = function(){ GT.Avatar.startTalking(); };
+    u.onend = function(){ GT.Avatar.stopTalking(); };
+    u.onerror = function(){ GT.Avatar.stopTalking(); };
     window.speechSynthesis.speak(u);
   }catch(e){}
 };
@@ -2189,11 +2255,12 @@ GT.listen = function(opts){
   rec.lang = opts.lang || 'fr-FR';
   rec.interimResults = false;
   rec.maxAlternatives = 1;
+  GT.Avatar.startListening();
   rec.onresult = function(e){ try{ const t = e.results[0][0].transcript; opts.onResult && opts.onResult(t); }catch(err){} };
-  rec.onerror = function(e){ opts.onError && opts.onError(e.error||'error'); };
-  rec.onend = function(){ opts.onEnd && opts.onEnd(); };
+  rec.onerror = function(e){ GT.Avatar.stopListening(); opts.onError && opts.onError(e.error||'error'); };
+  rec.onend = function(){ GT.Avatar.stopListening(); opts.onEnd && opts.onEnd(); };
   GT.currentRec = rec;
-  try{ rec.start(); }catch(e){ opts.onError && opts.onError(e.message||'error'); }
+  try{ rec.start(); }catch(e){ GT.Avatar.stopListening(); opts.onError && opts.onError(e.message||'error'); }
   return rec;
 };
 
@@ -2291,6 +2358,7 @@ GT.finishOralAnswer = function(transcript){
     : GT.wordOverlap(transcript, expected);
   const correct = score >= 0.34;
   if(!correct) LS.mistakes++;
+  GT.Avatar.setExpression(correct?'happy':'encourage');
   const expBox = document.getElementById('expBox');
   const list = currentExerciseList();
   let html = '<div class="exp-box">'+(correct ? '✅ Très bien, bravo pour ta réponse orale ! ' : '🤔 Presque ! ')+ex.exp+'</div>';
@@ -4052,6 +4120,7 @@ LS._p5FirstTry.push(LS._p5TextAttempt===1 && correct);
 inp.disabled = true;
 var vb = document.getElementById('validateBtn'); if(vb) vb.style.display='none';
 GT.lockHintButton();
+GT.Avatar.setExpression(correct?'happy':'encourage');
 var listAfter = currentExerciseList();
 var spellHtml = '';
 if(correct && check.spelling && typedVal.trim()){
@@ -4069,6 +4138,7 @@ var __p5_renderExerciseStep = renderExerciseStep;
 renderExerciseStep = function(){
 var list = currentExerciseList();
 var ex = list[LS.exIndex];
+GT.Avatar.setExpression('neutral');
 if(ex && ex.type === 'text'){
 updateLessonProgressBar();
 LS.answered = false;
